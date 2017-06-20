@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AVFoundationDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Tip for Day Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>F2B2B1911EF8B205009DFDA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2B2B1AA1EF8B40B009DFDA2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
