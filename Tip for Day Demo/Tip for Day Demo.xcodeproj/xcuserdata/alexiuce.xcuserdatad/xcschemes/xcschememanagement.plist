@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Core Image Demo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Tip for Day Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>F2B198441EF9235700937200</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F2B2B1911EF8B205009DFDA2</key>
 		<dict>
 			<key>primary</key>
