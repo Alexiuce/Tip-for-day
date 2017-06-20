@@ -5,5 +5,6 @@ a book for myself, write down for develop tip
 ### iOS 
 * AVFoundation Target
 * Core Image Target
+* OpenCV Target
 
 ### Mac 
