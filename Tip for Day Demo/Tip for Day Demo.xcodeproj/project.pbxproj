@@ -383,6 +383,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A95J37CEL7;
 				INFOPLIST_FILE = AVFoundationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joinf.www.AVFoundationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -396,6 +397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A95J37CEL7;
 				INFOPLIST_FILE = AVFoundationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joinf.www.AVFoundationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,6 +424,7 @@
 				F2B2B1A61EF8B205009DFDA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2B2B1BA1EF8B40B009DFDA2 /* Build configuration list for PBXNativeTarget "AVFoundationDemo" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +433,7 @@
 				F2B2B1BC1EF8B40B009DFDA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
