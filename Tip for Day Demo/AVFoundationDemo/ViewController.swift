@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 
+@IBOutlet weak var imageView: UIImageView!
 class ViewController: UIViewController {
     // 采集设备硬件
     lazy var captureDevice : AVCaptureDevice = {
