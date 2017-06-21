@@ -12,6 +12,14 @@
 		F2B1984D1EF9235700937200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B1984B1EF9235700937200 /* Main.storyboard */; };
 		F2B1984F1EF9235700937200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B1984E1EF9235700937200 /* Assets.xcassets */; };
 		F2B198521EF9235700937200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B198501EF9235700937200 /* LaunchScreen.storyboard */; };
+		F2B198751EFA479800937200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B198741EFA479800937200 /* AppDelegate.swift */; };
+		F2B198771EFA479800937200 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B198761EFA479800937200 /* ViewController.swift */; };
+		F2B1987A1EFA479800937200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B198781EFA479800937200 /* Main.storyboard */; };
+		F2B1987C1EFA479800937200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B1987B1EFA479800937200 /* Assets.xcassets */; };
+		F2B1987F1EFA479800937200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B1987D1EFA479800937200 /* LaunchScreen.storyboard */; };
+		F2B198881EFA4A9300937200 /* XCPhotoEditProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B198871EFA4A9300937200 /* XCPhotoEditProtocol.swift */; };
+		F2B1988B1EFA553700937200 /* XCPhotoEditPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B198891EFA553700937200 /* XCPhotoEditPicker.swift */; };
+		F2B1988C1EFA553700937200 /* XCPhotoEditPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B1988A1EFA553700937200 /* XCPhotoEditPicker.xib */; };
 		F2B2B1AE1EF8B40B009DFDA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2B1AD1EF8B40B009DFDA2 /* AppDelegate.swift */; };
 		F2B2B1B01EF8B40B009DFDA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2B1AF1EF8B40B009DFDA2 /* ViewController.swift */; };
 		F2B2B1B31EF8B40B009DFDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B2B1B11EF8B40B009DFDA2 /* Main.storyboard */; };
@@ -27,6 +35,16 @@
 		F2B1984E1EF9235700937200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2B198511EF9235700937200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2B198531EF9235700937200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B198721EFA479800937200 /* XCPhotoEditPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCPhotoEditPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B198741EFA479800937200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2B198761EFA479800937200 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2B198791EFA479800937200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2B1987B1EFA479800937200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2B1987E1EFA479800937200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2B198801EFA479800937200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B198871EFA4A9300937200 /* XCPhotoEditProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCPhotoEditProtocol.swift; sourceTree = "<group>"; };
+		F2B198891EFA553700937200 /* XCPhotoEditPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCPhotoEditPicker.swift; sourceTree = "<group>"; };
+		F2B1988A1EFA553700937200 /* XCPhotoEditPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCPhotoEditPicker.xib; sourceTree = "<group>"; };
 		F2B2B1921EF8B205009DFDA2 /* Tip for Day Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip for Day Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B2B1AB1EF8B40B009DFDA2 /* AVFoundationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B2B1AD1EF8B40B009DFDA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +57,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		F2B198421EF9235700937200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B1986F1EFA479800937200 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,11 +100,36 @@
 			path = "Core Image Demo";
 			sourceTree = "<group>";
 		};
+		F2B198731EFA479800937200 /* XCPhotoEditPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F2B198841EFA47C800937200 /* XCPhotoEditPicker */,
+				F2B198741EFA479800937200 /* AppDelegate.swift */,
+				F2B198761EFA479800937200 /* ViewController.swift */,
+				F2B198781EFA479800937200 /* Main.storyboard */,
+				F2B1987B1EFA479800937200 /* Assets.xcassets */,
+				F2B1987D1EFA479800937200 /* LaunchScreen.storyboard */,
+				F2B198801EFA479800937200 /* Info.plist */,
+			);
+			path = XCPhotoEditPicker;
+			sourceTree = "<group>";
+		};
+		F2B198841EFA47C800937200 /* XCPhotoEditPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F2B198871EFA4A9300937200 /* XCPhotoEditProtocol.swift */,
+				F2B198891EFA553700937200 /* XCPhotoEditPicker.swift */,
+				F2B1988A1EFA553700937200 /* XCPhotoEditPicker.xib */,
+			);
+			path = XCPhotoEditPicker;
+			sourceTree = "<group>";
+		};
 		F2B2B1891EF8B204009DFDA2 = {
 			isa = PBXGroup;
 			children = (
 				F2B2B1AC1EF8B40B009DFDA2 /* AVFoundationDemo */,
 				F2B198461EF9235700937200 /* Core Image Demo */,
+				F2B198731EFA479800937200 /* XCPhotoEditPicker */,
 				F2B2B1931EF8B205009DFDA2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +140,7 @@
 				F2B2B1921EF8B205009DFDA2 /* Tip for Day Demo.app */,
 				F2B2B1AB1EF8B40B009DFDA2 /* AVFoundationDemo.app */,
 				F2B198451EF9235700937200 /* Core Image Demo.app */,
+				F2B198721EFA479800937200 /* XCPhotoEditPicker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +176,23 @@
 			name = "Core Image Demo";
 			productName = "Core Image Demo";
 			productReference = F2B198451EF9235700937200 /* Core Image Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2B198711EFA479800937200 /* XCPhotoEditPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B198831EFA479800937200 /* Build configuration list for PBXNativeTarget "XCPhotoEditPicker" */;
+			buildPhases = (
+				F2B1986E1EFA479800937200 /* Sources */,
+				F2B1986F1EFA479800937200 /* Frameworks */,
+				F2B198701EFA479800937200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCPhotoEditPicker;
+			productName = XCPhotoEditPicker;
+			productReference = F2B198721EFA479800937200 /* XCPhotoEditPicker.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F2B2B1911EF8B205009DFDA2 /* Tip for Day Demo */ = {
@@ -176,6 +244,11 @@
 						DevelopmentTeam = A95J37CEL7;
 						ProvisioningStyle = Automatic;
 					};
+					F2B198711EFA479800937200 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = A95J37CEL7;
+						ProvisioningStyle = Automatic;
+					};
 					F2B2B1911EF8B205009DFDA2 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = Z6P4JKNFHR;
@@ -204,6 +277,7 @@
 				F2B2B1911EF8B205009DFDA2 /* Tip for Day Demo */,
 				F2B2B1AA1EF8B40B009DFDA2 /* AVFoundationDemo */,
 				F2B198441EF9235700937200 /* Core Image Demo */,
+				F2B198711EFA479800937200 /* XCPhotoEditPicker */,
 			);
 		};
 /* End PBXProject section */
@@ -216,6 +290,17 @@
 				F2B198521EF9235700937200 /* LaunchScreen.storyboard in Resources */,
 				F2B1984F1EF9235700937200 /* Assets.xcassets in Resources */,
 				F2B1984D1EF9235700937200 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B198701EFA479800937200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B1987F1EFA479800937200 /* LaunchScreen.storyboard in Resources */,
+				F2B1987C1EFA479800937200 /* Assets.xcassets in Resources */,
+				F2B1987A1EFA479800937200 /* Main.storyboard in Resources */,
+				F2B1988C1EFA553700937200 /* XCPhotoEditPicker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +330,17 @@
 			files = (
 				F2B1984A1EF9235700937200 /* ViewController.swift in Sources */,
 				F2B198481EF9235700937200 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B1986E1EFA479800937200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B198771EFA479800937200 /* ViewController.swift in Sources */,
+				F2B198881EFA4A9300937200 /* XCPhotoEditProtocol.swift in Sources */,
+				F2B198751EFA479800937200 /* AppDelegate.swift in Sources */,
+				F2B1988B1EFA553700937200 /* XCPhotoEditPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +375,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				F2B198511EF9235700937200 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F2B198781EFA479800937200 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2B198791EFA479800937200 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2B1987D1EFA479800937200 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2B1987E1EFA479800937200 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -323,6 +435,34 @@
 				INFOPLIST_FILE = "Core Image Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joinf.www.Core-Image-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F2B198811EFA479800937200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A95J37CEL7;
+				INFOPLIST_FILE = XCPhotoEditPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joinf.www.XCPhotoEditPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F2B198821EFA479800937200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A95J37CEL7;
+				INFOPLIST_FILE = XCPhotoEditPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joinf.www.XCPhotoEditPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -485,6 +625,15 @@
 			buildConfigurations = (
 				F2B198541EF9235800937200 /* Debug */,
 				F2B198551EF9235800937200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2B198831EFA479800937200 /* Build configuration list for PBXNativeTarget "XCPhotoEditPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B198811EFA479800937200 /* Debug */,
+				F2B198821EFA479800937200 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

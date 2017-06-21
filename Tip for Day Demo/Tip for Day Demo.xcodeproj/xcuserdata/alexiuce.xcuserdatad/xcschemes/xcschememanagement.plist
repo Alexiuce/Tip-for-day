@@ -19,10 +19,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>XCPhotoEditPicker.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>F2B198441EF9235700937200</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2B198711EFA479800937200</key>
 		<dict>
 			<key>primary</key>
 			<true/>
