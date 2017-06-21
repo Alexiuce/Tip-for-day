@@ -33,6 +33,8 @@ extension ViewController{
         let bytesPerRow = bytesPerPixel * imgWidth   // 每行的字节数
         let pixels = calloc(imgHeight * imgWidth, sizeof(uint))     // 申请内存空间，尺寸为图片的size，单个单元的大小为UInt（也就是32）位
         
+        UIImagePickerController
+        
         
     }
 }
