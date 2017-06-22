@@ -83,6 +83,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.session .startRunning()
+        
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillAppear(animated)

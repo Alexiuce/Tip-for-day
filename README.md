@@ -69,7 +69,8 @@ a demo code project for myself, write down for develop tip
   ```swift
     self.session.stopRunning()
   ```
-  
+  * AVCaptureMetadataOutput 仅限与人脸和条码识别，如果需要做其他只能识别（比如名片，银行卡等），需要采用其他方法（CIDetector，或openCV）
+  * AVCaptureVideoDataOutput 需要注意掉帧（可能由于处理过程耗时）
 * Core Image Target. 
 
    > 1. Core Image 默认使用ABGR颜色空间
