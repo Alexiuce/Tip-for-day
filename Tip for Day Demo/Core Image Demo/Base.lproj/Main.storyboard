@@ -21,22 +21,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="58" translatesAutoresizingMaskIntoConstraints="NO" id="F5m-6n-Q2d">
-                                <rect key="frame" x="87" y="233" width="200" height="200"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DtU-B4-qxl">
+                                <rect key="frame" x="87" y="348" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="12t-HJ-a2d"/>
-                                    <constraint firstAttribute="width" constant="200" id="prb-P2-4cL"/>
+                                    <constraint firstAttribute="height" constant="200" id="ZhG-uL-0hw"/>
+                                    <constraint firstAttribute="width" constant="200" id="uc8-cD-SQT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F5m-6n-Q2d">
+                                <rect key="frame" x="87" y="71" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="L85-kr-4SZ"/>
+                                    <constraint firstAttribute="height" constant="200" id="Z3x-rx-Ugo"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="F5m-6n-Q2d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RSB-2i-DKP"/>
-                            <constraint firstItem="F5m-6n-Q2d" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bYg-l3-91o"/>
+                            <constraint firstItem="DtU-B4-qxl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1zI-VC-Cav"/>
+                            <constraint firstItem="F5m-6n-Q2d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="48p-lO-as3"/>
+                            <constraint firstItem="DtU-B4-qxl" firstAttribute="top" secondItem="F5m-6n-Q2d" secondAttribute="bottom" constant="77" id="Mzo-x9-YTR"/>
+                            <constraint firstItem="F5m-6n-Q2d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="VX2-rt-1We"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="F5m-6n-Q2d" id="Ccv-yl-mym"/>
+                        <outlet property="finalImageView" destination="DtU-B4-qxl" id="QWG-Gv-kia"/>
+                        <outlet property="imageView" destination="F5m-6n-Q2d" id="78d-1R-S8C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -44,7 +54,4 @@
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="58" width="200" height="200"/>
-    </resources>
 </document>
