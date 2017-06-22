@@ -56,7 +56,7 @@ extension ViewController{
         // 遍历图片像素
         for _ in 0 ..< imgWidth {
             for _ in 0 ..< imgHeight {
-                let pix = pixels!.assumingMemoryBound(to: uint.self)   // 声明指针的内存布局，与定义时要保持一直（参见48行）
+                let pix = pixels!.assumingMemoryBound(to: uint.self)   // 声明指针的内存布局，与定义时要保持一直（参见51行）
 //                let pixValue = pix.pointee  // 获取指针内存中的数据
                 /* Core Image 中的颜色空间是ABGR： 即 透明度 蓝色 绿色 红色,如下图
                  00000000 | 00000000 | 00000000 | 0000000
