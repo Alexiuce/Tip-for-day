@@ -44,8 +44,8 @@ class ViewController: UIViewController {
         return input
     }();
     // 静态图片输出 （拍照时用）
-    lazy var imgOutput : AVCaptureMetadataOutput = {
-        let output = AVCaptureMetadataOutput()
+    lazy var imgOutput : AVCaptureStillImageOutput = {
+        let output = AVCaptureStillImageOutput()
         return output
     }();
    // 视频输出 （视频流）
