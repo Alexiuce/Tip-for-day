@@ -81,19 +81,18 @@ a demo code project for myself, write down for develop tip
         for _ in 0 ..< imgWidth {
             for _ in 0 ..< imgHeight {
                 let pix = pixels!.assumingMemoryBound(to: uint.self)   // 声明指针的内存布局，与定义时要保持一直（参见51行）
-//                let pixValue = pix.pointee  // 获取指针内存中的数据
+                let pixValue = pix.pointee  // 获取指针内存中的数据
                 /* Core Image 中的颜色空间是ABGR： 即 透明度 蓝色 绿色 红色,如下图
-                 00000000 | 00000000 | 00000000 | 0000000
-                |<-透明度->|<- 蓝色  ->|<-  绿色   ->| <- 红色 ->|
+                                00000000 | 00000000 | 00000000 | 0000000
+                                |<-透明度->|<- 蓝色  ->|<-  绿色   ->|<-红色->|
                 */
-//                pix.pointee = pix.pointee & 0xff0000ff  // 只保留红色
-                  pix.pointee = pix.pointee & 0xff00ff00  // 只保留绿色
-//                pix.pointee = pix.pointee & 0xffff0000  // 只保留蓝色
-//                print((R(pixValue) + G(pixValue) + B(pixValue)) / 3,terminator:" ")
+        //      pix.pointee = pix.pointee & 0xff0000ff  // 只保留红色
+       //       pix.pointee = pix.pointee & 0xff00ff00  // 只保留绿色
+                pix.pointee = pix.pointee & 0xffff0000  // 只保留蓝色
+                print((R(pixValue) + G(pixValue) + B(pixValue)) / 3,terminator:" ")
                 pixels = pixels?.advanced(by:MemoryLayout<uint>.size)    // 移动指针到下个位置
             }
         }
-
       
     ```
       
