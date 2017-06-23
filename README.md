@@ -100,4 +100,8 @@ a demo code project for myself, write down for develop tip
    
 * OpenCV Target
 
+* BaiduMap Target
+
+  [BaiduMap.md](https://github.com/Alexiuce/Tip-for-day/blob/master/BaiduMap.md)
+
 ### Mac 
