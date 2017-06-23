@@ -12,10 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var _mapManager : BMKMapManager?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        _mapManager = BMKMapManager()
+        let result = _mapManager?.start("RbwN3jfVafHUV0OUUqG28uyr9UGPd7CQ", generalDelegate: nil)
+        if result == false{
+            print("map regist failure")
+        }
         return true
     }
 

@@ -817,7 +817,7 @@
 				DEVELOPMENT_TEAM = A95J37CEL7;
 				INFOPLIST_FILE = "BaiduMap Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.joinf.www.BaiduMap-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joinf.www.XCMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BaiduMap Demo/BaiduMap Demo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -834,7 +834,7 @@
 				DEVELOPMENT_TEAM = A95J37CEL7;
 				INFOPLIST_FILE = "BaiduMap Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.joinf.www.BaiduMap-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joinf.www.XCMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BaiduMap Demo/BaiduMap Demo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
