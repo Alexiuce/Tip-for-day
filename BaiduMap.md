@@ -16,7 +16,7 @@
   * 应用的info.plist 中，需要设置**Bundle display name**，否则Baidu地图注册时报错
  
 * 应用
-   
+*   
    ```swift
     var _mapView : BMKMapView?
     
@@ -36,10 +36,9 @@
         _mapView?.viewWillDisappear()
     }
 }
+   ``` 
+* 错误码参考
+  [LBS控制服务返回码定义及常见问题汇总](http://bbs.lbsyun.baidu.com/forum.php?mod=viewthread&tid=42223&page=1&extra=#pid93042)
 
-   ```
-  
-  
-  
   
    
