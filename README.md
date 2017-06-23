@@ -98,7 +98,10 @@ a demo code project for myself, write down for develop tip
     ```
       
    
-* OpenCV Target
+* OpenCV Target  
+
+  详细内容，阅读OpenCV章节  
+  [OpenCV Target Details](https://github.com/Alexiuce/Tip-for-day/blob/master/OpenCV.md)
 
 * BaiduMap Target
 
