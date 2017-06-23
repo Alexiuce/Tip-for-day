@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         _mapManager = BMKMapManager()
         let result = _mapManager?.start("RbwN3jfVafHUV0OUUqG28uyr9UGPd7CQ", generalDelegate: nil)
-        if result == true{
-            print("map regist ok")
+        if result == false{
+            print("map regist failure")
         }
         return true
     }
