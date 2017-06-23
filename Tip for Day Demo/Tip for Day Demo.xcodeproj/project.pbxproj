@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		188974F55361273A9E7ACEC5 /* Pods_XCPhotoEditPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6BE1231ACD34C4E722FBB4 /* Pods_XCPhotoEditPicker.framework */; };
+		34E3CA9EA169B52DE3934C0B /* Pods_GitHubApiDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D022A5F6BFB15759E670F669 /* Pods_GitHubApiDemo.framework */; };
 		585AD0C0E7DB7352D89F68C8 /* Pods_AVFoundationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C8279EA997EB6697FD3474 /* Pods_AVFoundationDemo.framework */; };
 		60B8D05B294020458DAABBA6 /* Pods_Core_Image_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D708FB051642C222C76B1B /* Pods_Core_Image_Demo.framework */; };
 		9AE68C606A1776E13F669EC3 /* Pods_BaiduMap_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F30D480E6D012EE52F0F03 /* Pods_BaiduMap_Demo.framework */; };
@@ -16,6 +17,10 @@
 		F29275291EFC9CAB0001F866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29275271EFC9CAB0001F866 /* Main.storyboard */; };
 		F292752B1EFC9CAB0001F866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F292752A1EFC9CAB0001F866 /* Assets.xcassets */; };
 		F292752E1EFC9CAB0001F866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F292752C1EFC9CAB0001F866 /* LaunchScreen.storyboard */; };
+		F292753E1EFD0C600001F866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F292753D1EFD0C600001F866 /* AppDelegate.swift */; };
+		F29275401EFD0C600001F866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F292753F1EFD0C600001F866 /* ViewController.swift */; };
+		F29275421EFD0C610001F866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29275411EFD0C610001F866 /* Assets.xcassets */; };
+		F29275451EFD0C610001F866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29275431EFD0C610001F866 /* Main.storyboard */; };
 		F2B198481EF9235700937200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B198471EF9235700937200 /* AppDelegate.swift */; };
 		F2B1984A1EF9235700937200 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B198491EF9235700937200 /* ViewController.swift */; };
 		F2B1984D1EF9235700937200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B1984B1EF9235700937200 /* Main.storyboard */; };
@@ -43,6 +48,8 @@
 		1A6BE1231ACD34C4E722FBB4 /* Pods_XCPhotoEditPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCPhotoEditPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DB5CA96E9B208C65DA7C09 /* Pods-Core Image Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core Image Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Core Image Demo/Pods-Core Image Demo.release.xcconfig"; sourceTree = "<group>"; };
 		3C060CCE0767DD0452D73DEB /* Pods-Core Image Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core Image Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Core Image Demo/Pods-Core Image Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		3CCF6EA56C5DD17027929AB1 /* Pods-GitHubApiDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubApiDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubApiDemo/Pods-GitHubApiDemo.release.xcconfig"; sourceTree = "<group>"; };
+		416BC9B1BD993E5EA602B2A0 /* Pods-GitHubApiDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubApiDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubApiDemo/Pods-GitHubApiDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		42B20285A17D5221D9FD2D15 /* Pods-AVFoundationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AVFoundationDemo/Pods-AVFoundationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		52C8279EA997EB6697FD3474 /* Pods_AVFoundationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVFoundationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61070EBB5C25D1E615E82D8D /* Pods_Tip_for_Day_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tip_for_Day_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +59,7 @@
 		9F21F6D67EF72603F6AA9E68 /* Pods-Tip for Day Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip for Day Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tip for Day Demo/Pods-Tip for Day Demo.release.xcconfig"; sourceTree = "<group>"; };
 		A7F30D480E6D012EE52F0F03 /* Pods_BaiduMap_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaiduMap_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75B4E1189A1002B9C0F673B /* Pods-XCPhotoEditPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCPhotoEditPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCPhotoEditPicker/Pods-XCPhotoEditPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		D022A5F6BFB15759E670F669 /* Pods_GitHubApiDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubApiDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC71E72783B34308D8F86EC6 /* Pods-XCPhotoEditPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCPhotoEditPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCPhotoEditPicker/Pods-XCPhotoEditPicker.release.xcconfig"; sourceTree = "<group>"; };
 		F29275211EFC9CAA0001F866 /* BaiduMap Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BaiduMap Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29275231EFC9CAB0001F866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +69,13 @@
 		F292752D1EFC9CAB0001F866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F292752F1EFC9CAB0001F866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F29275331EFC9EA10001F866 /* BaiduMap Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaiduMap Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		F292753B1EFD0C600001F866 /* GitHubApiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubApiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F292753D1EFD0C600001F866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F292753F1EFD0C600001F866 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F29275411EFD0C610001F866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F29275441EFD0C610001F866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F29275461EFD0C610001F866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F292754A1EFD15580001F866 /* GitHubApiDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubApiDemo.entitlements; sourceTree = "<group>"; };
 		F2B198451EF9235700937200 /* Core Image Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Image Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B198471EF9235700937200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2B198491EF9235700937200 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +109,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AE68C606A1776E13F669EC3 /* Pods_BaiduMap_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29275381EFD0C600001F866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E3CA9EA169B52DE3934C0B /* Pods_GitHubApiDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +168,8 @@
 				9F21F6D67EF72603F6AA9E68 /* Pods-Tip for Day Demo.release.xcconfig */,
 				C75B4E1189A1002B9C0F673B /* Pods-XCPhotoEditPicker.debug.xcconfig */,
 				DC71E72783B34308D8F86EC6 /* Pods-XCPhotoEditPicker.release.xcconfig */,
+				416BC9B1BD993E5EA602B2A0 /* Pods-GitHubApiDemo.debug.xcconfig */,
+				3CCF6EA56C5DD17027929AB1 /* Pods-GitHubApiDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -157,6 +182,7 @@
 				13D708FB051642C222C76B1B /* Pods_Core_Image_Demo.framework */,
 				61070EBB5C25D1E615E82D8D /* Pods_Tip_for_Day_Demo.framework */,
 				1A6BE1231ACD34C4E722FBB4 /* Pods_XCPhotoEditPicker.framework */,
+				D022A5F6BFB15759E670F669 /* Pods_GitHubApiDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,6 +199,19 @@
 				F29275331EFC9EA10001F866 /* BaiduMap Demo-Bridging-Header.h */,
 			);
 			path = "BaiduMap Demo";
+			sourceTree = "<group>";
+		};
+		F292753C1EFD0C600001F866 /* GitHubApiDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F292754A1EFD15580001F866 /* GitHubApiDemo.entitlements */,
+				F292753D1EFD0C600001F866 /* AppDelegate.swift */,
+				F292753F1EFD0C600001F866 /* ViewController.swift */,
+				F29275411EFD0C610001F866 /* Assets.xcassets */,
+				F29275431EFD0C610001F866 /* Main.storyboard */,
+				F29275461EFD0C610001F866 /* Info.plist */,
+			);
+			path = GitHubApiDemo;
 			sourceTree = "<group>";
 		};
 		F2B198461EF9235700937200 /* Core Image Demo */ = {
@@ -219,6 +258,7 @@
 				F2B198461EF9235700937200 /* Core Image Demo */,
 				F2B198731EFA479800937200 /* XCPhotoEditPicker */,
 				F29275221EFC9CAB0001F866 /* BaiduMap Demo */,
+				F292753C1EFD0C600001F866 /* GitHubApiDemo */,
 				F2B2B1931EF8B205009DFDA2 /* Products */,
 				42FBD0CF76602A266377FE1C /* Pods */,
 				48C81C1C840E5A174926DA9B /* Frameworks */,
@@ -233,6 +273,7 @@
 				F2B198451EF9235700937200 /* Core Image Demo.app */,
 				F2B198721EFA479800937200 /* XCPhotoEditPicker.app */,
 				F29275211EFC9CAA0001F866 /* BaiduMap Demo.app */,
+				F292753B1EFD0C600001F866 /* GitHubApiDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -271,6 +312,26 @@
 			name = "BaiduMap Demo";
 			productName = "BaiduMap Demo";
 			productReference = F29275211EFC9CAA0001F866 /* BaiduMap Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F292753A1EFD0C600001F866 /* GitHubApiDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29275491EFD0C610001F866 /* Build configuration list for PBXNativeTarget "GitHubApiDemo" */;
+			buildPhases = (
+				0C047AED28ECDEAE24D0ACD8 /* [CP] Check Pods Manifest.lock */,
+				F29275371EFD0C600001F866 /* Sources */,
+				F29275381EFD0C600001F866 /* Frameworks */,
+				F29275391EFD0C600001F866 /* Resources */,
+				ECB3CFE114B875E7EB9A51C8 /* [CP] Embed Pods Frameworks */,
+				FC531964307D7F9F9A6BE258 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GitHubApiDemo;
+			productName = GitHubApiDemo;
+			productReference = F292753B1EFD0C600001F866 /* GitHubApiDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F2B198441EF9235700937200 /* Core Image Demo */ = {
@@ -369,6 +430,16 @@
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
+					F292753A1EFD0C600001F866 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = A95J37CEL7;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
 					F2B198441EF9235700937200 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = A95J37CEL7;
@@ -409,6 +480,7 @@
 				F2B198441EF9235700937200 /* Core Image Demo */,
 				F2B198711EFA479800937200 /* XCPhotoEditPicker */,
 				F29275201EFC9CAA0001F866 /* BaiduMap Demo */,
+				F292753A1EFD0C600001F866 /* GitHubApiDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -421,6 +493,15 @@
 				F292752E1EFC9CAB0001F866 /* LaunchScreen.storyboard in Resources */,
 				F292752B1EFC9CAB0001F866 /* Assets.xcassets in Resources */,
 				F29275291EFC9CAB0001F866 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29275391EFD0C600001F866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29275421EFD0C610001F866 /* Assets.xcassets in Resources */,
+				F29275451EFD0C610001F866 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +546,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C047AED28ECDEAE24D0ACD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		0F973AB4EEB2D57FA9FA1DD8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -690,6 +786,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Core Image Demo/Pods-Core Image Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ECB3CFE114B875E7EB9A51C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitHubApiDemo/Pods-GitHubApiDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC531964307D7F9F9A6BE258 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitHubApiDemo/Pods-GitHubApiDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -699,6 +825,15 @@
 			files = (
 				F29275261EFC9CAB0001F866 /* ViewController.swift in Sources */,
 				F29275241EFC9CAB0001F866 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29275371EFD0C600001F866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29275401EFD0C600001F866 /* ViewController.swift in Sources */,
+				F292753E1EFD0C600001F866 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,6 +890,14 @@
 				F292752D1EFC9CAB0001F866 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F29275431EFD0C610001F866 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F29275441EFD0C610001F866 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		F2B1984B1EF9235700937200 /* Main.storyboard */ = {
@@ -839,6 +982,46 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joinf.www.XCMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BaiduMap Demo/BaiduMap Demo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F29275471EFD0C610001F866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 416BC9B1BD993E5EA602B2A0 /* Pods-GitHubApiDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GitHubApiDemo/GitHubApiDemo.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A95J37CEL7;
+				INFOPLIST_FILE = GitHubApiDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joinf.www.GitHubApiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F29275481EFD0C610001F866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CCF6EA56C5DD17027929AB1 /* Pods-GitHubApiDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GitHubApiDemo/GitHubApiDemo.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A95J37CEL7;
+				INFOPLIST_FILE = GitHubApiDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joinf.www.GitHubApiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -1062,6 +1245,15 @@
 			buildConfigurations = (
 				F29275301EFC9CAB0001F866 /* Debug */,
 				F29275311EFC9CAB0001F866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F29275491EFD0C610001F866 /* Build configuration list for PBXNativeTarget "GitHubApiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29275471EFD0C610001F866 /* Debug */,
+				F29275481EFD0C610001F866 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

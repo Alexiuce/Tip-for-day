@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-AVFoundationDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,12 +24,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-GitHubApiDemo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Tip for Day Demo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-XCPhotoEditPicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,6 +57,16 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5C153EA90B0250DD643838B248EBD7C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9C04484DDE45B532D4CEF715BD0BBB08</key>
 		<dict>
 			<key>primary</key>
@@ -53,6 +78,11 @@
 			<true/>
 		</dict>
 		<key>BA156F0E3775BDB98E9EA88B1ACDECC7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0E0713B15CB34FD73B89FB12CFE0186</key>
 		<dict>
 			<key>primary</key>
 			<true/>

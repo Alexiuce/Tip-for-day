@@ -1,12 +1,18 @@
 PODS:
+  - Alamofire (4.4.0)
   - BaiduMapKit (3.3.2)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.4)
   - BaiduMapKit
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   BaiduMapKit: 5118390d63b375483bd64c963e8e32a40fd9ddb5
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 8c54cf5fb05f8189d186ef02274d6018fa4eefee
+PODFILE CHECKSUM: 5a1c783edfec52481db6d6d4aa3488b491bb52a2
 
 COCOAPODS: 1.2.1
