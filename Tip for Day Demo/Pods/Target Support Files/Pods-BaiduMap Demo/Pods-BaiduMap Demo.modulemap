@@ -1,0 +1,6 @@
+framework module Pods_BaiduMap_Demo {
+  umbrella header "Pods-BaiduMap Demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

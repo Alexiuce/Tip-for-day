@@ -1,0 +1,6 @@
+framework module Pods_Tip_for_Day_Demo {
+  umbrella header "Pods-Tip for Day Demo-umbrella.h"
+
+  export *
+  module * { export * }
+}
