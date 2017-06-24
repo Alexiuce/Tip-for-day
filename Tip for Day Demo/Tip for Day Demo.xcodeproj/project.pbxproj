@@ -20,6 +20,13 @@
 		D85063131EFE02C700FC9E5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85063121EFE02C700FC9E5E /* Assets.xcassets */; };
 		D85063161EFE02C700FC9E5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85063141EFE02C700FC9E5E /* LaunchScreen.storyboard */; };
 		D850631D1EFE02EF00FC9E5E /* CVTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = D850631C1EFE02EF00FC9E5E /* CVTool.mm */; };
+		D85063341EFE5A5200FC9E5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D85063331EFE5A5200FC9E5E /* AppDelegate.m */; };
+		D85063371EFE5A5200FC9E5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D85063361EFE5A5200FC9E5E /* main.m */; };
+		D850633A1EFE5A5200FC9E5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85063391EFE5A5200FC9E5E /* ViewController.m */; };
+		D850633C1EFE5A5200FC9E5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D850633B1EFE5A5200FC9E5E /* Assets.xcassets */; };
+		D850633F1EFE5A5200FC9E5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D850633D1EFE5A5200FC9E5E /* Main.storyboard */; };
+		D85063461EFE922300FC9E5E /* MyXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = D85063451EFE922300FC9E5E /* MyXibView.m */; };
+		D85063481EFE923700FC9E5E /* MyXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85063471EFE923700FC9E5E /* MyXibView.xib */; };
 		F29275241EFC9CAB0001F866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29275231EFC9CAB0001F866 /* AppDelegate.swift */; };
 		F29275261EFC9CAB0001F866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29275251EFC9CAB0001F866 /* ViewController.swift */; };
 		F29275291EFC9CAB0001F866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29275271EFC9CAB0001F866 /* Main.storyboard */; };
@@ -83,6 +90,18 @@
 		D85063171EFE02C700FC9E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D850631B1EFE02EF00FC9E5E /* CVTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVTool.h; sourceTree = "<group>"; };
 		D850631C1EFE02EF00FC9E5E /* CVTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVTool.mm; sourceTree = "<group>"; };
+		D85063301EFE5A5200FC9E5E /* XibLoadViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XibLoadViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85063321EFE5A5200FC9E5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D85063331EFE5A5200FC9E5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D85063361EFE5A5200FC9E5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D85063381EFE5A5200FC9E5E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D85063391EFE5A5200FC9E5E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D850633B1EFE5A5200FC9E5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D850633E1EFE5A5200FC9E5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D85063401EFE5A5200FC9E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85063441EFE922300FC9E5E /* MyXibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyXibView.h; sourceTree = "<group>"; };
+		D85063451EFE922300FC9E5E /* MyXibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyXibView.m; sourceTree = "<group>"; };
+		D85063471EFE923700FC9E5E /* MyXibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyXibView.xib; sourceTree = "<group>"; };
 		DC71E72783B34308D8F86EC6 /* Pods-XCPhotoEditPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCPhotoEditPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCPhotoEditPicker/Pods-XCPhotoEditPicker.release.xcconfig"; sourceTree = "<group>"; };
 		F29275211EFC9CAA0001F866 /* BaiduMap Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BaiduMap Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29275231EFC9CAB0001F866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +151,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C1376173A12C3CC33D5C33B /* libPods-OpenCV Demo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D850632D1EFE5A5200FC9E5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +273,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D85063311EFE5A5200FC9E5E /* XibLoadViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D85063321EFE5A5200FC9E5E /* AppDelegate.h */,
+				D85063331EFE5A5200FC9E5E /* AppDelegate.m */,
+				D85063381EFE5A5200FC9E5E /* ViewController.h */,
+				D85063391EFE5A5200FC9E5E /* ViewController.m */,
+				D85063441EFE922300FC9E5E /* MyXibView.h */,
+				D85063451EFE922300FC9E5E /* MyXibView.m */,
+				D85063471EFE923700FC9E5E /* MyXibView.xib */,
+				D850633B1EFE5A5200FC9E5E /* Assets.xcassets */,
+				D850633D1EFE5A5200FC9E5E /* Main.storyboard */,
+				D85063401EFE5A5200FC9E5E /* Info.plist */,
+				D85063351EFE5A5200FC9E5E /* Supporting Files */,
+			);
+			path = XibLoadViewDemo;
+			sourceTree = "<group>";
+		};
+		D85063351EFE5A5200FC9E5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D85063361EFE5A5200FC9E5E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F29275221EFC9CAB0001F866 /* BaiduMap Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +372,7 @@
 				F29275221EFC9CAB0001F866 /* BaiduMap Demo */,
 				F292753C1EFD0C600001F866 /* GitHubApiDemo */,
 				D85063051EFE02C700FC9E5E /* OpenCV Demo */,
+				D85063311EFE5A5200FC9E5E /* XibLoadViewDemo */,
 				F2B2B1931EF8B205009DFDA2 /* Products */,
 				42FBD0CF76602A266377FE1C /* Pods */,
 				48C81C1C840E5A174926DA9B /* Frameworks */,
@@ -336,6 +389,7 @@
 				F29275211EFC9CAA0001F866 /* BaiduMap Demo.app */,
 				F292753B1EFD0C600001F866 /* GitHubApiDemo.app */,
 				D85063041EFE02C700FC9E5E /* OpenCV Demo.app */,
+				D85063301EFE5A5200FC9E5E /* XibLoadViewDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -374,6 +428,23 @@
 			name = "OpenCV Demo";
 			productName = "OpenCV Demo";
 			productReference = D85063041EFE02C700FC9E5E /* OpenCV Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D850632F1EFE5A5200FC9E5E /* XibLoadViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85063431EFE5A5200FC9E5E /* Build configuration list for PBXNativeTarget "XibLoadViewDemo" */;
+			buildPhases = (
+				D850632C1EFE5A5200FC9E5E /* Sources */,
+				D850632D1EFE5A5200FC9E5E /* Frameworks */,
+				D850632E1EFE5A5200FC9E5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XibLoadViewDemo;
+			productName = XibLoadViewDemo;
+			productReference = D85063301EFE5A5200FC9E5E /* XibLoadViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F29275201EFC9CAA0001F866 /* BaiduMap Demo */ = {
@@ -511,6 +582,11 @@
 						DevelopmentTeam = A95J37CEL7;
 						ProvisioningStyle = Automatic;
 					};
+					D850632F1EFE5A5200FC9E5E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = A95J37CEL7;
+						ProvisioningStyle = Automatic;
+					};
 					F29275201EFC9CAA0001F866 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = A95J37CEL7;
@@ -569,6 +645,7 @@
 				F29275201EFC9CAA0001F866 /* BaiduMap Demo */,
 				F292753A1EFD0C600001F866 /* GitHubApiDemo */,
 				D85063031EFE02C700FC9E5E /* OpenCV Demo */,
+				D850632F1EFE5A5200FC9E5E /* XibLoadViewDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -581,6 +658,16 @@
 				D85063161EFE02C700FC9E5E /* LaunchScreen.storyboard in Resources */,
 				D85063131EFE02C700FC9E5E /* Assets.xcassets in Resources */,
 				D85063111EFE02C700FC9E5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D850632E1EFE5A5200FC9E5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D850633C1EFE5A5200FC9E5E /* Assets.xcassets in Resources */,
+				D850633F1EFE5A5200FC9E5E /* Main.storyboard in Resources */,
+				D85063481EFE923700FC9E5E /* MyXibView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -973,6 +1060,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D850632C1EFE5A5200FC9E5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D850633A1EFE5A5200FC9E5E /* ViewController.m in Sources */,
+				D85063371EFE5A5200FC9E5E /* main.m in Sources */,
+				D85063461EFE922300FC9E5E /* MyXibView.m in Sources */,
+				D85063341EFE5A5200FC9E5E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F292751D1EFC9CAA0001F866 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1044,6 +1142,14 @@
 				D85063151EFE02C700FC9E5E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D850633D1EFE5A5200FC9E5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D850633E1EFE5A5200FC9E5E /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		F29275271EFC9CAB0001F866 /* Main.storyboard */ = {
@@ -1144,6 +1250,38 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexiuce.OpenCV-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D85063411EFE5A5200FC9E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A95J37CEL7;
+				INFOPLIST_FILE = XibLoadViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexiuce.XibLoadViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D85063421EFE5A5200FC9E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A95J37CEL7;
+				INFOPLIST_FILE = XibLoadViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexiuce.XibLoadViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -1443,6 +1581,16 @@
 				D85063191EFE02C700FC9E5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85063431EFE5A5200FC9E5E /* Build configuration list for PBXNativeTarget "XibLoadViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85063411EFE5A5200FC9E5E /* Debug */,
+				D85063421EFE5A5200FC9E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F29275321EFC9CAB0001F866 /* Build configuration list for PBXNativeTarget "BaiduMap Demo" */ = {
 			isa = XCConfigurationList;
