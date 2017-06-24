@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>AVFoundationDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>BaiduMap Demo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Core Image Demo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>GitHubApiDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>OpenCV Demo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>Tip for Day Demo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>XCPhotoEditPicker.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D85063031EFE02C700FC9E5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F29275201EFC9CAA0001F866</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F292753A1EFD0C600001F866</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2B198441EF9235700937200</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2B198711EFA479800937200</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2B2B1911EF8B205009DFDA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2B2B1AA1EF8B40B009DFDA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

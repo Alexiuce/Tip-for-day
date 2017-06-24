@@ -12,6 +12,14 @@
 		585AD0C0E7DB7352D89F68C8 /* Pods_AVFoundationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C8279EA997EB6697FD3474 /* Pods_AVFoundationDemo.framework */; };
 		60B8D05B294020458DAABBA6 /* Pods_Core_Image_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D708FB051642C222C76B1B /* Pods_Core_Image_Demo.framework */; };
 		9AE68C606A1776E13F669EC3 /* Pods_BaiduMap_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F30D480E6D012EE52F0F03 /* Pods_BaiduMap_Demo.framework */; };
+		9C1376173A12C3CC33D5C33B /* libPods-OpenCV Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C6CBE9172478076D6AF8D9 /* libPods-OpenCV Demo.a */; };
+		D85063081EFE02C700FC9E5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D85063071EFE02C700FC9E5E /* main.m */; };
+		D850630B1EFE02C700FC9E5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D850630A1EFE02C700FC9E5E /* AppDelegate.m */; };
+		D850630E1EFE02C700FC9E5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D850630D1EFE02C700FC9E5E /* ViewController.m */; };
+		D85063111EFE02C700FC9E5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D850630F1EFE02C700FC9E5E /* Main.storyboard */; };
+		D85063131EFE02C700FC9E5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85063121EFE02C700FC9E5E /* Assets.xcassets */; };
+		D85063161EFE02C700FC9E5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85063141EFE02C700FC9E5E /* LaunchScreen.storyboard */; };
+		D850631D1EFE02EF00FC9E5E /* CVTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = D850631C1EFE02EF00FC9E5E /* CVTool.mm */; };
 		F29275241EFC9CAB0001F866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29275231EFC9CAB0001F866 /* AppDelegate.swift */; };
 		F29275261EFC9CAB0001F866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29275251EFC9CAB0001F866 /* ViewController.swift */; };
 		F29275291EFC9CAB0001F866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29275271EFC9CAB0001F866 /* Main.storyboard */; };
@@ -44,9 +52,12 @@
 
 /* Begin PBXFileReference section */
 		068B9FA4F3AC82CB51CFD295 /* Pods-AVFoundationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AVFoundationDemo/Pods-AVFoundationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		078614EE74F1FC7117B9DDE8 /* Pods-OpenCV Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCV Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenCV Demo/Pods-OpenCV Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		10EFBAEF499DE4D168573224 /* Pods-OpenCV Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCV Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenCV Demo/Pods-OpenCV Demo.release.xcconfig"; sourceTree = "<group>"; };
 		13D708FB051642C222C76B1B /* Pods_Core_Image_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Core_Image_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6BE1231ACD34C4E722FBB4 /* Pods_XCPhotoEditPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCPhotoEditPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DB5CA96E9B208C65DA7C09 /* Pods-Core Image Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core Image Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Core Image Demo/Pods-Core Image Demo.release.xcconfig"; sourceTree = "<group>"; };
+		34C6CBE9172478076D6AF8D9 /* libPods-OpenCV Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCV Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C060CCE0767DD0452D73DEB /* Pods-Core Image Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core Image Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Core Image Demo/Pods-Core Image Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		3CCF6EA56C5DD17027929AB1 /* Pods-GitHubApiDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubApiDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubApiDemo/Pods-GitHubApiDemo.release.xcconfig"; sourceTree = "<group>"; };
 		416BC9B1BD993E5EA602B2A0 /* Pods-GitHubApiDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubApiDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubApiDemo/Pods-GitHubApiDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +71,18 @@
 		A7F30D480E6D012EE52F0F03 /* Pods_BaiduMap_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaiduMap_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75B4E1189A1002B9C0F673B /* Pods-XCPhotoEditPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCPhotoEditPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCPhotoEditPicker/Pods-XCPhotoEditPicker.debug.xcconfig"; sourceTree = "<group>"; };
 		D022A5F6BFB15759E670F669 /* Pods_GitHubApiDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubApiDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85063041EFE02C700FC9E5E /* OpenCV Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCV Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85063071EFE02C700FC9E5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D85063091EFE02C700FC9E5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D850630A1EFE02C700FC9E5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D850630C1EFE02C700FC9E5E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D850630D1EFE02C700FC9E5E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D85063101EFE02C700FC9E5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D85063121EFE02C700FC9E5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D85063151EFE02C700FC9E5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D85063171EFE02C700FC9E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D850631B1EFE02EF00FC9E5E /* CVTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVTool.h; sourceTree = "<group>"; };
+		D850631C1EFE02EF00FC9E5E /* CVTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVTool.mm; sourceTree = "<group>"; };
 		DC71E72783B34308D8F86EC6 /* Pods-XCPhotoEditPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCPhotoEditPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCPhotoEditPicker/Pods-XCPhotoEditPicker.release.xcconfig"; sourceTree = "<group>"; };
 		F29275211EFC9CAA0001F866 /* BaiduMap Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BaiduMap Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29275231EFC9CAB0001F866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +127,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D85063011EFE02C700FC9E5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1376173A12C3CC33D5C33B /* libPods-OpenCV Demo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F292751E1EFC9CAA0001F866 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,6 +201,8 @@
 				DC71E72783B34308D8F86EC6 /* Pods-XCPhotoEditPicker.release.xcconfig */,
 				416BC9B1BD993E5EA602B2A0 /* Pods-GitHubApiDemo.debug.xcconfig */,
 				3CCF6EA56C5DD17027929AB1 /* Pods-GitHubApiDemo.release.xcconfig */,
+				078614EE74F1FC7117B9DDE8 /* Pods-OpenCV Demo.debug.xcconfig */,
+				10EFBAEF499DE4D168573224 /* Pods-OpenCV Demo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -183,8 +216,35 @@
 				61070EBB5C25D1E615E82D8D /* Pods_Tip_for_Day_Demo.framework */,
 				1A6BE1231ACD34C4E722FBB4 /* Pods_XCPhotoEditPicker.framework */,
 				D022A5F6BFB15759E670F669 /* Pods_GitHubApiDemo.framework */,
+				34C6CBE9172478076D6AF8D9 /* libPods-OpenCV Demo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D85063051EFE02C700FC9E5E /* OpenCV Demo */ = {
+			isa = PBXGroup;
+			children = (
+				D850631B1EFE02EF00FC9E5E /* CVTool.h */,
+				D850631C1EFE02EF00FC9E5E /* CVTool.mm */,
+				D85063091EFE02C700FC9E5E /* AppDelegate.h */,
+				D850630A1EFE02C700FC9E5E /* AppDelegate.m */,
+				D850630C1EFE02C700FC9E5E /* ViewController.h */,
+				D850630D1EFE02C700FC9E5E /* ViewController.m */,
+				D850630F1EFE02C700FC9E5E /* Main.storyboard */,
+				D85063121EFE02C700FC9E5E /* Assets.xcassets */,
+				D85063141EFE02C700FC9E5E /* LaunchScreen.storyboard */,
+				D85063171EFE02C700FC9E5E /* Info.plist */,
+				D85063061EFE02C700FC9E5E /* Supporting Files */,
+			);
+			path = "OpenCV Demo";
+			sourceTree = "<group>";
+		};
+		D85063061EFE02C700FC9E5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D85063071EFE02C700FC9E5E /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		F29275221EFC9CAB0001F866 /* BaiduMap Demo */ = {
@@ -259,6 +319,7 @@
 				F2B198731EFA479800937200 /* XCPhotoEditPicker */,
 				F29275221EFC9CAB0001F866 /* BaiduMap Demo */,
 				F292753C1EFD0C600001F866 /* GitHubApiDemo */,
+				D85063051EFE02C700FC9E5E /* OpenCV Demo */,
 				F2B2B1931EF8B205009DFDA2 /* Products */,
 				42FBD0CF76602A266377FE1C /* Pods */,
 				48C81C1C840E5A174926DA9B /* Frameworks */,
@@ -274,6 +335,7 @@
 				F2B198721EFA479800937200 /* XCPhotoEditPicker.app */,
 				F29275211EFC9CAA0001F866 /* BaiduMap Demo.app */,
 				F292753B1EFD0C600001F866 /* GitHubApiDemo.app */,
+				D85063041EFE02C700FC9E5E /* OpenCV Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -294,6 +356,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D85063031EFE02C700FC9E5E /* OpenCV Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D850631A1EFE02C700FC9E5E /* Build configuration list for PBXNativeTarget "OpenCV Demo" */;
+			buildPhases = (
+				600769AE2899CE5D33B6C24E /* [CP] Check Pods Manifest.lock */,
+				D85063001EFE02C700FC9E5E /* Sources */,
+				D85063011EFE02C700FC9E5E /* Frameworks */,
+				D85063021EFE02C700FC9E5E /* Resources */,
+				CEEDCF8E26FF110E1D8B6E8D /* [CP] Embed Pods Frameworks */,
+				1B9EE6EF7125F6428C4DBCAB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCV Demo";
+			productName = "OpenCV Demo";
+			productReference = D85063041EFE02C700FC9E5E /* OpenCV Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F29275201EFC9CAA0001F866 /* BaiduMap Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F29275321EFC9CAB0001F866 /* Build configuration list for PBXNativeTarget "BaiduMap Demo" */;
@@ -424,6 +506,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = com.Alexiuce;
 				TargetAttributes = {
+					D85063031EFE02C700FC9E5E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = A95J37CEL7;
+						ProvisioningStyle = Automatic;
+					};
 					F29275201EFC9CAA0001F866 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = A95J37CEL7;
@@ -481,11 +568,22 @@
 				F2B198711EFA479800937200 /* XCPhotoEditPicker */,
 				F29275201EFC9CAA0001F866 /* BaiduMap Demo */,
 				F292753A1EFD0C600001F866 /* GitHubApiDemo */,
+				D85063031EFE02C700FC9E5E /* OpenCV Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D85063021EFE02C700FC9E5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85063161EFE02C700FC9E5E /* LaunchScreen.storyboard in Resources */,
+				D85063131EFE02C700FC9E5E /* Assets.xcassets in Resources */,
+				D85063111EFE02C700FC9E5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F292751F1EFC9CAA0001F866 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -591,6 +689,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Core Image Demo/Pods-Core Image Demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1B9EE6EF7125F6428C4DBCAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenCV Demo/Pods-OpenCV Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1C768DC1C30D4E5F63F4595C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -679,6 +792,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaiduMap Demo/Pods-BaiduMap Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		600769AE2899CE5D33B6C24E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		61F1491ACCD4F637BE250359 /* [CP] Check Pods Manifest.lock */ = {
@@ -771,6 +899,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AVFoundationDemo/Pods-AVFoundationDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CEEDCF8E26FF110E1D8B6E8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenCV Demo/Pods-OpenCV Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ECA6B92DD0680D329BFDF9AC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -819,6 +962,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D85063001EFE02C700FC9E5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D850631D1EFE02EF00FC9E5E /* CVTool.mm in Sources */,
+				D850630E1EFE02C700FC9E5E /* ViewController.m in Sources */,
+				D850630B1EFE02C700FC9E5E /* AppDelegate.m in Sources */,
+				D85063081EFE02C700FC9E5E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F292751D1EFC9CAA0001F866 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -876,6 +1030,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		D850630F1EFE02C700FC9E5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D85063101EFE02C700FC9E5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D85063141EFE02C700FC9E5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D85063151EFE02C700FC9E5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		F29275271EFC9CAB0001F866 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -951,6 +1121,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D85063181EFE02C700FC9E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 078614EE74F1FC7117B9DDE8 /* Pods-OpenCV Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A95J37CEL7;
+				INFOPLIST_FILE = "OpenCV Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexiuce.OpenCV-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D85063191EFE02C700FC9E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10EFBAEF499DE4D168573224 /* Pods-OpenCV Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A95J37CEL7;
+				INFOPLIST_FILE = "OpenCV Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexiuce.OpenCV-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F29275301EFC9CAB0001F866 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8AD9E25444BA99C612736112 /* Pods-BaiduMap Demo.debug.xcconfig */;
@@ -1240,6 +1436,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D850631A1EFE02C700FC9E5E /* Build configuration list for PBXNativeTarget "OpenCV Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85063181EFE02C700FC9E5E /* Debug */,
+				D85063191EFE02C700FC9E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F29275321EFC9CAB0001F866 /* Build configuration list for PBXNativeTarget "BaiduMap Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

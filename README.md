@@ -1,7 +1,7 @@
 # Tip-for-day
 ![](https://img.shields.io/badge/platform-iOS%7CMacOSX-%20lightgrey.svg). 
 
-a demo code project for myself, write down for develop tip
+a demo code project for iOS / Mac , write down for develop tip
 
 ## Demo project All in one 
 ### iOS 
