@@ -27,6 +27,10 @@
 		D850633F1EFE5A5200FC9E5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D850633D1EFE5A5200FC9E5E /* Main.storyboard */; };
 		D85063461EFE922300FC9E5E /* MyXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = D85063451EFE922300FC9E5E /* MyXibView.m */; };
 		D85063481EFE923700FC9E5E /* MyXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85063471EFE923700FC9E5E /* MyXibView.xib */; };
+		D8846E8B1EFFE8F8008AAE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8846E8A1EFFE8F8008AAE5A /* AppDelegate.swift */; };
+		D8846E8D1EFFE8F8008AAE5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8846E8C1EFFE8F8008AAE5A /* ViewController.swift */; };
+		D8846E8F1EFFE8F8008AAE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8846E8E1EFFE8F8008AAE5A /* Assets.xcassets */; };
+		D8846E921EFFE8F8008AAE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8846E901EFFE8F8008AAE5A /* Main.storyboard */; };
 		F29275241EFC9CAB0001F866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29275231EFC9CAB0001F866 /* AppDelegate.swift */; };
 		F29275261EFC9CAB0001F866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29275251EFC9CAB0001F866 /* ViewController.swift */; };
 		F29275291EFC9CAB0001F866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29275271EFC9CAB0001F866 /* Main.storyboard */; };
@@ -102,6 +106,12 @@
 		D85063441EFE922300FC9E5E /* MyXibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyXibView.h; sourceTree = "<group>"; };
 		D85063451EFE922300FC9E5E /* MyXibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyXibView.m; sourceTree = "<group>"; };
 		D85063471EFE923700FC9E5E /* MyXibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyXibView.xib; sourceTree = "<group>"; };
+		D8846E881EFFE8F8008AAE5A /* ConverPDFDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConverPDFDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8846E8A1EFFE8F8008AAE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8846E8C1EFFE8F8008AAE5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8846E8E1EFFE8F8008AAE5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8846E911EFFE8F8008AAE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8846E931EFFE8F8008AAE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC71E72783B34308D8F86EC6 /* Pods-XCPhotoEditPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCPhotoEditPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCPhotoEditPicker/Pods-XCPhotoEditPicker.release.xcconfig"; sourceTree = "<group>"; };
 		F29275211EFC9CAA0001F866 /* BaiduMap Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BaiduMap Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29275231EFC9CAB0001F866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +165,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D850632D1EFE5A5200FC9E5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8846E851EFFE8F8008AAE5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,6 +316,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D8846E891EFFE8F8008AAE5A /* ConverPDFDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D8846E8A1EFFE8F8008AAE5A /* AppDelegate.swift */,
+				D8846E8C1EFFE8F8008AAE5A /* ViewController.swift */,
+				D8846E8E1EFFE8F8008AAE5A /* Assets.xcassets */,
+				D8846E901EFFE8F8008AAE5A /* Main.storyboard */,
+				D8846E931EFFE8F8008AAE5A /* Info.plist */,
+			);
+			path = ConverPDFDemo;
+			sourceTree = "<group>";
+		};
 		F29275221EFC9CAB0001F866 /* BaiduMap Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +402,7 @@
 				F292753C1EFD0C600001F866 /* GitHubApiDemo */,
 				D85063051EFE02C700FC9E5E /* OpenCV Demo */,
 				D85063311EFE5A5200FC9E5E /* XibLoadViewDemo */,
+				D8846E891EFFE8F8008AAE5A /* ConverPDFDemo */,
 				F2B2B1931EF8B205009DFDA2 /* Products */,
 				42FBD0CF76602A266377FE1C /* Pods */,
 				48C81C1C840E5A174926DA9B /* Frameworks */,
@@ -390,6 +420,7 @@
 				F292753B1EFD0C600001F866 /* GitHubApiDemo.app */,
 				D85063041EFE02C700FC9E5E /* OpenCV Demo.app */,
 				D85063301EFE5A5200FC9E5E /* XibLoadViewDemo.app */,
+				D8846E881EFFE8F8008AAE5A /* ConverPDFDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -445,6 +476,23 @@
 			name = XibLoadViewDemo;
 			productName = XibLoadViewDemo;
 			productReference = D85063301EFE5A5200FC9E5E /* XibLoadViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8846E871EFFE8F8008AAE5A /* ConverPDFDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8846E961EFFE8F8008AAE5A /* Build configuration list for PBXNativeTarget "ConverPDFDemo" */;
+			buildPhases = (
+				D8846E841EFFE8F8008AAE5A /* Sources */,
+				D8846E851EFFE8F8008AAE5A /* Frameworks */,
+				D8846E861EFFE8F8008AAE5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConverPDFDemo;
+			productName = ConverPDFDemo;
+			productReference = D8846E881EFFE8F8008AAE5A /* ConverPDFDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F29275201EFC9CAA0001F866 /* BaiduMap Demo */ = {
@@ -587,6 +635,11 @@
 						DevelopmentTeam = A95J37CEL7;
 						ProvisioningStyle = Automatic;
 					};
+					D8846E871EFFE8F8008AAE5A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = A95J37CEL7;
+						ProvisioningStyle = Automatic;
+					};
 					F29275201EFC9CAA0001F866 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = A95J37CEL7;
@@ -646,6 +699,7 @@
 				F292753A1EFD0C600001F866 /* GitHubApiDemo */,
 				D85063031EFE02C700FC9E5E /* OpenCV Demo */,
 				D850632F1EFE5A5200FC9E5E /* XibLoadViewDemo */,
+				D8846E871EFFE8F8008AAE5A /* ConverPDFDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -668,6 +722,15 @@
 				D850633C1EFE5A5200FC9E5E /* Assets.xcassets in Resources */,
 				D850633F1EFE5A5200FC9E5E /* Main.storyboard in Resources */,
 				D85063481EFE923700FC9E5E /* MyXibView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8846E861EFFE8F8008AAE5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8846E8F1EFFE8F8008AAE5A /* Assets.xcassets in Resources */,
+				D8846E921EFFE8F8008AAE5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1071,6 +1134,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8846E841EFFE8F8008AAE5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8846E8D1EFFE8F8008AAE5A /* ViewController.swift in Sources */,
+				D8846E8B1EFFE8F8008AAE5A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F292751D1EFC9CAA0001F866 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1148,6 +1220,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				D850633E1EFE5A5200FC9E5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8846E901EFFE8F8008AAE5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8846E911EFFE8F8008AAE5A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1282,6 +1362,40 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexiuce.XibLoadViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D8846E941EFFE8F8008AAE5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A95J37CEL7;
+				INFOPLIST_FILE = ConverPDFDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexiuce.ConverPDFDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D8846E951EFFE8F8008AAE5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A95J37CEL7;
+				INFOPLIST_FILE = ConverPDFDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexiuce.ConverPDFDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1591,6 +1705,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D8846E961EFFE8F8008AAE5A /* Build configuration list for PBXNativeTarget "ConverPDFDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8846E941EFFE8F8008AAE5A /* Debug */,
+				D8846E951EFFE8F8008AAE5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		F29275321EFC9CAB0001F866 /* Build configuration list for PBXNativeTarget "BaiduMap Demo" */ = {
 			isa = XCConfigurationList;

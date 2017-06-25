@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>ConverPDFDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
 		<key>Core Image Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -53,6 +58,11 @@
 			<true/>
 		</dict>
 		<key>D850632F1EFE5A5200FC9E5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8846E871EFFE8F8008AAE5A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
