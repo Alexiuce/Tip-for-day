@@ -117,4 +117,4 @@ a demo code project for iOS / Mac , write down for develop tip
   
 * Doucment Demo
 
- > 基于文档的应用demo 详情请参考 document readme  
+ > 基于文档的应用demo 详情请参考 [document readme](https://github.com/Alexiuce/Tip-for-day/blob/master/MDocument%20Demo.md)
