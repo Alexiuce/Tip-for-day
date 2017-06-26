@@ -1,23 +1,19 @@
 //
 //  ViewController.swift
-//  GitHubApiDemo
+//  ConverPDFDemo
 //
-//  Created by alexiuce  on 2017/6/23.
+//  Created by Alexcai on 2017/6/25.
 //  Copyright © 2017年 com.Alexiuce. All rights reserved.
 //
 
 import Cocoa
 
-import Alamofire
-import SwiftyJSON
-
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
 
-        
+        // Do any additional setup after loading the view.
     }
 
     override var representedObject: Any? {
@@ -25,5 +21,7 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
+
+
 }
 

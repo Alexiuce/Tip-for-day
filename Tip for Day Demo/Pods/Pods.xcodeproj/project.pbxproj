@@ -8,44 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D60053A66FC6A1EC05BC9B53DA0E3D2 /* Timeline.swift */; };
-		1A063A15A73327FED59D5259D182630F /* Pods-Core Image Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BF16A945B57D33B390497CA6C1E787 /* Pods-Core Image Demo-dummy.m */; };
+		1554EBBAD2AC44BE818062A31299545D /* Pods-OpenCV Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 715CAADA8C095E430A3784E89B4B0EC0 /* Pods-OpenCV Demo-dummy.m */; };
+		1A063A15A73327FED59D5259D182630F /* Pods-Core Image Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E41DDA13D1FDDF6BFF48E080F5A3DFA /* Pods-Core Image Demo-dummy.m */; };
 		1AAFBA16489EFD3268CE97CAA2994A95 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */; };
 		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1F0490D1ECF341B5E0C7876D8C4890 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F180CBC7BE94C917CD7D1E6A4F1CF7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */; };
-		1FA0BF9C205FC83995DCCB480231A0D1 /* Pods-XCPhotoEditPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9533826248A4AA5AF89EA784D5AF35F1 /* Pods-XCPhotoEditPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2386D69ADC86F2222F14C95FD78E5005 /* Pods-Core Image Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0056CB81E6497306C70E2508EBF7AB82 /* Pods-Core Image Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FA0BF9C205FC83995DCCB480231A0D1 /* Pods-XCPhotoEditPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3EDC653BCC0793093F9F1EA060D92AB /* Pods-XCPhotoEditPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2386D69ADC86F2222F14C95FD78E5005 /* Pods-Core Image Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F57BD35E7F1FA74FDF0ADDACD576BE59 /* Pods-Core Image Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27B2B48DD381A6F81EBFDC5BC42E84CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */; };
 		2DE8244F7BAD2A639F291338F1D3B1F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */; };
 		3087813D0BD31A3D6334ED41B258DE75 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B18FD5A799B1F0478119D3EF4F9775 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D317EF3F1D45B267B25AE95218ABA41C /* TaskDelegate.swift */; };
-		3A5F01DCEE721AAC0FC8CFA42E458711 /* Pods-AVFoundationDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36408687A2F2AE8F8DCBD5B4358EF401 /* Pods-AVFoundationDemo-dummy.m */; };
-		3A7C6A2586A8F01617960CE1ACFDBDE8 /* Pods-GitHubApiDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33FA21B5D5C720DE1BBD71DAA8042596 /* Pods-GitHubApiDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A5F01DCEE721AAC0FC8CFA42E458711 /* Pods-AVFoundationDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4566B8B9E8C474F3ECFA2A03E8441 /* Pods-AVFoundationDemo-dummy.m */; };
+		3A7C6A2586A8F01617960CE1ACFDBDE8 /* Pods-GitHubApiDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2F5EF32307183D245D89126A550D271 /* Pods-GitHubApiDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		478ABDF2FDF6D90E8B94823F3EC44BD1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */; };
 		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1395002F5B020B4C1FDABBC23839DE10 /* Request.swift */; };
-		5BE606D3E96B7CE2C75961C1F8D8EA4B /* Pods-BaiduMap Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E7AAB98E2291B3C5743C61A6A90500 /* Pods-BaiduMap Demo-dummy.m */; };
-		5C77858538127A61005C16E095E7DB39 /* Pods-AVFoundationDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7408BF8AB0284E100CF8F4BF5BCCE3D3 /* Pods-AVFoundationDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BE606D3E96B7CE2C75961C1F8D8EA4B /* Pods-BaiduMap Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF80D0421FEE6D39894F454F4E3BDEAD /* Pods-BaiduMap Demo-dummy.m */; };
+		5C77858538127A61005C16E095E7DB39 /* Pods-AVFoundationDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDF7D5A553D3284F97021AD54C41355E /* Pods-AVFoundationDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F3BCAA03FC85096470E3A19AA290460 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */; };
 		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7E7BB563F205518E74AA07CAE50DF /* DispatchQueue+Alamofire.swift */; };
 		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0629934A0A72C0B1CBE34B1887E40 /* ServerTrustPolicy.swift */; };
 		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9C43AEA19C1AEB4729E08330CEF9CC /* SessionDelegate.swift */; };
 		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B7CD8A204FBA376A90576039AF28F2 /* Result.swift */; };
-		81FDD1772F7010582D6234CDA084432C /* Pods-XCPhotoEditPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D968A9361D0BFE4849A063D9372EC9 /* Pods-XCPhotoEditPicker-dummy.m */; };
-		8BD1F35D7A2F791502E79D4C057B262E /* Pods-BaiduMap Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95DB6617069F621236C60EAB013AAB42 /* Pods-BaiduMap Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81FDD1772F7010582D6234CDA084432C /* Pods-XCPhotoEditPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E9ABBDD13969DD8EB945A516541629 /* Pods-XCPhotoEditPicker-dummy.m */; };
+		8BD1F35D7A2F791502E79D4C057B262E /* Pods-BaiduMap Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F3814C7C674EFF7604A0C4EB1386FB /* Pods-BaiduMap Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DB91F7B392D045AB8451F515D20D649 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */; };
 		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DFCFD304DBD694DE021B9725E15284 /* AFError.swift */; };
-		9FC122B4C8B3829CF98A05A888EB46C5 /* Pods-Tip for Day Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EE429193C3930FDD9F49311C780DFC /* Pods-Tip for Day Demo-dummy.m */; };
+		9FC122B4C8B3829CF98A05A888EB46C5 /* Pods-Tip for Day Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC650027A260DC48F608A7CDDF8C275A /* Pods-Tip for Day Demo-dummy.m */; };
 		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC34F34FC8B186D5EA1D71DA3027E0 /* NetworkReachabilityManager.swift */; };
 		A9E02A55471AA668BF5A4124D8F748B6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A1879ECDC3200209FC4F19319C3499 /* SwiftyJSON.swift */; };
 		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9D01620473872EBE288B77894D409 /* Alamofire-dummy.m */; };
 		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7796A8CA622D8E59031811CD028C2B1E /* SessionManager.swift */; };
 		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C478D051DD6DAEC41D7D0F065CF3592 /* MultipartFormData.swift */; };
-		B6ACFFF5D3401B285CDDF04910699BDF /* Pods-GitHubApiDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5730F6EB01296CB7228F89DFC0662BCE /* Pods-GitHubApiDemo-dummy.m */; };
+		B6ACFFF5D3401B285CDDF04910699BDF /* Pods-GitHubApiDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE48545F37B8F29406F1C96B21B66863 /* Pods-GitHubApiDemo-dummy.m */; };
 		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC0DE320E53364F161DDC4AD4D2A99 /* Validation.swift */; };
 		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EA14B839187F14E369A05D602EE09 /* ParameterEncoding.swift */; };
 		BF0FC4AB1A97C073079B4C7CA9276A27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */; };
 		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D469B739A65AF0CA334D93B16E7F1 /* Response.swift */; };
-		DE8FD0E2FCA64F9C3C3AE043637B1F85 /* Pods-Tip for Day Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9AB0606C98314BEBAF6AE7D2D5FA16B /* Pods-Tip for Day Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE8FD0E2FCA64F9C3C3AE043637B1F85 /* Pods-Tip for Day Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B78871E41C60B987EF379C7EA71F006 /* Pods-Tip for Day Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECCEA46D82FE24DB410C23D9EE66B9A8 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AF5347E6827478900283C225345467 /* SwiftyJSON-dummy.m */; };
+		ECD4745ED4F5CF73E6DF3CFC7079065B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */; };
 		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C752DC2E61BA65B5BA94FC660DF6A796 /* Notifications.swift */; };
 		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F47D45420DC90D7C63BB7379834559 /* ResponseSerialization.swift */; };
 		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335E3BA14BDA3AA0EEF6E1F080F31917 /* Alamofire.swift */; };
@@ -69,165 +71,172 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0056CB81E6497306C70E2508EBF7AB82 /* Pods-Core Image Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Core Image Demo-umbrella.h"; sourceTree = "<group>"; };
 		007D0ED0A85BD62F15CC29A7C689D47D /* BMKTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKTypes.h; path = BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKTypes.h; sourceTree = "<group>"; };
 		02B18FD5A799B1F0478119D3EF4F9775 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		04A9C5AE0D58B35153D2F28A6264739D /* BMKCircleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKCircleView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKCircleView.h; sourceTree = "<group>"; };
+		04C217D8574FE1061A461F9186223E10 /* Pods-Tip for Day Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tip for Day Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		05983366AE04FFD78F96E70644650A3C /* BMKPinAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPinAnnotationView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKPinAnnotationView.h; sourceTree = "<group>"; };
-		05C87BC53CD4E84A2FC4E14D60473C8A /* Pods-Tip for Day Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Tip for Day Demo.modulemap"; sourceTree = "<group>"; };
-		072C30E4D81A9D294FC2762E973B589D /* Pods-AVFoundationDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AVFoundationDemo-frameworks.sh"; sourceTree = "<group>"; };
-		08D12EAD0E75A7E9C0E35A31D57E3751 /* Pods-GitHubApiDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubApiDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		0A535C056F421E8F32F4ECA2F78D304A /* Pods-Tip for Day Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tip for Day Demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		06E3A10CE653AF47794589C6ABCF5E18 /* Pods-AVFoundationDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AVFoundationDemo-frameworks.sh"; sourceTree = "<group>"; };
+		08E9ABBDD13969DD8EB945A516541629 /* Pods-XCPhotoEditPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XCPhotoEditPicker-dummy.m"; sourceTree = "<group>"; };
+		0AA4CB66FF91D9E71F9679CFC05C4CCF /* Pods-BaiduMap Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BaiduMap Demo-acknowledgements.plist"; sourceTree = "<group>"; };
 		0B8AC839F342D62801CCC79ED0E001F3 /* BMKFavPoiManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKFavPoiManager.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKFavPoiManager.h; sourceTree = "<group>"; };
 		0D2844EFBA2B142038E67F20E31BE1AA /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		106671593567B678125F84AE2F0226E5 /* Pods-AVFoundationDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AVFoundationDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0E711638B2786012BCFBFC071C8E3F35 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FCB9E393EFFD825510F08250E4C3145 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		134D6E08B97A114154FFDCCE9C0D1699 /* libPods-OpenCV Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-OpenCV Demo.a"; path = "libPods-OpenCV Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13721DEC218B7AB4BDFC1EB925EB0D07 /* BMKOpenRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOpenRoute.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKOpenRoute.h; sourceTree = "<group>"; };
 		1395002F5B020B4C1FDABBC23839DE10 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		13956714E006B38935E0C372410AF70E /* Pods-Tip for Day Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tip for Day Demo-frameworks.sh"; sourceTree = "<group>"; };
+		15437EA99E4150578D9CF3D4843338D8 /* Pods-XCPhotoEditPicker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XCPhotoEditPicker-acknowledgements.markdown"; sourceTree = "<group>"; };
 		16765311E22E20332F1C391422A89D1C /* BMKShape.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKShape.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKShape.h; sourceTree = "<group>"; };
+		18633B8F31DC1598FE328080D0629BD7 /* Pods-BaiduMap Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BaiduMap Demo.modulemap"; sourceTree = "<group>"; };
+		18B8D44EA9E98AB991051C1FDB2203F7 /* Pods_XCPhotoEditPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XCPhotoEditPicker.framework; path = "Pods-XCPhotoEditPicker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A36E7597273B0489F36F35394DEAF24 /* Pods-BaiduMap Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaiduMap Demo-resources.sh"; sourceTree = "<group>"; };
 		1A7ECC8AE5D0271E25215A18585684C6 /* BMKVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKVersion.h; path = BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKVersion.h; sourceTree = "<group>"; };
-		1AAAA350276F609B521FCC7F225BA469 /* Pods-XCPhotoEditPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-XCPhotoEditPicker.modulemap"; sourceTree = "<group>"; };
 		1ADF933A17E37FE2337B333641A5C063 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		1CBFEB5F6F7C24FB154CF4811919DF86 /* BMKCloudSearchInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKCloudSearchInfo.h; path = BaiduMapKit/BaiduMapAPI_Cloud.framework/Headers/BMKCloudSearchInfo.h; sourceTree = "<group>"; };
 		1D55204D663A33F5B2F522F6AA491442 /* BMKGroundOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGroundOverlayView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKGroundOverlayView.h; sourceTree = "<group>"; };
 		1E16A211BC85B3750E6A61FAB956D1F4 /* BMKLocationComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKLocationComponent.h; path = BaiduMapKit/BaiduMapAPI_Location.framework/Headers/BMKLocationComponent.h; sourceTree = "<group>"; };
 		22567713FB5208229EAAE2126F77E9EE /* BMKRadarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRadarManager.h; path = BaiduMapKit/BaiduMapAPI_Radar.framework/Headers/BMKRadarManager.h; sourceTree = "<group>"; };
-		22574D06E00A4823F9357DA8EB007E02 /* Pods-GitHubApiDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GitHubApiDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2257275ADDE35C7A7BC2DB71BC4AC079 /* Pods-BaiduMap Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaiduMap Demo.release.xcconfig"; sourceTree = "<group>"; };
+		23982F43A20874E52DFA2D806A96ABFC /* Pods-AVFoundationDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AVFoundationDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		23EE2108D7A8923E93CF8075EB7CC01D /* Pods-GitHubApiDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubApiDemo-resources.sh"; sourceTree = "<group>"; };
+		23F3814C7C674EFF7604A0C4EB1386FB /* Pods-BaiduMap Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BaiduMap Demo-umbrella.h"; sourceTree = "<group>"; };
 		25BE4339058E35F3E927CEFBE4755E95 /* BMKGeocodeType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGeocodeType.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKGeocodeType.h; sourceTree = "<group>"; };
+		276FC58D8745224E8AACC1FED65193D6 /* Pods-XCPhotoEditPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-XCPhotoEditPicker.modulemap"; sourceTree = "<group>"; };
 		29492319746405CA052CCA35B860AF7F /* BMKLocationVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKLocationVersion.h; path = BaiduMapKit/BaiduMapAPI_Location.framework/Headers/BMKLocationVersion.h; sourceTree = "<group>"; };
-		29BEA80E053BE1B53C8D3EE2E1295864 /* Pods-BaiduMap Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BaiduMap Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		29FDE65DE9EBC4F2D17AB849E7C99E9B /* BaiduMapAPI_Radar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Radar.framework; path = BaiduMapKit/BaiduMapAPI_Radar.framework; sourceTree = "<group>"; };
+		2A38F8B26A7CEEFEBCE8A10F0F28C509 /* Pods-AVFoundationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVFoundationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		2B82F8063A954B9DC7C163C5B07D8D1B /* BMKOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOverlayView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKOverlayView.h; sourceTree = "<group>"; };
 		2C53527022312B293767043EB7B6E4AA /* BMKOpenOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOpenOption.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKOpenOption.h; sourceTree = "<group>"; };
-		2D145EBE85A85E538730ECFCD56A2A24 /* Pods-GitHubApiDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubApiDemo-resources.sh"; sourceTree = "<group>"; };
 		2D60053A66FC6A1EC05BC9B53DA0E3D2 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		2E41DDA13D1FDDF6BFF48E080F5A3DFA /* Pods-Core Image Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Core Image Demo-dummy.m"; sourceTree = "<group>"; };
 		2E58C0B32467422D4B369D367E4E2950 /* BMKShareURLSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKShareURLSearch.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKShareURLSearch.h; sourceTree = "<group>"; };
-		2E6F659C4B5AF2EA1E6E96FFCA02C878 /* Pods-GitHubApiDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubApiDemo.release.xcconfig"; sourceTree = "<group>"; };
 		300A7B8A1BD9552DA377A859667AF503 /* BMKRouteSearchOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRouteSearchOption.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKRouteSearchOption.h; sourceTree = "<group>"; };
 		3101D6C9FFCADB886532BE2B90E43D48 /* BMKOpenPoiOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOpenPoiOption.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKOpenPoiOption.h; sourceTree = "<group>"; };
 		31774FFAC2567F1076CF0E0CB72EC79A /* BMKGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGeometry.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKGeometry.h; sourceTree = "<group>"; };
 		32360246C31A2BA41FB96D9CB61C6BEA /* BMKMapVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKMapVersion.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKMapVersion.h; sourceTree = "<group>"; };
-		32AEDCAA58167E7FF2F6A4A392015684 /* Pods-Core Image Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Core Image Demo.modulemap"; sourceTree = "<group>"; };
+		32795D6E3221236F7864FAA92459EA4E /* Pods_Core_Image_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Core_Image_Demo.framework; path = "Pods-Core Image Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		334938B62F87239CD224CF07B49FD1F9 /* BMKBaseComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKBaseComponent.h; path = BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKBaseComponent.h; sourceTree = "<group>"; };
 		335E3BA14BDA3AA0EEF6E1F080F31917 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		33703D7748D0D31DABEC1C8B36AAF223 /* Pods-Core Image Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Core Image Demo-acknowledgements.plist"; sourceTree = "<group>"; };
-		33FA21B5D5C720DE1BBD71DAA8042596 /* Pods-GitHubApiDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GitHubApiDemo-umbrella.h"; sourceTree = "<group>"; };
 		34567A4CFB3B5D62B5ECC6994DD2CCE9 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Location.framework; path = BaiduMapKit/BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
 		34D77598BD9636F714029B341547EB93 /* BMKOpenPoi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOpenPoi.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKOpenPoi.h; sourceTree = "<group>"; };
 		35A1879ECDC3200209FC4F19319C3499 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		36220ECFBEBFE7AFF5FABC61DDCA38D6 /* Pods-XCPhotoEditPicker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XCPhotoEditPicker-acknowledgements.markdown"; sourceTree = "<group>"; };
-		36408687A2F2AE8F8DCBD5B4358EF401 /* Pods-AVFoundationDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AVFoundationDemo-dummy.m"; sourceTree = "<group>"; };
 		3708CA21B6499BEEDE837BEE700E2406 /* BMKSearchComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKSearchComponent.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKSearchComponent.h; sourceTree = "<group>"; };
 		37C1B102269C83978A3CC9D0BEDE9E85 /* BMKCloudSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKCloudSearch.h; path = BaiduMapKit/BaiduMapAPI_Cloud.framework/Headers/BMKCloudSearch.h; sourceTree = "<group>"; };
-		37E7AAB98E2291B3C5743C61A6A90500 /* Pods-BaiduMap Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BaiduMap Demo-dummy.m"; sourceTree = "<group>"; };
 		37EE453CDA7D0247E4EFAC7A10EBF49B /* BMKLocationViewDisplayParam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKLocationViewDisplayParam.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKLocationViewDisplayParam.h; sourceTree = "<group>"; };
-		39BF16A945B57D33B390497CA6C1E787 /* Pods-Core Image Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Core Image Demo-dummy.m"; sourceTree = "<group>"; };
+		399895D78C32A1055BE4C5EF4B5479A1 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ACD04D410DC8745194969CCB8844F1B /* BMKTileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKTileLayer.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKTileLayer.h; sourceTree = "<group>"; };
-		3B58983550F3CD1D2C47F57458FAD55F /* Pods-BaiduMap Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaiduMap Demo-frameworks.sh"; sourceTree = "<group>"; };
-		3BAAB1D763C6B9741605864C9F596A88 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C23EF5D6B0127A6A9BA4C8902B0D291 /* Pods-OpenCV Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenCV Demo.release.xcconfig"; sourceTree = "<group>"; };
 		3C770FD66538D95D2478A5F68B944D42 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		418C558965CCD6A4E6123A8FF7A47B70 /* BMKSuggestionSearchOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKSuggestionSearchOption.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKSuggestionSearchOption.h; sourceTree = "<group>"; };
-		41D968A9361D0BFE4849A063D9372EC9 /* Pods-XCPhotoEditPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XCPhotoEditPicker-dummy.m"; sourceTree = "<group>"; };
-		42F0D83EE4BE56F7D9A22823F447962A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4336ED6ABCD317AE6CCDC252BF7308F8 /* Pods_AVFoundationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AVFoundationDemo.framework; path = "Pods-AVFoundationDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4416A58310FCDC2EB7C9FD10CC2C3E27 /* BMKPoiSearchOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPoiSearchOption.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKPoiSearchOption.h; sourceTree = "<group>"; };
-		4464CC0ABEA8D0B6159912B46897306D /* Pods-Core Image Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Core Image Demo-resources.sh"; sourceTree = "<group>"; };
+		457D67B274010993D3C5A8724C502A92 /* Pods-GitHubApiDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GitHubApiDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4593F71C461A22819BA41CC2B289162D /* BMKPolylineView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPolylineView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKPolylineView.h; sourceTree = "<group>"; };
-		45B5E432644D252B45799AA73E1BB8D2 /* Pods-Core Image Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Core Image Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		47BDC230E27E17550194C5B60D7DA6EF /* Pods_BaiduMap_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BaiduMap_Demo.framework; path = "Pods-BaiduMap Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E0629934A0A72C0B1CBE34B1887E40 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		481632557F947EAB9CF4E28953E19119 /* Pods-Core Image Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Core Image Demo.modulemap"; sourceTree = "<group>"; };
 		4C7D469B739A65AF0CA334D93B16E7F1 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		4FA3C6E46E3317949C991C4DAF9375E4 /* Pods-BaiduMap Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BaiduMap Demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		4F5C7FD671CD7F727BF39A887CDF2A10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FAA3DEADED92654128697A640341131 /* BMKPolygonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPolygonView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKPolygonView.h; sourceTree = "<group>"; };
-		5052470D1D51CF0D2AB93BCCBBECEA63 /* Pods-AVFoundationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVFoundationDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		5244838F1C50298A741685AEDC906108 /* Pods-GitHubApiDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GitHubApiDemo.modulemap"; sourceTree = "<group>"; };
 		52F7804A0C3C9D880793CC742999784D /* BMKBusLineSearchOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKBusLineSearchOption.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKBusLineSearchOption.h; sourceTree = "<group>"; };
 		532BE382DC0952C7CC3144B4BE7C994D /* BMKRadarOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRadarOption.h; path = BaiduMapKit/BaiduMapAPI_Radar.framework/Headers/BMKRadarOption.h; sourceTree = "<group>"; };
 		545C785F5F55A123BFC43BC0E38B22B9 /* BMKGeneralDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGeneralDelegate.h; path = BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKGeneralDelegate.h; sourceTree = "<group>"; };
-		5730F6EB01296CB7228F89DFC0662BCE /* Pods-GitHubApiDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GitHubApiDemo-dummy.m"; sourceTree = "<group>"; };
 		57729D22A87FEF4E031E50118835B4CC /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Map.framework; path = BaiduMapKit/BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
 		5A9C43AEA19C1AEB4729E08330CEF9CC /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		5CEEAFA8AE01BBF4104DC6395D766128 /* Pods-AVFoundationDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AVFoundationDemo-resources.sh"; sourceTree = "<group>"; };
 		5F0E76C078E838FF7C812D7F4A8AAF85 /* BMKRadarComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRadarComponent.h; path = BaiduMapKit/BaiduMapAPI_Radar.framework/Headers/BMKRadarComponent.h; sourceTree = "<group>"; };
 		619931777F3680EF97A7367E791917E5 /* BMKMapComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKMapComponent.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKMapComponent.h; sourceTree = "<group>"; };
+		61C0231FAD442C83ACE98F891D6EF39A /* Pods-Tip for Day Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Tip for Day Demo.modulemap"; sourceTree = "<group>"; };
+		61F9736880DD0506AE608ECE5B665E85 /* Pods-Core Image Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Core Image Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		646153642687D1894018FC0C85A91BBD /* Pods-XCPhotoEditPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCPhotoEditPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		648CF38008797768CC3629074E557BFF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64DC5F0E04351CF4F762078CEE0318CA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64F37E335A363CDFC0A892F71A4E355B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67A8E65A72000B6B70712BEF2ECBF340 /* BMKNavigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKNavigation.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKNavigation.h; sourceTree = "<group>"; };
-		68D8B59B43989BAB216E47785B235410 /* Pods-Tip for Day Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tip for Day Demo-resources.sh"; sourceTree = "<group>"; };
 		693C1371B1CCA89D696F71C0628985FB /* BMKCloudVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKCloudVersion.h; path = BaiduMapKit/BaiduMapAPI_Cloud.framework/Headers/BMKCloudVersion.h; sourceTree = "<group>"; };
-		69CCCC04EC17A933D316CBAF477C36DE /* Pods-Core Image Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Core Image Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6DD3936A1584B8242DC8FFAB1D63359C /* Pods-XCPhotoEditPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCPhotoEditPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		69CCBEB67D933D3B770E8258411D5FCA /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B50E9FE7AB81F3D46F71E9AA99DCD1E /* Pods-Core Image Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Core Image Demo-frameworks.sh"; sourceTree = "<group>"; };
+		6B78871E41C60B987EF379C7EA71F006 /* Pods-Tip for Day Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tip for Day Demo-umbrella.h"; sourceTree = "<group>"; };
+		6E69D4461FDD3B976374261FE83682DB /* Pods-OpenCV Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenCV Demo-resources.sh"; sourceTree = "<group>"; };
+		6EFDA38D60A7EF8FECAD58B7667CDF26 /* Pods-OpenCV Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenCV Demo-frameworks.sh"; sourceTree = "<group>"; };
 		6F0D561D25F193EA9BA18A471E8D14AF /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Search.framework; path = BaiduMapKit/BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
 		6F59741C986D7961D0FAA5FD5490E8EC /* BMKShareUrlSearchOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKShareUrlSearchOption.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKShareUrlSearchOption.h; sourceTree = "<group>"; };
+		715CAADA8C095E430A3784E89B4B0EC0 /* Pods-OpenCV Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenCV Demo-dummy.m"; sourceTree = "<group>"; };
 		71DFCFD304DBD694DE021B9725E15284 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		7245C6B680131F472AD87D11348C320C /* BMKFavPoiInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKFavPoiInfo.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKFavPoiInfo.h; sourceTree = "<group>"; };
 		72708DC59948B5E41ACD3803107BF5DD /* BMKPointAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPointAnnotation.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKPointAnnotation.h; sourceTree = "<group>"; };
-		7408BF8AB0284E100CF8F4BF5BCCE3D3 /* Pods-AVFoundationDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AVFoundationDemo-umbrella.h"; sourceTree = "<group>"; };
-		7418ED9DD6DE132F0EC359CAE47F4194 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74D22917C27DDA54DDF90EF1D53A86D8 /* Pods-AVFoundationDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVFoundationDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		75FEA6A4859B52721CAD995B362EE3E6 /* BMKUtilsVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKUtilsVersion.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKUtilsVersion.h; sourceTree = "<group>"; };
 		764B1B779EBE4DA972E69FAB69F79EF8 /* BMKMapStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKMapStatus.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKMapStatus.h; sourceTree = "<group>"; };
 		7712764B34CBE00C0C9BDB76EE5E8A84 /* BMKBaseIndoorMapInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKBaseIndoorMapInfo.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKBaseIndoorMapInfo.h; sourceTree = "<group>"; };
+		7721CA4743B601E168EB5F4CB6676FA3 /* Pods_GitHubApiDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GitHubApiDemo.framework; path = "Pods-GitHubApiDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7796A8CA622D8E59031811CD028C2B1E /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		77F47D45420DC90D7C63BB7379834559 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		788DABEBFE33969FD70D0CF92CE3FEDE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79603B809B74A04CEDFD93CF13DACD5B /* Pods-Tip for Day Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tip for Day Demo-acknowledgements.plist"; sourceTree = "<group>"; };
 		79AF5347E6827478900283C225345467 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		7AE183029001F3849BCD8834189918C0 /* Pods-AVFoundationDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AVFoundationDemo-resources.sh"; sourceTree = "<group>"; };
-		7B86CF71B160789FE9E8063136DBD385 /* Pods_GitHubApiDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GitHubApiDemo.framework; path = "Pods-GitHubApiDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC7F78443422AF956E1B2E74F68AAB5 /* BMKUserLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKUserLocation.h; path = BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKUserLocation.h; sourceTree = "<group>"; };
 		7F5C3C6B2E97E5DD16A736742F6D32F5 /* BMKRadarVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRadarVersion.h; path = BaiduMapKit/BaiduMapAPI_Radar.framework/Headers/BMKRadarVersion.h; sourceTree = "<group>"; };
 		8050D03284B02582B579D70983150011 /* BMKUtilsComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKUtilsComponent.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKUtilsComponent.h; sourceTree = "<group>"; };
 		81E30EF38EECA64E59CD5663718E9CF4 /* BMKPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPolygon.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKPolygon.h; sourceTree = "<group>"; };
 		83BBBE1CDCA232C25C4A6896A877FB46 /* BMKHeatMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKHeatMap.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKHeatMap.h; sourceTree = "<group>"; };
 		85428D12B961B340C0D4DF58E0BD4632 /* BMKPoiSearchType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPoiSearchType.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKPoiSearchType.h; sourceTree = "<group>"; };
-		85EE429193C3930FDD9F49311C780DFC /* Pods-Tip for Day Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tip for Day Demo-dummy.m"; sourceTree = "<group>"; };
 		860D961B41FE9696FB0F3111F2E32B9F /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		86BAD832786650E7F199EC2B8D7FC673 /* Pods-OpenCV Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenCV Demo-acknowledgements.plist"; sourceTree = "<group>"; };
 		876CD246E71E0F7F6DC5E458930CE6E5 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Base.framework; path = BaiduMapKit/BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
-		8845C28EE197D1500F9B509D744E5DB8 /* Pods-XCPhotoEditPicker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCPhotoEditPicker-acknowledgements.plist"; sourceTree = "<group>"; };
 		89EC0DE320E53364F161DDC4AD4D2A99 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		8B9E4ABA860D863D08E66183AAE013E0 /* Pods-XCPhotoEditPicker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XCPhotoEditPicker-frameworks.sh"; sourceTree = "<group>"; };
 		8CE9D01620473872EBE288B77894D409 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		8D5CE900B08E4F840FCB8F0D8CA7C5C8 /* BMKAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKAnnotationView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKAnnotationView.h; sourceTree = "<group>"; };
+		8D9E81C73535335D488B64F66960D263 /* Pods-Core Image Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Core Image Demo-resources.sh"; sourceTree = "<group>"; };
 		8E1F0490D1ECF341B5E0C7876D8C4890 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		90A5F8974CD4971CA748C0C2A9C3E56F /* BMKTileLayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKTileLayerView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKTileLayerView.h; sourceTree = "<group>"; };
-		90B83D15DA4735142CC88DF9CD051DE9 /* Pods_XCPhotoEditPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XCPhotoEditPicker.framework; path = "Pods-XCPhotoEditPicker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		90C99A8BF24338E72746F31ABAAC5B78 /* Pods-Tip for Day Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tip for Day Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		91825ED0A71DF20D3185DC5B8F81895E /* BMKArclineView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKArclineView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKArclineView.h; sourceTree = "<group>"; };
+		92D09B895977D4863B9608E9B4C828DA /* Pods-OpenCV Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenCV Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93302C280390615157230035EF5FAF01 /* Pods-GitHubApiDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GitHubApiDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9460A478CAE129B6B784E7AAB81C9CC4 /* BMKBusLineSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKBusLineSearch.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKBusLineSearch.h; sourceTree = "<group>"; };
-		9533826248A4AA5AF89EA784D5AF35F1 /* Pods-XCPhotoEditPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XCPhotoEditPicker-umbrella.h"; sourceTree = "<group>"; };
-		95DB6617069F621236C60EAB013AAB42 /* Pods-BaiduMap Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BaiduMap Demo-umbrella.h"; sourceTree = "<group>"; };
+		94CA812D629F994499346EAC6B91EE86 /* Pods-BaiduMap Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaiduMap Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		9C35B388A35D5B2912759DA4109C3BB9 /* Pods-XCPhotoEditPicker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XCPhotoEditPicker-resources.sh"; sourceTree = "<group>"; };
 		9C478D051DD6DAEC41D7D0F065CF3592 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		9CFA2C6CD699E1CCDA9EF07EF8123D8D /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		9DF4566B8B9E8C474F3ECFA2A03E8441 /* Pods-AVFoundationDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AVFoundationDemo-dummy.m"; sourceTree = "<group>"; };
+		9E53B2DD9DD93C6DFB84E7DE1C3E79F2 /* Pods_AVFoundationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AVFoundationDemo.framework; path = "Pods-AVFoundationDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E571B58C72E5127ACF83BBB704F20BF /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = BaiduMapKit/thirdlibs/libssl.a; sourceTree = "<group>"; };
+		9E60E4E80C8F71E95DA51B24D882B64B /* Pods-OpenCV Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenCV Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		9E9550062AC42EBD5C8455AEEBA790CB /* BMKMultiPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKMultiPoint.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKMultiPoint.h; sourceTree = "<group>"; };
-		9EA8A2E48A0A98AC08D0B6C8EDDDF6F8 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC7E7BB563F205518E74AA07CAE50DF /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		9FAC8D9D49DBAD4796401F8435FAF4F5 /* BMKSearchVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKSearchVersion.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKSearchVersion.h; sourceTree = "<group>"; };
-		A1093916AF0CF7F5564C36DE63329B19 /* Pods_Tip_for_Day_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tip_for_Day_Demo.framework; path = "Pods-Tip for Day Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19B8B2202DD1458B46086F6A69C655F /* Pods-GitHubApiDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubApiDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A1C807AE3717303036DA66015AB0C7DF /* Pods_Tip_for_Day_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tip_for_Day_Demo.framework; path = "Pods-Tip for Day Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B7CD8A204FBA376A90576039AF28F2 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		A46952CB3773193E3934B5971DA33E75 /* Pods-BaiduMap Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaiduMap Demo-resources.sh"; sourceTree = "<group>"; };
-		A89461E0FB2F0EFC9E728C692C8EEBE5 /* Pods-GitHubApiDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GitHubApiDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		A2F5EF32307183D245D89126A550D271 /* Pods-GitHubApiDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GitHubApiDemo-umbrella.h"; sourceTree = "<group>"; };
+		A410304F14F80C33A04AA081DBEBCDA9 /* Pods-XCPhotoEditPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCPhotoEditPicker.release.xcconfig"; sourceTree = "<group>"; };
+		A7DD885A44E1987477CE216FAA8E393F /* Pods-XCPhotoEditPicker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCPhotoEditPicker-acknowledgements.plist"; sourceTree = "<group>"; };
 		A93CAC929AAD007FC8001028BF664826 /* BMKCloudPOIList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKCloudPOIList.h; path = BaiduMapKit/BaiduMapAPI_Cloud.framework/Headers/BMKCloudPOIList.h; sourceTree = "<group>"; };
-		A9AB0606C98314BEBAF6AE7D2D5FA16B /* Pods-Tip for Day Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tip for Day Demo-umbrella.h"; sourceTree = "<group>"; };
-		A9B84384ED6FEEB31DA1C43809CEF2B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA38EB036423DF298B64FB958F7A1BBF /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Cloud.framework; path = BaiduMapKit/BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
-		AB21E13F33FBE85D06CCF922E98BD744 /* Pods-Tip for Day Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tip for Day Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB32D8598AA1944DDF1E3113ED28E53C /* Pods-Core Image Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Core Image Demo.release.xcconfig"; sourceTree = "<group>"; };
 		AB9F34CA4EA63BAFF3A06DE01034DF1B /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		AE8CB24BE67197B5F99CA9896CBB53A4 /* Pods-AVFoundationDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVFoundationDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		B0FEBE3A85F4E45EE1DE23E88163AD10 /* BMKCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKCircle.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKCircle.h; sourceTree = "<group>"; };
 		B5FA0FD114670CB0A6E4EFE04E3B2CF0 /* BMKRadarResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRadarResult.h; path = BaiduMapKit/BaiduMapAPI_Radar.framework/Headers/BMKRadarResult.h; sourceTree = "<group>"; };
-		B94EAA5B2E97A584A7A349AA08ADDFBA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6C6AC2D6BFEC6B7E4A14B4000625B0B /* Pods-AVFoundationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVFoundationDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B96FB4F4C8139E7B2669037D3CF13D51 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Utils.framework; path = BaiduMapKit/BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
 		BA2BAC9A19BFDD23AA282F90075E29BF /* BMKOfflineMapType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOfflineMapType.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKOfflineMapType.h; sourceTree = "<group>"; };
 		BC699B861655E2FF246D0A849DB2A882 /* BMKGroundOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGroundOverlay.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKGroundOverlay.h; sourceTree = "<group>"; };
 		BDE35CA3EBA1A1CCB4B2329DD6F745F8 /* BMKMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKMapView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKMapView.h; sourceTree = "<group>"; };
+		BE48545F37B8F29406F1C96B21B66863 /* Pods-GitHubApiDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GitHubApiDemo-dummy.m"; sourceTree = "<group>"; };
 		C142C79DC4286909BDA661A8DA594073 /* BMKMapManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKMapManager.h; path = BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKMapManager.h; sourceTree = "<group>"; };
+		C16CB7B8593947016C304FE4534EF24C /* Pods-GitHubApiDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GitHubApiDemo.modulemap"; sourceTree = "<group>"; };
 		C320B59945C55E8A8744F0CD2144715B /* BMKCloudSearchComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKCloudSearchComponent.h; path = BaiduMapKit/BaiduMapAPI_Cloud.framework/Headers/BMKCloudSearchComponent.h; sourceTree = "<group>"; };
 		C3693509E4E50FE0E7E20826DD1DC0F5 /* BMKGeocodeSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGeocodeSearch.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKGeocodeSearch.h; sourceTree = "<group>"; };
 		C38831A662EEBC2E8405A198E7FE9765 /* BMKGeocodeSearchOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGeocodeSearchOption.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKGeocodeSearchOption.h; sourceTree = "<group>"; };
 		C3FAD6E9132313AEE6150B1F70F3990A /* BMKOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOverlay.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKOverlay.h; sourceTree = "<group>"; };
+		C5A1C61053C0077937AB2B7A034E6A5B /* Pods-GitHubApiDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubApiDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C752DC2E61BA65B5BA94FC660DF6A796 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		C94FD6E8209538330F9DEF779E148137 /* Pods-XCPhotoEditPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCPhotoEditPicker.release.xcconfig"; sourceTree = "<group>"; };
 		CA207D132A0472999DC7E5C7A905E98D /* BMKOverlayGLBasicView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOverlayGLBasicView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKOverlayGLBasicView.h; sourceTree = "<group>"; };
-		CB21294D7BA171D8FD87A1014832065E /* Pods-AVFoundationDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AVFoundationDemo.modulemap"; sourceTree = "<group>"; };
+		CAB0AB6C1A45C34827050B8BCE92BE8C /* Pods-XCPhotoEditPicker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XCPhotoEditPicker-frameworks.sh"; sourceTree = "<group>"; };
 		CCEC326179B6BE5CF11608D6DD11356C /* BMKPoiSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPoiSearch.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKPoiSearch.h; sourceTree = "<group>"; };
 		CD3EA14B839187F14E369A05D602EE09 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		CDB68086B551FF6E1630DFF87694C144 /* Pods_Core_Image_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Core_Image_Demo.framework; path = "Pods-Core Image Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		CDF9CB44BD088776CEA672FB6680F216 /* BMKSearchBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKSearchBase.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKSearchBase.h; sourceTree = "<group>"; };
 		CEA04B70026E24856B2B763EC8083CCC /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = BaiduMapKit/thirdlibs/libcrypto.a; sourceTree = "<group>"; };
@@ -235,34 +244,35 @@
 		D317EF3F1D45B267B25AE95218ABA41C /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		D387BE6BC0714D840132FC18431EAADC /* BMKOpenRouteOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOpenRouteOption.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKOpenRouteOption.h; sourceTree = "<group>"; };
 		D568E5D1F42E525F43C24C444BD1F2F7 /* BMKOfflineMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOfflineMap.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKOfflineMap.h; sourceTree = "<group>"; };
-		D5BD1F9695DDB22C8C6B72E573BE9EA8 /* Pods_BaiduMap_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BaiduMap_Demo.framework; path = "Pods-BaiduMap Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D742455B9AE028F1B58F712E1161DEBB /* Pods-Core Image Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Core Image Demo.release.xcconfig"; sourceTree = "<group>"; };
 		D86812480512C2CC737FDDA5B411E4D2 /* BMKOverlayPathView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOverlayPathView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKOverlayPathView.h; sourceTree = "<group>"; };
-		D9F66008B7333A30881294FEC751326E /* Pods-BaiduMap Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaiduMap Demo.release.xcconfig"; sourceTree = "<group>"; };
+		D94B50CC8FAD30445ACF1688C69C6095 /* Pods-GitHubApiDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubApiDemo-frameworks.sh"; sourceTree = "<group>"; };
+		DA9F4C0ED348D32305871C0BE60DC73E /* Pods-AVFoundationDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AVFoundationDemo.modulemap"; sourceTree = "<group>"; };
+		DB7CF1BE2A56E816A7DC97800C613569 /* Pods-Core Image Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Core Image Demo-acknowledgements.plist"; sourceTree = "<group>"; };
 		DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DC588CDB09B6932644B087944AB505AC /* BMKGradient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGradient.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKGradient.h; sourceTree = "<group>"; };
-		DCA907BED2B3217E5CD51C51D856091F /* Pods-AVFoundationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVFoundationDemo.release.xcconfig"; sourceTree = "<group>"; };
-		DCE9A3E21BD7C69DF5F27549045DA472 /* Pods-BaiduMap Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BaiduMap Demo.modulemap"; sourceTree = "<group>"; };
+		DDC3CC8D2322E98D41F22C247CFB9EA5 /* Pods-Core Image Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Core Image Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DDFF767D36C564F44D2B017A5313245D /* BMKArcline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKArcline.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKArcline.h; sourceTree = "<group>"; };
-		DFAE97CEC4F44CDC810044E6811E1689 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0482E8F580097D423E127B5B3F58BB2 /* BMKPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPolyline.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKPolyline.h; sourceTree = "<group>"; };
 		E07D43DEBF9FFDDCF898E38DFAE7DE4E /* BMKRouteSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRouteSearch.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKRouteSearch.h; sourceTree = "<group>"; };
-		E2A3EEBF0B4FCAB7F84911410978279E /* Pods-BaiduMap Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaiduMap Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		E37E8F6A95DA71F0548A8AE56EC41E06 /* BMKAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKAnnotation.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKAnnotation.h; sourceTree = "<group>"; };
+		E3EDC653BCC0793093F9F1EA060D92AB /* Pods-XCPhotoEditPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XCPhotoEditPicker-umbrella.h"; sourceTree = "<group>"; };
 		E423DD1D8A68ACABE62CDFA3EF2B77AD /* BMKActionPaopaoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKActionPaopaoView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKActionPaopaoView.h; sourceTree = "<group>"; };
-		E59456C4207E7183BDBC968663925A5F /* Pods-Core Image Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Core Image Demo-frameworks.sh"; sourceTree = "<group>"; };
-		E665D1BECA210ED1143D8A3053418DA5 /* Pods-Tip for Day Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tip for Day Demo.release.xcconfig"; sourceTree = "<group>"; };
 		E72A26C1EB4E630A1FBE2D1732AB1C54 /* BMKDistrictSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKDistrictSearch.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKDistrictSearch.h; sourceTree = "<group>"; };
-		E8A7664184AE90A3C02DF1BCEDEA5E53 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E920706D1E3C8A1BF3A60BF9D71CA240 /* Pods-Tip for Day Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tip for Day Demo-resources.sh"; sourceTree = "<group>"; };
 		EB1A6107F16784033D96C84841232525 /* BMKRouteSearchType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRouteSearchType.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKRouteSearchType.h; sourceTree = "<group>"; };
 		EBFC34F34FC8B186D5EA1D71DA3027E0 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		EC650027A260DC48F608A7CDDF8C275A /* Pods-Tip for Day Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tip for Day Demo-dummy.m"; sourceTree = "<group>"; };
 		ECEC9E1CC9C786959BFA213197496F94 /* BMKLocationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKLocationService.h; path = BaiduMapKit/BaiduMapAPI_Location.framework/Headers/BMKLocationService.h; sourceTree = "<group>"; };
+		EDF7D5A553D3284F97021AD54C41355E /* Pods-AVFoundationDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AVFoundationDemo-umbrella.h"; sourceTree = "<group>"; };
 		F0C62B2633C7F26878B978D6A6EAC4C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F445987BDC6658A85CC7AE4E9243856E /* Pods-Tip for Day Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tip for Day Demo-frameworks.sh"; sourceTree = "<group>"; };
+		F573462161414B198E44CB0E861FFDAD /* Pods-BaiduMap Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaiduMap Demo-frameworks.sh"; sourceTree = "<group>"; };
+		F57BD35E7F1FA74FDF0ADDACD576BE59 /* Pods-Core Image Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Core Image Demo-umbrella.h"; sourceTree = "<group>"; };
+		F8B8AB7D658FB219EEF3343EF0035F2F /* Pods-Tip for Day Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tip for Day Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F9F62326930896F7BEA9FEEA3AE7D6A4 /* mapapi.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
-		FA1261531E4D494FB7EA9877246A1F9C /* Pods-XCPhotoEditPicker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XCPhotoEditPicker-resources.sh"; sourceTree = "<group>"; };
+		FAF085E70D11AAA84BAD68C4FD592E07 /* Pods-BaiduMap Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BaiduMap Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FB0711F55CF00F95689E2151742994B5 /* Pods-Tip for Day Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tip for Day Demo.release.xcconfig"; sourceTree = "<group>"; };
 		FB3ECC80A55E029E84DF3CCE86678A7B /* BMKSuggestionSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKSuggestionSearch.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKSuggestionSearch.h; sourceTree = "<group>"; };
-		FDD6FE6445FDFC8B713B26A962FD18B6 /* Pods-GitHubApiDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubApiDemo-frameworks.sh"; sourceTree = "<group>"; };
+		FF80D0421FEE6D39894F454F4E3BDEAD /* Pods-BaiduMap Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BaiduMap Demo-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +297,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F3BCAA03FC85096470E3A19AA290460 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62463C790A1EB62CA8721C807181004D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD4745ED4F5CF73E6DF3CFC7079065B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +371,24 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		05A95846B597F63E02C5B19C3FF0765C /* Pods-XCPhotoEditPicker */ = {
+			isa = PBXGroup;
+			children = (
+				64DC5F0E04351CF4F762078CEE0318CA /* Info.plist */,
+				276FC58D8745224E8AACC1FED65193D6 /* Pods-XCPhotoEditPicker.modulemap */,
+				15437EA99E4150578D9CF3D4843338D8 /* Pods-XCPhotoEditPicker-acknowledgements.markdown */,
+				A7DD885A44E1987477CE216FAA8E393F /* Pods-XCPhotoEditPicker-acknowledgements.plist */,
+				08E9ABBDD13969DD8EB945A516541629 /* Pods-XCPhotoEditPicker-dummy.m */,
+				CAB0AB6C1A45C34827050B8BCE92BE8C /* Pods-XCPhotoEditPicker-frameworks.sh */,
+				9C35B388A35D5B2912759DA4109C3BB9 /* Pods-XCPhotoEditPicker-resources.sh */,
+				E3EDC653BCC0793093F9F1EA060D92AB /* Pods-XCPhotoEditPicker-umbrella.h */,
+				646153642687D1894018FC0C85A91BBD /* Pods-XCPhotoEditPicker.debug.xcconfig */,
+				A410304F14F80C33A04AA081DBEBCDA9 /* Pods-XCPhotoEditPicker.release.xcconfig */,
+			);
+			name = "Pods-XCPhotoEditPicker";
+			path = "Target Support Files/Pods-XCPhotoEditPicker";
 			sourceTree = "<group>";
 		};
 		237089D073349139A6BE9F887E74A290 /* BaiduMapKit */ = {
@@ -448,19 +484,6 @@
 			path = BaiduMapKit;
 			sourceTree = "<group>";
 		};
-		2D61EB05F3839B20B62A6C785E4DE3AF /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D26708B0349002FFD614C893A20630FA /* Pods-AVFoundationDemo */,
-				4B1E1E4B9EF634C8CAB4EFA8B6951464 /* Pods-BaiduMap Demo */,
-				61E73CCB96F1E14139DC5871F040FE49 /* Pods-Core Image Demo */,
-				5A425EA84E76E2527101A1C613974E75 /* Pods-GitHubApiDemo */,
-				D4D180F349E2FDC6AAA2D017DB3D708D /* Pods-Tip for Day Demo */,
-				3FAED9702AE1521C423AB1D5805C11D4 /* Pods-XCPhotoEditPicker */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		2EDFAB15A7E74F864EB353FCB5A57006 /* OS X */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,76 +501,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3FAED9702AE1521C423AB1D5805C11D4 /* Pods-XCPhotoEditPicker */ = {
+		515591B458037F9FA4C78CA76102DD24 /* Pods-OpenCV Demo */ = {
 			isa = PBXGroup;
 			children = (
-				42F0D83EE4BE56F7D9A22823F447962A /* Info.plist */,
-				1AAAA350276F609B521FCC7F225BA469 /* Pods-XCPhotoEditPicker.modulemap */,
-				36220ECFBEBFE7AFF5FABC61DDCA38D6 /* Pods-XCPhotoEditPicker-acknowledgements.markdown */,
-				8845C28EE197D1500F9B509D744E5DB8 /* Pods-XCPhotoEditPicker-acknowledgements.plist */,
-				41D968A9361D0BFE4849A063D9372EC9 /* Pods-XCPhotoEditPicker-dummy.m */,
-				8B9E4ABA860D863D08E66183AAE013E0 /* Pods-XCPhotoEditPicker-frameworks.sh */,
-				FA1261531E4D494FB7EA9877246A1F9C /* Pods-XCPhotoEditPicker-resources.sh */,
-				9533826248A4AA5AF89EA784D5AF35F1 /* Pods-XCPhotoEditPicker-umbrella.h */,
-				6DD3936A1584B8242DC8FFAB1D63359C /* Pods-XCPhotoEditPicker.debug.xcconfig */,
-				C94FD6E8209538330F9DEF779E148137 /* Pods-XCPhotoEditPicker.release.xcconfig */,
+				92D09B895977D4863B9608E9B4C828DA /* Pods-OpenCV Demo-acknowledgements.markdown */,
+				86BAD832786650E7F199EC2B8D7FC673 /* Pods-OpenCV Demo-acknowledgements.plist */,
+				715CAADA8C095E430A3784E89B4B0EC0 /* Pods-OpenCV Demo-dummy.m */,
+				6EFDA38D60A7EF8FECAD58B7667CDF26 /* Pods-OpenCV Demo-frameworks.sh */,
+				6E69D4461FDD3B976374261FE83682DB /* Pods-OpenCV Demo-resources.sh */,
+				9E60E4E80C8F71E95DA51B24D882B64B /* Pods-OpenCV Demo.debug.xcconfig */,
+				3C23EF5D6B0127A6A9BA4C8902B0D291 /* Pods-OpenCV Demo.release.xcconfig */,
 			);
-			name = "Pods-XCPhotoEditPicker";
-			path = "Target Support Files/Pods-XCPhotoEditPicker";
+			name = "Pods-OpenCV Demo";
+			path = "Target Support Files/Pods-OpenCV Demo";
 			sourceTree = "<group>";
 		};
-		4B1E1E4B9EF634C8CAB4EFA8B6951464 /* Pods-BaiduMap Demo */ = {
+		5E9C2B66657D88862B2241EB7AE16C72 /* Pods-AVFoundationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E8A7664184AE90A3C02DF1BCEDEA5E53 /* Info.plist */,
-				DCE9A3E21BD7C69DF5F27549045DA472 /* Pods-BaiduMap Demo.modulemap */,
-				29BEA80E053BE1B53C8D3EE2E1295864 /* Pods-BaiduMap Demo-acknowledgements.markdown */,
-				4FA3C6E46E3317949C991C4DAF9375E4 /* Pods-BaiduMap Demo-acknowledgements.plist */,
-				37E7AAB98E2291B3C5743C61A6A90500 /* Pods-BaiduMap Demo-dummy.m */,
-				3B58983550F3CD1D2C47F57458FAD55F /* Pods-BaiduMap Demo-frameworks.sh */,
-				A46952CB3773193E3934B5971DA33E75 /* Pods-BaiduMap Demo-resources.sh */,
-				95DB6617069F621236C60EAB013AAB42 /* Pods-BaiduMap Demo-umbrella.h */,
-				E2A3EEBF0B4FCAB7F84911410978279E /* Pods-BaiduMap Demo.debug.xcconfig */,
-				D9F66008B7333A30881294FEC751326E /* Pods-BaiduMap Demo.release.xcconfig */,
+				64F37E335A363CDFC0A892F71A4E355B /* Info.plist */,
+				DA9F4C0ED348D32305871C0BE60DC73E /* Pods-AVFoundationDemo.modulemap */,
+				23982F43A20874E52DFA2D806A96ABFC /* Pods-AVFoundationDemo-acknowledgements.markdown */,
+				AE8CB24BE67197B5F99CA9896CBB53A4 /* Pods-AVFoundationDemo-acknowledgements.plist */,
+				9DF4566B8B9E8C474F3ECFA2A03E8441 /* Pods-AVFoundationDemo-dummy.m */,
+				06E3A10CE653AF47794589C6ABCF5E18 /* Pods-AVFoundationDemo-frameworks.sh */,
+				5CEEAFA8AE01BBF4104DC6395D766128 /* Pods-AVFoundationDemo-resources.sh */,
+				EDF7D5A553D3284F97021AD54C41355E /* Pods-AVFoundationDemo-umbrella.h */,
+				2A38F8B26A7CEEFEBCE8A10F0F28C509 /* Pods-AVFoundationDemo.debug.xcconfig */,
+				B6C6AC2D6BFEC6B7E4A14B4000625B0B /* Pods-AVFoundationDemo.release.xcconfig */,
 			);
-			name = "Pods-BaiduMap Demo";
-			path = "Target Support Files/Pods-BaiduMap Demo";
-			sourceTree = "<group>";
-		};
-		5A425EA84E76E2527101A1C613974E75 /* Pods-GitHubApiDemo */ = {
-			isa = PBXGroup;
-			children = (
-				B94EAA5B2E97A584A7A349AA08ADDFBA /* Info.plist */,
-				5244838F1C50298A741685AEDC906108 /* Pods-GitHubApiDemo.modulemap */,
-				22574D06E00A4823F9357DA8EB007E02 /* Pods-GitHubApiDemo-acknowledgements.markdown */,
-				A89461E0FB2F0EFC9E728C692C8EEBE5 /* Pods-GitHubApiDemo-acknowledgements.plist */,
-				5730F6EB01296CB7228F89DFC0662BCE /* Pods-GitHubApiDemo-dummy.m */,
-				FDD6FE6445FDFC8B713B26A962FD18B6 /* Pods-GitHubApiDemo-frameworks.sh */,
-				2D145EBE85A85E538730ECFCD56A2A24 /* Pods-GitHubApiDemo-resources.sh */,
-				33FA21B5D5C720DE1BBD71DAA8042596 /* Pods-GitHubApiDemo-umbrella.h */,
-				08D12EAD0E75A7E9C0E35A31D57E3751 /* Pods-GitHubApiDemo.debug.xcconfig */,
-				2E6F659C4B5AF2EA1E6E96FFCA02C878 /* Pods-GitHubApiDemo.release.xcconfig */,
-			);
-			name = "Pods-GitHubApiDemo";
-			path = "Target Support Files/Pods-GitHubApiDemo";
-			sourceTree = "<group>";
-		};
-		61E73CCB96F1E14139DC5871F040FE49 /* Pods-Core Image Demo */ = {
-			isa = PBXGroup;
-			children = (
-				A9B84384ED6FEEB31DA1C43809CEF2B6 /* Info.plist */,
-				32AEDCAA58167E7FF2F6A4A392015684 /* Pods-Core Image Demo.modulemap */,
-				69CCCC04EC17A933D316CBAF477C36DE /* Pods-Core Image Demo-acknowledgements.markdown */,
-				33703D7748D0D31DABEC1C8B36AAF223 /* Pods-Core Image Demo-acknowledgements.plist */,
-				39BF16A945B57D33B390497CA6C1E787 /* Pods-Core Image Demo-dummy.m */,
-				E59456C4207E7183BDBC968663925A5F /* Pods-Core Image Demo-frameworks.sh */,
-				4464CC0ABEA8D0B6159912B46897306D /* Pods-Core Image Demo-resources.sh */,
-				0056CB81E6497306C70E2508EBF7AB82 /* Pods-Core Image Demo-umbrella.h */,
-				45B5E432644D252B45799AA73E1BB8D2 /* Pods-Core Image Demo.debug.xcconfig */,
-				D742455B9AE028F1B58F712E1161DEBB /* Pods-Core Image Demo.release.xcconfig */,
-			);
-			name = "Pods-Core Image Demo";
-			path = "Target Support Files/Pods-Core Image Demo";
+			name = "Pods-AVFoundationDemo";
+			path = "Target Support Files/Pods-AVFoundationDemo";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -556,8 +540,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				3AEF7D761E8EA8419BB4A7000AB770CB /* Frameworks */,
 				FB8BE9409DC21178A9176DBECDEF3FBA /* Pods */,
-				FA644A15C456999F45352714B45A46C7 /* Products */,
-				2D61EB05F3839B20B62A6C785E4DE3AF /* Targets Support Files */,
+				EFDAEA87E0783DD565A04BC9A8594846 /* Products */,
+				DEA303577ABE8BF1251DB04C52459DC5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -567,6 +551,24 @@
 				DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		948144C43BB8366691359829E5973B96 /* Pods-Tip for Day Demo */ = {
+			isa = PBXGroup;
+			children = (
+				648CF38008797768CC3629074E557BFF /* Info.plist */,
+				61C0231FAD442C83ACE98F891D6EF39A /* Pods-Tip for Day Demo.modulemap */,
+				F8B8AB7D658FB219EEF3343EF0035F2F /* Pods-Tip for Day Demo-acknowledgements.markdown */,
+				79603B809B74A04CEDFD93CF13DACD5B /* Pods-Tip for Day Demo-acknowledgements.plist */,
+				EC650027A260DC48F608A7CDDF8C275A /* Pods-Tip for Day Demo-dummy.m */,
+				13956714E006B38935E0C372410AF70E /* Pods-Tip for Day Demo-frameworks.sh */,
+				E920706D1E3C8A1BF3A60BF9D71CA240 /* Pods-Tip for Day Demo-resources.sh */,
+				6B78871E41C60B987EF379C7EA71F006 /* Pods-Tip for Day Demo-umbrella.h */,
+				04C217D8574FE1061A461F9186223E10 /* Pods-Tip for Day Demo.debug.xcconfig */,
+				FB0711F55CF00F95689E2151742994B5 /* Pods-Tip for Day Demo.release.xcconfig */,
+			);
+			name = "Pods-Tip for Day Demo";
+			path = "Target Support Files/Pods-Tip for Day Demo";
 			sourceTree = "<group>";
 		};
 		9677D2C0370446F7CF6FFAED8EE20727 /* Support Files */ = {
@@ -583,40 +585,72 @@
 			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
-		D26708B0349002FFD614C893A20630FA /* Pods-AVFoundationDemo */ = {
+		A26826C74A13C0B7FE9F409BF604269F /* Pods-BaiduMap Demo */ = {
 			isa = PBXGroup;
 			children = (
-				DFAE97CEC4F44CDC810044E6811E1689 /* Info.plist */,
-				CB21294D7BA171D8FD87A1014832065E /* Pods-AVFoundationDemo.modulemap */,
-				106671593567B678125F84AE2F0226E5 /* Pods-AVFoundationDemo-acknowledgements.markdown */,
-				74D22917C27DDA54DDF90EF1D53A86D8 /* Pods-AVFoundationDemo-acknowledgements.plist */,
-				36408687A2F2AE8F8DCBD5B4358EF401 /* Pods-AVFoundationDemo-dummy.m */,
-				072C30E4D81A9D294FC2762E973B589D /* Pods-AVFoundationDemo-frameworks.sh */,
-				7AE183029001F3849BCD8834189918C0 /* Pods-AVFoundationDemo-resources.sh */,
-				7408BF8AB0284E100CF8F4BF5BCCE3D3 /* Pods-AVFoundationDemo-umbrella.h */,
-				5052470D1D51CF0D2AB93BCCBBECEA63 /* Pods-AVFoundationDemo.debug.xcconfig */,
-				DCA907BED2B3217E5CD51C51D856091F /* Pods-AVFoundationDemo.release.xcconfig */,
+				4F5C7FD671CD7F727BF39A887CDF2A10 /* Info.plist */,
+				18633B8F31DC1598FE328080D0629BD7 /* Pods-BaiduMap Demo.modulemap */,
+				FAF085E70D11AAA84BAD68C4FD592E07 /* Pods-BaiduMap Demo-acknowledgements.markdown */,
+				0AA4CB66FF91D9E71F9679CFC05C4CCF /* Pods-BaiduMap Demo-acknowledgements.plist */,
+				FF80D0421FEE6D39894F454F4E3BDEAD /* Pods-BaiduMap Demo-dummy.m */,
+				F573462161414B198E44CB0E861FFDAD /* Pods-BaiduMap Demo-frameworks.sh */,
+				1A36E7597273B0489F36F35394DEAF24 /* Pods-BaiduMap Demo-resources.sh */,
+				23F3814C7C674EFF7604A0C4EB1386FB /* Pods-BaiduMap Demo-umbrella.h */,
+				94CA812D629F994499346EAC6B91EE86 /* Pods-BaiduMap Demo.debug.xcconfig */,
+				2257275ADDE35C7A7BC2DB71BC4AC079 /* Pods-BaiduMap Demo.release.xcconfig */,
 			);
-			name = "Pods-AVFoundationDemo";
-			path = "Target Support Files/Pods-AVFoundationDemo";
+			name = "Pods-BaiduMap Demo";
+			path = "Target Support Files/Pods-BaiduMap Demo";
 			sourceTree = "<group>";
 		};
-		D4D180F349E2FDC6AAA2D017DB3D708D /* Pods-Tip for Day Demo */ = {
+		C537E2C16B2A03515BCAE31FEC492986 /* Pods-Core Image Demo */ = {
 			isa = PBXGroup;
 			children = (
-				7418ED9DD6DE132F0EC359CAE47F4194 /* Info.plist */,
-				05C87BC53CD4E84A2FC4E14D60473C8A /* Pods-Tip for Day Demo.modulemap */,
-				AB21E13F33FBE85D06CCF922E98BD744 /* Pods-Tip for Day Demo-acknowledgements.markdown */,
-				0A535C056F421E8F32F4ECA2F78D304A /* Pods-Tip for Day Demo-acknowledgements.plist */,
-				85EE429193C3930FDD9F49311C780DFC /* Pods-Tip for Day Demo-dummy.m */,
-				F445987BDC6658A85CC7AE4E9243856E /* Pods-Tip for Day Demo-frameworks.sh */,
-				68D8B59B43989BAB216E47785B235410 /* Pods-Tip for Day Demo-resources.sh */,
-				A9AB0606C98314BEBAF6AE7D2D5FA16B /* Pods-Tip for Day Demo-umbrella.h */,
-				90C99A8BF24338E72746F31ABAAC5B78 /* Pods-Tip for Day Demo.debug.xcconfig */,
-				E665D1BECA210ED1143D8A3053418DA5 /* Pods-Tip for Day Demo.release.xcconfig */,
+				0FCB9E393EFFD825510F08250E4C3145 /* Info.plist */,
+				481632557F947EAB9CF4E28953E19119 /* Pods-Core Image Demo.modulemap */,
+				DDC3CC8D2322E98D41F22C247CFB9EA5 /* Pods-Core Image Demo-acknowledgements.markdown */,
+				DB7CF1BE2A56E816A7DC97800C613569 /* Pods-Core Image Demo-acknowledgements.plist */,
+				2E41DDA13D1FDDF6BFF48E080F5A3DFA /* Pods-Core Image Demo-dummy.m */,
+				6B50E9FE7AB81F3D46F71E9AA99DCD1E /* Pods-Core Image Demo-frameworks.sh */,
+				8D9E81C73535335D488B64F66960D263 /* Pods-Core Image Demo-resources.sh */,
+				F57BD35E7F1FA74FDF0ADDACD576BE59 /* Pods-Core Image Demo-umbrella.h */,
+				61F9736880DD0506AE608ECE5B665E85 /* Pods-Core Image Demo.debug.xcconfig */,
+				AB32D8598AA1944DDF1E3113ED28E53C /* Pods-Core Image Demo.release.xcconfig */,
 			);
-			name = "Pods-Tip for Day Demo";
-			path = "Target Support Files/Pods-Tip for Day Demo";
+			name = "Pods-Core Image Demo";
+			path = "Target Support Files/Pods-Core Image Demo";
+			sourceTree = "<group>";
+		};
+		C93B9EFB2E34E9B808CA9779BCE44712 /* Pods-GitHubApiDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0E711638B2786012BCFBFC071C8E3F35 /* Info.plist */,
+				C16CB7B8593947016C304FE4534EF24C /* Pods-GitHubApiDemo.modulemap */,
+				457D67B274010993D3C5A8724C502A92 /* Pods-GitHubApiDemo-acknowledgements.markdown */,
+				93302C280390615157230035EF5FAF01 /* Pods-GitHubApiDemo-acknowledgements.plist */,
+				BE48545F37B8F29406F1C96B21B66863 /* Pods-GitHubApiDemo-dummy.m */,
+				D94B50CC8FAD30445ACF1688C69C6095 /* Pods-GitHubApiDemo-frameworks.sh */,
+				23EE2108D7A8923E93CF8075EB7CC01D /* Pods-GitHubApiDemo-resources.sh */,
+				A2F5EF32307183D245D89126A550D271 /* Pods-GitHubApiDemo-umbrella.h */,
+				A19B8B2202DD1458B46086F6A69C655F /* Pods-GitHubApiDemo.debug.xcconfig */,
+				C5A1C61053C0077937AB2B7A034E6A5B /* Pods-GitHubApiDemo.release.xcconfig */,
+			);
+			name = "Pods-GitHubApiDemo";
+			path = "Target Support Files/Pods-GitHubApiDemo";
+			sourceTree = "<group>";
+		};
+		DEA303577ABE8BF1251DB04C52459DC5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E9C2B66657D88862B2241EB7AE16C72 /* Pods-AVFoundationDemo */,
+				A26826C74A13C0B7FE9F409BF604269F /* Pods-BaiduMap Demo */,
+				C537E2C16B2A03515BCAE31FEC492986 /* Pods-Core Image Demo */,
+				C93B9EFB2E34E9B808CA9779BCE44712 /* Pods-GitHubApiDemo */,
+				515591B458037F9FA4C78CA76102DD24 /* Pods-OpenCV Demo */,
+				948144C43BB8366691359829E5973B96 /* Pods-Tip for Day Demo */,
+				05A95846B597F63E02C5B19C3FF0765C /* Pods-XCPhotoEditPicker */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		E5D2B76E22ACD7BEEDAF506E9585CBFC /* SwiftyJSON */ = {
@@ -655,17 +689,18 @@
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		FA644A15C456999F45352714B45A46C7 /* Products */ = {
+		EFDAEA87E0783DD565A04BC9A8594846 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3BAAB1D763C6B9741605864C9F596A88 /* Alamofire.framework */,
-				4336ED6ABCD317AE6CCDC252BF7308F8 /* Pods_AVFoundationDemo.framework */,
-				D5BD1F9695DDB22C8C6B72E573BE9EA8 /* Pods_BaiduMap_Demo.framework */,
-				CDB68086B551FF6E1630DFF87694C144 /* Pods_Core_Image_Demo.framework */,
-				7B86CF71B160789FE9E8063136DBD385 /* Pods_GitHubApiDemo.framework */,
-				A1093916AF0CF7F5564C36DE63329B19 /* Pods_Tip_for_Day_Demo.framework */,
-				90B83D15DA4735142CC88DF9CD051DE9 /* Pods_XCPhotoEditPicker.framework */,
-				9EA8A2E48A0A98AC08D0B6C8EDDDF6F8 /* SwiftyJSON.framework */,
+				69CCBEB67D933D3B770E8258411D5FCA /* Alamofire.framework */,
+				134D6E08B97A114154FFDCCE9C0D1699 /* libPods-OpenCV Demo.a */,
+				9E53B2DD9DD93C6DFB84E7DE1C3E79F2 /* Pods_AVFoundationDemo.framework */,
+				47BDC230E27E17550194C5B60D7DA6EF /* Pods_BaiduMap_Demo.framework */,
+				32795D6E3221236F7864FAA92459EA4E /* Pods_Core_Image_Demo.framework */,
+				7721CA4743B601E168EB5F4CB6676FA3 /* Pods_GitHubApiDemo.framework */,
+				A1C807AE3717303036DA66015AB0C7DF /* Pods_Tip_for_Day_Demo.framework */,
+				18B8D44EA9E98AB991051C1FDB2203F7 /* Pods_XCPhotoEditPicker.framework */,
+				399895D78C32A1055BE4C5EF4B5479A1 /* SwiftyJSON.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -780,7 +815,7 @@
 			);
 			name = "Pods-XCPhotoEditPicker";
 			productName = "Pods-XCPhotoEditPicker";
-			productReference = 90B83D15DA4735142CC88DF9CD051DE9 /* Pods_XCPhotoEditPicker.framework */;
+			productReference = 18B8D44EA9E98AB991051C1FDB2203F7 /* Pods_XCPhotoEditPicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4E51490A25248B75248BD597AA5471C6 /* Pods-BaiduMap Demo */ = {
@@ -797,7 +832,7 @@
 			);
 			name = "Pods-BaiduMap Demo";
 			productName = "Pods-BaiduMap Demo";
-			productReference = D5BD1F9695DDB22C8C6B72E573BE9EA8 /* Pods_BaiduMap_Demo.framework */;
+			productReference = 47BDC230E27E17550194C5B60D7DA6EF /* Pods_BaiduMap_Demo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5C153EA90B0250DD643838B248EBD7C7 /* SwiftyJSON */ = {
@@ -814,7 +849,7 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 9EA8A2E48A0A98AC08D0B6C8EDDDF6F8 /* SwiftyJSON.framework */;
+			productReference = 399895D78C32A1055BE4C5EF4B5479A1 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -831,7 +866,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 3BAAB1D763C6B9741605864C9F596A88 /* Alamofire.framework */;
+			productReference = 69CCBEB67D933D3B770E8258411D5FCA /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9C04484DDE45B532D4CEF715BD0BBB08 /* Pods-Tip for Day Demo */ = {
@@ -848,7 +883,7 @@
 			);
 			name = "Pods-Tip for Day Demo";
 			productName = "Pods-Tip for Day Demo";
-			productReference = A1093916AF0CF7F5564C36DE63329B19 /* Pods_Tip_for_Day_Demo.framework */;
+			productReference = A1C807AE3717303036DA66015AB0C7DF /* Pods_Tip_for_Day_Demo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A609C43C015F38D1C08CC13AAC496D7B /* Pods-AVFoundationDemo */ = {
@@ -865,7 +900,7 @@
 			);
 			name = "Pods-AVFoundationDemo";
 			productName = "Pods-AVFoundationDemo";
-			productReference = 4336ED6ABCD317AE6CCDC252BF7308F8 /* Pods_AVFoundationDemo.framework */;
+			productReference = 9E53B2DD9DD93C6DFB84E7DE1C3E79F2 /* Pods_AVFoundationDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BA156F0E3775BDB98E9EA88B1ACDECC7 /* Pods-Core Image Demo */ = {
@@ -882,8 +917,24 @@
 			);
 			name = "Pods-Core Image Demo";
 			productName = "Pods-Core Image Demo";
-			productReference = CDB68086B551FF6E1630DFF87694C144 /* Pods_Core_Image_Demo.framework */;
+			productReference = 32795D6E3221236F7864FAA92459EA4E /* Pods_Core_Image_Demo.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		BC386B19A0014E83C68139EC61BA22E6 /* Pods-OpenCV Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD89D4CA73F80DD4CA2FECF4E186D898 /* Build configuration list for PBXNativeTarget "Pods-OpenCV Demo" */;
+			buildPhases = (
+				BF971BFC7E56E77E0618AFF1EEB7A834 /* Sources */,
+				62463C790A1EB62CA8721C807181004D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-OpenCV Demo";
+			productName = "Pods-OpenCV Demo";
+			productReference = 134D6E08B97A114154FFDCCE9C0D1699 /* libPods-OpenCV Demo.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		E0E0713B15CB34FD73B89FB12CFE0186 /* Pods-GitHubApiDemo */ = {
 			isa = PBXNativeTarget;
@@ -901,7 +952,7 @@
 			);
 			name = "Pods-GitHubApiDemo";
 			productName = "Pods-GitHubApiDemo";
-			productReference = 7B86CF71B160789FE9E8063136DBD385 /* Pods_GitHubApiDemo.framework */;
+			productReference = 7721CA4743B601E168EB5F4CB6676FA3 /* Pods_GitHubApiDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -921,7 +972,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FA644A15C456999F45352714B45A46C7 /* Products */;
+			productRefGroup = EFDAEA87E0783DD565A04BC9A8594846 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -930,6 +981,7 @@
 				4E51490A25248B75248BD597AA5471C6 /* Pods-BaiduMap Demo */,
 				BA156F0E3775BDB98E9EA88B1ACDECC7 /* Pods-Core Image Demo */,
 				E0E0713B15CB34FD73B89FB12CFE0186 /* Pods-GitHubApiDemo */,
+				BC386B19A0014E83C68139EC61BA22E6 /* Pods-OpenCV Demo */,
 				9C04484DDE45B532D4CEF715BD0BBB08 /* Pods-Tip for Day Demo */,
 				322A35D4DA272BF1339104170476A056 /* Pods-XCPhotoEditPicker */,
 				5C153EA90B0250DD643838B248EBD7C7 /* SwiftyJSON */,
@@ -1020,6 +1072,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF971BFC7E56E77E0618AFF1EEB7A834 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1554EBBAD2AC44BE818062A31299545D /* Pods-OpenCV Demo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1040,7 +1100,7 @@
 /* Begin XCBuildConfiguration section */
 		0CB6503F0ED2391F33119BCB090FBBA0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E665D1BECA210ED1143D8A3053418DA5 /* Pods-Tip for Day Demo.release.xcconfig */;
+			baseConfigurationReference = FB0711F55CF00F95689E2151742994B5 /* Pods-Tip for Day Demo.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1076,7 +1136,7 @@
 		};
 		27D1DF25E71A629744A6930DF00093F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45B5E432644D252B45799AA73E1BB8D2 /* Pods-Core Image Demo.debug.xcconfig */;
+			baseConfigurationReference = 61F9736880DD0506AE608ECE5B665E85 /* Pods-Core Image Demo.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1112,7 +1172,7 @@
 		};
 		34CFAB91488E1E87994EA4E39BDC04CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5052470D1D51CF0D2AB93BCCBBECEA63 /* Pods-AVFoundationDemo.debug.xcconfig */;
+			baseConfigurationReference = 2A38F8B26A7CEEFEBCE8A10F0F28C509 /* Pods-AVFoundationDemo.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1184,7 +1244,7 @@
 		};
 		3B41A5BBC97DF4714C4F4372544BB945 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08D12EAD0E75A7E9C0E35A31D57E3751 /* Pods-GitHubApiDemo.debug.xcconfig */;
+			baseConfigurationReference = A19B8B2202DD1458B46086F6A69C655F /* Pods-GitHubApiDemo.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1224,7 +1284,7 @@
 		};
 		455578470DF09FFC7FBEA047DD440AED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DD3936A1584B8242DC8FFAB1D63359C /* Pods-XCPhotoEditPicker.debug.xcconfig */;
+			baseConfigurationReference = 646153642687D1894018FC0C85A91BBD /* Pods-XCPhotoEditPicker.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1255,6 +1315,29 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4B40B29AA1777F166810E5132E132F24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E60E4E80C8F71E95DA51B24D882B64B /* Pods-OpenCV Demo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1295,7 +1378,7 @@
 		};
 		5AADDE4C1960A04BC9D437F9F89DAE58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCA907BED2B3217E5CD51C51D856091F /* Pods-AVFoundationDemo.release.xcconfig */;
+			baseConfigurationReference = B6C6AC2D6BFEC6B7E4A14B4000625B0B /* Pods-AVFoundationDemo.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1331,7 +1414,7 @@
 		};
 		96ED7035057568F985F5AE00365B5A95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9F66008B7333A30881294FEC751326E /* Pods-BaiduMap Demo.release.xcconfig */;
+			baseConfigurationReference = 2257275ADDE35C7A7BC2DB71BC4AC079 /* Pods-BaiduMap Demo.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1416,7 +1499,7 @@
 		};
 		A2E5E1014308FAE2570E04D1500A7C6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D742455B9AE028F1B58F712E1161DEBB /* Pods-Core Image Demo.release.xcconfig */;
+			baseConfigurationReference = AB32D8598AA1944DDF1E3113ED28E53C /* Pods-Core Image Demo.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1450,9 +1533,32 @@
 			};
 			name = Release;
 		};
+		AE3E869A6E119C2CE4C73A63082CF756 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C23EF5D6B0127A6A9BA4C8902B0D291 /* Pods-OpenCV Demo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		AE65B0DA3A365E20F259C57DBF3DE56D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90C99A8BF24338E72746F31ABAAC5B78 /* Pods-Tip for Day Demo.debug.xcconfig */;
+			baseConfigurationReference = 04C217D8574FE1061A461F9186223E10 /* Pods-Tip for Day Demo.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1569,7 +1675,7 @@
 		};
 		E0DC50940DAD72050F8687565A34BDFB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E6F659C4B5AF2EA1E6E96FFCA02C878 /* Pods-GitHubApiDemo.release.xcconfig */;
+			baseConfigurationReference = C5A1C61053C0077937AB2B7A034E6A5B /* Pods-GitHubApiDemo.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1608,7 +1714,7 @@
 		};
 		EDB738432546450719CEB3C0AA9C9853 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2A3EEBF0B4FCAB7F84911410978279E /* Pods-BaiduMap Demo.debug.xcconfig */;
+			baseConfigurationReference = 94CA812D629F994499346EAC6B91EE86 /* Pods-BaiduMap Demo.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1644,7 +1750,7 @@
 		};
 		F12B4D5C8B61FE50B359BF24AC2EA570 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C94FD6E8209538330F9DEF779E148137 /* Pods-XCPhotoEditPicker.release.xcconfig */;
+			baseConfigurationReference = A410304F14F80C33A04AA081DBEBCDA9 /* Pods-XCPhotoEditPicker.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1784,6 +1890,15 @@
 			buildConfigurations = (
 				34CFAB91488E1E87994EA4E39BDC04CF /* Debug */,
 				5AADDE4C1960A04BC9D437F9F89DAE58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD89D4CA73F80DD4CA2FECF4E186D898 /* Build configuration list for PBXNativeTarget "Pods-OpenCV Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B40B29AA1777F166810E5132E132F24 /* Debug */,
+				AE3E869A6E119C2CE4C73A63082CF756 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

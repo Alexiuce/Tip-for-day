@@ -1,10 +1,11 @@
 # Tip-for-day
 ![](https://img.shields.io/badge/platform-iOS%7CMacOSX-%20lightgrey.svg). 
 
-a demo code project for myself, write down for develop tip
+a demo code project for iOS / Mac , write down for develop tip
 
 ## Demo project All in one 
 ### iOS 
+---
 * AVFoundation Target.  
  
   实现步骤：
@@ -108,3 +109,12 @@ a demo code project for myself, write down for develop tip
   [BaiduMap.md](https://github.com/Alexiuce/Tip-for-day/blob/master/BaiduMap.md)
 
 ### Mac 
+---
+* XibLoadViewDemo
+  
+  > xib方式加载自定义view
+  细节请参考[MyXib Readme](https://github.com/Alexiuce/Tip-for-day/blob/master/MyXibView%20Demo.md)
+  
+* convertPDF Demo
+
+ > 文档转pdf操作demo  
