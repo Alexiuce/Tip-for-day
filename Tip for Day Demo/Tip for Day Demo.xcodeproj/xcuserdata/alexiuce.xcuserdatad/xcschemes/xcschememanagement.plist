@@ -22,7 +22,17 @@
 		<key>GitHubApiDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>5</integer>
+		</dict>
+		<key>MDocumentDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>OpenCV Demo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
 		</dict>
 		<key>Tip for Day Demo.xcscheme</key>
 		<dict>
@@ -34,9 +44,29 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>XibLoadViewDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>D85063031EFE02C700FC9E5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D850632F1EFE5A5200FC9E5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8846E871EFFE8F8008AAE5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F29275201EFC9CAA0001F866</key>
 		<dict>
 			<key>primary</key>
@@ -63,6 +93,11 @@
 			<true/>
 		</dict>
 		<key>F2B2B1AA1EF8B40B009DFDA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2F37BA51F00A6E9002693CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

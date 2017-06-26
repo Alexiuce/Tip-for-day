@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        @IBOutlet weak var s: NSButton!
         // 定位服务对象
         _locationService = BMKLocationService()
         // 设置最小更新距离（Double类型）

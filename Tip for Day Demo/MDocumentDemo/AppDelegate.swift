@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  ConverPDFDemo
+//  MDocumentDemo
 //
-//  Created by Alexcai on 2017/6/25.
+//  Created by alexiuce  on 2017/6/26.
 //  Copyright © 2017年 com.Alexiuce. All rights reserved.
 //
 
