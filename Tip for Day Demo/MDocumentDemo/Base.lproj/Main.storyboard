@@ -708,14 +708,49 @@
                                     <action selector="expertPdfWithButton:" target="5gI-5U-AMq" id="Yl6-oO-qV3"/>
                                 </connections>
                             </button>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8G-5X-NFM">
+                                <rect key="frame" x="0.0" y="176" width="480" height="94"/>
+                                <clipView key="contentView" id="IW8-WY-XDf">
+                                    <rect key="frame" x="1" y="1" width="478" height="92"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="1bU-hQ-47B">
+                                            <rect key="frame" x="0.0" y="0.0" width="478" height="92"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="478" height="92"/>
+                                            <size key="maxSize" width="478" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="6oV-DN-ZNG"/>
+                                </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="c1Z-kD-y8G">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cU5-zy-uKI">
+                                    <rect key="frame" x="463" y="1" width="16" height="92"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="wyw-UK-4nU" secondAttribute="trailing" constant="20" id="KIq-HU-yr9"/>
                             <constraint firstAttribute="centerY" secondItem="TyV-c9-G0C" secondAttribute="centerY" id="Rxv-Yd-F43"/>
+                            <constraint firstItem="r8G-5X-NFM" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="ZAD-CG-ZHp"/>
                             <constraint firstAttribute="centerX" secondItem="TyV-c9-G0C" secondAttribute="centerX" id="Zn4-Y4-lbg"/>
+                            <constraint firstItem="r8G-5X-NFM" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="jzX-ku-7TA"/>
                             <constraint firstAttribute="bottom" secondItem="wyw-UK-4nU" secondAttribute="bottom" constant="20" id="seZ-GJ-lQ8"/>
+                            <constraint firstAttribute="trailing" secondItem="r8G-5X-NFM" secondAttribute="trailing" id="uP8-ru-gCK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="1bU-hQ-47B" id="YDW-GK-sRG"/>
+                    </connections>
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
