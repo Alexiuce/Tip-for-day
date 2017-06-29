@@ -34,6 +34,11 @@
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
+		<key>RxSwiftDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
 		<key>Tip for Day Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -98,6 +103,11 @@
 			<true/>
 		</dict>
 		<key>F2F37BA51F00A6E9002693CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2F37BF41F049215002693CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
