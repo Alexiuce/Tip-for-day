@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -653,7 +657,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="GitHubApiDemo" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
@@ -661,12 +665,13 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="GitHubApiDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="337" y="110" width="1200" height="800"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="1200" height="800"/>
                     </window>
                     <connections>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
@@ -679,15 +684,59 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="GitHubApiDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1200" height="800"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <webView translatesAutoresizingMaskIntoConstraints="NO" id="E3T-gp-6ch">
+                                <rect key="frame" x="0.0" y="0.0" width="1200" height="750"/>
+                                <webPreferences key="preferences" defaultFontSize="16" defaultFixedFontSize="13" minimumFontSize="0">
+                                    <nil key="identifier"/>
+                                </webPreferences>
+                                <connections>
+                                    <outlet property="policyDelegate" destination="XfG-lQ-9wD" id="eDR-Ub-KHc"/>
+                                </connections>
+                            </webView>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="rzf-UY-TJP">
+                                <rect key="frame" x="0.0" y="750" width="1200" height="50"/>
+                                <view key="contentView" id="stk-Xd-nP3">
+                                    <rect key="frame" x="0.0" y="0.0" width="1200" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqt-5C-ld1">
+                                            <rect key="frame" x="14" y="5" width="285" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="left" placeholderString="Search GitHub" usesSingleLineMode="YES" bezelStyle="round" id="e4t-ZO-pj0">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </searchFieldCell>
+                                        </searchField>
+                                    </subviews>
+                                </view>
+                                <color key="fillColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.53563784246575341" colorSpace="calibratedRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="E3T-gp-6ch" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="6hn-rL-vY4"/>
+                            <constraint firstItem="rzf-UY-TJP" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Ive-Mc-4QK"/>
+                            <constraint firstItem="E3T-gp-6ch" firstAttribute="top" secondItem="rzf-UY-TJP" secondAttribute="bottom" id="Z83-mT-u8f"/>
+                            <constraint firstAttribute="trailing" secondItem="rzf-UY-TJP" secondAttribute="trailing" id="ZBA-5P-Tta"/>
+                            <constraint firstItem="E3T-gp-6ch" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="50" id="cUJ-OL-wID"/>
+                            <constraint firstAttribute="bottom" secondItem="E3T-gp-6ch" secondAttribute="bottom" id="fHy-wq-6LU"/>
+                            <constraint firstAttribute="trailing" secondItem="E3T-gp-6ch" secondAttribute="trailing" id="p0F-KF-hUq"/>
+                            <constraint firstItem="rzf-UY-TJP" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="ziV-Ik-cLy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="topBox" destination="stk-Xd-nP3" id="kZN-mU-51j"/>
+                        <outlet property="webView" destination="E3T-gp-6ch" id="XJa-6d-bHf"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="74" y="1217"/>
         </scene>
     </scenes>
 </document>

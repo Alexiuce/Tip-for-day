@@ -8,66 +8,75 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>Pods-AVFoundationDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
 		<key>Pods-BaiduMap Demo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>8</integer>
 		</dict>
 		<key>Pods-Core Image Demo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>9</integer>
 		</dict>
 		<key>Pods-GitHubApiDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>10</integer>
 		</dict>
 		<key>Pods-OpenCV Demo.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>16</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-RxSwiftDemo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-Tip for Day Demo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>11</integer>
 		</dict>
 		<key>Pods-XCPhotoEditPicker.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>12</integer>
+		</dict>
+		<key>RxCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>13</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>08F677DC588339A12D94B059F9BC121A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2457475DCBFD3DDCB826724163BD0182</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>322A35D4DA272BF1339104170476A056</key>
 		<dict>
 			<key>primary</key>
@@ -104,6 +113,11 @@
 			<true/>
 		</dict>
 		<key>BC386B19A0014E83C68139EC61BA22E6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC5CB6A116922B1B075F1E15A79E0CB3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

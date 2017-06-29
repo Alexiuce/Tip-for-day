@@ -16,11 +16,11 @@ class Document: NSDocument {
         super.init()
         // Add your subclass-specific initialization here.
     }
-
+    // 自动保存功能
     override class func autosavesInPlace() -> Bool {
         return true
     }
-
+    // 加载文档关联的视图控制器： 也就是显示文档内容或保存其内容 对应的的视图控制器（可以有多个）
     override func makeWindowControllers() {
         // Returns the Storyboard that contains your Document window.
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
@@ -32,7 +32,7 @@ class Document: NSDocument {
         }
         
     }
-
+   // 保存文档时，系统调用此方法
     override func data(ofType typeName: String) throws -> Data {
         let saveText = contextController.textView.string ?? ""
         return saveText.data(using: .utf8)!
@@ -41,7 +41,7 @@ class Document: NSDocument {
         // You can also choose to override fileWrapperOfType:error:, writeToURL:ofType:error:, or writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
 //        throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
     }
-
+   // 打开文档时，系统调用此方法
     override func read(from data: Data, ofType typeName: String) throws {
         readText = String(data: data, encoding: .utf8)
         // Insert code here to read your document from the given data of the specified type. If outError != nil, ensure that you create and set an appropriate error when returning false.
