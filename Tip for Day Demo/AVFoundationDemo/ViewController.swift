@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     // 采集设备硬件
     
     lazy var captureDevice : AVCaptureDevice = {
+       
         let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)!
         return device
     }();

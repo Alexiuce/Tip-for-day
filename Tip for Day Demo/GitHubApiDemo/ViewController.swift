@@ -13,19 +13,18 @@ import SwiftyJSON
 
 class ViewController: NSViewController {
 
-    
+     @IBOutlet weak var topBox: NSView!
     
     @IBOutlet weak var webView: WebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      let server = "http://github.com/login/oauth/authorize?client_id="
+      let server = "https://github.com"
         let url = URL(string: server)!
         let requet = URLRequest(url: url)
         webView.mainFrame.load(requet)
         
     }
-
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
@@ -52,12 +51,12 @@ extension ViewController : WebPolicyDelegate{
 extension ViewController{
     fileprivate func loadOAuthor(){
        
-        Alamofire.request(baseURL + apiName + clientID, method: .put, parameters: para).responseJSON { (response) in
-            if let data = response.data {
-                let json = JSON.init(data: data)
-                XCPrint(json)
-            }
-        }
+//        Alamofire.request(baseURL + apiName + clientID, method: .put, parameters: para).responseJSON { (response) in
+//            if let data = response.data {
+//                let json = JSON.init(data: data)
+//                XCPrint(json)
+//            }
+//        }
     }
 }
 
