@@ -376,8 +376,8 @@
 			children = (
 				F292754A1EFD15580001F866 /* GitHubApiDemo.entitlements */,
 				F292753D1EFD0C600001F866 /* AppDelegate.swift */,
-				F292753F1EFD0C600001F866 /* ViewController.swift */,
 				F2F37C091F04FCE2002693CF /* WindowController.swift */,
+				F292753F1EFD0C600001F866 /* ViewController.swift */,
 				F2F37C0B1F04FED0002693CF /* View(Frame).swift */,
 				F29275411EFD0C610001F866 /* Assets.xcassets */,
 				F29275431EFD0C610001F866 /* Main.storyboard */,

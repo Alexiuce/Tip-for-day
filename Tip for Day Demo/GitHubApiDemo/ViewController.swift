@@ -14,8 +14,9 @@ import SwiftyJSON
 class ViewController: NSViewController {
 
      @IBOutlet weak var topBox: NSView!
-    
     @IBOutlet weak var webView: WebView!
+    
+    @IBOutlet weak var leftTable: NSTableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
