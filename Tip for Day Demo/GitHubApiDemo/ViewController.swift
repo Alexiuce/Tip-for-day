@@ -55,10 +55,16 @@ extension ViewController : NSTableViewDataSource{
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        let cell = tableView.make(withIdentifier: "github", owner: self) as? NSTableCellView
         
-        cell?.textField?.stringValue = "hello \(row)"
-        return cell
+        return "text \(row)"
+    }
+    
+    func tableView(_ tableView: NSTableView, setObjectValue object: Any?, for tableColumn: NSTableColumn?, row: Int) {
+       
+        let cell = tableView .make(withIdentifier: "github", owner: self) as! NSTableCellView
+        cell.textField?.stringValue = object as! String
+        
+       
     }
     
     
