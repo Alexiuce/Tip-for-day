@@ -29,10 +29,20 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>MDocumentDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
 		<key>OpenCV Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
+		</dict>
+		<key>RxSwiftDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
 		</dict>
 		<key>Tip for Day Demo.xcscheme</key>
 		<dict>
@@ -93,6 +103,16 @@
 			<true/>
 		</dict>
 		<key>F2B2B1AA1EF8B40B009DFDA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2F37BA51F00A6E9002693CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2F37BF41F049215002693CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
