@@ -14,8 +14,9 @@ import SwiftyJSON
 class ViewController: NSViewController {
 
      @IBOutlet weak var topBox: NSView!
-    
     @IBOutlet weak var webView: WebView!
+    
+    @IBOutlet weak var leftTable: NSTableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,21 @@ extension ViewController : WebPolicyDelegate{
     }
 }
 
+
+extension ViewController : NSTableViewDataSource{
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        let cell = tableView.make(withIdentifier: "github", owner: self) as? NSTableCellView
+        
+        cell?.textField?.stringValue = "hello \(row)"
+        return cell
+    }
+    
+    
+}
 
 extension ViewController{
     fileprivate func loadOAuthor(){
