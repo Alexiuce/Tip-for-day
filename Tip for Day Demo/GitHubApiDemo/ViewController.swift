@@ -18,6 +18,8 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var leftTable: NSTableView!
     
+    @IBOutlet weak var searchBar : NSSearchField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
       let server = "https://github.com"
@@ -30,6 +32,12 @@ class ViewController: NSViewController {
         didSet {
         // Update the view, if already loaded.
         }
+    }
+    
+    
+    @IBAction func searchDidChange(_ sender : NSSearchField){
+        XCPrint(sender.stringValue)
+   
     }
 }
 
@@ -69,6 +77,8 @@ extension ViewController : NSTableViewDataSource{
     
     
 }
+
+
 
 extension ViewController{
     fileprivate func loadOAuthor(){

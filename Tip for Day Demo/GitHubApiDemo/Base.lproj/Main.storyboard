@@ -705,13 +705,16 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqt-5C-ld1">
-                                            <rect key="frame" x="14" y="5" width="285" height="22"/>
+                                            <rect key="frame" x="14" y="8" width="285" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="left" placeholderString="Search GitHub" usesSingleLineMode="YES" bezelStyle="round" id="e4t-ZO-pj0">
+                                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" placeholderString="Search GitHub" usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" id="e4t-ZO-pj0">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </searchFieldCell>
+                                            <connections>
+                                                <action selector="searchDidChange:" target="XfG-lQ-9wD" id="hSj-qT-mCw"/>
+                                            </connections>
                                         </searchField>
                                     </subviews>
                                 </view>
@@ -779,6 +782,7 @@
                     </view>
                     <connections>
                         <outlet property="leftTable" destination="Mir-51-3fC" id="kn7-cd-N5P"/>
+                        <outlet property="searchBar" destination="wqt-5C-ld1" id="P5p-dV-0Ec"/>
                         <outlet property="topBox" destination="stk-Xd-nP3" id="kZN-mU-51j"/>
                         <outlet property="webView" destination="E3T-gp-6ch" id="XJa-6d-bHf"/>
                     </connections>
