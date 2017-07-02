@@ -26,6 +26,7 @@ class ViewController: NSViewController {
         let url = URL(string: server)!
         let requet = URLRequest(url: url)
         webView.mainFrame.load(requet)
+        searchRespositories("AFN")
         
     }
     override var representedObject: Any? {
@@ -81,14 +82,17 @@ extension ViewController : NSTableViewDataSource{
 
 
 extension ViewController{
-    fileprivate func loadOAuthor(){
-       
-//        Alamofire.request(baseURL + apiName + clientID, method: .put, parameters: para).responseJSON { (response) in
-//            if let data = response.data {
-//                let json = JSON.init(data: data)
-//                XCPrint(json)
-//            }
-//        }
+    fileprivate func searchRespositories(_ keywork: String){
+        let baseURL = "https://api.github.com"
+        let apiName = "/search/repositories"
+        let para = ["q":keywork]
+    
+     Alamofire.request(baseURL + apiName, method: .get, parameters: para).responseJSON { (response) in
+            if let data = response.data {
+                let json = JSON.init(data: data)
+                XCPrint(json)
+            }
+        }
     }
 }
 

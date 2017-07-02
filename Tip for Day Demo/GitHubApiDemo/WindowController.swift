@@ -14,7 +14,7 @@ class WindowController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
         window?.titlebarAppearsTransparent = true
-        window!.styleMask = NSWindowStyleMask(rawValue: window!.styleMask.rawValue | NSWindowStyleMask.fullSizeContentView.rawValue)
+//        window!.styleMask = NSWindowStyleMask(rawValue: window!.styleMask.rawValue | NSWindowStyleMask.fullSizeContentView.rawValue)
         
     }
 }

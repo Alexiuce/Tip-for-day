@@ -698,36 +698,14 @@
                                     <outlet property="policyDelegate" destination="XfG-lQ-9wD" id="eDR-Ub-KHc"/>
                                 </connections>
                             </webView>
-                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="rzf-UY-TJP">
-                                <rect key="frame" x="0.0" y="750" width="1200" height="50"/>
-                                <view key="contentView" id="stk-Xd-nP3">
-                                    <rect key="frame" x="0.0" y="0.0" width="1200" height="50"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqt-5C-ld1">
-                                            <rect key="frame" x="14" y="8" width="285" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" placeholderString="Search GitHub" usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" id="e4t-ZO-pj0">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </searchFieldCell>
-                                            <connections>
-                                                <action selector="searchDidChange:" target="XfG-lQ-9wD" id="hSj-qT-mCw"/>
-                                            </connections>
-                                        </searchField>
-                                    </subviews>
-                                </view>
-                                <color key="fillColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.53563784246575341" colorSpace="calibratedRGB"/>
-                            </box>
-                            <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNy-Um-1Zx">
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="YNy-Um-1Zx">
                                 <rect key="frame" x="0.0" y="0.0" width="299" height="750"/>
-                                <clipView key="contentView" drawsBackground="NO" id="hNH-0Z-J40">
-                                    <rect key="frame" x="1" y="1" width="297" height="748"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="hNH-0Z-J40">
+                                    <rect key="frame" x="0.0" y="0.0" width="299" height="750"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveColumns="NO" id="Mir-51-3fC">
-                                            <rect key="frame" x="0.0" y="0.0" width="297" height="748"/>
+                                        <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" mirrorLayoutDirectionWhenInternationalizing="never" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" id="Mir-51-3fC">
+                                            <rect key="frame" x="0.0" y="0.0" width="299" height="750"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -739,7 +717,7 @@
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </tableHeaderCell>
-                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="aEn-5c-UKa">
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" refusesFirstResponder="YES" alignment="left" title="Text Cell" id="aEn-5c-UKa">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -756,14 +734,84 @@
                                     <nil key="backgroundColor"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="AsH-qh-JMr">
-                                    <rect key="frame" x="1" y="733" width="297" height="16"/>
+                                    <rect key="frame" x="-100" y="-100" width="297" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="ktq-rE-eXh">
-                                    <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                    <rect key="frame" x="283" y="0.0" width="16" height="750"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="rzf-UY-TJP">
+                                <rect key="frame" x="0.0" y="750" width="1200" height="50"/>
+                                <view key="contentView" id="stk-Xd-nP3">
+                                    <rect key="frame" x="0.0" y="0.0" width="1200" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqt-5C-ld1">
+                                            <rect key="frame" x="14" y="14" width="285" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" placeholderString="Search GitHub" usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" id="e4t-ZO-pj0">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </searchFieldCell>
+                                            <connections>
+                                                <action selector="searchDidChange:" target="XfG-lQ-9wD" id="hSj-qT-mCw"/>
+                                            </connections>
+                                        </searchField>
+                                        <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IfC-aa-4eY">
+                                            <rect key="frame" x="469" y="10" width="76" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <popUpButtonCell key="cell" type="push" title="Swift" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="ccY-s6-Qxt" id="7sk-lJ-SFK">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="menu"/>
+                                                <menu key="menu" id="xwS-fZ-HmS">
+                                                    <items>
+                                                        <menuItem title="Swift" state="on" id="ccY-s6-Qxt"/>
+                                                        <menuItem title="Objective-C" id="Yvq-gK-Zc8"/>
+                                                        <menuItem title="JavaScript" id="LAC-Lh-qyD"/>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
+                                        </popUpButton>
+                                        <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xSB-Gb-DTa">
+                                            <rect key="frame" x="715" y="12" width="76" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="pvn-Um-qjN" id="nBA-Qm-FjY">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="menu"/>
+                                                <menu key="menu" id="BkQ-Bw-q2f">
+                                                    <items>
+                                                        <menuItem title="Item 1" state="on" id="pvn-Um-qjN"/>
+                                                        <menuItem title="Item 2" id="6vB-6l-Nb9"/>
+                                                        <menuItem title="Item 3" id="O4x-JZ-sdD"/>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
+                                        </popUpButton>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjD-H6-gd8">
+                                            <rect key="frame" x="397" y="17" width="68" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Language:" id="ONZ-lZ-ti6">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXq-gX-weQ">
+                                            <rect key="frame" x="669" y="17" width="34" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sort:" id="Ytj-hM-cgG">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                                <color key="fillColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.53563784246575341" colorSpace="calibratedRGB"/>
+                            </box>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="YNy-Um-1Zx" secondAttribute="bottom" id="6U2-4Z-1Dd"/>
@@ -789,7 +837,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="1217"/>
+            <point key="canvasLocation" x="74" y="1223"/>
         </scene>
     </scenes>
 </document>
