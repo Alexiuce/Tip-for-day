@@ -25,14 +25,10 @@ extension ViewController : NSTableViewDataSource{
     func tableView(_ tableView: NSTableView, setObjectValue object: Any?, for tableColumn: NSTableColumn?, row: Int) {
        
         let cell = tableView .make(withIdentifier: "github", owner: self) as! NSTableCellView
-        cell.textField?.stringValue = object as! String
-        
-       
-    }
-    
-    
+        cell.textField?.stringValue = object as! String  
+    }    
 }
-   ``` 
+``` 
 
 * 计算AutoLayout 布局的Cell高度（自动计算行高）：**调用fittingSize方法**
   
