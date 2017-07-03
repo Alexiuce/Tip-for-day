@@ -118,6 +118,9 @@ a demo code project for iOS / Mac , write down for develop tip
     ```swift
        view.focusRingType = None
     ```
+   * NSTableView 使用和自定义NSTableCellView  
+     详参GitHubApi  ：[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
+     
 
 * XibLoadViewDemo
   
@@ -127,3 +130,9 @@ a demo code project for iOS / Mac , write down for develop tip
 * Doucment Demo
 
  > 基于文档的应用demo 详情请参考 [document readme](https://github.com/Alexiuce/Tip-for-day/blob/master/MDocument%20Demo.md)
+ 
+* GitHubApiDemo  
+> 关于GitHub api的一个工程  
+> [readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
+
+ 

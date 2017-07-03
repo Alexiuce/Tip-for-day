@@ -26,12 +26,16 @@ class ViewController: NSViewController {
         let url = URL(string: server)!
         let requet = URLRequest(url: url)
         webView.mainFrame.load(requet)
-        searchRespositories("AFN")
+        
+        let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
+        leftTable.register(cellNib, forIdentifier: "respositoryCell")
+        leftTable.rowHeight = 100
         
     }
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
+            XCPrint("dlefaeladsf")
         }
     }
     
@@ -57,26 +61,18 @@ extension ViewController : WebPolicyDelegate{
     }
 }
 
-
 extension ViewController : NSTableViewDataSource{
     func numberOfRows(in tableView: NSTableView) -> Int {
         return 2
     }
-    
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        
-        return "text \(row)"
+}
+
+extension ViewController : NSTableViewDelegate{
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        let cell = tableView.make(withIdentifier: "respositoryCell", owner: self) as! RespositoryCell
+        cell.titleTextField.stringValue = "text \(row)"
+        return cell
     }
-    
-    func tableView(_ tableView: NSTableView, setObjectValue object: Any?, for tableColumn: NSTableColumn?, row: Int) {
-       
-        let cell = tableView .make(withIdentifier: "github", owner: self) as! NSTableCellView
-        cell.textField?.stringValue = object as! String
-        
-       
-    }
-    
-    
 }
 
 
