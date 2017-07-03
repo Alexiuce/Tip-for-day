@@ -39,7 +39,8 @@ extension ViewController : NSTableViewDataSource{
   ```swift
      // cell 控件赋值。。。
      cellHight = cell.fittingSize.height
-  
   ```
+  
+> 注意点： cell中如果有容器view，需要调用容器view的fittingSzie方法获取容器视图的最小适配size  
 
 
