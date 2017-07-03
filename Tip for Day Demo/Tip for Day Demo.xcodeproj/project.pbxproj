@@ -29,6 +29,7 @@
 		D85063481EFE923700FC9E5E /* MyXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85063471EFE923700FC9E5E /* MyXibView.xib */; };
 		F27F3EE21F09E22600614FF8 /* RespositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F3EE11F09E22600614FF8 /* RespositoryCell.swift */; };
 		F27F3EE41F09E49700614FF8 /* RespositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F27F3EE31F09E49700614FF8 /* RespositoryCell.xib */; };
+		F27F3EE81F0A10E000614FF8 /* RespositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F3EE71F0A10E000614FF8 /* RespositoryModel.swift */; };
 		F29275241EFC9CAB0001F866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29275231EFC9CAB0001F866 /* AppDelegate.swift */; };
 		F29275261EFC9CAB0001F866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29275251EFC9CAB0001F866 /* ViewController.swift */; };
 		F29275291EFC9CAB0001F866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29275271EFC9CAB0001F866 /* Main.storyboard */; };
@@ -124,6 +125,7 @@
 		DC71E72783B34308D8F86EC6 /* Pods-XCPhotoEditPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCPhotoEditPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCPhotoEditPicker/Pods-XCPhotoEditPicker.release.xcconfig"; sourceTree = "<group>"; };
 		F27F3EE11F09E22600614FF8 /* RespositoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespositoryCell.swift; sourceTree = "<group>"; };
 		F27F3EE31F09E49700614FF8 /* RespositoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RespositoryCell.xib; sourceTree = "<group>"; };
+		F27F3EE71F0A10E000614FF8 /* RespositoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespositoryModel.swift; sourceTree = "<group>"; };
 		F29275211EFC9CAA0001F866 /* BaiduMap Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BaiduMap Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29275231EFC9CAB0001F866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F29275251EFC9CAB0001F866 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				F27F3EE11F09E22600614FF8 /* RespositoryCell.swift */,
+				F27F3EE71F0A10E000614FF8 /* RespositoryModel.swift */,
 				F27F3EE31F09E49700614FF8 /* RespositoryCell.xib */,
 			);
 			path = Resportory;
@@ -1344,6 +1347,7 @@
 				F27F3EE21F09E22600614FF8 /* RespositoryCell.swift in Sources */,
 				F292753E1EFD0C600001F866 /* AppDelegate.swift in Sources */,
 				F2F37C0C1F04FED0002693CF /* View(Frame).swift in Sources */,
+				F27F3EE81F0A10E000614FF8 /* RespositoryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

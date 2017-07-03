@@ -20,6 +20,10 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var searchBar : NSSearchField!
     
+    var cellModels : [RespositoryModel]?
+    var caculateCell : RespositoryCell?
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
       let server = "https://github.com"
@@ -27,10 +31,20 @@ class ViewController: NSViewController {
         let requet = URLRequest(url: url)
         webView.mainFrame.load(requet)
         
+        let m1 = RespositoryModel()
+        m1.title = "AFN"
+        m1.desc = "framework"
+        m1.language = "oc"
+        m1.cellHeight = 20
+        let m2 = RespositoryModel()
+        m2.title = "Alamofire"
+        m2.desc = "Alamofire is an HTTP networking library written in Swift"
+        m2.language = "Swift"
+        m2.cellHeight = 40
+        cellModels = [m1,m2]
+        
         let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
         leftTable.register(cellNib, forIdentifier: "respositoryCell")
-        leftTable.rowHeight = 100
-        
     }
     override var representedObject: Any? {
         didSet {
@@ -63,17 +77,27 @@ extension ViewController : WebPolicyDelegate{
 
 extension ViewController : NSTableViewDataSource{
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return 2
+        return (cellModels?.count)!
     }
 }
 
 extension ViewController : NSTableViewDelegate{
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let cell = tableView.make(withIdentifier: "respositoryCell", owner: self) as! RespositoryCell
-        cell.titleTextField.stringValue = "text \(row)"
+        cell.cellModel = cellModels?[row]
         return cell
     }
+   
+    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+        if caculateCell == nil {
+            caculateCell = (tableView.make(withIdentifier: "respositoryCell", owner: self) as! RespositoryCell)
+        }
+        let model = cellModels?[row]
+        caculateCell?.cellModel = model
+        return (model?.cellHeight)!
+    }
 }
+
 
 
 

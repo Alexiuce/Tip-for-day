@@ -19,10 +19,25 @@ class RespositoryCell: NSTableCellView {
     
     @IBOutlet weak var descTextField: NSTextField!
     
+    var cellModel : RespositoryModel? = nil {
+        didSet{
+            if cellModel == nil {return;}
+            titleTextField.stringValue = cellModel!.title
+            laungageTextField.stringValue = cellModel!.language
+            descTextField.stringValue = cellModel!.desc
+           
+            cellModel?.cellHeight = self.fittingSize.height  ;
+            XCPrint(cellModel?.cellHeight)
+        }
+    }
     
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
         // Drawing code here.
+    }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        descTextField.maximumNumberOfLines = 0
     }
 }

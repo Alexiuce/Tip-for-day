@@ -15,7 +15,7 @@
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOR-TR-FeY">
                     <rect key="frame" x="53" y="49" width="35" height="18"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Title" id="PFz-lM-7oO">
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Title" id="PFz-lM-7oO">
                         <font key="font" metaFont="systemBold" size="14"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -23,15 +23,18 @@
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JG3-iA-LMV">
                     <rect key="frame" x="53" y="27" width="37" height="17"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="kax-NU-JIB">
+                    <textFieldCell key="cell" lineBreakMode="charWrapping" sendsActionOnEndEditing="YES" title="Label" id="kax-NU-JIB">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pek-sZ-l7u">
-                    <rect key="frame" x="53" y="5" width="37" height="17"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="yrP-IP-IeH">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" preferredMaxLayoutWidth="175" translatesAutoresizingMaskIntoConstraints="NO" id="pek-sZ-l7u">
+                    <rect key="frame" x="53" y="5" width="179" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="175" id="Esa-Gd-O2p"/>
+                    </constraints>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="label2" id="yrP-IP-IeH">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -63,7 +66,7 @@
                 <outlet property="laungageTextField" destination="JG3-iA-LMV" id="Hxk-Yi-iph"/>
                 <outlet property="titleTextField" destination="dOR-TR-FeY" id="X1r-vf-Yfa"/>
             </connections>
-            <point key="canvasLocation" x="-204" y="109.5"/>
+            <point key="canvasLocation" x="-204" y="109"/>
         </tableCellView>
     </objects>
 </document>
