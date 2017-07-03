@@ -112,6 +112,13 @@ a demo code project for iOS / Mac , write down for develop tip
 
 ### Mac 
 ---
+* 开发点滴
+  * 去除视图选中时的系统默认蓝色边框  
+ 
+    ```swift
+       view.focusRingType = None
+    ```
+
 * XibLoadViewDemo
   
   > xib方式加载自定义view

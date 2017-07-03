@@ -46,6 +46,11 @@
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
+		<key>Pods-RxSwiftDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
 		<key>Pods-Tip for Day Demo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -60,6 +65,16 @@
 			<key>orderHint</key>
 			<integer>15</integer>
 		</dict>
+		<key>RxCocoa.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>RxSwift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -70,6 +85,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>08F677DC588339A12D94B059F9BC121A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2457475DCBFD3DDCB826724163BD0182</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>322A35D4DA272BF1339104170476A056</key>
 		<dict>
 			<key>primary</key>
@@ -106,6 +131,11 @@
 			<true/>
 		</dict>
 		<key>BC386B19A0014E83C68139EC61BA22E6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC5CB6A116922B1B075F1E15A79E0CB3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

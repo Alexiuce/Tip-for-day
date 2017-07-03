@@ -18,18 +18,27 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var leftTable: NSTableView!
     
+    @IBOutlet weak var searchBar : NSSearchField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
       let server = "https://github.com"
         let url = URL(string: server)!
         let requet = URLRequest(url: url)
         webView.mainFrame.load(requet)
+        searchRespositories("AFN")
         
     }
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
+    }
+    
+    
+    @IBAction func searchDidChange(_ sender : NSSearchField){
+        XCPrint(sender.stringValue)
+   
     }
 }
 
@@ -55,24 +64,35 @@ extension ViewController : NSTableViewDataSource{
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        let cell = tableView.make(withIdentifier: "github", owner: self) as? NSTableCellView
         
-        cell?.textField?.stringValue = "hello \(row)"
-        return cell
+        return "text \(row)"
+    }
+    
+    func tableView(_ tableView: NSTableView, setObjectValue object: Any?, for tableColumn: NSTableColumn?, row: Int) {
+       
+        let cell = tableView .make(withIdentifier: "github", owner: self) as! NSTableCellView
+        cell.textField?.stringValue = object as! String
+        
+       
     }
     
     
 }
 
+
+
 extension ViewController{
-    fileprivate func loadOAuthor(){
-       
-//        Alamofire.request(baseURL + apiName + clientID, method: .put, parameters: para).responseJSON { (response) in
-//            if let data = response.data {
-//                let json = JSON.init(data: data)
-//                XCPrint(json)
-//            }
-//        }
+    fileprivate func searchRespositories(_ keywork: String){
+        let baseURL = "https://api.github.com"
+        let apiName = "/search/repositories"
+        let para = ["q":keywork]
+    
+     Alamofire.request(baseURL + apiName, method: .get, parameters: para).responseJSON { (response) in
+            if let data = response.data {
+                let json = JSON.init(data: data)
+                XCPrint(json)
+            }
+        }
     }
 }
 
