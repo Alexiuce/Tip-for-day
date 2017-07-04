@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-AVFoundationDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -82,12 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4E51490A25248B75248BD597AA5471C6</key>
+		<key>4C2384DAB8CCEE8DEBC2435492347506</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5C153EA90B0250DD643838B248EBD7C7</key>
+		<key>4E51490A25248B75248BD597AA5471C6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +127,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E0E0713B15CB34FD73B89FB12CFE0186</key>
+		<key>C4944FEC314D1A66588651D006273ADE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA0F467DDB863CC438735B7EF8D5C57C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

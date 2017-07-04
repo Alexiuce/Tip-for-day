@@ -11,6 +11,7 @@ import WebKit
 import Alamofire
 import SwiftyJSON
 
+
 class ViewController: NSViewController {
 
      @IBOutlet weak var topBox: NSView!
@@ -45,6 +46,7 @@ class ViewController: NSViewController {
         
         let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
         leftTable.register(cellNib, forIdentifier: "respositoryCell")
+        self.searchRespositories("AFN")
     }
     override var representedObject: Any? {
         didSet {
@@ -77,7 +79,7 @@ extension ViewController : WebPolicyDelegate{
 
 extension ViewController : NSTableViewDataSource{
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return (cellModels?.count)!
+        return cellModels == nil ? 0 : cellModels!.count
     }
 }
 
@@ -105,7 +107,7 @@ extension ViewController{
     fileprivate func searchRespositories(_ keywork: String){
         let baseURL = "https://api.github.com"
         let apiName = "/search/repositories"
-        let para = ["q":keywork]
+        let para = ["q":keywork + "language:Objective-C"]
     
      Alamofire.request(baseURL + apiName, method: .get, parameters: para).responseJSON { (response) in
             if let data = response.data {
