@@ -31,21 +31,9 @@ class ViewController: NSViewController {
         let url = URL(string: server)!
         let requet = URLRequest(url: url)
         webView.mainFrame.load(requet)
-        
-        let m1 = RespositoryModel()
-        m1.title = "AFN"
-        m1.desc = "framework"
-        m1.language = "oc"
-        m1.cellHeight = 20
-        let m2 = RespositoryModel()
-        m2.title = "Alamofire"
-        m2.desc = "Alamofire is an HTTP networking library written in Swift"
-        m2.language = "Swift"
-        m2.cellHeight = 40
-        cellModels = [m1,m2]
-        
         let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
         leftTable.register(cellNib, forIdentifier: "respositoryCell")
+        cellModels = []
         self.searchRespositories("AFN")
     }
     override var representedObject: Any? {
@@ -87,6 +75,7 @@ extension ViewController : NSTableViewDelegate{
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let cell = tableView.make(withIdentifier: "respositoryCell", owner: self) as! RespositoryCell
         cell.cellModel = cellModels?[row]
+       
         return cell
     }
    
@@ -113,6 +102,17 @@ extension ViewController{
             if let data = response.data {
                 let json = JSON.init(data: data)
                 XCPrint(json)
+                let repos = json["items"].arrayValue
+                self.cellModels?.removeAll()
+                for item in repos {
+                    let repoModel = RespositoryModel()
+                    repoModel.title =  item["name"].stringValue
+                    repoModel.language = item["language"].stringValue
+                    repoModel.desc = item["description"].stringValue
+                    repoModel.imageUrl = item["owner"]["avatar_url"].stringValue
+                    self.cellModels?.append(repoModel)
+                }
+               self.leftTable.reloadData()
             }
         }
     }

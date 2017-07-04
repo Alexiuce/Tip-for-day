@@ -12,5 +12,6 @@ class RespositoryModel: NSObject {
     var title = ""
     var desc = ""
     var language = ""
+    var imageUrl = ""
     var  cellHeight : CGFloat = 0.0 
 }

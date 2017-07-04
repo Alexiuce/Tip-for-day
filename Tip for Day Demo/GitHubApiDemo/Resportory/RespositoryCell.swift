@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Kingfisher
 
 class RespositoryCell: NSTableCellView {
 
@@ -25,9 +26,10 @@ class RespositoryCell: NSTableCellView {
             titleTextField.stringValue = cellModel!.title
             laungageTextField.stringValue = cellModel!.language
             descTextField.stringValue = cellModel!.desc
-           
+            let imgUrl = URL(string: cellModel!.imageUrl)
+           iconImageView.kf.setImage(with: imgUrl)
+            
             cellModel?.cellHeight = self.fittingSize.height  ;
-            XCPrint(cellModel?.cellHeight)
         }
     }
     
