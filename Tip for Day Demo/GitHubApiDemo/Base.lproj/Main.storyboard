@@ -776,9 +776,6 @@
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </searchFieldCell>
-                                            <connections>
-                                                <action selector="searchDidChange:" target="XfG-lQ-9wD" id="hSj-qT-mCw"/>
-                                            </connections>
                                         </searchField>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IfC-aa-4eY">
                                             <rect key="frame" x="469" y="10" width="154" height="26"/>
@@ -828,6 +825,17 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjp-UH-vs7">
+                                            <rect key="frame" x="308" y="6" width="81" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Search" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7D0-94-D6k">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="beginSearch:" target="XfG-lQ-9wD" id="ciL-3Y-1GV"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                                 <color key="fillColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.53563784246575341" colorSpace="calibratedRGB"/>

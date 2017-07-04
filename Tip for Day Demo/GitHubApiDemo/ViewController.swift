@@ -31,10 +31,11 @@ class ViewController: NSViewController {
         let url = URL(string: server)!
         let requet = URLRequest(url: url)
         webView.mainFrame.load(requet)
+    
         let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
         leftTable.register(cellNib, forIdentifier: "respositoryCell")
         cellModels = []
-        self.searchRespositories("AFN")
+       
     }
     override var representedObject: Any? {
         didSet {
@@ -44,17 +45,15 @@ class ViewController: NSViewController {
     }
     
     
-    @IBAction func searchDidChange(_ sender : NSSearchField){
-        XCPrint(sender.stringValue)
-   
+    @IBAction func beginSearch(_ sender : NSButton){
+        self.searchRespositories(searchBar.stringValue)
     }
+    
 }
 
 extension ViewController : WebPolicyDelegate{
     func webView(_ webView: WebView!, decidePolicyForNavigationAction actionInformation: [AnyHashable : Any]!, request: URLRequest!, frame: WebFrame!, decisionListener listener: WebPolicyDecisionListener!) {
-        XCPrint(request.url?.host)
         let host = request.url!.host! as NSString
-        
         if host .isEqual(to: "alexiuce.github.io") {
             XCPrint("alexicuce")
             listener.ignore()
@@ -87,10 +86,13 @@ extension ViewController : NSTableViewDelegate{
         caculateCell?.cellModel = model
         return (model?.cellHeight)!
     }
+    func tableViewSelectionDidChange(_ notification: Notification) {
+        let model = cellModels![leftTable.selectedRow]
+        let url = URL(string: model.homeUrl)!
+        let requet = URLRequest(url: url)
+        webView.mainFrame.load(requet)
+    }
 }
-
-
-
 
 extension ViewController{
     fileprivate func searchRespositories(_ keywork: String){
@@ -101,7 +103,6 @@ extension ViewController{
      Alamofire.request(baseURL + apiName, method: .get, parameters: para).responseJSON { (response) in
             if let data = response.data {
                 let json = JSON.init(data: data)
-                XCPrint(json)
                 let repos = json["items"].arrayValue
                 self.cellModels?.removeAll()
                 for item in repos {
@@ -110,6 +111,7 @@ extension ViewController{
                     repoModel.language = item["language"].stringValue
                     repoModel.desc = item["description"].stringValue
                     repoModel.imageUrl = item["owner"]["avatar_url"].stringValue
+                    repoModel.homeUrl = item["html_url"].stringValue
                     self.cellModels?.append(repoModel)
                 }
                self.leftTable.reloadData()
