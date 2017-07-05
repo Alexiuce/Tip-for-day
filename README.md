@@ -6,6 +6,17 @@ a demo code project for iOS / Mac , write down for develop tip
 ## Demo project All in one 
 ### iOS 
 ---
+* 开发常用
+> 1. **去除UITableviewCell底部横线的左边距**  
+> storyboard/xib中，修改cell的<code>Separator</code>属性  
+> ![](https://ws3.sinaimg.cn/large/006tNc79gy1fh92kc3e9bj30740210sp.jpg)
+> 
+> 
+> 
+> 
+> 
+
+
 * AVFoundation Target.  
  
   实现步骤：
