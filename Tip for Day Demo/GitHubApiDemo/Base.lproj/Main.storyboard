@@ -778,9 +778,9 @@
                                             </searchFieldCell>
                                         </searchField>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IfC-aa-4eY">
-                                            <rect key="frame" x="469" y="10" width="154" height="26"/>
+                                            <rect key="frame" x="469" y="10" width="115" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <popUpButtonCell key="cell" type="push" title="Swift" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="ccY-s6-Qxt" id="7sk-lJ-SFK">
+                                            <popUpButtonCell key="cell" type="push" title="Swift" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" arrowPosition="noArrow" selectedItem="ccY-s6-Qxt" id="7sk-lJ-SFK">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="menu"/>
                                                 <menu key="menu" id="xwS-fZ-HmS">
@@ -857,8 +857,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="languagePopButton" destination="IfC-aa-4eY" id="Xrg-QE-lRX"/>
                         <outlet property="leftTable" destination="Mir-51-3fC" id="kn7-cd-N5P"/>
                         <outlet property="searchBar" destination="wqt-5C-ld1" id="P5p-dV-0Ec"/>
+                        <outlet property="sortPopButton" destination="xSB-Gb-DTa" id="Blf-zP-qTn"/>
                         <outlet property="topBox" destination="stk-Xd-nP3" id="kZN-mU-51j"/>
                         <outlet property="webView" destination="E3T-gp-6ch" id="XJa-6d-bHf"/>
                     </connections>

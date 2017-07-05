@@ -20,6 +20,8 @@ class ViewController: NSViewController {
     @IBOutlet weak var leftTable: NSTableView!
     
     @IBOutlet weak var searchBar : NSSearchField!
+    @IBOutlet weak var languagePopButton : NSPopUpButton!
+    @IBOutlet weak var sortPopButton : NSPopUpButton!
     
     var cellModels : [RespositoryModel]?
     var caculateCell : RespositoryCell?
@@ -98,7 +100,7 @@ extension ViewController{
     fileprivate func searchRespositories(_ keywork: String){
         let baseURL = "https://api.github.com"
         let apiName = "/search/repositories"
-        let para = ["q":keywork + "language:Objective-C"]
+        let para = ["q":keywork + "language:\(languagePopButton.selectedItem!.title)"]
     
      Alamofire.request(baseURL + apiName, method: .get, parameters: para).responseJSON { (response) in
             if let data = response.data {
