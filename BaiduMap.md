@@ -64,8 +64,27 @@
         _mapView?.centerCoordinate = userLocation.location.coordinate  
     }
   ``` 
-   
-   
+    
+* 地图标注(两个步骤)
+ > **1.创建标注数据并添加到BMKMapView中**  
+ 
+ ```swift
+  fileprivate func addCustomAnnotation(){
+      let anno = BMKPointAnnotation()
+        anno.coordinate.latitude = 30.897
+        anno.coordinate.longitude = 120.532
+        _mapView?.addAnnotation(anno)
+    }
+ ```
+ > **2.实现BMKMapViewDelegate的方法**
+ 
+ ```swift
+ // 返回标注视图
+ func mapView(_ mapView: BMKMapView!, viewFor annotation: BMKAnnotation!) -> BMKAnnotationView! 
+ 
+ 
+ 
+ ```  
    
 * 错误码参考
   [LBS控制服务返回码定义及常见问题汇总](http://bbs.lbsyun.baidu.com/forum.php?mod=viewthread&tid=42223&page=1&extra=#pid93042)

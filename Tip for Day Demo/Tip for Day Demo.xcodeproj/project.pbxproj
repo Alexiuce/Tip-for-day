@@ -39,6 +39,7 @@
 		F29275401EFD0C600001F866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F292753F1EFD0C600001F866 /* ViewController.swift */; };
 		F29275421EFD0C610001F866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29275411EFD0C610001F866 /* Assets.xcassets */; };
 		F29275451EFD0C610001F866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29275431EFD0C610001F866 /* Main.storyboard */; };
+		F2ADCD1F1F0C813C00083597 /* Caculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ADCD1E1F0C813C00083597 /* Caculate.swift */; };
 		F2B198481EF9235700937200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B198471EF9235700937200 /* AppDelegate.swift */; };
 		F2B1984A1EF9235700937200 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B198491EF9235700937200 /* ViewController.swift */; };
 		F2B1984D1EF9235700937200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B1984B1EF9235700937200 /* Main.storyboard */; };
@@ -141,6 +142,7 @@
 		F29275441EFD0C610001F866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F29275461EFD0C610001F866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F292754A1EFD15580001F866 /* GitHubApiDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubApiDemo.entitlements; sourceTree = "<group>"; };
+		F2ADCD1E1F0C813C00083597 /* Caculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caculate.swift; sourceTree = "<group>"; };
 		F2B198451EF9235700937200 /* Core Image Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Image Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B198471EF9235700937200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2B198491EF9235700937200 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -378,6 +380,7 @@
 			children = (
 				F29275231EFC9CAB0001F866 /* AppDelegate.swift */,
 				F29275251EFC9CAB0001F866 /* ViewController.swift */,
+				F2ADCD1E1F0C813C00083597 /* Caculate.swift */,
 				F29275271EFC9CAB0001F866 /* Main.storyboard */,
 				F292752A1EFC9CAB0001F866 /* Assets.xcassets */,
 				F292752C1EFC9CAB0001F866 /* LaunchScreen.storyboard */,
@@ -1335,6 +1338,7 @@
 			files = (
 				F29275261EFC9CAB0001F866 /* ViewController.swift in Sources */,
 				F29275241EFC9CAB0001F866 /* AppDelegate.swift in Sources */,
+				F2ADCD1F1F0C813C00083597 /* Caculate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
