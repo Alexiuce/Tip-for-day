@@ -13,6 +13,7 @@
 		60B8D05B294020458DAABBA6 /* Pods_Core_Image_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D708FB051642C222C76B1B /* Pods_Core_Image_Demo.framework */; };
 		9AE68C606A1776E13F669EC3 /* Pods_BaiduMap_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F30D480E6D012EE52F0F03 /* Pods_BaiduMap_Demo.framework */; };
 		9C1376173A12C3CC33D5C33B /* libPods-OpenCV Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C6CBE9172478076D6AF8D9 /* libPods-OpenCV Demo.a */; };
+		D66D4934FB3DA79A10821FDD /* Pods_ReamAndChartsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7256A9F2455A0BD228441BA /* Pods_ReamAndChartsDemo.framework */; };
 		D85063081EFE02C700FC9E5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D85063071EFE02C700FC9E5E /* main.m */; };
 		D850630B1EFE02C700FC9E5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D850630A1EFE02C700FC9E5E /* AppDelegate.m */; };
 		D850630E1EFE02C700FC9E5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D850630D1EFE02C700FC9E5E /* ViewController.m */; };
@@ -39,6 +40,11 @@
 		F29275401EFD0C600001F866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F292753F1EFD0C600001F866 /* ViewController.swift */; };
 		F29275421EFD0C610001F866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29275411EFD0C610001F866 /* Assets.xcassets */; };
 		F29275451EFD0C610001F866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29275431EFD0C610001F866 /* Main.storyboard */; };
+		F29ADA6E1F0CE07700C07FE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29ADA6D1F0CE07700C07FE9 /* AppDelegate.swift */; };
+		F29ADA731F0CE07700C07FE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29ADA711F0CE07700C07FE9 /* Main.storyboard */; };
+		F29ADA751F0CE07700C07FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29ADA741F0CE07700C07FE9 /* Assets.xcassets */; };
+		F29ADA781F0CE07700C07FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29ADA761F0CE07700C07FE9 /* LaunchScreen.storyboard */; };
+		F29ADA7E1F0CE94F00C07FE9 /* ReamChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29ADA7D1F0CE94F00C07FE9 /* ReamChartViewController.swift */; };
 		F2ADCD1F1F0C813C00083597 /* Caculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ADCD1E1F0C813C00083597 /* Caculate.swift */; };
 		F2B198481EF9235700937200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B198471EF9235700937200 /* AppDelegate.swift */; };
 		F2B1984A1EF9235700937200 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B198491EF9235700937200 /* ViewController.swift */; };
@@ -91,6 +97,7 @@
 		4CF0865631941283A6530639 /* Pods-RxSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftDemo/Pods-RxSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		52C8279EA997EB6697FD3474 /* Pods_AVFoundationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVFoundationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61070EBB5C25D1E615E82D8D /* Pods_Tip_for_Day_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tip_for_Day_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6714EFAD4838751D98B2F7CD /* Pods-ReamAndChartsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReamAndChartsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReamAndChartsDemo/Pods-ReamAndChartsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		717D0192F203DADC939EA269 /* Pods-BaiduMap Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiduMap Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaiduMap Demo/Pods-BaiduMap Demo.release.xcconfig"; sourceTree = "<group>"; };
 		836B979D7831F71C3D8ACC58 /* Pods-Tip for Day Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip for Day Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tip for Day Demo/Pods-Tip for Day Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		8AD9E25444BA99C612736112 /* Pods-BaiduMap Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiduMap Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaiduMap Demo/Pods-BaiduMap Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +149,13 @@
 		F29275441EFD0C610001F866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F29275461EFD0C610001F866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F292754A1EFD15580001F866 /* GitHubApiDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubApiDemo.entitlements; sourceTree = "<group>"; };
+		F29ADA6B1F0CE07600C07FE9 /* ReamAndChartsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReamAndChartsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29ADA6D1F0CE07700C07FE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F29ADA721F0CE07700C07FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F29ADA741F0CE07700C07FE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F29ADA771F0CE07700C07FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F29ADA791F0CE07700C07FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29ADA7D1F0CE94F00C07FE9 /* ReamChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReamChartViewController.swift; sourceTree = "<group>"; };
 		F2ADCD1E1F0C813C00083597 /* Caculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caculate.swift; sourceTree = "<group>"; };
 		F2B198451EF9235700937200 /* Core Image Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Image Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B198471EF9235700937200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +198,8 @@
 		F2F37C031F049216002693CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2F37C091F04FCE2002693CF /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		F2F37C0B1F04FED0002693CF /* View(Frame).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View(Frame).swift"; sourceTree = "<group>"; };
+		F47B24E99B5F04E6927B4513 /* Pods-ReamAndChartsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReamAndChartsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReamAndChartsDemo/Pods-ReamAndChartsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F7256A9F2455A0BD228441BA /* Pods_ReamAndChartsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReamAndChartsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +238,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				34E3CA9EA169B52DE3934C0B /* Pods_GitHubApiDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29ADA681F0CE07600C07FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66D4934FB3DA79A10821FDD /* Pods_ReamAndChartsDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +318,8 @@
 				10EFBAEF499DE4D168573224 /* Pods-OpenCV Demo.release.xcconfig */,
 				154E2D4D88A57519FD9219BA /* Pods-RxSwiftDemo.debug.xcconfig */,
 				4CF0865631941283A6530639 /* Pods-RxSwiftDemo.release.xcconfig */,
+				F47B24E99B5F04E6927B4513 /* Pods-ReamAndChartsDemo.debug.xcconfig */,
+				6714EFAD4838751D98B2F7CD /* Pods-ReamAndChartsDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -309,6 +335,7 @@
 				D022A5F6BFB15759E670F669 /* Pods_GitHubApiDemo.framework */,
 				34C6CBE9172478076D6AF8D9 /* libPods-OpenCV Demo.a */,
 				2698B2C075E1403EE331A163 /* Pods_RxSwiftDemo.framework */,
+				F7256A9F2455A0BD228441BA /* Pods_ReamAndChartsDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -406,6 +433,19 @@
 			path = GitHubApiDemo;
 			sourceTree = "<group>";
 		};
+		F29ADA6C1F0CE07600C07FE9 /* ReamAndChartsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F29ADA6D1F0CE07700C07FE9 /* AppDelegate.swift */,
+				F29ADA7D1F0CE94F00C07FE9 /* ReamChartViewController.swift */,
+				F29ADA711F0CE07700C07FE9 /* Main.storyboard */,
+				F29ADA741F0CE07700C07FE9 /* Assets.xcassets */,
+				F29ADA761F0CE07700C07FE9 /* LaunchScreen.storyboard */,
+				F29ADA791F0CE07700C07FE9 /* Info.plist */,
+			);
+			path = ReamAndChartsDemo;
+			sourceTree = "<group>";
+		};
 		F2B198461EF9235700937200 /* Core Image Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +495,7 @@
 				D85063311EFE5A5200FC9E5E /* XibLoadViewDemo */,
 				F2F37BA71F00A6E9002693CF /* MDocumentDemo */,
 				F2F37BF61F049216002693CF /* RxSwiftDemo */,
+				F29ADA6C1F0CE07600C07FE9 /* ReamAndChartsDemo */,
 				F2B2B1931EF8B205009DFDA2 /* Products */,
 				42FBD0CF76602A266377FE1C /* Pods */,
 				48C81C1C840E5A174926DA9B /* Frameworks */,
@@ -475,6 +516,7 @@
 				D8846E881EFFE8F8008AAE5A /* ConverPDFDemo.app */,
 				F2F37BA61F00A6E9002693CF /* MDocumentDemo.app */,
 				F2F37BF51F049215002693CF /* RxSwiftDemo.app */,
+				F29ADA6B1F0CE07600C07FE9 /* ReamAndChartsDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -613,6 +655,26 @@
 			name = GitHubApiDemo;
 			productName = GitHubApiDemo;
 			productReference = F292753B1EFD0C600001F866 /* GitHubApiDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F29ADA6A1F0CE07600C07FE9 /* ReamAndChartsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29ADA7C1F0CE07700C07FE9 /* Build configuration list for PBXNativeTarget "ReamAndChartsDemo" */;
+			buildPhases = (
+				F7622D55FE0EBD0FBB33FAF0 /* [CP] Check Pods Manifest.lock */,
+				F29ADA671F0CE07600C07FE9 /* Sources */,
+				F29ADA681F0CE07600C07FE9 /* Frameworks */,
+				F29ADA691F0CE07600C07FE9 /* Resources */,
+				D27B3BEB6A1FDFCA77DDFB97 /* [CP] Embed Pods Frameworks */,
+				44EEA8A845EFFC00AF58816A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReamAndChartsDemo;
+			productName = ReamAndChartsDemo;
+			productReference = F29ADA6B1F0CE07600C07FE9 /* ReamAndChartsDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F2B198441EF9235700937200 /* Core Image Demo */ = {
@@ -773,6 +835,10 @@
 							};
 						};
 					};
+					F29ADA6A1F0CE07600C07FE9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 					F2B198441EF9235700937200 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = A95J37CEL7;
@@ -828,6 +894,7 @@
 				D8846E871EFFE8F8008AAE5A /* ConverPDFDemo */,
 				F2F37BA51F00A6E9002693CF /* MDocumentDemo */,
 				F2F37BF41F049215002693CF /* RxSwiftDemo */,
+				F29ADA6A1F0CE07600C07FE9 /* ReamAndChartsDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -877,6 +944,16 @@
 				F27F3EE41F09E49700614FF8 /* RespositoryCell.xib in Resources */,
 				F29275421EFD0C610001F866 /* Assets.xcassets in Resources */,
 				F29275451EFD0C610001F866 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29ADA691F0CE07600C07FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29ADA781F0CE07700C07FE9 /* LaunchScreen.storyboard in Resources */,
+				F29ADA751F0CE07700C07FE9 /* Assets.xcassets in Resources */,
+				F29ADA731F0CE07700C07FE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1058,6 +1135,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		44EEA8A845EFFC00AF58816A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReamAndChartsDemo/Pods-ReamAndChartsDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		46D0B853CEBEA0B861A2DCCC /* [CP] Check Pods Manifest.lock */ = {
@@ -1255,6 +1347,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftDemo/Pods-RxSwiftDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D27B3BEB6A1FDFCA77DDFB97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReamAndChartsDemo/Pods-ReamAndChartsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ECA6B92DD0680D329BFDF9AC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1283,6 +1390,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitHubApiDemo/Pods-GitHubApiDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7622D55FE0EBD0FBB33FAF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FC531964307D7F9F9A6BE258 /* [CP] Copy Pods Resources */ = {
@@ -1352,6 +1474,15 @@
 				F292753E1EFD0C600001F866 /* AppDelegate.swift in Sources */,
 				F2F37C0C1F04FED0002693CF /* View(Frame).swift in Sources */,
 				F27F3EE81F0A10E000614FF8 /* RespositoryModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29ADA671F0CE07600C07FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29ADA7E1F0CE94F00C07FE9 /* ReamChartViewController.swift in Sources */,
+				F29ADA6E1F0CE07700C07FE9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1459,6 +1590,22 @@
 				F29275441EFD0C610001F866 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F29ADA711F0CE07700C07FE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F29ADA721F0CE07700C07FE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F29ADA761F0CE07700C07FE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F29ADA771F0CE07700C07FE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		F2B1984B1EF9235700937200 /* Main.storyboard */ = {
@@ -1699,6 +1846,32 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joinf.www.GitHubApiDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F29ADA7A1F0CE07700C07FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F47B24E99B5F04E6927B4513 /* Pods-ReamAndChartsDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReamAndChartsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.alexiuce.ReamAndChartsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F29ADA7B1F0CE07700C07FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6714EFAD4838751D98B2F7CD /* Pods-ReamAndChartsDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReamAndChartsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.alexiuce.ReamAndChartsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -2018,6 +2191,15 @@
 			buildConfigurations = (
 				F29275471EFD0C610001F866 /* Debug */,
 				F29275481EFD0C610001F866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F29ADA7C1F0CE07700C07FE9 /* Build configuration list for PBXNativeTarget "ReamAndChartsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29ADA7A1F0CE07700C07FE9 /* Debug */,
+				F29ADA7B1F0CE07700C07FE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
