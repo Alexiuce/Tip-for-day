@@ -11,8 +11,11 @@ a demo code project for iOS / Mac , write down for develop tip
 > storyboard/xib中，修改cell的<code>Separator</code>属性   
 > ![](https://ws3.sinaimg.cn/large/006tNc79gy1fh92kc3e9bj30740210sp.jpg)
 > 
+> 2. **每次提交时，忽略已被添加到git管理中的文件**（如果没有该文件没有被添加到git中，使用.gitignore文件进行忽略提交）
 > 
-> 
+> ```git
+> git update-index --assume-unchanged PATH    // 在PATH处输入要忽略的文件。
+> ```
 > 
 
 
