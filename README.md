@@ -124,7 +124,7 @@ a demo code project for iOS / Mac , write down for develop tip
   关于详情请参看：[RxSwift Readme](https://github.com/Alexiuce/Tip-for-day/blob/master/RxSwift%20Readme.md)
 
 * ReamAndCharts Target  
-  详细参看
+  详细参看[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/RealmAndCharts.md)
   
 
 
