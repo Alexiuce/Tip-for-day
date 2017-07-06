@@ -16,8 +16,11 @@ class ReamChartViewController: UIViewController {
 
     @IBOutlet weak var barChartView: BarChartView!
     
+    weak var axisFormatterDeleget : IAxisValueFormatter?    // X 轴的数据格式代理
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        axisFormatterDeleget = self
         removeAllData()
 
         // Do any additional setup after loading the view.
@@ -42,8 +45,9 @@ extension ReamChartViewController{
         var dataEntries : [BarChartDataEntry] = []
         // 遍历从Realm中获取的结果
         for i in 0 ..< visitorCount.count {
+            let timeInterval = visitorCount[i].date.timeIntervalSince1970
             // 创建数据节点
-            let dataEntry = BarChartDataEntry(x: Double(i), y: Double(visitorCount[i].count))
+            let dataEntry = BarChartDataEntry(x: Double(timeInterval), y: Double(visitorCount[i].count))
             // 添加到数组中
             dataEntries.append(dataEntry)
         }
@@ -52,7 +56,8 @@ extension ReamChartViewController{
         // 
         let chartData = BarChartData(dataSet: chartDataSet)
         barChartView.data = chartData
-   
+        let xaxis = barChartView.xAxis
+        xaxis.valueFormatter = axisFormatterDeleget
     }
     // 获取数据库中的结果
     fileprivate func getVisitorFromDatabase() -> Results<VisitorCount>?{
@@ -70,5 +75,13 @@ extension ReamChartViewController{
        try? realm.write {
             realm.delete(visitorCount)
         }
+    }
+}
+// MARK:  X 轴的数据格式代理方法
+extension ReamChartViewController: IAxisValueFormatter{
+    func stringForValue(_ value: Double, axis: AxisBase?) -> String {
+        let valueFormatter = DateFormatter()
+        valueFormatter.dateFormat = "HH:mm:ss"
+        return valueFormatter.string(from: Date(timeIntervalSince1970: value))
     }
 }

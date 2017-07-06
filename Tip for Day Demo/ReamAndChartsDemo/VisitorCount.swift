@@ -11,13 +11,18 @@ import RealmSwift
 
 class VisitorCount: Object {
     dynamic var count = 0
-    dynamic var data = Data()
+    dynamic var date = Date()
     
     func saveToDatabase() {
-        guard let realm = try? Realm() else {return}
-        try? realm.write {
-            realm.add(self)
+    
+        do{
+            let realm =  try Realm()
+            
+            try realm.write {
+                realm.add(self)
+            }
+        }catch let erroe as NSError{
+            print(erroe.localizedDescription)
         }
-        
     }
 }
