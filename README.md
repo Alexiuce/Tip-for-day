@@ -138,6 +138,8 @@ a demo code project for iOS / Mac , write down for develop tip
     ```
    * NSTableView 使用和自定义NSTableCellView  
      详参GitHubApi  ：[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
+   * NSOutlieView 使用介绍：  
+     详细内容，参看 [readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md)
      
 
 * XibLoadViewDemo
