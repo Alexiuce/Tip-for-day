@@ -23,9 +23,13 @@ class ViewController: NSViewController {
     @IBOutlet weak var languagePopButton : NSPopUpButton!
     @IBOutlet weak var sortPopButton : NSPopUpButton!
     
+    
+    @IBOutlet weak var outlineView : NSOutlineView!
+    
     var cellModels : [RespositoryModel]?
     var caculateCell : RespositoryCell?
-
+    let peoples  = [[ "Mary", "John", "Paul","hiye","kenen"],["naitang","alexiuce","shanz","boniu","dupom"],["alen","ali","yixiu","caser","tiaming"]]
+    let jobs = ["backmiss","fore","middle"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +40,9 @@ class ViewController: NSViewController {
     
         let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
         leftTable.register(cellNib, forIdentifier: "respositoryCell")
+        
         cellModels = []
+        
        
     }
     override var representedObject: Any? {
@@ -95,6 +101,40 @@ extension ViewController : NSTableViewDelegate{
         webView.mainFrame.load(requet)
     }
 }
+// MARK: NSOutlineViewDataSource & NSOutlineViewDelegate
+extension ViewController : NSOutlineViewDataSource{
+    func outlineView(_ outlineView: NSOutlineView, numberOfChildrenOfItem item: Any?) -> Int {
+        if item == nil {
+            return peoples.count
+        }else{
+          let index =  jobs.index(of: (item as! String))!
+            return peoples[index].count
+        }
+}
+    func outlineView(_ outlineView: NSOutlineView, child index: Int, ofItem item: Any?) -> Any {
+        if item == nil {
+            return jobs[index]
+        }else{
+            let i =  jobs.index(of: (item as! String))!
+            return peoples[i][index]
+        }
+    }
+    func outlineView(_ outlineView: NSOutlineView, isItemExpandable item: Any) -> Bool {
+    
+        return   jobs.contains( item as! String)
+    }
+    
+    
+}
+extension ViewController : NSOutlineViewDelegate{
+    func outlineView(_ outlineView: NSOutlineView, viewFor tableColumn: NSTableColumn?, item: Any) -> NSView? {
+       let cell = NSTableCellView()
+        cell.textField?.stringValue = "hello"
+        return cell
+    }
+    
+}
+
 
 extension ViewController{
     fileprivate func searchRespositories(_ keywork: String){
