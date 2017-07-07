@@ -39,4 +39,6 @@ extension ViewController : NSTableViewDataSource{
   
 > 注意点： cell中如果有容器view，需要调用容器view的fittingSzie方法获取容器视图的最小适配size  
 
+---
 
+##### NSOutlineView 使用 
