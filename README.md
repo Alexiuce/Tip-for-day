@@ -6,6 +6,19 @@ a demo code project for iOS / Mac , write down for develop tip
 ## Demo project All in one 
 ### iOS 
 ---
+* 开发常用
+> 1. **去除UITableviewCell底部横线的左边距**  
+> storyboard/xib中，修改cell的<code>Separator</code>属性   
+> ![](https://ws3.sinaimg.cn/large/006tNc79gy1fh92kc3e9bj30740210sp.jpg)
+> 
+> 2. **每次提交时，忽略已被添加到git管理中的文件**（如果没有该文件没有被添加到git中，使用.gitignore文件进行忽略提交）
+> 
+> ```git
+> git update-index --assume-unchanged PATH    // 在PATH处输入要忽略的文件。
+> ```
+> 
+
+
 * AVFoundation Target.  
  
   实现步骤：
@@ -110,6 +123,11 @@ a demo code project for iOS / Mac , write down for develop tip
 * RxSwift Demo  
   关于详情请参看：[RxSwift Readme](https://github.com/Alexiuce/Tip-for-day/blob/master/RxSwift%20Readme.md)
 
+* ReamAndCharts Target  
+  详细参看[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/RealmAndCharts.md)
+  
+
+
 ### Mac 
 ---
 * 开发点滴
@@ -118,6 +136,11 @@ a demo code project for iOS / Mac , write down for develop tip
     ```swift
        view.focusRingType = None
     ```
+   * NSTableView 使用和自定义NSTableCellView  
+     详参GitHubApi  ：[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
+   * NSOutlieView 使用介绍：  
+     详细内容，参看 [readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md)
+     
 
 * XibLoadViewDemo
   
@@ -127,3 +150,9 @@ a demo code project for iOS / Mac , write down for develop tip
 * Doucment Demo
 
  > 基于文档的应用demo 详情请参考 [document readme](https://github.com/Alexiuce/Tip-for-day/blob/master/MDocument%20Demo.md)
+ 
+* GitHubApiDemo  
+> 关于GitHub api的一个工程  
+> [readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
+
+ 

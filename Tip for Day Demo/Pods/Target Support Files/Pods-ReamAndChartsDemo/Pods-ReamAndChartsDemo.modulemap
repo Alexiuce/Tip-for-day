@@ -1,0 +1,6 @@
+framework module Pods_ReamAndChartsDemo {
+  umbrella header "Pods-ReamAndChartsDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

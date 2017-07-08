@@ -1,6 +1,15 @@
 PODS:
   - Alamofire (4.4.0)
   - BaiduMapKit (3.3.2)
+  - Charts (3.0.2):
+    - Charts/Core (= 3.0.2)
+  - Charts/Core (3.0.2)
+  - Kingfisher (3.10.1)
+  - Realm (2.0.4):
+    - Realm/Headers (= 2.0.4)
+  - Realm/Headers (2.0.4)
+  - RealmSwift (2.0.4):
+    - Realm (= 2.0.4)
   - RxCocoa (3.5.0):
     - RxSwift (~> 3.4)
   - RxSwift (3.5.0)
@@ -9,6 +18,9 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - BaiduMapKit
+  - Charts (~> 3.0.1)
+  - Kingfisher (~> 3.0)
+  - RealmSwift (~> 2.0.2)
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
   - SwiftyJSON
@@ -16,10 +28,14 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   BaiduMapKit: 5118390d63b375483bd64c963e8e32a40fd9ddb5
+  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  Kingfisher: 33a1b82140fcb14a9fc13f78dfde2a03ff8de8cb
+  Realm: 9da97f48365f8b99dd95c28d45ad8222d62e1775
+  RealmSwift: 01e8db006035f16003e6307ae8eae1adccce68db
   RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
   RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: c8ac5bb5985a0f353386663d97c80591fb702c2f
+PODFILE CHECKSUM: c6b0d5969d35b3efc15c6eee0e0d0d0473544dbb
 
 COCOAPODS: 1.2.1

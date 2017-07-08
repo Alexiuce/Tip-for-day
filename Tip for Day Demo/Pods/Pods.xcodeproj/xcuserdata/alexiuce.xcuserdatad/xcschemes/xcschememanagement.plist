@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Charts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-AVFoundationDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-ReamAndChartsDemo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-RxSwiftDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -45,6 +60,16 @@
 			<false/>
 		</dict>
 		<key>Pods-XCPhotoEditPicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -72,6 +97,16 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>0DA01312BBF77BEB0E3835FFE46D2B8E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1C3D886DD5E3566964FBC1B567043F51</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2457475DCBFD3DDCB826724163BD0182</key>
 		<dict>
 			<key>primary</key>
@@ -82,12 +117,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4C2384DAB8CCEE8DEBC2435492347506</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4E51490A25248B75248BD597AA5471C6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5C153EA90B0250DD643838B248EBD7C7</key>
+		<key>6E4B7F4BFDA402E6BF8E1030AF70666A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +162,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E0E0713B15CB34FD73B89FB12CFE0186</key>
+		<key>C4944FEC314D1A66588651D006273ADE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA0F467DDB863CC438735B7EF8D5C57C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F307B842FF76B2DE6C55DB67C0885325</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -25,13 +25,20 @@ extension ViewController : NSTableViewDataSource{
     func tableView(_ tableView: NSTableView, setObjectValue object: Any?, for tableColumn: NSTableColumn?, row: Int) {
        
         let cell = tableView .make(withIdentifier: "github", owner: self) as! NSTableCellView
-        cell.textField?.stringValue = object as! String
-        
-       
-    }
-    
-    
+        cell.textField?.stringValue = object as! String  
+    }    
 }
 ``` 
 
+* 计算AutoLayout 布局的Cell高度（自动计算行高）：**调用fittingSize方法**
+  
+  ```swift
+     // cell 控件赋值。。。
+     cellHight = cell.fittingSize.height
+  ```
+  
+> 注意点： cell中如果有容器view，需要调用容器view的fittingSzie方法获取容器视图的最小适配size  
 
+---
+
+##### NSOutlineView 使用 
