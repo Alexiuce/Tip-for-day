@@ -39,6 +39,11 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>ReamAndChartsDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>23</integer>
+		</dict>
 		<key>RxSwiftDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -83,6 +88,11 @@
 			<true/>
 		</dict>
 		<key>F292753A1EFD0C600001F866</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F29ADA6A1F0CE07600C07FE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
