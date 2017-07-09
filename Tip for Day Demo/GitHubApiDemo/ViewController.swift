@@ -128,7 +128,7 @@ extension ViewController : NSOutlineViewDataSource{
 }
 extension ViewController : NSOutlineViewDelegate{
     func outlineView(_ outlineView: NSOutlineView, viewFor tableColumn: NSTableColumn?, item: Any) -> NSView? {
-        var cell = outlineView.make(withIdentifier: "firstCell", owner: self) as? NSTableCellView
+        let cell = outlineView.make(withIdentifier: "firstCell", owner: self) as? NSTableCellView
             cell?.textField?.stringValue = (item as? String)!
             cell?.textField?.sizeToFit()
         return cell
