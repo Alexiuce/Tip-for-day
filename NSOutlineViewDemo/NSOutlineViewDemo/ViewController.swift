@@ -10,10 +10,12 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var outlineView: NSOutlineView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
 
     override var representedObject: Any? {
