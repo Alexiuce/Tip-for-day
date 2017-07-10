@@ -11,6 +11,8 @@
 		D8B3FD6A1F125C45005A8BDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3FD691F125C45005A8BDC /* ViewController.swift */; };
 		D8B3FD6C1F125C45005A8BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B3FD6B1F125C45005A8BDC /* Assets.xcassets */; };
 		D8B3FD6F1F125C45005A8BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8B3FD6D1F125C45005A8BDC /* Main.storyboard */; };
+		F215F7EC1F13192F00C9FB9F /* RootModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F7EB1F13192F00C9FB9F /* RootModel.swift */; };
+		F215F7EE1F131BEC00C9FB9F /* LeafModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F7ED1F131BEC00C9FB9F /* LeafModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		D8B3FD6B1F125C45005A8BDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8B3FD6E1F125C45005A8BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8B3FD701F125C45005A8BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F215F7EB1F13192F00C9FB9F /* RootModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModel.swift; sourceTree = "<group>"; };
+		F215F7ED1F131BEC00C9FB9F /* LeafModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeafModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				D8B3FD671F125C45005A8BDC /* AppDelegate.swift */,
 				D8B3FD691F125C45005A8BDC /* ViewController.swift */,
+				F215F7EB1F13192F00C9FB9F /* RootModel.swift */,
+				F215F7ED1F131BEC00C9FB9F /* LeafModel.swift */,
 				D8B3FD6B1F125C45005A8BDC /* Assets.xcassets */,
 				D8B3FD6D1F125C45005A8BDC /* Main.storyboard */,
 				D8B3FD701F125C45005A8BDC /* Info.plist */,
@@ -133,8 +139,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F215F7EC1F13192F00C9FB9F /* RootModel.swift in Sources */,
 				D8B3FD6A1F125C45005A8BDC /* ViewController.swift in Sources */,
 				D8B3FD681F125C45005A8BDC /* AppDelegate.swift in Sources */,
+				F215F7EE1F131BEC00C9FB9F /* LeafModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +299,7 @@
 				D8B3FD751F125C45005A8BDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
