@@ -147,12 +147,9 @@ extension ViewController : NSOutlineViewDelegate{
             cell = outlineView.make(withIdentifier: "DataCell", owner: self) as? NSTableCellView
             cell?.textField?.stringValue = item as! String
         }
-        
         return cell
     }
-    
 }
-
 
 extension ViewController{
     fileprivate func searchRespositories(_ keywork: String){
