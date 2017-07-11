@@ -134,11 +134,8 @@ extension ViewController : NSOutlineViewDataSource{
         if let item = item as? RootModel {
             return item.childeren.count > 0
         }
-
         return false
     }
-    
-    
 }
 extension ViewController : NSOutlineViewDelegate{
     func outlineView(_ outlineView: NSOutlineView, viewFor tableColumn: NSTableColumn?, item: Any) -> NSView? {

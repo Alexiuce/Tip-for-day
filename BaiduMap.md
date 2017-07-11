@@ -14,7 +14,7 @@
   * 建议集成时，使用cocoapod方式
   * 在项目中添加一个新Objective-C文件，会自动生成桥接文件，然后再将这个OC文件delete，这样就不需要再手动配置桥接文件路径
   * 应用的info.plist 中，需要设置**Bundle display name**，否则Baidu地图注册时报错
- 
+  * 打包发布时，需要设置**Building Settings**的Enable Bitcode 为No，否则编译不通过
 * 显示地图
    
    ```swift
