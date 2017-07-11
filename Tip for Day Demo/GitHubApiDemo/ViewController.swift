@@ -40,6 +40,10 @@ class ViewController: NSViewController {
         rm1.name = "Favorite"
         rm1.childeren = ["AFNetworking","Kingfisher","SwiftyJson"]
         temp.append(rm1)
+        
+        let rm2 = RootModel()
+        rm2.name = "My Respository"
+        temp.append(rm2)
         return temp
     }()
     
@@ -52,7 +56,7 @@ class ViewController: NSViewController {
     
         let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
         leftTable.register(cellNib, forIdentifier: "respositoryCell")
-        
+        outlineView.rowHeight = 35
         cellModels = []
         
        
@@ -127,8 +131,11 @@ extension ViewController : NSOutlineViewDataSource{
         return topModel[index]                // 这里返回的是RootModel类型
     }
     func outlineView(_ outlineView: NSOutlineView, isItemExpandable item: Any) -> Bool {
-    
-        return  item is RootModel
+        if let item = item as? RootModel {
+            return item.childeren.count > 0
+        }
+
+        return false
     }
     
     
