@@ -28,8 +28,20 @@ class ViewController: NSViewController {
     
     var cellModels : [RespositoryModel]?
     var caculateCell : RespositoryCell?
-    let peoples  = [[ "Mary", "John", "Paul","hiye","kenen"],["naitang","alexiuce","shanz","boniu","dupom"],["alen","ali","yixiu","caser","tiaming"]]
-    let jobs = ["backmiss","fore","middle"]
+    
+    lazy var topModel : [RootModel] = {
+        var temp = [RootModel]()
+        let  rm = RootModel()
+        rm.name = "Language"
+        rm.childeren = ["OC","Swifit"]
+        temp.append(rm)
+        
+        let rm1 = RootModel()
+        rm1.name = "Favorite"
+        rm1.childeren = ["AFNetworking","Kingfisher","SwiftyJson"]
+        temp.append(rm1)
+        return temp
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,7 +80,6 @@ extension ViewController : WebPolicyDelegate{
         }else{
             listener.use()
         }
-    
     }
 }
 
@@ -104,33 +115,35 @@ extension ViewController : NSTableViewDelegate{
 // MARK: NSOutlineViewDataSource & NSOutlineViewDelegate
 extension ViewController : NSOutlineViewDataSource{
     func outlineView(_ outlineView: NSOutlineView, numberOfChildrenOfItem item: Any?) -> Int {
-        if item == nil {
-            return peoples.count
-        }else{
-          let index =  jobs.index(of: (item as! String))!
-            return peoples[index].count
+        if let item = item as? RootModel {
+            return item.childeren.count
         }
-}
+        return topModel.count
+      }
     func outlineView(_ outlineView: NSOutlineView, child index: Int, ofItem item: Any?) -> Any {
-        if item == nil {
-            return jobs[index]
-        }else{
-            let i =  jobs.index(of: (item as! String))!
-            return peoples[i][index]
+        if let item = item as? RootModel {
+            return item.childeren[index]       // 这里返回的是String类型
         }
+        return topModel[index]                // 这里返回的是RootModel类型
     }
     func outlineView(_ outlineView: NSOutlineView, isItemExpandable item: Any) -> Bool {
     
-        return   jobs.contains( item as! String)
+        return  item is RootModel
     }
     
     
 }
 extension ViewController : NSOutlineViewDelegate{
     func outlineView(_ outlineView: NSOutlineView, viewFor tableColumn: NSTableColumn?, item: Any) -> NSView? {
-        let cell = outlineView.make(withIdentifier: "firstCell", owner: self) as? NSTableCellView
-            cell?.textField?.stringValue = (item as? String)!
-            cell?.textField?.sizeToFit()
+        var cell : NSTableCellView?
+        if item is RootModel {
+            cell = outlineView.make(withIdentifier: "HeaderCell", owner: self) as? NSTableCellView
+            cell?.textField?.stringValue = (item as! RootModel).name
+        }else{
+            cell = outlineView.make(withIdentifier: "DataCell", owner: self) as? NSTableCellView
+            cell?.textField?.stringValue = item as! String
+        }
+        
         return cell
     }
     
