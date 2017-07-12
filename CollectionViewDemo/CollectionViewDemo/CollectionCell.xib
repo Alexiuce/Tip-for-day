@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CollectionCell" customModule="CollectionViewDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="owA-CK-7Dw" id="A2J-I0-JJW"/>
+                <outlet property="topButtonView" destination="Uqe-bk-ruy" id="eZj-bS-sfj"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="DemoCellKey" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uqe-bk-ruy">
+                    <rect key="frame" x="40" y="32" width="57" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="rMo-aL-NvL"/>
+                        <constraint firstAttribute="width" constant="57" id="y7a-Ee-YRr"/>
+                    </constraints>
+                    <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="image" imagePosition="overlaps" alignment="center" enabled="NO" imageScaling="proportionallyDown" inset="2" id="SFg-yA-NlU">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="owA-CK-7Dw">
+                    <rect key="frame" x="49" y="7" width="41" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="center" title="Label" drawsBackground="YES" id="yru-de-59O">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="owA-CK-7Dw" firstAttribute="top" secondItem="Uqe-bk-ruy" secondAttribute="bottom" constant="8" id="57y-p5-6bo"/>
+                <constraint firstItem="Uqe-bk-ruy" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="p94-aO-1kQ"/>
+                <constraint firstItem="owA-CK-7Dw" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="qUI-6A-K75"/>
+                <constraint firstItem="Uqe-bk-ruy" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="uDP-7M-Rng"/>
+            </constraints>
+            <point key="canvasLocation" x="21" y="16"/>
+        </customView>
+        <customObject id="aKT-KW-ved" customClass="CollectionCell" customModule="CollectionViewDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="owA-CK-7Dw" id="2Z1-Y3-SJK"/>
+                <outlet property="topButtonView" destination="Uqe-bk-ruy" id="jdA-AL-Wpp"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="j7z-Vx-Xop"/>
+            </connections>
+        </customObject>
+    </objects>
+    <resources>
+        <image name="image" width="47" height="60"/>
+    </resources>
+</document>
