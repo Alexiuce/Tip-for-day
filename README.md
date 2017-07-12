@@ -137,8 +137,29 @@ a demo code project for iOS / Mac , write down for develop tip
        view.focusRingType = None
     ```
    * NSTableView 使用和自定义NSTableCellView  
+     * 获取NSTableView 当前选中的cell方法 
+     
+     ```swift
+      let selectCell = tableView.view(atColumn: 0, row:tableView.selectedRow, makeIfNecessary: true)
+      
+     ```
      详参GitHubApi  ：[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
-   * NSOutlieView 使用介绍：  
+   * NSOutlieView 使用介绍：
+     * 自定义箭头样式: 继承NSOutlineView，重写下面的方法
+     
+     ```swift
+     override func make(withIdentifier identifier: String, owner: Any?) -> NSView? {
+        let view = super.make(withIdentifier: identifier, owner: owner)
+        if identifier == NSOutlineViewDisclosureButtonKey, let btn = view as? NSButton{
+            btn.image = NSImage(named: "rightArrow")   // 图片尺寸不要超过btn的size，否则可能显示不出来
+            btn.alternateImage = NSImage(named: "downArrow")   // 图片尺寸同上
+            return btn
+        }
+        return view
+    }
+     
+     ```
+        
      详细内容，参看 [readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md)
      
 

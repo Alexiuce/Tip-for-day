@@ -45,8 +45,6 @@ class RespositoryCell: NSTableCellView {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-       
         descTextField.maximumNumberOfLines = 0
     }
     
