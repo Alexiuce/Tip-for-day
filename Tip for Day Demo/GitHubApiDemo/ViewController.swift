@@ -57,6 +57,7 @@ class ViewController: NSViewController {
         let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
         leftTable.register(cellNib, forIdentifier: "respositoryCell")
         outlineView.rowHeight = 35
+        
         cellModels = []
         
        
