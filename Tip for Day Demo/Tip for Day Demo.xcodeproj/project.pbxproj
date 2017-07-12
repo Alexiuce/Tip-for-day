@@ -42,6 +42,7 @@
 		F29275401EFD0C600001F866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F292753F1EFD0C600001F866 /* ViewController.swift */; };
 		F29275421EFD0C610001F866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29275411EFD0C610001F866 /* Assets.xcassets */; };
 		F29275451EFD0C610001F866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29275431EFD0C610001F866 /* Main.storyboard */; };
+		F29A99AD1F15F233003BDC0B /* MYOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A99AC1F15F233003BDC0B /* MYOutlineView.swift */; };
 		F29ADA6E1F0CE07700C07FE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29ADA6D1F0CE07700C07FE9 /* AppDelegate.swift */; };
 		F29ADA731F0CE07700C07FE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29ADA711F0CE07700C07FE9 /* Main.storyboard */; };
 		F29ADA751F0CE07700C07FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29ADA741F0CE07700C07FE9 /* Assets.xcassets */; };
@@ -154,6 +155,7 @@
 		F29275441EFD0C610001F866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F29275461EFD0C610001F866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F292754A1EFD15580001F866 /* GitHubApiDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubApiDemo.entitlements; sourceTree = "<group>"; };
+		F29A99AC1F15F233003BDC0B /* MYOutlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYOutlineView.swift; sourceTree = "<group>"; };
 		F29ADA6B1F0CE07600C07FE9 /* ReamAndChartsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReamAndChartsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29ADA6D1F0CE07700C07FE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F29ADA721F0CE07700C07FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -431,6 +433,7 @@
 				F292753D1EFD0C600001F866 /* AppDelegate.swift */,
 				F2F37C091F04FCE2002693CF /* WindowController.swift */,
 				F292753F1EFD0C600001F866 /* ViewController.swift */,
+				F29A99AC1F15F233003BDC0B /* MYOutlineView.swift */,
 				F215F7F41F14698700C9FB9F /* OutLineCell.swift */,
 				F215F7F21F145ACF00C9FB9F /* RootModel.swift */,
 				F2F37C0B1F04FED0002693CF /* View(Frame).swift */,
@@ -1478,6 +1481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F29275401EFD0C600001F866 /* ViewController.swift in Sources */,
+				F29A99AD1F15F233003BDC0B /* MYOutlineView.swift in Sources */,
 				F2F37C0A1F04FCE2002693CF /* WindowController.swift in Sources */,
 				F215F7F31F145ACF00C9FB9F /* RootModel.swift in Sources */,
 				F27F3EE21F09E22600614FF8 /* RespositoryCell.swift in Sources */,

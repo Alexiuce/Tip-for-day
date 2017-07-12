@@ -14,5 +14,7 @@ class RespositoryModel: NSObject {
     var language = ""
     var imageUrl = ""
     var homeUrl = ""
-    var  cellHeight : CGFloat = 0.0 
+    var  cellHeight : CGFloat = 0.0
+    var  selected = false
+    
 }

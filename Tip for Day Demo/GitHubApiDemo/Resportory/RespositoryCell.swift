@@ -19,6 +19,7 @@ class RespositoryCell: NSTableCellView {
     @IBOutlet weak var laungageTextField: NSTextField!
     
     @IBOutlet weak var descTextField: NSTextField!
+    @IBOutlet weak var indicateView: NSBox!
     
     var cellModel : RespositoryModel? = nil {
         didSet{
@@ -32,14 +33,21 @@ class RespositoryCell: NSTableCellView {
             cellModel?.cellHeight = self.fittingSize.height  ;
         }
     }
-    
+    var selected : Bool = false {
+        didSet{
+            self.layer?.backgroundColor = selected ?  NSColor.orange.cgColor : NSColor.clear.cgColor
+        }
+    }
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
-
+     
         // Drawing code here.
     }
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+       
         descTextField.maximumNumberOfLines = 0
     }
+    
 }

@@ -20,11 +20,10 @@ class ViewController: NSViewController {
     @IBOutlet weak var leftTable: NSTableView!
     
     @IBOutlet weak var searchBar : NSSearchField!
-    @IBOutlet weak var languagePopButton : NSPopUpButton!
-    @IBOutlet weak var sortPopButton : NSPopUpButton!
+  
+    @IBOutlet weak var outlineView : MYOutlineView!
     
-    
-    @IBOutlet weak var outlineView : NSOutlineView!
+    weak var currentSelectedCell : RespositoryCell?   // 记录当前选中的cell
     
     var cellModels : [RespositoryModel]?
     var caculateCell : RespositoryCell?
@@ -110,12 +109,21 @@ extension ViewController : NSTableViewDelegate{
         caculateCell?.cellModel = model
         return (model?.cellHeight)!
     }
+   
+ 
+    
     func tableViewSelectionDidChange(_ notification: Notification) {
+       let selectCell = leftTable.view(atColumn: 0, row: leftTable.selectedRow, makeIfNecessary: true) as? RespositoryCell
+        if selectCell == currentSelectedCell {return}
+        currentSelectedCell?.selected = false
+        selectCell?.selected = true
+        currentSelectedCell = selectCell
         let model = cellModels![leftTable.selectedRow]
         let url = URL(string: model.homeUrl)!
         let requet = URLRequest(url: url)
         webView.mainFrame.load(requet)
     }
+   
 }
 // MARK: NSOutlineViewDataSource & NSOutlineViewDelegate
 extension ViewController : NSOutlineViewDataSource{
@@ -156,7 +164,7 @@ extension ViewController{
     fileprivate func searchRespositories(_ keywork: String){
         let baseURL = "https://api.github.com"
         let apiName = "/search/repositories"
-        let para = ["q":keywork + "language:\(languagePopButton.selectedItem!.title)"]
+        let para = ["q":keywork]
     
      Alamofire.request(baseURL + apiName, method: .get, parameters: para).responseJSON { (response) in
             if let data = response.data {

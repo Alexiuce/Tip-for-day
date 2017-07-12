@@ -15,6 +15,6 @@ class OutLineCell: NSTableCellView {
 
         // Drawing code here.
     }
-    
+   
     
 }

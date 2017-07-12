@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,6 +14,17 @@
             <rect key="frame" x="0.0" y="0.0" width="286" height="82"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <box hidden="YES" boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Qjq-Hi-W50">
+                    <rect key="frame" x="0.0" y="0.0" width="5" height="82"/>
+                    <view key="contentView" id="fb7-QB-RT4">
+                        <rect key="frame" x="0.0" y="0.0" width="5" height="82"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="5" id="aEx-J2-tnd"/>
+                    </constraints>
+                    <color key="fillColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </box>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOR-TR-FeY">
                     <rect key="frame" x="53" y="49" width="35" height="18"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Title" id="PFz-lM-7oO">
@@ -52,6 +64,7 @@
             <constraints>
                 <constraint firstItem="pek-sZ-l7u" firstAttribute="leading" secondItem="JG3-iA-LMV" secondAttribute="leading" id="1lx-hL-wKP"/>
                 <constraint firstItem="pek-sZ-l7u" firstAttribute="top" secondItem="JG3-iA-LMV" secondAttribute="bottom" constant="5" id="4xB-d3-ZtZ"/>
+                <constraint firstItem="Qjq-Hi-W50" firstAttribute="leading" secondItem="izS-m6-hPG" secondAttribute="leading" id="7sT-9p-wbx"/>
                 <constraint firstItem="dOR-TR-FeY" firstAttribute="top" secondItem="vyU-zv-h0w" secondAttribute="top" id="ELV-eO-qqi"/>
                 <constraint firstItem="JG3-iA-LMV" firstAttribute="leading" secondItem="dOR-TR-FeY" secondAttribute="leading" id="KuZ-am-r2A"/>
                 <constraint firstItem="dOR-TR-FeY" firstAttribute="leading" secondItem="vyU-zv-h0w" secondAttribute="trailing" constant="10" id="P2P-57-AzO"/>
@@ -59,10 +72,13 @@
                 <constraint firstItem="JG3-iA-LMV" firstAttribute="top" secondItem="dOR-TR-FeY" secondAttribute="bottom" constant="5" id="aPd-DR-Tu3"/>
                 <constraint firstAttribute="bottom" secondItem="pek-sZ-l7u" secondAttribute="bottom" constant="5" id="gvE-P4-wTq"/>
                 <constraint firstItem="vyU-zv-h0w" firstAttribute="leading" secondItem="izS-m6-hPG" secondAttribute="leading" constant="15" id="iKo-am-ClB"/>
+                <constraint firstAttribute="bottom" secondItem="Qjq-Hi-W50" secondAttribute="bottom" id="liP-4p-hk0"/>
+                <constraint firstItem="Qjq-Hi-W50" firstAttribute="top" secondItem="izS-m6-hPG" secondAttribute="top" id="qWe-9w-cvS"/>
             </constraints>
             <connections>
                 <outlet property="descTextField" destination="pek-sZ-l7u" id="way-aX-jhk"/>
                 <outlet property="iconImageView" destination="vyU-zv-h0w" id="05R-2b-jWe"/>
+                <outlet property="indicateView" destination="Qjq-Hi-W50" id="lKU-kU-rpu"/>
                 <outlet property="laungageTextField" destination="JG3-iA-LMV" id="Hxk-Yi-iph"/>
                 <outlet property="titleTextField" destination="dOR-TR-FeY" id="X1r-vf-Yfa"/>
             </connections>
