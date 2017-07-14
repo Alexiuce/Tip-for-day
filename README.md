@@ -143,7 +143,22 @@ a demo code project for iOS / Mac , write down for develop tip
       let selectCell = tableView.view(atColumn: 0, row:tableView.selectedRow, makeIfNecessary: true)
       
      ```
-     详参GitHubApi  ：[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
+     * NSTableView 支持鼠标左右滑动cell显示功能按钮  
+     
+     ```swift 
+       // 实现NSTableView的代理方法
+        func tableView(_ tableView: NSTableView, rowActionsForRow row: Int, edge: NSTableRowActionEdge) -> [NSTableViewRowAction] {
+        if edge == .trailing {   // 从右向左滑动cell ，在cell的尾部（最右边）显示
+            let rightAction = NSTableViewRowAction(style: .regular, title: "Demo") { (rowAction, index) in
+                XCPrint("click demo ")
+            }
+            return [rightAction]
+        }
+       return [NSTableViewRowAction()]   // 从左向右滑动cell ，不显示内容时，传[NSTableViewRowAction()]数组
+    }
+     ```
+     
+     具体内容详参GitHubApi  ：[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
    * NSOutlieView 使用介绍：
      * 自定义箭头样式: 继承NSOutlineView，重写下面的方法
      

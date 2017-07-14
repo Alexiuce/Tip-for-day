@@ -113,7 +113,15 @@ extension ViewController : NSTableViewDelegate{
     }
 
     
- 
+    func tableView(_ tableView: NSTableView, rowActionsForRow row: Int, edge: NSTableRowActionEdge) -> [NSTableViewRowAction] {
+        if edge == .trailing {   // 从右向左滑动cell ，在cell的尾部（最右边）显示
+            let rightAction = NSTableViewRowAction(style: .regular, title: "Demo") { (rowAction, index) in
+                XCPrint("click demo ")
+            }
+            return [rightAction]
+        }
+       return [NSTableViewRowAction()]   // 从左向右滑动cell ，不显示内容时，传[NSTableViewRowAction()]数组
+    }
     
     func tableViewSelectionDidChange(_ notification: Notification) {
        let selectCell = leftTable.view(atColumn: 0, row: leftTable.selectedRow, makeIfNecessary: true) as? RespositoryCell
