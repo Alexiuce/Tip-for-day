@@ -13,6 +13,7 @@
 		D80CBA011F163D120053C10D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80CB9FF1F163D120053C10D /* Main.storyboard */; };
 		D80CBA0A1F1642670053C10D /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CBA081F1642670053C10D /* CollectionCell.swift */; };
 		D80CBA0B1F1642670053C10D /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80CBA091F1642670053C10D /* CollectionCell.xib */; };
+		F2CF48C71F173CB400F5E4E7 /* CustomLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CF48C61F173CB400F5E4E7 /* CustomLable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D80CBA021F163D120053C10D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D80CBA081F1642670053C10D /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		D80CBA091F1642670053C10D /* CollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
+		F2CF48C61F173CB400F5E4E7 /* CustomLable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D80CB9F91F163D120053C10D /* AppDelegate.swift */,
 				D80CB9FB1F163D120053C10D /* ViewController.swift */,
 				D80CBA081F1642670053C10D /* CollectionCell.swift */,
+				F2CF48C61F173CB400F5E4E7 /* CustomLable.swift */,
 				D80CBA091F1642670053C10D /* CollectionCell.xib */,
 				D80CB9FD1F163D120053C10D /* Assets.xcassets */,
 				D80CB9FF1F163D120053C10D /* Main.storyboard */,
@@ -143,6 +146,7 @@
 				D80CB9FC1F163D120053C10D /* ViewController.swift in Sources */,
 				D80CB9FA1F163D120053C10D /* AppDelegate.swift in Sources */,
 				D80CBA0A1F1642670053C10D /* CollectionCell.swift in Sources */,
+				F2CF48C71F173CB400F5E4E7 /* CustomLable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,7 @@
 				D80CBA071F163D120053C10D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

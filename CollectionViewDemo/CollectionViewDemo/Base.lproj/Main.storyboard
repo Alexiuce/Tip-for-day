@@ -658,7 +658,7 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="CollectionViewDemo" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="30" y="-214"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -686,14 +686,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ0-JZ-HGW">
-                                <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
-                                <clipView key="contentView" drawsBackground="NO" id="qob-3y-Ih5">
-                                    <rect key="frame" x="1" y="1" width="798" height="598"/>
+                            <scrollView wantsLayer="YES" fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ0-JZ-HGW">
+                                <rect key="frame" x="0.0" y="409" width="241" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="qob-3y-Ih5">
+                                    <rect key="frame" x="1" y="1" width="239" height="189"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <collectionView selectable="YES" id="QAn-nI-GDJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="798" height="598"/>
+                                        <collectionView ambiguous="YES" selectable="YES" id="QAn-nI-GDJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="239" height="189"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="Kem-vS-1xn">
                                                 <size key="itemSize" width="50" height="50"/>
@@ -708,21 +709,27 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="6oS-Km-dMr">
-                                    <rect key="frame" x="1" y="144" width="233" height="15"/>
+                                    <rect key="frame" x="1" y="-15" width="0.0" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="g0F-Sy-S8g">
-                                    <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                    <rect key="frame" x="-15" y="1" width="16" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRz-YV-ZY7" customClass="CustomLable" customModule="CollectionViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="175" y="306" width="88" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" controlSize="mini" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" alignment="center" title="Multiline Label" drawsBackground="YES" id="ZYx-jc-QM1">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="multiline" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="MQ0-JZ-HGW" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="KZs-XH-fUK"/>
-                            <constraint firstAttribute="trailing" secondItem="MQ0-JZ-HGW" secondAttribute="trailing" id="L9l-EK-9JO"/>
-                            <constraint firstAttribute="bottom" secondItem="MQ0-JZ-HGW" secondAttribute="bottom" id="dil-n4-KSb"/>
-                            <constraint firstItem="MQ0-JZ-HGW" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="tcw-dh-C0G"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="QAn-nI-GDJ" id="lZC-FD-hgQ"/>

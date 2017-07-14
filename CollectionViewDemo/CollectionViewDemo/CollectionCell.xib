@@ -8,7 +8,6 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="CollectionCell" customModule="CollectionViewDemo" customModuleProvider="target">
             <connections>
-                <outlet property="titleLabel" destination="owA-CK-7Dw" id="A2J-I0-JJW"/>
                 <outlet property="topButtonView" destination="Uqe-bk-ruy" id="eZj-bS-sfj"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
@@ -20,9 +19,9 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uqe-bk-ruy">
-                    <rect key="frame" x="40" y="32" width="57" height="60"/>
+                    <rect key="frame" x="40" y="62" width="57" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="rMo-aL-NvL"/>
+                        <constraint firstAttribute="height" constant="30" id="rMo-aL-NvL"/>
                         <constraint firstAttribute="width" constant="57" id="y7a-Ee-YRr"/>
                     </constraints>
                     <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="image" imagePosition="overlaps" alignment="center" enabled="NO" imageScaling="proportionallyDown" inset="2" id="SFg-yA-NlU">
@@ -30,9 +29,10 @@
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                 </button>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="owA-CK-7Dw">
-                    <rect key="frame" x="49" y="7" width="41" height="17"/>
-                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="center" title="Label" drawsBackground="YES" id="yru-de-59O">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEb-J7-VHJ" customClass="CustomLable" customModule="CollectionViewDemo" customModuleProvider="target">
+                    <rect key="frame" x="24" y="37" width="88" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Multiline Label" id="oDC-NA-9Dm">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -40,16 +40,14 @@
                 </textField>
             </subviews>
             <constraints>
-                <constraint firstItem="owA-CK-7Dw" firstAttribute="top" secondItem="Uqe-bk-ruy" secondAttribute="bottom" constant="8" id="57y-p5-6bo"/>
                 <constraint firstItem="Uqe-bk-ruy" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="p94-aO-1kQ"/>
-                <constraint firstItem="owA-CK-7Dw" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="qUI-6A-K75"/>
                 <constraint firstItem="Uqe-bk-ruy" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="uDP-7M-Rng"/>
             </constraints>
             <point key="canvasLocation" x="21" y="16"/>
         </customView>
         <customObject id="aKT-KW-ved" customClass="CollectionCell" customModule="CollectionViewDemo" customModuleProvider="target">
             <connections>
-                <outlet property="titleLabel" destination="owA-CK-7Dw" id="2Z1-Y3-SJK"/>
+                <outlet property="titleLabel" destination="dEb-J7-VHJ" id="Vmk-fz-gNp"/>
                 <outlet property="topButtonView" destination="Uqe-bk-ruy" id="jdA-AL-Wpp"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="j7z-Vx-Xop"/>
             </connections>

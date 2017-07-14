@@ -13,10 +13,11 @@ class CollectionCell: NSCollectionViewItem {
     
     @IBOutlet weak var topButtonView: NSButton!
     
-    @IBOutlet weak var titleLabel: NSTextField!
+    @IBOutlet weak var titleLabel: CustomLable!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         titleLabel.stringValue = "Text Demo"
         
         // Do view setup here.
