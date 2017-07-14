@@ -177,6 +177,22 @@ a demo code project for iOS / Mac , write down for develop tip
         
      详细内容，参看 [readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md)
      
+   * NSTableCellView 鼠标的移进和移出监听
+   
+     ```swift
+     // 1. 添加监听区域类 NSTrackingArea *trackingArea;
+      trackingArea = [[NSTrackingArea alloc] initWithRect:NSZeroRect options:NSTrackingInVisibleRect | NSTrackingActiveAlways | NSTrackingMouseEnteredAndExited owner:self userInfo:nil];
+       
+     // 2. 重写鼠标对应的方法
+      - (void)mouseEntered:(NSEvent *)theEvent {
+         // 鼠标移入
+        }
+      - (void)mouseExited:(NSEvent *)theEvent {
+        // 鼠标移出
+       }
+     
+     ```  
+   具体详情参考:[HoverTableDemo](https://github.com/Alexiuce/Tip-for-day/tree/master/HoverTableDemo)  
 
 * XibLoadViewDemo
   

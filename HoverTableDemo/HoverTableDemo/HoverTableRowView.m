@@ -159,9 +159,10 @@ static NSGradient *gradientWithTargetColor(NSColor *targetColor) {
 }
 
 @end
-
+// 绘制分割线方法
 void DrawSeparatorInRect(NSRect rect) {
     // Cache the gradient for performance
+    // 使用static 静态变量，防止多次调用方法时，重复创建NSGradient 对象，（与懒加载类似）
     static NSGradient *gradient = nil;
     if (gradient == nil) {
         gradient = [gradientWithTargetColor([NSColor colorWithSRGBRed:.80 green:.80 blue:.80 alpha:1]) retain];
