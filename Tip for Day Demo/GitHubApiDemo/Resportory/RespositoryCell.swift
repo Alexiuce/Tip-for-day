@@ -28,9 +28,8 @@ class RespositoryCell: NSTableCellView {
             laungageTextField.stringValue = cellModel!.language
             descTextField.stringValue = cellModel!.desc
             let imgUrl = URL(string: cellModel!.imageUrl)
-           iconImageView.kf.setImage(with: imgUrl)
-            
-            cellModel?.cellHeight = self.fittingSize.height  ;
+            iconImageView.kf.setImage(with: imgUrl)
+            cellModel?.cellHeight = self.fittingSize.height
         }
     }
     var selected : Bool = false {

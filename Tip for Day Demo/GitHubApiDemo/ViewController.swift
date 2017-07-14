@@ -55,6 +55,8 @@ class ViewController: NSViewController {
     
         let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
         leftTable.register(cellNib, forIdentifier: "respositoryCell")
+       
+        
         outlineView.rowHeight = 35
         
         cellModels = []
@@ -109,9 +111,9 @@ extension ViewController : NSTableViewDelegate{
         caculateCell?.cellModel = model
         return (model?.cellHeight)!
     }
-    func tableView(_ tableView: NSTableView, shouldEdit tableColumn: NSTableColumn?, row: Int) -> Bool {
-        return true
-    }
+
+    
+ 
     
     func tableViewSelectionDidChange(_ notification: Notification) {
        let selectCell = leftTable.view(atColumn: 0, row: leftTable.selectedRow, makeIfNecessary: true) as? RespositoryCell
