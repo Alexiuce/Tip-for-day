@@ -182,7 +182,9 @@ a demo code project for iOS / Mac , write down for develop tip
      ```swift
      // 1. 添加监听区域类 NSTrackingArea *trackingArea;
       trackingArea = [[NSTrackingArea alloc] initWithRect:NSZeroRect options:NSTrackingInVisibleRect | NSTrackingActiveAlways | NSTrackingMouseEnteredAndExited owner:self userInfo:nil];
-       
+        if (![[self trackingAreas] containsObject:trackingArea]) {
+        [self addTrackingArea:trackingArea];
+        }
      // 2. 重写鼠标对应的方法
       - (void)mouseEntered:(NSEvent *)theEvent {
          // 鼠标移入
