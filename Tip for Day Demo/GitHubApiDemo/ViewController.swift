@@ -23,7 +23,11 @@ class ViewController: NSViewController {
   
     @IBOutlet weak var outlineView : MYOutlineView!
     
+    @IBOutlet weak var favButton : NSButton!
+    
     weak var currentSelectedCell : RespositoryCell?   // 记录当前选中的cell
+    
+    var isSelectedFavorite = false
     
     var cellModels : [RespositoryModel]?
     var caculateCell : RespositoryCell?
@@ -74,6 +78,15 @@ class ViewController: NSViewController {
     @IBAction func beginSearch(_ sender : NSButton){
         self.searchRespositories(searchBar.stringValue)
     }
+    
+    @IBAction func clickFavButton(_ sender : NSButton){
+        XCPrint("fav click")
+        isSelectedFavorite = !isSelectedFavorite
+        let favImgName = isSelectedFavorite ? "fav":"unfav"
+        sender.image = NSImage(named: favImgName)
+        
+    }
+    
     
 }
 
