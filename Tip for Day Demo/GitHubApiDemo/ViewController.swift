@@ -186,8 +186,16 @@ extension ViewController : NSOutlineViewDelegate{
         return cell
     }
     func outlineViewSelectionDidChange(_ notification: Notification) {
-        XCPrint("sele \(String(describing:  outlineView.item(atRow: outlineView.selectedRow)))")
        
+        if let text = outlineView.item(atRow: outlineView.selectedRow) as? String {
+            let languageModel = topModel.first!
+            if languageModel.childeren.contains(text) {
+                currentLanguage = text
+            }
+        }
+        
+        XCPrint(currentLanguage)
+    
       
     }
 }
