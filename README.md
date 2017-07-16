@@ -222,7 +222,16 @@ a demo code project for iOS / Mac , write down for develop tip
   
   ```swift
   // 1. 获取进程id
-  
+  ps -e (或者ax) | grep 应用名
   // 2. 注入脚本
   cycript - p 进程id
+  ```
+  
+  * 查看对象
+  
+  ```
+  // 根据内存地址来获取对象
+  #内存地址
+  // 使用new Instance获取内存地址对象
+  new Instance(内存地址)
   ```
