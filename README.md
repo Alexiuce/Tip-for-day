@@ -209,4 +209,20 @@ a demo code project for iOS / Mac , write down for develop tip
 > 关于GitHub api的一个工程  
 > [readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
 
- 
+### 逆向工具
+* Cycript 使用 
+
+  * 打印视图层级
+
+  ```swift
+  UIApp.keyWindow.recursiveDescription.toString()
+  ```
+  
+  * 进程注入
+  
+  ```swift
+  // 1. 获取进程id
+  
+  // 2. 注入脚本
+  cycript - p 进程id
+  ```
