@@ -226,7 +226,7 @@ a demo code project for iOS / Mac , write down for develop tip
   * 连接真机（项目中自己集成Cycript时）
   
   ```
-  ./cycript -r ip地址:ip端口
+  ./cycript -r (模拟器或真机)ip地址:端口
   ```
 
   * 打印视图层级
