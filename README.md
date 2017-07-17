@@ -210,6 +210,17 @@ a demo code project for iOS / Mac , write down for develop tip
 > [readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
 
 ### 逆向工具
+
+* class_dump使用
+ > 用于导出工程的头文件 ，输入内容为Mach-O文件（即xxxx.app,这里注意不是xxxx.ipa）  
+ 官网下载地址[class_dump](http://stevenygard.com/projects/class-dump/)
+ 
+ >  复制到/usr/local/bin目录下，在终端中输入class-dump，显示class-dump的版本后，就可以正常使用class-dump的命令了
+ 
+ ```
+ class_dump -H 应用.app的路径 -o 输出头文件的路径文件名  
+ ```
+
 * Cycript 使用 
 
   * 打印视图层级
