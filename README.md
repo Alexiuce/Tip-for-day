@@ -222,6 +222,12 @@ a demo code project for iOS / Mac , write down for develop tip
  ```
 
 * Cycript 使用 
+  > 使用命令行调测UI界面
+  * 连接真机（项目中自己集成Cycript时）
+  
+  ```
+  ./cycript -r ip地址:ip端口
+  ```
 
   * 打印视图层级
 
