@@ -23,10 +23,15 @@ class ViewController: NSViewController {
   
     @IBOutlet weak var outlineView : MYOutlineView!
     
+    @IBOutlet weak var favButton : NSButton!
+    
     weak var currentSelectedCell : RespositoryCell?   // 记录当前选中的cell
     
-    var cellModels : [RespositoryModel]?
-    var caculateCell : RespositoryCell?
+    var isSelectedFavorite = false  // 是否收藏
+    
+    var currentLanguage = ""    // 当前开发语言
+    var cellModels : [RespositoryModel]?    // 模型数组
+    var caculateCell : RespositoryCell?     // 用于计算行高的cell
     
     lazy var topModel : [RootModel] = {
         var temp = [RootModel]()
@@ -75,6 +80,15 @@ class ViewController: NSViewController {
         self.searchRespositories(searchBar.stringValue)
     }
     
+    @IBAction func clickFavButton(_ sender : NSButton){
+        XCPrint("fav click")
+        isSelectedFavorite = !isSelectedFavorite
+        let favImgName = isSelectedFavorite ? "fav":"unfav"
+        sender.image = NSImage(named: favImgName)
+        
+    }
+    
+    
 }
 
 extension ViewController : WebPolicyDelegate{
@@ -114,12 +128,14 @@ extension ViewController : NSTableViewDelegate{
 
     
     func tableView(_ tableView: NSTableView, rowActionsForRow row: Int, edge: NSTableRowActionEdge) -> [NSTableViewRowAction] {
-        if edge == .trailing {   // 从右向左滑动cell ，在cell的尾部（最右边）显示
+        if tableView == leftTable,edge == .trailing {
+             // 从右向左滑动cell ，在cell的尾部（最右边）显示
             let rightAction = NSTableViewRowAction(style: .regular, title: "Demo") { (rowAction, index) in
                 XCPrint("click demo ")
             }
             return [rightAction]
         }
+
        return [NSTableViewRowAction()]   // 从左向右滑动cell ，不显示内容时，传[NSTableViewRowAction()]数组
     }
     
@@ -168,6 +184,19 @@ extension ViewController : NSOutlineViewDelegate{
             cell?.textField?.stringValue = item as! String
         }
         return cell
+    }
+    func outlineViewSelectionDidChange(_ notification: Notification) {
+       
+        if let text = outlineView.item(atRow: outlineView.selectedRow) as? String {
+            let languageModel = topModel.first!
+            if languageModel.childeren.contains(text) {
+                currentLanguage = text
+            }
+        }
+        
+        XCPrint(currentLanguage)
+    
+      
     }
 }
 

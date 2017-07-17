@@ -921,24 +921,65 @@
                                 </constraints>
                                 <color key="fillColor" red="0.23907786610000001" green="0.22939246890000001" blue="0.32051914929999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </box>
+                            <visualEffectView appearanceType="vibrantLight" blendingMode="withinWindow" material="menu" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="cai-Wo-S4I">
+                                <rect key="frame" x="447" y="754" width="753" height="46"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xc2-aJ-pgg">
+                                        <rect key="frame" x="713" y="8" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="OhQ-y0-vLw"/>
+                                            <constraint firstAttribute="height" constant="30" id="qTB-6b-YWh"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="fav" imagePosition="only" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="pS7-pZ-8uy">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="clickFavButton:" target="XfG-lQ-9wD" id="Arz-Bp-Hwj"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vzq-tp-m1T">
+                                        <rect key="frame" x="633" y="11" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="4bo-cR-GqO"/>
+                                            <constraint firstAttribute="width" constant="25" id="Psv-e0-Zud"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="hom" imagePosition="only" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="Nt2-ED-brt">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xc2-aJ-pgg" firstAttribute="centerY" secondItem="cai-Wo-S4I" secondAttribute="centerY" id="DYl-1q-UFq"/>
+                                    <constraint firstItem="xc2-aJ-pgg" firstAttribute="leading" secondItem="vzq-tp-m1T" secondAttribute="trailing" constant="55" id="S1T-Ny-2NH"/>
+                                    <constraint firstAttribute="height" constant="46" id="XRS-o9-mFx"/>
+                                    <constraint firstAttribute="trailing" secondItem="xc2-aJ-pgg" secondAttribute="trailing" constant="10" id="l0f-z9-u2U"/>
+                                    <constraint firstItem="vzq-tp-m1T" firstAttribute="centerY" secondItem="cai-Wo-S4I" secondAttribute="centerY" id="m1o-NB-I9f"/>
+                                </constraints>
+                            </visualEffectView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="YNy-Um-1Zx" secondAttribute="bottom" id="0UX-A5-Oeo"/>
                             <constraint firstItem="aZM-Jh-ruW" firstAttribute="leading" secondItem="rzf-UY-TJP" secondAttribute="trailing" id="4tc-CU-ulG"/>
                             <constraint firstItem="YNy-Um-1Zx" firstAttribute="leading" secondItem="rzf-UY-TJP" secondAttribute="trailing" id="BWO-fh-ZQd"/>
                             <constraint firstItem="rzf-UY-TJP" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="CzN-zh-FTF"/>
+                            <constraint firstAttribute="trailing" secondItem="cai-Wo-S4I" secondAttribute="trailing" id="Duo-d2-Yjg"/>
                             <constraint firstItem="E3T-gp-6ch" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="E0c-iE-JGZ"/>
                             <constraint firstItem="rzf-UY-TJP" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="GWY-8M-8sP"/>
                             <constraint firstAttribute="trailing" secondItem="E3T-gp-6ch" secondAttribute="trailing" id="Lwd-73-4si"/>
+                            <constraint firstItem="cai-Wo-S4I" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="PyY-HK-mqp"/>
                             <constraint firstAttribute="bottom" secondItem="E3T-gp-6ch" secondAttribute="bottom" id="R27-eZ-TLN"/>
                             <constraint firstItem="YNy-Um-1Zx" firstAttribute="width" secondItem="Wt1-GM-PVd" secondAttribute="width" id="VNS-y3-59F"/>
                             <constraint firstItem="aZM-Jh-ruW" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="aCr-ZD-dgs"/>
                             <constraint firstItem="E3T-gp-6ch" firstAttribute="leading" secondItem="aZM-Jh-ruW" secondAttribute="trailing" constant="1" id="gea-Lb-sjh"/>
                             <constraint firstAttribute="bottom" secondItem="rzf-UY-TJP" secondAttribute="bottom" id="lFY-cv-RlT"/>
                             <constraint firstItem="YNy-Um-1Zx" firstAttribute="top" secondItem="aZM-Jh-ruW" secondAttribute="bottom" id="sDi-vy-squ"/>
+                            <constraint firstItem="cai-Wo-S4I" firstAttribute="leading" secondItem="aZM-Jh-ruW" secondAttribute="trailing" constant="1" id="sLH-VK-AFK"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="favButton" destination="xc2-aJ-pgg" id="ANa-h4-IlK"/>
                         <outlet property="leftTable" destination="Mir-51-3fC" id="kn7-cd-N5P"/>
                         <outlet property="outlineView" destination="sj8-A3-0wy" id="N2a-zK-bm8"/>
                         <outlet property="searchBar" destination="wqt-5C-ld1" id="P5p-dV-0Ec"/>
@@ -953,6 +994,8 @@
     </scenes>
     <resources>
         <image name="NSActionTemplate" width="14" height="14"/>
+        <image name="fav" width="200" height="200"/>
+        <image name="hom" width="200" height="186"/>
         <image name="startup" width="30" height="30"/>
     </resources>
 </document>
