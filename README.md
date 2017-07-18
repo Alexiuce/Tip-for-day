@@ -222,7 +222,7 @@ a demo code project for iOS / Mac , write down for develop tip
  ```
 
 * Cycript 使用 
-
+  
   * 工程中集成Cycript
     
     ```
@@ -233,7 +233,15 @@ a demo code project for iOS / Mac , write down for develop tip
 
     ```
     
-
+  * Cycript 导入脚本  
+  
+     > 导入脚本的感念与Objective-C中的import类似，相当于可以使用脚本定义的方法，但貌似Cycript不会自动执行脚本。。想实现自动化操作应该怎么办呢？（这个问题待解决） 
+      
+  ```
+  ./cycript -r IP地址:端口 demo.cy; ./cycript -r ip地址:端口
+  
+  ```
+  
   > 使用命令行调测UI界面
   * 连接真机（项目中自己集成Cycript时）
   
