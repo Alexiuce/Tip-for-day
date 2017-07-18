@@ -222,6 +222,18 @@ a demo code project for iOS / Mac , write down for develop tip
  ```
 
 * Cycript 使用 
+
+  * 工程中集成Cycript
+    
+    ```
+    // 1 添加Cycript.framework到项目中
+    // 2 添加依赖库：libstdc++.6.0.9.tbd libsqlite3.tbd JavaScriptCore.framework
+    // 3 设置Standard_LIBRARY = compiler-default
+    // 4 设置Other Link Flag ：   -lstdc++
+
+    ```
+    
+
   > 使用命令行调测UI界面
   * 连接真机（项目中自己集成Cycript时）
   
