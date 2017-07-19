@@ -211,7 +211,7 @@ a demo code project for iOS / Mac , write down for develop tip
 
 ### 逆向工具
 
-* class_dump使用
+#### class_dump使用
  > 用于导出工程的头文件 ，输入内容为Mach-O文件（即xxxx.app,这里注意不是xxxx.ipa）  
  官网下载地址[class_dump](http://stevenygard.com/projects/class-dump/)
  
@@ -221,8 +221,9 @@ a demo code project for iOS / Mac , write down for develop tip
  class_dump -H 应用.app的路径 -o 输出头文件的路径文件名  
  ```
 
-* Cycript 使用 
+#### Cycript 使用 
 > 用于动态调试app的工具（非常强大）  
+
   * 工程中集成Cycript
     
     ```
@@ -234,16 +235,17 @@ a demo code project for iOS / Mac , write down for develop tip
     ```
     
   * Cycript 导入脚本  
+  > 使用命令行调测UI界面
   
-     > 导入脚本的感念与Objective-C中的import类似，相当于可以使用脚本定义的方法，但貌似Cycript不会自动执行脚本。。想实现自动化操作应该怎么办呢？（这个问题待解决:已根作者写邮件寻求解答，尚未获得回复） 
-     > 最新版本的Cycript SDK 集成时会报CYError编辑错误，要使用老版本的cycript替换SDK中的cycript文件
+  > 导入脚本的感念与Objective-C中的import类似，相当于可以使用脚本定义的方法，但貌似Cycript不会自动执行脚本。。想实现自动化操作应该怎么办呢？（这个问题待解决:已根作者写邮件寻求解答，尚未获得回复） 
+  > 最新版本的Cycript SDK 集成时会报CYError编辑错误，要使用老版本的cycript替换SDK中的cycript文件
       
   ```
   ./cycript -r IP地址:端口 demo.cy; ./cycript -r ip地址:端口
   
   ```
   
-  > 使用命令行调测UI界面
+  
   * 连接真机（项目中自己集成Cycript时）
   
   ```
@@ -274,10 +276,10 @@ a demo code project for iOS / Mac , write down for develop tip
   new Instance(内存地址)
   ```
   
-* iOSOpenDev 逆向开发的Xcode环境插件
-   > 下载iOSOpenDev[目前最新版本为1.6-2](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/iosopendev/iOSOpenDev-1.6-2.pkg)
+#### iOSOpenDev 逆向开发的Xcode环境插件
+> 下载iOSOpenDev[目前最新版本为1.6-2](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/iosopendev/iOSOpenDev-1.6-2.pkg)
    
-   > 安装最后的失败处理：下载修复脚本[iOSOpenDev-Install.sh](https://gist.github.com/jridgewell/5298903)
+> 安装最后的失败处理：下载修复脚本[iOSOpenDev-Install.sh](https://gist.github.com/jridgewell/5298903)
    
    ```
       // cd到下载的iOSOpenDev-Install.sh所在目录
