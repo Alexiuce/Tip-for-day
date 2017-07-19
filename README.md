@@ -222,7 +222,7 @@ a demo code project for iOS / Mac , write down for develop tip
  ```
 
 * Cycript 使用 
-  
+> 用于动态调试app的工具（非常强大）  
   * 工程中集成Cycript
     
     ```
@@ -273,3 +273,15 @@ a demo code project for iOS / Mac , write down for develop tip
   // 使用new Instance获取内存地址对象
   new Instance(内存地址)
   ```
+  
+* iOSOpenDev 逆向开发的Xcode环境插件
+   > 下载iOSOpenDev[目前最新版本为1.6-2](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/iosopendev/iOSOpenDev-1.6-2.pkg)
+   
+   > 安装最后的失败处理：下载修复脚本[iOSOpenDev-Install.sh](https://gist.github.com/jridgewell/5298903)
+   
+   ```
+      // cd到下载的iOSOpenDev-Install.sh所在目录
+     ./iOSOpenDev-Install.sh base
+   ```
+   
+  
