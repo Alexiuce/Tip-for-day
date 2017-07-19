@@ -286,4 +286,17 @@ a demo code project for iOS / Mac , write down for develop tip
      ./iOSOpenDev-Install.sh base
    ```
    
-  
+#### yololib 对dylib进行注入
+> 对二进制文件(通常是Mach-O文件)进行dylib的注入。   
+> 下载地址[yololib](https://github.com/KJCracks/yololib)
+* 使用Xcode编译项目，获得yololib可执行文件
+
+```
+// 使用格式
+   yololib binary dylib file
+   
+// 例子
+./yololib WeChat.app/WeChat hook.dylib   
+```
+#### MachOView 查看整个MachO文件结构
+> 下载地址[MachOView](https://github.com/gdbinit/MachOView)

@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F21BA4FD1F1F0D0F00003C27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BA4FC1F1F0D0F00003C27 /* Foundation.framework */; };
+		F21BA5071F1F0D0F00003C27 /* iOSOpenDemo.mm in Sources */ = {isa = PBXBuildFile; fileRef = F21BA5061F1F0D0F00003C27 /* iOSOpenDemo.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F21BA4F91F1F0D0F00003C27 /* iOSOpenDemo.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = iOSOpenDemo.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F21BA4FC1F1F0D0F00003C27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F21BA5011F1F0D0F00003C27 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		F21BA5021F1F0D0F00003C27 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		F21BA5041F1F0D0F00003C27 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		F21BA5051F1F0D0F00003C27 /* iOSOpenDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSOpenDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F21BA5061F1F0D0F00003C27 /* iOSOpenDemo.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = iOSOpenDemo.mm; sourceTree = "<group>"; };
+		F21BA50B1F1F0D0F00003C27 /* iOSOpenDemo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = iOSOpenDemo.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/iOSOpenDemo.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F21BA4F51F1F0D0F00003C27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21BA4FD1F1F0D0F00003C27 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F21BA4EF1F1F0D0F00003C27 = {
+			isa = PBXGroup;
+			children = (
+				F21BA4FE1F1F0D0F00003C27 /* iOSOpenDemo */,
+				F21BA4FB1F1F0D0F00003C27 /* Frameworks */,
+				F21BA4FA1F1F0D0F00003C27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F21BA4FA1F1F0D0F00003C27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F21BA4F91F1F0D0F00003C27 /* iOSOpenDemo.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F21BA4FB1F1F0D0F00003C27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F21BA4FC1F1F0D0F00003C27 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F21BA4FE1F1F0D0F00003C27 /* iOSOpenDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F21BA5061F1F0D0F00003C27 /* iOSOpenDemo.mm */,
+				F21BA4FF1F1F0D0F00003C27 /* Package */,
+				F21BA5031F1F0D0F00003C27 /* Supporting Files */,
+			);
+			path = iOSOpenDemo;
+			sourceTree = "<group>";
+		};
+		F21BA4FF1F1F0D0F00003C27 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				F21BA5001F1F0D0F00003C27 /* DEBIAN */,
+				F21BA5081F1F0D0F00003C27 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		F21BA5001F1F0D0F00003C27 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				F21BA5011F1F0D0F00003C27 /* control.txt */,
+				F21BA5021F1F0D0F00003C27 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		F21BA5031F1F0D0F00003C27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F21BA5041F1F0D0F00003C27 /* PackageVersion.plist */,
+				F21BA5051F1F0D0F00003C27 /* iOSOpenDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F21BA5081F1F0D0F00003C27 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F21BA5091F1F0D0F00003C27 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		F21BA5091F1F0D0F00003C27 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				F21BA50A1F1F0D0F00003C27 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		F21BA50A1F1F0D0F00003C27 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				F21BA50B1F1F0D0F00003C27 /* iOSOpenDemo.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F21BA4F61F1F0D0F00003C27 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F21BA4F81F1F0D0F00003C27 /* iOSOpenDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F21BA50E1F1F0D0F00003C27 /* Build configuration list for PBXNativeTarget "iOSOpenDemo" */;
+			buildPhases = (
+				F21BA4F41F1F0D0F00003C27 /* Sources */,
+				F21BA4F51F1F0D0F00003C27 /* Frameworks */,
+				F21BA4F61F1F0D0F00003C27 /* Headers */,
+				F21BA4F71F1F0D0F00003C27 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSOpenDemo;
+			productName = iOSOpenDemo;
+			productReference = F21BA4F91F1F0D0F00003C27 /* iOSOpenDemo.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F21BA4F01F1F0D0F00003C27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					F21BA4F81F1F0D0F00003C27 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F21BA4F31F1F0D0F00003C27 /* Build configuration list for PBXProject "iOSOpenDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F21BA4EF1F1F0D0F00003C27;
+			productRefGroup = F21BA4FA1F1F0D0F00003C27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F21BA4F81F1F0D0F00003C27 /* iOSOpenDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F21BA4F71F1F0D0F00003C27 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F21BA4F41F1F0D0F00003C27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21BA5071F1F0D0F00003C27 /* iOSOpenDemo.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F21BA50C1F1F0D0F00003C27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		F21BA50D1F1F0D0F00003C27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		F21BA50F1F1F0D0F00003C27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSOpenDemo/iOSOpenDemo-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		F21BA5101F1F0D0F00003C27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSOpenDemo/iOSOpenDemo-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F21BA4F31F1F0D0F00003C27 /* Build configuration list for PBXProject "iOSOpenDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F21BA50C1F1F0D0F00003C27 /* Debug */,
+				F21BA50D1F1F0D0F00003C27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F21BA50E1F1F0D0F00003C27 /* Build configuration list for PBXNativeTarget "iOSOpenDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F21BA50F1F1F0D0F00003C27 /* Debug */,
+				F21BA5101F1F0D0F00003C27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F21BA4F01F1F0D0F00003C27 /* Project object */;
+}
