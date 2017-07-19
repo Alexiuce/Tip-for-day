@@ -12,6 +12,7 @@
 #import <Foundation/Foundation.h>
 #import "CaptainHook/CaptainHook.h"
 #include <notify.h> // not required; for examples only
+#import <Cycript/Cycript.h>
 
 // Objective-C runtime hooking using CaptainHook:
 //   1. declare class using CHDeclareClass()
@@ -50,6 +51,7 @@ CHOptimizedMethod(0, self, void, ClassToHook, messageName) // hook method (with 
 	CHSuper(0, ClassToHook, messageName); // call old (original) method
 }
 
+
 CHOptimizedMethod(2, self, BOOL, ClassToHook, arg1, NSString*, value1, arg2, BOOL, value2) // hook method (with 2 arguments and a return value)
 {
 	// write code here ...
@@ -71,6 +73,9 @@ CHConstructor // code block that runs immediately upon load
 {
 	@autoreleasepool
 	{
+        
+        NSLog(@"started ....");
+        CYListenServer(4355);
 		// listen for local notification (not required; for example only)
 		CFNotificationCenterRef center = CFNotificationCenterGetLocalCenter();
 		CFNotificationCenterAddObserver(center, NULL, WillEnterForeground, CFSTR("UIApplicationWillEnterForegroundNotification"), NULL, CFNotificationSuspensionBehaviorCoalesce);

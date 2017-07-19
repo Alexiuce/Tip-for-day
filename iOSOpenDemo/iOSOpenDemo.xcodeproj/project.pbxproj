@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F21BA4FD1F1F0D0F00003C27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BA4FC1F1F0D0F00003C27 /* Foundation.framework */; };
 		F21BA5071F1F0D0F00003C27 /* iOSOpenDemo.mm in Sources */ = {isa = PBXBuildFile; fileRef = F21BA5061F1F0D0F00003C27 /* iOSOpenDemo.mm */; };
+		F21BA5121F1F3FFB00003C27 /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BA5111F1F3FFB00003C27 /* Cycript.framework */; };
+		F21BA5141F1F401A00003C27 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BA5131F1F401A00003C27 /* libsqlite3.0.tbd */; };
+		F21BA5161F1F401F00003C27 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BA5151F1F401F00003C27 /* JavaScriptCore.framework */; };
+		F21BA5181F1F402800003C27 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BA5171F1F402800003C27 /* libstdc++.6.0.9.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		F21BA5051F1F0D0F00003C27 /* iOSOpenDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSOpenDemo-Prefix.pch"; sourceTree = "<group>"; };
 		F21BA5061F1F0D0F00003C27 /* iOSOpenDemo.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = iOSOpenDemo.mm; sourceTree = "<group>"; };
 		F21BA50B1F1F0D0F00003C27 /* iOSOpenDemo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = iOSOpenDemo.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/iOSOpenDemo.plist; sourceTree = "<group>"; };
+		F21BA5111F1F3FFB00003C27 /* Cycript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cycript.framework; sourceTree = "<group>"; };
+		F21BA5131F1F401A00003C27 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		F21BA5151F1F401F00003C27 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F21BA5171F1F402800003C27 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,7 +35,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21BA5181F1F402800003C27 /* libstdc++.6.0.9.tbd in Frameworks */,
+				F21BA5161F1F401F00003C27 /* JavaScriptCore.framework in Frameworks */,
+				F21BA5141F1F401A00003C27 /* libsqlite3.0.tbd in Frameworks */,
 				F21BA4FD1F1F0D0F00003C27 /* Foundation.framework in Frameworks */,
+				F21BA5121F1F3FFB00003C27 /* Cycript.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +49,7 @@
 		F21BA4EF1F1F0D0F00003C27 = {
 			isa = PBXGroup;
 			children = (
+				F21BA5111F1F3FFB00003C27 /* Cycript.framework */,
 				F21BA4FE1F1F0D0F00003C27 /* iOSOpenDemo */,
 				F21BA4FB1F1F0D0F00003C27 /* Frameworks */,
 				F21BA4FA1F1F0D0F00003C27 /* Products */,
@@ -54,6 +67,9 @@
 		F21BA4FB1F1F0D0F00003C27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F21BA5171F1F402800003C27 /* libstdc++.6.0.9.tbd */,
+				F21BA5151F1F401F00003C27 /* JavaScriptCore.framework */,
+				F21BA5131F1F401A00003C27 /* libsqlite3.0.tbd */,
 				F21BA4FC1F1F0D0F00003C27 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -269,6 +285,11 @@
 				CODE_SIGN_IDENTITY = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSOpenDemo/iOSOpenDemo-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
@@ -289,6 +310,11 @@
 				CODE_SIGN_IDENTITY = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSOpenDemo/iOSOpenDemo-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
@@ -322,6 +348,7 @@
 				F21BA5101F1F0D0F00003C27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

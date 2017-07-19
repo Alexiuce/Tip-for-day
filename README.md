@@ -300,3 +300,17 @@ a demo code project for iOS / Mac , write down for develop tip
 ```
 #### MachOView 查看整个MachO文件结构
 > 下载地址[MachOView](https://github.com/gdbinit/MachOView)
+ 
+#### iOS-deploy 真机部署 x.app
+> * github地址[ios-deploy](https://github.com/phonegap/ios-deploy)
+> 
+> * 安装
+> 
+> ```
+> sudo npm install -g ios-deploy --unsafe-perm=true
+> ```
+> * 部署
+> 
+> ```
+> ios-deploy -d -b your.app
+> ```
