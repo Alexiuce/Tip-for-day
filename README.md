@@ -126,8 +126,9 @@ a demo code project for iOS / Mac , write down for develop tip
 * ReamAndCharts Target  
   详细参看[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/RealmAndCharts.md)
   
+* CallDemo 网络电话  
 
-
+  使用第三方SDK，详细代码参考[Readme](https://github.com/Alexiuce/Tip-for-day/blob/master/CallDemo/Readme%20.md)
 ### Mac 
 ---
 * 开发点滴
@@ -218,7 +219,7 @@ a demo code project for iOS / Mac , write down for develop tip
  >  复制到/usr/local/bin目录下，在终端中输入class-dump，显示class-dump的版本后，就可以正常使用class-dump的命令了
  
  ```
- class_dump -H 应用.app的路径 -o 输出头文件的路径文件名  
+ class-dump -H 应用.app的路径 -o 输出头文件的路径文件名  
  ```
 
 #### Cycript 使用 
