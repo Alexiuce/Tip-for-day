@@ -1,0 +1,6 @@
+framework module ALCall_Sdk {
+  umbrella header "ALCall_Sdk.h"
+
+  export *
+  module * { export * }
+}
