@@ -205,8 +205,9 @@ a demo code project for iOS / Mac , write down for develop tip
         context.allowsImplicitAnimation = YES;     // 允许隐式动画
         context.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];   // 动画节奏（时间的曲线函数）
         // 注意，这里的Autoloay不是直接赋值到constraint的constant上，而是constraint的animator的constant
-        self.topBoxTopConstraint.animator.constant = _barDisplayed ? 0 : -44;  // 动画之后的autolayout 值
-    } completionHandler:nil];
+        // 动画之后的autolayout 值
+        self.topBoxTopConstraint.animator.constant = _barDisplayed ? 0 : -44; 
+         } completionHandler:nil];
        ``` 
 
 * XibLoadViewDemo
