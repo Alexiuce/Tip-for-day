@@ -132,6 +132,25 @@ a demo code project for iOS / Mac , write down for develop tip
 ### Mac 
 ---
 * 开发点滴
+  
+  * 翻转视图的坐标系
+     > osx中,视图默认的起始坐标是以左下角为坐标原点（0，0），如果需要已左上角为坐标原点，需要设置isFlipped值 
+     
+     ```swift
+     // 方式1: 集成NSView，重载isFlipped属性
+		     override var isFlipped: Bool{
+		        return true
+		    }
+     
+     // 方式2 KVC
+        yourView.setValue(<#T##value: Any?##Any?#>, forKey: <#T##String#>)
+     // 示例代码
+        topBox.setValue(true, forKey: "isFlipped")
+     
+     ```
+  
+  
+  
   * 去除视图选中时的系统默认蓝色边框  
  
     ```swift
