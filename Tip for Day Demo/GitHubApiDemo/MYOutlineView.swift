@@ -15,12 +15,12 @@ class MYOutlineView: NSOutlineView {
 
         // Drawing code here.
     }
-   
+   // 自定义outlineView的三角指示箭头
     override func make(withIdentifier identifier: String, owner: Any?) -> NSView? {
         let view = super.make(withIdentifier: identifier, owner: owner)
         if identifier == NSOutlineViewDisclosureButtonKey, let btn = view as? NSButton{
-            btn.image = NSImage(named: "rightArrow")
-            btn.alternateImage = NSImage(named: "downArrow")
+            btn.image = NSImage(named: "rightArrow")   // 未展开时image
+            btn.alternateImage = NSImage(named: "downArrow")  // 展开时image
             return btn
         }
         return view
