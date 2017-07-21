@@ -18,6 +18,7 @@
 		F21BA5431F203FFB00003C27 /* AppDelegate+IPCall.m in Sources */ = {isa = PBXBuildFile; fileRef = F21BA5421F203FFB00003C27 /* AppDelegate+IPCall.m */; };
 		F21BA5471F2041FA00003C27 /* RegistController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21BA5451F2041FA00003C27 /* RegistController.m */; };
 		F21BA5481F2041FA00003C27 /* RegistController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21BA5461F2041FA00003C27 /* RegistController.xib */; };
+		F21BA5551F219FEF00003C27 /* NCallHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F21BA5541F219FEF00003C27 /* NCallHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		F21BA5441F2041FA00003C27 /* RegistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistController.h; sourceTree = "<group>"; };
 		F21BA5451F2041FA00003C27 /* RegistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistController.m; sourceTree = "<group>"; };
 		F21BA5461F2041FA00003C27 /* RegistController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistController.xib; sourceTree = "<group>"; };
+		F21BA5531F219FEF00003C27 /* NCallHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCallHelper.h; sourceTree = "<group>"; };
+		F21BA5541F219FEF00003C27 /* NCallHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCallHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				F21BA5421F203FFB00003C27 /* AppDelegate+IPCall.m */,
 				F21BA52B1F203E2900003C27 /* ViewController.h */,
 				F21BA52C1F203E2900003C27 /* ViewController.m */,
+				F21BA5531F219FEF00003C27 /* NCallHelper.h */,
+				F21BA5541F219FEF00003C27 /* NCallHelper.m */,
 				F21BA5441F2041FA00003C27 /* RegistController.h */,
 				F21BA5451F2041FA00003C27 /* RegistController.m */,
 				F21BA5461F2041FA00003C27 /* RegistController.xib */,
@@ -183,6 +188,7 @@
 			files = (
 				F21BA52D1F203E2900003C27 /* ViewController.m in Sources */,
 				F21BA52A1F203E2900003C27 /* AppDelegate.m in Sources */,
+				F21BA5551F219FEF00003C27 /* NCallHelper.m in Sources */,
 				F21BA5271F203E2800003C27 /* main.m in Sources */,
 				F21BA5471F2041FA00003C27 /* RegistController.m in Sources */,
 				F21BA5431F203FFB00003C27 /* AppDelegate+IPCall.m in Sources */,
@@ -356,6 +362,7 @@
 				F21BA53B1F203E2900003C27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
