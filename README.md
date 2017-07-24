@@ -180,9 +180,10 @@ a demo code project for iOS / Mac , write down for develop tip
      
      具体内容详参GitHubApi  ：[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
    * NSOutlieView 使用介绍：
-     * 自定义箭头样式: 继承NSOutlineView，重写下面的方法
+     > 自定义箭头样式: 继承NSOutlineView，重写下面的方法
      
      ```swift
+     // 重写方法
      override func make(withIdentifier identifier: String, owner: Any?) -> NSView? {
         let view = super.make(withIdentifier: identifier, owner: owner)
         if identifier == NSOutlineViewDisclosureButtonKey, let btn = view as? NSButton{
@@ -192,7 +193,6 @@ a demo code project for iOS / Mac , write down for develop tip
         }
         return view
         }
-     
      ```
         
      详细内容，参看 [readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md)
@@ -227,7 +227,9 @@ a demo code project for iOS / Mac , write down for develop tip
         // 动画之后的autolayout 值
         self.topBoxTopConstraint.animator.constant = _barDisplayed ? 0 : -44; 
          } completionHandler:nil];
-       ``` 
+       ```
+    > 第三方动画框架JDAnimationKit（基于Pop）
+    [JDAnimationKit](https://github.com/Alexiuce/Tip-for-day/blob/master/AnimationDemo/JDAnimationKit%20(Swift%20for%20OSX).md) 
 
 * XibLoadViewDemo
   
