@@ -156,7 +156,7 @@ a demo code project for iOS / Mac , write down for develop tip
     ```swift
        view.focusRingType = None
     ```
-   * NSTableView 使用和自定义NSTableCellView  
+ * NSTableView 使用和自定义NSTableCellView  
      * 获取NSTableView 当前选中的cell方法 
      
      ```swift
@@ -178,7 +178,7 @@ a demo code project for iOS / Mac , write down for develop tip
     }
      ```
      
-     具体内容详参GitHubApi  ：[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
+具体内容详参GitHubApi  ：[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
      
    * NSOutlieView 使用介绍：
    > 自定义箭头样式: 继承NSOutlineView，重写下面的方法
