@@ -26,7 +26,12 @@ class ViewController: NSViewController {
 
     override func viewDidAppear() {
         super.viewDidAppear()
-        demoLabel.rotate(byDegrees: 45)
+       
+       
+        
+        _ = demoLabel.moveXTo(0, duration:5.0,delay:0.5 ,timing: JDTimingFunction.linear)
+//        _ = demoLabel.moveYTo(0, duration:2, spring: true, springConfig: .JDSpringConfigDefault(), delay:1, timing: .easeOut)
+      
     }
 
 }
