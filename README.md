@@ -179,6 +179,7 @@ a demo code project for iOS / Mac , write down for develop tip
      ```
      
      具体内容详参GitHubApi  ：[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
+     
    * NSOutlieView 使用介绍：
    > 自定义箭头样式: 继承NSOutlineView，重写下面的方法
      
