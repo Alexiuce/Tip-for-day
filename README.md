@@ -181,10 +181,9 @@ a demo code project for iOS / Mac , write down for develop tip
 具体内容详参GitHubApi  ：[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
      
    * NSOutlieView 使用介绍：
-   > 自定义箭头样式: 继承NSOutlineView，重写下面的方法
+      > 自定义箭头样式: 继承NSOutlineView，重写下面的方法
      
-     
-       ```
+     ```swift
      // 重写方法
      override func make(withIdentifier identifier: String, owner: Any?) -> NSView? {
         let view = super.make(withIdentifier: identifier, owner: owner)
@@ -195,9 +194,8 @@ a demo code project for iOS / Mac , write down for develop tip
         }
         return view
         }
-        ```
-        
-     详细内容，参看 [readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md)
+      ```     
+ 详细内容，参看 [readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md)
      
    * NSTableCellView 鼠标的移进和移出监听
    
