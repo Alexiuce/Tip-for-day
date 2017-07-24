@@ -1,0 +1,6 @@
+framework module Pods_CAShapLayerDemo {
+  umbrella header "Pods-CAShapLayerDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
