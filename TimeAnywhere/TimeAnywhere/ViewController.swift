@@ -12,7 +12,12 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
+        for runningApp in NSWorkspace.shared().runningApplications {
+            if let appName = runningApp.localizedName {
+                print(appName)
+            }
+        }
         // Do any additional setup after loading the view.
     }
 
