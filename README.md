@@ -132,11 +132,22 @@ a demo code project for iOS / Mac , write down for develop tip
 ### Mac 
 ---
 * 开发点滴
+
+  * 获取系统当前运行的Application
+     
+     ```swift
+      for runningApp in NSWorkspace.shared().runningApplications {
+            if let appName = runningApp.localizedName {
+                print(appName)
+            }
+        }
+     
+     ```
   
   * 翻转视图的坐标系
      > osx中,视图默认的起始坐标是以左下角为坐标原点（0，0），如果需要已左上角为坐标原点，需要设置isFlipped值 
      
-     ```swift
+       ```swift
      // 方式1: 集成NSView，重载isFlipped属性
 		     override var isFlipped: Bool{
 		        return true
@@ -147,16 +158,16 @@ a demo code project for iOS / Mac , write down for develop tip
      // 示例代码
         topBox.setValue(true, forKey: "isFlipped")
      
-     ```
+       ```
   
   
   
   * 去除视图选中时的系统默认蓝色边框  
  
-    ```swift
+      ```swift
        view.focusRingType = None
-    ```
-   * NSTableView 使用和自定义NSTableCellView  
+      ```
+ * NSTableView 使用和自定义NSTableCellView  
      * 获取NSTableView 当前选中的cell方法 
      
      ```swift
@@ -178,11 +189,13 @@ a demo code project for iOS / Mac , write down for develop tip
     }
      ```
      
-     具体内容详参GitHubApi  ：[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
+具体内容详参GitHubApi  ：[readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
+     
    * NSOutlieView 使用介绍：
-     * 自定义箭头样式: 继承NSOutlineView，重写下面的方法
+      > 自定义箭头样式: 继承NSOutlineView，重写下面的方法
      
      ```swift
+     // 重写方法
      override func make(withIdentifier identifier: String, owner: Any?) -> NSView? {
         let view = super.make(withIdentifier: identifier, owner: owner)
         if identifier == NSOutlineViewDisclosureButtonKey, let btn = view as? NSButton{
@@ -192,10 +205,8 @@ a demo code project for iOS / Mac , write down for develop tip
         }
         return view
         }
-     
-     ```
-        
-     详细内容，参看 [readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md)
+      ```     
+ 详细内容，参看 [readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md)
      
    * NSTableCellView 鼠标的移进和移出监听
    
@@ -227,7 +238,9 @@ a demo code project for iOS / Mac , write down for develop tip
         // 动画之后的autolayout 值
         self.topBoxTopConstraint.animator.constant = _barDisplayed ? 0 : -44; 
          } completionHandler:nil];
-       ``` 
+       ```
+    > 第三方动画框架JDAnimationKit（基于Pop）
+    [JDAnimationKit](https://github.com/Alexiuce/Tip-for-day/blob/master/AnimationDemo/JDAnimationKit%20(Swift%20for%20OSX).md) 
 
 * XibLoadViewDemo
   

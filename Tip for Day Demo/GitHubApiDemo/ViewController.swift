@@ -193,10 +193,7 @@ extension ViewController : NSOutlineViewDelegate{
                 currentLanguage = text
             }
         }
-        
         XCPrint(currentLanguage)
-    
-      
     }
 }
 

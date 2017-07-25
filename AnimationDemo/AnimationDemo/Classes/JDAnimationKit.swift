@@ -468,7 +468,7 @@ extension CALayer : POPAnimationDelegate {
         let block = self.didStartBlock
         
         if self.waitingToStartAnimationsKeys.count == 0{
-            self.didStartAnimation(nil)
+            _ = self.didStartAnimation(nil)
         }
         
         block!(self, anim.name, (self.startedAnimationsKeys.count == 0), nil)
@@ -485,7 +485,7 @@ extension CALayer : POPAnimationDelegate {
         let block = self.didStopBlock
         
         if self.startedAnimationsKeys.count == 0{
-            self.didStopAnimation(nil)
+            _ = self.didStopAnimation(nil)
         }
         
         block!(self, anim.name, (self.startedAnimationsKeys.count == 0), nil)
