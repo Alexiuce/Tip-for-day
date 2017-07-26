@@ -133,6 +133,19 @@ a demo code project for iOS / Mac , write down for develop tip
 ---
 * 开发点滴
 
+  * 设置应用窗口保持最前
+
+     ```swift
+     // 设置窗口级别,使当前窗口保持最前
+      window?.level =  Int(CGShieldingWindowLevel())
+     ```
+  * 设置窗口移动到活动的space中
+    
+    ```swift
+    // 设置window的collectionBehavior 属性
+     window.collectionBehavior = .moveToActiveSpace
+    ```
+  
   * 获取系统当前运行的Application
      
      ```swift

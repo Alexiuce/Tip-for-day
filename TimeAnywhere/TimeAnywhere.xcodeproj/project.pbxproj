@@ -11,6 +11,8 @@
 		F231A6C91F26CF6F0079DDE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231A6C81F26CF6F0079DDE2 /* ViewController.swift */; };
 		F231A6CB1F26CF700079DDE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F231A6CA1F26CF700079DDE2 /* Assets.xcassets */; };
 		F231A6CE1F26CF700079DDE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F231A6CC1F26CF700079DDE2 /* Main.storyboard */; };
+		F231A6F61F28666C0079DDE2 /* MYWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231A6F51F28666C0079DDE2 /* MYWindowController.swift */; };
+		F231A6F81F287BED0079DDE2 /* ActiveSpaceWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231A6F71F287BED0079DDE2 /* ActiveSpaceWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		F231A6CA1F26CF700079DDE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F231A6CD1F26CF700079DDE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F231A6CF1F26CF700079DDE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F231A6F51F28666C0079DDE2 /* MYWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYWindowController.swift; sourceTree = "<group>"; };
+		F231A6F71F287BED0079DDE2 /* ActiveSpaceWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveSpaceWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				F231A6C61F26CF6F0079DDE2 /* AppDelegate.swift */,
 				F231A6C81F26CF6F0079DDE2 /* ViewController.swift */,
+				F231A6F51F28666C0079DDE2 /* MYWindowController.swift */,
+				F231A6F71F287BED0079DDE2 /* ActiveSpaceWindow.swift */,
 				F231A6CA1F26CF700079DDE2 /* Assets.xcassets */,
 				F231A6CC1F26CF700079DDE2 /* Main.storyboard */,
 				F231A6CF1F26CF700079DDE2 /* Info.plist */,
@@ -133,6 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F231A6C91F26CF6F0079DDE2 /* ViewController.swift in Sources */,
+				F231A6F61F28666C0079DDE2 /* MYWindowController.swift in Sources */,
+				F231A6F81F287BED0079DDE2 /* ActiveSpaceWindow.swift in Sources */,
 				F231A6C71F26CF6F0079DDE2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +296,7 @@
 				F231A6D41F26CF700079DDE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

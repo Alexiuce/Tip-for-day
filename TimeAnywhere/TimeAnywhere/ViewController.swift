@@ -8,16 +8,15 @@
 
 import Cocoa
 
+
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        NSWorkspace.shared().notificationCenter.addObserver(self, selector: #selector(ViewController.updateWorkspace(_:)), name: .NSWorkspaceActiveSpaceDidChange, object: nil)
+//        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.updateTopAppInfo), userInfo: nil, repeats: true)
        
-        for runningApp in NSWorkspace.shared().runningApplications {
-            if let appName = runningApp.localizedName {
-                print(appName)
-            }
-        }
         // Do any additional setup after loading the view.
     }
 
@@ -26,7 +25,21 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
+}
 
+extension ViewController{
+    
+    @objc fileprivate func updateWorkspace(_ notification : NSNotification){
 
+      self.view.window?.makeKeyAndOrderFront(nil)
+    
+        print(notification)
+        
+    }
+    
+   @objc fileprivate func updateTopAppInfo(){
+    
+      print(NSWorkspace.shared().frontmostApplication ?? "no no")
+    }
 }
 
