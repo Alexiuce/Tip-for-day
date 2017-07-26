@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F231A7071F2898D70079DDE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A7061F2898D70079DDE2 /* AppDelegate.m */; };
+		F231A70A1F2898D70079DDE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A7091F2898D70079DDE2 /* main.m */; };
+		F231A70D1F2898D70079DDE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A70C1F2898D70079DDE2 /* ViewController.m */; };
+		F231A70F1F2898D70079DDE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F231A70E1F2898D70079DDE2 /* Assets.xcassets */; };
+		F231A7121F2898D70079DDE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F231A7101F2898D70079DDE2 /* Main.storyboard */; };
+		F231A71B1F28990F0079DDE2 /* OneDay.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A71A1F28990F0079DDE2 /* OneDay.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F231A7021F2898D70079DDE2 /* 每日算法练习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "每日算法练习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F231A7051F2898D70079DDE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F231A7061F2898D70079DDE2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F231A7091F2898D70079DDE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F231A70B1F2898D70079DDE2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F231A70C1F2898D70079DDE2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F231A70E1F2898D70079DDE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F231A7111F2898D70079DDE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F231A7131F2898D70079DDE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F231A7191F28990F0079DDE2 /* OneDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneDay.h; sourceTree = "<group>"; };
+		F231A71A1F28990F0079DDE2 /* OneDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneDay.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F231A6FF1F2898D70079DDE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F231A6F91F2898D70079DDE2 = {
+			isa = PBXGroup;
+			children = (
+				F231A7041F2898D70079DDE2 /* 每日算法练习 */,
+				F231A7031F2898D70079DDE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F231A7031F2898D70079DDE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F231A7021F2898D70079DDE2 /* 每日算法练习.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F231A7041F2898D70079DDE2 /* 每日算法练习 */ = {
+			isa = PBXGroup;
+			children = (
+				F231A7051F2898D70079DDE2 /* AppDelegate.h */,
+				F231A7061F2898D70079DDE2 /* AppDelegate.m */,
+				F231A70B1F2898D70079DDE2 /* ViewController.h */,
+				F231A70C1F2898D70079DDE2 /* ViewController.m */,
+				F231A7191F28990F0079DDE2 /* OneDay.h */,
+				F231A71A1F28990F0079DDE2 /* OneDay.m */,
+				F231A70E1F2898D70079DDE2 /* Assets.xcassets */,
+				F231A7101F2898D70079DDE2 /* Main.storyboard */,
+				F231A7131F2898D70079DDE2 /* Info.plist */,
+				F231A7081F2898D70079DDE2 /* Supporting Files */,
+			);
+			path = "每日算法练习";
+			sourceTree = "<group>";
+		};
+		F231A7081F2898D70079DDE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F231A7091F2898D70079DDE2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F231A7011F2898D70079DDE2 /* 每日算法练习 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F231A7161F2898D70079DDE2 /* Build configuration list for PBXNativeTarget "每日算法练习" */;
+			buildPhases = (
+				F231A6FE1F2898D70079DDE2 /* Sources */,
+				F231A6FF1F2898D70079DDE2 /* Frameworks */,
+				F231A7001F2898D70079DDE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "每日算法练习";
+			productName = "每日算法练习";
+			productReference = F231A7021F2898D70079DDE2 /* 每日算法练习.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F231A6FA1F2898D70079DDE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "alexiuce ";
+				TargetAttributes = {
+					F231A7011F2898D70079DDE2 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F231A6FD1F2898D70079DDE2 /* Build configuration list for PBXProject "每日算法练习" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F231A6F91F2898D70079DDE2;
+			productRefGroup = F231A7031F2898D70079DDE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F231A7011F2898D70079DDE2 /* 每日算法练习 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F231A7001F2898D70079DDE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F231A70F1F2898D70079DDE2 /* Assets.xcassets in Resources */,
+				F231A7121F2898D70079DDE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F231A6FE1F2898D70079DDE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F231A70D1F2898D70079DDE2 /* ViewController.m in Sources */,
+				F231A70A1F2898D70079DDE2 /* main.m in Sources */,
+				F231A7071F2898D70079DDE2 /* AppDelegate.m in Sources */,
+				F231A71B1F28990F0079DDE2 /* OneDay.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F231A7101F2898D70079DDE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F231A7111F2898D70079DDE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F231A7141F2898D70079DDE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F231A7151F2898D70079DDE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F231A7171F2898D70079DDE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "每日算法练习/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.alexiuce.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F231A7181F2898D70079DDE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "每日算法练习/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.alexiuce.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F231A6FD1F2898D70079DDE2 /* Build configuration list for PBXProject "每日算法练习" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F231A7141F2898D70079DDE2 /* Debug */,
+				F231A7151F2898D70079DDE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F231A7161F2898D70079DDE2 /* Build configuration list for PBXNativeTarget "每日算法练习" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F231A7171F2898D70079DDE2 /* Debug */,
+				F231A7181F2898D70079DDE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F231A6FA1F2898D70079DDE2 /* Project object */;
+}
