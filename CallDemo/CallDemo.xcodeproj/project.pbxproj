@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F01DB3EEC47744E85A0E0E41 /* libPods-CallDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 580B4D2CC23CD5D0FE4E9819 /* libPods-CallDemo.a */; };
 		F21BA5271F203E2800003C27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F21BA5261F203E2800003C27 /* main.m */; };
 		F21BA52A1F203E2900003C27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F21BA5291F203E2900003C27 /* AppDelegate.m */; };
 		F21BA52D1F203E2900003C27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21BA52C1F203E2900003C27 /* ViewController.m */; };
@@ -18,10 +19,13 @@
 		F21BA5431F203FFB00003C27 /* AppDelegate+IPCall.m in Sources */ = {isa = PBXBuildFile; fileRef = F21BA5421F203FFB00003C27 /* AppDelegate+IPCall.m */; };
 		F21BA5471F2041FA00003C27 /* RegistController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21BA5451F2041FA00003C27 /* RegistController.m */; };
 		F21BA5481F2041FA00003C27 /* RegistController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21BA5461F2041FA00003C27 /* RegistController.xib */; };
-		F21BA5551F219FEF00003C27 /* NCallHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F21BA5541F219FEF00003C27 /* NCallHelper.m */; };
+		F231A6F41F282A580079DDE2 /* UserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A6F31F282A580079DDE2 /* UserAccount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		580B4D2CC23CD5D0FE4E9819 /* libPods-CallDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CallDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ADCB91957F3F3C0F46268C9 /* Pods-CallDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallDemo/Pods-CallDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8C1B593F3DB1D4EE1DFD4F8F /* Pods-CallDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallDemo/Pods-CallDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F21BA5221F203E2800003C27 /* CallDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21BA5261F203E2800003C27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F21BA5281F203E2800003C27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,8 +43,8 @@
 		F21BA5441F2041FA00003C27 /* RegistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistController.h; sourceTree = "<group>"; };
 		F21BA5451F2041FA00003C27 /* RegistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistController.m; sourceTree = "<group>"; };
 		F21BA5461F2041FA00003C27 /* RegistController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistController.xib; sourceTree = "<group>"; };
-		F21BA5531F219FEF00003C27 /* NCallHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCallHelper.h; sourceTree = "<group>"; };
-		F21BA5541F219FEF00003C27 /* NCallHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCallHelper.m; sourceTree = "<group>"; };
+		F231A6F21F282A580079DDE2 /* UserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAccount.h; sourceTree = "<group>"; };
+		F231A6F31F282A580079DDE2 /* UserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAccount.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,18 +54,30 @@
 			files = (
 				F21BA5401F203F1D00003C27 /* libstdc++.tbd in Frameworks */,
 				F21BA53D1F203F0300003C27 /* ALCall_Sdk.framework in Frameworks */,
+				F01DB3EEC47744E85A0E0E41 /* libPods-CallDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F4B3B7AA3B602AB479787AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7ADCB91957F3F3C0F46268C9 /* Pods-CallDemo.debug.xcconfig */,
+				8C1B593F3DB1D4EE1DFD4F8F /* Pods-CallDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F21BA5191F203E2800003C27 = {
 			isa = PBXGroup;
 			children = (
+				F231A6F11F282A3A0079DDE2 /* AccountHelper */,
 				F21BA5241F203E2800003C27 /* CallDemo */,
 				F21BA5231F203E2800003C27 /* Products */,
 				F21BA53E1F203F1D00003C27 /* Frameworks */,
+				7F4B3B7AA3B602AB479787AC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,8 +99,6 @@
 				F21BA5421F203FFB00003C27 /* AppDelegate+IPCall.m */,
 				F21BA52B1F203E2900003C27 /* ViewController.h */,
 				F21BA52C1F203E2900003C27 /* ViewController.m */,
-				F21BA5531F219FEF00003C27 /* NCallHelper.h */,
-				F21BA5541F219FEF00003C27 /* NCallHelper.m */,
 				F21BA5441F2041FA00003C27 /* RegistController.h */,
 				F21BA5451F2041FA00003C27 /* RegistController.m */,
 				F21BA5461F2041FA00003C27 /* RegistController.xib */,
@@ -109,8 +123,18 @@
 			isa = PBXGroup;
 			children = (
 				F21BA53F1F203F1D00003C27 /* libstdc++.tbd */,
+				580B4D2CC23CD5D0FE4E9819 /* libPods-CallDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F231A6F11F282A3A0079DDE2 /* AccountHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F231A6F21F282A580079DDE2 /* UserAccount.h */,
+				F231A6F31F282A580079DDE2 /* UserAccount.m */,
+			);
+			path = AccountHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F21BA5391F203E2900003C27 /* Build configuration list for PBXNativeTarget "CallDemo" */;
 			buildPhases = (
+				97ED1726A68356BADEB29CB4 /* [CP] Check Pods Manifest.lock */,
 				F21BA51E1F203E2800003C27 /* Sources */,
 				F21BA51F1F203E2800003C27 /* Frameworks */,
 				F21BA5201F203E2800003C27 /* Resources */,
+				F22672B7941AF58EEE68A099 /* [CP] Embed Pods Frameworks */,
+				97C95BD73E6EA47C3CD6BE4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,6 +208,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		97C95BD73E6EA47C3CD6BE4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallDemo/Pods-CallDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97ED1726A68356BADEB29CB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F22672B7941AF58EEE68A099 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallDemo/Pods-CallDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F21BA51E1F203E2800003C27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -188,9 +263,9 @@
 			files = (
 				F21BA52D1F203E2900003C27 /* ViewController.m in Sources */,
 				F21BA52A1F203E2900003C27 /* AppDelegate.m in Sources */,
-				F21BA5551F219FEF00003C27 /* NCallHelper.m in Sources */,
 				F21BA5271F203E2800003C27 /* main.m in Sources */,
 				F21BA5471F2041FA00003C27 /* RegistController.m in Sources */,
+				F231A6F41F282A580079DDE2 /* UserAccount.m in Sources */,
 				F21BA5431F203FFB00003C27 /* AppDelegate+IPCall.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +384,7 @@
 		};
 		F21BA53A1F203E2900003C27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ADCB91957F3F3C0F46268C9 /* Pods-CallDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z6P4JKNFHR;
@@ -327,6 +403,7 @@
 		};
 		F21BA53B1F203E2900003C27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C1B593F3DB1D4EE1DFD4F8F /* Pods-CallDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z6P4JKNFHR;

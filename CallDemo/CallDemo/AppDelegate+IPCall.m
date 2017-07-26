@@ -13,11 +13,9 @@
 
 - (void)repareForCall{
     // Required - 注册 ALCHelperInstance
-//    ALCHelperInstance.appKey = @"2139e1b8ca68e7ce7fe5a2dce3bb7648";
-//    ALCHelperInstance.appToken = @"13dfb8bbdbad2d060f7cefcf7a472bef";
-    
-    ALCHelperInstance.appKey = @"3c788732a07aab3226ec4ba0a4658782";
-    ALCHelperInstance.appToken = @"1ee7f5024def958737f2b7a5e42d6ba6";
+    ALCHelperInstance.appKey = @"2139e1b8ca68e7ce7fe5a2dce3bb7648";
+    ALCHelperInstance.appToken = @"13dfb8bbdbad2d060f7cefcf7a472bef";
+
     // 添加震动提示交互（可选）
     [ALCHelperInstance setupVibra:YES];
 }
