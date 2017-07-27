@@ -8,6 +8,8 @@
 
 #import "RegistController.h"
 #import <ALCall_Sdk/ALCall_Sdk.h>
+#import "UserAccount.h"
+
 
 NSString * const kUserinfo = @"kALCall_User_Info";
 
@@ -50,8 +52,11 @@ NSString * const kUserinfo = @"kALCall_User_Info";
             }
             NSNumber *retVal = value[@"retVal"];
             if (retVal.integerValue == 0) {  // 注册成功
-                [[NSUserDefaults standardUserDefaults] setValue:value forKey:kUserinfo];
-                [[NSUserDefaults standardUserDefaults] synchronize];
+                // 保存用户信息
+                UserAccount *account = [UserAccount userAccountWithDictionary:value[@"data"]];
+                [account saveUserAccount];
+                
+                
 //                [self dismissViewControllerAnimated:YES completion:nil];
                 NSLog(@"%@",value);
             }
