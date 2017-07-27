@@ -13,6 +13,7 @@
 		F231A70F1F2898D70079DDE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F231A70E1F2898D70079DDE2 /* Assets.xcassets */; };
 		F231A7121F2898D70079DDE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F231A7101F2898D70079DDE2 /* Main.storyboard */; };
 		F231A71B1F28990F0079DDE2 /* OneDay.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A71A1F28990F0079DDE2 /* OneDay.m */; };
+		F231A71E1F2973630079DDE2 /* TwoDay.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A71D1F2973630079DDE2 /* TwoDay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		F231A7131F2898D70079DDE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F231A7191F28990F0079DDE2 /* OneDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneDay.h; sourceTree = "<group>"; };
 		F231A71A1F28990F0079DDE2 /* OneDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneDay.m; sourceTree = "<group>"; };
+		F231A71C1F2973630079DDE2 /* TwoDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoDay.h; sourceTree = "<group>"; };
+		F231A71D1F2973630079DDE2 /* TwoDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoDay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				F231A70C1F2898D70079DDE2 /* ViewController.m */,
 				F231A7191F28990F0079DDE2 /* OneDay.h */,
 				F231A71A1F28990F0079DDE2 /* OneDay.m */,
+				F231A71C1F2973630079DDE2 /* TwoDay.h */,
+				F231A71D1F2973630079DDE2 /* TwoDay.m */,
 				F231A70E1F2898D70079DDE2 /* Assets.xcassets */,
 				F231A7101F2898D70079DDE2 /* Main.storyboard */,
 				F231A7131F2898D70079DDE2 /* Info.plist */,
@@ -152,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F231A70D1F2898D70079DDE2 /* ViewController.m in Sources */,
+				F231A71E1F2973630079DDE2 /* TwoDay.m in Sources */,
 				F231A70A1F2898D70079DDE2 /* main.m in Sources */,
 				F231A7071F2898D70079DDE2 /* AppDelegate.m in Sources */,
 				F231A71B1F28990F0079DDE2 /* OneDay.m in Sources */,
@@ -304,6 +310,7 @@
 				F231A7181F2898D70079DDE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
