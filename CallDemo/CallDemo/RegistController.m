@@ -51,7 +51,7 @@ NSString * const kUserinfo = @"kALCall_User_Info";
                 return ;
             }
             NSNumber *retVal = value[@"retVal"];
-            if (retVal.integerValue == 0) {  // 注册成功
+            if (retVal != nil && retVal.integerValue == 0) {  // 注册成功
                 // 保存用户信息
                 UserAccount *account = [UserAccount userAccountWithDictionary:value[@"data"]];
                 [account saveUserAccount];
