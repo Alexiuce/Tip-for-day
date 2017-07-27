@@ -53,9 +53,12 @@ class ViewController: NSViewController {
     @IBAction func startPull(_ sender: NSButton) {
         if isLoadingRepo {return}   // 如果正在执行,则返回
         isLoadingRepo = true   // 设置正在执行标记
-         task = Process()     // 创建NSTask对象
+        task = Process()     // 创建NSTask对象
+        if task?.environment == nil {
+            task?.environment = ["PATH":"/usr/bin;/bin" ]
+        }
         task?.launchPath = "/bin/bash"    // 执行路径(这里是需要执行命令的绝对路径)
-        task?.arguments = ["-c","cd \(self.savePath.stringValue); ls \(self.savePath.stringValue)"]
+        task?.arguments = ["-c","cd \(self.savePath.stringValue); /bin/ls \(self.savePath.stringValue)"]
         
         // 获取输出
         outputPipe = Pipe()
