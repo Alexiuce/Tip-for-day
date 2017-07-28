@@ -8,6 +8,9 @@
 
 import Cocoa
 
+let kSelectedFilePath = "userSelectedPath"
+
+
 class ViewController: NSViewController {
 
     @IBOutlet weak var repoPath: NSTextField!           // git 仓库path
@@ -45,43 +48,50 @@ class ViewController: NSViewController {
             if result == NSModalResponseOK {
                 // 7. 获取选择的路径
                 self.savePath.stringValue = (openPanel.directoryURL?.path)!
+                UserDefaults.standard.setValue(openPanel.url?.path, forKey: kSelectedFilePath)
+                UserDefaults.standard.synchronize()
             }
             // 8. 恢复按钮状态
             sender.state = NSOffState
         }
     }
     @IBAction func startPull(_ sender: NSButton) {
+        guard  let executePath = UserDefaults.standard.value(forKey: kSelectedFilePath) as? String else {
+            print("no selected path")
+            return
+        }
+        guard self.repoPath.stringValue.characters.count != 0 else {
+            return
+        }
         if isLoadingRepo {return}   // 如果正在执行,则返回
         isLoadingRepo = true   // 设置正在执行标记
         task = Process()     // 创建NSTask对象
-        if task?.environment == nil {
-            task?.environment = ["PATH":"/usr/bin;/bin" ]
-        }
+        
         task?.launchPath = "/bin/bash"    // 执行路径(这里是需要执行命令的绝对路径)
-        task?.arguments = ["-c","cd \(self.savePath.stringValue); /bin/ls \(self.savePath.stringValue)"]
+        task?.arguments = ["-c","cd \(executePath); git clone \(self.repoPath.stringValue)"]
         
         // 获取输出
         outputPipe = Pipe()
         task?.standardOutput = outputPipe
        
-//        outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-//        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading, queue: nil) { (notification) in
-//            let outputData = self.outputPipe.fileHandleForReading.availableData
-//            let outputString = String(data: outputData, encoding: .utf8) ?? "none"
-//            print(outputString);
-//            self.outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-//        }
+        outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading, queue: nil) { (notification) in
+            let outputData = self.outputPipe.fileHandleForReading.availableData
+            guard let outputString = String(data: outputData, encoding: .utf8) , outputString != "" else{return}
+            print(outputString);
+        }
     
         task?.terminationHandler = { proce in              // 执行结束的闭包(回调)
             self.isLoadingRepo = false    // 恢复执行标记
             print("finished")
+            NotificationCenter.default.removeObserver(self, name: NSNotification.Name.NSFileHandleDataAvailable, object: self.outputPipe.fileHandleForReading)
         }
         task?.launch()                // 开启执行
-        
+        print("end")
         // 获取运行结果
-        let resultData = outputPipe.fileHandleForReading.readDataToEndOfFile()
-        let text = String(data: resultData, encoding: String.Encoding.utf8)
-        print(text)
+//        let resultData = outputPipe.fileHandleForReading.readDataToEndOfFile()
+//        let text = String(data: resultData, encoding: String.Encoding.utf8)
+//        print(text ?? "non")
 //        task?.waitUntilExit()       // 阻塞直到执行完毕
         
     }
