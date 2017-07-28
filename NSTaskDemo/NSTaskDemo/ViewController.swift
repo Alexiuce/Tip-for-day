@@ -15,10 +15,12 @@ class ViewController: NSViewController {
 
     @IBOutlet weak var repoPath: NSTextField!           // git 仓库path
     @IBOutlet weak var savePath: NSTextField!           // 本地保存路径
+    @IBOutlet var showInfoTextView: NSTextView!     // 显示结果内容
     
     var isLoadingRepo  = false                                 // 记录是否正在加载中..
     
     var outputPipe = Pipe()
+    
     var task : Process?
     
     override func viewDidLoad() {
@@ -48,10 +50,11 @@ class ViewController: NSViewController {
             if result == NSModalResponseOK {
                 // 7. 获取选择的路径
                 self.savePath.stringValue = (openPanel.directoryURL?.path)!
+                // 8. 保存用户选择路径
                 UserDefaults.standard.setValue(openPanel.url?.path, forKey: kSelectedFilePath)
                 UserDefaults.standard.synchronize()
             }
-            // 8. 恢复按钮状态
+            // 9. 恢复按钮状态
             sender.state = NSOffState
         }
     }
@@ -60,40 +63,60 @@ class ViewController: NSViewController {
             print("no selected path")
             return
         }
-        guard self.repoPath.stringValue.characters.count != 0 else {
-            return
-        }
+        guard repoPath.stringValue != "" else {return}
         if isLoadingRepo {return}   // 如果正在执行,则返回
         isLoadingRepo = true   // 设置正在执行标记
         task = Process()     // 创建NSTask对象
-        
+        // 设置task
         task?.launchPath = "/bin/bash"    // 执行路径(这里是需要执行命令的绝对路径)
-        task?.arguments = ["-c","cd \(executePath); git clone \(self.repoPath.stringValue)"]
+        // 设置执行的具体命令
+        task?.arguments = ["-c","cd \(executePath); git clone \(repoPath.stringValue)"]
         
-        // 获取输出
-        outputPipe = Pipe()
-        task?.standardOutput = outputPipe
-       
-        outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading, queue: nil) { (notification) in
-            let outputData = self.outputPipe.fileHandleForReading.availableData
-            guard let outputString = String(data: outputData, encoding: .utf8) , outputString != "" else{return}
-            print(outputString);
-        }
-    
         task?.terminationHandler = { proce in              // 执行结束的闭包(回调)
             self.isLoadingRepo = false    // 恢复执行标记
             print("finished")
-            NotificationCenter.default.removeObserver(self, name: NSNotification.Name.NSFileHandleDataAvailable, object: self.outputPipe.fileHandleForReading)
         }
-        task?.launch()                // 开启执行
-        print("end")
-        // 获取运行结果
-//        let resultData = outputPipe.fileHandleForReading.readDataToEndOfFile()
-//        let text = String(data: resultData, encoding: String.Encoding.utf8)
-//        print(text ?? "non")
-//        task?.waitUntilExit()       // 阻塞直到执行完毕
+        captureStandardOutputAndRouteToTextView(task!)
         
+        task?.launch()                // 开启执行
+        
+        
+        
+//        task?.waitUntilExit()       // 阻塞直到执行完毕
     }
 }
+
+extension ViewController{
+    fileprivate func captureStandardOutputAndRouteToTextView(_ task:Process) {
+        //1. 设置标准输出管道
+        task.standardOutput = outputPipe
+        
+        //2. 在后台线程等待数据和通知
+        outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        
+        //3. 接受到通知消息
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading , queue: nil) { notification in
+            
+            //4. 获取管道数据 转为字符串
+            let output = self.outputPipe.fileHandleForReading.availableData
+            let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
+            if outputString != ""{
+                //5. 在主线程处理UI
+                DispatchQueue.main.async(execute: {
+                    let previousOutput = self.showInfoTextView.string ?? ""
+                    let nextOutput = previousOutput + "\n" + outputString
+                    self.showInfoTextView.string = nextOutput
+                    // 滚动到可视位置
+                    let range = NSRange(location:nextOutput.characters.count,length:0)
+                    self.showInfoTextView.scrollRangeToVisible(range)
+                })
+            }            
+            //6. 继续等待新数据和通知
+            self.outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        }
+    }
+
+}
+
+
 

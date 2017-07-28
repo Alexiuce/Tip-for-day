@@ -821,6 +821,7 @@
                     <connections>
                         <outlet property="repoPath" destination="EKs-I0-l6k" id="tjr-my-Nto"/>
                         <outlet property="savePath" destination="jwZ-9Z-57x" id="e2Q-Lz-vGc"/>
+                        <outlet property="showInfoTextView" destination="oNw-Nv-hSd" id="Pbw-Jv-uv1"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
