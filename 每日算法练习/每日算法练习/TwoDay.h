@@ -9,15 +9,25 @@
 #import <Foundation/Foundation.h>
 
 /**
- 给你两个非空链表(链表不懂的自行百度,简单的说就是一个结构体,里面有数据和一个指针,指针指向下一个结构体,所以地址可以不连续),
- 每个链表代表一个数,
- 把这两个数加起来,返回结果.
- 结果也是以链表的形式返回
- (给的数据不会以0开头,唯一以 0 开头的情况是数字0本身,所以不用担心前面有多余0的情况).
+ 给你两个非空链表，每个链表代表一个数，把这两个数加起来，返回结果。结果也是以链表的形式返回。
+ 
+ 稍微特殊一点的地方是，给的链表是按数字的每一位倒着给的，比如 123 一百二十三 给的链表是 3 -> 2 -> 1
+ 
+ 这样如果输入 (2 -> 4 -> 3) 和 (5 -> 6 -> 4) 两个链表，代表 342 和 465，加出来的结果应该是 807，返回的结果应该是 7 -> 0 -> 8
+
  
  */
 
 
+typedef struct ListNode {
+    int number;                         // 数值 0~9
+    struct ListNode *nextNode;  // 下一个链接节点
+}MyListNode;
+
+
+
 @interface TwoDay : NSObject
 
++ (MyListNode)addListNode:(MyListNode)node1 andTwo:(MyListNode)node2;
++ (int)convertNodeToNumber:(MyListNode)node;
 @end
