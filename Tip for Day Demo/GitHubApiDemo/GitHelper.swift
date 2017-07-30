@@ -8,6 +8,12 @@
 
 import Cocoa
 
+
+@objc protocol GitHelperProtocol {
+    func gitHelperStartLaunch();
+    func gitHelperDidFinished();
+}
+
 class GitHelper: NSObject {
     
     
@@ -16,5 +22,20 @@ class GitHelper: NSObject {
 
 extension GitHelper{
     open func gitClone(_ repoUrl:String){
+        executeShellCommond("git clone \(repoUrl)")
+    }
+}
+
+extension GitHelper{
+    fileprivate func executeShellCommond(_ cmd: String){
+        let task = Process()
+        
+        task.launchPath = "/bin/bash"
+        task.arguments = ["-c",cmd]
+        
+        
+        task.launch()
+        
+        
     }
 }
