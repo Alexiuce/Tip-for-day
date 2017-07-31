@@ -132,6 +132,45 @@ a demo code project for iOS / Mac , write down for develop tip
 ### Mac 
 ---
 * 开发点滴
+  
+  * 沙盒机制下获取文件的永久权限
+    
+      ```swfit
+         // 1 使用 NSOpenPanel让用户选择路径
+         @IBAction func selectFilePath(_ sender : NSButton){
+            let openPanel = NSOpenPanel()
+            openPanel.canChooseFiles = false
+        	  openPanel.canChooseDirectories = true
+        
+            openPanel.beginSheetModal(for: view.window!) { (result) in
+              if result == NSModalResponseOK {
+                let selectUrl = openPanel.url!
+                guard let urlBookMark = try? selectUrl.bookmarkData(options: URL.BookmarkCreationOptions.withSecurityScope , includingResourceValuesForKeys: nil, relativeTo: nil) else{
+                    return
+                   }
+          // 2 保存bookmark
+                UserDefaults.standard.setValue(urlBookMark, forKey: "recentUrl")
+                UserDefaults.standard.synchronize()
+                
+                }
+             }
+          }
+        
+        
+             var bookmarkIsStale = false
+             guard let bookmarkData = UserDefaults.standard.value(forKey: "recentUrl") as? Data else {
+                  return
+        			}
+         // 3 访问时,使用bookmark获取url
+             guard let recentUrl = try? URL.init(resolvingBookmarkData: bookmarkData, options: URL.BookmarkResolutionOptions.withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &bookmarkIsStale) else {
+                  return
+                }
+             _ =  recentUrl?.startAccessingSecurityScopedResource()
+        // 4 使用url访问资源  下面代码为使用示例
+            GitHelper().exeCmd("cd \(recentUrl!.path); ls \(recentUrl!.path)")
+    
+       
+      ```
 
   * 设置应用窗口保持最前
 
@@ -141,10 +180,10 @@ a demo code project for iOS / Mac , write down for develop tip
      ```
   * 设置窗口移动到活动的space中
     
-    ```swift
+     ```swift
     // 设置window的collectionBehavior 属性
      window.collectionBehavior = .moveToActiveSpace
-    ```
+     ```
   
   * 获取系统当前运行的Application
      
