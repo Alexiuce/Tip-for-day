@@ -14,6 +14,7 @@
 		9AE68C606A1776E13F669EC3 /* Pods_BaiduMap_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F30D480E6D012EE52F0F03 /* Pods_BaiduMap_Demo.framework */; };
 		9C1376173A12C3CC33D5C33B /* libPods-OpenCV Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C6CBE9172478076D6AF8D9 /* libPods-OpenCV Demo.a */; };
 		D66D4934FB3DA79A10821FDD /* Pods_ReamAndChartsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7256A9F2455A0BD228441BA /* Pods_ReamAndChartsDemo.framework */; };
+		D82C58C61F2C5B9800C04F6C /* GitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C58C51F2C5B9800C04F6C /* GitHelper.swift */; };
 		D85063081EFE02C700FC9E5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D85063071EFE02C700FC9E5E /* main.m */; };
 		D850630B1EFE02C700FC9E5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D850630A1EFE02C700FC9E5E /* AppDelegate.m */; };
 		D850630E1EFE02C700FC9E5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D850630D1EFE02C700FC9E5E /* ViewController.m */; };
@@ -109,6 +110,7 @@
 		A7F30D480E6D012EE52F0F03 /* Pods_BaiduMap_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaiduMap_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75B4E1189A1002B9C0F673B /* Pods-XCPhotoEditPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCPhotoEditPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCPhotoEditPicker/Pods-XCPhotoEditPicker.debug.xcconfig"; sourceTree = "<group>"; };
 		D022A5F6BFB15759E670F669 /* Pods_GitHubApiDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubApiDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82C58C51F2C5B9800C04F6C /* GitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHelper.swift; sourceTree = "<group>"; };
 		D85063041EFE02C700FC9E5E /* OpenCV Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCV Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85063071EFE02C700FC9E5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D85063091EFE02C700FC9E5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -433,6 +435,11 @@
 				F292753D1EFD0C600001F866 /* AppDelegate.swift */,
 				F2F37C091F04FCE2002693CF /* WindowController.swift */,
 				F292753F1EFD0C600001F866 /* ViewController.swift */,
+<<<<<<< HEAD
+=======
+				D82C58C51F2C5B9800C04F6C /* GitHelper.swift */,
+				F21BA5561F21E41700003C27 /* MYFlipView.swift */,
+>>>>>>> c07d7c48822820e1a3cebc9a0ad9026749a70b85
 				F29A99AC1F15F233003BDC0B /* MYOutlineView.swift */,
 				F215F7F41F14698700C9FB9F /* OutLineCell.swift */,
 				F215F7F21F145ACF00C9FB9F /* RootModel.swift */,
@@ -1484,6 +1491,7 @@
 				F29A99AD1F15F233003BDC0B /* MYOutlineView.swift in Sources */,
 				F2F37C0A1F04FCE2002693CF /* WindowController.swift in Sources */,
 				F215F7F31F145ACF00C9FB9F /* RootModel.swift in Sources */,
+				D82C58C61F2C5B9800C04F6C /* GitHelper.swift in Sources */,
 				F27F3EE21F09E22600614FF8 /* RespositoryCell.swift in Sources */,
 				F215F7F51F14698700C9FB9F /* OutLineCell.swift in Sources */,
 				F292753E1EFD0C600001F866 /* AppDelegate.swift in Sources */,
