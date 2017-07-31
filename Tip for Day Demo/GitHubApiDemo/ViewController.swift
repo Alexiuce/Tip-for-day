@@ -25,6 +25,8 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var favButton : NSButton!
     
+    var currentRequestName  = ""
+    
     
     weak var currentSelectedCell : RespositoryCell?   // 记录当前选中的cell
     
@@ -58,7 +60,7 @@ class ViewController: NSViewController {
         let url = URL(string: server)!
         let requet = URLRequest(url: url)
         webView.mainFrame.load(requet)
-    
+        webView.frameLoadDelegate = self
         let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
         leftTable.register(cellNib, forIdentifier: "respositoryCell")
       
@@ -123,6 +125,7 @@ class ViewController: NSViewController {
 extension ViewController : WebPolicyDelegate{
     func webView(_ webView: WebView!, decidePolicyForNavigationAction actionInformation: [AnyHashable : Any]!, request: URLRequest!, frame: WebFrame!, decisionListener listener: WebPolicyDecisionListener!) {
         let host = request.url!.host! as NSString
+        currentRequestName = request.url!.absoluteString
         if host .isEqual(to: "alexiuce.github.io") {
             XCPrint("alexicuce")
             listener.ignore()
@@ -131,6 +134,31 @@ extension ViewController : WebPolicyDelegate{
         }
     }
 }
+
+extension ViewController : WebFrameLoadDelegate{
+    func webView(_ sender: WebView!, didFinishLoadFor frame: WebFrame!) {
+        XCPrint(currentRequestName)
+        if !currentRequestName.hasSuffix("README.md") {
+            return
+        }
+        let divHeaderClassname = "position-relative js-header-wrapper"
+        let reponavDivClassname = "pagehead repohead instapaper_ignore readability-menu experiment-repo-nav"
+        let fileNavDivClassname = "file-navigation js-zeroclipboard-container"
+        let commitDivClassname = "commit-tease"
+        let fileInfoDivClassname = "file-header"
+        let divsName = [divHeaderClassname,reponavDivClassname,fileNavDivClassname,commitDivClassname,fileInfoDivClassname]
+        
+       
+        
+        for classname in divsName {
+            let jsCode = "var targetDiv = document.getElementsByClassName('\(classname)')[0]; targetDiv.parentNode.removeChild(targetDiv);"
+            let value =  webView.stringByEvaluatingJavaScript(from: jsCode)
+            XCPrint(value)
+        }
+    }
+}
+
+
 
 extension ViewController : NSTableViewDataSource{
     func numberOfRows(in tableView: NSTableView) -> Int {
@@ -175,7 +203,7 @@ extension ViewController : NSTableViewDelegate{
         selectCell?.selected = true
         currentSelectedCell = selectCell
         let model = cellModels![leftTable.selectedRow]
-        let url = URL(string: model.homeUrl)!
+        let url = URL(string: model.homeUrl + "/blob/master/README.md")!
         let requet = URLRequest(url: url)
         webView.mainFrame.load(requet)
     }

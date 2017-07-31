@@ -31,6 +31,7 @@
 		D85063481EFE923700FC9E5E /* MyXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85063471EFE923700FC9E5E /* MyXibView.xib */; };
 		F215F7F31F145ACF00C9FB9F /* RootModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F7F21F145ACF00C9FB9F /* RootModel.swift */; };
 		F215F7F51F14698700C9FB9F /* OutLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F7F41F14698700C9FB9F /* OutLineCell.swift */; };
+		F2546C1F1F2F09630043DE39 /* MarkdownHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2546C1E1F2F09630043DE39 /* MarkdownHelper.swift */; };
 		F27F3EE21F09E22600614FF8 /* RespositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F3EE11F09E22600614FF8 /* RespositoryCell.swift */; };
 		F27F3EE41F09E49700614FF8 /* RespositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F27F3EE31F09E49700614FF8 /* RespositoryCell.xib */; };
 		F27F3EE81F0A10E000614FF8 /* RespositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F3EE71F0A10E000614FF8 /* RespositoryModel.swift */; };
@@ -139,6 +140,7 @@
 		DC71E72783B34308D8F86EC6 /* Pods-XCPhotoEditPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCPhotoEditPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCPhotoEditPicker/Pods-XCPhotoEditPicker.release.xcconfig"; sourceTree = "<group>"; };
 		F215F7F21F145ACF00C9FB9F /* RootModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModel.swift; sourceTree = "<group>"; };
 		F215F7F41F14698700C9FB9F /* OutLineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutLineCell.swift; sourceTree = "<group>"; };
+		F2546C1E1F2F09630043DE39 /* MarkdownHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownHelper.swift; sourceTree = "<group>"; };
 		F27F3EE11F09E22600614FF8 /* RespositoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespositoryCell.swift; sourceTree = "<group>"; };
 		F27F3EE31F09E49700614FF8 /* RespositoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RespositoryCell.xib; sourceTree = "<group>"; };
 		F27F3EE71F0A10E000614FF8 /* RespositoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespositoryModel.swift; sourceTree = "<group>"; };
@@ -435,10 +437,8 @@
 				F292753D1EFD0C600001F866 /* AppDelegate.swift */,
 				F2F37C091F04FCE2002693CF /* WindowController.swift */,
 				F292753F1EFD0C600001F866 /* ViewController.swift */,
-
 				D82C58C51F2C5B9800C04F6C /* GitHelper.swift */,
-				F21BA5561F21E41700003C27 /* MYFlipView.swift */,
-
+				F2546C1E1F2F09630043DE39 /* MarkdownHelper.swift */,
 				F29A99AC1F15F233003BDC0B /* MYOutlineView.swift */,
 				F215F7F41F14698700C9FB9F /* OutLineCell.swift */,
 				F215F7F21F145ACF00C9FB9F /* RootModel.swift */,
@@ -1490,6 +1490,7 @@
 				F29A99AD1F15F233003BDC0B /* MYOutlineView.swift in Sources */,
 				F2F37C0A1F04FCE2002693CF /* WindowController.swift in Sources */,
 				F215F7F31F145ACF00C9FB9F /* RootModel.swift in Sources */,
+				F2546C1F1F2F09630043DE39 /* MarkdownHelper.swift in Sources */,
 				D82C58C61F2C5B9800C04F6C /* GitHelper.swift in Sources */,
 				F27F3EE21F09E22600614FF8 /* RespositoryCell.swift in Sources */,
 				F215F7F51F14698700C9FB9F /* OutLineCell.swift in Sources */,
