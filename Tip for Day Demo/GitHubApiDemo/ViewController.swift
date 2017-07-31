@@ -25,6 +25,7 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var favButton : NSButton!
     
+    
     weak var currentSelectedCell : RespositoryCell?   // 记录当前选中的cell
     
     var isSelectedFavorite = false  // 是否收藏
@@ -66,6 +67,16 @@ class ViewController: NSViewController {
         
         cellModels = []
         
+        var bookmarkIsStale = false
+        guard let bookmarkData = UserDefaults.standard.value(forKey: "recentUrl") as? Data else {
+            return
+        }
+        guard let recentUrl = try? URL.init(resolvingBookmarkData: bookmarkData, options: URL.BookmarkResolutionOptions.withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &bookmarkIsStale) else {
+            return
+        }
+       _ =  recentUrl?.startAccessingSecurityScopedResource()
+        XCPrint(recentUrl?.path)
+        GitHelper().exeCmd("cd \(recentUrl!.path); ls \(recentUrl!.path)")
        
     }
     override var representedObject: Any? {
@@ -85,7 +96,25 @@ class ViewController: NSViewController {
         isSelectedFavorite = !isSelectedFavorite
         let favImgName = isSelectedFavorite ? "fav":"unfav"
         sender.image = NSImage(named: favImgName)
+    }
+    
+    // 选择文档路径
+    @IBAction func selectFilePath(_ sender : NSButton){
+        let openPanel = NSOpenPanel()
+        openPanel.canChooseFiles = false
+        openPanel.canChooseDirectories = true
         
+        openPanel.beginSheetModal(for: view.window!) { (result) in
+            if result == NSModalResponseOK {
+                let selectUrl = openPanel.url!
+                guard let urlBookMark = try? selectUrl.bookmarkData(options: URL.BookmarkCreationOptions.withSecurityScope , includingResourceValuesForKeys: nil, relativeTo: nil) else{
+                    return
+                }
+                UserDefaults.standard.setValue(urlBookMark, forKey: "recentUrl")
+                UserDefaults.standard.synchronize()
+                
+            }
+        }
     }
     
     
