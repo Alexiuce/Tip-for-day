@@ -151,6 +151,7 @@ extension ViewController : WebFrameLoadDelegate{
     func webView(_ sender: WebView!, didFinishLoadFor frame: WebFrame!) {
         XCPrint(currentRequestName)
         if !currentRequestName.hasSuffix("README.md") {
+            XCProgressHUD.defaultHud.hideHud()
             return
         }
         
@@ -167,6 +168,8 @@ extension ViewController : WebFrameLoadDelegate{
             let value =  webView.stringByEvaluatingJavaScript(from: jsCode)
             XCPrint(value)
         }
+        
+        XCProgressHUD.defaultHud.hideHud()
     }
 }
 
@@ -300,6 +303,7 @@ extension ViewController{
     }
     func changingWebviewLoadingProcess(_ notification : Notification)  {
         XCPrint("change process \(webView.estimatedProgress)")
+        XCProgressHUD.defaultHud.loadProgress = CGFloat(webView.estimatedProgress)
        
     }
     
