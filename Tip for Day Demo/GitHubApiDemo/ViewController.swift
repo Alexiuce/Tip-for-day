@@ -56,15 +56,20 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      let server = "https://github.com"
+        NotificationCenter.default.addObserver(self, selector: #selector(startWebviewLoading(_:)), name: NSNotification.Name.WebViewProgressStarted, object: webView)
+        NotificationCenter.default.addObserver(self, selector: #selector(changingWebviewLoadingProcess(_:)), name: NSNotification.Name.WebViewProgressEstimateChanged, object: webView)
+        NotificationCenter.default.addObserver(self, selector: #selector(endWebviewLoading(_:)), name: NSNotification.Name.WebViewProgressFinished, object: webView)
+        
+        let server = "https://github.com"
         let url = URL(string: server)!
         let requet = URLRequest(url: url)
         webView.mainFrame.load(requet)
         webView.frameLoadDelegate = self
         let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
         leftTable.register(cellNib, forIdentifier: "respositoryCell")
-      
+       
         
+
         outlineView.rowHeight = 35
         
         cellModels = []
@@ -86,6 +91,10 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
             XCPrint("dlefaeladsf")
         }
+        
+     
+    
+        
     }
     
     
@@ -133,6 +142,7 @@ extension ViewController : WebPolicyDelegate{
             listener.use()
         }
     }
+
 }
 
 extension ViewController : WebFrameLoadDelegate{
@@ -141,15 +151,15 @@ extension ViewController : WebFrameLoadDelegate{
         if !currentRequestName.hasSuffix("README.md") {
             return
         }
+        
+    
         let divHeaderClassname = "position-relative js-header-wrapper"
         let reponavDivClassname = "pagehead repohead instapaper_ignore readability-menu experiment-repo-nav"
         let fileNavDivClassname = "file-navigation js-zeroclipboard-container"
         let commitDivClassname = "commit-tease"
         let fileInfoDivClassname = "file-header"
         let divsName = [divHeaderClassname,reponavDivClassname,fileNavDivClassname,commitDivClassname,fileInfoDivClassname]
-        
-       
-        
+    
         for classname in divsName {
             let jsCode = "var targetDiv = document.getElementsByClassName('\(classname)')[0]; targetDiv.parentNode.removeChild(targetDiv);"
             let value =  webView.stringByEvaluatingJavaScript(from: jsCode)
@@ -162,6 +172,7 @@ extension ViewController : WebFrameLoadDelegate{
 
 extension ViewController : NSTableViewDataSource{
     func numberOfRows(in tableView: NSTableView) -> Int {
+        XCPrint(cellModels?.count)
         return cellModels == nil ? 0 : cellModels!.count
     }
 }
@@ -279,4 +290,20 @@ extension ViewController{
         }
     }
 }
+
+// MARK: Notification Listion 
+extension ViewController{
+    func startWebviewLoading(_ notification : Notification) {
+        XCPrint("start   \(notification)")
+    }
+    func changingWebviewLoadingProcess(_ notification : Notification)  {
+        XCPrint("change process \(webView.estimatedProgress)")
+       
+    }
+    
+    func endWebviewLoading(_ notification : Notification){
+         XCPrint("end   \(notification)")
+    }
+}
+
 

@@ -4,7 +4,6 @@ PODS:
   - Charts (3.0.2):
     - Charts/Core (= 3.0.2)
   - Charts/Core (3.0.2)
-  - Down (0.3.4)
   - Kingfisher (3.10.1)
   - Realm (2.0.4):
     - Realm/Headers (= 2.0.4)
@@ -20,7 +19,6 @@ DEPENDENCIES:
   - Alamofire (~> 4.4)
   - BaiduMapKit
   - Charts (~> 3.0.1)
-  - Down
   - Kingfisher (~> 3.0)
   - RealmSwift (~> 2.0.2)
   - RxCocoa (~> 3.0)
@@ -31,7 +29,6 @@ SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   BaiduMapKit: 5118390d63b375483bd64c963e8e32a40fd9ddb5
   Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
-  Down: 3f35b61e51a603df3e9e7e0289b15752e72f82e6
   Kingfisher: 33a1b82140fcb14a9fc13f78dfde2a03ff8de8cb
   Realm: 9da97f48365f8b99dd95c28d45ad8222d62e1775
   RealmSwift: 01e8db006035f16003e6307ae8eae1adccce68db
@@ -39,6 +36,6 @@ SPEC CHECKSUMS:
   RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: bac6aec88846b5a75069fe5488322e16764263b1
+PODFILE CHECKSUM: e7047fe526fb0e599eb7dfc4e19f43dd9be398be
 
 COCOAPODS: 1.2.1

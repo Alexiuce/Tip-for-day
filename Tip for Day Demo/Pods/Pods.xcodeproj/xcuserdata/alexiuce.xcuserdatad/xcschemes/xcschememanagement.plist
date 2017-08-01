@@ -14,11 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Down.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -107,11 +102,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>19B957CD213B52A6B23CBCE156B858B2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>1C3D886DD5E3566964FBC1B567043F51</key>
 		<dict>
 			<key>primary</key>
@@ -127,12 +117,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>43134A787828ADAA327E8EB54C1E5F6B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>48C457A8FEADB2257B23178D8CB9BB11</key>
+		<key>4C2384DAB8CCEE8DEBC2435492347506</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -178,6 +163,11 @@
 			<true/>
 		</dict>
 		<key>C4944FEC314D1A66588651D006273ADE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA0F467DDB863CC438735B7EF8D5C57C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
