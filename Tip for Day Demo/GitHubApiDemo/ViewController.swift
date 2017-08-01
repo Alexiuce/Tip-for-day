@@ -67,24 +67,26 @@ class ViewController: NSViewController {
         webView.frameLoadDelegate = self
         let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
         leftTable.register(cellNib, forIdentifier: "respositoryCell")
-       
-        
-
         outlineView.rowHeight = 35
-        
+       
         cellModels = []
         
-        var bookmarkIsStale = false
-        guard let bookmarkData = UserDefaults.standard.value(forKey: "recentUrl") as? Data else {
-            return
-        }
-        guard let recentUrl = try? URL.init(resolvingBookmarkData: bookmarkData, options: URL.BookmarkResolutionOptions.withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &bookmarkIsStale) else {
-            return
-        }
-       _ =  recentUrl?.startAccessingSecurityScopedResource()
-        XCPrint(recentUrl?.path)
-        GitHelper().exeCmd("cd \(recentUrl!.path); ls \(recentUrl!.path)")
+//        var bookmarkIsStale = false
+//        guard let bookmarkData = UserDefaults.standard.value(forKey: "recentUrl") as? Data else {
+//            return
+//        }
+//        guard let recentUrl = try? URL.init(resolvingBookmarkData: bookmarkData, options: URL.BookmarkResolutionOptions.withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &bookmarkIsStale) else {
+//            return
+//        }
+//       _ =  recentUrl?.startAccessingSecurityScopedResource()
+//        XCPrint(recentUrl?.path)
+//        GitHelper().exeCmd("cd \(recentUrl!.path); ls \(recentUrl!.path)")
        
+    }
+    
+    override func viewWillAppear() {
+        super.viewWillAppear()
+         XCProgressHUD.defaultHud.showInView(webView)
     }
     override var representedObject: Any? {
         didSet {
