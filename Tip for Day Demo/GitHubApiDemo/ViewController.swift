@@ -67,6 +67,7 @@ class ViewController: NSViewController {
         webView.frameLoadDelegate = self
         let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
         leftTable.register(cellNib, forIdentifier: "respositoryCell")
+    
         outlineView.rowHeight = 35
        
         cellModels = []
@@ -184,7 +185,7 @@ extension ViewController : NSTableViewDataSource{
 
 extension ViewController : NSTableViewDelegate{
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let cell = tableView.make(withIdentifier: "respositoryCell", owner: self) as! RespositoryCell
+        let cell = tableView.make(withIdentifier: "respositoryCell", owner: nil) as! RespositoryCell
         cell.cellModel = cellModels?[row]
        
         return cell
@@ -192,7 +193,7 @@ extension ViewController : NSTableViewDelegate{
    
     func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
         if caculateCell == nil {
-            caculateCell = (tableView.make(withIdentifier: "respositoryCell", owner: self) as! RespositoryCell)
+            caculateCell = (tableView.make(withIdentifier: "respositoryCell", owner: nil) as! RespositoryCell)
         }
         let model = cellModels?[row]
         caculateCell?.cellModel = model
