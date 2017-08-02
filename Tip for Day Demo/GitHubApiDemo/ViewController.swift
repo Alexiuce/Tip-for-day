@@ -171,14 +171,14 @@ extension ViewController : WebFrameLoadDelegate{
 }
 
 
-
+// MARK: NSTableViewDataSource
 extension ViewController : NSTableViewDataSource{
     func numberOfRows(in tableView: NSTableView) -> Int {
         XCPrint(cellModels?.count)
         return cellModels == nil ? 0 : cellModels!.count
     }
 }
-
+// MARK: NSTableViewDelegate
 extension ViewController : NSTableViewDelegate{
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let cell = tableView.make(withIdentifier: "respositoryCell", owner: nil) as! RespositoryCell
@@ -218,6 +218,9 @@ extension ViewController : NSTableViewDelegate{
         let model = cellModels![leftTable.selectedRow]
         let url = URL(string: model.homeUrl + "/blob/master/README.md")!
         let requet = URLRequest(url: url)
+        if webView.isLoading {
+            webView.stopLoading(nil)
+        }
         webView.mainFrame.load(requet)
     }
    

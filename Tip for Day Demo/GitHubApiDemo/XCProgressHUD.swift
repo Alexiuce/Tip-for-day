@@ -48,6 +48,11 @@ class XCProgressHUD: NSObject {
 extension XCProgressHUD {
     func showInView(_ view : NSView)  {
         guard let bounce = view.layer?.bounds else {return;}
+        if hudBackView.alphaValue > 0 {   // 已显示
+            hudBackView.removeFromSuperview()
+            progressLayer.removeFromSuperlayer()
+            loadProgress = 0
+        }
         view.addSubview(hudBackView)
         hudBackView.alphaValue = 1
         hudBackView.frame = bounce
@@ -73,10 +78,10 @@ extension XCProgressHUD {
        
         NSAnimationContext.runAnimationGroup({ (context) in
             context.duration = 0.5
-            context.allowsImplicitAnimation = true
             context.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
             self.hudBackView.animator().alphaValue = 0
-        }) { 
+        }) {
+             self.loadProgress = 0
              self.hudBackView.removeFromSuperview()
         }
     
