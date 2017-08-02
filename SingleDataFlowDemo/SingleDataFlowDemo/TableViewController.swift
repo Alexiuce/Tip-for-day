@@ -10,18 +10,38 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    struct State {
+        let todos : [String]
+        let text : String
+    }
+    
+    
     enum Section : Int {
         case input = 0, todos, max
     }
+    
+    var state = State(todos: [], text: ""){
+        didSet{
+            if oldValue.todos != state.todos {
+                title = "TODO - \(state.todos.count)"
+                tableView.reloadData()
+            }
+            if oldValue.text != state.text {
+               navigationItem.rightBarButtonItem?.isEnabled = state.text.characters.count > 3
+            }
+        }
+    }
+    
     
     var todos : [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ToDoStore.shareStore.getToDoItems { (data) in
-            self.todos += data
-            self.title = "TODO - \(self.todos.count)"
-            self.tableView.reloadData()
+//            self.todos += data
+//            self.title = "TODO - \(self.todos.count)"
+//            self.tableView.reloadData()
+            self.state = State(todos: self.state.todos + data, text: self.state.text)
         }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -32,17 +52,18 @@ class TableViewController: UITableViewController {
 
     
     @IBAction func addButtonClicked(_ sender: UIBarButtonItem) {
-        let inputPath = IndexPath(row: 0, section: Section.input.rawValue)
-        guard let inputCell = tableView.cellForRow(at: inputPath) as? TableViewInputCell, let text = inputCell.textFiled.text else {
-            return
-        }
-        todos.insert(text, at: 0)
-        inputCell.textFiled.text = ""
-        
-        sender.isEnabled = false
-        title = "TODO - \(todos.count)"
-        let insertPath = IndexPath(row: 0, section: Section.todos.rawValue)
-        tableView.insertRows(at: [insertPath], with: .top)
+//        let inputPath = IndexPath(row: 0, section: Section.input.rawValue)
+//        guard let inputCell = tableView.cellForRow(at: inputPath) as? TableViewInputCell, let text = inputCell.textFiled.text else {
+//            return
+//        }
+//        todos.insert(text, at: 0)
+//        inputCell.textFiled.text = ""
+//        
+//        sender.isEnabled = false
+//        title = "TODO - \(todos.count)"
+//        let insertPath = IndexPath(row: 0, section: Section.todos.rawValue)
+//        tableView.insertRows(at: [insertPath], with: .top)
+        state = State(todos: [state.text] + state.todos, text: "")
     }
 
     // MARK: - Table view data source
@@ -104,9 +125,12 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            todos.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .bottom)
-            title = "TODO - \(todos.count)"
+//            todos.remove(at: indexPath.row)
+//            tableView.deleteRows(at: [indexPath], with: .bottom)
+//            title = "TODO - \(todos.count)"
+            
+            let newTodos = Array(state.todos[0..<indexPath.row] + state.todos[(indexPath.row + 1)...state.todos.count] )
+            state = State(todos: newTodos, text: state.text)
         }
     }
 
@@ -140,8 +164,9 @@ class TableViewController: UITableViewController {
 
 extension TableViewController : TableViewInputCellDelegate{
     func inputChanged(cell: TableViewInputCell, text: String) {
-        let itemLengthEngouth = text.characters.count > 3
-        navigationItem.rightBarButtonItem?.isEnabled = itemLengthEngouth
+//        let itemLengthEngouth = text.characters.count > 3
+//        navigationItem.rightBarButtonItem?.isEnabled = itemLengthEngouth
+        state = State(todos: state.todos, text: text)
     }
 }
 

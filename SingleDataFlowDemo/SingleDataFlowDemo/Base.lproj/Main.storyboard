@@ -38,7 +38,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
                                             <connections>
                                                 <action selector="textFieldValueChanged:" destination="KkV-Cd-8aO" eventType="editingChanged" id="xct-b6-juH"/>
                                             </connections>
@@ -66,7 +66,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7a-8H-QiO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1588" y="-184.85757121439281"/>
+            <point key="canvasLocation" x="1590" y="-161"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ss1-Js-nKw">

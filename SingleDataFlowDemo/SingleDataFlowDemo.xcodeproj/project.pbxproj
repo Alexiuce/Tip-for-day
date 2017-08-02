@@ -312,6 +312,7 @@
 				F25A32BD1F31952D004C9AA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
