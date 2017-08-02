@@ -58,7 +58,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(startWebviewLoading(_:)), name: NSNotification.Name.WebViewProgressStarted, object: webView)
         NotificationCenter.default.addObserver(self, selector: #selector(changingWebviewLoadingProcess(_:)), name: NSNotification.Name.WebViewProgressEstimateChanged, object: webView)
-        NotificationCenter.default.addObserver(self, selector: #selector(endWebviewLoading(_:)), name: NSNotification.Name.WebViewProgressFinished, object: webView)
+    
         
         let server = "https://github.com"
         let url = URL(string: server)!
@@ -85,10 +85,6 @@ class ViewController: NSViewController {
        
     }
     
-    override func viewWillAppear() {
-        super.viewWillAppear()
-         XCProgressHUD.defaultHud.showInView(webView)
-    }
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
@@ -301,6 +297,8 @@ extension ViewController{
 extension ViewController{
     func startWebviewLoading(_ notification : Notification) {
         XCPrint("start   \(notification)")
+        XCProgressHUD.defaultHud.showInView(webView)
+        
     }
     func changingWebviewLoadingProcess(_ notification : Notification)  {
         XCPrint("change process \(webView.estimatedProgress)")
@@ -308,9 +306,6 @@ extension ViewController{
        
     }
     
-    func endWebviewLoading(_ notification : Notification){
-         XCPrint("end   \(notification)")
-    }
 }
 
 

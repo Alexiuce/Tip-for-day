@@ -49,6 +49,7 @@ extension XCProgressHUD {
     func showInView(_ view : NSView)  {
         guard let bounce = view.layer?.bounds else {return;}
         view.addSubview(hudBackView)
+        hudBackView.alphaValue = 1
         hudBackView.frame = bounce
         hudBackView.layer?.addSublayer(progressLayer)
         progressLayer.frame = bounce
@@ -71,7 +72,7 @@ extension XCProgressHUD {
     func hideHud() {
        
         NSAnimationContext.runAnimationGroup({ (context) in
-            context.duration = 0.25
+            context.duration = 0.5
             context.allowsImplicitAnimation = true
             context.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
             self.hudBackView.animator().alphaValue = 0
