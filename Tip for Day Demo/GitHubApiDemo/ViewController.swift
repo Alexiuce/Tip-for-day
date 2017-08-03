@@ -132,9 +132,13 @@ class ViewController: NSViewController {
 
 extension ViewController : WebPolicyDelegate{
     func webView(_ webView: WebView!, decidePolicyForNavigationAction actionInformation: [AnyHashable : Any]!, request: URLRequest!, frame: WebFrame!, decisionListener listener: WebPolicyDecisionListener!) {
-        let host = request.url!.host! as NSString
+        
+        guard  let host = request.url?.host else {
+            listener.use()
+            return
+        }
         currentRequestName = request.url!.absoluteString
-        if host .isEqual(to: "alexiuce.github.io") {
+        if host.isEqual("alexiuce.github.io") {
             XCPrint("alexicuce")
             listener.ignore()
         }else{
@@ -216,12 +220,36 @@ extension ViewController : NSTableViewDelegate{
         selectCell?.selected = true
         currentSelectedCell = selectCell
         let model = cellModels![leftTable.selectedRow]
-        let url = URL(string: model.homeUrl + "/blob/master/README.md")!
-        let requet = URLRequest(url: url)
-        if webView.isLoading {
-            webView.stopLoading(nil)
+//        let url = URL(string: model.homeUrl + "/blob/master/README.md")!
+        
+        let mdUrl = model.homeUrl + "/blob/master/README.md"
+        currentRequestName = mdUrl
+        guard let cacheHtml = XCCache.share.xc_getCacheValue(key: mdUrl as AnyObject) as? String else {
+            // 没有缓存,发送请求,获取内容
+            Alamofire.request(model.homeUrl + "/blob/master/README.md", method: .get).responseData { (result) in
+                if result.data != nil{
+                    guard let resutString = String(data: result.data!, encoding: .utf8) else{
+                        return
+                    }
+                    XCPrint("loading html")
+                    self.webView.mainFrame.loadHTMLString(resutString, baseURL: URL(string: ""))
+                    XCCache.share.xc_cache(mdUrl as AnyObject, value: resutString as AnyObject)
+                }
+            }
+            
+            return
         }
-        webView.mainFrame.load(requet)
+        XCPrint("load cache html")
+        webView.mainFrame.loadHTMLString(cacheHtml, baseURL: URL(string: ""))
+       
+        
+      
+        
+//        let requet = URLRequest(url: url)
+//        if webView.isLoading {
+//            webView.stopLoading(nil)
+//        }
+//        webView.mainFrame.load(requet)
     }
    
 }

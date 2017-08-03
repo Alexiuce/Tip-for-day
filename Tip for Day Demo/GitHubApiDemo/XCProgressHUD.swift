@@ -23,11 +23,7 @@ class XCProgressHUD: NSObject {
     }()
     
     // progressLayer
-    lazy var progressLayer : CAShapeLayer = {
-        let shapeLayer = CAShapeLayer()
-        return shapeLayer
-    }()
-    
+     var progressLayer = CAShapeLayer()
     
     // loadProgress
     var loadProgress : CGFloat = 0 {
@@ -51,8 +47,8 @@ extension XCProgressHUD {
         if hudBackView.alphaValue > 0 {   // 已显示
             hudBackView.removeFromSuperview()
             progressLayer.removeFromSuperlayer()
-            loadProgress = 0
         }
+        progressLayer = CAShapeLayer()
         view.addSubview(hudBackView)
         hudBackView.alphaValue = 1
         hudBackView.frame = bounce
