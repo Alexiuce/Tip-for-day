@@ -15,6 +15,8 @@ class XCProgressHUD: NSObject {
     // 1. 单利
     static let defaultHud = XCProgressHUD()
     
+    weak var fatherView : NSView?
+    
     // hudBackView
     lazy var hudBackView : NSVisualEffectView = {
         let view = NSVisualEffectView()
@@ -23,7 +25,7 @@ class XCProgressHUD: NSObject {
     }()
     
     // progressLayer
-     var progressLayer = CAShapeLayer()
+     var progressLayer  = CAShapeLayer()
     
     // loadProgress
     var loadProgress : CGFloat = 0 {
@@ -48,21 +50,20 @@ extension XCProgressHUD {
             hudBackView.removeFromSuperview()
             progressLayer.removeFromSuperlayer()
         }
-        progressLayer = CAShapeLayer()
         view.addSubview(hudBackView)
         hudBackView.alphaValue = 1
         hudBackView.frame = bounce
+        progressLayer = CAShapeLayer()
         hudBackView.layer?.addSublayer(progressLayer)
         progressLayer.frame = bounce
         progressLayer.lineWidth = 5
         progressLayer.fillColor = NSColor.clear.cgColor
         progressLayer.strokeColor = NSColor.gray.cgColor
-        
+     
         var circleFrame = NSRect(x: 0, y: 0, width: 2 * _circleRadius, height: 2 * _circleRadius)
         circleFrame.origin.x = NSMidX(bounce) - _circleRadius
         circleFrame.origin.y = NSMidY(bounce) - _circleRadius
         let bezierPath = NSBezierPath(ovalIn: circleFrame)
-        
         progressLayer.path = convertCGPath(bezierPath)
         loadProgress = 0
 
@@ -71,16 +72,41 @@ extension XCProgressHUD {
    
     // 隐藏hud
     func hideHud() {
-       
-        NSAnimationContext.runAnimationGroup({ (context) in
-            context.duration = 0.5
-            context.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-            self.hudBackView.animator().alphaValue = 0
-        }) {
-             self.loadProgress = 0
-             self.hudBackView.removeFromSuperview()
-        }
-    
+         fatherView = hudBackView.superview
+        if fatherView == nil{return}
+        progressLayer.removeFromSuperlayer()
+        hudBackView.removeFromSuperview()
+        fatherView?.layer?.mask = progressLayer
+        
+      
+        let fromPath = progressLayer.path
+        let finalWH = max(fatherView!.frame.size.width, fatherView!.frame.size.height)
+        let toCircleFrame = NSRect(x: 0, y: 0, width:finalWH, height: finalWH)
+        let toPath = convertCGPath(NSBezierPath(ovalIn: toCircleFrame))
+        
+        let lineWidthAnimation = CABasicAnimation(keyPath: "lineWidth")
+        lineWidthAnimation.fromValue = progressLayer.lineWidth
+        lineWidthAnimation.toValue = finalWH
+        
+        let pathAnimation = CABasicAnimation(keyPath: "path")
+        pathAnimation.fromValue = fromPath
+        pathAnimation.toValue = toPath
+        
+        let groupAnimation = CAAnimationGroup()
+        groupAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        groupAnimation.duration = 0.75
+        groupAnimation.animations = [lineWidthAnimation,pathAnimation]
+        groupAnimation.delegate = self
+        progressLayer.add(groupAnimation, forKey: "StorkWidth")
+        
+//        NSAnimationContext.runAnimationGroup({ (context) in
+//            context.duration = 0.5
+//            context.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+//            self.hudBackView.animator().alphaValue = 0
+//        }) {
+//             self.loadProgress = 0
+//             self.hudBackView.removeFromSuperview()
+//        }
     }
 }
 extension XCProgressHUD {
@@ -99,4 +125,11 @@ extension XCProgressHUD {
         return path
     }
 }
+
+extension XCProgressHUD : CAAnimationDelegate{
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        fatherView?.layer?.mask = nil
+    }
+}
+
 
