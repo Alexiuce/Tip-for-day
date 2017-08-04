@@ -65,6 +65,10 @@ class ViewController: NSViewController {
         let requet = URLRequest(url: url)
         webView.mainFrame.load(requet)
         webView.frameLoadDelegate = self
+       
+//        let webScroll = webView.webFrame.frameView  //.documentView //as? NSScrollView
+//        print(webScroll)
+        
         let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
         leftTable.register(cellNib, forIdentifier: "respositoryCell")
     
@@ -83,6 +87,10 @@ class ViewController: NSViewController {
 //        XCPrint(recentUrl?.path)
 //        GitHelper().exeCmd("cd \(recentUrl!.path); ls \(recentUrl!.path)")
        
+    }
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
     }
     
     override var representedObject: Any? {
@@ -130,6 +138,7 @@ class ViewController: NSViewController {
     
 }
 
+// MARK: WebViewDelegate
 extension ViewController : WebPolicyDelegate{
     func webView(_ webView: WebView!, decidePolicyForNavigationAction actionInformation: [AnyHashable : Any]!, request: URLRequest!, frame: WebFrame!, decisionListener listener: WebPolicyDecisionListener!) {
         
@@ -150,7 +159,8 @@ extension ViewController : WebPolicyDelegate{
 
 extension ViewController : WebFrameLoadDelegate{
     func webView(_ sender: WebView!, didFinishLoadFor frame: WebFrame!) {
-        XCPrint(currentRequestName)
+        
+        
         if !currentRequestName.hasSuffix("README.md") {
             XCProgressHUD.defaultHud.hideHud()
             return
@@ -166,9 +176,10 @@ extension ViewController : WebFrameLoadDelegate{
     
         for classname in divsName {
             let jsCode = "var targetDiv = document.getElementsByClassName('\(classname)')[0]; targetDiv.parentNode.removeChild(targetDiv);"
-            let value =  webView.stringByEvaluatingJavaScript(from: jsCode)
-            XCPrint(value)
+            webView.stringByEvaluatingJavaScript(from: jsCode)
         }
+        
+       
         
         XCProgressHUD.defaultHud.hideHud()
     }
@@ -221,6 +232,7 @@ extension ViewController : NSTableViewDelegate{
         currentSelectedCell = selectCell
         let model = cellModels![leftTable.selectedRow]
 //        let url = URL(string: model.homeUrl + "/blob/master/README.md")!
+        XCProgressHUD.defaultHud.showInView(webView)
         
         let mdUrl = model.homeUrl + "/blob/master/README.md"
         currentRequestName = mdUrl
@@ -241,8 +253,7 @@ extension ViewController : NSTableViewDelegate{
         }
         XCPrint("load cache html")
         webView.mainFrame.loadHTMLString(cacheHtml, baseURL: URL(string: ""))
-       
-        
+
       
         
 //        let requet = URLRequest(url: url)
