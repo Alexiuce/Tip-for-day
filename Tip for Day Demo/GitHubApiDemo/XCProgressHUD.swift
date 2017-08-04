@@ -97,7 +97,7 @@ extension XCProgressHUD {
         groupAnimation.duration = 0.75
         groupAnimation.animations = [lineWidthAnimation,pathAnimation]
         groupAnimation.delegate = self
-        progressLayer.add(groupAnimation, forKey: "StorkWidth")
+        progressLayer.add(groupAnimation, forKey: nil)
         
 //        NSAnimationContext.runAnimationGroup({ (context) in
 //            context.duration = 0.5
