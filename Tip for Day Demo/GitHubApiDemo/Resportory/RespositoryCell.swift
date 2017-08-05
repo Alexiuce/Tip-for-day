@@ -47,4 +47,6 @@ class RespositoryCell: NSTableCellView {
         descTextField.maximumNumberOfLines = 0
     }
     
+  
+    
 }

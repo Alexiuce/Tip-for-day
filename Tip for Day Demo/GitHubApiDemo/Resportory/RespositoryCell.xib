@@ -76,9 +76,9 @@
                 <constraint firstItem="Qjq-Hi-W50" firstAttribute="top" secondItem="izS-m6-hPG" secondAttribute="top" id="qWe-9w-cvS"/>
             </constraints>
             <connections>
-                <outlet property="descTextField" destination="pek-sZ-l7u" id="way-aX-jhk"/>
+                <outlet property="descTextField" destination="pek-sZ-l7u" id="M1F-gw-WBn"/>
                 <outlet property="iconImageView" destination="vyU-zv-h0w" id="05R-2b-jWe"/>
-                <outlet property="indicateView" destination="Qjq-Hi-W50" id="lKU-kU-rpu"/>
+                <outlet property="indicateView" destination="Qjq-Hi-W50" id="4Nf-rX-JQz"/>
                 <outlet property="laungageTextField" destination="JG3-iA-LMV" id="Hxk-Yi-iph"/>
                 <outlet property="titleTextField" destination="dOR-TR-FeY" id="X1r-vf-Yfa"/>
             </connections>

@@ -25,6 +25,9 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var favButton : NSButton!
     
+    var currentRequestName  = ""
+    
+    
     weak var currentSelectedCell : RespositoryCell?   // 记录当前选中的cell
     
     var isSelectedFavorite = false  // 是否收藏
@@ -53,26 +56,52 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      let server = "https://github.com"
+        NotificationCenter.default.addObserver(self, selector: #selector(startWebviewLoading(_:)), name: NSNotification.Name.WebViewProgressStarted, object: webView)
+        NotificationCenter.default.addObserver(self, selector: #selector(changingWebviewLoadingProcess(_:)), name: NSNotification.Name.WebViewProgressEstimateChanged, object: webView)
+    
+        
+        let server = "https://github.com"
         let url = URL(string: server)!
         let requet = URLRequest(url: url)
         webView.mainFrame.load(requet)
-    
+        webView.frameLoadDelegate = self
+       
+//        let webScroll = webView.webFrame.frameView  //.documentView //as? NSScrollView
+//        print(webScroll)
+        
         let cellNib = NSNib(nibNamed:"RespositoryCell", bundle: nil)
         leftTable.register(cellNib, forIdentifier: "respositoryCell")
-      
-        
+    
         outlineView.rowHeight = 35
-        
+       
         cellModels = []
         
+//        var bookmarkIsStale = false
+//        guard let bookmarkData = UserDefaults.standard.value(forKey: "recentUrl") as? Data else {
+//            return
+//        }
+//        guard let recentUrl = try? URL.init(resolvingBookmarkData: bookmarkData, options: URL.BookmarkResolutionOptions.withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &bookmarkIsStale) else {
+//            return
+//        }
+//       _ =  recentUrl?.startAccessingSecurityScopedResource()
+//        XCPrint(recentUrl?.path)
+//        GitHelper().exeCmd("cd \(recentUrl!.path); ls \(recentUrl!.path)")
        
     }
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
+    }
+    
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
             XCPrint("dlefaeladsf")
         }
+        
+     
+    
+        
     }
     
     
@@ -85,33 +114,89 @@ class ViewController: NSViewController {
         isSelectedFavorite = !isSelectedFavorite
         let favImgName = isSelectedFavorite ? "fav":"unfav"
         sender.image = NSImage(named: favImgName)
+    }
+    
+    // 选择文档路径
+    @IBAction func selectFilePath(_ sender : NSButton){
+        let openPanel = NSOpenPanel()
+        openPanel.canChooseFiles = false
+        openPanel.canChooseDirectories = true
         
+        openPanel.beginSheetModal(for: view.window!) { (result) in
+            if result == NSModalResponseOK {
+                let selectUrl = openPanel.url!
+                guard let urlBookMark = try? selectUrl.bookmarkData(options: URL.BookmarkCreationOptions.withSecurityScope , includingResourceValuesForKeys: nil, relativeTo: nil) else{
+                    return
+                }
+                UserDefaults.standard.setValue(urlBookMark, forKey: "recentUrl")
+                UserDefaults.standard.synchronize()
+                
+            }
+        }
     }
     
     
 }
 
+// MARK: WebViewDelegate
 extension ViewController : WebPolicyDelegate{
     func webView(_ webView: WebView!, decidePolicyForNavigationAction actionInformation: [AnyHashable : Any]!, request: URLRequest!, frame: WebFrame!, decisionListener listener: WebPolicyDecisionListener!) {
-        let host = request.url!.host! as NSString
-        if host .isEqual(to: "alexiuce.github.io") {
+        
+        guard  let host = request.url?.host else {
+            listener.use()
+            return
+        }
+        currentRequestName = request.url!.absoluteString
+        if host.isEqual("alexiuce.github.io") {
             XCPrint("alexicuce")
             listener.ignore()
         }else{
             listener.use()
         }
     }
+
 }
 
-extension ViewController : NSTableViewDataSource{
-    func numberOfRows(in tableView: NSTableView) -> Int {
-        return cellModels == nil ? 0 : cellModels!.count
+extension ViewController : WebFrameLoadDelegate{
+    func webView(_ sender: WebView!, didFinishLoadFor frame: WebFrame!) {
+        
+        
+        if !currentRequestName.hasSuffix("README.md") {
+            XCProgressHUD.defaultHud.hideHud()
+            return
+        }
+        
+    
+        let divHeaderClassname = "position-relative js-header-wrapper"
+        let reponavDivClassname = "pagehead repohead instapaper_ignore readability-menu experiment-repo-nav"
+        let fileNavDivClassname = "file-navigation js-zeroclipboard-container"
+        let commitDivClassname = "commit-tease"
+        let fileInfoDivClassname = "file-header"
+        let divsName = [divHeaderClassname,reponavDivClassname,fileNavDivClassname,commitDivClassname,fileInfoDivClassname]
+    
+        for classname in divsName {
+            let jsCode = "var targetDiv = document.getElementsByClassName('\(classname)')[0]; targetDiv.parentNode.removeChild(targetDiv);"
+            webView.stringByEvaluatingJavaScript(from: jsCode)
+        }
+        
+       
+        
+        XCProgressHUD.defaultHud.hideHud()
     }
 }
 
+
+// MARK: NSTableViewDataSource
+extension ViewController : NSTableViewDataSource{
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        XCPrint(cellModels?.count)
+        return cellModels == nil ? 0 : cellModels!.count
+    }
+}
+// MARK: NSTableViewDelegate
 extension ViewController : NSTableViewDelegate{
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let cell = tableView.make(withIdentifier: "respositoryCell", owner: self) as! RespositoryCell
+        let cell = tableView.make(withIdentifier: "respositoryCell", owner: nil) as! RespositoryCell
         cell.cellModel = cellModels?[row]
        
         return cell
@@ -119,7 +204,7 @@ extension ViewController : NSTableViewDelegate{
    
     func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
         if caculateCell == nil {
-            caculateCell = (tableView.make(withIdentifier: "respositoryCell", owner: self) as! RespositoryCell)
+            caculateCell = (tableView.make(withIdentifier: "respositoryCell", owner: nil) as! RespositoryCell)
         }
         let model = cellModels?[row]
         caculateCell?.cellModel = model
@@ -146,9 +231,36 @@ extension ViewController : NSTableViewDelegate{
         selectCell?.selected = true
         currentSelectedCell = selectCell
         let model = cellModels![leftTable.selectedRow]
-        let url = URL(string: model.homeUrl)!
-        let requet = URLRequest(url: url)
-        webView.mainFrame.load(requet)
+//        let url = URL(string: model.homeUrl + "/blob/master/README.md")!
+        XCProgressHUD.defaultHud.showInView(webView)
+        
+        let mdUrl = model.homeUrl + "/blob/master/README.md"
+        currentRequestName = mdUrl
+        guard let cacheHtml = XCCache.share.xc_getCacheValue(key: mdUrl as AnyObject) as? String else {
+            // 没有缓存,发送请求,获取内容
+            Alamofire.request(model.homeUrl + "/blob/master/README.md", method: .get).responseData { (result) in
+                if result.data != nil{
+                    guard let resutString = String(data: result.data!, encoding: .utf8) else{
+                        return
+                    }
+                    XCPrint("loading html")
+                    self.webView.mainFrame.loadHTMLString(resutString, baseURL: URL(string: ""))
+                    XCCache.share.xc_cache(mdUrl as AnyObject, value: resutString as AnyObject)
+                }
+            }
+            
+            return
+        }
+        XCPrint("load cache html")
+        webView.mainFrame.loadHTMLString(cacheHtml, baseURL: URL(string: ""))
+
+      
+        
+//        let requet = URLRequest(url: url)
+//        if webView.isLoading {
+//            webView.stopLoading(nil)
+//        }
+//        webView.mainFrame.load(requet)
     }
    
 }
@@ -222,4 +334,20 @@ extension ViewController{
         }
     }
 }
+
+// MARK: Notification Listion 
+extension ViewController{
+    func startWebviewLoading(_ notification : Notification) {
+        XCPrint("start   \(notification)")
+        XCProgressHUD.defaultHud.showInView(webView)
+        
+    }
+    func changingWebviewLoadingProcess(_ notification : Notification)  {
+        XCPrint("change process \(webView.estimatedProgress)")
+        XCProgressHUD.defaultHud.loadProgress = CGFloat(webView.estimatedProgress)
+       
+    }
+    
+}
+
 

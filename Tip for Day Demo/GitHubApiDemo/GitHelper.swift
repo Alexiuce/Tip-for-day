@@ -16,26 +16,29 @@ import Cocoa
 
 class GitHelper: NSObject {
     
-    
+    weak var delegate : GitHelperProtocol?
 
 }
 
 extension GitHelper{
+    open func exeCmd(_ cmd : String){
+       executeShellCommond(cmd)
+    }
     open func gitClone(_ repoUrl:String){
-        executeShellCommond("git clone \(repoUrl)")
+       exeCmd("git clone \(repoUrl)")
     }
 }
 
 extension GitHelper{
     fileprivate func executeShellCommond(_ cmd: String){
         let task = Process()
-        
         task.launchPath = "/bin/bash"
         task.arguments = ["-c",cmd]
-        
-        
+        task.terminationHandler = { proce in
+            self.delegate?.gitHelperDidFinished()
+        }
         task.launch()
-        
+        delegate?.gitHelperStartLaunch()
         
     }
 }
