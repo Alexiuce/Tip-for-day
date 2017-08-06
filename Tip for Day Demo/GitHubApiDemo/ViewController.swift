@@ -28,6 +28,8 @@ class ViewController: NSViewController {
     var currentRequestName  = ""
     
     
+
+    
     weak var currentSelectedCell : RespositoryCell?   // 记录当前选中的cell
     
     var isSelectedFavorite = false  // 是否收藏
@@ -74,6 +76,7 @@ class ViewController: NSViewController {
     
         outlineView.rowHeight = 35
        
+        
         cellModels = []
         
 //        var bookmarkIsStale = false
