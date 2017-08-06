@@ -14,7 +14,7 @@ import SwiftyJSON
 
 class ViewController: NSViewController {
 
-     @IBOutlet weak var topBox: NSView!
+    @IBOutlet weak var topBox: NSView!
     @IBOutlet weak var webView: WebView!
     
     @IBOutlet weak var leftTable: NSTableView!
@@ -89,11 +89,18 @@ class ViewController: NSViewController {
 //       _ =  recentUrl?.startAccessingSecurityScopedResource()
 //        XCPrint(recentUrl?.path)
 //        GitHelper().exeCmd("cd \(recentUrl!.path); ls \(recentUrl!.path)")
-       
+        
+      
+//        XCPrint(view.layer)
     }
     
     override func viewDidAppear() {
         super.viewDidAppear()
+        let testLayer = CALayer()
+    
+        testLayer.frame = NSRect(x: 0, y: 600, width: 100, height: 100)
+        testLayer.backgroundColor = NSColor.red.cgColor
+        view.layer?.addSublayer(testLayer)
     }
     
     override var representedObject: Any? {
