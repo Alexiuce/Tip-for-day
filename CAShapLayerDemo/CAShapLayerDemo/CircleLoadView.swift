@@ -70,7 +70,7 @@ extension CircleLoadView{
         let fromPath = circlePathLayer.path
         let fromLineWidth = circlePathLayer.lineWidth
         
-        // 禁止动画结束候后，恢复到初始状态
+        // 禁止隐式动画
         CATransaction.begin()
         CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
         circlePathLayer.lineWidth = 2 * finalRadius
