@@ -14,6 +14,7 @@
 		F2E2AA6C1F385AFF008C1ADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E2AA6A1F385AFF008C1ADF /* Main.storyboard */; };
 		F2E2AA761F385B2A008C1ADF /* TwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E2AA741F385B2A008C1ADF /* TwoController.m */; };
 		F2E2AA771F385B2A008C1ADF /* TwoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E2AA751F385B2A008C1ADF /* TwoController.xib */; };
+		F2E2AA7A1F394155008C1ADF /* PresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E2AA791F394155008C1ADF /* PresentAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		F2E2AA731F385B2A008C1ADF /* TwoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoController.h; sourceTree = "<group>"; };
 		F2E2AA741F385B2A008C1ADF /* TwoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoController.m; sourceTree = "<group>"; };
 		F2E2AA751F385B2A008C1ADF /* TwoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoController.xib; sourceTree = "<group>"; };
+		F2E2AA781F394155008C1ADF /* PresentAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentAnimator.h; sourceTree = "<group>"; };
+		F2E2AA791F394155008C1ADF /* PresentAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				F2E2AA601F385AFE008C1ADF /* AppDelegate.m */,
 				F2E2AA651F385AFE008C1ADF /* ViewController.h */,
 				F2E2AA661F385AFE008C1ADF /* ViewController.m */,
+				F2E2AA781F394155008C1ADF /* PresentAnimator.h */,
+				F2E2AA791F394155008C1ADF /* PresentAnimator.m */,
 				F2E2AA731F385B2A008C1ADF /* TwoController.h */,
 				F2E2AA741F385B2A008C1ADF /* TwoController.m */,
 				F2E2AA751F385B2A008C1ADF /* TwoController.xib */,
@@ -157,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2E2AA761F385B2A008C1ADF /* TwoController.m in Sources */,
+				F2E2AA7A1F394155008C1ADF /* PresentAnimator.m in Sources */,
 				F2E2AA671F385AFE008C1ADF /* ViewController.m in Sources */,
 				F2E2AA641F385AFE008C1ADF /* main.m in Sources */,
 				F2E2AA611F385AFE008C1ADF /* AppDelegate.m in Sources */,
@@ -311,6 +317,7 @@
 				F2E2AA721F385AFF008C1ADF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

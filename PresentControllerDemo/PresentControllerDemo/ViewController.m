@@ -8,6 +8,14 @@
 
 #import "ViewController.h"
 #import "TwoController.h"
+#import "PresentAnimator.h"
+
+
+@interface ViewController ()
+
+
+
+@end
 
 @implementation ViewController
 
@@ -18,6 +26,7 @@
 }
 
 
+
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
 
@@ -26,13 +35,17 @@
 
 - (IBAction)presentController:(NSButton *)sender {
 
+
+     TwoController *twoVc  = [[TwoController alloc]init];
    /** 已 sheet 方式(共享当前的window),弹出后,当前windows close 不可用 */
-//    [self presentViewControllerAsSheet:[[TwoController alloc]init]];
+//    [self presentViewControllerAsSheet:twoVc];
     /** 以modal 窗口的方式弹出新控制器(有独立的window)  */
-//    [self presentViewControllerAsModalWindow: [[TwoController alloc]init]];
+//    [self presentViewControllerAsModalWindow:twoVc];
     
     /** 自定义方式弹控制器, 需提供一个实现<NSViewControllerPresentationAnimator> 协议的类,完成动画 */
-//    [self presentViewController:[[TwoController alloc]init] animator:<#(nonnull id<NSViewControllerPresentationAnimator>)#>];
+    
+//    PresentAnimator *modalAnimator = [[PresentAnimator alloc]init];
+//    [self presentViewController:twoVc animator:modalAnimator];
     
     /** 以 popover 方式弹出新的控制器 
      asPopoverRelativeToRect : 弹出popover时,附着的矩形区域(即被popover剪头指向的那一块矩形区域)
@@ -43,14 +56,13 @@
                      NSRectEdgeMinY:(在矩形区域顶部显示popover)
                      NSRectEdgeMaxY:(在矩形区域底部显示popover)
      behavior : popover的行为模式
+                NSPopoverBehaviorApplicationDefined :点击popover 视图以外的操作不会自动关闭(不支持ESC键盘关闭)
+                NSPopoverBehaviorTransient :  点击popover 视图以外的操作会自动关闭(支持ESC键盘关闭)
+                NSPopoverBehaviorSemitransient: : 点击popover 视图以外的操作不会自动关闭(支持ESC键盘关闭)
      
      */
     
-    
-    
-    
-    TwoController *twoVc  = [[TwoController alloc]init];
-    [self presentViewController:twoVc asPopoverRelativeToRect:sender.frame ofView:self.view preferredEdge:NSRectEdgeMinY behavior:NSPopoverBehaviorTransient];
+    [self presentViewController:twoVc asPopoverRelativeToRect:sender.frame ofView:self.view preferredEdge:NSRectEdgeMinY behavior:NSPopoverBehaviorApplicationDefined];
     
 }
 
