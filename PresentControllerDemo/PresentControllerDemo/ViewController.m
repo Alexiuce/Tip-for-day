@@ -44,8 +44,8 @@
     
     /** 自定义方式弹控制器, 需提供一个实现<NSViewControllerPresentationAnimator> 协议的类,完成动画 */
     
-//    PresentAnimator *modalAnimator = [[PresentAnimator alloc]init];
-//    [self presentViewController:twoVc animator:modalAnimator];
+    PresentAnimator *modalAnimator = [[PresentAnimator alloc]init];
+    [self presentViewController:twoVc animator:modalAnimator];
     
     /** 以 popover 方式弹出新的控制器 
      asPopoverRelativeToRect : 弹出popover时,附着的矩形区域(即被popover剪头指向的那一块矩形区域)
@@ -62,7 +62,7 @@
      
      */
     
-    [self presentViewController:twoVc asPopoverRelativeToRect:sender.frame ofView:self.view preferredEdge:NSRectEdgeMinY behavior:NSPopoverBehaviorApplicationDefined];
+//    [self presentViewController:twoVc asPopoverRelativeToRect:sender.frame ofView:self.view preferredEdge:NSRectEdgeMinY behavior:NSPopoverBehaviorApplicationDefined];
     
 }
 

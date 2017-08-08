@@ -28,7 +28,9 @@
 
     modalView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
     NSRect finalRect = NSInsetRect(containerView.bounds, 50, 50);
-    modalView.frame = NSMakeRect(finalRect.origin.x, -100, finalRect.size.width, finalRect.size.height);
+//    modalView.frame = NSMakeRect(finalRect.origin.x, -100, finalRect.size.width, finalRect.size.height);
+    [modalView setFrameOrigin:NSMakePoint(finalRect.origin.x, -100)];
+    [modalView setFrameSize:finalRect.size];
     [self.backgroundView addSubview:modalView];
     
     [NSAnimationContext runAnimationGroup:^(NSAnimationContext * _Nonnull context) {
@@ -47,7 +49,7 @@
     [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
         context.duration = 0.5;
         self.backgroundView.animator.alphaValue = 0;
-        viewController.view.animator.frame = NSMakeRect(startRect.origin.x, startRect.origin.y - 100, startRect.size.width, startRect.size.height) ;
+        [viewController.view.animator setFrameOrigin:NSMakePoint(startRect.origin.x, startRect.origin.y - 100)]; //= NSMakeRect(startRect.origin.x, startRect.origin.y - 100, startRect.size.width, startRect.size.height) ;
     } completionHandler:^{
         [viewController.view removeFromSuperview];
         [self.backgroundView removeFromSuperview];
