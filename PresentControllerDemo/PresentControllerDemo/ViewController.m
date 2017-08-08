@@ -37,17 +37,19 @@
 
 
      TwoController *twoVc  = [[TwoController alloc]init];
-   /** 已 sheet 方式(共享当前的window),弹出后,当前windows close 不可用 */
+    
+   /**  1. 以 sheet 方式(共享当前的window),弹出后,当前windows close 不可用 */
 //    [self presentViewControllerAsSheet:twoVc];
-    /** 以modal 窗口的方式弹出新控制器(有独立的window)  */
+    
+    /** 2. 以modal 窗口的方式弹出新控制器(有独立的window)  */
 //    [self presentViewControllerAsModalWindow:twoVc];
     
-    /** 自定义方式弹控制器, 需提供一个实现<NSViewControllerPresentationAnimator> 协议的类,完成动画 */
+    /** 3. 自定义方式弹控制器, 需提供一个实现<NSViewControllerPresentationAnimator> 协议的类,完成动画 */
     
     PresentAnimator *modalAnimator = [[PresentAnimator alloc]init];
     [self presentViewController:twoVc animator:modalAnimator];
     
-    /** 以 popover 方式弹出新的控制器 
+    /** 4. 以 popover 方式弹出新的控制器
      asPopoverRelativeToRect : 弹出popover时,附着的矩形区域(即被popover剪头指向的那一块矩形区域)
      ofView: 矩形区域( asPopoverRelativeToRect)所属的view
      preferredEdge:矩形区域( asPopoverRelativeToRect)的参考边界:
