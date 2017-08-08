@@ -307,6 +307,16 @@ a demo code project for iOS / Mac , write down for develop tip
 > 关于GitHub api的一个工程  
 > [readme](https://github.com/Alexiuce/Tip-for-day/blob/master/GitHubApi.md) 
 
+* PresentControllerDemo
+> 关于present controller 的四种方式 示例Demo  
+> 包含自定义present Controller 动画  
+> 具体细节参考项目工程代码
+> 
+
+
+
+
+
 ### 逆向工具
 
 #### class_dump使用
