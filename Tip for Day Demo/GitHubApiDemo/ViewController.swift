@@ -76,9 +76,9 @@ class ViewController: NSViewController {
     
         outlineView.rowHeight = 35
        
-        
         cellModels = []
-        
+       
+         
 //        var bookmarkIsStale = false
 //        guard let bookmarkData = UserDefaults.standard.value(forKey: "recentUrl") as? Data else {
 //            return
