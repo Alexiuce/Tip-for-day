@@ -13,9 +13,9 @@
 		F2E2AB1D1F3BFC4D008C1ADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E2AB1B1F3BFC4D008C1ADF /* Main.storyboard */; };
 		F2E2AB1F1F3BFC4D008C1ADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E2AB1E1F3BFC4D008C1ADF /* Assets.xcassets */; };
 		F2E2AB221F3BFC4D008C1ADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E2AB201F3BFC4D008C1ADF /* LaunchScreen.storyboard */; };
-		F2E2AB2D1F3BFDFE008C1ADF /* libCOSClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E2AB2C1F3BFDFE008C1ADF /* libCOSClient.a */; };
 		F2E2AB301F3BFE1B008C1ADF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E2AB2F1F3BFE1B008C1ADF /* CoreTelephony.framework */; };
 		F2E2AB321F3BFE22008C1ADF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E2AB311F3BFE22008C1ADF /* SystemConfiguration.framework */; };
+		F2E2AB341F3C29BC008C1ADF /* libCOSClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E2AB331F3C29BC008C1ADF /* libCOSClient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,9 @@
 		F2E2AB231F3BFC4D008C1ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2E2AB2A1F3BFDFE008C1ADF /* COSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COSClient.h; sourceTree = "<group>"; };
 		F2E2AB2B1F3BFDFE008C1ADF /* COSTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COSTask.h; sourceTree = "<group>"; };
-		F2E2AB2C1F3BFDFE008C1ADF /* libCOSClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCOSClient.a; sourceTree = "<group>"; };
 		F2E2AB2F1F3BFE1B008C1ADF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F2E2AB311F3BFE22008C1ADF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F2E2AB331F3C29BC008C1ADF /* libCOSClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCOSClient.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,7 @@
 			files = (
 				F2E2AB321F3BFE22008C1ADF /* SystemConfiguration.framework in Frameworks */,
 				F2E2AB301F3BFE1B008C1ADF /* CoreTelephony.framework in Frameworks */,
-				F2E2AB2D1F3BFDFE008C1ADF /* libCOSClient.a in Frameworks */,
+				F2E2AB341F3C29BC008C1ADF /* libCOSClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +97,7 @@
 			children = (
 				F2E2AB2A1F3BFDFE008C1ADF /* COSClient.h */,
 				F2E2AB2B1F3BFDFE008C1ADF /* COSTask.h */,
-				F2E2AB2C1F3BFDFE008C1ADF /* libCOSClient.a */,
+				F2E2AB331F3C29BC008C1ADF /* libCOSClient.a */,
 			);
 			path = coslib;
 			sourceTree = "<group>";
@@ -313,7 +313,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/QQCloudDemo/coslib",
 				);
-				OTHER_LDFLAGS = "-Objc";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.alexiuce.QQCloudDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -331,7 +331,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/QQCloudDemo/coslib",
 				);
-				OTHER_LDFLAGS = "-Objc";
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.alexiuce.QQCloudDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
