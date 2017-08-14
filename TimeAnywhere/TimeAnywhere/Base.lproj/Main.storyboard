@@ -686,15 +686,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lvd-qm-B00">
-                                <rect key="frame" x="148" y="0.0" width="212" height="270"/>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s7c-Xb-wBD">
+                                <rect key="frame" x="210" y="151" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="IMG_2553" id="Bab-19-uKn"/>
-                            </imageView>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="IMG_2553" imagePosition="only" alignment="center" alternateImage="wallPaper" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="kf0-FO-nO1">
+                                    <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="lvd-qm-B00" id="E14-on-FB3"/>
+                        <outlet property="imgBtn" destination="s7c-Xb-wBD" id="8gH-Ly-7wl"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -704,5 +707,6 @@
     </scenes>
     <resources>
         <image name="IMG_2553" width="2448" height="3264"/>
+        <image name="wallPaper" width="1920" height="1080"/>
     </resources>
 </document>

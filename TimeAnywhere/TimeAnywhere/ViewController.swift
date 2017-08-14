@@ -11,7 +11,9 @@ import Cocoa
 
 class ViewController: NSViewController {
 
-    @IBOutlet weak var imageView: NSImageView!
+
+    
+    @IBOutlet weak var imgBtn: NSButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,15 +24,23 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
         
         
-        /** 创建手势识别 */
-        let clickGesture = NSClickGestureRecognizer(target: self, action: #selector(clcikedMouse(_:)))
-        /** 将手势识别器添加到imageView */
-        imageView.addGestureRecognizer(clickGesture)
+//        /** 创建手势识别 */
+//        let clickGesture = NSClickGestureRecognizer(target: self, action: #selector(clcikedMouse(_:)))
+//        /** 将手势识别器添加到imageView */
+//        imageView.addGestureRecognizer(clickGesture)
         
+    
+        
+        // 去除点击时的灰色效果
+    imgBtn.isTransparent = true
+        
+    
         
         
     }
+   
 
+  
 }
 
 extension ViewController{
