@@ -14,7 +14,14 @@ let baseHTML = "http://www.22ff.com"
 let targetPage = "/xs/167580/"
 
 class ViewController: UIViewController {
-
+    
+    lazy var regexHelper : RegexTool = {
+        let regex = RegexTool()
+        regex.delegate = self
+        return regex
+    }()
+    
+    
     @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {
@@ -28,30 +35,19 @@ class ViewController: UIViewController {
         
         guard let text = String(data: result, encoding: String.Encoding(rawValue: UInt(encode))) else {return}
     
-        print(text)
         let pattern = "<div class=\"clc\">.*?</div>"
-        guard let regex = try? NSRegularExpression(pattern: pattern , options: NSRegularExpression.Options.caseInsensitive) else {return}
-        
-        let divs = regex.matches(in: text, options:[], range: NSMakeRange(0, text.characters.count))
-        
-//        print(divs)
-        
-        for div in divs {
-           
-            print( (text as NSString).substring(with: div.range))
+        self.regexHelper.matchString(inText: text, pattern: pattern)
         }
-        
-        
-        }
-    
-
     }
 
 }
 
+extension ViewController : RegexToolProcotol {
 
-extension ViewController{
-    
+    func regexFinished(_ result: [String]) {
+        print(result)
+        
+    }
 
     
 }
