@@ -8,6 +8,8 @@
 
 import UIKit
 import Alamofire
+import NVActivityIndicatorView
+import MJRefresh
 
 class DetailViewController: UIViewController {
     
@@ -33,8 +35,6 @@ class DetailViewController: UIViewController {
             self.regexHelper.matchString(inText: text, pattern:"<div id=\"chapter_content\">.*?</div>")
 
             }
-            
-            
         }
     }
 
@@ -43,28 +43,33 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationController?.hidesBarsOnSwipe = true
-        // Do any additional setup after loading the view.
+        let activityData = ActivityData(size: view.bounds.size, message: "loading...", type:.ballScaleRippleMultiple, color: UIColor.red,padding:150 ,backgroundColor: UIColor.clear, textColor: UIColor.orange)
+        NVActivityIndicatorPresenter.sharedInstance.startAnimating(activityData)
+        
+        webView.scrollView.mj_footer = MJRefreshBackFooter(refreshingTarget: self, refreshingAction: #selector(loadMore))
+        
+        
     }
-
-  
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @objc fileprivate func loadMore(){
+        print("load ...more ")
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) { 
+            self.webView.scrollView.mj_footer.endRefreshing()
+        }
     }
-    */
+
 
 }
 
 extension DetailViewController: RegexToolProcotol{
     func regexFinished(_ result: [String]) {
         webView.loadHTMLString(result[0], baseURL: nil)
+    }
+}
+
+extension DetailViewController : UIWebViewDelegate {
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        print("load finished")
+        NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
     }
 }
