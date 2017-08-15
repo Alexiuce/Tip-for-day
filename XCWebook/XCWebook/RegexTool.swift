@@ -22,7 +22,7 @@ class RegexTool: NSObject {
     
     func matchString(inText : String, pattern : String) {
         DispatchQueue.global().async { 
-            guard let regex = try? NSRegularExpression(pattern: pattern , options: NSRegularExpression.Options.caseInsensitive) else {return}
+            guard let regex = try? NSRegularExpression(pattern: pattern , options: NSRegularExpression.Options.dotMatchesLineSeparators) else {return}
             let resultArray = regex.matches(in: inText, options:[], range: NSMakeRange(0, inText.characters.count))
             var results = [String]()
             for rs in resultArray {

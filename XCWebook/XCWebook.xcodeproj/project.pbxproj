@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2D8740D1EC0586516B869824 /* Pods_XCWebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EA941FF49876A71F4AD2ED /* Pods_XCWebook.framework */; };
+		F21D257C1F42BAE60001AA6B /* DIVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D257B1F42BAE60001AA6B /* DIVModel.swift */; };
+		F21D257F1F42C58F0001AA6B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D257D1F42C58F0001AA6B /* DetailViewController.swift */; };
+		F21D25801F42C58F0001AA6B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21D257E1F42C58F0001AA6B /* DetailViewController.xib */; };
 		F2BF7F3A1F4191B700EB5EA7 /* RegexTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF7F391F4191B700EB5EA7 /* RegexTool.swift */; };
 		F2DE7BCB1F4172A000F33B9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DE7BCA1F4172A000F33B9C /* AppDelegate.swift */; };
 		F2DE7BCD1F4172A000F33B9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DE7BCC1F4172A000F33B9C /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 		0C56D09898486A079042FB30 /* Pods-XCWebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCWebook.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCWebook/Pods-XCWebook.release.xcconfig"; sourceTree = "<group>"; };
 		AE77E46733CE761AEC8D8C55 /* Pods-XCWebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCWebook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCWebook/Pods-XCWebook.debug.xcconfig"; sourceTree = "<group>"; };
 		E7EA941FF49876A71F4AD2ED /* Pods_XCWebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCWebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F21D257B1F42BAE60001AA6B /* DIVModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIVModel.swift; sourceTree = "<group>"; };
+		F21D257D1F42C58F0001AA6B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F21D257E1F42C58F0001AA6B /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		F2BF7F391F4191B700EB5EA7 /* RegexTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexTool.swift; sourceTree = "<group>"; };
 		F2DE7BC71F41729F00F33B9C /* XCWebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCWebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DE7BCA1F4172A000F33B9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +89,10 @@
 				F2DE7BCA1F4172A000F33B9C /* AppDelegate.swift */,
 				F2DE7BCC1F4172A000F33B9C /* ViewController.swift */,
 				F2BF7F391F4191B700EB5EA7 /* RegexTool.swift */,
+				F21D257B1F42BAE60001AA6B /* DIVModel.swift */,
 				F2DE7BCE1F4172A000F33B9C /* Main.storyboard */,
+				F21D257D1F42C58F0001AA6B /* DetailViewController.swift */,
+				F21D257E1F42C58F0001AA6B /* DetailViewController.xib */,
 				F2DE7BD11F4172A000F33B9C /* Assets.xcassets */,
 				F2DE7BD31F4172A100F33B9C /* LaunchScreen.storyboard */,
 				F2DE7BD61F4172A100F33B9C /* Info.plist */,
@@ -157,6 +166,7 @@
 				F2DE7BD51F4172A100F33B9C /* LaunchScreen.storyboard in Resources */,
 				F2DE7BD21F4172A000F33B9C /* Assets.xcassets in Resources */,
 				F2DE7BD01F4172A000F33B9C /* Main.storyboard in Resources */,
+				F21D25801F42C58F0001AA6B /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2DE7BCD1F4172A000F33B9C /* ViewController.swift in Sources */,
+				F21D257C1F42BAE60001AA6B /* DIVModel.swift in Sources */,
+				F21D257F1F42C58F0001AA6B /* DetailViewController.swift in Sources */,
 				F2BF7F3A1F4191B700EB5EA7 /* RegexTool.swift in Sources */,
 				F2DE7BCB1F4172A000F33B9C /* AppDelegate.swift in Sources */,
 			);
