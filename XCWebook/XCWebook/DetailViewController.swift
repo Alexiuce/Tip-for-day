@@ -46,17 +46,17 @@ class DetailViewController: UIViewController {
         let activityData = ActivityData(size: view.bounds.size, message: "loading...", type:.ballScaleRippleMultiple, color: UIColor.red,padding:150 ,backgroundColor: UIColor.clear, textColor: UIColor.orange)
         NVActivityIndicatorPresenter.sharedInstance.startAnimating(activityData)
         
-        webView.scrollView.mj_footer = MJRefreshBackFooter(refreshingTarget: self, refreshingAction: #selector(loadMore))
+//        webView.scrollView.mj_footer = MJRefreshBackFooter(refreshingTarget: self, refreshingAction: #selector(loadMore))
         
         
     }
     
-    @objc fileprivate func loadMore(){
-        print("load ...more ")
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) { 
-            self.webView.scrollView.mj_footer.endRefreshing()
-        }
-    }
+//    @objc fileprivate func loadMore(){
+//        print("load ...more ")
+//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) { 
+//            self.webView.scrollView.mj_footer.endRefreshing()
+//        }
+//    }
 
 
 }
