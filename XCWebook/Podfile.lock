@@ -1,23 +1,18 @@
 PODS:
   - Alamofire (4.5.0)
   - MJRefresh (3.1.12)
-  - NVActivityIndicatorView (3.7.0):
-    - NVActivityIndicatorView/Presenter (= 3.7.0)
-  - NVActivityIndicatorView/Presenter (3.7.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - MJRefresh
-  - NVActivityIndicatorView
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: c5098fadec439c94946624e3847e565fa7dabf71
+PODFILE CHECKSUM: abe8c6084ae553a1fa0e9b68f67428670a187983
 
 COCOAPODS: 1.2.1

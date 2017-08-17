@@ -8,7 +8,6 @@
 
 import UIKit
 import Alamofire
-import NVActivityIndicatorView
 import MJRefresh
 
 class DetailViewController: UIViewController {
