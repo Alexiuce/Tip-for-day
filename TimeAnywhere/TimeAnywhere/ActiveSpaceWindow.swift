@@ -10,12 +10,12 @@ import Cocoa
 
 class ActiveSpaceWindow: NSWindow {
 
-    override func makeKeyAndOrderFront(_ sender: Any?) {
+//    override func makeKeyAndOrderFront(_ sender: Any?) {
 //        let originalBehavior = self.collectionBehavior
-        self.collectionBehavior = .moveToActiveSpace
-        super.makeKeyAndOrderFront(sender)
+//        self.collectionBehavior = .moveToActiveSpace
+//        super.makeKeyAndOrderFront(sender)
 //        self.collectionBehavior = originalBehavior
-    }
+//    }
  
     
 }
