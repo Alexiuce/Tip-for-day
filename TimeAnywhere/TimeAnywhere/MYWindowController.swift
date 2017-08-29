@@ -8,13 +8,17 @@
 
 import Cocoa
 
+
 class MYWindowController: NSWindowController {
 
     override func windowDidLoad() {
         super.windowDidLoad()
-        window?.level =  Int(CGShieldingWindowLevel())
         
+//        window?.level
         
+//        window?.level =  Int(CGShieldingWindowLevel())
+        
+    
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     }
 

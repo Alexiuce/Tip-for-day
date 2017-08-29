@@ -34,11 +34,27 @@ class ViewController: NSViewController {
         // 去除点击时的灰色效果
     imgBtn.isTransparent = true
         
-    
-        
         
     }
    
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
+       let win = view.window
+//        print(view.window)
+//        win?.backgroundColor = NSColor.red
+//        win?.styleMask
+        
+//        win?.dockTile.showsApplicationBadge = false
+//        NSApp.dockTile.badgeLabel = "12"
+//        print(win!.dockTile.badgeLabel)
+//        win?.isMovableByWindowBackground = true
+        
+      DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
+//         win?.dockTile.badgeLabel = "20"
+        win?.makeKeyAndOrderFront(nil)
+        }
+    }
 
   
 }

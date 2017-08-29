@@ -8,5 +8,6 @@ target 'XCWebook' do
   # Pods for XCWebook
   pod 'Alamofire', '~> 4.4'
   pod 'SwiftyJSON'
+  pod 'MJRefresh'
 
 end

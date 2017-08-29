@@ -36,7 +36,8 @@
     [NSAnimationContext runAnimationGroup:^(NSAnimationContext * _Nonnull context) {
         context.duration = 0.5;
         self.backgroundView.animator.alphaValue = 1;
-        modalView.animator.frame =  NSInsetRect(containerView.bounds, 50, 50);
+        [modalView.animator setFrameOrigin:NSMakePoint(finalRect.origin.x, finalRect.origin.y)];
+        //NSInsetRect(containerView.bounds, 50, 50);
     } completionHandler:nil];
 }
 

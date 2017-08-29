@@ -21,11 +21,16 @@ class ViewController: UIViewController {
         return regex
     }()
     
+
+    lazy var divModels = [DIVModel]()
     
-    @IBOutlet weak var webView: UIWebView!
+    
+    @IBOutlet weak var tableView: UITableView!
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hidesBottomBarWhenPushed = true
         
     Alamofire.request(baseHTML + targetPage).response { (response) in
         
@@ -39,15 +44,50 @@ class ViewController: UIViewController {
         self.regexHelper.matchString(inText: text, pattern: pattern)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
 
 }
 
 extension ViewController : RegexToolProcotol {
 
     func regexFinished(_ result: [String]) {
-        print(result)
-        
+        for div in result {
+            let model = DIVModel(div: div)
+            divModels.append(model)
+        }
+        tableView.reloadData()
     }
 
+}
+
+extension ViewController : UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return divModels.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "webook")
+        if cell == nil {
+            cell = UITableViewCell(style: .default, reuseIdentifier: "webook")
+        }
+        
+        cell?.textLabel?.text = divModels[indexPath.row].text
+        return cell!
+    }
     
 }
+
+extension ViewController : UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = DetailViewController()
+        detailVC.loadUrl = baseHTML + divModels[indexPath.row].href
+        detailVC.title = divModels[indexPath.row].text
+        
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
+}
+
+
