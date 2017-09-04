@@ -314,6 +314,10 @@ a demo code project for iOS / Mac , write down for develop tip
 > 与ＮＳＶｉｅｗＣｏｎｔｒｏｌｌｅｒ　以及ＮＳＰｏｐｏｖｅｒ相关亦参考次Ｄｅｍｏ说明
 > 
 
+* NSTreeControllerDemo
+> 关于NSOutlineView 与 NSController 的Cocoa Bind 使用示例
+
+
 
 
 
