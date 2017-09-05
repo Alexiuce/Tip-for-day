@@ -11,6 +11,7 @@ import Cocoa
 class ViewController: NSViewController {
 
     
+    @IBOutlet var treeController: NSTreeController!
     
    lazy var nodes : [Node] = {
         let n1 = Node("One")
