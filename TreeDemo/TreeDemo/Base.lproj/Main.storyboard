@@ -740,6 +740,7 @@
                                             <connections>
                                                 <binding destination="Giu-D0-rGJ" name="content" keyPath="arrangedObjects" id="Pec-4I-lZd"/>
                                                 <binding destination="Giu-D0-rGJ" name="selectionIndexPaths" keyPath="selectionIndexPaths" previousBinding="Pec-4I-lZd" id="vEs-eT-VdH"/>
+                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="vJj-dO-DQr"/>
                                             </connections>
                                         </outlineView>
                                     </subviews>
@@ -814,7 +815,7 @@
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="treeController" destination="Giu-D0-rGJ" id="nZZ-bs-0gz"/>
+                        <outlet property="outline" destination="9e0-8v-HrJ" id="DlU-Jl-eQv"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

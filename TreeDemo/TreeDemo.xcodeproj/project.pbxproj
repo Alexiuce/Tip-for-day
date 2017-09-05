@@ -292,6 +292,7 @@
 				F23F698C1F5CDD230076C0FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
