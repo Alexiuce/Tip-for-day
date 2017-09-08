@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PreferencesController" customModule="FTTXDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="7F45F798-BBCC-449F-9302-DEE246E13357" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="yH9-Md-WXm">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="012CED5B-1F44-4022-98C6-EFBEF75A096F" explicitItemIdentifier="caution" label="caution" paletteLabel="Toolbar Item" tag="-1" image="NSCaution" selectable="YES" id="Bqx-6X-o1J">
+                        <connections>
+                            <action selector="selectedItem:" target="-2" id="vae-gT-Wkt"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="41444207-EA1C-419D-87E7-9131D143DA53" explicitItemIdentifier="group" label="group" paletteLabel="Toolbar Item" tag="-1" image="NSUserGroup" selectable="YES" id="q6o-me-1dm">
+                        <connections>
+                            <action selector="selectedItem:" target="-2" id="rQm-lE-P04"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="CD18DBB7-EFB4-4B68-9599-59B538605BA1" explicitItemIdentifier="trash" label="trash" paletteLabel="Toolbar Item" tag="-1" image="NSTrashFull" selectable="YES" id="zoi-8W-aCB">
+                        <connections>
+                            <action selector="selectedItem:" target="-2" id="8hE-Y9-0q2"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="4B725A4B-92A9-418F-B16F-490E899EF71E" explicitItemIdentifier="user" label="user" paletteLabel="Toolbar Item" tag="-1" image="NSUser" selectable="YES" id="QHW-mI-irv">
+                        <connections>
+                            <action selector="selectedItem:" target="-2" id="oFe-Rk-Mm9"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="AFD6FCBB-6E32-4FFF-A1B8-E6604855A1F6" explicitItemIdentifier="share" label="share" paletteLabel="Toolbar Item" tag="-1" image="NSSlideshowTemplate" selectable="YES" id="sh3-2k-Ypg">
+                        <connections>
+                            <action selector="selectedItem:" target="-2" id="dxD-Sr-CUE"/>
+                        </connections>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="Bqx-6X-o1J"/>
+                    <toolbarItem reference="q6o-me-1dm"/>
+                    <toolbarItem reference="QHW-mI-irv"/>
+                    <toolbarItem reference="sh3-2k-Ypg"/>
+                    <toolbarItem reference="zoi-8W-aCB"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+        </window>
+    </objects>
+    <resources>
+        <image name="NSCaution" width="32" height="32"/>
+        <image name="NSSlideshowTemplate" width="17" height="14"/>
+        <image name="NSTrashFull" width="32" height="32"/>
+        <image name="NSUser" width="32" height="32"/>
+        <image name="NSUserGroup" width="32" height="32"/>
+    </resources>
+</document>
