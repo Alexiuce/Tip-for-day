@@ -16,6 +16,8 @@ class PreferencesController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
 
+        window?.standardWindowButton(.miniaturizeButton)?.isHidden = true
+        window?.standardWindowButton(.zoomButton)?.isHidden = true
         let r1 = NSRect(x: 510, y: 510, width: 650, height: 680)
         let r2 = NSRect(x: 510, y: 510, width: 250, height: 180)
         let r3 = NSRect(x: 510, y: 510, width: 250, height: 280)
