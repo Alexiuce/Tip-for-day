@@ -19,6 +19,7 @@
     self.view.layer.cornerRadius = 5;
     self.view.layer.backgroundColor = [NSColor orangeColor].CGColor;
     // Do view setup here.
+
 }
 
 - (IBAction)dismiss:(NSButton *)sender {
