@@ -7,4 +7,5 @@ target 'XCRefresh' do
 
   # Pods for XCRefresh
    pod 'Aspects'
+   pod 'pop', '~> 1.0'
 end

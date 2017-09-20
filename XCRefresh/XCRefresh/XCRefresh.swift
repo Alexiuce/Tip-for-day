@@ -10,6 +10,8 @@ import Foundation
 import AppKit
 import Aspects
 
+import pop
+
 
 fileprivate let XC_HeaderHeight : CGFloat  = 30
 fileprivate let XC_HeaderTag = 20170920
