@@ -369,6 +369,7 @@
 				F24BC8121F7205C800EEA2D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,7 @@
 
 import Foundation
 import AppKit
+import Aspects
 
 
 fileprivate let XC_HeaderHeight : CGFloat  = 30
@@ -65,14 +66,39 @@ extension NSScrollView{
         
         // 2. 监听bounds
         
+        let block: @convention(block) (AnyObject!) -> Void = { info in
+            
+            
+            
+            let aspectInfo = info as! AspectInfo
+            guard let event = aspectInfo.arguments().last as? NSEvent else { return }
+    
+            switch event.phase {
+         
+            case NSEventPhase.began:
+                  Swift.print("begin")
+            case NSEventPhase.changed:
+                  Swift.print("change")
+            case NSEventPhase.cancelled:
+                  Swift.print("cancle")
+            case NSEventPhase.ended :
+                 Swift.print("pull end")
+        
+            default:
+                super.scrollWheel(with: event)
+            }
+           
+            
+        }
+         let blobj: AnyObject = unsafeBitCast(block, to: AnyObject.self)
+        
+  
+         _ = try? aspect_hook(#selector(scrollWheel(with:)), with: [], usingBlock:blobj)
       
         // 3. 事件回调
         xc_target = target
         xc_action = action
+        
     }
-    
-    
-    
-    
     
 }
