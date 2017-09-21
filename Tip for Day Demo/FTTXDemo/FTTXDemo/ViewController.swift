@@ -12,11 +12,13 @@ import PreferencePanes
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var scrollView: NSScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
        
-        
+//        scrollView.scrollerKnobStyle = .light
+        scrollView.scrollerStyle = .overlay
         // Do any additional setup after loading the view.
     }
 
