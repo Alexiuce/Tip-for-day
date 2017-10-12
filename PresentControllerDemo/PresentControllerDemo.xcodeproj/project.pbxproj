@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D85F90701F824A8200751219 /* TwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D85F906F1F824A8200751219 /* TwoView.m */; };
 		F2E2AA611F385AFE008C1ADF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E2AA601F385AFE008C1ADF /* AppDelegate.m */; };
 		F2E2AA641F385AFE008C1ADF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E2AA631F385AFE008C1ADF /* main.m */; };
 		F2E2AA671F385AFE008C1ADF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E2AA661F385AFE008C1ADF /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D85F906E1F824A8200751219 /* TwoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoView.h; sourceTree = "<group>"; };
+		D85F906F1F824A8200751219 /* TwoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoView.m; sourceTree = "<group>"; };
 		F2E2AA5C1F385AFE008C1ADF /* PresentControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E2AA5F1F385AFE008C1ADF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2E2AA601F385AFE008C1ADF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				F2E2AA731F385B2A008C1ADF /* TwoController.h */,
 				F2E2AA741F385B2A008C1ADF /* TwoController.m */,
 				F2E2AA751F385B2A008C1ADF /* TwoController.xib */,
+				D85F906E1F824A8200751219 /* TwoView.h */,
+				D85F906F1F824A8200751219 /* TwoView.m */,
 				F2E2AA681F385AFF008C1ADF /* Assets.xcassets */,
 				F2E2AA6A1F385AFF008C1ADF /* Main.storyboard */,
 				F2E2AA6D1F385AFF008C1ADF /* Info.plist */,
@@ -164,6 +169,7 @@
 				F2E2AA761F385B2A008C1ADF /* TwoController.m in Sources */,
 				F2E2AA7A1F394155008C1ADF /* PresentAnimator.m in Sources */,
 				F2E2AA671F385AFE008C1ADF /* ViewController.m in Sources */,
+				D85F90701F824A8200751219 /* TwoView.m in Sources */,
 				F2E2AA641F385AFE008C1ADF /* main.m in Sources */,
 				F2E2AA611F385AFE008C1ADF /* AppDelegate.m in Sources */,
 			);

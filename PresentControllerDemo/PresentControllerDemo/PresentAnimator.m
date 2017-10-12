@@ -7,11 +7,12 @@
 //
 
 #import "PresentAnimator.h"
+#import "TwoView.h"
 
 
 @interface PresentAnimator () 
 
-@property (nonatomic, strong) NSView *backgroundView;
+@property (nonatomic, strong)  TwoView *backgroundView;
 
 @end
 
@@ -65,7 +66,7 @@
 
 - (NSView *)backgroundView{
     if (_backgroundView == nil) {
-        _backgroundView = [[NSView alloc]initWithFrame:NSZeroRect];
+        _backgroundView = [[TwoView alloc]initWithFrame:NSZeroRect];
         _backgroundView.wantsLayer = YES;
         _backgroundView.layer.backgroundColor = [NSColor colorWithCalibratedWhite:0 alpha:0.5].CGColor;
         _backgroundView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
