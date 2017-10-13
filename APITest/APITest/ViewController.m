@@ -35,15 +35,15 @@
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-    NSString * voipServer = @"http://192.168.0.185:8080/common/saveDialVoIp";
+//    NSString * voipServer = @"http://192.168.0.185:8080/common/saveDialVoIp";
     
     
-//    NSString *httpServer = @"http://httpbin.org/post";
+    NSString *httpServer = @"http://httpbin.org/post";
     NSString *jsonText = @"{\"id\":\"0\",\"cust_id\":\"34\",\"link_id\":\"23\",\"number\":\"17682340610\",\"login_id\":\"1\",\"duration\":\"52\",\"call_time\":\"2017-10-12 09:59:04\",\"path\":\"record/17682340610/2017-10-12 09.59.04(17682340610).wav\",\"paid\":\"0.1\"}";
     NSString *jsonBase64 =  [[jsonText custom_Decrypt] base64String];
     //@"BVwXGlxETlJcHQsNCiEXGlxEXFxSXBIXEBUhFxpcRFxcUlwQCxMcGwxcRFxPSUhGTE1KTkhPTlxSXBIRGRcQIRcaXERcT1xSXBoLDB8KFxEQXERcT0xcUlwdHxISIQoXExtcRFxMTk9JU09OU09MXk9ORE5LRE1JXFJcDh8KFlxEXAwbHREMGlFPSUhGTE1KTkhPTlFMTk9JU09OU09MXk9OUE5LUE1JVk9JSEZMTUpOSE9OV1AJHwhcUlwOHxcaXERcTlBPXAM=";
    
-    NSURL *url = [NSURL URLWithString:voipServer];
+    NSURL *url = [NSURL URLWithString:httpServer];
 //
     NSMutableURLRequest *requestM = [NSMutableURLRequest requestWithURL:url];
     
