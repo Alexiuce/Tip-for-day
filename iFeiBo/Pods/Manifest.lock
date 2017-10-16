@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.5.1)
+  - Kingfisher (3.13.1)
+  - MJExtension (3.0.13)
+  - pop (1.0.10)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - Kingfisher (= 3.13.1)
+  - MJExtension
+  - pop
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Kingfisher: ed9707a409cc47fddafbcd12a43a9757e3600af5
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+
+PODFILE CHECKSUM: aec988b548483ae007b6f99d404380791b8f8c8b
+
+COCOAPODS: 1.2.1

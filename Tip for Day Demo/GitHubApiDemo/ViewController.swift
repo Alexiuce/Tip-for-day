@@ -222,7 +222,7 @@ extension ViewController : NSTableViewDelegate{
     }
     
     func tableViewSelectionDidChange(_ notification: Notification) {
-       let selectCell = leftTable.view(atColumn: 0, row: leftTable.selectedRow, makeIfNecessary: true) as? RespositoryCell
+       let selectCell = leftTable.view(atColumn: 0, row: leftTable.selectedRow, makeIfNecessary: false) as? RespositoryCell
         if selectCell == currentSelectedCell {return}
         currentSelectedCell?.selected = false
         selectCell?.selected = true

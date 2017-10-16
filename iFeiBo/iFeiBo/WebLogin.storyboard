@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="TCG-OI-xJj">
+            <objects>
+                <windowController storyboardIdentifier="weblogin" id="A3p-ey-b9B" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Rvv-8P-7Vo">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                    </window>
+                    <connections>
+                        <segue destination="WjD-XJ-r9A" kind="relationship" relationship="window.shadowedContentViewController" id="Uxs-hj-VHa"/>
+                    </connections>
+                </windowController>
+                <customObject id="flK-Kg-dF0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="155"/>
+        </scene>
+        <!--Web Login View Controller-->
+        <scene sceneID="kq7-lW-ZNZ">
+            <objects>
+                <viewController id="WjD-XJ-r9A" customClass="WebLoginViewController" customModule="iFeiBo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="uFG-JQ-Pua">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <webView translatesAutoresizingMaskIntoConstraints="NO" id="5Es-7S-nJD">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <webPreferences key="preferences" defaultFontSize="16" defaultFixedFontSize="13" minimumFontSize="0">
+                                    <nil key="identifier"/>
+                                </webPreferences>
+                                <connections>
+                                    <outlet property="policyDelegate" destination="WjD-XJ-r9A" id="lDz-kK-6Sj"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5Es-7S-nJD" secondAttribute="bottom" id="Qoi-sA-Tgc"/>
+                            <constraint firstItem="5Es-7S-nJD" firstAttribute="top" secondItem="uFG-JQ-Pua" secondAttribute="top" id="bhd-vM-Oib"/>
+                            <constraint firstAttribute="trailing" secondItem="5Es-7S-nJD" secondAttribute="trailing" id="cXr-zw-b03"/>
+                            <constraint firstItem="5Es-7S-nJD" firstAttribute="leading" secondItem="uFG-JQ-Pua" secondAttribute="leading" id="sjW-Wl-Ft1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="5Es-7S-nJD" id="IFq-Gy-zkR"/>
+                    </connections>
+                </viewController>
+                <customObject id="FK1-jG-k6Q" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="590"/>
+        </scene>
+    </scenes>
+</document>
