@@ -9,5 +9,10 @@
 #import <Cocoa/Cocoa.h>
 
 int main(int argc, const char * argv[]) {
+    
+    int a = 1;
+    a += 2;
+    printf("%d",a);
+    
     return NSApplicationMain(argc, argv);
 }
