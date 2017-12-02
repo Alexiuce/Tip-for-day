@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CC405C70DC0FE25E65415DF /* libPods-XCFMStudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 475D7983C00F1B27CD6FAB3C /* libPods-XCFMStudio.a */; };
+		55A8499CF66DF7D5E1003B5C /* Pods_XCFMStudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEF141B2A19C9ED2368EB21 /* Pods_XCFMStudio.framework */; };
 		562DC8681FCFD30D00E642AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 562DC8671FCFD30D00E642AE /* AppDelegate.m */; };
 		562DC86E1FCFD30D00E642AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562DC86C1FCFD30D00E642AE /* Main.storyboard */; };
 		562DC8701FCFD30D00E642AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562DC86F1FCFD30D00E642AE /* Assets.xcassets */; };
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		475D7983C00F1B27CD6FAB3C /* libPods-XCFMStudio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCFMStudio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AEF141B2A19C9ED2368EB21 /* Pods_XCFMStudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCFMStudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		562DC8631FCFD30D00E642AE /* XCFMStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCFMStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		562DC8661FCFD30D00E642AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		562DC8671FCFD30D00E642AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CC405C70DC0FE25E65415DF /* libPods-XCFMStudio.a in Frameworks */,
+				55A8499CF66DF7D5E1003B5C /* Pods_XCFMStudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,7 @@
 		8871C855F3E7187F10A051A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				475D7983C00F1B27CD6FAB3C /* libPods-XCFMStudio.a */,
+				3AEF141B2A19C9ED2368EB21 /* Pods_XCFMStudio.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,9 +199,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XCFMStudio/Pods-XCFMStudio-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MainModule/MainModule.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MainModule.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
