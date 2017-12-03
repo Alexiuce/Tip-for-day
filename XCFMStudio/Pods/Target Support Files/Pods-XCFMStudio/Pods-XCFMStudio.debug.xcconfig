@@ -1,8 +1,8 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MainModule"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MainModule" "${PODS_CONFIGURATION_BUILD_DIR}/XCToolModuleKit"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/MainModule/MainModule.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "MainModule"
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/MainModule/MainModule.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/XCToolModuleKit/XCToolModuleKit.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "MainModule" -framework "XCToolModuleKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

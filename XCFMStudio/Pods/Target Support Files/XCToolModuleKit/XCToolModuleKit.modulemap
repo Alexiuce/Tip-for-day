@@ -1,0 +1,6 @@
+framework module XCToolModuleKit {
+  umbrella header "XCToolModuleKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

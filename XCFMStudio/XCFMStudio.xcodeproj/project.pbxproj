@@ -201,10 +201,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-XCFMStudio/Pods-XCFMStudio-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MainModule/MainModule.framework",
+				"${BUILT_PRODUCTS_DIR}/XCToolModuleKit/XCToolModuleKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MainModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCToolModuleKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
