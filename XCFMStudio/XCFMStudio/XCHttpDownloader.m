@@ -23,6 +23,9 @@
 @property (nonatomic, copy) NSString *cacheFile;
 @property (nonatomic, copy) NSString *tempFile;
 
+@property (nonatomic, strong) NSOutputStream * outputStream;
+
+
 @end
 
 
@@ -81,15 +84,21 @@
         return;
     }
     // 继续本次请求,接收数据
+    _outputStream = [NSOutputStream outputStreamToFileAtPath:self.tempFile append:YES];
+    [_outputStream open];
     completionHandler(NSURLSessionResponseAllow);
     
 }
 // 接收服务器的数据时,调用
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data{
     
+    [_outputStream write:data.bytes maxLength:data.length];
+    
 }
 // 请求完成时调用 (注意:请求完成 != 请求成功)
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error{
+    
+    [_outputStream close];
     
 }
 
