@@ -11,7 +11,7 @@
 @interface XCHttpDownloader : NSObject
 
 
-
+- (void)download:(NSString * )url;
 
 
 @end
