@@ -13,6 +13,7 @@
 		562DC8701FCFD30D00E642AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562DC86F1FCFD30D00E642AE /* Assets.xcassets */; };
 		562DC8731FCFD30D00E642AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562DC8711FCFD30D00E642AE /* LaunchScreen.storyboard */; };
 		562DC8761FCFD30D00E642AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 562DC8751FCFD30D00E642AE /* main.m */; };
+		56DF3F321FD5171800A4B238 /* XCHttpDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DF3F311FD5171800A4B238 /* XCHttpDownloader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		562DC8721FCFD30D00E642AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		562DC8741FCFD30D00E642AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		562DC8751FCFD30D00E642AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56DF3F301FD5171800A4B238 /* XCHttpDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCHttpDownloader.h; sourceTree = "<group>"; };
+		56DF3F311FD5171800A4B238 /* XCHttpDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCHttpDownloader.m; sourceTree = "<group>"; };
 		64A8E42F5352590DC3D90DB6 /* Pods-XCFMStudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCFMStudio.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCFMStudio/Pods-XCFMStudio.release.xcconfig"; sourceTree = "<group>"; };
 		EF791909C4869F631942C10C /* Pods-XCFMStudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCFMStudio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCFMStudio/Pods-XCFMStudio.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +67,8 @@
 			children = (
 				562DC8661FCFD30D00E642AE /* AppDelegate.h */,
 				562DC8671FCFD30D00E642AE /* AppDelegate.m */,
+				56DF3F301FD5171800A4B238 /* XCHttpDownloader.h */,
+				56DF3F311FD5171800A4B238 /* XCHttpDownloader.m */,
 				562DC86C1FCFD30D00E642AE /* Main.storyboard */,
 				562DC86F1FCFD30D00E642AE /* Assets.xcassets */,
 				562DC8711FCFD30D00E642AE /* LaunchScreen.storyboard */,
@@ -222,6 +227,7 @@
 			files = (
 				562DC8761FCFD30D00E642AE /* main.m in Sources */,
 				562DC8681FCFD30D00E642AE /* AppDelegate.m in Sources */,
+				56DF3F321FD5171800A4B238 /* XCHttpDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
