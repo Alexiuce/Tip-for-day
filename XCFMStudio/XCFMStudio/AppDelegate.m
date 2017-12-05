@@ -26,7 +26,7 @@
     NSString *temp = @"http://sw.bos.baidu.com/sw-search-sp/software/76f6543a7be90/thunder_mac_3.1.7.3266.dmg";
     
     _downloader = [XCHttpDownloader new];
-    [_downloader download:temp];
+  
     return YES;
 }
 

@@ -14,26 +14,30 @@
 #define TEMP_PATH NSTemporaryDirectory()
 
 
-
-
 @interface XCHttpDownloader()<NSURLSessionDataDelegate>
 
 @property (nonatomic, assign) long long tempSzie;
 @property (nonatomic, assign) long long totalSzie;
-
 @property (nonatomic, strong) NSURLSession *session;
 @property (nonatomic, copy) NSString *cacheFile;
 @property (nonatomic, copy) NSString *tempFile;
-
 @property (nonatomic, strong) NSOutputStream * outputStream;
-
 @property (nonatomic, weak) NSURLSessionDataTask *dataTask;
-
+@property (nonatomic, weak) NSError *error;
 
 @end
 
 
 @implementation XCHttpDownloader
+
+- (void)download:(NSString *)url downloadState:(UpdateDownloadSizeType)downloadSize progress:(ProgressChangedType)downloadProgress finished:(DownloadFinishedType)downloadFinished{
+    self.progressChanged = downloadProgress;
+    self.updateDownloadSize = downloadSize;
+    self.downloadFinished = downloadFinished;
+    
+    [self download:url];
+}
+
 /** 根据url下载*/
 - (void)download:(NSString *)url{
     
@@ -100,6 +104,10 @@
         totalLength = [[contentRangeText componentsSeparatedByString:@"/"].lastObject longLongValue];
     }
     
+    if (self.updateDownloadSize != nil){
+        self.updateDownloadSize(totalLength);
+    }
+    
     // 比对 文件大小
     if (_tempSzie == totalLength) {  // 下载完成,将文件移入cache目录,并取消本次请求
         [XCFileManagerTool moveFile:self.tempFile to:self.cacheFile];
@@ -123,7 +131,8 @@
 }
 // 接收服务器的数据时,调用
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data{
-    
+    _tempSzie += data.length;
+    self.progerss = 1.0 * _tempSzie / _totalSzie;
     [_outputStream write:data.bytes maxLength:data.length];
     
 }
@@ -139,7 +148,7 @@
         [XCFileManagerTool moveFile:self.tempFile to:self.cacheFile];
         
     }else{
-        
+        self.error = error;
         self.state = error.code == -999 ? DownloadStatePause : DownloadStateFailure;
     }
     
@@ -171,6 +180,26 @@
     return _session;
 }
 
+- (void)setState:(DownloadState)state{
+    if (self.state == state){return;}
+    _state = state;
+    if (self.updateDownloadState != nil){
+        self.updateDownloadState(state);
+    }
+    if (state == DownloadStateFinished && self.downloadFinished){
+        self.downloadFinished(self.cacheFile, nil);
+    }
+    if (state == DownloadStateFailure && self.downloadFinished){
+        self.downloadFinished(nil, self.error);
+    }
+    
+}
 
+- (void)setProgerss:(float)progerss{
+    _progerss = progerss;
+    if (self.progressChanged != nil){
+        self.progressChanged(progerss);
+    }
+}
 
 @end
