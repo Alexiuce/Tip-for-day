@@ -46,15 +46,11 @@
     
     // 如果没有下载  文件存放在temp目录
     _tempFile = [TEMP_PATH stringByAppendingPathComponent:filename];
-    if ([XCFileManagerTool fileIsExist:_tempFile]) {     // 临时下载文件存在
-        // 获取临时下载文件的大小
-        _tempSzie = [XCFileManagerTool fileSize:_tempFile];
-        
-        [self download:url offset:_tempSzie];
-        
-    }else{  // 无临时文件,从0字节开始下载
-        [self download:url offset:0];
-    }
+    // 获取临时下载文件的大小: 若文件不存在,返回大小为0
+    _tempSzie = [XCFileManagerTool fileSize:_tempFile];
+    
+    [self download:url offset:_tempSzie];
+   
 }
 
 #pragma mark - NSURLSession Delegate method
@@ -99,6 +95,12 @@
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error{
     
     [_outputStream close];
+    
+    if ([XCFileManagerTool fileSize:self.tempFile] == self.totalSzie) {  // 下载文件正确
+        [XCFileManagerTool moveFile:self.tempFile to:self.cacheFile];
+    }
+    
+    NSLog(@"download finished:%@",self.cacheFile);
     
 }
 
