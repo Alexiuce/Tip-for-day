@@ -8,20 +8,33 @@
 
 #import <Foundation/Foundation.h>
 
+
+typedef NS_ENUM(NSUInteger,DownloadState){
+    DownloadStatePause,
+    DownloadStateLoading,
+    DownloadStateCancle ,
+    DownloadStateFinished,
+    DownloadStateResume,
+    DownloadStateFailure
+};
+
+
 @interface XCHttpDownloader : NSObject
 
 /** 根据url下载*/
 - (void)download:(NSString * )url;
-
-
 /** 暂停当前下载*/
 - (void)pauseCurrentDownloading;
+/** 继续当前下载任务*/
+- (void)resumeCurrentDownloading;
 /** 取消当前下载*/
 - (void)cancleCurrentDownload;
 /** 取消并清除当前缓存文件*/
 - (void)cancleAndClearCache;
+
 /***/
-/***/
+@property (nonatomic, assign) DownloadState state;          // 下载状态
+
 /***/
 
 

@@ -14,6 +14,8 @@
 #define TEMP_PATH NSTemporaryDirectory()
 
 
+
+
 @interface XCHttpDownloader()<NSURLSessionDataDelegate>
 
 @property (nonatomic, assign) long long tempSzie;
@@ -32,7 +34,7 @@
 
 
 @implementation XCHttpDownloader
-
+/** 根据url下载*/
 - (void)download:(NSString *)url{
     
     NSString *filename = url.lastPathComponent;
@@ -42,7 +44,7 @@
     // 如果已经下载  文件存放在cache目录
     _cacheFile = [CACHE_PATH stringByAppendingPathComponent:filename];
     if ([XCFileManagerTool fileIsExist:_cacheFile]) {  // 文件已经下载,告知外界
-        
+        self.state = DownloadStateFinished;
         return;
     }
     
@@ -54,20 +56,30 @@
     [self download:url offset:_tempSzie];
    
 }
-
+/** 暂停当前下载*/
 - (void)pauseCurrentDownloading{
-    [self.dataTask suspend];
+    if (self.state == DownloadStateLoading) {
+        [self.dataTask suspend];
+        self.state = DownloadStatePause;
+    }
 }
-
+/** 继续当前下载任务*/
+- (void)resumeCurrentDownloading{
+    if (self.dataTask && self.state == DownloadStatePause) {
+        [self.dataTask resume];
+        self.state = DownloadStateLoading;
+    }
+}
+/** 取消当前下载*/
 - (void)cancleCurrentDownload{
+    self.state = DownloadStateCancle;
     [self.session invalidateAndCancel];
     _session = nil;
 }
-
+/** 取消并清除当前缓存文件*/
 - (void)cancleAndClearCache{
     [self cancleCurrentDownload];
     [XCFileManagerTool deleteFile:self.tempFile];
-    
 }
 #pragma mark - NSURLSession Delegate method
 // 第一次接收到服务器响应的时候调用(通常是获取http header)
@@ -85,6 +97,7 @@
     // 比对 文件大小
     if (_tempSzie == totalLength) {  // 下载完成,将文件移入cache目录,并取消本次请求
         [XCFileManagerTool moveFile:self.tempFile to:self.cacheFile];
+        self.state = DownloadStateFinished;
         completionHandler(NSURLSessionResponseCancel);
         return;
     }
@@ -98,6 +111,7 @@
     // 继续本次请求,接收数据
     _outputStream = [NSOutputStream outputStreamToFileAtPath:self.tempFile append:YES];
     [_outputStream open];
+    self.state = DownloadStateLoading;
     completionHandler(NSURLSessionResponseAllow);
     
 }
@@ -112,8 +126,15 @@
     
     [_outputStream close];
     
-    if (error == nil) {  // 下载文件正确
+    if (error == nil && [XCFileManagerTool fileSize:self.tempFile] == self.totalSzie) {  // 下载文件正确
+        // 判断本地文件与下载总大小是否xiangdeng
+        // 判断下载完整性(md5)
+        self.state = DownloadStateFinished;
         [XCFileManagerTool moveFile:self.tempFile to:self.cacheFile];
+        
+    }else{
+        
+        self.state = error.code == 999 ? DownloadStateCancle : DownloadStateFailure;
     }
     
     NSLog(@"download finished:%@",self.cacheFile);
@@ -130,7 +151,7 @@
     [request setValue:[NSString stringWithFormat:@"bytes=%lld-",offset] forHTTPHeaderField:@"Range"];
     self.dataTask = [self.session dataTaskWithRequest:request];
     
-    [self.dataTask resume];
+    [self resumeCurrentDownloading];
     
 }
 
