@@ -12,7 +12,6 @@
 typedef NS_ENUM(NSUInteger,DownloadState){
     DownloadStatePause,
     DownloadStateLoading,
-    DownloadStateCancle ,
     DownloadStateFinished,
     DownloadStateResume,
     DownloadStateFailure

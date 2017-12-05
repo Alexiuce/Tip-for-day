@@ -40,7 +40,13 @@
     NSString *filename = url.lastPathComponent;
     
     // 1. 如果正在下载 return
-    
+    if ([self.dataTask.originalRequest.URL.absoluteString isEqualToString:url]) {
+        if (self.state == DownloadStatePause) {
+            [self resumeCurrentDownloading];
+            return;
+        }
+    }
+    [self cancleCurrentDownload];
     // 如果已经下载  文件存放在cache目录
     _cacheFile = [CACHE_PATH stringByAppendingPathComponent:filename];
     if ([XCFileManagerTool fileIsExist:_cacheFile]) {  // 文件已经下载,告知外界
@@ -72,7 +78,7 @@
 }
 /** 取消当前下载*/
 - (void)cancleCurrentDownload{
-    self.state = DownloadStateCancle;
+    self.state = DownloadStatePause;
     [self.session invalidateAndCancel];
     _session = nil;
 }
@@ -134,7 +140,7 @@
         
     }else{
         
-        self.state = error.code == 999 ? DownloadStateCancle : DownloadStateFailure;
+        self.state = error.code == -999 ? DownloadStatePause : DownloadStateFailure;
     }
     
     NSLog(@"download finished:%@",self.cacheFile);
