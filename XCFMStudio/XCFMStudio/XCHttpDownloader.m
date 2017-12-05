@@ -25,6 +25,8 @@
 
 @property (nonatomic, strong) NSOutputStream * outputStream;
 
+@property (nonatomic, weak) NSURLSessionDataTask *dataTask;
+
 
 @end
 
@@ -53,6 +55,20 @@
    
 }
 
+- (void)pauseCurrentDownloading{
+    [self.dataTask suspend];
+}
+
+- (void)cancleCurrentDownload{
+    [self.session invalidateAndCancel];
+    _session = nil;
+}
+
+- (void)cancleAndClearCache{
+    [self cancleCurrentDownload];
+    [XCFileManagerTool deleteFile:self.tempFile];
+    
+}
 #pragma mark - NSURLSession Delegate method
 // 第一次接收到服务器响应的时候调用(通常是获取http header)
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(NSHTTPURLResponse *)response completionHandler:(void (^)(NSURLSessionResponseDisposition))completionHandler{
@@ -96,14 +112,13 @@
     
     [_outputStream close];
     
-    if ([XCFileManagerTool fileSize:self.tempFile] == self.totalSzie) {  // 下载文件正确
+    if (error == nil) {  // 下载文件正确
         [XCFileManagerTool moveFile:self.tempFile to:self.cacheFile];
     }
     
     NSLog(@"download finished:%@",self.cacheFile);
     
 }
-
 
 #pragma mark - custom method
 - (void)download:(NSString *)url offset:(long long)offset{
@@ -113,9 +128,9 @@
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:d_url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:0];
     
     [request setValue:[NSString stringWithFormat:@"bytes=%lld-",offset] forHTTPHeaderField:@"Range"];
-    NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:request];
+    self.dataTask = [self.session dataTaskWithRequest:request];
     
-    [dataTask resume];
+    [self.dataTask resume];
     
 }
 
