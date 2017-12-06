@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSUInteger,XCPlayState) {
+    XCPlayStateUnknow,
+    XCPlayStateLoading,
+    XCPlayStatePlaying,
+    XCPlayStateStop,
+    XCPlayStatePause,
+    XCPlayStateFailure
+};
+
 @interface XCPlayer : NSObject
 
 #pragma mark 提供接口
@@ -29,5 +38,6 @@
 @property (nonatomic, assign, readonly) float progress;
 @property (nonatomic, copy, readonly) NSString * playURL;
 @property (nonatomic, assign) float loadingCacheProgress;   // 加载缓存的进度
+@property (nonatomic, assign) XCPlayState state;
 
 @end

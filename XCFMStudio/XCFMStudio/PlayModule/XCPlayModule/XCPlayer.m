@@ -13,51 +13,91 @@
 @interface XCPlayer()
 
 @property (nonatomic, strong) AVPlayer *player;
+@property (nonatomic, assign) BOOL isUserPause;
 
 @end
-
-
 
 @implementation XCPlayer
 
 - (void)playWithUrl:(NSString *)url{
+    
+    AVURLAsset *as = (AVURLAsset *)self.player.currentItem.asset;
+    if ([url isEqualToString:as.URL.absoluteString]) {
+        [self resume];
+        return;
+    }
     _playURL = url;
     // 1. 请求资源
     AVURLAsset *asset = [AVURLAsset assetWithURL:[NSURL URLWithString:url]];
     
+    if (self.player.currentItem) {
+        [self removeObser];
+    }
     // 2. 组织资源
     AVPlayerItem *item = [AVPlayerItem playerItemWithAsset:asset];
     // 2.1 使用kvo,监听资源组织的状态(当资源准备好后,再进行播放)
     [item addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
+    [item addObserver:self forKeyPath:@"playbackLikelyToKeepUp" options:NSKeyValueObservingOptionNew context:nil];
     // 3. 播放资源
     self.player = [AVPlayer playerWithPlayerItem:item];
     
-    [self.player play];
+    [NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playFinished) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playInterupted) name:AVPlayerItemPlaybackStalledNotification object:nil];
+
 }
 
-
-
+#pragma mark - Notificaiton method
+- (void)playFinished{   // 播放完成
+    self.state = XCPlayStateStop;
+}
+- (void)playInterupted{  // 播放被打断(来电话/资源不足)
+    
+}
+#pragma mark - KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
     if ([keyPath isEqualToString:@"status"]) {
         AVPlayerItemStatus status = [change[NSKeyValueChangeNewKey] integerValue];
         if (status == AVPlayerItemStatusReadyToPlay) {  // 资源准备好了..
-            
+            [self resume];
         }
-        
+    }else if ([keyPath isEqualToString:@"playbackLikelyToKeepUp"]){
+        BOOL isKeepUp = [change[NSKeyValueChangeNewKey] boolValue];
+        if (isKeepUp ) {  // 资源足够播放,并且用户没有手动暂停播放
+            if (_isUserPause == NO) {
+                [self resume];
+            }else{
+                self.state = XCPlayStatePause;
+            }
+        }else{      // 资源还不足,正在加载
+            self.state = XCPlayStateLoading;
+        }
     }
 }
 
+- (void)removeObser{
+    [self.player.currentItem removeObserver:self forKeyPath:@"status"];
+    [self.player.currentItem removeObserver:self forKeyPath:@"playbackLikelyToKeepUp"];
+}
 
 #pragma mark - interface method
 
 - (void)pause{
     [self.player pause];
+    _isUserPause = YES;
+    if (self.player) {
+        self.state = XCPlayStatePause;
+    }
 }
 - (void)resume{
     [self.player play];
+    _isUserPause = NO;
+    if (self.player && self.player.currentItem.playbackLikelyToKeepUp) {
+        self.state = XCPlayStatePlaying;
+    }
 }
 - (void)stop{
     [self.player pause];
+    if (self.player) {self.state = XCPlayStateStop;}
     self.player = nil;
 }
 
