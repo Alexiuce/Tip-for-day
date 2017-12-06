@@ -10,6 +10,7 @@
 
 @interface XCPlayer : NSObject
 
+#pragma mark 提供接口
 - (void)playWithUrl:(NSString *)url;
 
 - (void)pause;
@@ -19,9 +20,14 @@
 - (void)seekWithTimeOffset:(NSTimeInterval)offset;
 - (void)seekWithProgress:(float)progress;
 
-- (void)setPlayRate:(float)rate;
-- (void)setPlayMute:(BOOL)mute;
-- (void)setVolume:(float)volume;
-
+#pragma mark 数据提供
+@property (nonatomic, assign) BOOL mute;
+@property (nonatomic, assign) float volume;
+@property (nonatomic, assign) float rate;
+@property (nonatomic, assign, readonly) NSTimeInterval totalTime;
+@property (nonatomic, assign, readonly) NSTimeInterval currentTime;
+@property (nonatomic, assign, readonly) float progress;
+@property (nonatomic, copy, readonly) NSString * playURL;
+@property (nonatomic, assign) float loadingCacheProgress;   // 加载缓存的进度
 
 @end

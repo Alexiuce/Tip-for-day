@@ -21,6 +21,7 @@
 @implementation XCPlayer
 
 - (void)playWithUrl:(NSString *)url{
+    _playURL = url;
     // 1. 请求资源
     AVURLAsset *asset = [AVURLAsset assetWithURL:[NSURL URLWithString:url]];
     
@@ -61,29 +62,20 @@
 }
 
 - (void)seekWithTimeOffset:(NSTimeInterval)offset{
-    // 播放总时长
-    CMTime totalTime = self.player.currentItem.duration;
-    NSTimeInterval totalSecond = CMTimeGetSeconds(totalTime);
+
     // 当前播放时长
-    CMTime currentTime = self.player.currentTime;
-    NSTimeInterval playingTime = CMTimeGetSeconds(currentTime);
-    playingTime += offset;
-    
-    [self seekWithProgress:playingTime / totalSecond];
-    
+    NSTimeInterval playingTime = offset + self.currentTime;
+    [self seekWithProgress:playingTime / self.totalTime];
 }
 // 快进
 - (void)seekWithProgress:(float)progress{
     if (progress < 0 || progress > 1) {return;}
     // CMTime : 影片时间(以帧率为计时单位)
     // 1. 影片时间 -> 秒
-    // 获取播放总时长
-    CMTime totalTime = self.player.currentItem.duration;
-    NSTimeInterval totalSecond = CMTimeGetSeconds(totalTime);
     // 当前播放时长
     // CMTime currentTime = self.player.currentTime;
-    NSTimeInterval playTime = totalSecond * progress;
-    CMTime gotoTime = CMTimeMake(playTime, totalTime.timescale);
+    NSTimeInterval playTime = self.totalTime * progress;
+    CMTime gotoTime = CMTimeMake(playTime, 1);
     
     [self.player seekToTime:gotoTime completionHandler:^(BOOL finished) {
         if (finished) {  // 播放加载的资源
@@ -93,17 +85,51 @@
         }
     }];
 }
-
-- (void)setPlayRate:(float)rate{
+- (void)setRate:(float)rate{
     [self.player setRate:rate];
 }
-- (void)setPlayMute:(BOOL)mute{
+- (float)rate{
+    return self.player.rate;
+}
+- (void)setMute:(BOOL)mute{
     self.player.muted = mute;
 }
+- (BOOL)mute{
+    return self.player.muted;
+}
+
 - (void)setVolume:(float)volume{
     if (volume < 0 || volume > 1) {return;}
     self.player.muted = volume == 0;
     self.player.volume = volume;
 }
+- (float)volume{
+    return self.player.volume;
+}
 
+#pragma mark - 数据
+- (NSTimeInterval)totalTime{
+    CMTime totalTime = self.player.currentItem.duration;
+    NSTimeInterval time = CMTimeGetSeconds(totalTime);
+    if (isnan(time)) {return 0;}
+    return time;
+}
+- (NSTimeInterval)currentTime{
+    CMTime currentTime = self.player.currentTime;
+   NSTimeInterval time = CMTimeGetSeconds(currentTime);
+    if (isnan(time)) {return 0;}
+    return time;
+}
+
+- (float)progress{
+    if (self.totalTime == 0) {return 0;}
+    return self.currentTime / self.totalTime;
+}
+- (float)loadingCacheProgress{
+    if (self.totalTime == 0) {return 0;}
+    CMTimeRange loadedRange = [self.player.currentItem.loadedTimeRanges.lastObject CMTimeRangeValue];
+    CMTime loadedTime = CMTimeAdd(loadedRange.start, loadedRange.duration);
+    NSTimeInterval loadedSecond = CMTimeGetSeconds(loadedTime);
+    return loadedSecond / self.totalTime;
+}
 @end
