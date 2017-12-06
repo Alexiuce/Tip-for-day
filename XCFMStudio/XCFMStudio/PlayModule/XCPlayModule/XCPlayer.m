@@ -83,7 +83,7 @@
     // 当前播放时长
     // CMTime currentTime = self.player.currentTime;
     NSTimeInterval playTime = totalSecond * progress;
-    CMTime gotoTime = CMTimeMake(playTime, NSEC_PER_SEC);
+    CMTime gotoTime = CMTimeMake(playTime, totalTime.timescale);
     
     [self.player seekToTime:gotoTime completionHandler:^(BOOL finished) {
         if (finished) {  // 播放加载的资源
