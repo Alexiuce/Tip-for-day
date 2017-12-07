@@ -10,7 +10,9 @@
 #import <AVFoundation/AVFoundation.h>
 
 
-@interface XCPlayer()
+static XCPlayer *_instance;
+
+@interface XCPlayer()<NSCopying,NSMutableCopying>
 
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, assign) BOOL isUserPause;
@@ -18,6 +20,28 @@
 @end
 
 @implementation XCPlayer
+
++ (instancetype)sharePlayer{
+    if (_instance == nil) {
+        _instance = [[self alloc]init];
+    }
+    return _instance;
+}
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _instance = [super allocWithZone:zone];
+    });
+    return _instance;
+}
+
+- (id)copyWithZone:(NSZone *)zone{
+    return _instance;
+}
+- (id)mutableCopyWithZone:(NSZone *)zone{
+    return _instance;
+}
 
 - (void)playWithUrl:(NSString *)url{
     

@@ -20,6 +20,8 @@ typedef NS_ENUM(NSUInteger,XCPlayState) {
 @interface XCPlayer : NSObject
 
 #pragma mark 提供接口
+
++ (instancetype)sharePlayer;
 - (void)playWithUrl:(NSString *)url;
 
 - (void)pause;
