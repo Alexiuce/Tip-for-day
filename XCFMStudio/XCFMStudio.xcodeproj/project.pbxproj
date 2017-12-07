@@ -21,6 +21,8 @@
 		56B741721FD7956B002F4073 /* XCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B741711FD7956B002F4073 /* XCPlayer.m */; };
 		56DF3F321FD5171800A4B238 /* XCHttpDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DF3F311FD5171800A4B238 /* XCHttpDownloader.m */; };
 		56DF3F351FD51C8800A4B238 /* XCFileManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DF3F341FD51C8800A4B238 /* XCFileManagerTool.m */; };
+		56ED65F51FD8EFAD00E49EDF /* XCPlayerFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ED65F41FD8EFAD00E49EDF /* XCPlayerFile.m */; };
+		56ED65F81FD910BB00E49EDF /* XCPlayerDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ED65F71FD910BB00E49EDF /* XCPlayerDownloader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,10 @@
 		56DF3F311FD5171800A4B238 /* XCHttpDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCHttpDownloader.m; sourceTree = "<group>"; };
 		56DF3F331FD51C8800A4B238 /* XCFileManagerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCFileManagerTool.h; sourceTree = "<group>"; };
 		56DF3F341FD51C8800A4B238 /* XCFileManagerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCFileManagerTool.m; sourceTree = "<group>"; };
+		56ED65F31FD8EFAD00E49EDF /* XCPlayerFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPlayerFile.h; sourceTree = "<group>"; };
+		56ED65F41FD8EFAD00E49EDF /* XCPlayerFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCPlayerFile.m; sourceTree = "<group>"; };
+		56ED65F61FD910BB00E49EDF /* XCPlayerDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPlayerDownloader.h; sourceTree = "<group>"; };
+		56ED65F71FD910BB00E49EDF /* XCPlayerDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCPlayerDownloader.m; sourceTree = "<group>"; };
 		64A8E42F5352590DC3D90DB6 /* Pods-XCFMStudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCFMStudio.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCFMStudio/Pods-XCFMStudio.release.xcconfig"; sourceTree = "<group>"; };
 		EF791909C4869F631942C10C /* Pods-XCFMStudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCFMStudio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCFMStudio/Pods-XCFMStudio.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +129,10 @@
 				56B741711FD7956B002F4073 /* XCPlayer.m */,
 				5609EFA21FD8D38900598BE4 /* XCPlayerDownloadDelegate.h */,
 				5609EFA31FD8D38900598BE4 /* XCPlayerDownloadDelegate.m */,
+				56ED65F61FD910BB00E49EDF /* XCPlayerDownloader.h */,
+				56ED65F71FD910BB00E49EDF /* XCPlayerDownloader.m */,
+				56ED65F31FD8EFAD00E49EDF /* XCPlayerFile.h */,
+				56ED65F41FD8EFAD00E49EDF /* XCPlayerFile.m */,
 			);
 			path = XCPlayModule;
 			sourceTree = "<group>";
@@ -280,8 +290,10 @@
 				562DC8681FCFD30D00E642AE /* AppDelegate.m in Sources */,
 				56DF3F351FD51C8800A4B238 /* XCFileManagerTool.m in Sources */,
 				56B741681FD77E48002F4073 /* XCMD5Helper.m in Sources */,
+				56ED65F51FD8EFAD00E49EDF /* XCPlayerFile.m in Sources */,
 				56B741651FD778CF002F4073 /* XCHttpDownloadManager.m in Sources */,
 				56B741721FD7956B002F4073 /* XCPlayer.m in Sources */,
+				56ED65F81FD910BB00E49EDF /* XCPlayerDownloader.m in Sources */,
 				56DF3F321FD5171800A4B238 /* XCHttpDownloader.m in Sources */,
 				56B7416D1FD794FC002F4073 /* PlayViewController.m in Sources */,
 			);
