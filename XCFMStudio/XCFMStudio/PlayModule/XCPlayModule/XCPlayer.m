@@ -8,7 +8,7 @@
 
 #import "XCPlayer.h"
 #import <AVFoundation/AVFoundation.h>
-
+#import "XCPlayerDownloadDelegate.h"
 
 static XCPlayer *_instance;
 
@@ -16,6 +16,8 @@ static XCPlayer *_instance;
 
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, assign) BOOL isUserPause;
+
+@property (nonatomic, strong) XCPlayerDownloadDelegate *downloaderDelegate;
 
 @end
 
@@ -53,6 +55,10 @@ static XCPlayer *_instance;
     _playURL = url;
     // 1. 请求资源
     AVURLAsset *asset = [AVURLAsset assetWithURL:[NSURL URLWithString:url]];
+    // 1.1 设置资源请求代理,拦截系统请求操作(暂时使用主线程队列)
+    self.downloaderDelegate = [[XCPlayerDownloadDelegate alloc]init];
+    [asset.resourceLoader setDelegate:self.downloaderDelegate queue:dispatch_get_main_queue()];
+    
     
     if (self.player.currentItem) {
         [self removeObser];
@@ -65,7 +71,7 @@ static XCPlayer *_instance;
     // 3. 播放资源
     self.player = [AVPlayer playerWithPlayerItem:item];
     
-    [NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playFinished) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playFinished) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playInterupted) name:AVPlayerItemPlaybackStalledNotification object:nil];
 
 }

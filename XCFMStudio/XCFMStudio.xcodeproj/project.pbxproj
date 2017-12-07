@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55A8499CF66DF7D5E1003B5C /* Pods_XCFMStudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEF141B2A19C9ED2368EB21 /* Pods_XCFMStudio.framework */; };
+		5609EFA41FD8D38900598BE4 /* XCPlayerDownloadDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5609EFA31FD8D38900598BE4 /* XCPlayerDownloadDelegate.m */; };
 		562DC8681FCFD30D00E642AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 562DC8671FCFD30D00E642AE /* AppDelegate.m */; };
 		562DC86E1FCFD30D00E642AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562DC86C1FCFD30D00E642AE /* Main.storyboard */; };
 		562DC8701FCFD30D00E642AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562DC86F1FCFD30D00E642AE /* Assets.xcassets */; };
@@ -24,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		3AEF141B2A19C9ED2368EB21 /* Pods_XCFMStudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCFMStudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5609EFA21FD8D38900598BE4 /* XCPlayerDownloadDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPlayerDownloadDelegate.h; sourceTree = "<group>"; };
+		5609EFA31FD8D38900598BE4 /* XCPlayerDownloadDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCPlayerDownloadDelegate.m; sourceTree = "<group>"; };
 		562DC8631FCFD30D00E642AE /* XCFMStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCFMStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		562DC8661FCFD30D00E642AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		562DC8671FCFD30D00E642AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 			children = (
 				56B741701FD7956B002F4073 /* XCPlayer.h */,
 				56B741711FD7956B002F4073 /* XCPlayer.m */,
+				5609EFA21FD8D38900598BE4 /* XCPlayerDownloadDelegate.h */,
+				5609EFA31FD8D38900598BE4 /* XCPlayerDownloadDelegate.m */,
 			);
 			path = XCPlayModule;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				562DC8761FCFD30D00E642AE /* main.m in Sources */,
+				5609EFA41FD8D38900598BE4 /* XCPlayerDownloadDelegate.m in Sources */,
 				562DC8681FCFD30D00E642AE /* AppDelegate.m in Sources */,
 				56DF3F351FD51C8800A4B238 /* XCFileManagerTool.m in Sources */,
 				56B741681FD77E48002F4073 /* XCMD5Helper.m in Sources */,
