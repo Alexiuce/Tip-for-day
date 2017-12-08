@@ -7,8 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
-
+#import "SqliteModel.h"
 #import "SqliteHelper.h"
+#import "XCHttpDownloader.h"
 
 @interface SqliteTest : XCTestCase
 
@@ -42,8 +43,14 @@
     
 }
 
-- (void)testQuery{
+
+- (void)testSqliteModelExample{
     
+}
+
+- (void)testQuery{
+    NSString *result = [SqliteModel columNameAndType:[XCHttpDownloader class]];
+    NSLog(@"%@",result);
     
 }
 

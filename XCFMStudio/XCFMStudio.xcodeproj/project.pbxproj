@@ -27,6 +27,8 @@
 		56EBF0171FDA3544001DDF7F /* SqliteTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EBF0161FDA3544001DDF7F /* SqliteTest.m */; };
 		56ED65F51FD8EFAD00E49EDF /* XCPlayerFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ED65F41FD8EFAD00E49EDF /* XCPlayerFile.m */; };
 		56ED65F81FD910BB00E49EDF /* XCPlayerDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ED65F71FD910BB00E49EDF /* XCPlayerDownloader.m */; };
+		D81F118B1FDAA9A800234694 /* SqliteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D81F118A1FDAA9A800234694 /* SqliteModel.m */; };
+		D81F118E1FDAAB9000234694 /* DatabaseModelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D81F118D1FDAAB9000234694 /* DatabaseModelHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,10 @@
 		56ED65F61FD910BB00E49EDF /* XCPlayerDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPlayerDownloader.h; sourceTree = "<group>"; };
 		56ED65F71FD910BB00E49EDF /* XCPlayerDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCPlayerDownloader.m; sourceTree = "<group>"; };
 		64A8E42F5352590DC3D90DB6 /* Pods-XCFMStudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCFMStudio.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCFMStudio/Pods-XCFMStudio.release.xcconfig"; sourceTree = "<group>"; };
+		D81F11891FDAA9A800234694 /* SqliteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqliteModel.h; sourceTree = "<group>"; };
+		D81F118A1FDAA9A800234694 /* SqliteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteModel.m; sourceTree = "<group>"; };
+		D81F118C1FDAAB9000234694 /* DatabaseModelHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatabaseModelHelper.h; sourceTree = "<group>"; };
+		D81F118D1FDAAB9000234694 /* DatabaseModelHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatabaseModelHelper.m; sourceTree = "<group>"; };
 		EF791909C4869F631942C10C /* Pods-XCFMStudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCFMStudio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCFMStudio/Pods-XCFMStudio.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +188,10 @@
 			children = (
 				56EBF0031FDA2E1B001DDF7F /* SqliteHelper.h */,
 				56EBF0041FDA2E1B001DDF7F /* SqliteHelper.m */,
+				D81F11891FDAA9A800234694 /* SqliteModel.h */,
+				D81F118A1FDAA9A800234694 /* SqliteModel.m */,
+				D81F118C1FDAAB9000234694 /* DatabaseModelHelper.h */,
+				D81F118D1FDAAB9000234694 /* DatabaseModelHelper.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -382,6 +392,8 @@
 				56DF3F351FD51C8800A4B238 /* XCFileManagerTool.m in Sources */,
 				56B741681FD77E48002F4073 /* XCMD5Helper.m in Sources */,
 				56ED65F51FD8EFAD00E49EDF /* XCPlayerFile.m in Sources */,
+				D81F118E1FDAAB9000234694 /* DatabaseModelHelper.m in Sources */,
+				D81F118B1FDAA9A800234694 /* SqliteModel.m in Sources */,
 				56B741651FD778CF002F4073 /* XCHttpDownloadManager.m in Sources */,
 				56B741721FD7956B002F4073 /* XCPlayer.m in Sources */,
 				56ED65F81FD910BB00E49EDF /* XCPlayerDownloader.m in Sources */,
