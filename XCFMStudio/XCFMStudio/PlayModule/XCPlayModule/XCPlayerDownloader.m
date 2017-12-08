@@ -15,7 +15,7 @@
 
 @property (nonatomic, strong) NSOutputStream *outputStream;
 
-@property (nonatomic, assign) long long totalSize;
+
 
 @property (nonatomic, copy) NSString * url;
 
@@ -26,6 +26,7 @@
 @implementation XCPlayerDownloader
 
 - (void)download:(NSString *)url offSet:(long long)offset{
+    _loadingOffset = offset;
     self.url = url;
     [self cancleAndClear];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:0];
@@ -45,7 +46,7 @@
     // 清空temp文件
     [XCPlayerFile clearTempFile:self.url];
     // 重置数据
-    self.loadedSize = 0;
+    _loadedSize = 0;
 }
 
 #pragma  mark - NSURLSessionDataDelegate method
@@ -53,6 +54,7 @@
 /** 接收到服务器响应*/
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(NSHTTPURLResponse *)response completionHandler:(void (^)(NSURLSessionResponseDisposition))completionHandler{
     
+    _mimeType = response.MIMEType; 
     // 获取下载文件的总长度
     self.totalSize = [response.allHeaderFields[@"Content-Length"] longLongValue];
     
@@ -71,6 +73,10 @@
 - (void)URLSession:(NSURLSession *)session dataTask:(nonnull NSURLSessionDataTask *)dataTask didReceiveData:(nonnull NSData *)data{
     _loadedSize += data.length;
     [self.outputStream write:data.bytes maxLength:data.length];
+    // 将下载的数据通知外界
+    if ([self.delegate respondsToSelector:@selector(onloading)]) {
+        [self.delegate onloading];
+    }
 }
 
 /** 请求完成*/
