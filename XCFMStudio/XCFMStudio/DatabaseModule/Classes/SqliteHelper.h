@@ -11,7 +11,12 @@
 @interface SqliteHelper : NSObject
 
 
-// 执行sql语句
-+ (BOOL)execSql:(NSString *)sql forUser:(NSString *)userId;
+/** 执行sql语句 */
++ (BOOL)execSql:(NSString *)sql onUser:(NSString *)userId;
+/**
+ # 查询sql语句
+ - NSArray : 字典组成的数组
+ */
++ (NSArray <NSDictionary *>*)querySql:(NSString *)sql onUser:(NSString *)userId;
 
 @end

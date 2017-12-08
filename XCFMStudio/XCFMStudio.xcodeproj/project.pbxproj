@@ -23,9 +23,21 @@
 		56DF3F351FD51C8800A4B238 /* XCFileManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DF3F341FD51C8800A4B238 /* XCFileManagerTool.m */; };
 		56EBF0051FDA2E1B001DDF7F /* SqliteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EBF0041FDA2E1B001DDF7F /* SqliteHelper.m */; };
 		56EBF0071FDA2E5B001DDF7F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EBF0061FDA2E5B001DDF7F /* libsqlite3.0.tbd */; };
+		56EBF00F1FDA34D1001DDF7F /* XCFMSqliteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EBF00E1FDA34D1001DDF7F /* XCFMSqliteTests.m */; };
+		56EBF0171FDA3544001DDF7F /* SqliteTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EBF0161FDA3544001DDF7F /* SqliteTest.m */; };
 		56ED65F51FD8EFAD00E49EDF /* XCPlayerFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ED65F41FD8EFAD00E49EDF /* XCPlayerFile.m */; };
 		56ED65F81FD910BB00E49EDF /* XCPlayerDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ED65F71FD910BB00E49EDF /* XCPlayerDownloader.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56EBF0111FDA34D1001DDF7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 562DC85B1FCFD30D00E642AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 562DC8621FCFD30D00E642AE;
+			remoteInfo = XCFMStudio;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3AEF141B2A19C9ED2368EB21 /* Pods_XCFMStudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCFMStudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +67,10 @@
 		56EBF0031FDA2E1B001DDF7F /* SqliteHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqliteHelper.h; sourceTree = "<group>"; };
 		56EBF0041FDA2E1B001DDF7F /* SqliteHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteHelper.m; sourceTree = "<group>"; };
 		56EBF0061FDA2E5B001DDF7F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		56EBF00C1FDA34D1001DDF7F /* XCFMSqliteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCFMSqliteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56EBF00E1FDA34D1001DDF7F /* XCFMSqliteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCFMSqliteTests.m; sourceTree = "<group>"; };
+		56EBF0101FDA34D1001DDF7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56EBF0161FDA3544001DDF7F /* SqliteTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteTest.m; sourceTree = "<group>"; };
 		56ED65F31FD8EFAD00E49EDF /* XCPlayerFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPlayerFile.h; sourceTree = "<group>"; };
 		56ED65F41FD8EFAD00E49EDF /* XCPlayerFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCPlayerFile.m; sourceTree = "<group>"; };
 		56ED65F61FD910BB00E49EDF /* XCPlayerDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPlayerDownloader.h; sourceTree = "<group>"; };
@@ -73,6 +89,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56EBF0091FDA34D1001DDF7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				562DC8651FCFD30D00E642AE /* XCFMStudio */,
+				56EBF00D1FDA34D1001DDF7F /* XCFMSqliteTests */,
 				562DC8641FCFD30D00E642AE /* Products */,
 				F89FD1C32C7DEC1ED9A27602 /* Pods */,
 				8871C855F3E7187F10A051A8 /* Frameworks */,
@@ -90,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				562DC8631FCFD30D00E642AE /* XCFMStudio.app */,
+				56EBF00C1FDA34D1001DDF7F /* XCFMSqliteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +186,16 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		56EBF00D1FDA34D1001DDF7F /* XCFMSqliteTests */ = {
+			isa = PBXGroup;
+			children = (
+				56EBF00E1FDA34D1001DDF7F /* XCFMSqliteTests.m */,
+				56EBF0161FDA3544001DDF7F /* SqliteTest.m */,
+				56EBF0101FDA34D1001DDF7F /* Info.plist */,
+			);
+			path = XCFMSqliteTests;
+			sourceTree = "<group>";
+		};
 		8871C855F3E7187F10A051A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +237,24 @@
 			productReference = 562DC8631FCFD30D00E642AE /* XCFMStudio.app */;
 			productType = "com.apple.product-type.application";
 		};
+		56EBF00B1FDA34D1001DDF7F /* XCFMSqliteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56EBF0131FDA34D1001DDF7F /* Build configuration list for PBXNativeTarget "XCFMSqliteTests" */;
+			buildPhases = (
+				56EBF0081FDA34D1001DDF7F /* Sources */,
+				56EBF0091FDA34D1001DDF7F /* Frameworks */,
+				56EBF00A1FDA34D1001DDF7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56EBF0121FDA34D1001DDF7F /* PBXTargetDependency */,
+			);
+			name = XCFMSqliteTests;
+			productName = XCFMSqliteTests;
+			productReference = 56EBF00C1FDA34D1001DDF7F /* XCFMSqliteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,6 +267,11 @@
 					562DC8621FCFD30D00E642AE = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+					};
+					56EBF00B1FDA34D1001DDF7F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 562DC8621FCFD30D00E642AE;
 					};
 				};
 			};
@@ -231,6 +289,7 @@
 			projectRoot = "";
 			targets = (
 				562DC8621FCFD30D00E642AE /* XCFMStudio */,
+				56EBF00B1FDA34D1001DDF7F /* XCFMSqliteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,6 +303,13 @@
 				562DC8731FCFD30D00E642AE /* LaunchScreen.storyboard in Resources */,
 				562DC8701FCFD30D00E642AE /* Assets.xcassets in Resources */,
 				562DC86E1FCFD30D00E642AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56EBF00A1FDA34D1001DDF7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +391,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56EBF0081FDA34D1001DDF7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56EBF00F1FDA34D1001DDF7F /* XCFMSqliteTests.m in Sources */,
+				56EBF0171FDA3544001DDF7F /* SqliteTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56EBF0121FDA34D1001DDF7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 562DC8621FCFD30D00E642AE /* XCFMStudio */;
+			targetProxy = 56EBF0111FDA34D1001DDF7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		562DC86C1FCFD30D00E642AE /* Main.storyboard */ = {
@@ -483,6 +566,36 @@
 			};
 			name = Release;
 		};
+		56EBF0141FDA34D1001DDF7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6P4JKNFHR;
+				INFOPLIST_FILE = XCFMSqliteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UnitTest.XCFMSqliteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCFMStudio.app/XCFMStudio";
+			};
+			name = Debug;
+		};
+		56EBF0151FDA34D1001DDF7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6P4JKNFHR;
+				INFOPLIST_FILE = XCFMSqliteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UnitTest.XCFMSqliteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCFMStudio.app/XCFMStudio";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -500,6 +613,15 @@
 			buildConfigurations = (
 				562DC87A1FCFD30D00E642AE /* Debug */,
 				562DC87B1FCFD30D00E642AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56EBF0131FDA34D1001DDF7F /* Build configuration list for PBXNativeTarget "XCFMSqliteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56EBF0141FDA34D1001DDF7F /* Debug */,
+				56EBF0151FDA34D1001DDF7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
