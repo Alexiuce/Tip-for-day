@@ -21,6 +21,8 @@
 		56B741721FD7956B002F4073 /* XCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B741711FD7956B002F4073 /* XCPlayer.m */; };
 		56DF3F321FD5171800A4B238 /* XCHttpDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DF3F311FD5171800A4B238 /* XCHttpDownloader.m */; };
 		56DF3F351FD51C8800A4B238 /* XCFileManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DF3F341FD51C8800A4B238 /* XCFileManagerTool.m */; };
+		56EBF0051FDA2E1B001DDF7F /* SqliteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EBF0041FDA2E1B001DDF7F /* SqliteHelper.m */; };
+		56EBF0071FDA2E5B001DDF7F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EBF0061FDA2E5B001DDF7F /* libsqlite3.0.tbd */; };
 		56ED65F51FD8EFAD00E49EDF /* XCPlayerFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ED65F41FD8EFAD00E49EDF /* XCPlayerFile.m */; };
 		56ED65F81FD910BB00E49EDF /* XCPlayerDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ED65F71FD910BB00E49EDF /* XCPlayerDownloader.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +52,9 @@
 		56DF3F311FD5171800A4B238 /* XCHttpDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCHttpDownloader.m; sourceTree = "<group>"; };
 		56DF3F331FD51C8800A4B238 /* XCFileManagerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCFileManagerTool.h; sourceTree = "<group>"; };
 		56DF3F341FD51C8800A4B238 /* XCFileManagerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCFileManagerTool.m; sourceTree = "<group>"; };
+		56EBF0031FDA2E1B001DDF7F /* SqliteHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqliteHelper.h; sourceTree = "<group>"; };
+		56EBF0041FDA2E1B001DDF7F /* SqliteHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteHelper.m; sourceTree = "<group>"; };
+		56EBF0061FDA2E5B001DDF7F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		56ED65F31FD8EFAD00E49EDF /* XCPlayerFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPlayerFile.h; sourceTree = "<group>"; };
 		56ED65F41FD8EFAD00E49EDF /* XCPlayerFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCPlayerFile.m; sourceTree = "<group>"; };
 		56ED65F61FD910BB00E49EDF /* XCPlayerDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPlayerDownloader.h; sourceTree = "<group>"; };
@@ -63,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56EBF0071FDA2E5B001DDF7F /* libsqlite3.0.tbd in Frameworks */,
 				55A8499CF66DF7D5E1003B5C /* Pods_XCFMStudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +97,7 @@
 		562DC8651FCFD30D00E642AE /* XCFMStudio */ = {
 			isa = PBXGroup;
 			children = (
+				56EBF0011FDA2D3E001DDF7F /* DatabaseModule */,
 				56B741691FD7946E002F4073 /* PlayModule */,
 				562DC8661FCFD30D00E642AE /* AppDelegate.h */,
 				562DC8671FCFD30D00E642AE /* AppDelegate.m */,
@@ -137,9 +144,27 @@
 			path = XCPlayModule;
 			sourceTree = "<group>";
 		};
+		56EBF0011FDA2D3E001DDF7F /* DatabaseModule */ = {
+			isa = PBXGroup;
+			children = (
+				56EBF0021FDA2DEC001DDF7F /* Classes */,
+			);
+			path = DatabaseModule;
+			sourceTree = "<group>";
+		};
+		56EBF0021FDA2DEC001DDF7F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				56EBF0031FDA2E1B001DDF7F /* SqliteHelper.h */,
+				56EBF0041FDA2E1B001DDF7F /* SqliteHelper.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		8871C855F3E7187F10A051A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56EBF0061FDA2E5B001DDF7F /* libsqlite3.0.tbd */,
 				3AEF141B2A19C9ED2368EB21 /* Pods_XCFMStudio.framework */,
 			);
 			name = Frameworks;
@@ -296,6 +321,7 @@
 				56ED65F81FD910BB00E49EDF /* XCPlayerDownloader.m in Sources */,
 				56DF3F321FD5171800A4B238 /* XCHttpDownloader.m in Sources */,
 				56B7416D1FD794FC002F4073 /* PlayViewController.m in Sources */,
+				56EBF0051FDA2E1B001DDF7F /* SqliteHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

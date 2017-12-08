@@ -105,6 +105,10 @@
         // 2. 处理数据
         NSData *data = [NSData dataWithContentsOfFile:[XCPlayerFile tempFileWithURL:url] options:NSDataReadingMappedIfSafe error:nil];
         
+        if (data == nil) {  // 如果数据被移动到cache时,从cache获取数据
+            data = [NSData dataWithContentsOfFile:[XCPlayerFile cacheFileWithURL:url] options:NSDataReadingMappedIfSafe error:nil];
+        }
+        
         long long requestOffset = loadingRequest.dataRequest.requestedOffset;
         long long currentOffset = loadingRequest.dataRequest.currentOffset;
         if (requestOffset != currentOffset) {
