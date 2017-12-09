@@ -13,7 +13,6 @@
 @implementation DatabaseModelHelper
 
 + (BOOL)createTable:(Class)cls userID:(NSString *)uid{
-    
     /**  获取表名*/
     NSString *tableName = [SqliteModel tableName:cls];
     
