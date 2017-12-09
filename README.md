@@ -51,7 +51,7 @@ a demo code project for iOS / Mac , write down for develop tip
   ```
   > 6.添加输入设备和输出类型数据到采集会话（最好先判断一下是否能添加,可以添加多种输出和输入）
   
-  ```
+  ```swift
    // 添加输入设备到采集会话
         if session.canAddInput(self.inputDevice) {
             session.addInput(self.inputDevice)
@@ -135,7 +135,7 @@ a demo code project for iOS / Mac , write down for develop tip
   
   * 沙盒机制下获取文件的永久权限
     
-      ```swfit
+      ```swift
          // 1 使用 NSOpenPanel让用户选择路径
          @IBAction func selectFilePath(_ sender : NSButton){
             let openPanel = NSOpenPanel()
