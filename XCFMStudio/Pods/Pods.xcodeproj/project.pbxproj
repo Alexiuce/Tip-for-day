@@ -7,112 +7,102 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14DA64EAD00D00CC9FD658FE4EFC3183 /* MainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F4C18D1B1569E6AC59813F45C2E612 /* MainViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BECC44B45702D6C07394F4A7936BDEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		1DAB251158158D3CECA829963D36A83A /* XCToolModuleKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69527FC126A99E6D1C2A3AFE3BCD55E4 /* XCToolModuleKit-dummy.m */; };
-		217FBF7912C079DADF05601D935B5AAC /* UIView+XCFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEE08D227EFC914017FBDEAE93C4084 /* UIView+XCFrame.m */; };
-		52F27D768359AABEFF11598BF25A139F /* UIColor+HEX.h in Headers */ = {isa = PBXBuildFile; fileRef = 6223D7EEDCF0E33C58B5AB43BA753792 /* UIColor+HEX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67E7D361E877A110B5B98CA6D61B48C2 /* MainModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C58C7D92011B9177FC9FD7E9D8CC6F1F /* MainModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7DE0F9ED8660D388970B12AE22D5A8E9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5CEC5542BBE69E7945AB73E01446 /* MainViewController.m */; };
-		909E8EA29BAE48DED3C344F23A06CDC5 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDD6BB0189C93EE870BF89134D24BEF /* Foundation+Log.m */; };
-		9C6CB89DDEC47548F5069730770121C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C53EF1A4AAABB6C7DF488A2C233046F1 /* UIView+XCFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 3576B728B57767083F8EB0DF1EE4CC8C /* UIView+XCFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCB52CFC93E672DE20D9C150D5A67B2E /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = F7028163B833E5C03F8A67CA7A8BEAB6 /* UIColor+HEX.m */; };
-		D04DC6A6F44C05FE8209EBDE3092715F /* Pods-XCFMStudio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE60FBA7AEF127B675C1643501CD8363 /* Pods-XCFMStudio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D881D726C9F7427F8B5D4F6144A9E997 /* Pods-XCFMStudio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C25A0DDCF97D3035EBEE6ED7EC9F0F21 /* Pods-XCFMStudio-dummy.m */; };
-		DDC0B916B1933EC33C48787DD37876F2 /* XCToolModuleKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C30DF69E1F2AB55B5FD114A514C18280 /* XCToolModuleKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED9AFF1D973DA23C7BCB3FC08291D5EA /* MainModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C6E5F836F35C8E5FEEDB60BA84565 /* MainModule-dummy.m */; };
-		F99E0C0D6539E5FBBA33EE94BA7A6479 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1FC83E01FB6EEAF09906D6F663E0D5D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		28D13B002030CA7E506AE37D2B4F6AF3 /* SqliteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5387FE49EA5CCAB6FAF3BB053829998 /* SqliteModel.m */; };
+		3538038DD196D89A786EC1001AB389B0 /* XCSqliteKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B763EC20B929AD77DA05FF311CEEC892 /* XCSqliteKit-dummy.m */; };
+		631A61A534F12CAA550C54607CC93664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6D2CC13D96C216D63F80AB20A9309B6B /* SqliteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7D8AEB4F541EDFD0C929FC67AC655D /* SqliteHelper.m */; };
+		7A61E8EAFD4BF28C2921BAAC019C2171 /* DatabaseModelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1FD5EC8624C177E90385794B80EE16 /* DatabaseModelHelper.m */; };
+		85E89A34D974A45F2E14446BDC777681 /* Pods-XCFMStudio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE60FBA7AEF127B675C1643501CD8363 /* Pods-XCFMStudio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E61188DBDE82FB5BCE8518A25234D8 /* DatabaseModelHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E74466633E789DF44B511AB8BA457A /* DatabaseModelHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7AB7B72DEB9204481D96F39CB34F1AE /* SqliteModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A4212AB2AF1EC7979BCE57F96178279E /* SqliteModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA8F44C42C8AE9C8287F08EE65FA19EB /* Pods-XCFMStudio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C25A0DDCF97D3035EBEE6ED7EC9F0F21 /* Pods-XCFMStudio-dummy.m */; };
+		DF8F1455CD2B0F8CACEF0EE21163F84B /* XCSqliteKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F76AB376841ED72DB73A2A86C2F9B705 /* XCSqliteKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE9C508BD9C1C7CF4900FC6107D8A1CF /* SqliteHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA9972C028896E3ADF3CBB2CF3EF99B /* SqliteHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		11B8AE0FDB9E8CB64A71587B1BFDFD0B /* PBXContainerItemProxy */ = {
+		3F1AB446DFAD6F909A3E8A1D69B65AD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3E48779B088AAFC0AD47D41EEF6DEFA8;
-			remoteInfo = MainModule;
-		};
-		7CD8AB787C4592E6404348409B7E46B6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 325824E8E00644DC1E0999386B120E5B;
-			remoteInfo = XCToolModuleKit;
+			remoteGlobalIDString = 41F82DD8E75D76CE122AD02FB37D7B1B;
+			remoteInfo = XCSqliteKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03B6331786E44D7AAF28D87F42E3D12A /* MainModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MainModule.framework; path = MainModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0421C1E911D0DC1235A92CA82FAF7A8E /* XCToolModuleKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XCToolModuleKit.modulemap; sourceTree = "<group>"; };
-		068B96D7711EE7965E548A479A60AD8B /* Pods_XCFMStudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XCFMStudio.framework; path = "Pods-XCFMStudio.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C48A3B7312172DD35617648C441CF23 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E3847037E251AF9B7572D3D370636E7 /* MainModule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MainModule-prefix.pch"; sourceTree = "<group>"; };
 		20AE0282C63CF505CAC57DC39371A560 /* Pods-XCFMStudio-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XCFMStudio-resources.sh"; sourceTree = "<group>"; };
 		2797E72A9B53C3ADE858429427E99437 /* Pods-XCFMStudio-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCFMStudio-acknowledgements.plist"; sourceTree = "<group>"; };
-		2CB51324AAA56D74FEA53F7C4F8CF65D /* XCToolModuleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XCToolModuleKit.framework; path = XCToolModuleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		349D07105DEDA01D526EB3B9262AA178 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34F4C18D1B1569E6AC59813F45C2E612 /* MainViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = MainModule/Classes/MainViewController.h; sourceTree = "<group>"; };
-		3576B728B57767083F8EB0DF1EE4CC8C /* UIView+XCFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+XCFrame.h"; path = "XCToolModuleKit/Classes/XCCatagory/UIView+XCFrame.h"; sourceTree = "<group>"; };
-		3F2C6E5F836F35C8E5FEEDB60BA84565 /* MainModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MainModule-dummy.m"; sourceTree = "<group>"; };
-		4FEE08D227EFC914017FBDEAE93C4084 /* UIView+XCFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+XCFrame.m"; path = "XCToolModuleKit/Classes/XCCatagory/UIView+XCFrame.m"; sourceTree = "<group>"; };
-		543663A066F9F0EB7BDBD3C986E5D374 /* XCToolModuleKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCToolModuleKit.xcconfig; sourceTree = "<group>"; };
-		5E0810A2EC2BBF289FDE5ACEF1B4FC04 /* MainModule.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MainModule.xcconfig; sourceTree = "<group>"; };
-		6223D7EEDCF0E33C58B5AB43BA753792 /* UIColor+HEX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+HEX.h"; path = "XCToolModuleKit/Classes/XCCatagory/UIColor+HEX.h"; sourceTree = "<group>"; };
+		4F6A31F34A70CC85D6611A8012A72DD6 /* XCSqliteKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCSqliteKit.xcconfig; sourceTree = "<group>"; };
+		51CE86F1894BDE4F7995C3AA09751170 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63DE435EF1AF26D9601C2B9B5AEC5B70 /* Pods-XCFMStudio-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XCFMStudio-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		69527FC126A99E6D1C2A3AFE3BCD55E4 /* XCToolModuleKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCToolModuleKit-dummy.m"; sourceTree = "<group>"; };
+		87A2F910284EE576001B4FFF6BD2EE0A /* XCSqliteKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XCSqliteKit.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		972004A370091C56E7AEF27A078F252B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E7B5CEC5542BBE69E7945AB73E01446 /* MainViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = MainModule/Classes/MainViewController.m; sourceTree = "<group>"; };
+		9A1FD5EC8624C177E90385794B80EE16 /* DatabaseModelHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DatabaseModelHelper.m; path = XCSqliteKit/Classes/DatabaseModelHelper.m; sourceTree = "<group>"; };
+		A4212AB2AF1EC7979BCE57F96178279E /* SqliteModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SqliteModel.h; path = XCSqliteKit/Classes/SqliteModel.h; sourceTree = "<group>"; };
 		AE43A31845A89437AF00F735F5656DB8 /* Pods-XCFMStudio.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-XCFMStudio.modulemap"; sourceTree = "<group>"; };
+		B4313E069B2A13035C79C68B4AA14B38 /* XCSqliteKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XCSqliteKit.framework; path = XCSqliteKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5387FE49EA5CCAB6FAF3BB053829998 /* SqliteModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SqliteModel.m; path = XCSqliteKit/Classes/SqliteModel.m; sourceTree = "<group>"; };
+		B6E74466633E789DF44B511AB8BA457A /* DatabaseModelHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DatabaseModelHelper.h; path = XCSqliteKit/Classes/DatabaseModelHelper.h; sourceTree = "<group>"; };
+		B763EC20B929AD77DA05FF311CEEC892 /* XCSqliteKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCSqliteKit-dummy.m"; sourceTree = "<group>"; };
+		BAA9972C028896E3ADF3CBB2CF3EF99B /* SqliteHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SqliteHelper.h; path = XCSqliteKit/Classes/SqliteHelper.h; sourceTree = "<group>"; };
+		BC7D8AEB4F541EDFD0C929FC67AC655D /* SqliteHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SqliteHelper.m; path = XCSqliteKit/Classes/SqliteHelper.m; sourceTree = "<group>"; };
+		BE18EDCF30702F1E6DB7469C51089FE5 /* Pods_XCFMStudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XCFMStudio.framework; path = "Pods-XCFMStudio.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF33A492500285CDCC68609275DA5609 /* Pods-XCFMStudio-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XCFMStudio-frameworks.sh"; sourceTree = "<group>"; };
 		C25A0DDCF97D3035EBEE6ED7EC9F0F21 /* Pods-XCFMStudio-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XCFMStudio-dummy.m"; sourceTree = "<group>"; };
-		C30DF69E1F2AB55B5FD114A514C18280 /* XCToolModuleKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCToolModuleKit-umbrella.h"; sourceTree = "<group>"; };
-		C58C7D92011B9177FC9FD7E9D8CC6F1F /* MainModule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MainModule-umbrella.h"; sourceTree = "<group>"; };
 		CE60FBA7AEF127B675C1643501CD8363 /* Pods-XCFMStudio-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XCFMStudio-umbrella.h"; sourceTree = "<group>"; };
-		E47CB352A2A4299764C24B1366FECB0C /* MainModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MainModule.modulemap; sourceTree = "<group>"; };
-		E66355F6F312324F2766D77D1F7A5756 /* XCToolModuleKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCToolModuleKit-prefix.pch"; sourceTree = "<group>"; };
 		EA15BA385F732E74E7B7E3C3F2C22568 /* Pods-XCFMStudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCFMStudio.debug.xcconfig"; sourceTree = "<group>"; };
 		EC691E31F11E0756B446FEE34ACA26DB /* Pods-XCFMStudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCFMStudio.release.xcconfig"; sourceTree = "<group>"; };
-		F7028163B833E5C03F8A67CA7A8BEAB6 /* UIColor+HEX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HEX.m"; path = "XCToolModuleKit/Classes/XCCatagory/UIColor+HEX.m"; sourceTree = "<group>"; };
-		FCDD6BB0189C93EE870BF89134D24BEF /* Foundation+Log.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Foundation+Log.m"; path = "XCToolModuleKit/Classes/XCCatagory/Foundation+Log.m"; sourceTree = "<group>"; };
+		F76AB376841ED72DB73A2A86C2F9B705 /* XCSqliteKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCSqliteKit-umbrella.h"; sourceTree = "<group>"; };
+		F972D853B4F960022B08CC3ACA0D7150 /* XCSqliteKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCSqliteKit-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4669B58C338D8449C0681A06C4FF2928 /* Frameworks */ = {
+		445F92157694F8505A5318D068367AE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F99E0C0D6539E5FBBA33EE94BA7A6479 /* Foundation.framework in Frameworks */,
+				1FC83E01FB6EEAF09906D6F663E0D5D4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		827CFD9356D5FFEBC9152B95AD705278 /* Frameworks */ = {
+		AE1D17083C6D9D7D191E23E060C9A50C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BECC44B45702D6C07394F4A7936BDEC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F14A61F606BB608BC688C85484795485 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C6CB89DDEC47548F5069730770121C7 /* Foundation.framework in Frameworks */,
+				631A61A534F12CAA550C54607CC93664 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		290D86B0D18C4DE96D3E9C88C234A0C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5A6787697791508E6E0F7A75EFDACDC /* XCSqliteKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		377A1341352B307238EBE5A66BCDFC21 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				494D6258B69185D0F6ED00D3E473A9CC /* Pods-XCFMStudio */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		386EDE3C3633D6A0FB8BEE9AE809E7E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE18EDCF30702F1E6DB7469C51089FE5 /* Pods_XCFMStudio.framework */,
+				B4313E069B2A13035C79C68B4AA14B38 /* XCSqliteKit.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		494D6258B69185D0F6ED00D3E473A9CC /* Pods-XCFMStudio */ = {
@@ -133,41 +123,18 @@
 			path = "Target Support Files/Pods-XCFMStudio";
 			sourceTree = "<group>";
 		};
-		4F7A51E55FCD61E806F4ABB4BE4B7E96 /* XCToolModuleKit */ = {
+		653D56B891692A6D108135E6059777C0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FCDD6BB0189C93EE870BF89134D24BEF /* Foundation+Log.m */,
-				6223D7EEDCF0E33C58B5AB43BA753792 /* UIColor+HEX.h */,
-				F7028163B833E5C03F8A67CA7A8BEAB6 /* UIColor+HEX.m */,
-				3576B728B57767083F8EB0DF1EE4CC8C /* UIView+XCFrame.h */,
-				4FEE08D227EFC914017FBDEAE93C4084 /* UIView+XCFrame.m */,
-				DB4895F8446710B52A198C3AA660E2E1 /* Support Files */,
-			);
-			name = XCToolModuleKit;
-			path = XCToolModuleKit;
-			sourceTree = "<group>";
-		};
-		5012D090AC7EEF6C009F25431B44FD28 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				972004A370091C56E7AEF27A078F252B /* Info.plist */,
-				E47CB352A2A4299764C24B1366FECB0C /* MainModule.modulemap */,
-				5E0810A2EC2BBF289FDE5ACEF1B4FC04 /* MainModule.xcconfig */,
-				3F2C6E5F836F35C8E5FEEDB60BA84565 /* MainModule-dummy.m */,
-				1E3847037E251AF9B7572D3D370636E7 /* MainModule-prefix.pch */,
-				C58C7D92011B9177FC9FD7E9D8CC6F1F /* MainModule-umbrella.h */,
+				51CE86F1894BDE4F7995C3AA09751170 /* Info.plist */,
+				87A2F910284EE576001B4FFF6BD2EE0A /* XCSqliteKit.modulemap */,
+				4F6A31F34A70CC85D6611A8012A72DD6 /* XCSqliteKit.xcconfig */,
+				B763EC20B929AD77DA05FF311CEEC892 /* XCSqliteKit-dummy.m */,
+				F972D853B4F960022B08CC3ACA0D7150 /* XCSqliteKit-prefix.pch */,
+				F76AB376841ED72DB73A2A86C2F9B705 /* XCSqliteKit-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MainModule";
-			sourceTree = "<group>";
-		};
-		599E9EFB1B2DC3451F8BF243CE2CB4EA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A8ABE4294A8DFF749CE5A8CC949D9FCA /* MainModule */,
-				4F7A51E55FCD61E806F4ABB4BE4B7E96 /* XCToolModuleKit */,
-			);
-			name = Pods;
+			path = "../Target Support Files/XCSqliteKit";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -175,21 +142,25 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				599E9EFB1B2DC3451F8BF243CE2CB4EA /* Pods */,
-				D3803DE556452F6FB69187496017F65B /* Products */,
+				290D86B0D18C4DE96D3E9C88C234A0C8 /* Pods */,
+				386EDE3C3633D6A0FB8BEE9AE809E7E2 /* Products */,
 				377A1341352B307238EBE5A66BCDFC21 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A8ABE4294A8DFF749CE5A8CC949D9FCA /* MainModule */ = {
+		A5A6787697791508E6E0F7A75EFDACDC /* XCSqliteKit */ = {
 			isa = PBXGroup;
 			children = (
-				34F4C18D1B1569E6AC59813F45C2E612 /* MainViewController.h */,
-				9E7B5CEC5542BBE69E7945AB73E01446 /* MainViewController.m */,
-				5012D090AC7EEF6C009F25431B44FD28 /* Support Files */,
+				B6E74466633E789DF44B511AB8BA457A /* DatabaseModelHelper.h */,
+				9A1FD5EC8624C177E90385794B80EE16 /* DatabaseModelHelper.m */,
+				BAA9972C028896E3ADF3CBB2CF3EF99B /* SqliteHelper.h */,
+				BC7D8AEB4F541EDFD0C929FC67AC655D /* SqliteHelper.m */,
+				A4212AB2AF1EC7979BCE57F96178279E /* SqliteModel.h */,
+				B5387FE49EA5CCAB6FAF3BB053829998 /* SqliteModel.m */,
+				653D56B891692A6D108135E6059777C0 /* Support Files */,
 			);
-			name = MainModule;
-			path = MainModule;
+			name = XCSqliteKit;
+			path = XCSqliteKit;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -208,114 +179,64 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D3803DE556452F6FB69187496017F65B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				03B6331786E44D7AAF28D87F42E3D12A /* MainModule.framework */,
-				068B96D7711EE7965E548A479A60AD8B /* Pods_XCFMStudio.framework */,
-				2CB51324AAA56D74FEA53F7C4F8CF65D /* XCToolModuleKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DB4895F8446710B52A198C3AA660E2E1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				349D07105DEDA01D526EB3B9262AA178 /* Info.plist */,
-				0421C1E911D0DC1235A92CA82FAF7A8E /* XCToolModuleKit.modulemap */,
-				543663A066F9F0EB7BDBD3C986E5D374 /* XCToolModuleKit.xcconfig */,
-				69527FC126A99E6D1C2A3AFE3BCD55E4 /* XCToolModuleKit-dummy.m */,
-				E66355F6F312324F2766D77D1F7A5756 /* XCToolModuleKit-prefix.pch */,
-				C30DF69E1F2AB55B5FD114A514C18280 /* XCToolModuleKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/XCToolModuleKit";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		085337E7EC76D570162C62B255F726E4 /* Headers */ = {
+		69E115C7F8F3C3208104D5611E8C89AC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67E7D361E877A110B5B98CA6D61B48C2 /* MainModule-umbrella.h in Headers */,
-				14DA64EAD00D00CC9FD658FE4EFC3183 /* MainViewController.h in Headers */,
+				89E61188DBDE82FB5BCE8518A25234D8 /* DatabaseModelHelper.h in Headers */,
+				FE9C508BD9C1C7CF4900FC6107D8A1CF /* SqliteHelper.h in Headers */,
+				B7AB7B72DEB9204481D96F39CB34F1AE /* SqliteModel.h in Headers */,
+				DF8F1455CD2B0F8CACEF0EE21163F84B /* XCSqliteKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3BE04CB592AFA171A2DD3C22CAB7D42 /* Headers */ = {
+		C78806E1E54654A578B1F28AC8B4FC11 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F27D768359AABEFF11598BF25A139F /* UIColor+HEX.h in Headers */,
-				C53EF1A4AAABB6C7DF488A2C233046F1 /* UIView+XCFrame.h in Headers */,
-				DDC0B916B1933EC33C48787DD37876F2 /* XCToolModuleKit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DAE734CD52FBCA275AE5A5925706EEA8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D04DC6A6F44C05FE8209EBDE3092715F /* Pods-XCFMStudio-umbrella.h in Headers */,
+				85E89A34D974A45F2E14446BDC777681 /* Pods-XCFMStudio-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		325824E8E00644DC1E0999386B120E5B /* XCToolModuleKit */ = {
+		41F82DD8E75D76CE122AD02FB37D7B1B /* XCSqliteKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB1F0AE6133A3675102BF7F68815B0FD /* Build configuration list for PBXNativeTarget "XCToolModuleKit" */;
+			buildConfigurationList = 99578EE4C439E7891F51AAF346953147 /* Build configuration list for PBXNativeTarget "XCSqliteKit" */;
 			buildPhases = (
-				ACD98F97363D89EEE2C719B442EA4778 /* Sources */,
-				F14A61F606BB608BC688C85484795485 /* Frameworks */,
-				B3BE04CB592AFA171A2DD3C22CAB7D42 /* Headers */,
+				7A081ED367B861375AF6979D0371EDE1 /* Sources */,
+				AE1D17083C6D9D7D191E23E060C9A50C /* Frameworks */,
+				69E115C7F8F3C3208104D5611E8C89AC /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = XCToolModuleKit;
-			productName = XCToolModuleKit;
-			productReference = 2CB51324AAA56D74FEA53F7C4F8CF65D /* XCToolModuleKit.framework */;
+			name = XCSqliteKit;
+			productName = XCSqliteKit;
+			productReference = B4313E069B2A13035C79C68B4AA14B38 /* XCSqliteKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3E48779B088AAFC0AD47D41EEF6DEFA8 /* MainModule */ = {
+		C478A7D7AB953294E3433D3931082487 /* Pods-XCFMStudio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD521AE49F127A6F78BD2884F9F9D1AE /* Build configuration list for PBXNativeTarget "MainModule" */;
+			buildConfigurationList = C7213C88011CE78C15370D74D978F1D9 /* Build configuration list for PBXNativeTarget "Pods-XCFMStudio" */;
 			buildPhases = (
-				D1FC5C107D217895CB72C33F2C125427 /* Sources */,
-				827CFD9356D5FFEBC9152B95AD705278 /* Frameworks */,
-				085337E7EC76D570162C62B255F726E4 /* Headers */,
+				6AE3266E825E74DDE7E9E3E5A25E05DC /* Sources */,
+				445F92157694F8505A5318D068367AE9 /* Frameworks */,
+				C78806E1E54654A578B1F28AC8B4FC11 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = MainModule;
-			productName = MainModule;
-			productReference = 03B6331786E44D7AAF28D87F42E3D12A /* MainModule.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BAD0DFB143255097350C6EBBFBA1FBDF /* Pods-XCFMStudio */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E8D7C3CB690420EDE5294225568DF352 /* Build configuration list for PBXNativeTarget "Pods-XCFMStudio" */;
-			buildPhases = (
-				A299284DD6762FD3FF9F2FD482905F96 /* Sources */,
-				4669B58C338D8449C0681A06C4FF2928 /* Frameworks */,
-				DAE734CD52FBCA275AE5A5925706EEA8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7E0040792B830399CDCEF8EB1C4E9D52 /* PBXTargetDependency */,
-				ABEDBDF7EB7F6802D37D0BBE43D93E6A /* PBXTargetDependency */,
+				06CAF16AA1CC9055A746AE8D39AA8B18 /* PBXTargetDependency */,
 			);
 			name = "Pods-XCFMStudio";
 			productName = "Pods-XCFMStudio";
-			productReference = 068B96D7711EE7965E548A479A60AD8B /* Pods_XCFMStudio.framework */;
+			productReference = BE18EDCF30702F1E6DB7469C51089FE5 /* Pods_XCFMStudio.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -335,153 +256,49 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D3803DE556452F6FB69187496017F65B /* Products */;
+			productRefGroup = 386EDE3C3633D6A0FB8BEE9AE809E7E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3E48779B088AAFC0AD47D41EEF6DEFA8 /* MainModule */,
-				BAD0DFB143255097350C6EBBFBA1FBDF /* Pods-XCFMStudio */,
-				325824E8E00644DC1E0999386B120E5B /* XCToolModuleKit */,
+				C478A7D7AB953294E3433D3931082487 /* Pods-XCFMStudio */,
+				41F82DD8E75D76CE122AD02FB37D7B1B /* XCSqliteKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A299284DD6762FD3FF9F2FD482905F96 /* Sources */ = {
+		6AE3266E825E74DDE7E9E3E5A25E05DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D881D726C9F7427F8B5D4F6144A9E997 /* Pods-XCFMStudio-dummy.m in Sources */,
+				CA8F44C42C8AE9C8287F08EE65FA19EB /* Pods-XCFMStudio-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACD98F97363D89EEE2C719B442EA4778 /* Sources */ = {
+		7A081ED367B861375AF6979D0371EDE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				909E8EA29BAE48DED3C344F23A06CDC5 /* Foundation+Log.m in Sources */,
-				CCB52CFC93E672DE20D9C150D5A67B2E /* UIColor+HEX.m in Sources */,
-				217FBF7912C079DADF05601D935B5AAC /* UIView+XCFrame.m in Sources */,
-				1DAB251158158D3CECA829963D36A83A /* XCToolModuleKit-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1FC5C107D217895CB72C33F2C125427 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED9AFF1D973DA23C7BCB3FC08291D5EA /* MainModule-dummy.m in Sources */,
-				7DE0F9ED8660D388970B12AE22D5A8E9 /* MainViewController.m in Sources */,
+				7A61E8EAFD4BF28C2921BAAC019C2171 /* DatabaseModelHelper.m in Sources */,
+				6D2CC13D96C216D63F80AB20A9309B6B /* SqliteHelper.m in Sources */,
+				28D13B002030CA7E506AE37D2B4F6AF3 /* SqliteModel.m in Sources */,
+				3538038DD196D89A786EC1001AB389B0 /* XCSqliteKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7E0040792B830399CDCEF8EB1C4E9D52 /* PBXTargetDependency */ = {
+		06CAF16AA1CC9055A746AE8D39AA8B18 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MainModule;
-			target = 3E48779B088AAFC0AD47D41EEF6DEFA8 /* MainModule */;
-			targetProxy = 11B8AE0FDB9E8CB64A71587B1BFDFD0B /* PBXContainerItemProxy */;
-		};
-		ABEDBDF7EB7F6802D37D0BBE43D93E6A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = XCToolModuleKit;
-			target = 325824E8E00644DC1E0999386B120E5B /* XCToolModuleKit */;
-			targetProxy = 7CD8AB787C4592E6404348409B7E46B6 /* PBXContainerItemProxy */;
+			name = XCSqliteKit;
+			target = 41F82DD8E75D76CE122AD02FB37D7B1B /* XCSqliteKit */;
+			targetProxy = 3F1AB446DFAD6F909A3E8A1D69B65AD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01F7A1F15F949930D24869444C681247 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 543663A066F9F0EB7BDBD3C986E5D374 /* XCToolModuleKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XCToolModuleKit/XCToolModuleKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XCToolModuleKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XCToolModuleKit/XCToolModuleKit.modulemap";
-				PRODUCT_NAME = XCToolModuleKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		458DFC37CCE88D90694C646325207503 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E0810A2EC2BBF289FDE5ACEF1B4FC04 /* MainModule.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MainModule/MainModule-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MainModule/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MainModule/MainModule.modulemap";
-				PRODUCT_NAME = MainModule;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		464ACC27433BDE7975551F3E28C148EE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E0810A2EC2BBF289FDE5ACEF1B4FC04 /* MainModule.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MainModule/MainModule-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MainModule/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MainModule/MainModule.modulemap";
-				PRODUCT_NAME = MainModule;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5164A828BA777BCF8EEB2BD989FAEF60 /* Release */ = {
+		4DBA3013DD4DAE1EA6301166E0E0B578 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EC691E31F11E0756B446FEE34ACA26DB /* Pods-XCFMStudio.release.xcconfig */;
 			buildSettings = {
@@ -513,6 +330,35 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		529A4499FEECD13DC94087B84EAFFB67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F6A31F34A70CC85D6611A8012A72DD6 /* XCSqliteKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XCSqliteKit/XCSqliteKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCSqliteKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XCSqliteKit/XCSqliteKit.modulemap";
+				PRODUCT_NAME = XCSqliteKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		6F9224530522DD3C735EC96CF142642E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -569,9 +415,9 @@
 			};
 			name = Release;
 		};
-		803E92C77C465736DC94CFD288B68703 /* Release */ = {
+		7DDBE3245A59CBE15BD9BBD823D2A2E5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 543663A066F9F0EB7BDBD3C986E5D374 /* XCToolModuleKit.xcconfig */;
+			baseConfigurationReference = 4F6A31F34A70CC85D6611A8012A72DD6 /* XCSqliteKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -582,13 +428,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XCToolModuleKit/XCToolModuleKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XCToolModuleKit/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/XCSqliteKit/XCSqliteKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCSqliteKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XCToolModuleKit/XCToolModuleKit.modulemap";
-				PRODUCT_NAME = XCToolModuleKit;
+				MODULEMAP_FILE = "Target Support Files/XCSqliteKit/XCSqliteKit.modulemap";
+				PRODUCT_NAME = XCSqliteKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -598,6 +444,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		8E5663A040CF9E66EF84B275DFC7BA6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA15BA385F732E74E7B7E3C3F2C22568 /* Pods-XCFMStudio.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XCFMStudio/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XCFMStudio/Pods-XCFMStudio.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_XCFMStudio;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -659,38 +537,6 @@
 			};
 			name = Debug;
 		};
-		B98BE9200FA2F7BA68620947D2DF4AE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA15BA385F732E74E7B7E3C3F2C22568 /* Pods-XCFMStudio.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-XCFMStudio/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-XCFMStudio/Pods-XCFMStudio.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_XCFMStudio;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -703,29 +549,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD521AE49F127A6F78BD2884F9F9D1AE /* Build configuration list for PBXNativeTarget "MainModule" */ = {
+		99578EE4C439E7891F51AAF346953147 /* Build configuration list for PBXNativeTarget "XCSqliteKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				464ACC27433BDE7975551F3E28C148EE /* Debug */,
-				458DFC37CCE88D90694C646325207503 /* Release */,
+				529A4499FEECD13DC94087B84EAFFB67 /* Debug */,
+				7DDBE3245A59CBE15BD9BBD823D2A2E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB1F0AE6133A3675102BF7F68815B0FD /* Build configuration list for PBXNativeTarget "XCToolModuleKit" */ = {
+		C7213C88011CE78C15370D74D978F1D9 /* Build configuration list for PBXNativeTarget "Pods-XCFMStudio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				01F7A1F15F949930D24869444C681247 /* Debug */,
-				803E92C77C465736DC94CFD288B68703 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E8D7C3CB690420EDE5294225568DF352 /* Build configuration list for PBXNativeTarget "Pods-XCFMStudio" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B98BE9200FA2F7BA68620947D2DF4AE9 /* Debug */,
-				5164A828BA777BCF8EEB2BD989FAEF60 /* Release */,
+				8E5663A040CF9E66EF84B275DFC7BA6C /* Debug */,
+				4DBA3013DD4DAE1EA6301166E0E0B578 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

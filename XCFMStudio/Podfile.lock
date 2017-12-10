@@ -1,15 +1,12 @@
 PODS:
-  - MainModule (0.1.0)
-  - XCToolModuleKit (0.1.0)
+  - XCSqliteKit (0.1.0)
 
 DEPENDENCIES:
-  - MainModule
-  - XCToolModuleKit
+  - XCSqliteKit
 
 SPEC CHECKSUMS:
-  MainModule: e0611e1f7375314186ea1209518a83d613ce822c
-  XCToolModuleKit: 47990d06a5fcdc3cf43b99bd9b153f3ee28820b9
+  XCSqliteKit: 3410d2c4fccf626a7a76331b9496526eb0387fe4
 
-PODFILE CHECKSUM: a99286482d325f0ac2618f6a8725cb9b805374e1
+PODFILE CHECKSUM: 4408c67abcebcf5ad4e547c2a980c3c5871c3537
 
 COCOAPODS: 1.4.0.beta.2
