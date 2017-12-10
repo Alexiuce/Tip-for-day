@@ -1,0 +1,6 @@
+framework module XCSqliteKit {
+  umbrella header "XCSqliteKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

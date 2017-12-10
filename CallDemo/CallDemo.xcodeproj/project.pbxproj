@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F01DB3EEC47744E85A0E0E41 /* libPods-CallDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 580B4D2CC23CD5D0FE4E9819 /* libPods-CallDemo.a */; };
+		1946056E85C2211B1A9E9539 /* Pods_CallDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749369471B99015324B6676F /* Pods_CallDemo.framework */; };
 		F21BA5271F203E2800003C27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F21BA5261F203E2800003C27 /* main.m */; };
 		F21BA52A1F203E2900003C27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F21BA5291F203E2900003C27 /* AppDelegate.m */; };
 		F21BA52D1F203E2900003C27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21BA52C1F203E2900003C27 /* ViewController.m */; };
@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		580B4D2CC23CD5D0FE4E9819 /* libPods-CallDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CallDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		749369471B99015324B6676F /* Pods_CallDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CallDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ADCB91957F3F3C0F46268C9 /* Pods-CallDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallDemo/Pods-CallDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8C1B593F3DB1D4EE1DFD4F8F /* Pods-CallDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallDemo/Pods-CallDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F21BA5221F203E2800003C27 /* CallDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,7 +54,7 @@
 			files = (
 				F21BA5401F203F1D00003C27 /* libstdc++.tbd in Frameworks */,
 				F21BA53D1F203F0300003C27 /* ALCall_Sdk.framework in Frameworks */,
-				F01DB3EEC47744E85A0E0E41 /* libPods-CallDemo.a in Frameworks */,
+				1946056E85C2211B1A9E9539 /* Pods_CallDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				F21BA53F1F203F1D00003C27 /* libstdc++.tbd */,
-				580B4D2CC23CD5D0FE4E9819 /* libPods-CallDemo.a */,
+				749369471B99015324B6676F /* Pods_CallDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -230,13 +230,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CallDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F22672B7941AF58EEE68A099 /* [CP] Embed Pods Frameworks */ = {
@@ -245,9 +248,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CallDemo/Pods-CallDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/XCSqliteKit/XCSqliteKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCSqliteKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
