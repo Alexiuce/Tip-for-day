@@ -15,6 +15,7 @@
 		562DC8731FCFD30D00E642AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562DC8711FCFD30D00E642AE /* LaunchScreen.storyboard */; };
 		562DC8761FCFD30D00E642AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 562DC8751FCFD30D00E642AE /* main.m */; };
 		5682E43D1FDE300600D12681 /* XCMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5682E43C1FDE300600D12681 /* XCMediatorManager.m */; };
+		5682E4411FDE4A4B00D12681 /* XCAudioRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 5682E4401FDE4A4B00D12681 /* XCAudioRecord.m */; };
 		56B741651FD778CF002F4073 /* XCHttpDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B741641FD778CF002F4073 /* XCHttpDownloadManager.m */; };
 		56B741681FD77E48002F4073 /* XCMD5Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B741671FD77E48002F4073 /* XCMD5Helper.m */; };
 		56B7416D1FD794FC002F4073 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B7416B1FD794FC002F4073 /* PlayViewController.m */; };
@@ -53,6 +54,8 @@
 		562DC8751FCFD30D00E642AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5682E43B1FDE300600D12681 /* XCMediatorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCMediatorManager.h; sourceTree = "<group>"; };
 		5682E43C1FDE300600D12681 /* XCMediatorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCMediatorManager.m; sourceTree = "<group>"; };
+		5682E43F1FDE4A4B00D12681 /* XCAudioRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCAudioRecord.h; sourceTree = "<group>"; };
+		5682E4401FDE4A4B00D12681 /* XCAudioRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCAudioRecord.m; sourceTree = "<group>"; };
 		56B741631FD778CF002F4073 /* XCHttpDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCHttpDownloadManager.h; sourceTree = "<group>"; };
 		56B741641FD778CF002F4073 /* XCHttpDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCHttpDownloadManager.m; sourceTree = "<group>"; };
 		56B741661FD77E48002F4073 /* XCMD5Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCMD5Helper.h; sourceTree = "<group>"; };
@@ -122,6 +125,7 @@
 		562DC8651FCFD30D00E642AE /* XCFMStudio */ = {
 			isa = PBXGroup;
 			children = (
+				5682E43E1FDE4A2B00D12681 /* XCAudioRecord */,
 				5682E43A1FDE2FC300D12681 /* Mediator */,
 				56B741691FD7946E002F4073 /* PlayModule */,
 				562DC8661FCFD30D00E642AE /* AppDelegate.h */,
@@ -150,6 +154,15 @@
 				5682E43C1FDE300600D12681 /* XCMediatorManager.m */,
 			);
 			path = Mediator;
+			sourceTree = "<group>";
+		};
+		5682E43E1FDE4A2B00D12681 /* XCAudioRecord */ = {
+			isa = PBXGroup;
+			children = (
+				5682E43F1FDE4A4B00D12681 /* XCAudioRecord.h */,
+				5682E4401FDE4A4B00D12681 /* XCAudioRecord.m */,
+			);
+			path = XCAudioRecord;
 			sourceTree = "<group>";
 		};
 		56B741691FD7946E002F4073 /* PlayModule */ = {
@@ -366,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5682E4411FDE4A4B00D12681 /* XCAudioRecord.m in Sources */,
 				562DC8761FCFD30D00E642AE /* main.m in Sources */,
 				5609EFA41FD8D38900598BE4 /* XCPlayerDownloadDelegate.m in Sources */,
 				562DC8681FCFD30D00E642AE /* AppDelegate.m in Sources */,
