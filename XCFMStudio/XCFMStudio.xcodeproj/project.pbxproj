@@ -14,6 +14,7 @@
 		562DC8701FCFD30D00E642AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562DC86F1FCFD30D00E642AE /* Assets.xcassets */; };
 		562DC8731FCFD30D00E642AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562DC8711FCFD30D00E642AE /* LaunchScreen.storyboard */; };
 		562DC8761FCFD30D00E642AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 562DC8751FCFD30D00E642AE /* main.m */; };
+		567D93261FE114C700447D9E /* XCAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 567D93251FE114C700447D9E /* XCAudioManager.m */; };
 		5682E43D1FDE300600D12681 /* XCMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5682E43C1FDE300600D12681 /* XCMediatorManager.m */; };
 		5682E4411FDE4A4B00D12681 /* XCAudioRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 5682E4401FDE4A4B00D12681 /* XCAudioRecord.m */; };
 		56B741651FD778CF002F4073 /* XCHttpDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B741641FD778CF002F4073 /* XCHttpDownloadManager.m */; };
@@ -52,6 +53,8 @@
 		562DC8721FCFD30D00E642AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		562DC8741FCFD30D00E642AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		562DC8751FCFD30D00E642AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		567D93241FE114C700447D9E /* XCAudioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCAudioManager.h; sourceTree = "<group>"; };
+		567D93251FE114C700447D9E /* XCAudioManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCAudioManager.m; sourceTree = "<group>"; };
 		5682E43B1FDE300600D12681 /* XCMediatorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCMediatorManager.h; sourceTree = "<group>"; };
 		5682E43C1FDE300600D12681 /* XCMediatorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCMediatorManager.m; sourceTree = "<group>"; };
 		5682E43F1FDE4A4B00D12681 /* XCAudioRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCAudioRecord.h; sourceTree = "<group>"; };
@@ -161,6 +164,8 @@
 			children = (
 				5682E43F1FDE4A4B00D12681 /* XCAudioRecord.h */,
 				5682E4401FDE4A4B00D12681 /* XCAudioRecord.m */,
+				567D93241FE114C700447D9E /* XCAudioManager.h */,
+				567D93251FE114C700447D9E /* XCAudioManager.m */,
 			);
 			path = XCAudioRecord;
 			sourceTree = "<group>";
@@ -390,6 +395,7 @@
 				56B741651FD778CF002F4073 /* XCHttpDownloadManager.m in Sources */,
 				56B741721FD7956B002F4073 /* XCPlayer.m in Sources */,
 				56ED65F81FD910BB00E49EDF /* XCPlayerDownloader.m in Sources */,
+				567D93261FE114C700447D9E /* XCAudioManager.m in Sources */,
 				56DF3F321FD5171800A4B238 /* XCHttpDownloader.m in Sources */,
 				56B7416D1FD794FC002F4073 /* PlayViewController.m in Sources */,
 			);
