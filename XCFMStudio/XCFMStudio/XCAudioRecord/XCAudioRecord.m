@@ -13,6 +13,7 @@
 
 @interface XCAudioRecord()
 @property (nonatomic, strong) AVAudioRecorder *recorder;
+@property (nonatomic, copy) NSString *savePath;
 
 @end
 
@@ -20,13 +21,36 @@
 @implementation XCAudioRecord
 
 
+- (void)startRecordInPath:(NSString *)recordSavePath{
+    _savePath = recordSavePath;
+    [self.recorder prepareToRecord];
+    [self.recorder record];
+}
+
+- (void)stopRecord{
+    [self.recorder stop];
+}
+- (void)pauseRecord{
+    [self.recorder pause];
+}
+
+- (void)deleteRecord{
+    [self.recorder stop];
+    [self.recorder deleteRecording];
+}
+
+- (void)restartRecord{
+    self.recorder = nil;
+    [self startRecordInPath:self.savePath];
+}
+
 - (AVAudioRecorder *)recorder{
     if(_recorder == nil){
         // 1. 设置录音会话
         [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
         [[AVAudioSession sharedInstance] setActive:YES error:nil];
         // 2. 设置录音保持路径
-        NSURL *saveUrl = [NSURL URLWithString:@""];
+        NSURL *saveUrl = [NSURL URLWithString:self.savePath];
         // 3. 配置录音参数
         NSMutableDictionary *audioConfiger = [NSMutableDictionary dictionary];
         // 3.1 编码格式

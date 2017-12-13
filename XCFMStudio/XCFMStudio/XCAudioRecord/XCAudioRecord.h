@@ -10,4 +10,12 @@
 
 @interface XCAudioRecord : NSObject
 
+- (void)startRecordInPath:(NSString *)recordSavePath;
+- (void)stopRecord;
+- (void)pauseRecord;
+- (void)deleteRecord;
+
+- (void)restartRecord;
+
+
 @end
