@@ -1,14 +1,14 @@
 PODS:
-  - GCDWebServer (3.4.2):
-    - GCDWebServer/Core (= 3.4.2)
-  - GCDWebServer/Core (3.4.2)
+  - GCDWebServer (3.4.1):
+    - GCDWebServer/Core (= 3.4.1)
+  - GCDWebServer/Core (3.4.1)
 
 DEPENDENCIES:
-  - GCDWebServer (~> 3.0)
+  - GCDWebServer
 
 SPEC CHECKSUMS:
-  GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
+  GCDWebServer: 1db60034fe0e78a4a8524bd6c7cd97cd3c589870
 
-PODFILE CHECKSUM: 4a8ae95a6bacee8f73f06d814a59cb58c99dd9a1
+PODFILE CHECKSUM: b3c1c07effd22524c4b4b96595075d0fbb7a497a
 
 COCOAPODS: 1.4.0.beta.2

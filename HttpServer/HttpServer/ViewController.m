@@ -7,13 +7,19 @@
 //
 
 #import "ViewController.h"
+#import "GCDWebServer.h"
+#import "GCDWebServerDataResponse.h"
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // Do any additional setup after loading the view.
+    GCDWebServer *webServer = [GCDWebServer new];
+    [webServer addDefaultHandlerForMethod:@"GET" requestClass:[GCDWebServerRequest class] processBlock:^GCDWebServerResponse * _Nullable(__kindof GCDWebServerRequest * _Nonnull request) {
+        return [GCDWebServerDataResponse responseWithHTML:@"<html><body>Hello WebServer</body></html>"];
+    }];
+    [webServer runWithPort:8888 bonjourName:nil];
 }
 
 
