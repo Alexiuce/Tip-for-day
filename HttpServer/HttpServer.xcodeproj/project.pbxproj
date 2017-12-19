@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		564148A71FE8B22A0030659C /* SocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 564148A61FE8B22A0030659C /* SocketServer.m */; };
 		D8281C0A1FE53407001F2776 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8281C091FE53407001F2776 /* AppDelegate.m */; };
 		D8281C0D1FE53407001F2776 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8281C0C1FE53407001F2776 /* ViewController.m */; };
 		D8281C0F1FE53407001F2776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8281C0E1FE53407001F2776 /* Assets.xcassets */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		564148A51FE8B22A0030659C /* SocketServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketServer.h; sourceTree = "<group>"; };
+		564148A61FE8B22A0030659C /* SocketServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketServer.m; sourceTree = "<group>"; };
 		B486435DB8F6B5328236FA6C /* Pods_HttpServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HttpServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE54DEA6E3E34C73DA857A56 /* Pods-HttpServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HttpServer.release.xcconfig"; path = "Pods/Target Support Files/Pods-HttpServer/Pods-HttpServer.release.xcconfig"; sourceTree = "<group>"; };
 		D8281C051FE53407001F2776 /* HttpServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HttpServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +54,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		564148A41FE8B20A0030659C /* SocketServer */ = {
+			isa = PBXGroup;
+			children = (
+				564148A51FE8B22A0030659C /* SocketServer.h */,
+				564148A61FE8B22A0030659C /* SocketServer.m */,
+			);
+			path = SocketServer;
+			sourceTree = "<group>";
+		};
 		610A251DA21378704D9F0EC1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +93,7 @@
 		D8281C071FE53407001F2776 /* HttpServer */ = {
 			isa = PBXGroup;
 			children = (
+				564148A41FE8B20A0030659C /* SocketServer */,
 				D8281C081FE53407001F2776 /* AppDelegate.h */,
 				D8281C091FE53407001F2776 /* AppDelegate.m */,
 				D8281C0B1FE53407001F2776 /* ViewController.h */,
@@ -170,10 +183,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HttpServer/Pods-HttpServer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8281C0D1FE53407001F2776 /* ViewController.m in Sources */,
+				564148A71FE8B22A0030659C /* SocketServer.m in Sources */,
 				D8281C151FE53407001F2776 /* main.m in Sources */,
 				D8281C0A1FE53407001F2776 /* AppDelegate.m in Sources */,
 			);
