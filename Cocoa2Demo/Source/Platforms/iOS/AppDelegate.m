@@ -27,6 +27,7 @@
 #import "CCBuilderReader.h"
 #endif
 #import "MainScene.h"
+#import "GameScene.h"
 
 
 @implementation AppController
@@ -94,11 +95,13 @@
     CCDirectorIOS* director = (CCDirectorIOS*)[CCDirector sharedDirector];
     
     // Creat a scene
-    CCScene* main = [MainScene new];
+//    CCScene* main = [MainScene new];
+    CCScene *game = [GameScene new];
     
     // Run the director with the scene.
     // Push as much scenes as you want (maybe useful for 3D touch)
-    [director runWithScene:main];
+//    [director runWithScene:main];
+    [director runWithScene:game];
     
     // Stay positive. Always return a YES :)
     return YES;
