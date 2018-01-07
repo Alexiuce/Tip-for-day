@@ -90,13 +90,15 @@
 #endif
     // We are done ...
     // Lets get this thing on the road!
+    
+    cocos2dSetup[@"CCSetupScreenOrientation"] = CCScreenOrientationPortrait;
     [self setupCocos2dWithOptions:cocos2dSetup];
     
     CCDirectorIOS* director = (CCDirectorIOS*)[CCDirector sharedDirector];
     
     // Creat a scene
 //    CCScene* main = [MainScene new];
-    CCScene *game = [GameScene new];
+    CCScene *game = [GameScene node];
     
     // Run the director with the scene.
     // Push as much scenes as you want (maybe useful for 3D touch)
