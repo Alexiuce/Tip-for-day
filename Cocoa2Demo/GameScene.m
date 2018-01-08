@@ -7,6 +7,7 @@
 //
 
 #import "GameScene.h"
+#import "QQSprite.h"
 
 @implementation GameScene
 
@@ -42,8 +43,13 @@
     id move = [CCActionMoveTo actionWithDuration:2.0 position:ccp(200, 200)];
     [sprite runAction:move];
     
+    QQSprite *qq = [QQSprite spriteWithImageNamed:@"qq.png"];
+    qq.anchorPoint = CGPointZero;
+    [self addChild:qq];
+    
     return self;
 }
+
 
 
 @end
