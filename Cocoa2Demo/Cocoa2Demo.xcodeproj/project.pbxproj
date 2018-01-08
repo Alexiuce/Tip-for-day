@@ -31,6 +31,8 @@
 		08BA20871C7860D600263AF8 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B121015197483EE004C1E1D /* ic_launcher.png */; };
 		08BA20931C7865E600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA20921C7865E600263AF8 /* Images.xcassets */; };
 		08BA20951C7865E600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA20921C7865E600263AF8 /* Images.xcassets */; };
+		56BE150220030CFA009D8FEC /* background_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BE14FE20030CFA009D8FEC /* background_1.png */; };
+		56BE15042003116C009D8FEC /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BE15032003116C009D8FEC /* qq.png */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* MainScene.m */; };
 		7A40360419DDEE84007B6E8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A40360319DDEE84007B6E8F /* main.m */; };
@@ -94,6 +96,8 @@
 		08BA208B1C7860D600263AF8 /* Cocoa2Demo tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocoa2Demo tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BA20911C78657200263AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Resources/Platforms/tvOS/Info.plist; sourceTree = "<group>"; };
 		08BA20921C7865E600263AF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		56BE14FE20030CFA009D8FEC /* background_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_1.png; sourceTree = "<group>"; };
+		56BE15032003116C009D8FEC /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100B19748281004C1E1D /* BridgeKitV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BridgeKitV3.framework; path = System/Library/Frameworks/BridgeKitV3.framework; sourceTree = SDKROOT; };
 		5B121015197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_launcher.png; path = "res/drawable-xxhdpi/ic_launcher.png"; sourceTree = "<group>"; };
@@ -358,6 +362,8 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				56BE15032003116C009D8FEC /* qq.png */,
+				56BE14FE20030CFA009D8FEC /* background_1.png */,
 				08BA20921C7865E600263AF8 /* Images.xcassets */,
 				08BA201D1C785CA100263AF8 /* Launch Screen.storyboard */,
 				7A40366119DDF8C2007B6E8F /* Platforms */,
@@ -536,8 +542,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
+				56BE15042003116C009D8FEC /* qq.png in Resources */,
 				08BA20931C7865E600263AF8 /* Images.xcassets in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
+				56BE150220030CFA009D8FEC /* background_1.png in Resources */,
 				08BA20211C785F1C00263AF8 /* ic_launcher.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
