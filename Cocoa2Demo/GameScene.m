@@ -43,8 +43,7 @@
     id move = [CCActionMoveTo actionWithDuration:2.0 position:ccp(200, 200)];
     [sprite runAction:move];
     
-    QQSprite *qq = [QQSprite spriteWithImageNamed:@"qq.png"];
-    qq.anchorPoint = CGPointZero;
+    QQSprite *qq = [QQSprite node];
     [self addChild:qq];
     
     return self;
