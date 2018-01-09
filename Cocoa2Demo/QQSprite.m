@@ -14,7 +14,7 @@
     self = [super initWithImageNamed:@"qq.png"];
     self.anchorPoint = CGPointZero;
     NSAssert(self, @"error init ");
-    [self setUserInteractionEnabled:YES];
+//    [self setUserInteractionEnabled:YES];
     
     XCLog(@"qq init");
     
@@ -35,10 +35,10 @@
 *
  @param delta 间隔时间
  */
-- (void)update:(CCTime)delta{
-    static int a = 0;
-    XCLog(@"%zd",a++);
-}
+//- (void)update:(CCTime)delta{
+//    static int a = 0;
+//    XCLog(@"%zd",a++);
+//}
 
 /**
  * 自定义的更新方法

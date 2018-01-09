@@ -42,9 +42,13 @@
     // 添加移动动画
     id move = [CCActionMoveTo actionWithDuration:2.0 position:ccp(200, 200)];
     [sprite runAction:move];
+
+    
     
     QQSprite *qq = [QQSprite node];
     [self addChild:qq];
+    
+    
     
     return self;
 }
