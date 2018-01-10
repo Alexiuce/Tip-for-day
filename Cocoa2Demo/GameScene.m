@@ -9,9 +9,14 @@
 #import "GameScene.h"
 #import "QQSprite.h"
 
+
+
+static const CGFloat kAnimationDuration = 30.0;
+
 @interface GameScene()
 
 @property (nonatomic, strong) CCSpriteFrameCache *spriteFrameCache;
+@property (nonatomic, strong) CCSprite *background;
 
 @end
 
@@ -22,17 +27,23 @@
     self = [super init];
     NSAssert(self, @"game scene init failure");
     
-    CGFloat height = [CCDirector sharedDirector].viewSize.height;
     
     // 添加背景
+    
+    CCSprite *background1 = [CCSprite spriteWithSpriteFrame:[self.spriteFrameCache spriteFrameByName:@"background_2.png"]];
+   
+    CGFloat height = background1.contentSize.height - 1;
+    background1.anchorPoint = CGPointZero;
+    background1.position = ccp(0, height);
+    [self addChild:background1];
 
-    CCSprite *background = [CCSprite spriteWithSpriteFrame:[self.spriteFrameCache spriteFrameByName:@"background_2.png"]];
+    _background = [CCSprite spriteWithSpriteFrame:[self.spriteFrameCache spriteFrameByName:@"background_2.png"]];
+
+    _background.anchorPoint = CGPointZero;
+
+    [self addChild:_background];
     
-    background.anchorPoint = CGPointZero;
-    
-    [self addChild:background];
-    
-    
+    XCLog(@"begin position%@",NSStringFromCGPoint(_background.position));
     
     
     
@@ -48,22 +59,27 @@
     
     // 添加移动动画
     
-    CCAction *action = [CCActionMoveBy actionWithDuration:5.0 position:ccp(0, -height)];
+  
+    {
+        CCAction *action = [CCActionMoveBy actionWithDuration:kAnimationDuration position:ccp(0, -height)];
+        CCAction *action1 = [CCActionMoveTo actionWithDuration:0 position:ccp(0, height)];
+        CCActionInterval *seqActon = [CCActionSequence actionWithArray:@[action,action,action1]];
+        CCActionRepeatForever *foreverAction = [CCActionRepeatForever actionWithAction: seqActon];
+        [background1 runAction:foreverAction];
+        
+    }
     
-    CCAction *callAction = [CCActionCallFunc actionWithTarget:self selector:@selector(moveBackground)];
     
-    CCAction *seqActon = [CCActionSequence actionWithArray:@[action,callAction]];
-    
-    [background runAction:seqActon];
-    
+    CCAction *action = [CCActionMoveBy actionWithDuration:kAnimationDuration position:ccp(0, -height)];
+    CCAction *action1 = [CCActionMoveTo actionWithDuration:0 position:ccp(0, height)];
+    CCActionInterval *seqActon = [CCActionSequence actionWithArray:@[action,action1,action]];
+    CCActionRepeatForever *foreverAction = [CCActionRepeatForever actionWithAction: seqActon];
+    [_background runAction:foreverAction];
     
     return self;
 }
 
-#pragma mark -
-- (void)moveBackground{
-    XCLog(@"move end");
-}
+
 
 
 #pragma mark - lazy method
