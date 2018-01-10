@@ -19,11 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    
-//    NSString *temp = @"http://sw.bos.baidu.com/sw-search-sp/software/76f6543a7be90/thunder_mac_3.1.7.3266.dmg";
-//
-//    _downloader = [XCHttpDownloader new];
+    NSProcessInfo
   
     return YES;
 }

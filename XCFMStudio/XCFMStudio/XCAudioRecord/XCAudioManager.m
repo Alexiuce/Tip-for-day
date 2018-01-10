@@ -46,8 +46,9 @@
     AVAssetExportSession *session = [AVAssetExportSession exportSessionWithAsset:asset presetName:AVAssetExportPresetAppleM4A];
     session.outputFileType = AVFileTypeAppleM4A;
     session.outputURL = [NSURL fileURLWithPath:outputPath];
-    CMTime startTime = CMTimeMake(fromTime, 1);
-    CMTime endTime = CMTimeMake(toTime, 1);
+    CMTime startTime = CMTimeMake(fromTime, asset.duration.timescale);
+    
+    CMTime endTime = CMTimeMake(toTime, asset.duration.timescale);
     // 3. 设置截取的时间区间
     session.timeRange = CMTimeRangeFromTimeToTime(startTime, endTime);
     [session exportAsynchronouslyWithCompletionHandler:^{

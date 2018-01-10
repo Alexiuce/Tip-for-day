@@ -14,7 +14,7 @@
     self = [super initWithImageNamed:@"qq.png"];
     self.anchorPoint = CGPointZero;
     NSAssert(self, @"error init ");
-//    [self setUserInteractionEnabled:YES];
+    [self setUserInteractionEnabled:YES];
     
     XCLog(@"qq init");
     

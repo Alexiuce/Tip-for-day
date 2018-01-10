@@ -128,6 +128,7 @@
 		562DC8651FCFD30D00E642AE /* XCFMStudio */ = {
 			isa = PBXGroup;
 			children = (
+				567D93271FE1245100447D9E /* BulletAnimateModule */,
 				5682E43E1FDE4A2B00D12681 /* XCAudioRecord */,
 				5682E43A1FDE2FC300D12681 /* Mediator */,
 				56B741691FD7946E002F4073 /* PlayModule */,
@@ -148,6 +149,13 @@
 				562DC8751FCFD30D00E642AE /* main.m */,
 			);
 			path = XCFMStudio;
+			sourceTree = "<group>";
+		};
+		567D93271FE1245100447D9E /* BulletAnimateModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BulletAnimateModule;
 			sourceTree = "<group>";
 		};
 		5682E43A1FDE2FC300D12681 /* Mediator */ = {
