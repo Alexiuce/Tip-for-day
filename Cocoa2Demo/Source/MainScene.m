@@ -23,6 +23,9 @@
     label.position = (CGPoint){0.5, 0.25};
     [self addChild:label];
     
+   
+    
+    
     // done
     return self;
 }

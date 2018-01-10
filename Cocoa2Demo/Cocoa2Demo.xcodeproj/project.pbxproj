@@ -31,6 +31,8 @@
 		08BA20871C7860D600263AF8 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B121015197483EE004C1E1D /* ic_launcher.png */; };
 		08BA20931C7865E600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA20921C7865E600263AF8 /* Images.xcassets */; };
 		08BA20951C7865E600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA20921C7865E600263AF8 /* Images.xcassets */; };
+		5692103B2005D79D00A16227 /* gameArts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 569210392005D79C00A16227 /* gameArts.plist */; };
+		5692103C2005D79D00A16227 /* gameArts.png in Resources */ = {isa = PBXBuildFile; fileRef = 5692103A2005D79C00A16227 /* gameArts.png */; };
 		56BE150220030CFA009D8FEC /* background_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BE14FE20030CFA009D8FEC /* background_1.png */; };
 		56BE15042003116C009D8FEC /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BE15032003116C009D8FEC /* qq.png */; };
 		56BE150920031A89009D8FEC /* QQSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BE150820031A89009D8FEC /* QQSprite.m */; };
@@ -97,6 +99,8 @@
 		08BA208B1C7860D600263AF8 /* Cocoa2Demo tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocoa2Demo tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BA20911C78657200263AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Resources/Platforms/tvOS/Info.plist; sourceTree = "<group>"; };
 		08BA20921C7865E600263AF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		569210392005D79C00A16227 /* gameArts.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = gameArts.plist; sourceTree = "<group>"; };
+		5692103A2005D79C00A16227 /* gameArts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameArts.png; sourceTree = "<group>"; };
 		56BE14FE20030CFA009D8FEC /* background_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_1.png; sourceTree = "<group>"; };
 		56BE15032003116C009D8FEC /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
 		56BE150720031A89009D8FEC /* QQSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQSprite.h; sourceTree = "<group>"; };
@@ -367,6 +371,8 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				569210392005D79C00A16227 /* gameArts.plist */,
+				5692103A2005D79C00A16227 /* gameArts.png */,
 				56BE15032003116C009D8FEC /* qq.png */,
 				56BE14FE20030CFA009D8FEC /* background_1.png */,
 				08BA20921C7865E600263AF8 /* Images.xcassets */,
@@ -546,8 +552,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5692103B2005D79D00A16227 /* gameArts.plist in Resources */,
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
 				56BE15042003116C009D8FEC /* qq.png in Resources */,
+				5692103C2005D79D00A16227 /* gameArts.png in Resources */,
 				08BA20931C7865E600263AF8 /* Images.xcassets in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				56BE150220030CFA009D8FEC /* background_1.png in Resources */,

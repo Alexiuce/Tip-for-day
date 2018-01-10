@@ -9,50 +9,70 @@
 #import "GameScene.h"
 #import "QQSprite.h"
 
+@interface GameScene()
+
+@property (nonatomic, strong) CCSpriteFrameCache *spriteFrameCache;
+
+@end
+
+
 @implementation GameScene
 
 - (id)init{
     self = [super init];
     NSAssert(self, @"game scene init failure");
     
+    CGFloat height = [CCDirector sharedDirector].viewSize.height;
+    
     // 添加背景
-    CCSprite *background = [CCSprite spriteWithImageNamed:@"background_1.png"];
-    [background setScaleX:1.2];
-    [background setScaleY:1.5];
-    background.anchorPoint = (CGPoint){0,0};
+
+    CCSprite *background = [CCSprite spriteWithSpriteFrame:[self.spriteFrameCache spriteFrameByName:@"background_2.png"]];
+    
+    background.anchorPoint = CGPointZero;
+    
     [self addChild:background];
     
-//    CGSize winSize = [[CCDirector sharedDirector] viewSize];
+    
+    
+    
     
     // 添加文字
-    CCLabelTTF *label = [CCLabelTTF labelWithString:@"你好,世界" fontName:@"ArialMT" fontSize:16];
-    label.positionType = CCPositionTypeNormalized;
-    label.position = (CGPoint){0.5,0.5};
-    [self addChild:label];
     
     // 添加图片
-    CCSprite *sprite = [CCSprite spriteWithImageNamed:@"ic_launcher.png"];
-//    sprite.positionType = CCPositionTypeNormalized;
-//    sprite.position = (CGPoint){1,0};
-    sprite.position = ccp(100, 200);
-    [self addChild:sprite z:0 name:@"cocos"];
+    CCSprite *qq = [CCSprite spriteWithImageNamed:@"qq.png"];
+    qq.position = ccp(100, 100);
+    [self addChild:qq];
+
     
 
     
     // 添加移动动画
-    id move = [CCActionMoveTo actionWithDuration:2.0 position:ccp(200, 200)];
-    [sprite runAction:move];
-
     
+    CCAction *action = [CCActionMoveBy actionWithDuration:5.0 position:ccp(0, -height)];
     
-    QQSprite *qq = [QQSprite node];
-    [self addChild:qq];
+    CCAction *callAction = [CCActionCallFunc actionWithTarget:self selector:@selector(moveBackground)];
     
+    CCAction *seqActon = [CCActionSequence actionWithArray:@[action,callAction]];
+    
+    [background runAction:seqActon];
     
     
     return self;
 }
 
+#pragma mark -
+- (void)moveBackground{
+    XCLog(@"move end");
+}
 
+
+#pragma mark - lazy method
+- (CCSpriteFrameCache *)spriteFrameCache{
+    if (_spriteFrameCache == nil) {
+        _spriteFrameCache = [CCSpriteFrameCache sharedSpriteFrameCache] ;
+        [_spriteFrameCache addSpriteFramesWithFile:@"gameArts.plist"];
+    }
+    return _spriteFrameCache;
+}
 
 @end
