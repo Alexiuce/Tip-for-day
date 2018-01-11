@@ -33,6 +33,7 @@ static const CGFloat kAnimationDuration = 30.0;
     CCSprite *qq = [CCSprite spriteWithImageNamed:@"qq.png"];
     
     qq.position = ccp(100, 100);
+    
     [self addChild:qq];
     
 //    [self setupUI];
