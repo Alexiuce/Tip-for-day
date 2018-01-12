@@ -9,6 +9,8 @@
 #import "GameScene.h"
 #import "QQSprite.h"
 
+#import <CoreMotion/CoreMotion.h>
+
 
 
 static const CGFloat kAnimationDuration = 30.0;
@@ -17,6 +19,8 @@ static const CGFloat kAnimationDuration = 30.0;
 
 @property (nonatomic, strong) CCSpriteFrameCache *spriteFrameCache;
 @property (nonatomic, strong) CCSprite *background;
+@property (nonatomic, strong) CMMotionManager *motionManager;
+@property (nonatomic, strong) CCSprite *qq;
 
 @end
 
@@ -26,15 +30,17 @@ static const CGFloat kAnimationDuration = 30.0;
 - (id)init{
     self = [super init];
     NSAssert(self, @"game scene init failure");
-
+    _motionManager = [[CMMotionManager alloc]init];
+     self.userInteractionEnabled = YES;
     CCNodeColor *bg = [CCNodeColor nodeWithColor:CCColor.grayColor];
     [self addChild:bg];
     
-    CCSprite *qq = [CCSprite spriteWithImageNamed:@"qq.png"];
+    _qq = [CCSprite spriteWithImageNamed:@"qq.png"];
     
-    qq.position = ccp(100, 100);
+    _qq.position = ccp(100, 100);
+    _qq.color = [CCColor redColor];
     
-    [self addChild:qq];
+    [self addChild:_qq];
     
 //    [self setupUI];
     
@@ -43,6 +49,8 @@ static const CGFloat kAnimationDuration = 30.0;
 }
 
 - (void)setupUI{
+    
+   
     // 添加背景
     
     CCSprite *background1 = [CCSprite spriteWithSpriteFrame:[self.spriteFrameCache spriteFrameByName:@"background_2.png"]];
@@ -90,6 +98,41 @@ static const CGFloat kAnimationDuration = 30.0;
     [_background runAction:foreverAction];
 }
 
+#pragma mark - Touch
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
+    
+    [self.qq stopActionByTag:0];
+    CGPoint p = [touch locationInNode:self];
+    
+    CCLOG(@"target p = %@",NSStringFromCGPoint(p));
+    CGFloat d = ccpDistance(p, self.qq.position) / 200.0;
+    
+    CCLOG(@"distance %.2f" ,d);
+    
+    CCActionMoveTo *moveAction = [CCActionMoveTo actionWithDuration:d position:p];
+    [moveAction setTag:0];
+    [self.qq runAction:moveAction];
+}
+
+- (void)onEnter{
+    [super onEnter];
+    [self.motionManager startAccelerometerUpdates];
+}
+
+- (void)onExit{
+    [super onExit];
+    [self.motionManager stopAccelerometerUpdates];
+}
+
+- (void)update:(CCTime)delta{
+    CMAccelerometerData *accData =  _motionManager.accelerometerData;
+    CMAcceleration acceleration = accData.acceleration;
+    CGFloat xP = _qq.position.x + acceleration.x * 1500 * delta;
+    if (xP > 300) {xP = 300;}
+    if (xP < 10) {xP = 10;}
+    _qq.position = ccp(xP, _qq.position.y);
+    
+}
 
 #pragma mark - lazy method
 - (CCSpriteFrameCache *)spriteFrameCache{
