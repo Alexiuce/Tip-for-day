@@ -30,7 +30,7 @@ static const CGFloat kAnimationDuration = 30.0;
 - (id)init{
     self = [super init];
     NSAssert(self, @"game scene init failure");
-    _motionManager = [[CMMotionManager alloc]init];
+//    _motionManager = [[CMMotionManager alloc]init];
      self.userInteractionEnabled = YES;
     CCNodeColor *bg = [CCNodeColor nodeWithColor:CCColor.grayColor];
     [self addChild:bg];
@@ -38,7 +38,8 @@ static const CGFloat kAnimationDuration = 30.0;
     _qq = [CCSprite spriteWithImageNamed:@"qq.png"];
     
     _qq.position = ccp(100, 100);
-    _qq.color = [CCColor redColor];
+   
+
     
     [self addChild:_qq];
     
@@ -109,30 +110,33 @@ static const CGFloat kAnimationDuration = 30.0;
     
     CCLOG(@"distance %.2f" ,d);
     
+    p.x = clampf(p.x, _qq.contentSize.width / 2, 375 - _qq.contentSize.width / 2);
+    p.y = clampf(p.y, _qq.contentSize.height / 2, 667 - _qq.contentSize.height / 2);
+    
     CCActionMoveTo *moveAction = [CCActionMoveTo actionWithDuration:d position:p];
     [moveAction setTag:0];
     [self.qq runAction:moveAction];
 }
 
-- (void)onEnter{
-    [super onEnter];
-    [self.motionManager startAccelerometerUpdates];
-}
-
-- (void)onExit{
-    [super onExit];
-    [self.motionManager stopAccelerometerUpdates];
-}
-
-- (void)update:(CCTime)delta{
-    CMAccelerometerData *accData =  _motionManager.accelerometerData;
-    CMAcceleration acceleration = accData.acceleration;
-    CGFloat xP = _qq.position.x + acceleration.x * 1500 * delta;
-    if (xP > 300) {xP = 300;}
-    if (xP < 10) {xP = 10;}
-    _qq.position = ccp(xP, _qq.position.y);
-    
-}
+//- (void)onEnter{
+//    [super onEnter];
+//    [self.motionManager startAccelerometerUpdates];
+//}
+//
+//- (void)onExit{
+//    [super onExit];
+//    [self.motionManager stopAccelerometerUpdates];
+//}
+//
+//- (void)update:(CCTime)delta{
+//    CMAccelerometerData *accData =  _motionManager.accelerometerData;
+//    CMAcceleration acceleration = accData.acceleration;
+//    CGFloat xP = _qq.position.x + acceleration.x * 1500 * delta;
+//    if (xP > 300) {xP = 300;}
+//    if (xP < 10) {xP = 10;}
+//    _qq.position = ccp(xP, _qq.position.y);
+//
+//}
 
 #pragma mark - lazy method
 - (CCSpriteFrameCache *)spriteFrameCache{
