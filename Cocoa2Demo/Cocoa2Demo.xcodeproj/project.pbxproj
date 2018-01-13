@@ -67,6 +67,8 @@
 		B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3D17B978D7009739AE /* Foundation.framework */; };
 		B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
+		D84594C8200A190D00FD7216 /* XCSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D84594C7200A190D00FD7216 /* XCSprite.m */; };
+		D84594CE200A1B6B00FD7216 /* XCFrameCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D84594CD200A1B6B00FD7216 /* XCFrameCache.m */; };
 		D85639CF2000A92600D3F697 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D85639CE2000A92600D3F697 /* GameScene.m */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +143,10 @@
 		B77F1B4117B978D7009739AE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
 		D352B48019EC608A00829775 /* MetalShaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MetalShaders; path = Source/MetalShaders; sourceTree = "<group>"; };
+		D84594C6200A190D00FD7216 /* XCSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCSprite.h; sourceTree = "<group>"; };
+		D84594C7200A190D00FD7216 /* XCSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCSprite.m; sourceTree = "<group>"; };
+		D84594CC200A1B6B00FD7216 /* XCFrameCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCFrameCache.h; sourceTree = "<group>"; };
+		D84594CD200A1B6B00FD7216 /* XCFrameCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCFrameCache.m; sourceTree = "<group>"; };
 		D85639CD2000A92600D3F697 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		D85639CE2000A92600D3F697 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -319,6 +325,10 @@
 				B7378993180767190076A88C /* MainScene.m */,
 				D85639CD2000A92600D3F697 /* GameScene.h */,
 				D85639CE2000A92600D3F697 /* GameScene.m */,
+				D84594CC200A1B6B00FD7216 /* XCFrameCache.h */,
+				D84594CD200A1B6B00FD7216 /* XCFrameCache.m */,
+				D84594C6200A190D00FD7216 /* XCSprite.h */,
+				D84594C7200A190D00FD7216 /* XCSprite.m */,
 				56BE150720031A89009D8FEC /* QQSprite.h */,
 				56BE150820031A89009D8FEC /* QQSprite.m */,
 				D352B48019EC608A00829775 /* MetalShaders */,
@@ -658,6 +668,8 @@
 				56BE150920031A89009D8FEC /* QQSprite.m in Sources */,
 				D85639CF2000A92600D3F697 /* GameScene.m in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
+				D84594C8200A190D00FD7216 /* XCSprite.m in Sources */,
+				D84594CE200A1B6B00FD7216 /* XCFrameCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

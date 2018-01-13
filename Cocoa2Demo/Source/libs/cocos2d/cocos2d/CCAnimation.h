@@ -120,7 +120,7 @@
  *
  *  @return The CCAnimation Object.
  */
-+(instancetype) animation;
+ ;
 
 /**
  *  Creates and returns an animation object using the specified CCSpriteFrame array value.
