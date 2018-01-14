@@ -49,7 +49,7 @@
 - (void)forcePoistion{
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     CGFloat yPoint = winSize.height + self.contentSize.height / 2;
-    CGFloat xPoint = CCRANDOM_0_1() * (winSize.width - self.contentSize.width);
+    CGFloat xPoint = CCRANDOM_0_1() * (winSize.width - self.contentSize.width) + self.contentSize.width / 2;
     self.position = ccp(xPoint, yPoint);
 }
 

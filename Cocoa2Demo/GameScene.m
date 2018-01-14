@@ -44,7 +44,6 @@ static const CGFloat kAnimationDuration = 30.0;
     self.player.position = ccp(200, 100);
     [self addChild:self.player];
     
-    
     XCSprite *enemy = [XCSprite spritWithType:XCSpriteEnemy];
     enemy.moveSpeed = ccp(0, -3);
     [self addChild:enemy];
@@ -72,8 +71,9 @@ static const CGFloat kAnimationDuration = 30.0;
     // 添加背景
 
     CCSprite *background1 = [CCSprite spriteWithSpriteFrame:[[XCFrameCache frameCacheForGameArts] spriteFrameByName:@"background_2.png"]];
-    
-    CGFloat height = background1.contentSize.height - 1;
+    ccTexParams texParams = {GL_NEAREST,GL_NEAREST,GL_CLAMP_TO_EDGE,GL_CLAMP_TO_EDGE};
+    [background1.texture setTexParameters:&texParams];
+    CGFloat height = background1.contentSize.height ;
     background1.anchorPoint = CGPointZero;
     background1.position = ccp(0, height);
     [self addChild:background1 z:-1];
