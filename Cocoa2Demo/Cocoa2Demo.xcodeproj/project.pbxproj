@@ -58,6 +58,7 @@
 		569083D6200C549000F47F28 /* NSMutableDictionary+WeakReferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 569083B4200C549000F47F28 /* NSMutableDictionary+WeakReferences.m */; };
 		569083D7200C549000F47F28 /* OALAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 569083B6200C549000F47F28 /* OALAudioFile.m */; };
 		569083D8200C549000F47F28 /* OALTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 569083B9200C549000F47F28 /* OALTools.m */; };
+		569083E3200C6B2100F47F28 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 569083E2200C6B2100F47F28 /* fire.png */; };
 		5692103B2005D79D00A16227 /* gameArts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 569210392005D79C00A16227 /* gameArts.plist */; };
 		5692103C2005D79D00A16227 /* gameArts.png in Resources */ = {isa = PBXBuildFile; fileRef = 5692103A2005D79C00A16227 /* gameArts.png */; };
 		56BE150220030CFA009D8FEC /* background_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BE14FE20030CFA009D8FEC /* background_1.png */; };
@@ -189,6 +190,7 @@
 		569083B9200C549000F47F28 /* OALTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALTools.m; sourceTree = "<group>"; };
 		569083BA200C549000F47F28 /* ObjectALMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectALMacros.h; sourceTree = "<group>"; };
 		569083BB200C549000F47F28 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		569083E2200C6B2100F47F28 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 		569210392005D79C00A16227 /* gameArts.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = gameArts.plist; sourceTree = "<group>"; };
 		5692103A2005D79C00A16227 /* gameArts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameArts.png; sourceTree = "<group>"; };
 		56BE14FE20030CFA009D8FEC /* background_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_1.png; sourceTree = "<group>"; };
@@ -579,6 +581,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				569083E2200C6B2100F47F28 /* fire.png */,
 				569210392005D79C00A16227 /* gameArts.plist */,
 				5692103A2005D79C00A16227 /* gameArts.png */,
 				56BE15032003116C009D8FEC /* qq.png */,
@@ -761,6 +764,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5692103B2005D79D00A16227 /* gameArts.plist in Resources */,
+				569083E3200C6B2100F47F28 /* fire.png in Resources */,
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
 				569083C6200C549000F47F28 /* Info.plist in Resources */,
 				56BE15042003116C009D8FEC /* qq.png in Resources */,
@@ -1154,6 +1158,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					"\"Source/libs/cocos2d\"/**",
 					Source/libs/cocos2d/Chipmunk/Chipmunk/objectivec/include,
@@ -1195,6 +1200,7 @@
 				DEVELOPMENT_TEAM = Z6P4JKNFHR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					"\"Source/libs/cocos2d\"/**",
 					Source/libs/cocos2d/Chipmunk/Chipmunk/objectivec/include,

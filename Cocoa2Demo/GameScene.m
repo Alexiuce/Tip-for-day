@@ -12,9 +12,8 @@
 #import <CCActionManager.h>
 #import <CoreMotion/CoreMotion.h>
 #import "XCSprite.h"
-#import <CCParallaxNode/CCParallaxNode.h>
+#import <CCParticles.h>
 
-#import "ObjectAL.h"
 
 static const CGFloat kAnimationDuration = 30.0;
 
@@ -22,6 +21,7 @@ static const CGFloat kAnimationDuration = 30.0;
 @property (nonatomic, strong) CCSprite *background;
 @property (nonatomic, strong) CMMotionManager *motionManager;
 @property (nonatomic, strong) XCSprite *player;
+@property (nonatomic, strong) CCParticleSystem *fire;
 
 @end
 
@@ -41,7 +41,12 @@ static const CGFloat kAnimationDuration = 30.0;
 //    qq.position = ccp(100, 100);
 //    [self addChild:qq];
 //    self.qq = qq;
+    
    
+    self.fire = [CCParticleFire node];
+    self.fire.position = ccp(160, 300);
+    [self addChild:self.fire z:2];
+    
     self.player = [XCSprite spritWithType:XCSpritePlayer];
     self.player.position = ccp(200, 100);
     [self addChild:self.player];
