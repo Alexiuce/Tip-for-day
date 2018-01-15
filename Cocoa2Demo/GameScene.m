@@ -12,7 +12,9 @@
 #import <CCActionManager.h>
 #import <CoreMotion/CoreMotion.h>
 #import "XCSprite.h"
+#import <CCParallaxNode/CCParallaxNode.h>
 
+#import "ObjectAL.h"
 
 static const CGFloat kAnimationDuration = 30.0;
 
@@ -33,13 +35,13 @@ static const CGFloat kAnimationDuration = 30.0;
     // 设置背景
 //    CCNodeColor *bg = [CCNodeColor nodeWithColor:CCColor.grayColor];
 //    [self addChild:bg];
-    
+   
 //    // 创建精灵
 //    CCSprite *qq = [CCSprite spriteWithImageNamed:@"qq.png"];
 //    qq.position = ccp(100, 100);
 //    [self addChild:qq];
 //    self.qq = qq;
-    
+   
     self.player = [XCSprite spritWithType:XCSpritePlayer];
     self.player.position = ccp(200, 100);
     [self addChild:self.player];
