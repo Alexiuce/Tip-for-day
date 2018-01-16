@@ -20,8 +20,6 @@
        
         
         RectSprite *r1 = [RectSprite spriteWithColor:CCColor.yellowColor size:CGSizeMake(50, 50)];
-        
-        CCLOG(@"r1 rect %@", NSStringFromCGSize(r1.contentSize));
         r1.position = ccp(100, 100);
         [self addChild:r1];
         

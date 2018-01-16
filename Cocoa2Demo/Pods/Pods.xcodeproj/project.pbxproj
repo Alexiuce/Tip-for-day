@@ -21,6 +21,7 @@
 		9E2226034DF7A63F2E2A963E5E06DC60 /* Pods-Cocoa2Demo iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cocoa2Demo iOS-resources.sh"; sourceTree = "<group>"; };
 		A1C1C11D86B546F4D4C7B6C4BEB4E8C0 /* Pods-Cocoa2Demo iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cocoa2Demo iOS-dummy.m"; sourceTree = "<group>"; };
 		F1C30DEC349C48A44E838BC0E6DBA2B2 /* libPods-Cocoa2Demo iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Cocoa2Demo iOS.a"; path = "libPods-Cocoa2Demo iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87BBE855D70C2F87C02A1CCA30E262D /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
 		FC40056818CDC87E370168A166BAEA85 /* Pods-Cocoa2Demo iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cocoa2Demo iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,9 +50,26 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				820FBBDA65C5B1A6A4C379A893C27235 /* Pods */,
 				61A44633FDD8844C3C39AB06FE601923 /* Products */,
 				D3F557A2974090A3EEE5FE1B65D39C5B /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		820FBBDA65C5B1A6A4C379A893C27235 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E91D6015731707498AAA5817D350B87B /* Google-Mobile-Ads-SDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		953FD61A3CECC96530CB5CA297A086C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F87BBE855D70C2F87C02A1CCA30E262D /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -76,6 +94,15 @@
 				F479BD986DC450328216B187E28EBE9A /* Pods-Cocoa2Demo iOS */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E91D6015731707498AAA5817D350B87B /* Google-Mobile-Ads-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				953FD61A3CECC96530CB5CA297A086C1 /* Frameworks */,
+			);
+			name = "Google-Mobile-Ads-SDK";
+			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
 		F479BD986DC450328216B187E28EBE9A /* Pods-Cocoa2Demo iOS */ = {

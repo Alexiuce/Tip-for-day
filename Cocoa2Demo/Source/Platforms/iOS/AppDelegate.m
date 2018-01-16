@@ -29,12 +29,13 @@
 #import "MainScene.h"
 #import "GameScene.h"
 #import "IADScene.h"
-
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
 @implementation AppController
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    [GADMobileAds configureWithApplicationID:@"ca-app-pub-3940256099942544/4411468910"];
+   
     NSMutableDictionary* cocos2dSetup;
 #if CC_CCBREADER
     // Configure Cocos2d with the options set in SpriteBuilder

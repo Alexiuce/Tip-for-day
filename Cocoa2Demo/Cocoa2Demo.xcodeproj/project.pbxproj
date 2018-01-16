@@ -33,6 +33,7 @@
 		08BA20951C7865E600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA20921C7865E600263AF8 /* Images.xcassets */; };
 		5617E33A200854A3002D909B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617E336200854A3002D909B /* CoreMotion.framework */; };
 		56401F36200D8A8500D72DCC /* RectSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56401F35200D8A8500D72DCC /* RectSprite.m */; };
+		56401F4F200DCA6900D72DCC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56401F4E200DCA6900D72DCC /* libz.tbd */; };
 		568AF54D200C8FC8002BCA95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568AF54B200C8FC8002BCA95 /* ViewController.m */; };
 		568AF54E200C8FC8002BCA95 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568AF54C200C8FC8002BCA95 /* ViewController.xib */; };
 		568AF554200C9058002BCA95 /* IADScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 568AF553200C9058002BCA95 /* IADScene.m */; };
@@ -140,12 +141,13 @@
 		5617E336200854A3002D909B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		56401F34200D8A8500D72DCC /* RectSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RectSprite.h; sourceTree = "<group>"; };
 		56401F35200D8A8500D72DCC /* RectSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RectSprite.m; sourceTree = "<group>"; };
+		56401F44200DA86E00D72DCC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		56401F4E200DCA6900D72DCC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		568AF54A200C8FC8002BCA95 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		568AF54B200C8FC8002BCA95 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		568AF54C200C8FC8002BCA95 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		568AF552200C9058002BCA95 /* IADScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IADScene.h; sourceTree = "<group>"; };
 		568AF553200C9058002BCA95 /* IADScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IADScene.m; sourceTree = "<group>"; };
-		568AF555200C9337002BCA95 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		5690837C200C549000F47F28 /* OALAction+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OALAction+Private.h"; sourceTree = "<group>"; };
 		5690837D200C549000F47F28 /* OALAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAction.h; sourceTree = "<group>"; };
 		5690837E200C549000F47F28 /* OALAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAction.m; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56401F4F200DCA6900D72DCC /* libz.tbd in Frameworks */,
 				5617E33A200854A3002D909B /* CoreMotion.framework in Frameworks */,
 				080246621CB1295400277993 /* libcocos2d.a in Frameworks */,
 				8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */,
@@ -591,7 +594,8 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				568AF555200C9337002BCA95 /* iAd.framework */,
+				56401F4E200DCA6900D72DCC /* libz.tbd */,
+				56401F44200DA86E00D72DCC /* AdSupport.framework */,
 				5617E336200854A3002D909B /* CoreMotion.framework */,
 				7A59493C19E37FB200F65F90 /* libz.dylib */,
 				7A59493A19E37F9300F65F90 /* OpenGL.framework */,
@@ -1265,10 +1269,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"-lz",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = Cocoa2Demo;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
@@ -1307,10 +1308,7 @@
 				INFOPLIST_FILE = Source/Resources/Platforms/iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-lz",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = Cocoa2Demo;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";

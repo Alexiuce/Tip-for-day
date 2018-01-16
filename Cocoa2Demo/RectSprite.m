@@ -11,8 +11,6 @@
 
 @interface RectSprite()
 
-@property (nonatomic, strong) CCColor *color;
-
 @end
 
 

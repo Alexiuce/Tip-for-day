@@ -6,6 +6,6 @@ target 'Cocoa2Demo iOS' do
   # use_frameworks!
 
   # Pods for Cocoa2Demo iOS
-
+  pod 'Google-Mobile-Ads-SDK'
 end
 
