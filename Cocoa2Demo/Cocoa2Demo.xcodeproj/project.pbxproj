@@ -32,6 +32,10 @@
 		08BA20931C7865E600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA20921C7865E600263AF8 /* Images.xcassets */; };
 		08BA20951C7865E600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA20921C7865E600263AF8 /* Images.xcassets */; };
 		5617E33A200854A3002D909B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617E336200854A3002D909B /* CoreMotion.framework */; };
+		568AF54D200C8FC8002BCA95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568AF54B200C8FC8002BCA95 /* ViewController.m */; };
+		568AF54E200C8FC8002BCA95 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568AF54C200C8FC8002BCA95 /* ViewController.xib */; };
+		568AF554200C9058002BCA95 /* IADScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 568AF553200C9058002BCA95 /* IADScene.m */; };
+		568AF557200C9D29002BCA95 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568AF555200C9337002BCA95 /* iAd.framework */; };
 		569083BF200C549000F47F28 /* OALAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5690837E200C549000F47F28 /* OALAction.m */; };
 		569083C0200C549000F47F28 /* OALActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56908380200C549000F47F28 /* OALActionManager.m */; };
 		569083C1200C549000F47F28 /* OALAudioActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 56908382200C549000F47F28 /* OALAudioActions.m */; };
@@ -130,6 +134,12 @@
 		08BA20911C78657200263AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Resources/Platforms/tvOS/Info.plist; sourceTree = "<group>"; };
 		08BA20921C7865E600263AF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5617E336200854A3002D909B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		568AF54A200C8FC8002BCA95 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		568AF54B200C8FC8002BCA95 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		568AF54C200C8FC8002BCA95 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		568AF552200C9058002BCA95 /* IADScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IADScene.h; sourceTree = "<group>"; };
+		568AF553200C9058002BCA95 /* IADScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IADScene.m; sourceTree = "<group>"; };
+		568AF555200C9337002BCA95 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		5690837C200C549000F47F28 /* OALAction+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OALAction+Private.h"; sourceTree = "<group>"; };
 		5690837D200C549000F47F28 /* OALAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAction.h; sourceTree = "<group>"; };
 		5690837E200C549000F47F28 /* OALAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAction.m; sourceTree = "<group>"; };
@@ -281,6 +291,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568AF557200C9D29002BCA95 /* iAd.framework in Frameworks */,
 				5617E33A200854A3002D909B /* CoreMotion.framework in Frameworks */,
 				080246621CB1295400277993 /* libcocos2d.a in Frameworks */,
 				8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */,
@@ -527,6 +538,11 @@
 				D84594C7200A190D00FD7216 /* XCSprite.m */,
 				56BE150720031A89009D8FEC /* QQSprite.h */,
 				56BE150820031A89009D8FEC /* QQSprite.m */,
+				568AF552200C9058002BCA95 /* IADScene.h */,
+				568AF553200C9058002BCA95 /* IADScene.m */,
+				568AF54A200C8FC8002BCA95 /* ViewController.h */,
+				568AF54B200C8FC8002BCA95 /* ViewController.m */,
+				568AF54C200C8FC8002BCA95 /* ViewController.xib */,
 				D352B48019EC608A00829775 /* MetalShaders */,
 			);
 			name = Source;
@@ -557,6 +573,7 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				568AF555200C9337002BCA95 /* iAd.framework */,
 				5617E336200854A3002D909B /* CoreMotion.framework */,
 				7A59493C19E37FB200F65F90 /* libz.dylib */,
 				7A59493A19E37F9300F65F90 /* OpenGL.framework */,
@@ -763,6 +780,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568AF54E200C8FC8002BCA95 /* ViewController.xib in Resources */,
 				5692103B2005D79D00A16227 /* gameArts.plist in Resources */,
 				569083E3200C6B2100F47F28 /* fire.png in Resources */,
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
@@ -877,6 +895,7 @@
 				569083C4200C549000F47F28 /* OALAudioTrackNotifications.m in Sources */,
 				569083D4200C549000F47F28 /* mach_timing.c in Sources */,
 				569083C2200C549000F47F28 /* OALUtilityActions.m in Sources */,
+				568AF554200C9058002BCA95 /* IADScene.m in Sources */,
 				569083CF200C549000F47F28 /* ALSource.m in Sources */,
 				7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */,
 				569083C3200C549000F47F28 /* OALAudioTrack.m in Sources */,
@@ -889,6 +908,7 @@
 				569083CC200C549000F47F28 /* ALDevice.m in Sources */,
 				569083C8200C549000F47F28 /* ALBuffer.m in Sources */,
 				569083C0200C549000F47F28 /* OALActionManager.m in Sources */,
+				568AF54D200C8FC8002BCA95 /* ViewController.m in Sources */,
 				569083D0200C549000F47F28 /* ALWrapper.m in Sources */,
 				569083C9200C549000F47F28 /* ALCaptureDevice.m in Sources */,
 				D84594C8200A190D00FD7216 /* XCSprite.m in Sources */,

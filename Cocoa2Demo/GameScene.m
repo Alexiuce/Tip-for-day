@@ -42,10 +42,17 @@ static const CGFloat kAnimationDuration = 30.0;
 //    [self addChild:qq];
 //    self.qq = qq;
     
-   
-    self.fire = [CCParticleFire node];
-    self.fire.position = ccp(160, 300);
-    [self addChild:self.fire z:2];
+//   
+//    self.fire = [CCParticleFire node];
+//    self.fire.emitterMode = CCParticleSystemModeRadius;
+//    self.fire.startRadius = 200;
+//    self.fire.startRadiusVar = 5.0;
+//    self.fire.endRadius = 30.0;
+//    self.fire.endRadiusVar = 3.0;
+//    self.fire.rotatePerSecond = 180.0;
+//    self.fire.rotatePerSecondVar = 12.0;
+//    self.fire.position = ccp(160, 300);
+//    [self addChild:self.fire];
     
     self.player = [XCSprite spritWithType:XCSpritePlayer];
     self.player.position = ccp(200, 100);
