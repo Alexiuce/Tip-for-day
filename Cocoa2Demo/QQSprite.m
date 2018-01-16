@@ -21,7 +21,6 @@
 //    [self schedule:@selector(myUpdate) interval:1.0];
     return self;
 }
-
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
     XCLog(@"touched qq");
     

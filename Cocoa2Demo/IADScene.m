@@ -8,6 +8,7 @@
 
 #import "IADScene.h"
 #import "ViewController.h"
+#import "RectSprite.h"
 
 @implementation IADScene
 
@@ -15,6 +16,14 @@
     if (self = [super init]) {
         CCNodeColor *bg = [CCNodeColor nodeWithColor:CCColor.grayColor];
         [self addChild:bg];
+        
+       
+        
+        RectSprite *r1 = [RectSprite spriteWithColor:CCColor.yellowColor size:CGSizeMake(50, 50)];
+        
+        CCLOG(@"r1 rect %@", NSStringFromCGSize(r1.contentSize));
+        r1.position = ccp(100, 100);
+        [self addChild:r1];
         
     }
     return self;
