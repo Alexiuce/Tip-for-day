@@ -69,6 +69,8 @@
 		56BE150220030CFA009D8FEC /* background_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BE14FE20030CFA009D8FEC /* background_1.png */; };
 		56BE15042003116C009D8FEC /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BE15032003116C009D8FEC /* qq.png */; };
 		56BE150920031A89009D8FEC /* QQSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BE150820031A89009D8FEC /* QQSprite.m */; };
+		56FE20B7200F354D00E9972C /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FE20B3200F354D00E9972C /* yellow.png */; };
+		56FE20BA200F364000E9972C /* TouchSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FE20B9200F364000E9972C /* TouchSprite.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* MainScene.m */; };
 		7A40360419DDEE84007B6E8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A40360319DDEE84007B6E8F /* main.m */; };
@@ -215,6 +217,9 @@
 		56BE15032003116C009D8FEC /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
 		56BE150720031A89009D8FEC /* QQSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQSprite.h; sourceTree = "<group>"; };
 		56BE150820031A89009D8FEC /* QQSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQSprite.m; sourceTree = "<group>"; };
+		56FE20B3200F354D00E9972C /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
+		56FE20B8200F364000E9972C /* TouchSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchSprite.h; sourceTree = "<group>"; };
+		56FE20B9200F364000E9972C /* TouchSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchSprite.m; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100B19748281004C1E1D /* BridgeKitV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BridgeKitV3.framework; path = System/Library/Frameworks/BridgeKitV3.framework; sourceTree = SDKROOT; };
 		5B121015197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_launcher.png; path = "res/drawable-xxhdpi/ic_launcher.png"; sourceTree = "<group>"; };
@@ -558,6 +563,8 @@
 				56BE150820031A89009D8FEC /* QQSprite.m */,
 				568AF552200C9058002BCA95 /* IADScene.h */,
 				568AF553200C9058002BCA95 /* IADScene.m */,
+				56FE20B8200F364000E9972C /* TouchSprite.h */,
+				56FE20B9200F364000E9972C /* TouchSprite.m */,
 				56401F34200D8A8500D72DCC /* RectSprite.h */,
 				56401F35200D8A8500D72DCC /* RectSprite.m */,
 				568AF54A200C8FC8002BCA95 /* ViewController.h */,
@@ -621,6 +628,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				56FE20B3200F354D00E9972C /* yellow.png */,
 				569083E2200C6B2100F47F28 /* fire.png */,
 				569210392005D79C00A16227 /* gameArts.plist */,
 				5692103A2005D79C00A16227 /* gameArts.png */,
@@ -807,6 +815,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				568AF54E200C8FC8002BCA95 /* ViewController.xib in Resources */,
+				56FE20B7200F354D00E9972C /* yellow.png in Resources */,
 				5692103B2005D79D00A16227 /* gameArts.plist in Resources */,
 				569083E3200C6B2100F47F28 /* fire.png in Resources */,
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
@@ -964,6 +973,7 @@
 				569083CB200C549000F47F28 /* ALContext.m in Sources */,
 				569083D6200C549000F47F28 /* NSMutableDictionary+WeakReferences.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				56FE20BA200F364000E9972C /* TouchSprite.m in Sources */,
 				569083C7200C549000F47F28 /* OALSimpleAudio.m in Sources */,
 				569083D5200C549000F47F28 /* NSMutableArray+WeakReferences.m in Sources */,
 				56401F36200D8A8500D72DCC /* RectSprite.m in Sources */,

@@ -10,6 +10,8 @@
 
 @interface RectSprite : CCSprite
 
+@property (nonatomic,assign) NSUInteger lineNumber;
+
 + (instancetype)spriteWithColor:(CCColor *)color size:(CGSize)size;
 
 @end

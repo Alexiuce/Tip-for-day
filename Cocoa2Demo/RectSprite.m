@@ -25,6 +25,7 @@
 
 - (instancetype)initWithColor:(CCColor *)color size:(CGSize)size{
     self = [super init];
+    [self setUserInteractionEnabled:YES];
     NSAssert(self, @"init failure");
     self.color = color;
     self.contentSize = size;
@@ -33,8 +34,23 @@
 }
 
 - (void)setup{
-    CCNodeColor *bg = [CCNodeColor nodeWithColor:self.color width:self.contentSize.width height:self.contentSize.height];
+    CCDrawNode *bg = [CCDrawNode node];
+    CGPoint rect[4];
+    rect[0] = CGPointZero;
+    rect[1] = ccp(0, self.contentSize.height);
+    rect[2] = ccp(self.contentSize.height, self.contentSize.width);
+    rect[3] = ccp(self.contentSize.width, 0);
+
+    [bg drawPolyWithVerts:rect count:4 fillColor:self.color borderWidth:0 borderColor:CCColor.redColor];
     [self addChild:bg];
+}
+
+
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
+    XCLog(@"beeeee....");
+}
+- (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event{
+    XCLog(@"sprite====");
 }
 
 @end
