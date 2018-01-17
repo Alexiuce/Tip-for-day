@@ -103,6 +103,9 @@
 //    CCScene *game = [GameScene node];
     
     IADScene *iadScene = [IADScene node];
+    
+
+    
     // Run the director with the scene.
     // Push as much scenes as you want (maybe useful for 3D touch)
 //    [director runWithScene:main];

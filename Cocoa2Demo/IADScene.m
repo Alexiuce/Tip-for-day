@@ -10,6 +10,8 @@
 #import "ViewController.h"
 #import "RectSprite.h"
 
+
+
 @implementation IADScene
 
 - (id)init{
@@ -17,16 +19,18 @@
         CCNodeColor *bg = [CCNodeColor nodeWithColor:CCColor.grayColor];
         [self addChild:bg];
         
-       
+        CCDrawNode *dn = [CCDrawNode node];
         
-        RectSprite *r1 = [RectSprite spriteWithColor:CCColor.yellowColor size:CGSizeMake(50, 50)];
-        r1.position = ccp(100, 100);
-        [self addChild:r1];
+        [dn drawDot:ccp(20, 300) radius:12 color:CCColor.redColor];
+        [self addChild:dn];
+        
+//        RectSprite *r1 = [RectSprite spriteWithColor:CCColor.yellowColor size:CGSizeMake(50, 50)];
+//        r1.position = ccp(100, 100);
+//        [self addChild:r1];
         
     }
     return self;
 }
-
 
 
 //- (void)onEnter{
