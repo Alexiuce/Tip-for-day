@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" infinite="0" nextobjectid="1">
+ <tileset firstgid="1" name="tiles-hd" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="tiles-hd.png" width="512" height="512"/>
+ </tileset>
+ <layer name="bottom" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYCANsBIhj44pMQ/dzOEOADnQADM=
+  </data>
+ </layer>
+ <layer name="plane1" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMsJKoDp96VjSMCygSME8Rizpc5iBjfOoYCKjBpp4cAADqqAF9
+  </data>
+ </layer>
+</map>

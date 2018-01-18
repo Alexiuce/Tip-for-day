@@ -11,7 +11,8 @@
 #import "RectSprite.h"
 #import "QQSprite.h"
 #import "TouchSprite.h"
-
+#import <CCTiledMap.h>
+#import <CCTiledMapLayer.h>
 
 static const int CountPerRow = 10;
 static const CGFloat MarginBetween = 5.0f;
@@ -21,6 +22,8 @@ static const CGFloat BeginTopY = 64.0f;
 
 - (id)init{
     if (self = [super init]) {
+        
+        
 //        self.userInteractionEnabled = YES;
         CCNodeColor *bg = [CCNodeColor nodeWithColor:CCColor.grayColor];
         [self addChild:bg];
@@ -51,12 +54,30 @@ static const CGFloat BeginTopY = 64.0f;
             [self addLine:i + 1];
         }
         
-        
+        [self loadTMX];
     }
     return self;
 }
 
 #pragma mark - Private Method
+
+- (void)loadTMX{
+    CCTiledMap *map = [CCTiledMap tiledMapWithFile:@"gridPlane.tmx"];
+    
+    [self addChild:map];
+    
+    CCTiledMapLayer *maplayer = [map layerNamed:@"bottom"];
+    XCLog(@"property : %@",maplayer);
+    
+    
+    int begin = [maplayer tileGIDAt:ccp(1, 2)];
+    XCLog(@"%zd",begin);
+    
+    
+    
+}
+
+
 - (void)addLine:(NSUInteger)lineNumber{
     
     CGSize winSize = [CCDirector sharedDirector].viewSize;
@@ -67,8 +88,8 @@ static const CGFloat BeginTopY = 64.0f;
     
     for (int i = 0; i < CountPerRow; i++) {
         CGFloat x = i * (spw + MarginBetween) + MarginBetween;
-        RectSprite *r = [RectSprite spriteWithColor:CCColor.yellowColor size:CGSizeMake(spw, spw)];
-        
+        RectSprite *r = [RectSprite spriteWithColor:CCColor.blackColor size:CGSizeMake(spw, spw)];
+       
         r.anchorPoint = CGPointZero;
         r.position = ccp(x, beginY);
         [self addChild:r];

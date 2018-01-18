@@ -62,11 +62,11 @@
 
 - (void)startFlip{
     self.bgNode.color = CCColor.greenColor;
-    CCActionBlink *fx = [CCActionBlink actionWithDuration:0.7 blinks:2 ];
-
-
-
-    [self runAction:fx];
+//    CCActionBlink *fx = [CCActionBlink actionWithDuration:0.7 blinks:2 ];
+//
+//
+//
+//    [self runAction:fx];
 }
 
 - (void)showResult{
@@ -74,21 +74,20 @@
         return;
     }
     _hasResult = YES;
-    int random = arc4random_uniform(3) ;
-    switch (random) {
-        case 0:
+
+    switch (self.type) {
+        case SpritHead:
             [self addCircle];
             break;
-            
-        case 1:
+        case SpriteBody:
             [self addCrose];
             break;
-        case 2:
+        case SpriteEmpty:
             [self addTriangle];
             break;
-    
     }
-
+    
+    self.bgNode.color = CCColor.whiteColor;
 }
 
 

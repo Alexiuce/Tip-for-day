@@ -8,9 +8,18 @@
 
 #import "CCSprite.h"
 
+
+typedef NS_ENUM(NSUInteger,SpritStyle) {
+    SpritHead,
+    SpriteBody,
+    SpriteEmpty
+};
+
+
 @interface RectSprite : CCSprite
 
 @property (nonatomic,assign) NSUInteger lineNumber;
+@property (nonatomic, assign) SpritStyle type;
 
 + (instancetype)spriteWithColor:(CCColor *)color size:(CGSize)size;
 
