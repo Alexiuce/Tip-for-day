@@ -12,13 +12,18 @@
     NSAssert(self, @"Whoops");
     
     // Background
-    CCSprite *sprite = [CCSprite spriteWithImageNamed:@"ic_launcher.png"];
-    sprite.position = ccp(0.5, 0.5);
-    sprite.positionType = CCPositionTypeNormalized;
-    [self addChild:sprite];
+//    CCSprite *sprite = [CCSprite spriteWithImageNamed:@"ic_launcher.png"];
+//    sprite.position = ccp(0.5, 0.5);
+//    sprite.positionType = CCPositionTypeNormalized;
+//    [self addChild:sprite];
     
     // The standard Hello World text
-    CCLabelTTF *label = [CCLabelTTF labelWithString:@"Hello World" fontName:@"ArialMT" fontSize:16];
+    
+    
+    NSString *hello = [NSString localizedStringWithFormat:NSLocalizedString(@"Hello World", @"问候语")];
+    
+    
+    CCLabelTTF *label = [CCLabelTTF labelWithString:hello fontName:@"ArialMT" fontSize:16];
     label.positionType = CCPositionTypeNormalized;
     label.position = (CGPoint){0.5, 0.25};
     [self addChild:label];
