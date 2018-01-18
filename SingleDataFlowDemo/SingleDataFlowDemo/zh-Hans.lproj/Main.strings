@@ -1,0 +1,15 @@
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "4tK-rO-lRg"; */
+"4tK-rO-lRg.title" = "Item";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "6hn-dd-3Ad"; */
+"6hn-dd-3Ad.text" = "User Name";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "Hyc-SV-GXQ"; */
+"Hyc-SV-GXQ.title" = "Item";
+
+/* Class = "UILabel"; text = "Day"; ObjectID = "Pz3-2Q-xsI"; */
+"Pz3-2Q-xsI.text" = "Day";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "UMO-RB-2Ah"; */
+"UMO-RB-2Ah.text" = "City";

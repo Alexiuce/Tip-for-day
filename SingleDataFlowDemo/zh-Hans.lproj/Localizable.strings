@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  SingleDataFlowDemo
+
+  Created by caijinzhu on 2018/1/18.
+  Copyright © 2018年 alexiuce . All rights reserved.
+*/
+"buy iWatch" = "购买苹果表";
+"Sale OSX App" = "销售osx 应用";
+"buy U disk" = "购置优盘";
+

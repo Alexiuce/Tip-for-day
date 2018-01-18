@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56CACA7D2010A0AA00FF1775 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA7F2010A0AA00FF1775 /* Localizable.strings */; };
 		F25A32AD1F31952D004C9AA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25A32AC1F31952D004C9AA8 /* AppDelegate.swift */; };
 		F25A32B21F31952D004C9AA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25A32B01F31952D004C9AA8 /* Main.storyboard */; };
 		F25A32B41F31952D004C9AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25A32B31F31952D004C9AA8 /* Assets.xcassets */; };
@@ -17,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56CACA7E2010A0AA00FF1775 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		56CACA862010A58400FF1775 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		56CACA872010A58400FF1775 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		56CACA882010A5B900FF1775 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F25A32A91F31952D004C9AA8 /* SingleDataFlowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleDataFlowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25A32AC1F31952D004C9AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F25A32B11F31952D004C9AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +47,7 @@
 		F25A32A01F31952D004C9AA8 = {
 			isa = PBXGroup;
 			children = (
+				56CACA7F2010A0AA00FF1775 /* Localizable.strings */,
 				F25A32AB1F31952D004C9AA8 /* SingleDataFlowDemo */,
 				F25A32AA1F31952D004C9AA8 /* Products */,
 			);
@@ -114,6 +120,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = F25A32A01F31952D004C9AA8;
 			productRefGroup = F25A32AA1F31952D004C9AA8 /* Products */;
@@ -131,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25A32B71F31952D004C9AA8 /* LaunchScreen.storyboard in Resources */,
+				56CACA7D2010A0AA00FF1775 /* Localizable.strings in Resources */,
 				F25A32B41F31952D004C9AA8 /* Assets.xcassets in Resources */,
 				F25A32B21F31952D004C9AA8 /* Main.storyboard in Resources */,
 			);
@@ -153,10 +161,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		56CACA7F2010A0AA00FF1775 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56CACA7E2010A0AA00FF1775 /* en */,
+				56CACA882010A5B900FF1775 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		F25A32B01F31952D004C9AA8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F25A32B11F31952D004C9AA8 /* Base */,
+				56CACA862010A58400FF1775 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -165,6 +183,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F25A32B61F31952D004C9AA8 /* Base */,
+				56CACA872010A58400FF1775 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -176,6 +195,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -226,6 +246,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -312,6 +333,7 @@
 				F25A32BD1F31952D004C9AA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
