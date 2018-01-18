@@ -69,10 +69,19 @@ static const CGFloat BeginTopY = 64.0f;
     CCTiledMapLayer *maplayer = [map layerNamed:@"bottom"];
     XCLog(@"property : %@",maplayer);
     
+
     
-    int begin = [maplayer tileGIDAt:ccp(1, 2)];
-    XCLog(@"%zd",begin);
-    
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+              int begin = [maplayer tileGIDAt:ccp(j, i)];
+            if (begin != 0 ) {
+                printf("1   ");
+            }else{
+                printf("0   ");
+            }
+        }
+        printf("\n");
+    }
     
     
 }

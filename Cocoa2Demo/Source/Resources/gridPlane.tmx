@@ -5,12 +5,7 @@
  </tileset>
  <layer name="bottom" width="10" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYCANsBIhj44pMQ/dzOEOADnQADM=
-  </data>
- </layer>
- <layer name="plane1" width="10" height="10">
-  <data encoding="base64" compression="zlib">
-   eJxjYKAMsJKoDp96VjSMCygSME8Rizpc5iBjfOoYCKjBpp4cAADqqAF9
+   eJxjYCANsBIhj45BQJGAeYp41CGbpYiG0YEgAfMEsWB87hPEIY7LTEoBAKhnAic=
   </data>
  </layer>
 </map>
