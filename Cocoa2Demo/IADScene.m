@@ -12,6 +12,7 @@
 #import "QQSprite.h"
 #import "TouchSprite.h"
 
+
 static const int CountPerRow = 10;
 static const CGFloat MarginBetween = 5.0f;
 static const CGFloat BeginTopY = 64.0f;
@@ -44,19 +45,12 @@ static const CGFloat BeginTopY = 64.0f;
         [dn2 drawPolyWithVerts:vertices count:4 fillColor:CCColor.orangeColor borderWidth:2.0 borderColor:CCColor.blueColor];
         [self addChild:dn2];
         
+        
       
         for (int i = 0; i < CountPerRow; i++) {
             [self addLine:i + 1];
         }
         
-        QQSprite *qq = [QQSprite node];
-        qq.position = ccp(150, 100);
-        [self addChild:qq];
-        
-        
-        TouchSprite *tp = [TouchSprite node];
-        tp.position = ccp(90, 90);
-        [self addChild:tp];
         
     }
     return self;

@@ -69,6 +69,7 @@
 		56BE150220030CFA009D8FEC /* background_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BE14FE20030CFA009D8FEC /* background_1.png */; };
 		56BE15042003116C009D8FEC /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BE15032003116C009D8FEC /* qq.png */; };
 		56BE150920031A89009D8FEC /* QQSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BE150820031A89009D8FEC /* QQSprite.m */; };
+		56CACA652010361200FF1775 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA642010361200FF1775 /* point.png */; };
 		56FE20B7200F354D00E9972C /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FE20B3200F354D00E9972C /* yellow.png */; };
 		56FE20BA200F364000E9972C /* TouchSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FE20B9200F364000E9972C /* TouchSprite.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
@@ -217,6 +218,7 @@
 		56BE15032003116C009D8FEC /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
 		56BE150720031A89009D8FEC /* QQSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQSprite.h; sourceTree = "<group>"; };
 		56BE150820031A89009D8FEC /* QQSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQSprite.m; sourceTree = "<group>"; };
+		56CACA642010361200FF1775 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
 		56FE20B3200F354D00E9972C /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
 		56FE20B8200F364000E9972C /* TouchSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchSprite.h; sourceTree = "<group>"; };
 		56FE20B9200F364000E9972C /* TouchSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchSprite.m; sourceTree = "<group>"; };
@@ -628,6 +630,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				56CACA642010361200FF1775 /* point.png */,
 				56FE20B3200F354D00E9972C /* yellow.png */,
 				569083E2200C6B2100F47F28 /* fire.png */,
 				569210392005D79C00A16227 /* gameArts.plist */,
@@ -816,6 +819,7 @@
 			files = (
 				568AF54E200C8FC8002BCA95 /* ViewController.xib in Resources */,
 				56FE20B7200F354D00E9972C /* yellow.png in Resources */,
+				56CACA652010361200FF1775 /* point.png in Resources */,
 				5692103B2005D79D00A16227 /* gameArts.plist in Resources */,
 				569083E3200C6B2100F47F28 /* fire.png in Resources */,
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
