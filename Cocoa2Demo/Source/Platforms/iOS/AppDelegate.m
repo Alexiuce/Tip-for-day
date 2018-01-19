@@ -28,12 +28,14 @@
 #endif
 #import "MainScene.h"
 #import "GameScene.h"
-
+#import "IADScene.h"
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
 @implementation AppController
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    [GADMobileAds configureWithApplicationID:@"ca-app-pub-3940256099942544/4411468910"];
+   
     NSMutableDictionary* cocos2dSetup;
 #if CC_CCBREADER
     // Configure Cocos2d with the options set in SpriteBuilder
@@ -98,12 +100,17 @@
     
     // Creat a scene
 //    CCScene* main = [MainScene new];
-    CCScene *game = [GameScene node];
+//    CCScene *game = [GameScene node];
+    
+    IADScene *iadScene = [IADScene node];
+    
+
     
     // Run the director with the scene.
     // Push as much scenes as you want (maybe useful for 3D touch)
 //    [director runWithScene:main];
-    [director runWithScene:game];
+//    [director runWithScene:game];
+    [director runWithScene:iadScene];
     
     // Stay positive. Always return a YES :)
     return YES;

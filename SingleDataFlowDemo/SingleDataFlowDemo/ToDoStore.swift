@@ -9,7 +9,9 @@
 import Foundation
 
 
-let dummy = ["buy iWatch","Sale OSX App","buy U disk"]
+let dummy = [NSLocalizedString("buy iWatch", comment: ""),
+             NSLocalizedString("Sale OSX App", comment: "") ,
+             NSLocalizedString("buy U disk", comment: "") ]
 
 struct ToDoStore {
     static let shareStore = ToDoStore()
@@ -19,3 +21,4 @@ struct ToDoStore {
         }
     }
 }
+

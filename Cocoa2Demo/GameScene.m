@@ -12,6 +12,7 @@
 #import <CCActionManager.h>
 #import <CoreMotion/CoreMotion.h>
 #import "XCSprite.h"
+#import <CCParticles.h>
 
 
 static const CGFloat kAnimationDuration = 30.0;
@@ -20,6 +21,7 @@ static const CGFloat kAnimationDuration = 30.0;
 @property (nonatomic, strong) CCSprite *background;
 @property (nonatomic, strong) CMMotionManager *motionManager;
 @property (nonatomic, strong) XCSprite *player;
+@property (nonatomic, strong) CCParticleSystem *fire;
 
 @end
 
@@ -33,12 +35,24 @@ static const CGFloat kAnimationDuration = 30.0;
     // 设置背景
 //    CCNodeColor *bg = [CCNodeColor nodeWithColor:CCColor.grayColor];
 //    [self addChild:bg];
-    
+   
 //    // 创建精灵
 //    CCSprite *qq = [CCSprite spriteWithImageNamed:@"qq.png"];
 //    qq.position = ccp(100, 100);
 //    [self addChild:qq];
 //    self.qq = qq;
+    
+//   
+//    self.fire = [CCParticleFire node];
+//    self.fire.emitterMode = CCParticleSystemModeRadius;
+//    self.fire.startRadius = 200;
+//    self.fire.startRadiusVar = 5.0;
+//    self.fire.endRadius = 30.0;
+//    self.fire.endRadiusVar = 3.0;
+//    self.fire.rotatePerSecond = 180.0;
+//    self.fire.rotatePerSecondVar = 12.0;
+//    self.fire.position = ccp(160, 300);
+//    [self addChild:self.fire];
     
     self.player = [XCSprite spritWithType:XCSpritePlayer];
     self.player.position = ccp(200, 100);
