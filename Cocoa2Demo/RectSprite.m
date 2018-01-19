@@ -14,9 +14,13 @@
 
 @property (nonatomic, assign) BOOL hasExplosion;
 
-@property (nonatomic, weak) CCDrawNode *bgNode;
+@property (nonatomic, strong) CCDrawNode *bgNode;
 
 @property (nonatomic, assign) BOOL hasResult;
+
+@property (nonatomic, strong) CCColor *myBgColor;
+
+@property (nonatomic, assign) CGPoint *fourRect;
 
 @end
 
@@ -32,9 +36,10 @@
 
 - (instancetype)initWithColor:(CCColor *)color size:(CGSize)size{
     self = [super init];
-    [self setUserInteractionEnabled:YES];
     NSAssert(self, @"init failure");
-    self.color = color;
+    [self setUserInteractionEnabled:YES];
+   
+    self.myBgColor = color;
     self.contentSize = size;
     [self setup];
     return self;
@@ -42,13 +47,14 @@
 
 - (void)setup{
     CCDrawNode *bg = [CCDrawNode node];
+   
     CGPoint rect[4];
     rect[0] = CGPointZero;
     rect[1] = ccp(0, self.contentSize.height);
     rect[2] = ccp(self.contentSize.height, self.contentSize.width);
     rect[3] = ccp(self.contentSize.width, 0);
-
-    [bg drawPolyWithVerts:rect count:4 fillColor:self.color borderWidth:0 borderColor:CCColor.redColor];
+    self.fourRect = rect;
+    [bg drawPolyWithVerts:rect count:4 fillColor:self.myBgColor borderWidth:0 borderColor:CCColor.redColor];
     [self addChild:bg];
     _bgNode = bg;
 }
@@ -56,17 +62,15 @@
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
     [self showResult];
-
+//    [self startFlip];
 }
 
 
 - (void)startFlip{
     self.bgNode.color = CCColor.greenColor;
-//    CCActionBlink *fx = [CCActionBlink actionWithDuration:0.7 blinks:2 ];
-//
-//
-//
-//    [self runAction:fx];
+    
+    CCActionBlink *fx = [CCActionBlink actionWithDuration:0.7 blinks:2 ];
+    [self runAction:fx];
 }
 
 - (void)showResult{
@@ -86,8 +90,7 @@
             [self addTriangle];
             break;
     }
-    
-    self.bgNode.color = CCColor.whiteColor;
+   
 }
 
 
@@ -99,6 +102,8 @@
     CCColor *c = CCColor.orangeColor;
     [node drawDot:ccp(w / 2, h / 2) radius:r color:c];
     [self addChild:node];
+    
+    
 }
 
 

@@ -3,7 +3,7 @@
 
 @interface MainScene()
 
-
+@property (nonatomic, weak) CCLabelTTF *label;
 @end
 
 
@@ -17,7 +17,7 @@
     // The thing is, that if this fails, your app will 99.99% crash anyways, so why bother
     // Just make an assert, so that you can catch it in debug
     NSAssert(self, @"Whoops");
-    
+    self.userInteractionEnabled = YES;
     // Background
 //    CCSprite *sprite = [CCSprite spriteWithImageNamed:@"ic_launcher.png"];
 //    sprite.position = ccp(0.5, 0.5);
@@ -33,13 +33,12 @@
     label.positionType = CCPositionTypeNormalized;
     label.position = (CGPoint){0.5, 0.25};
     [self addChild:label];
-    for (CCNode *n in label.children) {
-        XCLog(@"%@",n);
-    }
+    self.label = label;
    
    
     CCSpriteFrame *sf = [CCSpriteFrame frameWithImageNamed:@"fire.png"];
     CCButton *btn = [CCButton buttonWithTitle:@"" spriteFrame:sf];
+    btn.boundingBox
     btn.positionType = CCPositionTypeNormalized;
     btn.position = ccp(0.3, 0.5);
     [self addChild:btn];
@@ -49,11 +48,18 @@
     bflabel.positionType = CCPositionTypeNormalized;
     bflabel.position = ccp(0.5, 0.5);
     [self addChild:bflabel];
-    
-    for (CCNode *n in bflabel.children) {
-        XCLog(@"%@",n);
-    }
 
+    
+    CGPoint targetPoint = ccp(bflabel.position.x, bflabel.position.y + 0.3 );
+  
+
+    CCActionMoveTo *actionLabelMove = [CCActionMoveTo actionWithDuration:3 position:targetPoint];
+
+    CCActionEaseOut *easeLabel = [CCActionEaseOut actionWithAction:actionLabelMove];
+
+    [bflabel runAction:easeLabel];
+    
+    
     // done
     return self;
 }
@@ -84,4 +90,10 @@
     
 }
 
+
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
+    static int i = 0;
+     XCLog(@"label texture%@",self.label.texture);
+    self.label.string = [NSString stringWithFormat:@"Good %zd",i++];
+}
 @end
