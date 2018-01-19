@@ -44,6 +44,8 @@ static const CGFloat kAnimationDuration = 30.0;
     self.player.position = ccp(200, 100);
     [self addChild:self.player];
     
+    CCParticleSystem *fire;
+    
     XCSprite *enemy = [XCSprite spritWithType:XCSpriteEnemy];
     enemy.moveSpeed = ccp(0, -3);
     [self addChild:enemy];
@@ -67,7 +69,6 @@ static const CGFloat kAnimationDuration = 30.0;
 
 - (void)setupUI{
     
-   
     // 添加背景
 
     CCSprite *background1 = [CCSprite spriteWithSpriteFrame:[[XCFrameCache frameCacheForGameArts] spriteFrameByName:@"background_2.png"]];
