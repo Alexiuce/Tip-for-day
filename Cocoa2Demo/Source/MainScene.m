@@ -38,7 +38,7 @@
    
     CCSpriteFrame *sf = [CCSpriteFrame frameWithImageNamed:@"fire.png"];
     CCButton *btn = [CCButton buttonWithTitle:@"" spriteFrame:sf];
-    btn.boundingBox
+    
     btn.positionType = CCPositionTypeNormalized;
     btn.position = ccp(0.3, 0.5);
     [self addChild:btn];

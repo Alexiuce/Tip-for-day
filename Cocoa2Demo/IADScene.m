@@ -74,17 +74,24 @@ static const CGFloat BeginTopY = 64.0f;
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     
     CGFloat spw = (winSize.width - (CountPerRow + 1) * MarginBetween) / CountPerRow;
-    
     CGFloat beginY = (winSize.height - BeginTopY) - ((spw + MarginBetween) * lineNumber - 1);
     
     for (int i = 0; i < CountPerRow; i++) {
         CGFloat x = i * (spw + MarginBetween) + MarginBetween;
-        RectSprite *r = [RectSprite spriteWithColor:CCColor.redColor size:CGSizeMake(spw, spw)];
-       
-        r.anchorPoint = CGPointZero;
-        r.position = ccp(x, beginY);
-        [self addChild:r];
+//        RectSprite *r = [RectSprite spriteWithColor:CCColor.redColor size:CGSizeMake(spw, spw)];
+        CCButton *btn = [CCButton buttonWithTitle:@"" spriteFrame:[CCSpriteFrame frameWithImageNamed:@"yellow.png"]];
+        btn.name = [NSString stringWithFormat:@"%zd",i];
+        [btn setTarget:self selector:@selector(clickButton:)];
+        [btn setScale:spw / btn.contentSize.width];
+        btn.anchorPoint = CGPointZero;
+        btn.position = ccp(x, beginY);
+        [self addChild:btn];
     }
+}
+
+#pragma mark - Button Target Event
+- (void)clickButton:(CCButton *)btn{
+    XCLog(@"%@",btn.name);
 }
 
 
@@ -93,15 +100,6 @@ static const CGFloat BeginTopY = 64.0f;
 //    ViewController *vc = [[ViewController alloc]init];
 //    [[CCDirector sharedDirector] presentViewController:vc animated:YES completion:nil];
 //
-//}
-//- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
-//    CGPoint touchPoint = [touch locationInNode:self];
-//    for (CCNode *node in self.children) {
-//        if ([node isKindOfClass:[RectSprite class]] && CGRectContainsPoint(node.boundingBox, touchPoint)) {
-//            XCLog(@"rect sprite");
-//            break;
-//        }
-//    }
 //}
 
 @end
