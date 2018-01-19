@@ -1,5 +1,12 @@
 #import "MainScene.h"
 
+
+@interface MainScene()
+
+
+@end
+
+
 @implementation MainScene
 
 - (id)init
@@ -22,13 +29,59 @@
     
     NSString *hello = [NSString localizedStringWithFormat:NSLocalizedString(@"Hello World", @"问候语")];
     
-    
     CCLabelTTF *label = [CCLabelTTF labelWithString:hello fontName:@"ArialMT" fontSize:16];
     label.positionType = CCPositionTypeNormalized;
     label.position = (CGPoint){0.5, 0.25};
     [self addChild:label];
+    for (CCNode *n in label.children) {
+        XCLog(@"%@",n);
+    }
+   
+   
+    CCSpriteFrame *sf = [CCSpriteFrame frameWithImageNamed:@"fire.png"];
+    CCButton *btn = [CCButton buttonWithTitle:@"" spriteFrame:sf];
+    btn.positionType = CCPositionTypeNormalized;
+    btn.position = ccp(0.3, 0.5);
+    [self addChild:btn];
+
     
+    CCLabelBMFont *bflabel = [CCLabelBMFont labelWithString:@"Http BMFont" fntFile:@"bitmapFontTest.fnt"];
+    bflabel.positionType = CCPositionTypeNormalized;
+    bflabel.position = ccp(0.5, 0.5);
+    [self addChild:bflabel];
+    
+    for (CCNode *n in bflabel.children) {
+        XCLog(@"%@",n);
+    }
+
     // done
     return self;
 }
+
+- (void)testBreak{
+    for (int i = 0; i < 5; i++) {
+        switch (i) {
+            case 0:
+                XCLog(@"i is one");
+                break;
+            case 1:
+                XCLog(@"i is two");
+                break;
+            case 2:
+                XCLog(@"i is three");
+                break;
+            case 3:
+                XCLog(@"i is four");
+                break;
+            case 4:
+                XCLog(@"i is five");
+                
+                break;
+            default:
+                break;
+        }
+    }
+    
+}
+
 @end

@@ -73,6 +73,8 @@
 		56CACA6B20106ADE00FF1775 /* gridPlane.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA6A20106ADE00FF1775 /* gridPlane.tmx */; };
 		56CACA6D20106C1500FF1775 /* tiles-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA6C20106C1400FF1775 /* tiles-hd.png */; };
 		56CACA75201097E000FF1775 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA77201097E000FF1775 /* Localizable.strings */; };
+		56CACA9020118C6900FF1775 /* bitmapFontTest.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA8B20118C6800FF1775 /* bitmapFontTest.png */; };
+		56CACA9120118C6900FF1775 /* bitmapFontTest.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA8F20118C6900FF1775 /* bitmapFontTest.fnt */; };
 		56FE20B7200F354D00E9972C /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FE20B3200F354D00E9972C /* yellow.png */; };
 		56FE20BA200F364000E9972C /* TouchSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FE20B9200F364000E9972C /* TouchSprite.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
@@ -226,6 +228,8 @@
 		56CACA6C20106C1400FF1775 /* tiles-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiles-hd.png"; sourceTree = "<group>"; };
 		56CACA76201097E000FF1775 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		56CACA78201098B400FF1775 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		56CACA8B20118C6800FF1775 /* bitmapFontTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitmapFontTest.png; sourceTree = "<group>"; };
+		56CACA8F20118C6900FF1775 /* bitmapFontTest.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bitmapFontTest.fnt; sourceTree = "<group>"; };
 		56FE20B3200F354D00E9972C /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
 		56FE20B8200F364000E9972C /* TouchSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchSprite.h; sourceTree = "<group>"; };
 		56FE20B9200F364000E9972C /* TouchSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchSprite.m; sourceTree = "<group>"; };
@@ -637,6 +641,8 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				56CACA8F20118C6900FF1775 /* bitmapFontTest.fnt */,
+				56CACA8B20118C6800FF1775 /* bitmapFontTest.png */,
 				56CACA6C20106C1400FF1775 /* tiles-hd.png */,
 				56CACA6A20106ADE00FF1775 /* gridPlane.tmx */,
 				56CACA642010361200FF1775 /* point.png */,
@@ -834,11 +840,13 @@
 				56CACA652010361200FF1775 /* point.png in Resources */,
 				5692103B2005D79D00A16227 /* gameArts.plist in Resources */,
 				569083E3200C6B2100F47F28 /* fire.png in Resources */,
+				56CACA9020118C6900FF1775 /* bitmapFontTest.png in Resources */,
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
 				569083C6200C549000F47F28 /* Info.plist in Resources */,
 				56BE15042003116C009D8FEC /* qq.png in Resources */,
 				5692103C2005D79D00A16227 /* gameArts.png in Resources */,
 				08BA20931C7865E600263AF8 /* Images.xcassets in Resources */,
+				56CACA9120118C6900FF1775 /* bitmapFontTest.fnt in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				56BE150220030CFA009D8FEC /* background_1.png in Resources */,
 				56CACA75201097E000FF1775 /* Localizable.strings in Resources */,
