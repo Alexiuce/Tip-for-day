@@ -111,6 +111,9 @@
 		D84594C8200A190D00FD7216 /* XCSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D84594C7200A190D00FD7216 /* XCSprite.m */; };
 		D84594CE200A1B6B00FD7216 /* XCFrameCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D84594CD200A1B6B00FD7216 /* XCFrameCache.m */; };
 		D85639CF2000A92600D3F697 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D85639CE2000A92600D3F697 /* GameScene.m */; };
+		D875A5D52012FC9900C38832 /* p2.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5CF2012FC9900C38832 /* p2.png */; };
+		D875A5D62012FC9900C38832 /* p3.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5D32012FC9900C38832 /* p3.png */; };
+		D875A5D72012FC9900C38832 /* p1.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5D42012FC9900C38832 /* p1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -273,6 +276,9 @@
 		D84594CD200A1B6B00FD7216 /* XCFrameCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCFrameCache.m; sourceTree = "<group>"; };
 		D85639CD2000A92600D3F697 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		D85639CE2000A92600D3F697 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		D875A5CF2012FC9900C38832 /* p2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2.png; sourceTree = "<group>"; };
+		D875A5D32012FC9900C38832 /* p3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p3.png; sourceTree = "<group>"; };
+		D875A5D42012FC9900C38832 /* p1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -641,6 +647,9 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D875A5D42012FC9900C38832 /* p1.png */,
+				D875A5CF2012FC9900C38832 /* p2.png */,
+				D875A5D32012FC9900C38832 /* p3.png */,
 				56CACA8F20118C6900FF1775 /* bitmapFontTest.fnt */,
 				56CACA8B20118C6800FF1775 /* bitmapFontTest.png */,
 				56CACA6C20106C1400FF1775 /* tiles-hd.png */,
@@ -834,6 +843,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D875A5D62012FC9900C38832 /* p3.png in Resources */,
 				568AF54E200C8FC8002BCA95 /* ViewController.xib in Resources */,
 				56FE20B7200F354D00E9972C /* yellow.png in Resources */,
 				56CACA6B20106ADE00FF1775 /* gridPlane.tmx in Resources */,
@@ -844,6 +854,7 @@
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
 				569083C6200C549000F47F28 /* Info.plist in Resources */,
 				56BE15042003116C009D8FEC /* qq.png in Resources */,
+				D875A5D52012FC9900C38832 /* p2.png in Resources */,
 				5692103C2005D79D00A16227 /* gameArts.png in Resources */,
 				08BA20931C7865E600263AF8 /* Images.xcassets in Resources */,
 				56CACA9120118C6900FF1775 /* bitmapFontTest.fnt in Resources */,
@@ -851,6 +862,7 @@
 				56BE150220030CFA009D8FEC /* background_1.png in Resources */,
 				56CACA75201097E000FF1775 /* Localizable.strings in Resources */,
 				08BA20211C785F1C00263AF8 /* ic_launcher.png in Resources */,
+				D875A5D72012FC9900C38832 /* p1.png in Resources */,
 				56CACA6D20106C1500FF1775 /* tiles-hd.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
