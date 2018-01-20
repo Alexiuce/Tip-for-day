@@ -93,13 +93,14 @@
     // We are done ...
     // Lets get this thing on the road!
     
-    cocos2dSetup[@"CCSetupScreenOrientation"] = CCScreenOrientationPortrait;
+    cocos2dSetup[CCSetupScreenOrientation] = CCScreenOrientationPortrait;
+//    cocos2dSetup[CCSetupShowDebugStats] = @(YES);
     [self setupCocos2dWithOptions:cocos2dSetup];
     
     CCDirectorIOS* director = (CCDirectorIOS*)[CCDirector sharedDirector];
     
     // Creat a scene
-//    CCScene* main = [MainScene new];
+//    CCScene* main = [MainScene node];
 //    CCScene *game = [GameScene node];
     
     IADScene *iadScene = [IADScene node];

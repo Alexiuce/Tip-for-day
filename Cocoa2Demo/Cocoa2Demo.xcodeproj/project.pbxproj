@@ -75,7 +75,6 @@
 		56CACA75201097E000FF1775 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA77201097E000FF1775 /* Localizable.strings */; };
 		56CACA9020118C6900FF1775 /* bitmapFontTest.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA8B20118C6800FF1775 /* bitmapFontTest.png */; };
 		56CACA9120118C6900FF1775 /* bitmapFontTest.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA8F20118C6900FF1775 /* bitmapFontTest.fnt */; };
-		56FE20B7200F354D00E9972C /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FE20B3200F354D00E9972C /* yellow.png */; };
 		56FE20BA200F364000E9972C /* TouchSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FE20B9200F364000E9972C /* TouchSprite.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* MainScene.m */; };
@@ -115,12 +114,16 @@
 		D875A5D62012FC9900C38832 /* p3.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5D32012FC9900C38832 /* p3.png */; };
 		D875A5D72012FC9900C38832 /* p1.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5D42012FC9900C38832 /* p1.png */; };
 		D875A5D920131BEF00C38832 /* p4.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5D820131BEF00C38832 /* p4.png */; };
-		D875A5DB20131FC900C38832 /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5DA20131FC800C38832 /* empty.png */; };
 		D875A5DD201321C000C38832 /* body.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5DC201321C000C38832 /* body.png */; };
 		D875A5DF2013222000C38832 /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5DE2013222000C38832 /* head.png */; };
 		D875A5E120133CEA00C38832 /* empty.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D875A5E020133CE900C38832 /* empty.mp3 */; };
 		D875A5E320133F6700C38832 /* head.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D875A5E220133F6600C38832 /* head.mp3 */; };
 		D875A5E5201341B900C38832 /* body.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D875A5E4201341B800C38832 /* body.mp3 */; };
+		D875A5E720134AA000C38832 /* planeMap.dat in Resources */ = {isa = PBXBuildFile; fileRef = D875A5E620134AA000C38832 /* planeMap.dat */; };
+		D875A5E920136C0600C38832 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5E820136C0600C38832 /* background.png */; };
+		D875A5EB201372C700C38832 /* life.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5EA201372C700C38832 /* life.png */; };
+		D875A5EF20137B1700C38832 /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5EE20137B1700C38832 /* empty.png */; };
+		D875A5F120137C4600C38832 /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5F020137C4600C38832 /* mask.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,7 +243,6 @@
 		56CACA78201098B400FF1775 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		56CACA8B20118C6800FF1775 /* bitmapFontTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitmapFontTest.png; sourceTree = "<group>"; };
 		56CACA8F20118C6900FF1775 /* bitmapFontTest.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bitmapFontTest.fnt; sourceTree = "<group>"; };
-		56FE20B3200F354D00E9972C /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
 		56FE20B8200F364000E9972C /* TouchSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchSprite.h; sourceTree = "<group>"; };
 		56FE20B9200F364000E9972C /* TouchSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchSprite.m; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
@@ -287,12 +289,16 @@
 		D875A5D32012FC9900C38832 /* p3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p3.png; sourceTree = "<group>"; };
 		D875A5D42012FC9900C38832 /* p1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p1.png; sourceTree = "<group>"; };
 		D875A5D820131BEF00C38832 /* p4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p4.png; sourceTree = "<group>"; };
-		D875A5DA20131FC800C38832 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
 		D875A5DC201321C000C38832 /* body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = body.png; sourceTree = "<group>"; };
 		D875A5DE2013222000C38832 /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
 		D875A5E020133CE900C38832 /* empty.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = empty.mp3; sourceTree = "<group>"; };
 		D875A5E220133F6600C38832 /* head.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = head.mp3; sourceTree = "<group>"; };
 		D875A5E4201341B800C38832 /* body.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = body.mp3; sourceTree = "<group>"; };
+		D875A5E620134AA000C38832 /* planeMap.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = planeMap.dat; sourceTree = "<group>"; };
+		D875A5E820136C0600C38832 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		D875A5EA201372C700C38832 /* life.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = life.png; sourceTree = "<group>"; };
+		D875A5EE20137B1700C38832 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
+		D875A5F020137C4600C38832 /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -583,6 +589,7 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D875A5E620134AA000C38832 /* planeMap.dat */,
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
@@ -661,12 +668,15 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D875A5F020137C4600C38832 /* mask.png */,
+				D875A5EE20137B1700C38832 /* empty.png */,
+				D875A5EA201372C700C38832 /* life.png */,
+				D875A5E820136C0600C38832 /* background.png */,
 				D875A5E4201341B800C38832 /* body.mp3 */,
 				D875A5E220133F6600C38832 /* head.mp3 */,
 				D875A5E020133CE900C38832 /* empty.mp3 */,
 				D875A5DE2013222000C38832 /* head.png */,
 				D875A5DC201321C000C38832 /* body.png */,
-				D875A5DA20131FC800C38832 /* empty.png */,
 				D875A5D820131BEF00C38832 /* p4.png */,
 				D875A5D42012FC9900C38832 /* p1.png */,
 				D875A5CF2012FC9900C38832 /* p2.png */,
@@ -676,7 +686,6 @@
 				56CACA6C20106C1400FF1775 /* tiles-hd.png */,
 				56CACA6A20106ADE00FF1775 /* gridPlane.tmx */,
 				56CACA642010361200FF1775 /* point.png */,
-				56FE20B3200F354D00E9972C /* yellow.png */,
 				569083E2200C6B2100F47F28 /* fire.png */,
 				569210392005D79C00A16227 /* gameArts.plist */,
 				5692103A2005D79C00A16227 /* gameArts.png */,
@@ -865,25 +874,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				D875A5D62012FC9900C38832 /* p3.png in Resources */,
+				D875A5E920136C0600C38832 /* background.png in Resources */,
 				D875A5DF2013222000C38832 /* head.png in Resources */,
 				D875A5D920131BEF00C38832 /* p4.png in Resources */,
 				D875A5E120133CEA00C38832 /* empty.mp3 in Resources */,
 				568AF54E200C8FC8002BCA95 /* ViewController.xib in Resources */,
-				56FE20B7200F354D00E9972C /* yellow.png in Resources */,
 				56CACA6B20106ADE00FF1775 /* gridPlane.tmx in Resources */,
 				56CACA652010361200FF1775 /* point.png in Resources */,
 				D875A5DD201321C000C38832 /* body.png in Resources */,
 				5692103B2005D79D00A16227 /* gameArts.plist in Resources */,
-				D875A5DB20131FC900C38832 /* empty.png in Resources */,
+				D875A5F120137C4600C38832 /* mask.png in Resources */,
 				569083E3200C6B2100F47F28 /* fire.png in Resources */,
+				D875A5E720134AA000C38832 /* planeMap.dat in Resources */,
 				56CACA9020118C6900FF1775 /* bitmapFontTest.png in Resources */,
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
 				569083C6200C549000F47F28 /* Info.plist in Resources */,
 				56BE15042003116C009D8FEC /* qq.png in Resources */,
 				D875A5D52012FC9900C38832 /* p2.png in Resources */,
 				5692103C2005D79D00A16227 /* gameArts.png in Resources */,
+				D875A5EF20137B1700C38832 /* empty.png in Resources */,
 				08BA20931C7865E600263AF8 /* Images.xcassets in Resources */,
 				56CACA9120118C6900FF1775 /* bitmapFontTest.fnt in Resources */,
+				D875A5EB201372C700C38832 /* life.png in Resources */,
 				D875A5E5201341B900C38832 /* body.mp3 in Resources */,
 				D875A5E320133F6700C38832 /* head.mp3 in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,

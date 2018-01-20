@@ -14,6 +14,7 @@
 #import <CCTiledMap.h>
 #import <CCTiledMapLayer.h>
 #import "ObjectAL.h"
+#import "MainScene.h"
 
 static const int CountPerRow = 10;
 static const CGFloat MarginBetween = 5.0f;
@@ -25,6 +26,9 @@ static int planeMap[10][10];
 
 
 @property (nonatomic, strong) NSArray<NSArray <NSNumber *>*> *map;
+@property (nonatomic, assign) NSUInteger score;
+@property (nonatomic, assign) NSInteger userClickCount;
+@property (nonatomic, strong) NSMutableArray *lifeArray;
 
 @end
 
@@ -32,15 +36,8 @@ static int planeMap[10][10];
 
 - (id)init{
     if (self = [super init]) {
+        self.lifeArray = [NSMutableArray arrayWithCapacity:10];
         self.userInteractionEnabled = YES;
-        CCNodeColor *bg = [CCNodeColor nodeWithColor:CCColor.grayColor];
-        [self addChild:bg];
-        [self loadTMX];
-        self.map = [self convertCArrayToNSArray];
-        for (int i = 0; i < CountPerRow; i++) {
-            [self addLine:i + 1];
-        }
-        
     }
     return self;
 }
@@ -70,7 +67,14 @@ static int planeMap[10][10];
 }
 
 - (NSArray<NSArray< NSNumber *>*>*)convertCArrayToNSArray{
+    NSString *mapData = [[NSBundle mainBundle] pathForResource:@"planeMap.dat" ofType:nil];
+    NSArray *array = [NSArray arrayWithContentsOfFile:mapData];
+    if (array.count > 0) {
+        XCLog(@"local array");
+        return array;
+    }
     NSMutableArray *allArray = [NSMutableArray arrayWithCapacity:CountPerRow];
+
     for (int i = 0; i < CountPerRow; i++) {
         NSMutableArray *rowArray = [NSMutableArray arrayWithCapacity:CountPerRow];
         for (int j = 0; j < CountPerRow; j++) {
@@ -78,14 +82,6 @@ static int planeMap[10][10];
             [rowArray addObject:@(planeMap[i][j])];
         }
         [allArray addObject:rowArray];
-    }
-    printf("++++++++++++++++++++++++++++++++++");
-    for (int i = 0; i < CountPerRow; i++) {
-        for (int j = 0; j< CountPerRow; j++) {
-            int r = [allArray[i][j] intValue];
-             printf("%d",r);
-        }
-        printf("\n");
     }
     
     return [allArray copy];
@@ -102,7 +98,7 @@ static int planeMap[10][10];
         CGFloat x = i * (spw + MarginBetween) + MarginBetween;
 //        RectSprite *r = [RectSprite spriteWithColor:CCColor.redColor size:CGSizeMake(spw, spw)];
         int type =  self.map[lineNumber - 1][i].intValue ; //planeMap[lineNumber][i];
-        NSString *fn = @"yellow.png";
+        NSString *fn = @"mask.png";
 //        CCSpriteFrame *normalFrame = [CCSpriteFrame frameWithImageNamed:fn];
         NSString *disableName = @"empty.png";
         switch (type) {
@@ -131,25 +127,73 @@ static int planeMap[10][10];
    
     CCActionBlink *blink = [CCActionBlink actionWithDuration:0.3 blinks:2];
     [btn runAction:blink];
-    
-    
-    CCSprite *s = [CCSprite spriteWithImageNamed:btn.name];
+    // 添加图形
+    CCSprite *s = [CCSprite spriteWithImageNamed:btn.name ];
     s.positionType = CCPositionTypeNormalized;
     s.position = ccp(0.5, 0.5);
     [btn addChild:s];
     btn.userInteractionEnabled = NO;
     
+    // 统计结果
+    if ([btn.name containsString:@"empty"] && --self.userClickCount < 0) {
+        MainScene *main = [MainScene node];
+        CCTransition *transition = [CCDefaultTransition transitionMoveInWithDirection:CCTransitionDirectionLeft duration:0.5];
+        //[CCDefaultTransition transitionRevealWithDirection:CCTransitionDirectionUp duration:0.7];
+        [[CCDirector sharedDirector] pushScene:main withTransition:transition];
+        return;
+    }
     // 点击音效
     [[OALSimpleAudio sharedInstance] playEffect:[btn.name stringByReplacingOccurrencesOfString:@"png" withString:@"mp3"]];
+    if ([btn.name containsString:@"head"]) {
+        self.score++;
+    }
     
 }
 
 
-//- (void)onEnter{
-//    [super onEnter];
-//    ViewController *vc = [[ViewController alloc]init];
-//    [[CCDirector sharedDirector] presentViewController:vc animated:YES completion:nil];
-//
-//}
+- (void)onEnter{
+    [super onEnter];
+    XCLog(@"on enter");
+    CGSize winSize = [CCDirector sharedDirector].viewSize;
+    CCSprite *bg = [CCSprite spriteWithImageNamed:@"background.png"];
+    bg.anchorPoint = CGPointZero;
+    bg.scaleX =  winSize.width / bg.contentSize.width ;
+    bg.scaleY = winSize.height / bg.contentSize.height ;
+    [self addChild:bg];
+    self.map = [self convertCArrayToNSArray];
+    for (int i = 0; i < CountPerRow; i++) {
+        [self addLine:i + 1];
+    }
+    self.userClickCount = 10;
+}
+
+- (void)updateLife{
+   
+    for (CCSprite *life in self.lifeArray) {
+        [self removeChild:life];
+    }
+    [self.lifeArray removeAllObjects];
+    CGSize winSize = [CCDirector sharedDirector].viewSize;
+    CGFloat lifeY = winSize.height - 50;
+    for (int i = 0; i < self.userClickCount; i++) {
+        CCSprite *lifeSprite = [CCSprite spriteWithImageNamed:@"life.png"];
+        lifeSprite.name = @"life";
+        lifeSprite.anchorPoint = CGPointZero;
+        lifeSprite.position = ccp(winSize.width - i *(lifeSprite.contentSize.width) - 25, lifeY);
+        [self addChild:lifeSprite];
+        [self.lifeArray addObject:lifeSprite];
+    }
+}
+
+- (void)setUserClickCount:(NSInteger)userClickCount{
+    _userClickCount = userClickCount;
+    [self updateLife];
+}
+
+- (void)onExit{
+    [super onExit];
+    XCLog(@"on exit");
+    [self removeAllChildren];
+}
 
 @end

@@ -26,7 +26,7 @@
     
     // The standard Hello World text
     
-    
+    self.color = CCColor.lightGrayColor;
     NSString *hello = [NSString localizedStringWithFormat:NSLocalizedString(@"Hello World", @"问候语")];
     
     CCLabelTTF *label = [CCLabelTTF labelWithString:hello fontName:@"ArialMT" fontSize:16];
@@ -36,64 +36,41 @@
     self.label = label;
    
    
-    CCSpriteFrame *sf = [CCSpriteFrame frameWithImageNamed:@"fire.png"];
-    CCButton *btn = [CCButton buttonWithTitle:@"" spriteFrame:sf];
-    
+//    CCSpriteFrame *sf = [CCSpriteFrame frameWithImageNamed:@"fire.png"];
+//    [CCButton buttonWithTitle:<#(NSString *)#>];
+    CCButton *btn = [CCButton buttonWithTitle:@"Restart Game" fontName:@"AvenirNext-Bold" fontSize:30];
+    [btn setTarget:self selector:@selector(popMainScene)];
     btn.positionType = CCPositionTypeNormalized;
-    btn.position = ccp(0.3, 0.5);
+    btn.position = ccp(0.5, 0.5);
     [self addChild:btn];
 
     
-    CCLabelBMFont *bflabel = [CCLabelBMFont labelWithString:@"Http BMFont" fntFile:@"bitmapFontTest.fnt"];
+    CCLabelBMFont *bflabel = [CCLabelBMFont labelWithString:@"Game Over" fntFile:@"bitmapFontTest.fnt"];
     bflabel.positionType = CCPositionTypeNormalized;
-    bflabel.position = ccp(0.5, 0.5);
+    bflabel.position = ccp(0.5, 0.7);
     [self addChild:bflabel];
 
     
-    CGPoint targetPoint = ccp(bflabel.position.x, bflabel.position.y + 0.3 );
-  
-
-    CCActionMoveTo *actionLabelMove = [CCActionMoveTo actionWithDuration:3 position:targetPoint];
-
-    CCActionEaseOut *easeLabel = [CCActionEaseOut actionWithAction:actionLabelMove];
-
-    [bflabel runAction:easeLabel];
+//    CGPoint targetPoint = ccp(bflabel.position.x, bflabel.position.y + 0.3 );
+//
+//
+//    CCActionMoveTo *actionLabelMove = [CCActionMoveTo actionWithDuration:3 position:targetPoint];
+//
+//    CCActionEaseOut *easeLabel = [CCActionEaseOut actionWithAction:actionLabelMove];
+//
+//    [bflabel runAction:easeLabel];
     
     
     // done
     return self;
 }
 
-- (void)testBreak{
-    for (int i = 0; i < 5; i++) {
-        switch (i) {
-            case 0:
-                XCLog(@"i is one");
-                break;
-            case 1:
-                XCLog(@"i is two");
-                break;
-            case 2:
-                XCLog(@"i is three");
-                break;
-            case 3:
-                XCLog(@"i is four");
-                break;
-            case 4:
-                XCLog(@"i is five");
-                
-                break;
-            default:
-                break;
-        }
-    }
-    
+- (void)popMainScene{
+    [[CCDirector sharedDirector] popScene];
 }
-
-
-- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
-    static int i = 0;
-     XCLog(@"label texture%@",self.label.texture);
-    self.label.string = [NSString stringWithFormat:@"Good %zd",i++];
-}
+//- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
+//    static int i = 0;
+//     XCLog(@"label texture%@",self.label.texture);
+//    self.label.string = [NSString stringWithFormat:@"Good %zd",i++];
+//}
 @end
