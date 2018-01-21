@@ -31,6 +31,8 @@ static int planeMap[10][10];
 @property (nonatomic, assign) NSInteger userClickCount;
 @property (nonatomic, strong) NSMutableArray *lifeArray;
 
+@property (nonatomic, weak) CCLabelTTF *lifeLabel;
+
 @end
 
 @implementation IADScene
@@ -139,10 +141,10 @@ static int planeMap[10][10];
     if ([btn.name containsString:@"empty"] && --self.userClickCount < 0) {
         MainScene *main = [MainScene node];
         
-        CCTransition *transition = [[CCTransition alloc]initWithDuration:0.5];
+//        CCTransition *transition = [CCDefaultTransition transitionFadeWithDuration:0.5];
      
         //[CCDefaultTransition transitionRevealWithDirection:CCTransitionDirectionUp duration:0.7];
-        [[CCDirector sharedDirector] pushScene:main withTransition:transition];
+        [[CCDirector sharedDirector] pushScene:main];
         return;
     }else if ([btn.name containsString:@"head"]){
         self.score++;
@@ -159,6 +161,7 @@ static int planeMap[10][10];
 
 - (void)onEnter{
     [super onEnter];
+    [self removeAllChildren];
     XCLog(@"on enter");
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     CCSprite *bg = [CCSprite spriteWithImageNamed:@"background.png"];
@@ -171,6 +174,10 @@ static int planeMap[10][10];
         [self addLine:i + 1];
     }
     self.userClickCount = 10;
+    CCLabelTTF *label = [CCLabelTTF labelWithString:NSLocalizedString(@"life", @"") fontName:@"AvenirNext-Bold" fontSize:20];
+    label.position = ccp(self.contentSize.width - 190, self.contentSize.height - 37);
+    label.color = CCColor.orangeColor;
+    [self addChild:label];
 }
 
 - (void)updateLife{
@@ -196,10 +203,6 @@ static int planeMap[10][10];
     [self updateLife];
 }
 
-- (void)onExit{
-    [super onExit];
-    XCLog(@"on exit");
-    [self removeAllChildren];
-}
+
 
 @end
