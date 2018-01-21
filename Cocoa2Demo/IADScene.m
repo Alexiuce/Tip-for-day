@@ -140,7 +140,7 @@ static int planeMap[10][10];
     // 统计结果
     if ([btn.name containsString:@"empty"] && --self.userClickCount < 0) {
         MainScene *main = [MainScene node];
-        
+        main.title = @"game over";
 //        CCTransition *transition = [CCDefaultTransition transitionFadeWithDuration:0.5];
      
         //[CCDefaultTransition transitionRevealWithDirection:CCTransitionDirectionUp duration:0.7];
@@ -148,13 +148,14 @@ static int planeMap[10][10];
         return;
     }else if ([btn.name containsString:@"head"]){
         self.score++;
-        
+        if (self.score == 3) {
+            MainScene *s = [MainScene node];
+            s.title = @"You win!";
+            [[CCDirector sharedDirector] pushScene:s];
+        }
     }
     // 点击音效
     [[OALSimpleAudio sharedInstance] playEffect:[btn.name stringByReplacingOccurrencesOfString:@"png" withString:@"mp3"]];
-    if ([btn.name containsString:@"head"]) {
-        self.score++;
-    }
     
 }
 
@@ -162,6 +163,7 @@ static int planeMap[10][10];
 - (void)onEnter{
     [super onEnter];
     [self removeAllChildren];
+    [self.lifeArray removeAllObjects];
     XCLog(@"on enter");
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     CCSprite *bg = [CCSprite spriteWithImageNamed:@"background.png"];
@@ -173,22 +175,14 @@ static int planeMap[10][10];
     for (int i = 0; i < CountPerRow; i++) {
         [self addLine:i + 1];
     }
-    self.userClickCount = 10;
+   
     CCLabelTTF *label = [CCLabelTTF labelWithString:NSLocalizedString(@"life", @"") fontName:@"AvenirNext-Bold" fontSize:20];
     label.position = ccp(self.contentSize.width - 190, self.contentSize.height - 37);
     label.color = CCColor.orangeColor;
     [self addChild:label];
-}
-
-- (void)updateLife{
-   
-    for (CCSprite *life in self.lifeArray) {
-        [self removeChild:life];
-    }
-    [self.lifeArray removeAllObjects];
-    CGSize winSize = [CCDirector sharedDirector].viewSize;
+ 
     CGFloat lifeY = winSize.height - 50;
-    for (int i = 0; i < self.userClickCount; i++) {
+    for (int i = 0; i < 10; i++) {
         CCSprite *lifeSprite = [CCSprite spriteWithImageNamed:@"life.png"];
         lifeSprite.name = @"life";
         lifeSprite.anchorPoint = CGPointZero;
@@ -196,6 +190,23 @@ static int planeMap[10][10];
         [self addChild:lifeSprite];
         [self.lifeArray addObject:lifeSprite];
     }
+     self.userClickCount = 10;
+    
+    CCSprite *detailSprite = [CCSprite spriteWithImageNamed:@"detail.png"];
+    detailSprite.scale = winSize.width / detailSprite.contentSize.width;
+    detailSprite.anchorPoint = CGPointZero;
+    [self addChild:detailSprite];
+    
+    
+}
+
+- (void)updateLife{
+    if (self.userClickCount < 0) {return;}
+    for (int i = (int)self.userClickCount; i < 10; i++) {
+        CCSprite *life = self.lifeArray[i];
+        life.visible = NO;
+    }
+    
 }
 
 - (void)setUserClickCount:(NSInteger)userClickCount{

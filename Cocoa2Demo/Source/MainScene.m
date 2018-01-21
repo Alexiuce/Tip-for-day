@@ -38,19 +38,7 @@
    
 //    CCSpriteFrame *sf = [CCSpriteFrame frameWithImageNamed:@"fire.png"];
 //    [CCButton buttonWithTitle:<#(NSString *)#>];
-    CCButton *btn = [CCButton buttonWithTitle:@"Restart Game" fontName:@"AvenirNext-Bold" fontSize:30];
-    [btn setTarget:self selector:@selector(popMainScene)];
-    btn.positionType = CCPositionTypeNormalized;
-    btn.position = ccp(0.5, 0.5);
-    [self addChild:btn];
-
-    
-    CCLabelBMFont *bflabel = [CCLabelBMFont labelWithString:@"Game Over" fntFile:@"bitmapFontTest.fnt"];
-    bflabel.positionType = CCPositionTypeNormalized;
-    bflabel.position = ccp(0.5, 0.7);
-    [self addChild:bflabel];
-
-    
+  
 //    CGPoint targetPoint = ccp(bflabel.position.x, bflabel.position.y + 0.3 );
 //
 //
@@ -63,6 +51,25 @@
     
     // done
     return self;
+}
+
+- (void)setTitle:(NSString *)title{
+    _title = title ;
+    CCLabelBMFont *bflabel = [CCLabelBMFont labelWithString:self.title fntFile:@"bitmapFontTest.fnt"];
+    bflabel.positionType = CCPositionTypeNormalized;
+    bflabel.position = ccp(0.5, 0.7);
+    [self addChild:bflabel];
+    
+    NSString *text = @"Restart Game";
+    if ([title containsString:@"win"]) {
+        text = @"Continue More";
+    }
+    
+    CCButton *btn = [CCButton buttonWithTitle:text fontName:@"AvenirNext-Bold" fontSize:30];
+    [btn setTarget:self selector:@selector(popMainScene)];
+    btn.positionType = CCPositionTypeNormalized;
+    btn.position = ccp(0.5, 0.5);
+    [self addChild:btn];
 }
 
 - (void)popMainScene{
