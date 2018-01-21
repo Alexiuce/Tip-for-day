@@ -16,6 +16,7 @@
 #import "ObjectAL.h"
 #import "MainScene.h"
 
+
 static const int CountPerRow = 10;
 static const CGFloat MarginBetween = 5.0f;
 static const CGFloat BeginTopY = 64.0f;
@@ -137,10 +138,15 @@ static int planeMap[10][10];
     // 统计结果
     if ([btn.name containsString:@"empty"] && --self.userClickCount < 0) {
         MainScene *main = [MainScene node];
-        CCTransition *transition = [CCDefaultTransition transitionMoveInWithDirection:CCTransitionDirectionLeft duration:0.5];
+        
+        CCTransition *transition = [[CCTransition alloc]initWithDuration:0.5];
+     
         //[CCDefaultTransition transitionRevealWithDirection:CCTransitionDirectionUp duration:0.7];
         [[CCDirector sharedDirector] pushScene:main withTransition:transition];
         return;
+    }else if ([btn.name containsString:@"head"]){
+        self.score++;
+        
     }
     // 点击音效
     [[OALSimpleAudio sharedInstance] playEffect:[btn.name stringByReplacingOccurrencesOfString:@"png" withString:@"mp3"]];
