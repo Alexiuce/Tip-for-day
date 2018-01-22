@@ -34,6 +34,8 @@
 		5617E33A200854A3002D909B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617E336200854A3002D909B /* CoreMotion.framework */; };
 		56401F36200D8A8500D72DCC /* RectSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56401F35200D8A8500D72DCC /* RectSprite.m */; };
 		56401F4F200DCA6900D72DCC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56401F4E200DCA6900D72DCC /* libz.tbd */; };
+		5652EE922015BE6800DAE181 /* gridMap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 5652EE8E2015BE6800DAE181 /* gridMap.tmx */; };
+		5652EE952015C5C700DAE181 /* XCTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 5652EE942015C5C700DAE181 /* XCTileMap.m */; };
 		568AF54D200C8FC8002BCA95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568AF54B200C8FC8002BCA95 /* ViewController.m */; };
 		568AF54E200C8FC8002BCA95 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568AF54C200C8FC8002BCA95 /* ViewController.xib */; };
 		568AF554200C9058002BCA95 /* IADScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 568AF553200C9058002BCA95 /* IADScene.m */; };
@@ -165,6 +167,9 @@
 		56401F35200D8A8500D72DCC /* RectSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RectSprite.m; sourceTree = "<group>"; };
 		56401F44200DA86E00D72DCC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		56401F4E200DCA6900D72DCC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5652EE8E2015BE6800DAE181 /* gridMap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gridMap.tmx; sourceTree = "<group>"; };
+		5652EE932015C5C700DAE181 /* XCTileMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCTileMap.h; sourceTree = "<group>"; };
+		5652EE942015C5C700DAE181 /* XCTileMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCTileMap.m; sourceTree = "<group>"; };
 		568AF54A200C8FC8002BCA95 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		568AF54B200C8FC8002BCA95 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		568AF54C200C8FC8002BCA95 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
@@ -605,6 +610,8 @@
 				56BE150820031A89009D8FEC /* QQSprite.m */,
 				568AF552200C9058002BCA95 /* IADScene.h */,
 				568AF553200C9058002BCA95 /* IADScene.m */,
+				5652EE932015C5C700DAE181 /* XCTileMap.h */,
+				5652EE942015C5C700DAE181 /* XCTileMap.m */,
 				56FE20B8200F364000E9972C /* TouchSprite.h */,
 				56FE20B9200F364000E9972C /* TouchSprite.m */,
 				56401F34200D8A8500D72DCC /* RectSprite.h */,
@@ -686,6 +693,7 @@
 				D875A5D32012FC9900C38832 /* p3.png */,
 				56CACA8F20118C6900FF1775 /* bitmapFontTest.fnt */,
 				56CACA8B20118C6800FF1775 /* bitmapFontTest.png */,
+				5652EE8E2015BE6800DAE181 /* gridMap.tmx */,
 				56CACA6C20106C1400FF1775 /* tiles-hd.png */,
 				56CACA6A20106ADE00FF1775 /* gridPlane.tmx */,
 				56CACA642010361200FF1775 /* point.png */,
@@ -902,6 +910,7 @@
 				D875A5EB201372C700C38832 /* life.png in Resources */,
 				D875A5E5201341B900C38832 /* body.mp3 in Resources */,
 				D875A5E320133F6700C38832 /* head.mp3 in Resources */,
+				5652EE922015BE6800DAE181 /* gridMap.tmx in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				56BE150220030CFA009D8FEC /* background_1.png in Resources */,
 				56CACA75201097E000FF1775 /* Localizable.strings in Resources */,
@@ -1079,6 +1088,7 @@
 				569083D0200C549000F47F28 /* ALWrapper.m in Sources */,
 				569083C9200C549000F47F28 /* ALCaptureDevice.m in Sources */,
 				D84594C8200A190D00FD7216 /* XCSprite.m in Sources */,
+				5652EE952015C5C700DAE181 /* XCTileMap.m in Sources */,
 				569083D3200C549000F47F28 /* OALSuspendHandler.m in Sources */,
 				D84594CE200A1B6B00FD7216 /* XCFrameCache.m in Sources */,
 			);

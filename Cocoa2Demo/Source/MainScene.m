@@ -1,10 +1,15 @@
 #import "MainScene.h"
 #import <CCEffectNode.h>
 #import <CCEffectBlur.h>
+#import "XCTileMap.h"
+
 
 @interface MainScene()
 
 @property (nonatomic, weak) CCLabelTTF *label;
+
+@property (nonatomic, weak) CCTiledMap *bgMap;
+
 @end
 
 
@@ -36,9 +41,13 @@
     [self addChild:label];
     self.label = label;
 
+    XCTileMap *bg = [XCTileMap tiledMapWithFile:@"gridMap.tmx"];
+    bg.scale = [CCDirector sharedDirector].viewSize.width / bg.contentSize.width;
+    [self addChild:bg];
+    _bgMap = bg;
     
     
-    self.title = @"Demo";
+//    self.title = @"Demo";
 //    CCSpriteFrame *sf = [CCSpriteFrame frameWithImageNamed:@"fire.png"];
 //    [CCButton buttonWithTitle:<#(NSString *)#>];
   
@@ -100,9 +109,5 @@
 - (void)popMainScene{
     [[CCDirector sharedDirector] popScene];
 }
-//- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
-//    static int i = 0;
-//     XCLog(@"label texture%@",self.label.texture);
-//    self.label.string = [NSString stringWithFormat:@"Good %zd",i++];
-//}
+
 @end
