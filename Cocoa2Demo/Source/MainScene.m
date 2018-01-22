@@ -43,6 +43,7 @@
 
     XCTileMap *bg = [XCTileMap tiledMapWithFile:@"gridMap.tmx"];
     bg.scale = [CCDirector sharedDirector].viewSize.width / bg.contentSize.width;
+    bg.position = ccp(0, 100);
     [self addChild:bg];
     _bgMap = bg;
     

@@ -58,7 +58,7 @@ static const CGFloat kAnimationDuration = 30.0;
     self.player.position = ccp(200, 100);
     [self addChild:self.player];
     
-    CCParticleSystem *fire;
+//    CCParticleSystem *fire;
     
     XCSprite *enemy = [XCSprite spritWithType:XCSpriteEnemy];
     enemy.moveSpeed = ccp(0, -3);

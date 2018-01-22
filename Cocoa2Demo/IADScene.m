@@ -15,8 +15,9 @@
 #import <CCTiledMapLayer.h>
 #import "ObjectAL.h"
 #import "MainScene.h"
+#import "XCFrameCache.h"
 
-
+static const CGFloat kAnimationDuration = 30.0;
 static const int CountPerRow = 10;
 static const CGFloat MarginBetween = 5.0f;
 static const CGFloat BeginTopY = 64.0f;
@@ -41,6 +42,7 @@ static int planeMap[10][10];
     if (self = [super init]) {
         self.lifeArray = [NSMutableArray arrayWithCapacity:10];
         self.userInteractionEnabled = YES;
+       
     }
     return self;
 }
@@ -166,11 +168,12 @@ static int planeMap[10][10];
     [self.lifeArray removeAllObjects];
     XCLog(@"on enter");
     CGSize winSize = [CCDirector sharedDirector].viewSize;
-    CCSprite *bg = [CCSprite spriteWithImageNamed:@"background.png"];
-    bg.anchorPoint = CGPointZero;
-    bg.scaleX =  winSize.width / bg.contentSize.width ;
-    bg.scaleY = winSize.height / bg.contentSize.height ;
-    [self addChild:bg];
+    [self setupBg];
+//    CCSprite *bg = [CCSprite spriteWithImageNamed:@"background.png"];
+//    bg.anchorPoint = CGPointZero;
+//    bg.scaleX =  winSize.width / bg.contentSize.width ;
+//    bg.scaleY = winSize.height / bg.contentSize.height ;
+//    [self addChild:bg];
     self.map = [self convertCArrayToNSArray];
     for (int i = 0; i < CountPerRow; i++) {
         [self addLine:i + 1];
@@ -214,6 +217,43 @@ static int planeMap[10][10];
     [self updateLife];
 }
 
+- (void)setupBg{
+    // 添加背景
+    
+    CCSprite *background1 = [CCSprite spriteWithSpriteFrame:[[XCFrameCache frameCacheForGameArts] spriteFrameByName:@"background_2.png"]];
+    ccTexParams texParams = {GL_NEAREST,GL_NEAREST,GL_CLAMP_TO_EDGE,GL_CLAMP_TO_EDGE};
+    [background1.texture setTexParameters:&texParams];
+    CGFloat height = background1.contentSize.height ;
+    background1.anchorPoint = CGPointZero;
+    background1.position = ccp(0, height);
+    [self addChild:background1 z:-1];
+    
+    CCSprite * _background = [CCSprite spriteWithSpriteFrame:[[XCFrameCache frameCacheForGameArts] spriteFrameByName:@"background_2.png"]];
+    
+    _background.anchorPoint = CGPointZero;
+    
+    [self addChild:_background z:-1];
+    
+    // 添加文字
+    
+    // 添加移动动画
+    
+    {
+        CCAction *action = [CCActionMoveBy actionWithDuration:kAnimationDuration position:ccp(0, -height)];
+        CCAction *action1 = [CCActionMoveTo actionWithDuration:0 position:ccp(0, height)];
+        CCActionInterval *seqActon = [CCActionSequence actionWithArray:@[action,action,action1]];
+        CCActionRepeatForever *foreverAction = [CCActionRepeatForever actionWithAction: seqActon];
+        [background1 runAction:foreverAction];
+        
+    }
+    
+    
+    CCAction *action = [CCActionMoveBy actionWithDuration:kAnimationDuration position:ccp(0, -height)];
+    CCAction *action1 = [CCActionMoveTo actionWithDuration:0 position:ccp(0, height)];
+    CCActionSequence *seqActon = [CCActionSequence actionWithArray:@[action,action1,action]];
+    CCActionRepeatForever *foreverAction = [CCActionRepeatForever actionWithAction: seqActon];
+    [_background runAction:foreverAction];
+}
 
 
 @end

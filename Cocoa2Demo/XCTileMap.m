@@ -10,6 +10,11 @@
 #import <CCTiledMapLayer.h>
 
 
+@interface XCTileMap()
+
+
+@end
+
 @implementation XCTileMap
 
 - (id)initWithFile:(NSString *)tmxFile{
@@ -28,5 +33,9 @@
     CGPoint p1 = [mapLayer positionAt:p2];
     XCLog(@"p1 = %@",NSStringFromCGPoint(p1));
 }
+
+
+
+
 
 @end

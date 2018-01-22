@@ -10,4 +10,5 @@
 
 @interface XCTileMap : CCTiledMap
 
+
 @end
