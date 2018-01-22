@@ -127,6 +127,7 @@
 		D875A5EF20137B1700C38832 /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5EE20137B1700C38832 /* empty.png */; };
 		D875A5F120137C4600C38832 /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = D875A5F020137C4600C38832 /* mask.png */; };
 		D8928CC02014BC8100C19109 /* detail.png in Resources */ = {isa = PBXBuildFile; fileRef = D8928CBC2014BC8100C19109 /* detail.png */; };
+		D8F3349A2016152D00BC37C1 /* scrollBg.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F334962016152C00BC37C1 /* scrollBg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -306,6 +307,7 @@
 		D875A5EE20137B1700C38832 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
 		D875A5F020137C4600C38832 /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
 		D8928CBC2014BC8100C19109 /* detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail.png; sourceTree = "<group>"; };
+		D8F334962016152C00BC37C1 /* scrollBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollBg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -677,6 +679,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D8F334962016152C00BC37C1 /* scrollBg.png */,
 				D8928CBC2014BC8100C19109 /* detail.png */,
 				D875A5F020137C4600C38832 /* mask.png */,
 				D875A5EE20137B1700C38832 /* empty.png */,
@@ -901,6 +904,7 @@
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
 				569083C6200C549000F47F28 /* Info.plist in Resources */,
 				D8928CC02014BC8100C19109 /* detail.png in Resources */,
+				D8F3349A2016152D00BC37C1 /* scrollBg.png in Resources */,
 				56BE15042003116C009D8FEC /* qq.png in Resources */,
 				D875A5D52012FC9900C38832 /* p2.png in Resources */,
 				5692103C2005D79D00A16227 /* gameArts.png in Resources */,
