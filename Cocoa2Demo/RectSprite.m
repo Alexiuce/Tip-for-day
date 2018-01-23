@@ -38,7 +38,8 @@
     self = [super init];
     NSAssert(self, @"init failure");
     [self setUserInteractionEnabled:YES];
-   
+
+    CCActionCallFunc
     self.myBgColor = color;
     self.contentSize = size;
     [self setup];
