@@ -42,7 +42,12 @@ static int planeMap[10][10];
     if (self = [super init]) {
         self.lifeArray = [NSMutableArray arrayWithCapacity:10];
         self.userInteractionEnabled = YES;
-       
+        //获取当前设备语言
+        NSArray *appLanguages = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"];
+        NSString *languageName = [appLanguages objectAtIndex:0];
+        XCLog(@"language = %@",languageName);
+        
+      
     }
     return self;
 }
