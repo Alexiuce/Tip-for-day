@@ -214,8 +214,6 @@ static int planeMap[10][10];
     helpButton.positionType = CCPositionTypeNormalized;
     helpButton.position = ccp(0.95, 0.98);
     [self addChild:helpButton];
-
-    CCProgressNode
 }
 
 - (void)updateLife{
