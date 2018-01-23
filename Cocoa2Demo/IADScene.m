@@ -19,7 +19,7 @@
 
 static const CGFloat kAnimationDuration = 30.0;
 static const int CountPerRow = 10;
-static const CGFloat MarginBetween = 5.0f;
+static const CGFloat MarginBetween = 2.0f;
 static const CGFloat BeginTopY = 64.0f;
 
 static int planeMap[10][10];
@@ -97,13 +97,16 @@ static int planeMap[10][10];
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     
     CGFloat spw = (winSize.width - (CountPerRow + 1) * MarginBetween) / CountPerRow;
-    CGFloat beginY = (winSize.height - BeginTopY) - ((spw + MarginBetween) * lineNumber - 1);
+    
+    CGFloat topY = (winSize.height - ((CountPerRow - 1)*MarginBetween + CountPerRow * spw)) * 0.5;
+    
+    CGFloat beginY = (winSize.height - topY) - ((spw + MarginBetween) * lineNumber - 1);
     
     for (int i = 0; i < CountPerRow; i++) {
         CGFloat x = i * (spw + MarginBetween) + MarginBetween;
 //        RectSprite *r = [RectSprite spriteWithColor:CCColor.redColor size:CGSizeMake(spw, spw)];
         int type =  self.map[lineNumber - 1][i].intValue ; //planeMap[lineNumber][i];
-        NSString *fn = @"mask.png";
+        NSString *fn = @"p4.png";
 //        CCSpriteFrame *normalFrame = [CCSpriteFrame frameWithImageNamed:fn];
         NSString *disableName = @"empty.png";
         switch (type) {
@@ -166,7 +169,6 @@ static int planeMap[10][10];
     [super onEnter];
     [self removeAllChildren];
     [self.lifeArray removeAllObjects];
-    XCLog(@"on enter");
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     [self setupBg];
 //    CCSprite *bg = [CCSprite spriteWithImageNamed:@"background.png"];
@@ -178,13 +180,13 @@ static int planeMap[10][10];
     for (int i = 0; i < CountPerRow; i++) {
         [self addLine:i + 1];
     }
-   
+   // life label
     CCLabelTTF *label = [CCLabelTTF labelWithString:NSLocalizedString(@"life", @"") fontName:@"AvenirNext-Bold" fontSize:20];
     label.position = ccp(self.contentSize.width - 190, self.contentSize.height - 37);
     label.color = CCColor.orangeColor;
     [self addChild:label];
- 
-    CGFloat lifeY = winSize.height - 50;
+   // life sprite
+    CGFloat lifeY = winSize.height - BeginTopY;
     for (int i = 0; i < 10; i++) {
         CCSprite *lifeSprite = [CCSprite spriteWithImageNamed:@"life.png"];
         lifeSprite.name = @"life";
@@ -194,13 +196,19 @@ static int planeMap[10][10];
         [self.lifeArray addObject:lifeSprite];
     }
      self.userClickCount = 10;
-    
+    // detail for game
     CCSprite *detailSprite = [CCSprite spriteWithImageNamed:@"detail.png"];
     detailSprite.scale = winSize.width / detailSprite.contentSize.width;
     detailSprite.anchorPoint = CGPointZero;
     [self addChild:detailSprite];
     
-    
+    // add Help
+    CCSpriteFrame *sf = [CCSpriteFrame frameWithImageNamed:@"p2.png"];
+    CCButton *helpButton = [CCButton buttonWithTitle:nil spriteFrame:sf];
+//    CCSprite *helpSprite = [CCSprite spriteWithImageNamed:@"p2.png"];
+    helpButton.positionType = CCPositionTypeNormalized;
+    helpButton.position = ccp(0.95, 0.98);
+    [self addChild:helpButton];
 }
 
 - (void)updateLife{
