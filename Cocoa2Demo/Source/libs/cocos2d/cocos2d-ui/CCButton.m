@@ -444,7 +444,7 @@
     [self needsLayout];
 }
 
-- (void) setVerticalPadding:(float)verticalPadding
+- (void) fsetVerticalPadding:(float)verticalPadding
 {
     _verticalPadding = verticalPadding;
     [self needsLayout];

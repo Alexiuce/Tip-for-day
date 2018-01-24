@@ -47,6 +47,10 @@ static int planeMap[10][10];
         NSString *languageName = [appLanguages objectAtIndex:0];
         XCLog(@"language = %@",languageName);
         
+        // 预先加载音效
+        for (NSString *name in @[@"head.mp3",@"body.mp3",@"empty.mp3"]) {
+            [[OALSimpleAudio sharedInstance] preloadEffect:name];
+        }
       
     }
     return self;
@@ -164,8 +168,11 @@ static int planeMap[10][10];
             [[CCDirector sharedDirector] pushScene:s];
         }
     }
+    
+    NSString *effectName = [btn.name stringByReplacingOccurrencesOfString:@"png" withString:@"mp3"];
+    
     // 点击音效
-    [[OALSimpleAudio sharedInstance] playEffect:[btn.name stringByReplacingOccurrencesOfString:@"png" withString:@"mp3"]];
+    [[OALSimpleAudio sharedInstance] playEffect:effectName];
     
 }
 

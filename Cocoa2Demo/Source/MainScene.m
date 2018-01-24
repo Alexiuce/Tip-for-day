@@ -2,7 +2,7 @@
 #import <CCEffectNode.h>
 #import <CCEffectBlur.h>
 #import "XCTileMap.h"
-
+#import "XCGameButton.h"
 
 @interface MainScene()
 
@@ -33,20 +33,35 @@
     // The standard Hello World text
     
     self.color = CCColor.lightGrayColor;
-    NSString *hello = [NSString localizedStringWithFormat:NSLocalizedString(@"Hello World", @"问候语")];
-    
-    CCLabelTTF *label = [CCLabelTTF labelWithString:hello fontName:@"ArialMT" fontSize:16];
-    label.positionType = CCPositionTypeNormalized;
-    label.position = (CGPoint){0.5, 0.25};
-    [self addChild:label];
-    self.label = label;
+//    NSString *hello = [NSString localizedStringWithFormat:NSLocalizedString(@"Hello World", @"问候语")];
+//
+//    CCLabelTTF *label = [CCLabelTTF labelWithString:hello fontName:@"ArialMT" fontSize:16];
+//    label.positionType = CCPositionTypeNormalized;
+//    label.position = (CGPoint){0.5, 0.25};
+//    [self addChild:label];
+//    self.label = label;
 
-    XCTileMap *bg = [XCTileMap tiledMapWithFile:@"gridMap.tmx"];
-    bg.scale = [CCDirector sharedDirector].viewSize.width / bg.contentSize.width;
-    bg.position = ccp(0, 100);
-    [self addChild:bg];
-    _bgMap = bg;
+//    XCTileMap *bg = [XCTileMap tiledMapWithFile:@"gridMap.tmx"];
+//    bg.scale = [CCDirector sharedDirector].viewSize.width / bg.contentSize.width;
+//    bg.positionType = CCPositionTypeNormalized;
+//    bg.anchorPoint = ccp(0.5, 0.5);
+//    bg.position = ccp(0.5, 0.5);
+//    [self addChild:bg];
+//    _bgMap = bg;
+//
+   
     
+    XCGameButton *answerButton = [XCGameButton gameButtonWithTitle:@"show truth" ];
+    answerButton.position = ccp(0.5, 0.6);
+    [self addChild:answerButton];
+    
+    XCGameButton *backButton = [XCGameButton gameButtonWithTitle:@"start again"];
+    backButton.position = ccp(0.5, 0.5);
+    [self addChild:backButton];
+    
+    XCGameButton *newButton = [XCGameButton gameButtonWithTitle:@"start new"];
+    newButton.position = ccp(0.5, 0.4);
+    [self addChild:newButton];
     
 //    self.title = @"Demo";
 //    CCSpriteFrame *sf = [CCSpriteFrame frameWithImageNamed:@"fire.png"];

@@ -34,6 +34,8 @@
 		5617E33A200854A3002D909B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617E336200854A3002D909B /* CoreMotion.framework */; };
 		56401F36200D8A8500D72DCC /* RectSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56401F35200D8A8500D72DCC /* RectSprite.m */; };
 		56401F4F200DCA6900D72DCC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56401F4E200DCA6900D72DCC /* libz.tbd */; };
+		56489A14201826C300DAC392 /* buttonbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 56489A10201826C300DAC392 /* buttonbackground.png */; };
+		56489A1720182E2600DAC392 /* XCGameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 56489A1620182E2600DAC392 /* XCGameButton.m */; };
 		5652EE922015BE6800DAE181 /* gridMap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 5652EE8E2015BE6800DAE181 /* gridMap.tmx */; };
 		5652EE952015C5C700DAE181 /* XCTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 5652EE942015C5C700DAE181 /* XCTileMap.m */; };
 		568AF54D200C8FC8002BCA95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568AF54B200C8FC8002BCA95 /* ViewController.m */; };
@@ -165,6 +167,9 @@
 		56401F35200D8A8500D72DCC /* RectSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RectSprite.m; sourceTree = "<group>"; };
 		56401F44200DA86E00D72DCC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		56401F4E200DCA6900D72DCC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		56489A10201826C300DAC392 /* buttonbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbackground.png; sourceTree = "<group>"; };
+		56489A1520182E2600DAC392 /* XCGameButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCGameButton.h; sourceTree = "<group>"; };
+		56489A1620182E2600DAC392 /* XCGameButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCGameButton.m; sourceTree = "<group>"; };
 		5652EE8E2015BE6800DAE181 /* gridMap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gridMap.tmx; sourceTree = "<group>"; };
 		5652EE932015C5C700DAE181 /* XCTileMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCTileMap.h; sourceTree = "<group>"; };
 		5652EE942015C5C700DAE181 /* XCTileMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCTileMap.m; sourceTree = "<group>"; };
@@ -596,6 +601,8 @@
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				56489A1520182E2600DAC392 /* XCGameButton.h */,
+				56489A1620182E2600DAC392 /* XCGameButton.m */,
 				D85639CD2000A92600D3F697 /* GameScene.h */,
 				D85639CE2000A92600D3F697 /* GameScene.m */,
 				D84594CC200A1B6B00FD7216 /* XCFrameCache.h */,
@@ -673,6 +680,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				56489A10201826C300DAC392 /* buttonbackground.png */,
 				D8F334962016152C00BC37C1 /* scrollBg.png */,
 				D8928CBC2014BC8100C19109 /* detail.png */,
 				D875A5F020137C4600C38832 /* mask.png */,
@@ -881,6 +889,7 @@
 				D875A5D62012FC9900C38832 /* p3.png in Resources */,
 				D875A5DF2013222000C38832 /* head.png in Resources */,
 				D875A5D920131BEF00C38832 /* p4.png in Resources */,
+				56489A14201826C300DAC392 /* buttonbackground.png in Resources */,
 				D875A5E120133CEA00C38832 /* empty.mp3 in Resources */,
 				568AF54E200C8FC8002BCA95 /* ViewController.xib in Resources */,
 				56CACA6B20106ADE00FF1775 /* gridPlane.tmx in Resources */,
@@ -1076,6 +1085,7 @@
 				569083CC200C549000F47F28 /* ALDevice.m in Sources */,
 				569083C8200C549000F47F28 /* ALBuffer.m in Sources */,
 				569083C0200C549000F47F28 /* OALActionManager.m in Sources */,
+				56489A1720182E2600DAC392 /* XCGameButton.m in Sources */,
 				568AF54D200C8FC8002BCA95 /* ViewController.m in Sources */,
 				569083D0200C549000F47F28 /* ALWrapper.m in Sources */,
 				569083C9200C549000F47F28 /* ALCaptureDevice.m in Sources */,
