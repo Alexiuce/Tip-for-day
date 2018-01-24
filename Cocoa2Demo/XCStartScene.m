@@ -21,7 +21,10 @@
 - (void)setupUI{
     // 1. setup background
     
-    
+    CCSprite *helpSprite = [CCSprite spriteWithImageNamed:@"helpButton.png"];
+    helpSprite.positionType = CCPositionTypeNormalized;
+    helpSprite.position = ccp(0.9, 0.9);
+    [self addChild:helpSprite];
     // 2. add button
     CCSpriteFrame *frame = [CCSpriteFrame frameWithImageNamed:@"startGame.png"];
     CCButton *startButton = [CCButton buttonWithTitle:@"" spriteFrame:frame];

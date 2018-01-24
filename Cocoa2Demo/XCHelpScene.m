@@ -22,7 +22,6 @@
 - (void)setupUI{
     
     
-    
     // 1. setup background
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     CCSprite *bgSprite = [CCSprite spriteWithImageNamed:[NSString adaptedString: @"helpScene.png"]];
@@ -34,7 +33,6 @@
     // 2. setup title label
     
     CCLabelTTF *titleLabel = [CCLabelTTF labelWithString:[NSString adaptedString:@"Help for the Game"]  fontName:@"AmericanTypewriter-Bold" fontSize:24];
-    
     titleLabel.positionType = CCPositionTypeNormalized;
     titleLabel.position = ccp(0.5, 0.9);
     [self addChild:titleLabel];
