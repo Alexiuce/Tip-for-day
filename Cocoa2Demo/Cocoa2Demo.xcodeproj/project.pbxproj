@@ -73,6 +73,8 @@
 		5692103C2005D79D00A16227 /* gameArts.png in Resources */ = {isa = PBXBuildFile; fileRef = 5692103A2005D79C00A16227 /* gameArts.png */; };
 		5698D8442018723800A82578 /* XCHelpScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5698D8432018723800A82578 /* XCHelpScene.m */; };
 		5698D84920187D4400A82578 /* helpScene.png in Resources */ = {isa = PBXBuildFile; fileRef = 5698D84820187D4400A82578 /* helpScene.png */; };
+		5698D84C2018874000A82578 /* NSString+Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 5698D84B2018874000A82578 /* NSString+Game.m */; };
+		5698D84E20188B6C00A82578 /* helpScene-cn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5698D84D20188B6C00A82578 /* helpScene-cn.png */; };
 		56BE15042003116C009D8FEC /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BE15032003116C009D8FEC /* qq.png */; };
 		56BE150920031A89009D8FEC /* QQSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BE150820031A89009D8FEC /* QQSprite.m */; };
 		56CACA652010361200FF1775 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA642010361200FF1775 /* point.png */; };
@@ -250,6 +252,9 @@
 		5698D8422018723800A82578 /* XCHelpScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCHelpScene.h; sourceTree = "<group>"; };
 		5698D8432018723800A82578 /* XCHelpScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCHelpScene.m; sourceTree = "<group>"; };
 		5698D84820187D4400A82578 /* helpScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helpScene.png; sourceTree = "<group>"; };
+		5698D84A2018874000A82578 /* NSString+Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Game.h"; sourceTree = "<group>"; };
+		5698D84B2018874000A82578 /* NSString+Game.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Game.m"; sourceTree = "<group>"; };
+		5698D84D20188B6C00A82578 /* helpScene-cn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "helpScene-cn.png"; sourceTree = "<group>"; };
 		56BE15032003116C009D8FEC /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
 		56BE150720031A89009D8FEC /* QQSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQSprite.h; sourceTree = "<group>"; };
 		56BE150820031A89009D8FEC /* QQSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQSprite.m; sourceTree = "<group>"; };
@@ -637,6 +642,8 @@
 				568AF54B200C8FC8002BCA95 /* ViewController.m */,
 				568AF54C200C8FC8002BCA95 /* ViewController.xib */,
 				D352B48019EC608A00829775 /* MetalShaders */,
+				5698D84A2018874000A82578 /* NSString+Game.h */,
+				5698D84B2018874000A82578 /* NSString+Game.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -695,6 +702,7 @@
 			isa = PBXGroup;
 			children = (
 				5698D84820187D4400A82578 /* helpScene.png */,
+				5698D84D20188B6C00A82578 /* helpScene-cn.png */,
 				56489A1B20184FB200DAC392 /* startGame.png */,
 				56489A10201826C300DAC392 /* buttonbackground.png */,
 				D8F334962016152C00BC37C1 /* scrollBg.png */,
@@ -912,6 +920,7 @@
 				56CACA6B20106ADE00FF1775 /* gridPlane.tmx in Resources */,
 				56CACA652010361200FF1775 /* point.png in Resources */,
 				D875A5DD201321C000C38832 /* body.png in Resources */,
+				5698D84E20188B6C00A82578 /* helpScene-cn.png in Resources */,
 				5692103B2005D79D00A16227 /* gameArts.plist in Resources */,
 				D875A5F120137C4600C38832 /* mask.png in Resources */,
 				D875A5E720134AA000C38832 /* planeMap.dat in Resources */,
@@ -1104,6 +1113,7 @@
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 				569083CC200C549000F47F28 /* ALDevice.m in Sources */,
 				569083C8200C549000F47F28 /* ALBuffer.m in Sources */,
+				5698D84C2018874000A82578 /* NSString+Game.m in Sources */,
 				569083C0200C549000F47F28 /* OALActionManager.m in Sources */,
 				56489A1720182E2600DAC392 /* XCGameButton.m in Sources */,
 				568AF54D200C8FC8002BCA95 /* ViewController.m in Sources */,

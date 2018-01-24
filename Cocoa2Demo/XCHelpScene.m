@@ -8,6 +8,7 @@
 
 #import "XCHelpScene.h"
 #import "XCGameButton.h"
+#import "NSString+Game.h"
 
 @implementation XCHelpScene
 
@@ -24,21 +25,23 @@
     
     // 1. setup background
     CGSize winSize = [CCDirector sharedDirector].viewSize;
-    CCSprite *bgSprite = [CCSprite spriteWithImageNamed:@"helpScene.png"];
+    CCSprite *bgSprite = [CCSprite spriteWithImageNamed:[NSString adaptedString: @"helpScene.png"]];
     bgSprite.scaleX = winSize.width / bgSprite.contentSize.width;
     bgSprite.scaleY = winSize.height / bgSprite.contentSize.height;
     bgSprite.position = ccp(winSize.width * 0.5, winSize.height * 0.5);
     [self addChild:bgSprite];
     
     // 2. setup title label
-    CCLabelTTF *titleLabel = [CCLabelTTF labelWithString:@"Help for the Game" fontName:@"AmericanTypewriter-Bold" fontSize:24];
+    
+    CCLabelTTF *titleLabel = [CCLabelTTF labelWithString:[NSString adaptedString:@"Help for the Game"]  fontName:@"AmericanTypewriter-Bold" fontSize:24];
     
     titleLabel.positionType = CCPositionTypeNormalized;
     titleLabel.position = ccp(0.5, 0.9);
     [self addChild:titleLabel];
     
     // 3. setup go back button
-    XCGameButton *backButton = [XCGameButton gameButtonWithTitle:@"Go back"];
+    
+    XCGameButton *backButton = [XCGameButton gameButtonWithTitle:[NSString adaptedString:@"Go back"]];
     backButton.position = ccp(0.5, 0.1);
     [self addChild:backButton];
     
