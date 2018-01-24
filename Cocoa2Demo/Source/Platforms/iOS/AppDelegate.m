@@ -31,6 +31,7 @@
 #import "IADScene.h"
 #import <GoogleMobileAds/GoogleMobileAds.h>
 #import "XCStartScene.h"
+#import "XCHelpScene.h"
 
 @implementation AppController
 
@@ -101,10 +102,11 @@
     CCDirectorIOS* director = (CCDirectorIOS*)[CCDirector sharedDirector];
     
     // Creat a scene
-//    CCScene* main = [MainScene node];
-//    CCScene *game = [GameScene node];
-    XCStartScene *startScend = [XCStartScene node];
-//    IADScene *iadScene = [IADScene node];
+//    CCScene* scene = [MainScene node];
+//    CCScene *scene = [GameScene node];
+//    XCStartScene *scene = [XCStartScene node];
+//    IADScene *scene = [IADScene node];
+    XCHelpScene *scene = [XCHelpScene node];
     
 
     
@@ -113,7 +115,8 @@
 //    [director runWithScene:main];
 //    [director runWithScene:game];
 //    [director runWithScene:iadScene];
-    [director runWithScene:startScend];
+//    [director runWithScene:startScend];
+    [director runWithScene:scene];
     // Stay positive. Always return a YES :)
     return YES;
 }

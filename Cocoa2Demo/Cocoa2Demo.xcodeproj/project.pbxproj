@@ -71,6 +71,8 @@
 		569083D8200C549000F47F28 /* OALTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 569083B9200C549000F47F28 /* OALTools.m */; };
 		5692103B2005D79D00A16227 /* gameArts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 569210392005D79C00A16227 /* gameArts.plist */; };
 		5692103C2005D79D00A16227 /* gameArts.png in Resources */ = {isa = PBXBuildFile; fileRef = 5692103A2005D79C00A16227 /* gameArts.png */; };
+		5698D8442018723800A82578 /* XCHelpScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5698D8432018723800A82578 /* XCHelpScene.m */; };
+		5698D84920187D4400A82578 /* helpScene.png in Resources */ = {isa = PBXBuildFile; fileRef = 5698D84820187D4400A82578 /* helpScene.png */; };
 		56BE15042003116C009D8FEC /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BE15032003116C009D8FEC /* qq.png */; };
 		56BE150920031A89009D8FEC /* QQSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BE150820031A89009D8FEC /* QQSprite.m */; };
 		56CACA652010361200FF1775 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA642010361200FF1775 /* point.png */; };
@@ -245,6 +247,9 @@
 		569083BB200C549000F47F28 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		569210392005D79C00A16227 /* gameArts.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = gameArts.plist; sourceTree = "<group>"; };
 		5692103A2005D79C00A16227 /* gameArts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameArts.png; sourceTree = "<group>"; };
+		5698D8422018723800A82578 /* XCHelpScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCHelpScene.h; sourceTree = "<group>"; };
+		5698D8432018723800A82578 /* XCHelpScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCHelpScene.m; sourceTree = "<group>"; };
+		5698D84820187D4400A82578 /* helpScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helpScene.png; sourceTree = "<group>"; };
 		56BE15032003116C009D8FEC /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
 		56BE150720031A89009D8FEC /* QQSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQSprite.h; sourceTree = "<group>"; };
 		56BE150820031A89009D8FEC /* QQSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQSprite.m; sourceTree = "<group>"; };
@@ -608,6 +613,8 @@
 				B7378993180767190076A88C /* MainScene.m */,
 				56489A18201830F600DAC392 /* XCStartScene.h */,
 				56489A19201830F600DAC392 /* XCStartScene.m */,
+				5698D8422018723800A82578 /* XCHelpScene.h */,
+				5698D8432018723800A82578 /* XCHelpScene.m */,
 				56489A1520182E2600DAC392 /* XCGameButton.h */,
 				56489A1620182E2600DAC392 /* XCGameButton.m */,
 				D85639CD2000A92600D3F697 /* GameScene.h */,
@@ -687,6 +694,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5698D84820187D4400A82578 /* helpScene.png */,
 				56489A1B20184FB200DAC392 /* startGame.png */,
 				56489A10201826C300DAC392 /* buttonbackground.png */,
 				D8F334962016152C00BC37C1 /* scrollBg.png */,
@@ -899,6 +907,7 @@
 				D875A5D920131BEF00C38832 /* p4.png in Resources */,
 				56489A14201826C300DAC392 /* buttonbackground.png in Resources */,
 				D875A5E120133CEA00C38832 /* empty.mp3 in Resources */,
+				5698D84920187D4400A82578 /* helpScene.png in Resources */,
 				568AF54E200C8FC8002BCA95 /* ViewController.xib in Resources */,
 				56CACA6B20106ADE00FF1775 /* gridPlane.tmx in Resources */,
 				56CACA652010361200FF1775 /* point.png in Resources */,
@@ -1074,6 +1083,7 @@
 				569083CB200C549000F47F28 /* ALContext.m in Sources */,
 				569083D6200C549000F47F28 /* NSMutableDictionary+WeakReferences.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				5698D8442018723800A82578 /* XCHelpScene.m in Sources */,
 				56FE20BA200F364000E9972C /* TouchSprite.m in Sources */,
 				569083C7200C549000F47F28 /* OALSimpleAudio.m in Sources */,
 				569083D5200C549000F47F28 /* NSMutableArray+WeakReferences.m in Sources */,
