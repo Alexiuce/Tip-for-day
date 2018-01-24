@@ -30,6 +30,7 @@
 #import "GameScene.h"
 #import "IADScene.h"
 #import <GoogleMobileAds/GoogleMobileAds.h>
+#import "XCStartScene.h"
 
 @implementation AppController
 
@@ -100,19 +101,19 @@
     CCDirectorIOS* director = (CCDirectorIOS*)[CCDirector sharedDirector];
     
     // Creat a scene
-    CCScene* main = [MainScene node];
+//    CCScene* main = [MainScene node];
 //    CCScene *game = [GameScene node];
-    
+    XCStartScene *startScend = [XCStartScene node];
 //    IADScene *iadScene = [IADScene node];
     
 
     
     // Run the director with the scene.
     // Push as much scenes as you want (maybe useful for 3D touch)
-    [director runWithScene:main];
+//    [director runWithScene:main];
 //    [director runWithScene:game];
 //    [director runWithScene:iadScene];
-    
+    [director runWithScene:startScend];
     // Stay positive. Always return a YES :)
     return YES;
 }

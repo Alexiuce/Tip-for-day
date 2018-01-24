@@ -82,43 +82,43 @@
 }
 
 - (void)setTitle:(NSString *)title{
-    _title = title ;
-    CCLabelBMFont *bflabel = [CCLabelBMFont labelWithString:self.title fntFile:@"bitmapFontTest.fnt"];
+//    _title = title ;
+//    CCLabelBMFont *bflabel = [CCLabelBMFont labelWithString:self.title fntFile:@"bitmapFontTest.fnt"];
 //    bflabel.positionType = CCPositionTypeNormalized;
 //    bflabel.position = ccp(0.5, 0.7);
 //    [self addChild:bflabel];
     
-    CCEffectNode *en = [CCEffectNode effectNodeWithWidth:300 height:300];
-    en.position = ccp(170, 400);
-    en.effect = [CCEffectBlur effectWithBlurRadius:5 ];
+//    CCEffectNode *en = [CCEffectNode effectNodeWithWidth:300 height:300];
+//    en.position = ccp(170, 400);
+//    en.effect = [CCEffectBlur effectWithBlurRadius:5 ];
+//
+//    [en addChild:bflabel];
+//
+//    [self addChild:en];
     
-    [en addChild:bflabel];
+//    NSString *text = @"Restart Game";
+//    if ([title containsString:@"win"]) {
+//        text = @"Continue More";
+//    }
     
-    [self addChild:en];
-    
-    NSString *text = @"Restart Game";
-    if ([title containsString:@"win"]) {
-        text = @"Continue More";
-    }
-    
-    CCButton *btn = [CCButton buttonWithTitle:text fontName:@"AvenirNext-Bold" fontSize:30];
-    [btn setTarget:self selector:@selector(popMainScene)];
+//    CCButton *btn = [CCButton buttonWithTitle:text fontName:@"AvenirNext-Bold" fontSize:30];
+//    [btn setTarget:self selector:@selector(popMainScene)];
 //    btn.positionType = CCPositionTypeNormalized;
 //    btn.position = ccp(0.5, 0.5);
 //    [self addChild:btn];
 //
     
-    CCButton *backBtn = [CCButton buttonWithTitle:@"Go back"];
-    
-    
-    CCLayoutBox *box = [CCLayoutBox node];
-    box.spacing = 10;
-    box.direction = CCLayoutBoxDirectionVertical;
-    box.position = ccp(10, 300);
-    [box addChild:btn];
-    [box addChild:backBtn];
-    
-    [self addChild:box];
+//    CCButton *backBtn = [CCButton buttonWithTitle:@"Go back"];
+//
+//
+//    CCLayoutBox *box = [CCLayoutBox node];
+//    box.spacing = 10;
+//    box.direction = CCLayoutBoxDirectionVertical;
+//    box.position = ccp(10, 300);
+//    [box addChild:btn];
+//    [box addChild:backBtn];
+//
+//    [self addChild:box];
     
 }
 

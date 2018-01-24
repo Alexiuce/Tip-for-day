@@ -36,6 +36,8 @@
 		56401F4F200DCA6900D72DCC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56401F4E200DCA6900D72DCC /* libz.tbd */; };
 		56489A14201826C300DAC392 /* buttonbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 56489A10201826C300DAC392 /* buttonbackground.png */; };
 		56489A1720182E2600DAC392 /* XCGameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 56489A1620182E2600DAC392 /* XCGameButton.m */; };
+		56489A1A201830F600DAC392 /* XCStartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 56489A19201830F600DAC392 /* XCStartScene.m */; };
+		56489A1C20184FB200DAC392 /* startGame.png in Resources */ = {isa = PBXBuildFile; fileRef = 56489A1B20184FB200DAC392 /* startGame.png */; };
 		5652EE922015BE6800DAE181 /* gridMap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 5652EE8E2015BE6800DAE181 /* gridMap.tmx */; };
 		5652EE952015C5C700DAE181 /* XCTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 5652EE942015C5C700DAE181 /* XCTileMap.m */; };
 		568AF54D200C8FC8002BCA95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568AF54B200C8FC8002BCA95 /* ViewController.m */; };
@@ -170,6 +172,9 @@
 		56489A10201826C300DAC392 /* buttonbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbackground.png; sourceTree = "<group>"; };
 		56489A1520182E2600DAC392 /* XCGameButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCGameButton.h; sourceTree = "<group>"; };
 		56489A1620182E2600DAC392 /* XCGameButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCGameButton.m; sourceTree = "<group>"; };
+		56489A18201830F600DAC392 /* XCStartScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCStartScene.h; sourceTree = "<group>"; };
+		56489A19201830F600DAC392 /* XCStartScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCStartScene.m; sourceTree = "<group>"; };
+		56489A1B20184FB200DAC392 /* startGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startGame.png; sourceTree = "<group>"; };
 		5652EE8E2015BE6800DAE181 /* gridMap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gridMap.tmx; sourceTree = "<group>"; };
 		5652EE932015C5C700DAE181 /* XCTileMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCTileMap.h; sourceTree = "<group>"; };
 		5652EE942015C5C700DAE181 /* XCTileMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCTileMap.m; sourceTree = "<group>"; };
@@ -601,6 +606,8 @@
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				56489A18201830F600DAC392 /* XCStartScene.h */,
+				56489A19201830F600DAC392 /* XCStartScene.m */,
 				56489A1520182E2600DAC392 /* XCGameButton.h */,
 				56489A1620182E2600DAC392 /* XCGameButton.m */,
 				D85639CD2000A92600D3F697 /* GameScene.h */,
@@ -680,6 +687,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				56489A1B20184FB200DAC392 /* startGame.png */,
 				56489A10201826C300DAC392 /* buttonbackground.png */,
 				D8F334962016152C00BC37C1 /* scrollBg.png */,
 				D8928CBC2014BC8100C19109 /* detail.png */,
@@ -909,6 +917,7 @@
 				D875A5EF20137B1700C38832 /* empty.png in Resources */,
 				08BA20931C7865E600263AF8 /* Images.xcassets in Resources */,
 				56CACA9120118C6900FF1775 /* bitmapFontTest.fnt in Resources */,
+				56489A1C20184FB200DAC392 /* startGame.png in Resources */,
 				D875A5EB201372C700C38832 /* life.png in Resources */,
 				D875A5E5201341B900C38832 /* body.mp3 in Resources */,
 				D875A5E320133F6700C38832 /* head.mp3 in Resources */,
@@ -1072,6 +1081,7 @@
 				569083C4200C549000F47F28 /* OALAudioTrackNotifications.m in Sources */,
 				569083D4200C549000F47F28 /* mach_timing.c in Sources */,
 				569083C2200C549000F47F28 /* OALUtilityActions.m in Sources */,
+				56489A1A201830F600DAC392 /* XCStartScene.m in Sources */,
 				568AF554200C9058002BCA95 /* IADScene.m in Sources */,
 				569083CF200C549000F47F28 /* ALSource.m in Sources */,
 				7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */,
