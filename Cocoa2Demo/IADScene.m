@@ -17,7 +17,7 @@
 #import "MainScene.h"
 #import "XCFrameCache.h"
 
-static const CGFloat kAnimationDuration = 30.0;
+static const CGFloat kAnimationDuration = 60.0;
 static const int CountPerRow = 10;
 static const CGFloat MarginBetween = 2.0f;
 static const CGFloat BeginTopY = 64.0f;
@@ -209,10 +209,10 @@ static int planeMap[10][10];
     }
      self.userClickCount = 10;
     // detail for game
-    CCSprite *detailSprite = [CCSprite spriteWithImageNamed:@"detail.png"];
-    detailSprite.scale = winSize.width / detailSprite.contentSize.width;
-    detailSprite.anchorPoint = CGPointZero;
-    [self addChild:detailSprite];
+//    CCSprite *detailSprite = [CCSprite spriteWithImageNamed:@"detail.png"];
+//    detailSprite.scale = winSize.width / detailSprite.contentSize.width;
+//    detailSprite.anchorPoint = CGPointZero;
+//    [self addChild:detailSprite];
     
     // add Help
     CCSpriteFrame *sf = [CCSpriteFrame frameWithImageNamed:@"p2.png"];

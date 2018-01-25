@@ -34,6 +34,7 @@
 		5617E33A200854A3002D909B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617E336200854A3002D909B /* CoreMotion.framework */; };
 		56401F36200D8A8500D72DCC /* RectSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56401F35200D8A8500D72DCC /* RectSprite.m */; };
 		56401F4F200DCA6900D72DCC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56401F4E200DCA6900D72DCC /* libz.tbd */; };
+		5642488A2019767E009ED032 /* helpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 564248892019767E009ED032 /* helpButton.png */; };
 		56489A14201826C300DAC392 /* buttonbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 56489A10201826C300DAC392 /* buttonbackground.png */; };
 		56489A1720182E2600DAC392 /* XCGameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 56489A1620182E2600DAC392 /* XCGameButton.m */; };
 		56489A1A201830F600DAC392 /* XCStartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 56489A19201830F600DAC392 /* XCStartScene.m */; };
@@ -75,7 +76,6 @@
 		5698D84920187D4400A82578 /* helpScene.png in Resources */ = {isa = PBXBuildFile; fileRef = 5698D84820187D4400A82578 /* helpScene.png */; };
 		5698D84C2018874000A82578 /* NSString+Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 5698D84B2018874000A82578 /* NSString+Game.m */; };
 		5698D84E20188B6C00A82578 /* helpScene-cn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5698D84D20188B6C00A82578 /* helpScene-cn.png */; };
-		5698D85020188E2600A82578 /* helpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5698D84F20188E2600A82578 /* helpButton.png */; };
 		56BE15042003116C009D8FEC /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BE15032003116C009D8FEC /* qq.png */; };
 		56BE150920031A89009D8FEC /* QQSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BE150820031A89009D8FEC /* QQSprite.m */; };
 		56CACA652010361200FF1775 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA642010361200FF1775 /* point.png */; };
@@ -174,6 +174,7 @@
 		56401F35200D8A8500D72DCC /* RectSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RectSprite.m; sourceTree = "<group>"; };
 		56401F44200DA86E00D72DCC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		56401F4E200DCA6900D72DCC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		564248892019767E009ED032 /* helpButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helpButton.png; sourceTree = "<group>"; };
 		56489A10201826C300DAC392 /* buttonbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbackground.png; sourceTree = "<group>"; };
 		56489A1520182E2600DAC392 /* XCGameButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCGameButton.h; sourceTree = "<group>"; };
 		56489A1620182E2600DAC392 /* XCGameButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCGameButton.m; sourceTree = "<group>"; };
@@ -256,7 +257,6 @@
 		5698D84A2018874000A82578 /* NSString+Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Game.h"; sourceTree = "<group>"; };
 		5698D84B2018874000A82578 /* NSString+Game.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Game.m"; sourceTree = "<group>"; };
 		5698D84D20188B6C00A82578 /* helpScene-cn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "helpScene-cn.png"; sourceTree = "<group>"; };
-		5698D84F20188E2600A82578 /* helpButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helpButton.png; sourceTree = "<group>"; };
 		56BE15032003116C009D8FEC /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
 		56BE150720031A89009D8FEC /* QQSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQSprite.h; sourceTree = "<group>"; };
 		56BE150820031A89009D8FEC /* QQSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQSprite.m; sourceTree = "<group>"; };
@@ -703,7 +703,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5698D84F20188E2600A82578 /* helpButton.png */,
+				564248892019767E009ED032 /* helpButton.png */,
 				5698D84820187D4400A82578 /* helpScene.png */,
 				5698D84D20188B6C00A82578 /* helpScene-cn.png */,
 				56489A1B20184FB200DAC392 /* startGame.png */,
@@ -927,7 +927,7 @@
 				5692103B2005D79D00A16227 /* gameArts.plist in Resources */,
 				D875A5F120137C4600C38832 /* mask.png in Resources */,
 				D875A5E720134AA000C38832 /* planeMap.dat in Resources */,
-				5698D85020188E2600A82578 /* helpButton.png in Resources */,
+				5642488A2019767E009ED032 /* helpButton.png in Resources */,
 				56CACA9020118C6900FF1775 /* bitmapFontTest.png in Resources */,
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
 				569083C6200C549000F47F28 /* Info.plist in Resources */,

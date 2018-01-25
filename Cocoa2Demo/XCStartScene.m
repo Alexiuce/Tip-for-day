@@ -8,6 +8,10 @@
 
 #import "XCStartScene.h"
 #import "IADScene.h"
+#import <CCParticles.h>
+#import <CCTextureCache.h>
+#import <CCMotionStreak.h>
+#import <CCNodeTag.h>
 
 @implementation XCStartScene
 
@@ -19,13 +23,36 @@
 }
 
 - (void)setupUI{
-    // 1. setup background
     
+    // 1. setup background
+
+    CGSize winSize = [CCDirector sharedDirector].viewSize;
+    
+    CCSprite *bg = [CCSprite spriteWithImageNamed:@"scrollBg.png"];
+    bg.scaleX = winSize.width / bg.contentSize.width;
+    bg.scaleY = winSize.height / bg.contentSize.height;
+    bg.positionType = CCPositionTypeNormalized;
+    bg.position = ccp(0.5, 0.5);
+    [self addChild:bg];
+
+    CCLabelTTF *ttfLabel = [CCLabelTTF labelWithString:@"There is three planes in map, you need shoot them down with 10 bullets,once you find one plane ,you will give a star. if you used all buttles ,you will lose the game.so are you ready ?" fontName:@"Avenir-Book" fontSize:20 dimensions:CGSizeMake(winSize.width - 60, 200)];
+    ttfLabel.outlineWidth = 1;
+    ttfLabel.outlineColor = CCColor.lightGrayColor;
+    ttfLabel.color = CCColor.blackColor;
+    ttfLabel.positionType = CCPositionTypeNormalized;
+    ttfLabel.position = ccp(0.5, 0.65);
+    [self addChild:ttfLabel];
+    
+    
+
+    
+    // 2. add help button
     CCSprite *helpSprite = [CCSprite spriteWithImageNamed:@"helpButton.png"];
     helpSprite.positionType = CCPositionTypeNormalized;
     helpSprite.position = ccp(0.9, 0.9);
     [self addChild:helpSprite];
-    // 2. add button
+    
+    // 3. add  start button
     CCSpriteFrame *frame = [CCSpriteFrame frameWithImageNamed:@"startGame.png"];
     CCButton *startButton = [CCButton buttonWithTitle:@"" spriteFrame:frame];
     [startButton setTarget:self selector:@selector(startGame)];
@@ -41,6 +68,7 @@
 - (void)startGame{
     [[CCDirector sharedDirector] presentScene:[IADScene node]];
 }
+
 
 - (void)dealloc{
     XCLog(@"dealloc");
