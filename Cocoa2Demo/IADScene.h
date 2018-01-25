@@ -8,6 +8,18 @@
 
 #import "CCScene.h"
 
+typedef NS_ENUM(NSUInteger,FromSceneStyle) {
+    FromStartScene,
+    FromHelpScene,
+    FromNewScene,
+    FromAgainScene
+};
+
+
 @interface IADScene : CCScene
+
+
+
+@property (nonatomic, assign) FromSceneStyle fromType;
 
 @end

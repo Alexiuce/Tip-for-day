@@ -65,7 +65,7 @@ static const int EffectTag = 1;
     CCSpriteFrame *frame = [CCSpriteFrame frameWithImageNamed:@"startGame.png"];
     CCButton *startButton = [CCButton buttonWithTitle:@"" spriteFrame:frame];
     [startButton setTarget:self selector:@selector(startGame)];
-    startButton.zoomWhenHighlighted = YES;
+//    startButton.zoomWhenHighlighted = YES;
     startButton.scaleX = 0.6;
     startButton.scaleY = 0.8;
     startButton.positionType = CCPositionTypeNormalized;

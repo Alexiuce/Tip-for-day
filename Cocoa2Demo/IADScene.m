@@ -16,6 +16,8 @@
 #import "ObjectAL.h"
 #import "MainScene.h"
 #import "XCFrameCache.h"
+#import <CCEffectNode.h>
+#import <CCEffectBrightness.h>
 
 static const CGFloat kAnimationDuration = 60.0;
 static const int CountPerRow = 10;
@@ -33,6 +35,8 @@ static int planeMap[10][10];
 @property (nonatomic, strong) NSMutableArray *lifeArray;
 
 @property (nonatomic, weak) CCLabelTTF *lifeLabel;
+@property (nonatomic, weak) CCEffectNode *contextEffectNode;
+@property (nonatomic, weak) CCEffectBrightness *brightness;
 
 @end
 
@@ -134,7 +138,7 @@ static int planeMap[10][10];
         [btn setScale:spw / btn.contentSize.width];
         btn.anchorPoint = CGPointZero;
         btn.position = ccp(x, beginY);
-        [self addChild:btn];
+        [self.contextEffectNode addChild:btn];
         
     }
 }
@@ -179,8 +183,11 @@ static int planeMap[10][10];
 
 - (void)onEnter{
     [super onEnter];
-    [self removeAllChildren];
-    [self.lifeArray removeAllObjects];
+    if (self.fromType != FromStartScene) {
+        [self removeAllChildren];
+        [self.lifeArray removeAllObjects];
+    }
+    
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     [self setupBg];
 
@@ -192,7 +199,7 @@ static int planeMap[10][10];
     CCLabelTTF *label = [CCLabelTTF labelWithString:NSLocalizedString(@"life", @"") fontName:@"AvenirNext-Bold" fontSize:20];
     label.position = ccp(self.contentSize.width - 190, self.contentSize.height - 37);
     label.color = CCColor.orangeColor;
-    [self addChild:label];
+    [self.contextEffectNode addChild:label];
    // life sprite
     CGFloat lifeY = winSize.height - BeginTopY;
     for (int i = 0; i < 10; i++) {
@@ -200,7 +207,7 @@ static int planeMap[10][10];
         lifeSprite.name = @"life";
         lifeSprite.anchorPoint = CGPointZero;
         lifeSprite.position = ccp(winSize.width - i *(lifeSprite.contentSize.width) - 25, lifeY);
-        [self addChild:lifeSprite];
+        [self.contextEffectNode addChild:lifeSprite];
         [self.lifeArray addObject:lifeSprite];
     }
      self.userClickCount = 10;
@@ -210,7 +217,21 @@ static int planeMap[10][10];
     CCButton *helpButton = [CCButton buttonWithTitle:nil spriteFrame:sf];
     helpButton.positionType = CCPositionTypeNormalized;
     helpButton.position = ccp(0.95, 0.98);
-    [self addChild:helpButton];
+    [self.contextEffectNode addChild:helpButton];
+    if (self.fromType == FromStartScene) {
+        self.brightness.brightness = -1;
+        [self schedule:@selector(changeToBright) interval:0.1];
+    }
+}
+
+
+- (void)changeToBright{
+    self.brightness.brightness = MIN(0, self.brightness.brightness);
+    if (self.brightness.brightness == 0) {
+        [self unschedule:_cmd];
+    }else{
+        self.brightness.brightness += 0.1;
+    }
 }
 
 - (void)updateLife{
@@ -239,13 +260,13 @@ static int planeMap[10][10];
     background1.scale = winSize.width / background1.contentSize.width;
     background1.anchorPoint = CGPointZero;
     background1.position = ccp(0, height);
-    [self addChild:background1 z:-1];
+    [self.contextEffectNode addChild:background1 z:-1];
     
     CCSprite * _background = [CCSprite spriteWithImageNamed:@"scrollBg.png"];
     _background.scale = background1.scale;
     _background.anchorPoint = CGPointZero;
     
-    [self addChild:_background z:-1];
+    [self.contextEffectNode addChild:_background z:-1];
     
     // 添加文字
     
@@ -268,5 +289,20 @@ static int planeMap[10][10];
     [_background runAction:foreverAction];
 }
 
+#pragma  mark - lazy method
+- (CCEffectNode *)contextEffectNode{
+    if (_contextEffectNode == nil) {
+        CGSize winSize = [CCDirector sharedDirector].viewSize;
+        CCEffectNode *efn = [CCEffectNode effectNodeWithWidth:winSize.width height:winSize.height pixelFormat:CCTexturePixelFormat_RGBA4444];
+        
+        CCEffectBrightness *bright = [CCEffectBrightness effectWithBrightness:0];
+        efn.effect = bright;
+        efn.anchorPoint = CGPointZero;
+        [self addChild:efn];
+        _contextEffectNode = efn;
+        _brightness = bright;
+    }
+    return _contextEffectNode;
+}
 
 @end
