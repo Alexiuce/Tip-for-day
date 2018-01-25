@@ -183,11 +183,7 @@ static int planeMap[10][10];
     [self.lifeArray removeAllObjects];
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     [self setupBg];
-//    CCSprite *bg = [CCSprite spriteWithImageNamed:@"background.png"];
-//    bg.anchorPoint = CGPointZero;
-//    bg.scaleX =  winSize.width / bg.contentSize.width ;
-//    bg.scaleY = winSize.height / bg.contentSize.height ;
-//    [self addChild:bg];
+
     self.map = [self convertCArrayToNSArray];
     for (int i = 0; i < CountPerRow; i++) {
         [self addLine:i + 1];
@@ -208,16 +204,10 @@ static int planeMap[10][10];
         [self.lifeArray addObject:lifeSprite];
     }
      self.userClickCount = 10;
-    // detail for game
-//    CCSprite *detailSprite = [CCSprite spriteWithImageNamed:@"detail.png"];
-//    detailSprite.scale = winSize.width / detailSprite.contentSize.width;
-//    detailSprite.anchorPoint = CGPointZero;
-//    [self addChild:detailSprite];
     
     // add Help
-    CCSpriteFrame *sf = [CCSpriteFrame frameWithImageNamed:@"p2.png"];
+    CCSpriteFrame *sf = [CCSpriteFrame frameWithImageNamed:@"helpButton.png"];
     CCButton *helpButton = [CCButton buttonWithTitle:nil spriteFrame:sf];
-//    CCSprite *helpSprite = [CCSprite spriteWithImageNamed:@"p2.png"];
     helpButton.positionType = CCPositionTypeNormalized;
     helpButton.position = ccp(0.95, 0.98);
     [self addChild:helpButton];
