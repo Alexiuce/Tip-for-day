@@ -17,6 +17,10 @@
 
 static const int EffectTag = 1;
 
+static const CGFloat AirCraftTopMargin = 76;
+static const CGFloat AirCraftXMargin = 64;
+static const CGFloat AirCraftMidPadding = 192;
+
 
 @implementation XCStartScene
 
@@ -28,7 +32,7 @@ static const int EffectTag = 1;
 }
 
 - (void)setupUI{
-    
+    XCLog(@"scene for start %@",[NSDate date]);
     // 1. setup background
 
     CGSize winSize = [CCDirector sharedDirector].viewSize;
@@ -78,7 +82,35 @@ static const int EffectTag = 1;
     [efn addChild:ttfLabel];
     [efn addChild:startButton];
     [self addChild:efn];
+    
+    //
+    CCSprite *maskLaunchSprite = [CCSprite spriteWithImageNamed:@"launchBg.png"];
+    maskLaunchSprite.scaleX = winSize.width / maskLaunchSprite.contentSize.width;
+    maskLaunchSprite.scaleY = winSize.height / maskLaunchSprite.contentSize.height;
+    maskLaunchSprite.positionType = CCPositionTypeNormalized;
+    maskLaunchSprite.position = ccp(0.5, 0.5);
+    [self addChild:maskLaunchSprite];
    
+    
+    
+    
+    
+    
+    CCSprite *leftAircraft = [CCSprite spriteWithImageNamed:@"leftAircraft"];
+   
+    leftAircraft.anchorPoint = ccp(0, 1);
+  
+    leftAircraft.position = ccp(AirCraftXMargin,winSize.height - AirCraftTopMargin);
+    [self addChild:leftAircraft];
+    CCSprite *rightAircraft = [CCSprite spriteWithImageNamed:@"leftAircraft"];
+    rightAircraft.anchorPoint = ccp(1, 1);
+    rightAircraft.position = ccp(winSize.width - AirCraftXMargin, winSize.height - AirCraftTopMargin);
+    [self addChild:rightAircraft];
+    CCSprite *downAircraft = [CCSprite spriteWithImageNamed:@"downCraft"];
+    downAircraft.anchorPoint = ccp(0.5, 1);
+    downAircraft.position = ccp(winSize.width * 0.5, winSize.height - AirCraftMidPadding);
+    [self addChild:downAircraft];
+    
 }
 
 

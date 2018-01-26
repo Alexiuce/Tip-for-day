@@ -116,6 +116,8 @@
 //    [director runWithScene:game];
 //    [director runWithScene:iadScene];
 //    [director runWithScene:startScend];
+    XCLog(@"start---%@",[NSDate date]);
+    
     [director runWithScene:scene];
     // Stay positive. Always return a YES :)
     return YES;
