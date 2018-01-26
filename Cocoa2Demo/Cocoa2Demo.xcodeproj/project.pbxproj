@@ -78,6 +78,7 @@
 		5698D84E20188B6C00A82578 /* helpScene-cn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5698D84D20188B6C00A82578 /* helpScene-cn.png */; };
 		56BE15042003116C009D8FEC /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BE15032003116C009D8FEC /* qq.png */; };
 		56BE150920031A89009D8FEC /* QQSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BE150820031A89009D8FEC /* QQSprite.m */; };
+		56C2AC92201AC11B004F0BE1 /* luanchimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 56C2AC8E201AC11B004F0BE1 /* luanchimage.png */; };
 		56CACA652010361200FF1775 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA642010361200FF1775 /* point.png */; };
 		56CACA6B20106ADE00FF1775 /* gridPlane.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA6A20106ADE00FF1775 /* gridPlane.tmx */; };
 		56CACA6D20106C1500FF1775 /* tiles-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA6C20106C1400FF1775 /* tiles-hd.png */; };
@@ -260,6 +261,7 @@
 		56BE15032003116C009D8FEC /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
 		56BE150720031A89009D8FEC /* QQSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQSprite.h; sourceTree = "<group>"; };
 		56BE150820031A89009D8FEC /* QQSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQSprite.m; sourceTree = "<group>"; };
+		56C2AC8E201AC11B004F0BE1 /* luanchimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = luanchimage.png; sourceTree = "<group>"; };
 		56CACA642010361200FF1775 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
 		56CACA6A20106ADE00FF1775 /* gridPlane.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gridPlane.tmx; sourceTree = "<group>"; };
 		56CACA6C20106C1400FF1775 /* tiles-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiles-hd.png"; sourceTree = "<group>"; };
@@ -731,6 +733,7 @@
 				569210392005D79C00A16227 /* gameArts.plist */,
 				5692103A2005D79C00A16227 /* gameArts.png */,
 				56BE15032003116C009D8FEC /* qq.png */,
+				56C2AC8E201AC11B004F0BE1 /* luanchimage.png */,
 				08BA20921C7865E600263AF8 /* Images.xcassets */,
 				08BA201D1C785CA100263AF8 /* Launch Screen.storyboard */,
 				7A40366119DDF8C2007B6E8F /* Platforms */,
@@ -946,6 +949,7 @@
 				5652EE922015BE6800DAE181 /* gridMap.tmx in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				56CACA75201097E000FF1775 /* Localizable.strings in Resources */,
+				56C2AC92201AC11B004F0BE1 /* luanchimage.png in Resources */,
 				08BA20211C785F1C00263AF8 /* ic_launcher.png in Resources */,
 				D875A5D72012FC9900C38832 /* p1.png in Resources */,
 				56CACA6D20106C1500FF1775 /* tiles-hd.png in Resources */,

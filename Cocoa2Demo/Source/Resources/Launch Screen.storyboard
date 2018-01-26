@@ -20,12 +20,26 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luanchimage.png" translatesAutoresizingMaskIntoConstraints="NO" id="hq2-X0-65s">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hq2-X0-65s" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="4Cl-jt-pL4"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="hq2-X0-65s" secondAttribute="bottom" id="Jju-yo-sW7"/>
+                            <constraint firstItem="hq2-X0-65s" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="TLg-Tf-jPe"/>
+                            <constraint firstAttribute="trailing" secondItem="hq2-X0-65s" secondAttribute="trailing" id="hK5-Sn-fpN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="luanchimage.png" width="320" height="568"/>
+    </resources>
 </document>
