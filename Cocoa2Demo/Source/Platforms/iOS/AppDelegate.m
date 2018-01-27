@@ -96,7 +96,7 @@
     // Lets get this thing on the road!
     
     cocos2dSetup[CCSetupScreenOrientation] = CCScreenOrientationPortrait;
-//    cocos2dSetup[CCSetupShowDebugStats] = @(YES);
+    cocos2dSetup[CCSetupShowDebugStats] = @(YES);
     [self setupCocos2dWithOptions:cocos2dSetup];
     
     CCDirectorIOS* director = (CCDirectorIOS*)[CCDirector sharedDirector];

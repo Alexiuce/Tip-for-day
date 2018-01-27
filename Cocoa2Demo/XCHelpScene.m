@@ -41,9 +41,10 @@
     
     XCGameButton *backButton = [XCGameButton gameButtonWithTitle:[NSString adaptedString:@"Go back"]];
     backButton.position = ccp(0.5, 0.1);
+    [backButton setTarget:self selector:@selector(goToStartScene)];
     [self addChild:backButton];
-    
-    
 }
-
+- (void)goToStartScene{
+    [[CCDirector sharedDirector] popScene];
+}
 @end

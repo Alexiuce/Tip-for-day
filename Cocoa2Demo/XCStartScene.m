@@ -14,8 +14,11 @@
 #import <CCNodeTag.h>
 #import <CCEffectNode.h>
 #import <CCEffectBrightness.h>
+#import "XCHelpScene.h"
 
-static const int EffectTag = 1;
+
+static const int BackTag = 100;
+static const CGFloat kAnimationDuration = 60.0;
 
 static const CGFloat AirCraftTopMargin = 76;
 static const CGFloat AirCraftXMargin = 64;
@@ -35,14 +38,15 @@ static const CGFloat AirCraftMidPadding = 192;
     // 1. setup background
 
     CGSize winSize = [CCDirector sharedDirector].viewSize;
-    CCEffectNode *efn = [CCEffectNode effectNodeWithWidth:winSize.width height:winSize.height pixelFormat:CCTexturePixelFormat_RGBA8888];
-    efn.tag = EffectTag;
+//    CCEffectNode *efn = [CCEffectNode effectNodeWithWidth:winSize.width height:winSize.height pixelFormat:CCTexturePixelFormat_RGBA8888];
+//    efn.tag = EffectTag;
     
     CCSprite *bg = [CCSprite spriteWithImageNamed:@"scrollImage.png"];
     bg.scaleX = winSize.width / bg.contentSize.width;
     bg.scaleY = winSize.height / bg.contentSize.height;
-    bg.positionType = CCPositionTypeNormalized;
-    bg.position = ccp(0.5, 0.5);
+    bg.anchorPoint = CGPointZero;
+    bg.position = CGPointZero;
+    bg.tag = BackTag;
     
     CCSprite *maxtixSprite = [CCSprite spriteWithImageNamed:@"matrix.png"];
     maxtixSprite.scaleX = bg.scaleX;
@@ -50,24 +54,11 @@ static const CGFloat AirCraftMidPadding = 192;
     maxtixSprite.anchorPoint = ccp(0, 1);
     maxtixSprite.position = ccp(1, winSize.height - 117);
     
-    
-    
-    CCLabelTTF *ttfLabel = [CCLabelTTF labelWithString:@"There is three planes in map, you need shoot them down with 10 bullets,once you find one plane ,you will give a star. if you used all buttles ,you will lose the game.so are you ready ?" fontName:@"Avenir-Book" fontSize:20 dimensions:CGSizeMake(winSize.width - 60, 200)];
-//    ttfLabel.outlineWidth = 1;
-//    ttfLabel.outlineColor = CCColor.lightGrayColor;
-    ttfLabel.color = CCColor.blackColor;
-    ttfLabel.positionType = CCPositionTypeNormalized;
-    ttfLabel.position = ccp(0.5, 0.65);
-//    [self addChild:ttfLabel];
-    
-   
-
-    
     // 2. add help button
-    CCSpriteFrame *helpFrame = [CCSpriteFrame frameWithImageNamed:@"helpButton.png"];
-    CCButton *helpSprite = [CCButton buttonWithTitle:@"" spriteFrame:helpFrame];
-    helpSprite.positionType = CCPositionTypeNormalized;
-    helpSprite.position = ccp(0.9, 0.9);
+    CCSpriteFrame *helpFrame = [CCSpriteFrame frameWithImageNamed:@"helpIcon.png"];
+    CCButton *helpButton = [CCButton buttonWithTitle:@"" spriteFrame:helpFrame];
+    [helpButton setTarget:self selector:@selector(showHelpScene)];
+    helpButton.position = ccp(winSize.width - 30,winSize.height - 35);
 
     
     // 3. add  start button
@@ -80,19 +71,12 @@ static const CGFloat AirCraftMidPadding = 192;
     startButton.positionType = CCPositionTypeNormalized;
     startButton.position = ccp(0.5, 0.15);
     
-    efn.effect = [CCEffectBrightness effectWithBrightness:0];
-    [efn addChild:bg];
-    
-    [efn addChild:helpSprite];
-    [efn addChild:ttfLabel];
-    [efn addChild:startButton];
-    [efn addChild:maxtixSprite];
-    [self addChild:efn];
-
-    
-    
-    
-    //
+    [self addChild:bg];
+    [self addChild:maxtixSprite];
+    [self addChild:helpButton];
+    [self addChild:startButton];
+    [self showBullet];
+    //  过渡动画
     CCSprite *maskLaunchSprite = [CCSprite spriteWithImageNamed:@"launchBg.png"];
     maskLaunchSprite.scaleX = winSize.width / maskLaunchSprite.contentSize.width;
     maskLaunchSprite.scaleY = winSize.height / maskLaunchSprite.contentSize.height;
@@ -127,7 +111,14 @@ static const CGFloat AirCraftMidPadding = 192;
     
     CCActionDelay *delay = [CCActionDelay actionWithDuration:duration];
     CCActionFadeOut *fadeOut = [CCActionFadeOut actionWithDuration:0.7];
-    CCActionSequence *as = [CCActionSequence actions:delay,fadeOut, nil];
+    CCActionCallBlock *callBlock = [CCActionCallBlock actionWithBlock:^{
+        [maskLaunchSprite removeFromParent];
+        [leftAircraft removeFromParent];
+        [rightAircraft removeFromParent];
+        [downAircraft removeFromParent];
+    } ];
+    
+    CCActionSequence *as = [CCActionSequence actions:delay,fadeOut,callBlock, nil];
 //    CCActionHide *hiden = [CCActionHide action];
     [maskLaunchSprite runAction:as];
     
@@ -135,23 +126,83 @@ static const CGFloat AirCraftMidPadding = 192;
 
 
 - (void)startGame{
-    
- 
-    [self schedule:@selector(changeToGameScene) interval:0.1];
-    
+    // 1. start background animation
+    [self startBackgroundAnimation];
+    // 2. show bullet and animtion
+   
 }
 
-- (void)changeToGameScene{
-    CCEffectNode *efn = (CCEffectNode *)[self getChildByTag:EffectTag];
-    CCEffectBrightness *bright = (CCEffectBrightness *)efn.effect;
-    if (bright.brightness <= -1) {
-        [self unschedule:_cmd];
-        [[CCDirector sharedDirector] presentScene:[IADScene node]];
-    }else{
-        bright.brightness = MAX(-1, bright.brightness - 0.1);
+
+- (void)startBackgroundAnimation{
+    // 添加移动动画
+    CGSize winSize = [CCDirector sharedDirector].viewSize;
+    CCSprite *bg = [CCSprite spriteWithImageNamed:@"scrollImage.png"];
+    bg.scaleX = winSize.width / bg.contentSize.width;
+    bg.scaleY = winSize.height / bg.contentSize.height;
+    bg.anchorPoint = CGPointZero;
+    bg.position = ccp(0, winSize.height);
+    [self addChild:bg z:-1];
+    
+     CGFloat height = bg.boundingBox.size.height ;
+    {
+        CCAction *action = [CCActionMoveBy actionWithDuration:kAnimationDuration position:ccp(0, -height)];
+        CCAction *action1 = [CCActionMoveTo actionWithDuration:0 position:ccp(0, height)];
+        CCActionInterval *seqActon = [CCActionSequence actionWithArray:@[action,action,action1]];
+        CCActionRepeatForever *foreverAction = [CCActionRepeatForever actionWithAction: seqActon];
+        [bg runAction:foreverAction];
+        
+    }
+    
+    CCSprite *currentBackground = (CCSprite *)[self getChildByTag:BackTag];
+    CCAction *action = [CCActionMoveBy actionWithDuration:kAnimationDuration position:ccp(0, -height)];
+    CCAction *action1 = [CCActionMoveTo actionWithDuration:0 position:ccp(0, height)];
+    CCActionSequence *seqActon = [CCActionSequence actionWithArray:@[action,action1,action]];
+    CCActionRepeatForever *foreverAction = [CCActionRepeatForever actionWithAction: seqActon];
+    [currentBackground runAction:foreverAction];
+}
+
+- (void)showBullet{
+    CGSize winSize = [CCDirector sharedDirector].viewSize;
+    CGFloat lifeY = winSize.height - 50;
+    
+    CCSprite *lifeIcon = [CCSprite spriteWithImageNamed:@"lifeIcon.png"];
+    lifeIcon.anchorPoint = CGPointZero;
+    lifeIcon.position = ccp(5, lifeY);
+    [self addChild:lifeIcon];
+    
+    CGFloat sY = lifeY - 5;
+    CCSprite *scoreIcon = [CCSprite spriteWithImageNamed:@"score.png"];
+    scoreIcon.anchorPoint = ccp(0, 1);
+    scoreIcon.position = ccp(5, sY);
+    [self addChild:scoreIcon];
+    
+    CGFloat bX = 5 + lifeIcon.contentSize.width + 10;
+    CGFloat bY = lifeY + lifeIcon.contentSize.height * 0.5;
+    for (int i = 0; i < 10; i++) {
+        CCSprite *lifeSprite = [CCSprite spriteWithImageNamed:@"bullet.png"];
+        lifeSprite.name = @"life";
+//        lifeSprite.anchorPoint = CGPointZero;
+        lifeSprite.position = ccp( i *(lifeSprite.contentSize.width + 3) + bX, bY);
+        [self addChild:lifeSprite];
+//        [self.lifeArray addObject:lifeSprite];
     }
 }
 
+
+//- (void)changeToGameScene{
+//    CCEffectNode *efn = (CCEffectNode *)[self getChildByTag:EffectTag];
+//    CCEffectBrightness *bright = (CCEffectBrightness *)efn.effect;
+//    if (bright.brightness <= -1) {
+//        [self unschedule:_cmd];
+//        [[CCDirector sharedDirector] presentScene:[IADScene node]];
+//    }else{
+//        bright.brightness = MAX(-1, bright.brightness - 0.1);
+//    }
+//}
+- (void)showHelpScene{
+   
+    [[CCDirector sharedDirector] pushScene: [XCHelpScene node]];
+}
 - (void)dealloc{
     XCLog(@"dealloc");
 }
