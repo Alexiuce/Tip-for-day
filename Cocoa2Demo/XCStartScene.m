@@ -32,7 +32,6 @@ static const CGFloat AirCraftMidPadding = 192;
 }
 
 - (void)setupUI{
-    XCLog(@"scene for start %@",[NSDate date]);
     // 1. setup background
 
     CGSize winSize = [CCDirector sharedDirector].viewSize;
@@ -44,10 +43,6 @@ static const CGFloat AirCraftMidPadding = 192;
     bg.scaleY = winSize.height / bg.contentSize.height;
     bg.positionType = CCPositionTypeNormalized;
     bg.position = ccp(0.5, 0.5);
-
-    
-   
-    
     CCLabelTTF *ttfLabel = [CCLabelTTF labelWithString:@"There is three planes in map, you need shoot them down with 10 bullets,once you find one plane ,you will give a star. if you used all buttles ,you will lose the game.so are you ready ?" fontName:@"Avenir-Book" fontSize:20 dimensions:CGSizeMake(winSize.width - 60, 200)];
 //    ttfLabel.outlineWidth = 1;
 //    ttfLabel.outlineColor = CCColor.lightGrayColor;
@@ -90,11 +85,6 @@ static const CGFloat AirCraftMidPadding = 192;
     maskLaunchSprite.positionType = CCPositionTypeNormalized;
     maskLaunchSprite.position = ccp(0.5, 0.5);
     [self addChild:maskLaunchSprite];
-   
-    
-    
-    
-    
     
     CCSprite *leftAircraft = [CCSprite spriteWithImageNamed:@"leftAircraft"];
    
@@ -110,6 +100,22 @@ static const CGFloat AirCraftMidPadding = 192;
     downAircraft.anchorPoint = ccp(0.5, 1);
     downAircraft.position = ccp(winSize.width * 0.5, winSize.height - AirCraftMidPadding);
     [self addChild:downAircraft];
+    
+    CCTime duration = 2.0;
+    CGPoint endPoint = ccp(0, 200);
+    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:duration position:endPoint];
+    [leftAircraft runAction:moveBy];
+    CCActionMoveBy *rmoveBy = [CCActionMoveBy actionWithDuration:duration position:endPoint];
+    [rightAircraft runAction:rmoveBy];
+    CGPoint dendPoint = ccp(0, 300);
+    CCActionMoveBy *dmoveBy = [CCActionMoveBy actionWithDuration:duration position:dendPoint];
+    [downAircraft runAction:dmoveBy];
+    
+    CCActionDelay *delay = [CCActionDelay actionWithDuration:duration];
+    CCActionFadeOut *fadeOut = [CCActionFadeOut actionWithDuration:0.7];
+    CCActionSequence *as = [CCActionSequence actions:delay,fadeOut, nil];
+//    CCActionHide *hiden = [CCActionHide action];
+    [maskLaunchSprite runAction:as];
     
 }
 
