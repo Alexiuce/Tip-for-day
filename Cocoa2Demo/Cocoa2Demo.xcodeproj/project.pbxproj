@@ -120,6 +120,9 @@
 		B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3D17B978D7009739AE /* Foundation.framework */; };
 		B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
+		D80F8627201C4B5D00D9CA92 /* startBg.png in Resources */ = {isa = PBXBuildFile; fileRef = D80F8623201C4B5D00D9CA92 /* startBg.png */; };
+		D80F862B201C5B0300D9CA92 /* matrix.png in Resources */ = {isa = PBXBuildFile; fileRef = D80F862A201C5B0300D9CA92 /* matrix.png */; };
+		D80F862D201C5D4900D9CA92 /* scrollImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D80F862C201C5D4900D9CA92 /* scrollImage.png */; };
 		D84594C8200A190D00FD7216 /* XCSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D84594C7200A190D00FD7216 /* XCSprite.m */; };
 		D84594CE200A1B6B00FD7216 /* XCFrameCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D84594CD200A1B6B00FD7216 /* XCFrameCache.m */; };
 		D85639CF2000A92600D3F697 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D85639CE2000A92600D3F697 /* GameScene.m */; };
@@ -311,6 +314,9 @@
 		B77F1B4117B978D7009739AE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
 		D352B48019EC608A00829775 /* MetalShaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MetalShaders; path = Source/MetalShaders; sourceTree = "<group>"; };
+		D80F8623201C4B5D00D9CA92 /* startBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startBg.png; sourceTree = "<group>"; };
+		D80F862A201C5B0300D9CA92 /* matrix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matrix.png; sourceTree = "<group>"; };
+		D80F862C201C5D4900D9CA92 /* scrollImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollImage.png; sourceTree = "<group>"; };
 		D84594C6200A190D00FD7216 /* XCSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCSprite.h; sourceTree = "<group>"; };
 		D84594C7200A190D00FD7216 /* XCSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCSprite.m; sourceTree = "<group>"; };
 		D84594CC200A1B6B00FD7216 /* XCFrameCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCFrameCache.h; sourceTree = "<group>"; };
@@ -711,6 +717,9 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D80F862C201C5D4900D9CA92 /* scrollImage.png */,
+				D80F862A201C5B0300D9CA92 /* matrix.png */,
+				D80F8623201C4B5D00D9CA92 /* startBg.png */,
 				56C2AC97201AE98D004F0BE1 /* launchBg.png */,
 				56C2AC95201AE86B004F0BE1 /* downCraft.png */,
 				56C2AC93201AE865004F0BE1 /* leftAircraft.png */,
@@ -943,6 +952,7 @@
 				D875A5E720134AA000C38832 /* planeMap.dat in Resources */,
 				5642488A2019767E009ED032 /* helpButton.png in Resources */,
 				56CACA9020118C6900FF1775 /* bitmapFontTest.png in Resources */,
+				D80F862D201C5D4900D9CA92 /* scrollImage.png in Resources */,
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
 				569083C6200C549000F47F28 /* Info.plist in Resources */,
 				D8928CC02014BC8100C19109 /* detail.png in Resources */,
@@ -950,6 +960,7 @@
 				56BE15042003116C009D8FEC /* qq.png in Resources */,
 				D875A5D52012FC9900C38832 /* p2.png in Resources */,
 				5692103C2005D79D00A16227 /* gameArts.png in Resources */,
+				D80F862B201C5B0300D9CA92 /* matrix.png in Resources */,
 				56C2AC96201AE86B004F0BE1 /* downCraft.png in Resources */,
 				D875A5EF20137B1700C38832 /* empty.png in Resources */,
 				08BA20931C7865E600263AF8 /* Images.xcassets in Resources */,
@@ -960,6 +971,7 @@
 				D875A5E320133F6700C38832 /* head.mp3 in Resources */,
 				56C2AC94201AE865004F0BE1 /* leftAircraft.png in Resources */,
 				5652EE922015BE6800DAE181 /* gridMap.tmx in Resources */,
+				D80F8627201C4B5D00D9CA92 /* startBg.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				56CACA75201097E000FF1775 /* Localizable.strings in Resources */,
 				08BA20211C785F1C00263AF8 /* ic_launcher.png in Resources */,

@@ -38,11 +38,20 @@ static const CGFloat AirCraftMidPadding = 192;
     CCEffectNode *efn = [CCEffectNode effectNodeWithWidth:winSize.width height:winSize.height pixelFormat:CCTexturePixelFormat_RGBA8888];
     efn.tag = EffectTag;
     
-    CCSprite *bg = [CCSprite spriteWithImageNamed:@"scrollBg.png"];
+    CCSprite *bg = [CCSprite spriteWithImageNamed:@"scrollImage.png"];
     bg.scaleX = winSize.width / bg.contentSize.width;
     bg.scaleY = winSize.height / bg.contentSize.height;
     bg.positionType = CCPositionTypeNormalized;
     bg.position = ccp(0.5, 0.5);
+    
+    CCSprite *maxtixSprite = [CCSprite spriteWithImageNamed:@"matrix.png"];
+    maxtixSprite.scaleX = bg.scaleX;
+    maxtixSprite.scaleY = bg.scaleY;
+    maxtixSprite.anchorPoint = ccp(0, 1);
+    maxtixSprite.position = ccp(1, winSize.height - 117);
+    
+    
+    
     CCLabelTTF *ttfLabel = [CCLabelTTF labelWithString:@"There is three planes in map, you need shoot them down with 10 bullets,once you find one plane ,you will give a star. if you used all buttles ,you will lose the game.so are you ready ?" fontName:@"Avenir-Book" fontSize:20 dimensions:CGSizeMake(winSize.width - 60, 200)];
 //    ttfLabel.outlineWidth = 1;
 //    ttfLabel.outlineColor = CCColor.lightGrayColor;
@@ -55,28 +64,33 @@ static const CGFloat AirCraftMidPadding = 192;
 
     
     // 2. add help button
-    CCSprite *helpSprite = [CCSprite spriteWithImageNamed:@"helpButton.png"];
+    CCSpriteFrame *helpFrame = [CCSpriteFrame frameWithImageNamed:@"helpButton.png"];
+    CCButton *helpSprite = [CCButton buttonWithTitle:@"" spriteFrame:helpFrame];
     helpSprite.positionType = CCPositionTypeNormalized;
     helpSprite.position = ccp(0.9, 0.9);
-//    [self addChild:helpSprite];
+
     
     // 3. add  start button
     CCSpriteFrame *frame = [CCSpriteFrame frameWithImageNamed:@"startGame.png"];
     CCButton *startButton = [CCButton buttonWithTitle:@"" spriteFrame:frame];
     [startButton setTarget:self selector:@selector(startGame)];
-//    startButton.zoomWhenHighlighted = YES;
+
     startButton.scaleX = 0.6;
     startButton.scaleY = 0.8;
     startButton.positionType = CCPositionTypeNormalized;
-    startButton.position = ccp(0.5, 0.3);
-//    [self addChild:startButton];
+    startButton.position = ccp(0.5, 0.15);
     
     efn.effect = [CCEffectBrightness effectWithBrightness:0];
     [efn addChild:bg];
+    
     [efn addChild:helpSprite];
     [efn addChild:ttfLabel];
     [efn addChild:startButton];
+    [efn addChild:maxtixSprite];
     [self addChild:efn];
+
+    
+    
     
     //
     CCSprite *maskLaunchSprite = [CCSprite spriteWithImageNamed:@"launchBg.png"];

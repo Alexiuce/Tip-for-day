@@ -252,8 +252,10 @@ static int planeMap[10][10];
 - (void)setupBg{
     // 添加背景
     
+    
+    
     CGSize winSize = [CCDirector sharedDirector].viewSize;
-    CCSprite *background1 = [CCSprite spriteWithImageNamed:@"scrollBg.png"];
+    CCSprite *background1 = [CCSprite spriteWithImageNamed:@"scrollImage.png"];
     ccTexParams texParams = {GL_NEAREST,GL_NEAREST,GL_CLAMP_TO_EDGE,GL_CLAMP_TO_EDGE};
     [background1.texture setTexParameters:&texParams];
     CGFloat height = background1.contentSize.height ;
@@ -262,7 +264,7 @@ static int planeMap[10][10];
     background1.position = ccp(0, height);
     [self.contextEffectNode addChild:background1 z:-1];
     
-    CCSprite * _background = [CCSprite spriteWithImageNamed:@"scrollBg.png"];
+    CCSprite * _background = [CCSprite spriteWithImageNamed:@"scrollImage.png"];
     _background.scale = background1.scale;
     _background.anchorPoint = CGPointZero;
     
