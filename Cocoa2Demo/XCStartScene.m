@@ -15,6 +15,7 @@
 #import <CCEffectNode.h>
 #import <CCEffectBrightness.h>
 #import "XCHelpScene.h"
+#import "MatrixSprite.h"
 
 
 static const int BackTag = 100;
@@ -48,7 +49,7 @@ static const CGFloat AirCraftMidPadding = 192;
     bg.position = CGPointZero;
     bg.tag = BackTag;
     
-    CCSprite *maxtixSprite = [CCSprite spriteWithImageNamed:@"matrix.png"];
+    MatrixSprite *maxtixSprite = [MatrixSprite matrixSprite];
     maxtixSprite.scaleX = bg.scaleX;
     maxtixSprite.scaleY = bg.scaleY;
     maxtixSprite.anchorPoint = ccp(0, 1);
@@ -165,23 +166,31 @@ static const CGFloat AirCraftMidPadding = 192;
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     CGFloat lifeY = winSize.height - 50;
     
+    // add life icon
     CCSprite *lifeIcon = [CCSprite spriteWithImageNamed:@"lifeIcon.png"];
     lifeIcon.anchorPoint = CGPointZero;
     lifeIcon.position = ccp(5, lifeY);
     [self addChild:lifeIcon];
     
+    // add score icon
     CGFloat sY = lifeY - 5;
     CCSprite *scoreIcon = [CCSprite spriteWithImageNamed:@"score.png"];
     scoreIcon.anchorPoint = ccp(0, 1);
     scoreIcon.position = ccp(5, sY);
     [self addChild:scoreIcon];
+    // add score label
+    CCLabelBMFont *scoreLabel = [CCLabelBMFont labelWithString:@"0" fntFile:@"markerFelt.fnt"];
+    CGFloat sx = 5 + scoreIcon.contentSize.width + 10;
+    scoreLabel.anchorPoint = ccp(0, 1);
+    scoreLabel.position = ccp(sx, sY - 5);
+    [self addChild:scoreLabel];
     
     CGFloat bX = 5 + lifeIcon.contentSize.width + 10;
     CGFloat bY = lifeY + lifeIcon.contentSize.height * 0.5;
     for (int i = 0; i < 10; i++) {
         CCSprite *lifeSprite = [CCSprite spriteWithImageNamed:@"bullet.png"];
         lifeSprite.name = @"life";
-//        lifeSprite.anchorPoint = CGPointZero;
+
         lifeSprite.position = ccp( i *(lifeSprite.contentSize.width + 3) + bX, bY);
         [self addChild:lifeSprite];
 //        [self.lifeArray addObject:lifeSprite];

@@ -128,6 +128,9 @@
 		D80F8634201C748C00D9CA92 /* lifeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D80F8632201C748C00D9CA92 /* lifeIcon.png */; };
 		D80F8635201C748C00D9CA92 /* score.png in Resources */ = {isa = PBXBuildFile; fileRef = D80F8633201C748C00D9CA92 /* score.png */; };
 		D80F8637201C7AD200D9CA92 /* helpIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D80F8636201C7AD200D9CA92 /* helpIcon.png */; };
+		D80F863A201C89B100D9CA92 /* markerFelt.fnt in Resources */ = {isa = PBXBuildFile; fileRef = D80F8638201C89B100D9CA92 /* markerFelt.fnt */; };
+		D80F863B201C89B100D9CA92 /* markerFelt.png in Resources */ = {isa = PBXBuildFile; fileRef = D80F8639201C89B100D9CA92 /* markerFelt.png */; };
+		D80F863E201C8BAA00D9CA92 /* MatrixSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F863D201C8BAA00D9CA92 /* MatrixSprite.m */; };
 		D84594C8200A190D00FD7216 /* XCSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D84594C7200A190D00FD7216 /* XCSprite.m */; };
 		D84594CE200A1B6B00FD7216 /* XCFrameCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D84594CD200A1B6B00FD7216 /* XCFrameCache.m */; };
 		D85639CF2000A92600D3F697 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D85639CE2000A92600D3F697 /* GameScene.m */; };
@@ -327,6 +330,10 @@
 		D80F8632201C748C00D9CA92 /* lifeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lifeIcon.png; sourceTree = "<group>"; };
 		D80F8633201C748C00D9CA92 /* score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = score.png; sourceTree = "<group>"; };
 		D80F8636201C7AD200D9CA92 /* helpIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helpIcon.png; sourceTree = "<group>"; };
+		D80F8638201C89B100D9CA92 /* markerFelt.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = markerFelt.fnt; sourceTree = "<group>"; };
+		D80F8639201C89B100D9CA92 /* markerFelt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = markerFelt.png; sourceTree = "<group>"; };
+		D80F863C201C8BAA00D9CA92 /* MatrixSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrixSprite.h; sourceTree = "<group>"; };
+		D80F863D201C8BAA00D9CA92 /* MatrixSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatrixSprite.m; sourceTree = "<group>"; };
 		D84594C6200A190D00FD7216 /* XCSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCSprite.h; sourceTree = "<group>"; };
 		D84594C7200A190D00FD7216 /* XCSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCSprite.m; sourceTree = "<group>"; };
 		D84594CC200A1B6B00FD7216 /* XCFrameCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCFrameCache.h; sourceTree = "<group>"; };
@@ -644,6 +651,8 @@
 				B7378993180767190076A88C /* MainScene.m */,
 				56489A18201830F600DAC392 /* XCStartScene.h */,
 				56489A19201830F600DAC392 /* XCStartScene.m */,
+				D80F863C201C8BAA00D9CA92 /* MatrixSprite.h */,
+				D80F863D201C8BAA00D9CA92 /* MatrixSprite.m */,
 				5698D8422018723800A82578 /* XCHelpScene.h */,
 				5698D8432018723800A82578 /* XCHelpScene.m */,
 				56489A1520182E2600DAC392 /* XCGameButton.h */,
@@ -727,6 +736,8 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D80F8638201C89B100D9CA92 /* markerFelt.fnt */,
+				D80F8639201C89B100D9CA92 /* markerFelt.png */,
 				D80F8636201C7AD200D9CA92 /* helpIcon.png */,
 				D80F8632201C748C00D9CA92 /* lifeIcon.png */,
 				D80F8633201C748C00D9CA92 /* score.png */,
@@ -970,6 +981,7 @@
 				5642488A2019767E009ED032 /* helpButton.png in Resources */,
 				56CACA9020118C6900FF1775 /* bitmapFontTest.png in Resources */,
 				D80F862D201C5D4900D9CA92 /* scrollImage.png in Resources */,
+				D80F863A201C89B100D9CA92 /* markerFelt.fnt in Resources */,
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
 				569083C6200C549000F47F28 /* Info.plist in Resources */,
 				D8928CC02014BC8100C19109 /* detail.png in Resources */,
@@ -996,6 +1008,7 @@
 				56CACA75201097E000FF1775 /* Localizable.strings in Resources */,
 				08BA20211C785F1C00263AF8 /* ic_launcher.png in Resources */,
 				D875A5D72012FC9900C38832 /* p1.png in Resources */,
+				D80F863B201C89B100D9CA92 /* markerFelt.png in Resources */,
 				56CACA6D20106C1500FF1775 /* tiles-hd.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1145,6 +1158,7 @@
 				569083D6200C549000F47F28 /* NSMutableDictionary+WeakReferences.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				5698D8442018723800A82578 /* XCHelpScene.m in Sources */,
+				D80F863E201C8BAA00D9CA92 /* MatrixSprite.m in Sources */,
 				56FE20BA200F364000E9972C /* TouchSprite.m in Sources */,
 				569083C7200C549000F47F28 /* OALSimpleAudio.m in Sources */,
 				569083D5200C549000F47F28 /* NSMutableArray+WeakReferences.m in Sources */,
