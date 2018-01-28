@@ -7,9 +7,13 @@
 //
 
 #import "CCSprite.h"
+#import "MatrixtDelegate.h"
+
+
+
 
 @interface MatrixSprite : CCSprite
 
-+ (instancetype)matrixSprite;
++ (instancetype)matrixSpriteWithDelegate:(id <MatrixtDelegate>)delegate;
 
 @end

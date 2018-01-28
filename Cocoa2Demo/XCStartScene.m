@@ -16,7 +16,7 @@
 #import <CCEffectBrightness.h>
 #import "XCHelpScene.h"
 #import "MatrixSprite.h"
-
+#import "MatrixtDelegate.h"
 
 static const int BackTag = 100;
 static const CGFloat kAnimationDuration = 60.0;
@@ -24,6 +24,12 @@ static const CGFloat kAnimationDuration = 60.0;
 static const CGFloat AirCraftTopMargin = 76;
 static const CGFloat AirCraftXMargin = 64;
 static const CGFloat AirCraftMidPadding = 192;
+
+
+@interface XCStartScene()<MatrixtDelegate>
+
+
+@end
 
 
 @implementation XCStartScene
@@ -49,7 +55,7 @@ static const CGFloat AirCraftMidPadding = 192;
     bg.position = CGPointZero;
     bg.tag = BackTag;
     
-    MatrixSprite *maxtixSprite = [MatrixSprite matrixSprite];
+    MatrixSprite *maxtixSprite = [MatrixSprite matrixSpriteWithDelegate:self];
     maxtixSprite.scaleX = bg.scaleX;
     maxtixSprite.scaleY = bg.scaleY;
     maxtixSprite.anchorPoint = ccp(0, 1);
@@ -212,8 +218,11 @@ static const CGFloat AirCraftMidPadding = 192;
    
     [[CCDirector sharedDirector] pushScene: [XCHelpScene node]];
 }
-- (void)dealloc{
-    XCLog(@"dealloc");
+
+#pragma mark MatrixtDelegate
+- (void)matrixDidSelected:(MatrixSprite *)sprite itemStyle:(MatrixItemStyle)type{
+    
+    XCLog(@"%zd",type);
 }
 
 @end

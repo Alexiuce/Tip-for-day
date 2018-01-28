@@ -334,6 +334,7 @@
 		D80F8639201C89B100D9CA92 /* markerFelt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = markerFelt.png; sourceTree = "<group>"; };
 		D80F863C201C8BAA00D9CA92 /* MatrixSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrixSprite.h; sourceTree = "<group>"; };
 		D80F863D201C8BAA00D9CA92 /* MatrixSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatrixSprite.m; sourceTree = "<group>"; };
+		D824A2D1201D749200691252 /* MatrixtDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrixtDelegate.h; sourceTree = "<group>"; };
 		D84594C6200A190D00FD7216 /* XCSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCSprite.h; sourceTree = "<group>"; };
 		D84594C7200A190D00FD7216 /* XCSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCSprite.m; sourceTree = "<group>"; };
 		D84594CC200A1B6B00FD7216 /* XCFrameCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCFrameCache.h; sourceTree = "<group>"; };
@@ -653,6 +654,7 @@
 				56489A19201830F600DAC392 /* XCStartScene.m */,
 				D80F863C201C8BAA00D9CA92 /* MatrixSprite.h */,
 				D80F863D201C8BAA00D9CA92 /* MatrixSprite.m */,
+				D824A2D1201D749200691252 /* MatrixtDelegate.h */,
 				5698D8422018723800A82578 /* XCHelpScene.h */,
 				5698D8432018723800A82578 /* XCHelpScene.m */,
 				56489A1520182E2600DAC392 /* XCGameButton.h */,
