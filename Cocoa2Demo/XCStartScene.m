@@ -27,7 +27,10 @@ static const CGFloat AirCraftMidPadding = 192;
 
 
 @interface XCStartScene()<MatrixtDelegate>
-
+@property (nonatomic, strong) NSMutableArray *bulletArray;
+@property (nonatomic, assign) int bulletCount ;
+@property (nonatomic, weak) CCLabelBMFont *scoreLabel;
+@property (nonatomic, assign) int score;
 
 @end
 
@@ -36,6 +39,8 @@ static const CGFloat AirCraftMidPadding = 192;
 
 - (id)init{
     if (self = [super init]) {
+        self.bulletCount = 10;
+        self.bulletArray = [NSMutableArray arrayWithCapacity:self.bulletCount];
         [self setupUI];
     }
     return self;
@@ -43,7 +48,7 @@ static const CGFloat AirCraftMidPadding = 192;
 
 - (void)setupUI{
     // 1. setup background
-
+    
     CGSize winSize = [CCDirector sharedDirector].viewSize;
 //    CCEffectNode *efn = [CCEffectNode effectNodeWithWidth:winSize.width height:winSize.height pixelFormat:CCTexturePixelFormat_RGBA8888];
 //    efn.tag = EffectTag;
@@ -190,7 +195,7 @@ static const CGFloat AirCraftMidPadding = 192;
     scoreLabel.anchorPoint = ccp(0, 1);
     scoreLabel.position = ccp(sx, sY - 5);
     [self addChild:scoreLabel];
-    
+    self.scoreLabel = scoreLabel;
     CGFloat bX = 5 + lifeIcon.contentSize.width + 10;
     CGFloat bY = lifeY + lifeIcon.contentSize.height * 0.5;
     for (int i = 0; i < 10; i++) {
@@ -199,7 +204,7 @@ static const CGFloat AirCraftMidPadding = 192;
 
         lifeSprite.position = ccp( i *(lifeSprite.contentSize.width + 3) + bX, bY);
         [self addChild:lifeSprite];
-//        [self.lifeArray addObject:lifeSprite];
+        [self.bulletArray addObject:lifeSprite];
     }
 }
 
@@ -221,7 +226,20 @@ static const CGFloat AirCraftMidPadding = 192;
 
 #pragma mark MatrixtDelegate
 - (void)matrixDidSelected:(MatrixSprite *)sprite itemStyle:(MatrixItemStyle)type{
-    
+    if (type == MatrixItemEmpty) {
+        if (self.bulletCount == 0) {
+            // 显示Game over Scene
+            XCLog(@"game over");
+            return;
+        }
+        CCSprite *bullet = self.bulletArray[10 - self.bulletCount];
+        CCSpriteFrame *emptyFrame = [CCSpriteFrame frameWithImageNamed:@"emptyBullet"];
+        [bullet setSpriteFrame:emptyFrame];
+        self.bulletCount--;
+    }else if (type == MatrixItemHead){
+        self.score++;
+        self.scoreLabel.string = [NSString stringWithFormat:@"%zd",self.score];
+    }
     XCLog(@"%zd",type);
 }
 
