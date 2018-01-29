@@ -50,12 +50,28 @@
 //    _bgMap = bg;
 //
    
+    CGSize winSize = [CCDirector sharedDirector].viewSize;
+    // 1 . add background
+    CCSprite *bg = [CCSprite spriteWithImageNamed:@"gameoverBg.png"];
+    bg.positionType = CCPositionTypeNormalized;
+    bg.position = ccp(0.5, 0.5);
+    [self addChild:bg];
+    // 2. add title image
+    CCSprite *gameOver = [CCSprite spriteWithImageNamed:@"gameover.png"];
+    gameOver.anchorPoint = ccp(0.5, 1);
+    gameOver.position = ccp(winSize.width * 0.5, winSize.height - 100);
+    [self addChild:gameOver];
     
-    XCGameButton *answerButton = [XCGameButton gameButtonWithTitle:@"show truth" ];
-    answerButton.position = ccp(0.5, 0.6);
-    [self addChild:answerButton];
     
-    XCGameButton *backButton = [XCGameButton gameButtonWithTitle:@"start again"];
+    CCActionRotateBy *rotateBy = [CCActionRotateBy actionWithDuration:0.15 angleX:5 angleY:0];
+    CCActionRotateBy *rotateY = [CCActionRotateBy actionWithDuration:0.15 angleX:-5 angleY:0];
+
+    CCActionSequence *as = [CCActionSequence actions:rotateY,[rotateY reverse],rotateBy,[rotateBy reverse], nil];
+    CCActionRepeat *ar = [CCActionRepeat actionWithAction:as times:2];
+    [gameOver runAction:ar];
+    
+    
+    XCGameButton *backButton = [XCGameButton gameButtonWithTitle:@"play again"];
     backButton.position = ccp(0.5, 0.5);
     [self addChild:backButton];
     

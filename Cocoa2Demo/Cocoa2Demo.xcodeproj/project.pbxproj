@@ -131,6 +131,8 @@
 		D80F863A201C89B100D9CA92 /* markerFelt.fnt in Resources */ = {isa = PBXBuildFile; fileRef = D80F8638201C89B100D9CA92 /* markerFelt.fnt */; };
 		D80F863B201C89B100D9CA92 /* markerFelt.png in Resources */ = {isa = PBXBuildFile; fileRef = D80F8639201C89B100D9CA92 /* markerFelt.png */; };
 		D80F863E201C8BAA00D9CA92 /* MatrixSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F863D201C8BAA00D9CA92 /* MatrixSprite.m */; };
+		D824F42C201DE33E00AC1656 /* gameoverBg.png in Resources */ = {isa = PBXBuildFile; fileRef = D824F428201DE33E00AC1656 /* gameoverBg.png */; };
+		D824F42E201DE41E00AC1656 /* gameover.png in Resources */ = {isa = PBXBuildFile; fileRef = D824F42D201DE41D00AC1656 /* gameover.png */; };
 		D84594C8200A190D00FD7216 /* XCSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D84594C7200A190D00FD7216 /* XCSprite.m */; };
 		D84594CE200A1B6B00FD7216 /* XCFrameCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D84594CD200A1B6B00FD7216 /* XCFrameCache.m */; };
 		D85639CF2000A92600D3F697 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D85639CE2000A92600D3F697 /* GameScene.m */; };
@@ -335,6 +337,8 @@
 		D80F863C201C8BAA00D9CA92 /* MatrixSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrixSprite.h; sourceTree = "<group>"; };
 		D80F863D201C8BAA00D9CA92 /* MatrixSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatrixSprite.m; sourceTree = "<group>"; };
 		D824A2D1201D749200691252 /* MatrixtDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrixtDelegate.h; sourceTree = "<group>"; };
+		D824F428201DE33E00AC1656 /* gameoverBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameoverBg.png; sourceTree = "<group>"; };
+		D824F42D201DE41D00AC1656 /* gameover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameover.png; sourceTree = "<group>"; };
 		D84594C6200A190D00FD7216 /* XCSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCSprite.h; sourceTree = "<group>"; };
 		D84594C7200A190D00FD7216 /* XCSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCSprite.m; sourceTree = "<group>"; };
 		D84594CC200A1B6B00FD7216 /* XCFrameCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCFrameCache.h; sourceTree = "<group>"; };
@@ -738,6 +742,8 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D824F42D201DE41D00AC1656 /* gameover.png */,
+				D824F428201DE33E00AC1656 /* gameoverBg.png */,
 				D80F8638201C89B100D9CA92 /* markerFelt.fnt */,
 				D80F8639201C89B100D9CA92 /* markerFelt.png */,
 				D80F8636201C7AD200D9CA92 /* helpIcon.png */,
@@ -966,6 +972,7 @@
 				D875A5D62012FC9900C38832 /* p3.png in Resources */,
 				D875A5DF2013222000C38832 /* head.png in Resources */,
 				D875A5D920131BEF00C38832 /* p4.png in Resources */,
+				D824F42C201DE33E00AC1656 /* gameoverBg.png in Resources */,
 				56C2AC98201AE98D004F0BE1 /* launchBg.png in Resources */,
 				D80F8635201C748C00D9CA92 /* score.png in Resources */,
 				56489A14201826C300DAC392 /* buttonbackground.png in Resources */,
@@ -995,6 +1002,7 @@
 				5692103C2005D79D00A16227 /* gameArts.png in Resources */,
 				D80F862B201C5B0300D9CA92 /* matrix.png in Resources */,
 				56C2AC96201AE86B004F0BE1 /* downCraft.png in Resources */,
+				D824F42E201DE41E00AC1656 /* gameover.png in Resources */,
 				D875A5EF20137B1700C38832 /* empty.png in Resources */,
 				08BA20931C7865E600263AF8 /* Images.xcassets in Resources */,
 				56CACA9120118C6900FF1775 /* bitmapFontTest.fnt in Resources */,

@@ -17,8 +17,11 @@
 #import "XCHelpScene.h"
 #import "MatrixSprite.h"
 #import "MatrixtDelegate.h"
+#import "MainScene.h"
 
 static const int BackTag = 100;
+static const int MatrixTag = 101;
+
 static const CGFloat kAnimationDuration = 60.0;
 
 static const CGFloat AirCraftTopMargin = 76;
@@ -27,9 +30,11 @@ static const CGFloat AirCraftMidPadding = 192;
 
 
 @interface XCStartScene()<MatrixtDelegate>
+
 @property (nonatomic, strong) NSMutableArray *bulletArray;
 @property (nonatomic, assign) int bulletCount ;
 @property (nonatomic, weak) CCLabelBMFont *scoreLabel;
+@property (nonatomic, weak) CCButton *startButton;
 @property (nonatomic, assign) int score;
 
 @end
@@ -48,10 +53,7 @@ static const CGFloat AirCraftMidPadding = 192;
 
 - (void)setupUI{
     // 1. setup background
-    
     CGSize winSize = [CCDirector sharedDirector].viewSize;
-//    CCEffectNode *efn = [CCEffectNode effectNodeWithWidth:winSize.width height:winSize.height pixelFormat:CCTexturePixelFormat_RGBA8888];
-//    efn.tag = EffectTag;
     
     CCSprite *bg = [CCSprite spriteWithImageNamed:@"scrollImage.png"];
     bg.scaleX = winSize.width / bg.contentSize.width;
@@ -65,6 +67,8 @@ static const CGFloat AirCraftMidPadding = 192;
     maxtixSprite.scaleY = bg.scaleY;
     maxtixSprite.anchorPoint = ccp(0, 1);
     maxtixSprite.position = ccp(1, winSize.height - 117);
+    maxtixSprite.tag = MatrixTag;
+    [maxtixSprite setUserInteractionEnabled:NO];
     
     // 2. add help button
     CCSpriteFrame *helpFrame = [CCSpriteFrame frameWithImageNamed:@"helpIcon.png"];
@@ -77,7 +81,7 @@ static const CGFloat AirCraftMidPadding = 192;
     CCSpriteFrame *frame = [CCSpriteFrame frameWithImageNamed:@"startGame.png"];
     CCButton *startButton = [CCButton buttonWithTitle:@"" spriteFrame:frame];
     [startButton setTarget:self selector:@selector(startGame)];
-
+    self.startButton = startButton;
     startButton.scaleX = 0.6;
     startButton.scaleY = 0.8;
     startButton.positionType = CCPositionTypeNormalized;
@@ -141,6 +145,9 @@ static const CGFloat AirCraftMidPadding = 192;
     // 1. start background animation
     [self startBackgroundAnimation];
     // 2. show bullet and animtion
+    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:0.25 position:ccp(0, -0.2)];
+    [self.startButton runAction:moveBy];
+    [self getChildByTag:MatrixTag].userInteractionEnabled = YES;
    
 }
 
@@ -220,7 +227,6 @@ static const CGFloat AirCraftMidPadding = 192;
 //    }
 //}
 - (void)showHelpScene{
-   
     [[CCDirector sharedDirector] pushScene: [XCHelpScene node]];
 }
 
@@ -229,7 +235,7 @@ static const CGFloat AirCraftMidPadding = 192;
     if (type == MatrixItemEmpty) {
         if (self.bulletCount == 0) {
             // 显示Game over Scene
-            XCLog(@"game over");
+            [[CCDirector sharedDirector] pushScene:[MainScene node]];
             return;
         }
         CCSprite *bullet = self.bulletArray[10 - self.bulletCount];
