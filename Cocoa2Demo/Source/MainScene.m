@@ -62,6 +62,7 @@
     gameOver.position = ccp(winSize.width * 0.5, winSize.height - 100);
     [self addChild:gameOver];
     
+
     
     CCActionRotateBy *rotateBy = [CCActionRotateBy actionWithDuration:0.15 angleX:5 angleY:0];
     CCActionRotateBy *rotateY = [CCActionRotateBy actionWithDuration:0.15 angleX:-5 angleY:0];
@@ -72,6 +73,7 @@
     
     
     XCGameButton *backButton = [XCGameButton gameButtonWithTitle:@"play again"];
+
     backButton.position = ccp(0.5, 0.5);
     [self addChild:backButton];
     

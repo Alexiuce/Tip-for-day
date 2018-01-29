@@ -17,7 +17,11 @@
 #import "XCHelpScene.h"
 #import "MatrixSprite.h"
 #import "MatrixtDelegate.h"
+
 #import "MainScene.h"
+
+#import <CCPhysics.h>
+
 
 static const int BackTag = 100;
 static const int MatrixTag = 101;
@@ -132,11 +136,15 @@ static const CGFloat AirCraftMidPadding = 192;
         [leftAircraft removeFromParent];
         [rightAircraft removeFromParent];
         [downAircraft removeFromParent];
+        [self physicTest];
     } ];
     
     CCActionSequence *as = [CCActionSequence actions:delay,fadeOut,callBlock, nil];
 //    CCActionHide *hiden = [CCActionHide action];
     [maskLaunchSprite runAction:as];
+    
+    
+   
     
 }
 
@@ -248,5 +256,35 @@ static const CGFloat AirCraftMidPadding = 192;
     }
     XCLog(@"%zd",type);
 }
+
+- (void)physicTest{
+    CCPhysicsNode *space = [CCPhysicsNode node];
+    space.gravity = ccp(0, -200);
+    space.debugDraw = YES;
+    [self addChild: space];
+    
+
+    
+    CCPhysicsBody *starBody = [CCPhysicsBody bodyWithCircleOfRadius:16 andCenter:ccp(16,16)];
+    starBody.elasticity = 3;
+    CCSprite *starSprite = [CCSprite spriteWithImageNamed:@"starIcon.png"];
+    starSprite.position = ccp(150, 500);
+    starSprite.physicsBody = starBody;
+    [space addChild:starSprite];
+    CGSize winSize = [CCDirector sharedDirector].viewSize;
+    NSMutableArray *shapes = [NSMutableArray array];
+    
+    CCPhysicsShape *bottomGroundShape = [CCPhysicsShape pillShapeFrom:CGPointZero to:ccp(winSize.width, 0) cornerRadius:4];
+    
+    [shapes addObject:bottomGroundShape];
+    CCPhysicsBody *ground = [CCPhysicsBody bodyWithShapes:shapes];
+    ground.type = CCPhysicsBodyTypeStatic;
+    
+    CCNode *bottomNode = [CCNode node];
+
+    bottomNode.physicsBody = ground;
+    [space addChild:bottomNode];
+}
+
 
 @end
