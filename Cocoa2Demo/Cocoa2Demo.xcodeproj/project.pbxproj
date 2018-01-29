@@ -31,6 +31,7 @@
 		08BA20871C7860D600263AF8 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B121015197483EE004C1E1D /* ic_launcher.png */; };
 		08BA20931C7865E600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA20921C7865E600263AF8 /* Images.xcassets */; };
 		08BA20951C7865E600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA20921C7865E600263AF8 /* Images.xcassets */; };
+		56000D62201EB95D006F6BF0 /* starIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 56000D5E201EB95D006F6BF0 /* starIcon.png */; };
 		5617E33A200854A3002D909B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617E336200854A3002D909B /* CoreMotion.framework */; };
 		56401F36200D8A8500D72DCC /* RectSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56401F35200D8A8500D72DCC /* RectSprite.m */; };
 		56401F4F200DCA6900D72DCC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56401F4E200DCA6900D72DCC /* libz.tbd */; };
@@ -184,6 +185,7 @@
 		3CEDB4DCD9631F6394B5C701 /* Pods-Cocoa2Demo iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cocoa2Demo iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cocoa2Demo iOS/Pods-Cocoa2Demo iOS.release.xcconfig"; sourceTree = "<group>"; };
 		3D06BAEF5E15056F65D17C1F /* libPods-Cocoa2Demo iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cocoa2Demo iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		445F514AB2CF16A6455360A7 /* Pods-Cocoa2Demo iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cocoa2Demo iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cocoa2Demo iOS/Pods-Cocoa2Demo iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		56000D5E201EB95D006F6BF0 /* starIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starIcon.png; sourceTree = "<group>"; };
 		5617E336200854A3002D909B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		56401F34200D8A8500D72DCC /* RectSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RectSprite.h; sourceTree = "<group>"; };
 		56401F35200D8A8500D72DCC /* RectSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RectSprite.m; sourceTree = "<group>"; };
@@ -751,6 +753,7 @@
 				56C2AC97201AE98D004F0BE1 /* launchBg.png */,
 				56C2AC95201AE86B004F0BE1 /* downCraft.png */,
 				56C2AC93201AE865004F0BE1 /* leftAircraft.png */,
+				56000D5E201EB95D006F6BF0 /* starIcon.png */,
 				564248892019767E009ED032 /* helpButton.png */,
 				5698D84820187D4400A82578 /* helpScene.png */,
 				5698D84D20188B6C00A82578 /* helpScene-cn.png */,
@@ -976,6 +979,7 @@
 				56CACA652010361200FF1775 /* point.png in Resources */,
 				D875A5DD201321C000C38832 /* body.png in Resources */,
 				5698D84E20188B6C00A82578 /* helpScene-cn.png in Resources */,
+				56000D62201EB95D006F6BF0 /* starIcon.png in Resources */,
 				5692103B2005D79D00A16227 /* gameArts.plist in Resources */,
 				D875A5F120137C4600C38832 /* mask.png in Resources */,
 				D875A5E720134AA000C38832 /* planeMap.dat in Resources */,

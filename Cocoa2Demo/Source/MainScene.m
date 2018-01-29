@@ -51,10 +51,6 @@
 //
    
     
-    XCGameButton *answerButton = [XCGameButton gameButtonWithTitle:@"show truth" ];
-    answerButton.position = ccp(0.5, 0.6);
-    [self addChild:answerButton];
-    
     XCGameButton *backButton = [XCGameButton gameButtonWithTitle:@"start again"];
     backButton.position = ccp(0.5, 0.5);
     [self addChild:backButton];
