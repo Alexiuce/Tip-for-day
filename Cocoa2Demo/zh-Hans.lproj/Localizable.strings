@@ -11,3 +11,5 @@
 "Help for the Game" = "游戏帮助";
 "Go back" = "返回";
 "helpScene.png" = "helpScene-cn.png";
+"start new" = "开始新局";
+"play again" = "重玩本局";

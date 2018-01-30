@@ -3,6 +3,7 @@
 #import <CCEffectBlur.h>
 #import "XCTileMap.h"
 #import "XCGameButton.h"
+#import "NSString+Game.h"
 
 @interface MainScene()
 
@@ -47,23 +48,26 @@ static SceneStyle _style = FailureStyle;
     headSprite.position = ccp(winSize.width * 0.5, winSize.height - 100);
     [self addChild:headSprite];
     
-    XCGameButton *newButton = [XCGameButton gameButtonWithTitle:@"start new"];
-    [newButton setTarget:self selector:@selector(startNew)];
+   
+    
     if (_style == FailureStyle) {
         CCActionRotateBy *rotateBy = [CCActionRotateBy actionWithDuration:0.15 angleX:5 angleY:0];
         CCActionRotateBy *rotateY = [CCActionRotateBy actionWithDuration:0.15 angleX:-5 angleY:0];
         CCActionSequence *as = [CCActionSequence actions:rotateY,[rotateY reverse],rotateBy,[rotateBy reverse], nil];
         CCActionRepeat *ar = [CCActionRepeat actionWithAction:as times:2];
         [headSprite runAction:ar];
-        XCGameButton *backButton = [XCGameButton gameButtonWithTitle:@"play again"];
+        XCGameButton *backButton = [XCGameButton gameButtonWithTitle:[NSString adaptedString:@"play again"]];
         [backButton setTarget:self selector:@selector(playAgain)];
         backButton.position = ccp(0.5, 0.5);
         [self addChild:backButton];
-        newButton.position = ccp(0.5, 0.4);
+       
     }else{
+         XCGameButton *newButton = [XCGameButton gameButtonWithTitle:[NSString adaptedString:@"start new"]];
+        [newButton setTarget:self selector:@selector(startNew)];
         newButton.position = ccp(0.5, 0.5);
+         [self addChild:newButton];
     }
-    [self addChild:newButton];
+   
 
     
     // done

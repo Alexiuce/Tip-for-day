@@ -102,6 +102,7 @@ static const CGFloat AirCraftMidPadding = 192;
     [self addChild:helpButton];
     [self addChild:startButton];
     [self showBullet];
+    
     //  过渡动画
     CCSprite *maskLaunchSprite = [CCSprite spriteWithImageNamed:@"launchBg.png"];
     maskLaunchSprite.scaleX = winSize.width / maskLaunchSprite.contentSize.width;
@@ -146,7 +147,6 @@ static const CGFloat AirCraftMidPadding = 192;
     } ];
     
     CCActionSequence *as = [CCActionSequence actions:delay,fadeOut,callBlock, nil];
-//    CCActionHide *hiden = [CCActionHide action];
     [maskLaunchSprite runAction:as];
     
     
@@ -229,17 +229,6 @@ static const CGFloat AirCraftMidPadding = 192;
     }
 }
 
-
-//- (void)changeToGameScene{
-//    CCEffectNode *efn = (CCEffectNode *)[self getChildByTag:EffectTag];
-//    CCEffectBrightness *bright = (CCEffectBrightness *)efn.effect;
-//    if (bright.brightness <= -1) {
-//        [self unschedule:_cmd];
-//        [[CCDirector sharedDirector] presentScene:[IADScene node]];
-//    }else{
-//        bright.brightness = MAX(-1, bright.brightness - 0.1);
-//    }
-//}
 - (void)showHelpScene{
     [[CCDirector sharedDirector] pushScene: [XCHelpScene node]];
 }
@@ -317,9 +306,6 @@ static const CGFloat AirCraftMidPadding = 192;
     space.gravity = ccp(0, -200);
     space.debugDraw = YES;
     [self addChild: space];
-    
-
-    
     CCPhysicsBody *starBody = [CCPhysicsBody bodyWithCircleOfRadius:16 andCenter:ccp(16,16)];
     starBody.elasticity = 3;
     CCSprite *starSprite = [CCSprite spriteWithImageNamed:@"starIcon.png"];
