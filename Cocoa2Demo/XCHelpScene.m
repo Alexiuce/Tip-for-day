@@ -45,6 +45,7 @@
     [self addChild:backButton];
 }
 - (void)goToStartScene{
+    self.valueStyle = SceneComebackFromHelp;
     [[CCDirector sharedDirector] popScene];
 }
 @end

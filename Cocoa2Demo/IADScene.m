@@ -158,7 +158,7 @@ static int planeMap[10][10];
     // 统计结果
     if ([btn.name containsString:@"empty"] && --self.userClickCount < 0) {
         MainScene *main = [MainScene node];
-        main.title = @"game over";
+//        main.title = @"game over";
 //        CCTransition *transition = [CCDefaultTransition transitionFadeWithDuration:0.5];
      
         //[CCDefaultTransition transitionRevealWithDirection:CCTransitionDirectionUp duration:0.7];
@@ -168,7 +168,7 @@ static int planeMap[10][10];
         self.score++;
         if (self.score == 3) {
             MainScene *s = [MainScene node];
-            s.title = @"You win!";
+//            s.title = @"You win!";
             [[CCDirector sharedDirector] pushScene:s];
         }
     }

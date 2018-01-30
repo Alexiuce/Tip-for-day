@@ -1,9 +1,10 @@
 
 
+#import "BaseScene.h"
+
+@interface MainScene : BaseScene
 
 
-@interface MainScene : CCScene
 
-@property (nonatomic, strong)NSString *title;
 
 @end

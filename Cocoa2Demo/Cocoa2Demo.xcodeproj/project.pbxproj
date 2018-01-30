@@ -34,6 +34,7 @@
 		56000D62201EB95D006F6BF0 /* starIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 56000D5E201EB95D006F6BF0 /* starIcon.png */; };
 		5617E33A200854A3002D909B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617E336200854A3002D909B /* CoreMotion.framework */; };
 		562C30CE2020055D00335281 /* youwin.png in Resources */ = {isa = PBXBuildFile; fileRef = 562C30CA2020055D00335281 /* youwin.png */; };
+		562C30D220201AFD00335281 /* BaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 562C30D120201AFD00335281 /* BaseScene.m */; };
 		56401F36200D8A8500D72DCC /* RectSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56401F35200D8A8500D72DCC /* RectSprite.m */; };
 		56401F4F200DCA6900D72DCC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56401F4E200DCA6900D72DCC /* libz.tbd */; };
 		5642488A2019767E009ED032 /* helpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 564248892019767E009ED032 /* helpButton.png */; };
@@ -191,6 +192,9 @@
 		56000D5E201EB95D006F6BF0 /* starIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starIcon.png; sourceTree = "<group>"; };
 		5617E336200854A3002D909B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		562C30CA2020055D00335281 /* youwin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youwin.png; sourceTree = "<group>"; };
+		562C30CF2020193300335281 /* SceneValueDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneValueDelegate.h; sourceTree = "<group>"; };
+		562C30D020201AFD00335281 /* BaseScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseScene.h; sourceTree = "<group>"; };
+		562C30D120201AFD00335281 /* BaseScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseScene.m; sourceTree = "<group>"; };
 		56401F34200D8A8500D72DCC /* RectSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RectSprite.h; sourceTree = "<group>"; };
 		56401F35200D8A8500D72DCC /* RectSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RectSprite.m; sourceTree = "<group>"; };
 		56401F44200DA86E00D72DCC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -658,6 +662,9 @@
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				562C30CF2020193300335281 /* SceneValueDelegate.h */,
+				562C30D020201AFD00335281 /* BaseScene.h */,
+				562C30D120201AFD00335281 /* BaseScene.m */,
 				56489A18201830F600DAC392 /* XCStartScene.h */,
 				56489A19201830F600DAC392 /* XCStartScene.m */,
 				D80F863C201C8BAA00D9CA92 /* MatrixSprite.h */,
@@ -1181,6 +1188,7 @@
 				569083C7200C549000F47F28 /* OALSimpleAudio.m in Sources */,
 				569083D5200C549000F47F28 /* NSMutableArray+WeakReferences.m in Sources */,
 				56401F36200D8A8500D72DCC /* RectSprite.m in Sources */,
+				562C30D220201AFD00335281 /* BaseScene.m in Sources */,
 				569083C4200C549000F47F28 /* OALAudioTrackNotifications.m in Sources */,
 				569083D4200C549000F47F28 /* mach_timing.c in Sources */,
 				569083C2200C549000F47F28 /* OALUtilityActions.m in Sources */,

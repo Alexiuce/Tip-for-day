@@ -61,8 +61,6 @@
     gameOver.position = ccp(winSize.width * 0.5, winSize.height - 100);
     [self addChild:gameOver];
     
-
-    
     CCActionRotateBy *rotateBy = [CCActionRotateBy actionWithDuration:0.15 angleX:5 angleY:0];
     CCActionRotateBy *rotateY = [CCActionRotateBy actionWithDuration:0.15 angleX:-5 angleY:0];
 
@@ -73,10 +71,12 @@
     
     XCGameButton *backButton = [XCGameButton gameButtonWithTitle:@"play again"];
 
+    [backButton setTarget:self selector:@selector(playAgain)];
     backButton.position = ccp(0.5, 0.5);
     [self addChild:backButton];
     
     XCGameButton *newButton = [XCGameButton gameButtonWithTitle:@"start new"];
+    [newButton setTarget:self selector:@selector(startNew)];
     newButton.position = ccp(0.5, 0.4);
     [self addChild:newButton];
     
@@ -97,6 +97,17 @@
     // done
     return self;
 }
+
+#pragma  mark - UI Event
+- (void)playAgain{
+    self.valueStyle = SceneForRefresh;
+    [self popMainScene];
+}
+- (void)startNew{
+    self.valueStyle = SceneForReloadDataAndRefresh;
+    [self popMainScene];
+}
+
 
 - (void)setTitle:(NSString *)title{
 //    _title = title ;
@@ -140,6 +151,7 @@
 }
 
 - (void)popMainScene{
+    
     [[CCDirector sharedDirector] popScene];
 }
 

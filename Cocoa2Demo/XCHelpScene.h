@@ -6,8 +6,8 @@
 //  Copyright © 2018年 Apportable. All rights reserved.
 //  
 
-#import "CCScene.h"
+#import "BaseScene.h"
 
-@interface XCHelpScene : CCScene
+@interface XCHelpScene : BaseScene
 
 @end

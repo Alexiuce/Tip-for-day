@@ -17,6 +17,7 @@
 #import "XCHelpScene.h"
 #import "MatrixSprite.h"
 #import "MatrixtDelegate.h"
+#import "SceneValueDelegate.h"
 
 #import "MainScene.h"
 
@@ -33,15 +34,10 @@ static const CGFloat AirCraftXMargin = 64;
 static const CGFloat AirCraftMidPadding = 192;
 
 
-typedef NS_ENUM(NSUInteger,ComebackType) {
-     ComebackNone,
-     ComebackFromHelp,
-     ComebackFromWin,
-     ComebackFromFailure,
-};
 
 
-@interface XCStartScene()<MatrixtDelegate>
+
+@interface XCStartScene()<MatrixtDelegate,SceneValueDelegate>
 
 @property (nonatomic, strong) NSMutableArray *bulletArray;
 @property (nonatomic, assign) int bulletCount ;
@@ -49,7 +45,6 @@ typedef NS_ENUM(NSUInteger,ComebackType) {
 @property (nonatomic, weak) CCButton *startButton;
 @property (nonatomic, assign) int score;
 
-@property (nonatomic, assign) ComebackType comebackStyle;
 
 
 @end
@@ -246,8 +241,9 @@ typedef NS_ENUM(NSUInteger,ComebackType) {
 //    }
 //}
 - (void)showHelpScene{
-    self.comebackStyle = ComebackFromHelp;
-    [[CCDirector sharedDirector] pushScene: [XCHelpScene node]];
+    XCHelpScene *h = [XCHelpScene node];
+    h.valueDelegate = self;
+    [[CCDirector sharedDirector] pushScene: h];
 }
 
 #pragma mark MatrixtDelegate
@@ -255,8 +251,9 @@ typedef NS_ENUM(NSUInteger,ComebackType) {
     if (type == MatrixItemEmpty) {
         if (self.bulletCount == 0) {
             // 显示Game over Scene
-            self.comebackStyle = ComebackFromFailure;
-            [[CCDirector sharedDirector] pushScene:[MainScene node]];
+            MainScene *m = [MainScene node];
+            m.valueDelegate = self;
+            [[CCDirector sharedDirector] pushScene:m];
             return;
         }
         CCSprite *bullet = self.bulletArray[10 - self.bulletCount];
@@ -268,11 +265,35 @@ typedef NS_ENUM(NSUInteger,ComebackType) {
         self.scoreLabel.string = [NSString stringWithFormat:@"%zd",self.score];
         if (self.score == 3) {
             // 显示you win Scene
-            self.comebackStyle = ComebackFromWin;
-            [[CCDirector sharedDirector] pushScene:[MainScene node]];
+            MainScene *m = [MainScene node];
+            m.valueDelegate = self;
+            [[CCDirector sharedDirector] pushScene:m];
         }
     }
     XCLog(@"%zd",type);
+}
+
+#pragma  mark - SceneValueDelegate
+- (void)setValueForOnEnter:(SceneValueStyle)value{
+    switch (value) {
+        case SceneForReloadDataAndRefresh:{
+            XCLog(@"SceneForReloadDataAndRefresh");
+            break;
+        }
+            
+        case SceneForRefresh:{
+            XCLog(@"SceneForRefresh");
+            break;
+        }
+        case SceneComebackFromWin:{
+            XCLog(@"SceneComebackFromWin");
+            break;
+        }
+        case SceneComebackFromHelp:{
+            XCLog(@"SceneComebackFromHelp");
+            break;
+        }
+    }
 }
 
 - (void)physicTest{
