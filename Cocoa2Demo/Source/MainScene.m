@@ -32,7 +32,6 @@
     
     // The standard Hello World text
     
-    self.color = CCColor.lightGrayColor;
 //    NSString *hello = [NSString localizedStringWithFormat:NSLocalizedString(@"Hello World", @"问候语")];
 //
 //    CCLabelTTF *label = [CCLabelTTF labelWithString:hello fontName:@"ArialMT" fontSize:16];

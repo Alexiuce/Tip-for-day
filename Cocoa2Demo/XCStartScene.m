@@ -33,6 +33,14 @@ static const CGFloat AirCraftXMargin = 64;
 static const CGFloat AirCraftMidPadding = 192;
 
 
+typedef NS_ENUM(NSUInteger,ComebackType) {
+     ComebackNone,
+     ComebackFromHelp,
+     ComebackFromWin,
+     ComebackFromFailure,
+};
+
+
 @interface XCStartScene()<MatrixtDelegate>
 
 @property (nonatomic, strong) NSMutableArray *bulletArray;
@@ -40,6 +48,9 @@ static const CGFloat AirCraftMidPadding = 192;
 @property (nonatomic, weak) CCLabelBMFont *scoreLabel;
 @property (nonatomic, weak) CCButton *startButton;
 @property (nonatomic, assign) int score;
+
+@property (nonatomic, assign) ComebackType comebackStyle;
+
 
 @end
 
@@ -104,17 +115,17 @@ static const CGFloat AirCraftMidPadding = 192;
     maskLaunchSprite.position = ccp(0.5, 0.5);
     [self addChild:maskLaunchSprite];
     
-    CCSprite *leftAircraft = [CCSprite spriteWithImageNamed:@"leftAircraft"];
+    CCSprite *leftAircraft = [CCSprite spriteWithImageNamed:@"leftAircraft.png"];
    
     leftAircraft.anchorPoint = ccp(0, 1);
   
     leftAircraft.position = ccp(AirCraftXMargin,winSize.height - AirCraftTopMargin);
     [self addChild:leftAircraft];
-    CCSprite *rightAircraft = [CCSprite spriteWithImageNamed:@"leftAircraft"];
+    CCSprite *rightAircraft = [CCSprite spriteWithImageNamed:@"leftAircraft.png"];
     rightAircraft.anchorPoint = ccp(1, 1);
     rightAircraft.position = ccp(winSize.width - AirCraftXMargin, winSize.height - AirCraftTopMargin);
     [self addChild:rightAircraft];
-    CCSprite *downAircraft = [CCSprite spriteWithImageNamed:@"downCraft"];
+    CCSprite *downAircraft = [CCSprite spriteWithImageNamed:@"downCraft.png"];
     downAircraft.anchorPoint = ccp(0.5, 1);
     downAircraft.position = ccp(winSize.width * 0.5, winSize.height - AirCraftMidPadding);
     [self addChild:downAircraft];
@@ -136,7 +147,7 @@ static const CGFloat AirCraftMidPadding = 192;
         [leftAircraft removeFromParent];
         [rightAircraft removeFromParent];
         [downAircraft removeFromParent];
-        [self physicTest];
+//        [self physicTest];
     } ];
     
     CCActionSequence *as = [CCActionSequence actions:delay,fadeOut,callBlock, nil];
@@ -235,6 +246,7 @@ static const CGFloat AirCraftMidPadding = 192;
 //    }
 //}
 - (void)showHelpScene{
+    self.comebackStyle = ComebackFromHelp;
     [[CCDirector sharedDirector] pushScene: [XCHelpScene node]];
 }
 
@@ -243,6 +255,7 @@ static const CGFloat AirCraftMidPadding = 192;
     if (type == MatrixItemEmpty) {
         if (self.bulletCount == 0) {
             // 显示Game over Scene
+            self.comebackStyle = ComebackFromFailure;
             [[CCDirector sharedDirector] pushScene:[MainScene node]];
             return;
         }
@@ -253,6 +266,11 @@ static const CGFloat AirCraftMidPadding = 192;
     }else if (type == MatrixItemHead){
         self.score++;
         self.scoreLabel.string = [NSString stringWithFormat:@"%zd",self.score];
+        if (self.score == 3) {
+            // 显示you win Scene
+            self.comebackStyle = ComebackFromWin;
+            [[CCDirector sharedDirector] pushScene:[MainScene node]];
+        }
     }
     XCLog(@"%zd",type);
 }

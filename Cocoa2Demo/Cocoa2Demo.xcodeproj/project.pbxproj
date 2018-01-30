@@ -33,6 +33,7 @@
 		08BA20951C7865E600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA20921C7865E600263AF8 /* Images.xcassets */; };
 		56000D62201EB95D006F6BF0 /* starIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 56000D5E201EB95D006F6BF0 /* starIcon.png */; };
 		5617E33A200854A3002D909B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617E336200854A3002D909B /* CoreMotion.framework */; };
+		562C30CE2020055D00335281 /* youwin.png in Resources */ = {isa = PBXBuildFile; fileRef = 562C30CA2020055D00335281 /* youwin.png */; };
 		56401F36200D8A8500D72DCC /* RectSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56401F35200D8A8500D72DCC /* RectSprite.m */; };
 		56401F4F200DCA6900D72DCC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56401F4E200DCA6900D72DCC /* libz.tbd */; };
 		5642488A2019767E009ED032 /* helpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 564248892019767E009ED032 /* helpButton.png */; };
@@ -189,6 +190,7 @@
 		445F514AB2CF16A6455360A7 /* Pods-Cocoa2Demo iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cocoa2Demo iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cocoa2Demo iOS/Pods-Cocoa2Demo iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		56000D5E201EB95D006F6BF0 /* starIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starIcon.png; sourceTree = "<group>"; };
 		5617E336200854A3002D909B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		562C30CA2020055D00335281 /* youwin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youwin.png; sourceTree = "<group>"; };
 		56401F34200D8A8500D72DCC /* RectSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RectSprite.h; sourceTree = "<group>"; };
 		56401F35200D8A8500D72DCC /* RectSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RectSprite.m; sourceTree = "<group>"; };
 		56401F44200DA86E00D72DCC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -744,6 +746,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				562C30CA2020055D00335281 /* youwin.png */,
 				D824F42D201DE41D00AC1656 /* gameover.png */,
 				D824F428201DE33E00AC1656 /* gameoverBg.png */,
 				D80F8638201C89B100D9CA92 /* markerFelt.fnt */,
@@ -997,6 +1000,7 @@
 				D80F863A201C89B100D9CA92 /* markerFelt.fnt in Resources */,
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
 				569083C6200C549000F47F28 /* Info.plist in Resources */,
+				562C30CE2020055D00335281 /* youwin.png in Resources */,
 				D8928CC02014BC8100C19109 /* detail.png in Resources */,
 				D8F3349A2016152D00BC37C1 /* scrollBg.png in Resources */,
 				56BE15042003116C009D8FEC /* qq.png in Resources */,

@@ -17,6 +17,7 @@
 @property (nonatomic, strong) NSArray *mapArray;
 // 格子记录字典:用于存储点击过的格子
 @property (nonatomic, strong) NSMutableDictionary *allreadyDict;
+
 @property (nonatomic, weak) id <MatrixtDelegate>delegate;
 
 @end
@@ -37,6 +38,8 @@
     m.allreadyDict = [NSMutableDictionary dictionary];
     m.userInteractionEnabled = YES;
     m.delegate = delegate;
+    
+    XCLog(@"m children count =  %zd",m.children.count);
     return m;
 }
 
@@ -81,7 +84,18 @@
     }
 }
 
+- (void)refresh{
+    [self.allreadyDict removeAllObjects];
+    [self removeAllChildren];
+}
+- (void)reloadMapDataAndRefresh{
+    
+    
+    [self refresh];
+}
 
+
+#pragma mark lazy method
 - (NSArray *)mapArray{
     if (_mapArray == nil) {
         NSString *mapData = [[NSBundle mainBundle] pathForResource:@"planeMap.dat" ofType:nil];

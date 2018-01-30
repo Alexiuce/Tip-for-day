@@ -16,4 +16,7 @@
 
 + (instancetype)matrixSpriteWithDelegate:(id <MatrixtDelegate>)delegate;
 
+- (void)refresh;
+- (void)reloadMapDataAndRefresh;
+
 @end
