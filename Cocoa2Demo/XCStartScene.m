@@ -249,7 +249,7 @@ static const CGFloat AirCraftMidPadding = 192;
     if (type == MatrixItemEmpty) {
         if (self.bulletCount == 0) {
             // 显示Game over Scene
-            MainScene *m = [MainScene node];
+            MainScene *m = [MainScene sceneWithStyle:FailureStyle];
             m.valueDelegate = self;
             [[CCDirector sharedDirector] pushScene:m];
             return;
@@ -263,7 +263,7 @@ static const CGFloat AirCraftMidPadding = 192;
         self.scoreLabel.string = [NSString stringWithFormat:@"%zd",self.score];
         if (self.score == 3) {
             // 显示you win Scene
-            MainScene *m = [MainScene node];
+            MainScene *m = [MainScene sceneWithStyle:SuccessSytle];
             m.valueDelegate = self;
             [[CCDirector sharedDirector] pushScene:m];
         }
