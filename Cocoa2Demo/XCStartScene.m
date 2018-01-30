@@ -221,7 +221,7 @@ static const CGFloat AirCraftMidPadding = 192;
     CGFloat bY = lifeY + lifeIcon.contentSize.height * 0.5;
     for (int i = 0; i < 10; i++) {
         CCSprite *lifeSprite = [CCSprite spriteWithImageNamed:@"bullet.png"];
-        lifeSprite.name = @"life";
+       
 
         lifeSprite.position = ccp( i *(lifeSprite.contentSize.width + 3) + bX, bY);
         [self addChild:lifeSprite];
@@ -241,9 +241,7 @@ static const CGFloat AirCraftMidPadding = 192;
 //    }
 //}
 - (void)showHelpScene{
-    XCHelpScene *h = [XCHelpScene node];
-    h.valueDelegate = self;
-    [[CCDirector sharedDirector] pushScene: h];
+    [[CCDirector sharedDirector] pushScene: [XCHelpScene node]];
 }
 
 #pragma mark MatrixtDelegate
@@ -257,7 +255,7 @@ static const CGFloat AirCraftMidPadding = 192;
             return;
         }
         CCSprite *bullet = self.bulletArray[10 - self.bulletCount];
-        CCSpriteFrame *emptyFrame = [CCSpriteFrame frameWithImageNamed:@"emptyBullet"];
+        CCSpriteFrame *emptyFrame = [CCSpriteFrame frameWithImageNamed:@"emptyBullet.png"];
         [bullet setSpriteFrame:emptyFrame];
         self.bulletCount--;
     }else if (type == MatrixItemHead){
@@ -275,24 +273,42 @@ static const CGFloat AirCraftMidPadding = 192;
 
 #pragma  mark - SceneValueDelegate
 - (void)setValueForOnEnter:(SceneValueStyle)value{
+    MatrixSprite *m = (MatrixSprite *)[self getChildByTag:MatrixTag];
     switch (value) {
         case SceneForReloadDataAndRefresh:{
             XCLog(@"SceneForReloadDataAndRefresh");
+            [m reloadMapDataAndRefresh];
+            [self gameRestore];
             break;
         }
             
         case SceneForRefresh:{
             XCLog(@"SceneForRefresh");
+            [m refresh];
+            [self gameRestore];
             break;
         }
         case SceneComebackFromWin:{
             XCLog(@"SceneComebackFromWin");
             break;
         }
-        case SceneComebackFromHelp:{
-            XCLog(@"SceneComebackFromHelp");
+        case SceneComebackFromHelp: {
+            
             break;
         }
+    }
+}
+#pragma mark - privite method
+
+- (void)gameRestore{
+    // 恢复data
+    self.score = 0;
+    self.scoreLabel.string = @"0";
+    self.bulletCount = 10;
+    // 恢复bullet
+    CCSpriteFrame *emptyFrame = [CCSpriteFrame frameWithImageNamed:@"bullet.png"];
+    for (CCSprite *s in self.bulletArray) {
+        [s setSpriteFrame:emptyFrame];
     }
 }
 
