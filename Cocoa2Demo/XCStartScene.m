@@ -18,7 +18,7 @@
 #import "MatrixSprite.h"
 #import "MatrixtDelegate.h"
 #import "SceneValueDelegate.h"
-
+#import "NSString+Game.h"
 #import "MainScene.h"
 
 #import <CCPhysics.h>
@@ -26,6 +26,9 @@
 
 static const int BackTag = 100;
 static const int MatrixTag = 101;
+static const int TextTag = 102;
+static const int StartButtonTag = 103;
+
 
 static const CGFloat kAnimationDuration = 60.0;
 
@@ -80,6 +83,14 @@ static const CGFloat AirCraftMidPadding = 192;
     maxtixSprite.tag = MatrixTag;
     [maxtixSprite setUserInteractionEnabled:NO];
     
+    // add text
+    CCLabelTTF *text = [CCLabelTTF labelWithString:[NSString adaptedString:@"ready Start"] fontName:@"ArialMT" fontSize:25 dimensions:CGSizeMake(280, 200)];
+    text.color = CCColor.blackColor;
+    text.tag = TextTag;
+    text.positionType = CCPositionTypeNormalized;
+    text.position = ccp(0.5, 0.6);
+
+    
     // 2. add help button
     CCSpriteFrame *helpFrame = [CCSpriteFrame frameWithImageNamed:@"helpIcon.png"];
     CCButton *helpButton = [CCButton buttonWithTitle:@"" spriteFrame:helpFrame];
@@ -95,10 +106,11 @@ static const CGFloat AirCraftMidPadding = 192;
     startButton.scaleX = 0.6;
     startButton.scaleY = 0.8;
     startButton.positionType = CCPositionTypeNormalized;
-    startButton.position = ccp(0.5, 0.15);
+    startButton.position = ccp(0.5, 0.45);
     
     [self addChild:bg];
     [self addChild:maxtixSprite];
+    [self addChild:text];
     [self addChild:helpButton];
     [self addChild:startButton];
     [self showBullet];
@@ -159,8 +171,18 @@ static const CGFloat AirCraftMidPadding = 192;
     // 1. start background animation
     [self startBackgroundAnimation];
     // 2. show bullet and animtion
-    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:0.25 position:ccp(0, -0.2)];
-    [self.startButton runAction:moveBy];
+    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:0.5 position:ccp(0, -0.6)];
+    CCActionCallBlock *actionBlock = [CCActionCallBlock actionWithBlock:^{
+        [self.startButton removeFromParent];
+    }];
+    [self.startButton runAction:[CCActionSequence actions:moveBy,actionBlock, nil]];
+    
+    CCActionMoveBy *textBy = [CCActionMoveBy actionWithDuration:0.5 position:ccp(0, 0.8)];
+    CCLabelTTF *label =  (CCLabelTTF *)[self getChildByTag:TextTag];
+    CCActionCallBlock *textBlock = [CCActionCallBlock actionWithBlock:^{
+        [label removeFromParent];
+    }];
+    [label runAction:[CCActionSequence actions:textBy,textBlock, nil]];
     [self getChildByTag:MatrixTag].userInteractionEnabled = YES;
    
 }
