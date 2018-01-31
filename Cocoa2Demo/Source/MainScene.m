@@ -12,26 +12,22 @@
 
 @property (nonatomic, weak) CCTiledMap *bgMap;
 
+@property (nonatomic, assign) SceneStyle style;
 
 @end
 
-static SceneStyle _style = FailureStyle;
 
 @implementation MainScene
 
 + (instancetype)sceneWithStyle:(SceneStyle)style{
-    _style = style;
-    return [self node];
+    
+    MainScene *m = [self node];
+    m.style = style;
+    return m;
 }
 
-
-- (id)init{
-    // Apple recommend assigning self with supers return value
-    self = [super init];
-
-    NSAssert(self, @"Whoops");
-//    self.userInteractionEnabled = YES;
-   
+- (void)onEnter{
+    [super onEnter];
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     // 1 . add background
     CCSprite *bg = [CCSprite spriteWithImageNamed:@"gameoverBg.png"];
@@ -49,12 +45,12 @@ static SceneStyle _style = FailureStyle;
     headSprite.position = ccp(winSize.width * 0.5, winSize.height - 64);
     [self addChild:headSprite];
     
-
+    
     // add scroe sprite
-    ScoreSprite *ss = [ScoreSprite scoreWith:20 head:12 body:12];
+    ScoreSprite *ss = [ScoreSprite scoreWith:_total head:_headCount body:_bodyCount];
     ss.position = ccp(self.contentSize.width * 0.5, self.contentSize.height * 0.5 + 20);
     [self addChild:ss];
-   
+    
     NSString *btnName = _style == SuccessSytle ? @"start new" : @"play again";
     XCGameButton *backButton = [XCGameButton gameButtonWithTitle:[NSString adaptedString:btnName]];
     if (_style == FailureStyle) {
@@ -69,8 +65,6 @@ static SceneStyle _style = FailureStyle;
     backButton.position = ccp(ss.position.x, ss.position.y - ss.contentSize.height * 0.5 - 15 );
     [self addChild:backButton];
     
-    // done
-    return self;
 }
 
 #pragma  mark - UI Event

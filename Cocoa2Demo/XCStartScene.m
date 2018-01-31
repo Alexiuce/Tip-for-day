@@ -27,7 +27,7 @@
 static const int BackTag = 100;
 static const int MatrixTag = 101;
 static const int TextTag = 102;
-static const int StartButtonTag = 103;
+
 
 
 static const CGFloat kAnimationDuration = 60.0;
@@ -48,6 +48,8 @@ static const CGFloat AirCraftMidPadding = 192;
 @property (nonatomic, weak) CCButton *startButton;
 @property (nonatomic, assign) int score;
 
+@property (nonatomic, assign) int totalClick;
+@property (nonatomic, assign) int bodyCount;
 
 
 @end
@@ -255,11 +257,16 @@ static const CGFloat AirCraftMidPadding = 192;
 
 #pragma mark MatrixtDelegate
 - (void)matrixDidSelected:(MatrixSprite *)sprite itemStyle:(MatrixItemStyle)type{
+    self.totalClick++;
+    
     if (type == MatrixItemEmpty) {
         if (self.bulletCount == 0) {
             // 显示Game over Scene
             MainScene *m = [MainScene sceneWithStyle:FailureStyle];
             m.valueDelegate = self;
+            m.total = self.totalClick;
+            m.headCount = self.score;
+            m.bodyCount = self.bodyCount;
             [[CCDirector sharedDirector] pushScene:m];
             return;
         }
@@ -274,8 +281,13 @@ static const CGFloat AirCraftMidPadding = 192;
             // 显示you win Scene
             MainScene *m = [MainScene sceneWithStyle:SuccessSytle];
             m.valueDelegate = self;
+            m.total = self.totalClick;
+            m.headCount = self.score;
+            m.bodyCount = self.bodyCount;
             [[CCDirector sharedDirector] pushScene:m];
         }
+    }else if (type == MatrixItemBody){
+        self.bodyCount++;
     }
 }
 
@@ -311,6 +323,8 @@ static const CGFloat AirCraftMidPadding = 192;
 - (void)gameRestore{
     // 恢复data
     self.score = 0;
+    self.bodyCount = 0;
+    self.totalClick = 0;
     self.scoreLabel.string = @"0";
     self.bulletCount = 10;
     // 恢复bullet

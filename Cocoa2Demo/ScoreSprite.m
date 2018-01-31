@@ -39,7 +39,7 @@
     title.colorRGBA = CCColor.redColor;
     [self addChild:title];
     // add total
-    NSString *ts = [NSString stringWithFormat:@"Total is  %zd",self.total];
+    NSString *ts = [NSString stringWithFormat:@"Total %zd times",self.total];
     CCLabelTTF * total = [CCLabelTTF labelWithString:ts fontName:@"ChalkboardSE-Bold" fontSize:20];
     total.anchorPoint = ccp(0.5, 1);
     total.position = ccp(title.position.x, title.position.y - title.contentSize.height * 0.5 );
@@ -50,14 +50,14 @@
     CCLabelTTF * head = [CCLabelTTF labelWithString:hs fontName:@"ChalkboardSE-Bold" fontSize:20];
     head.anchorPoint = ccp(0, 0.5);
     head.position = ccp(60, self.contentSize.height - 164 + 71 );
-    head.color = CCColor.blueColor;
+    head.color = [CCColor colorWithRed:43/255.0 green:97/255.0 blue:1 alpha:1];;
     [self addChild:head];
     
     NSString *bs = [NSString stringWithFormat:@" %zd Found",self.bodyCount];
     CCLabelTTF * body = [CCLabelTTF labelWithString:bs fontName:@"ChalkboardSE-Bold" fontSize:20];
     body.anchorPoint = ccp(0, 0.5);
     body.position = ccp(60, self.contentSize.height - 198 + 66);
-    body.color = CCColor.blueColor;
+    body.color = head.color;
     [self addChild:body];
     
 

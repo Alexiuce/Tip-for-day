@@ -40,6 +40,7 @@
     // 3. setup go back button
     
     XCGameButton *backButton = [XCGameButton gameButtonWithTitle:[NSString adaptedString:@"Go back"]];
+    backButton.positionType = CCPositionTypeNormalized;
     backButton.position = ccp(0.5, 0.1);
     [backButton setTarget:self selector:@selector(goToStartScene)];
     [self addChild:backButton];
