@@ -104,10 +104,10 @@
 #pragma mark lazy method
 - (NSArray *)mapArray{
     if (_mapArray == nil) {
-        NSString *mapData = [[NSBundle mainBundle] pathForResource:@"planeMap.dat" ofType:nil];
+        NSString *mapData = [[NSBundle mainBundle] pathForResource:@"matrix.dat" ofType:nil];
         _mapArray = [NSArray arrayWithContentsOfFile:mapData];
     }
-    return _mapArray;
+    return _mapArray[8];
 }
 
 @end

@@ -47,15 +47,16 @@ static int planeMap[10][10];
         self.lifeArray = [NSMutableArray arrayWithCapacity:10];
         self.userInteractionEnabled = YES;
         //获取当前设备语言
-        NSArray *appLanguages = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"];
-        NSString *languageName = [appLanguages objectAtIndex:0];
-        XCLog(@"language = %@",languageName);
+//        NSArray *appLanguages = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"];
+//        NSString *languageName = [appLanguages objectAtIndex:0];
+//        XCLog(@"language = %@",languageName);
         
         // 预先加载音效
-        for (NSString *name in @[@"head.mp3",@"body.mp3",@"empty.mp3"]) {
-            [[OALSimpleAudio sharedInstance] preloadEffect:name];
-        }
-      
+//        for (NSString *name in @[@"head.mp3",@"body.mp3",@"empty.mp3"]) {
+//            [[OALSimpleAudio sharedInstance] preloadEffect:name];
+//        }
+//        [self loadTMX];
+        [self convertCArrayToNSArray];
     }
     return self;
 }
@@ -85,12 +86,21 @@ static int planeMap[10][10];
 }
 
 - (NSArray<NSArray< NSNumber *>*>*)convertCArrayToNSArray{
-    NSString *mapData = [[NSBundle mainBundle] pathForResource:@"planeMap.dat" ofType:nil];
-    NSArray *array = [NSArray arrayWithContentsOfFile:mapData];
-    if (array.count > 0) {
-        XCLog(@"local array");
-        return array;
+    
+    NSMutableArray *totalArray = [NSMutableArray array];
+    for (int i = 0; i < 16; i++) {
+        NSString *name = [NSString stringWithFormat:@"planeMap%d.dat",i];
+        NSString *mapData = [[NSBundle mainBundle] pathForResource:name ofType:nil];
+        NSArray *array = [NSArray arrayWithContentsOfFile:mapData];
+       
+        if (array.count > 0) {
+            XCLog(@"local array");
+            [totalArray addObject:array];
+        }
     }
+    [totalArray writeToFile:@"/Users/Alexcai/Desktop/matrix.dat" atomically:YES];
+    
+    return nil;
     NSMutableArray *allArray = [NSMutableArray arrayWithCapacity:CountPerRow];
 
     for (int i = 0; i < CountPerRow; i++) {
@@ -101,7 +111,7 @@ static int planeMap[10][10];
         }
         [allArray addObject:rowArray];
     }
-    
+//    [allArray writeToFile:@"/Users/Alexcai/Desktop/planeMap15.dat" atomically:YES];
     return [allArray copy];
 }
 
@@ -181,48 +191,48 @@ static int planeMap[10][10];
 }
 
 
-- (void)onEnter{
-    [super onEnter];
-    if (self.fromType != FromStartScene) {
-        [self removeAllChildren];
-        [self.lifeArray removeAllObjects];
-    }
-    
-    CGSize winSize = [CCDirector sharedDirector].viewSize;
-    [self setupBg];
-
-    self.map = [self convertCArrayToNSArray];
-    for (int i = 0; i < CountPerRow; i++) {
-        [self addLine:i + 1];
-    }
-   // life label
-    CCLabelTTF *label = [CCLabelTTF labelWithString:NSLocalizedString(@"life", @"") fontName:@"AvenirNext-Bold" fontSize:20];
-    label.position = ccp(self.contentSize.width - 190, self.contentSize.height - 37);
-    label.color = CCColor.orangeColor;
-    [self.contextEffectNode addChild:label];
-   // life sprite
-    CGFloat lifeY = winSize.height - BeginTopY;
-    for (int i = 0; i < 10; i++) {
-        CCSprite *lifeSprite = [CCSprite spriteWithImageNamed:@"life.png"];
-        lifeSprite.name = @"life";
-        lifeSprite.anchorPoint = CGPointZero;
-        lifeSprite.position = ccp(winSize.width - i *(lifeSprite.contentSize.width) - 25, lifeY);
-        [self.contextEffectNode addChild:lifeSprite];
-        [self.lifeArray addObject:lifeSprite];
-    }
-     self.userClickCount = 10;
-    
-    // add Help
-    CCSpriteFrame *sf = [CCSpriteFrame frameWithImageNamed:@"helpButton.png"];
-    CCButton *helpButton = [CCButton buttonWithTitle:nil spriteFrame:sf];
-    helpButton.positionType = CCPositionTypeNormalized;
-    helpButton.position = ccp(0.95, 0.98);
-    [self.contextEffectNode addChild:helpButton];
-    if (self.fromType == FromStartScene) {
-        self.brightness.brightness = -1;
-        [self schedule:@selector(changeToBright) interval:0.1];
-    }
-}
+//- (void)onEnter{
+//    [super onEnter];
+//    if (self.fromType != FromStartScene) {
+//        [self removeAllChildren];
+//        [self.lifeArray removeAllObjects];
+//    }
+//
+//    CGSize winSize = [CCDirector sharedDirector].viewSize;
+//    [self setupBg];
+//
+//    self.map = [self convertCArrayToNSArray];
+//    for (int i = 0; i < CountPerRow; i++) {
+//        [self addLine:i + 1];
+//    }
+//   // life label
+//    CCLabelTTF *label = [CCLabelTTF labelWithString:NSLocalizedString(@"life", @"") fontName:@"AvenirNext-Bold" fontSize:20];
+//    label.position = ccp(self.contentSize.width - 190, self.contentSize.height - 37);
+//    label.color = CCColor.orangeColor;
+//    [self.contextEffectNode addChild:label];
+//   // life sprite
+//    CGFloat lifeY = winSize.height - BeginTopY;
+//    for (int i = 0; i < 10; i++) {
+//        CCSprite *lifeSprite = [CCSprite spriteWithImageNamed:@"life.png"];
+//        lifeSprite.name = @"life";
+//        lifeSprite.anchorPoint = CGPointZero;
+//        lifeSprite.position = ccp(winSize.width - i *(lifeSprite.contentSize.width) - 25, lifeY);
+//        [self.contextEffectNode addChild:lifeSprite];
+//        [self.lifeArray addObject:lifeSprite];
+//    }
+//     self.userClickCount = 10;
+//
+//    // add Help
+//    CCSpriteFrame *sf = [CCSpriteFrame frameWithImageNamed:@"helpButton.png"];
+//    CCButton *helpButton = [CCButton buttonWithTitle:nil spriteFrame:sf];
+//    helpButton.positionType = CCPositionTypeNormalized;
+//    helpButton.position = ccp(0.95, 0.98);
+//    [self.contextEffectNode addChild:helpButton];
+//    if (self.fromType == FromStartScene) {
+//        self.brightness.brightness = -1;
+//        [self schedule:@selector(changeToBright) interval:0.1];
+//    }
+//}
 
 
 - (void)changeToBright{
