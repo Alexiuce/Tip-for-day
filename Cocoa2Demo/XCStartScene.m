@@ -76,10 +76,9 @@ static const CGFloat AirCraftMidPadding = 192;
     bg.tag = BackTag;
     
     MatrixSprite *maxtixSprite = [MatrixSprite matrixSpriteWithDelegate:self];
-    maxtixSprite.scaleX = bg.scaleX;
-    maxtixSprite.scaleY = bg.scaleY;
-    maxtixSprite.anchorPoint = ccp(0, 1);
-    maxtixSprite.position = ccp(1, winSize.height - 117);
+ 
+    maxtixSprite.anchorPoint = CGPointZero;
+    maxtixSprite.position = ccp(1, (winSize.height - maxtixSprite.contentSize.height) * 0.5);
     maxtixSprite.tag = MatrixTag;
     [maxtixSprite setUserInteractionEnabled:NO];
     
@@ -88,14 +87,14 @@ static const CGFloat AirCraftMidPadding = 192;
     text.color = CCColor.blackColor;
     text.tag = TextTag;
     text.positionType = CCPositionTypeNormalized;
-    text.position = ccp(0.5, 0.6);
+    text.position = ccp(0.5, 0.5);
 
     
     // 2. add help button
     CCSpriteFrame *helpFrame = [CCSpriteFrame frameWithImageNamed:@"helpIcon.png"];
     CCButton *helpButton = [CCButton buttonWithTitle:@"" spriteFrame:helpFrame];
     [helpButton setTarget:self selector:@selector(showHelpScene)];
-    helpButton.position = ccp(winSize.width - 30,winSize.height - 35);
+    helpButton.position = ccp(winSize.width - 30,winSize.height - 45);
 
     
     // 3. add  start button
@@ -106,7 +105,7 @@ static const CGFloat AirCraftMidPadding = 192;
     startButton.scaleX = 0.6;
     startButton.scaleY = 0.8;
     startButton.positionType = CCPositionTypeNormalized;
-    startButton.position = ccp(0.5, 0.45);
+    startButton.position = ccp(0.5, 0.44);
     
     [self addChild:bg];
     [self addChild:maxtixSprite];
@@ -218,7 +217,7 @@ static const CGFloat AirCraftMidPadding = 192;
 
 - (void)showBullet{
     CGSize winSize = [CCDirector sharedDirector].viewSize;
-    CGFloat lifeY = winSize.height - 50;
+    CGFloat lifeY = winSize.height - 64;
     
     // add life icon
     CCSprite *lifeIcon = [CCSprite spriteWithImageNamed:@"lifeIcon.png"];
@@ -244,7 +243,6 @@ static const CGFloat AirCraftMidPadding = 192;
     for (int i = 0; i < 10; i++) {
         CCSprite *lifeSprite = [CCSprite spriteWithImageNamed:@"bullet.png"];
        
-
         lifeSprite.position = ccp( i *(lifeSprite.contentSize.width + 3) + bX, bY);
         [self addChild:lifeSprite];
         [self.bulletArray addObject:lifeSprite];
@@ -279,7 +277,6 @@ static const CGFloat AirCraftMidPadding = 192;
             [[CCDirector sharedDirector] pushScene:m];
         }
     }
-    XCLog(@"%zd",type);
 }
 
 #pragma  mark - SceneValueDelegate

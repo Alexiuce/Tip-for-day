@@ -27,15 +27,15 @@ static SceneStyle _style = FailureStyle;
 - (id)init{
     // Apple recommend assigning self with supers return value
     self = [super init];
-    
-    // The thing is, that if this fails, your app will 99.99% crash anyways, so why bother
-    // Just make an assert, so that you can catch it in debug
+
     NSAssert(self, @"Whoops");
 //    self.userInteractionEnabled = YES;
    
     CGSize winSize = [CCDirector sharedDirector].viewSize;
     // 1 . add background
     CCSprite *bg = [CCSprite spriteWithImageNamed:@"gameoverBg.png"];
+    bg.scaleX = winSize.width / bg.contentSize.width;
+    bg.scaleY = winSize.height / bg.contentSize.height;
     bg.positionType = CCPositionTypeNormalized;
     bg.position = ccp(0.5, 0.5);
     [self addChild:bg];

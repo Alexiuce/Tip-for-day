@@ -33,13 +33,20 @@
             [[OALSimpleAudio sharedInstance] preloadEffect:name];
         }
     });
-    MatrixSprite *m =  [self spriteWithImageNamed:@"matrix.png"];
-    m.unitSize = CGSizeMake(m.boundingBox.size.width * 0.1, m.boundingBox.size.height * 0.1);
+    
+    CGSize winSize = [CCDirector sharedDirector].viewSize;
+    NSString *widthKey = [NSString stringWithFormat:@"%zd",(int)winSize.width];
+    
+    NSDictionary <NSString *,NSString *>*deviceImage = @{@"375":@"matrix.png",@"320":@"matrix-568.png",@"414":@"matrix_puls.png"};
+    
+ 
+    MatrixSprite *m =  [self spriteWithImageNamed:deviceImage[widthKey]];
+    m.unitSize = CGSizeMake(m.contentSize.width * 0.1, m.contentSize.height * 0.1);
     m.allreadyDict = [NSMutableDictionary dictionary];
     m.userInteractionEnabled = YES;
     m.delegate = delegate;
     
-    XCLog(@"m children count =  %zd",m.children.count);
+   
     return m;
 }
 
@@ -49,14 +56,14 @@
     // 列
     int col = touchPoint.x / self.unitSize.width;
     // 行
-    int row = (self.boundingBox.size.height - touchPoint.y) / self.unitSize.height;
+    int row = (self.contentSize.height - touchPoint.y ) / self.unitSize.height;
     // 行+列 组合为key
     NSString *key = [NSString stringWithFormat:@"%zd%zd",row,col];
     if (self.allreadyDict[key]) {return;}
     // type ==  3: head , 17: body, 0: empty;
     int type =  [self.mapArray[row][col] intValue] ;
     self.allreadyDict[key] = @(type);
-    XCLog(@"type = %zd",type);
+
     NSString *name = @"empty.png";
     NSString *audioName = @"empty.mp3";
     MatrixItemStyle style = MatrixItemEmpty;
@@ -75,7 +82,7 @@
     [[OALSimpleAudio sharedInstance] playEffect:audioName];
     // 计算显示位置
     CGFloat displayX = self.unitSize.width * (col + 0.5);
-    CGFloat displayY = self.boundingBox.size.height - self.unitSize.height * (row + 0.5);
+    CGFloat displayY = self.contentSize.height - self.unitSize.height * (row + 0.5);
     CCSprite *s = [CCSprite spriteWithImageNamed:name];
     s.position = ccp(displayX, displayY);
     [self addChild:s];
