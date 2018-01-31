@@ -97,7 +97,6 @@
 }
 - (void)reloadMapDataAndRefresh{
     
-    
     [self refresh];
 }
 

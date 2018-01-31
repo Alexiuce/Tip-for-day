@@ -102,9 +102,9 @@
     CCDirectorIOS* director = (CCDirectorIOS*)[CCDirector sharedDirector];
     
     // Creat a scene
-//    CCScene* scene = [MainScene node];
+    CCScene* scene = [MainScene node];
 //    CCScene *scene = [GameScene node];
-    XCStartScene *scene = [XCStartScene node];
+//    XCStartScene *scene = [XCStartScene node];
 //    IADScene *scene = [IADScene node];
 //    XCHelpScene *scene = [XCHelpScene node];
     

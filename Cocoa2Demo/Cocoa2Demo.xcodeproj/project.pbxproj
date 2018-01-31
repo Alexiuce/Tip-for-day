@@ -39,6 +39,8 @@
 		56122D3620218472000F2A2D /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 56122D3320218472000F2A2D /* empty.png */; };
 		56122D3820219D02000F2A2D /* matrix_puls.png in Resources */ = {isa = PBXBuildFile; fileRef = 56122D3720219D01000F2A2D /* matrix_puls.png */; };
 		56122D3C2021A131000F2A2D /* matrix-568.png in Resources */ = {isa = PBXBuildFile; fileRef = 56122D3B2021A131000F2A2D /* matrix-568.png */; };
+		56122D3F2021B709000F2A2D /* ScoreSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56122D3E2021B709000F2A2D /* ScoreSprite.m */; };
+		56122D412021B8D8000F2A2D /* scoreSprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 56122D402021B8D8000F2A2D /* scoreSprite.png */; };
 		5617E33A200854A3002D909B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617E336200854A3002D909B /* CoreMotion.framework */; };
 		562C30CE2020055D00335281 /* youwin.png in Resources */ = {isa = PBXBuildFile; fileRef = 562C30CA2020055D00335281 /* youwin.png */; };
 		562C30D220201AFD00335281 /* BaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 562C30D120201AFD00335281 /* BaseScene.m */; };
@@ -201,6 +203,9 @@
 		56122D3320218472000F2A2D /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
 		56122D3720219D01000F2A2D /* matrix_puls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matrix_puls.png; sourceTree = "<group>"; };
 		56122D3B2021A131000F2A2D /* matrix-568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "matrix-568.png"; sourceTree = "<group>"; };
+		56122D3D2021B709000F2A2D /* ScoreSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreSprite.h; sourceTree = "<group>"; };
+		56122D3E2021B709000F2A2D /* ScoreSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreSprite.m; sourceTree = "<group>"; };
+		56122D402021B8D8000F2A2D /* scoreSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scoreSprite.png; sourceTree = "<group>"; };
 		5617E336200854A3002D909B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		562C30CA2020055D00335281 /* youwin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youwin.png; sourceTree = "<group>"; };
 		562C30CF2020193300335281 /* SceneValueDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneValueDelegate.h; sourceTree = "<group>"; };
@@ -675,6 +680,8 @@
 				562C30D120201AFD00335281 /* BaseScene.m */,
 				56489A18201830F600DAC392 /* XCStartScene.h */,
 				56489A19201830F600DAC392 /* XCStartScene.m */,
+				56122D3D2021B709000F2A2D /* ScoreSprite.h */,
+				56122D3E2021B709000F2A2D /* ScoreSprite.m */,
 				D80F863C201C8BAA00D9CA92 /* MatrixSprite.h */,
 				D80F863D201C8BAA00D9CA92 /* MatrixSprite.m */,
 				D824A2D1201D749200691252 /* MatrixtDelegate.h */,
@@ -761,6 +768,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				56122D402021B8D8000F2A2D /* scoreSprite.png */,
 				562C30CA2020055D00335281 /* youwin.png */,
 				D824F42D201DE41D00AC1656 /* gameover.png */,
 				D824F428201DE33E00AC1656 /* gameoverBg.png */,
@@ -1044,6 +1052,7 @@
 				D80F8627201C4B5D00D9CA92 /* startBg.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				56CACA75201097E000FF1775 /* Localizable.strings in Resources */,
+				56122D412021B8D8000F2A2D /* scoreSprite.png in Resources */,
 				08BA20211C785F1C00263AF8 /* ic_launcher.png in Resources */,
 				D875A5D72012FC9900C38832 /* p1.png in Resources */,
 				D80F863B201C89B100D9CA92 /* markerFelt.png in Resources */,
@@ -1208,6 +1217,7 @@
 				56489A1A201830F600DAC392 /* XCStartScene.m in Sources */,
 				568AF554200C9058002BCA95 /* IADScene.m in Sources */,
 				569083CF200C549000F47F28 /* ALSource.m in Sources */,
+				56122D3F2021B709000F2A2D /* ScoreSprite.m in Sources */,
 				7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */,
 				569083C3200C549000F47F28 /* OALAudioTrack.m in Sources */,
 				569083D8200C549000F47F28 /* OALTools.m in Sources */,

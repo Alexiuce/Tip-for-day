@@ -16,7 +16,6 @@
     answerButton.label.fontName = @"AmericanTypewriter-Bold";
     answerButton.label.fontSize = 24;
     answerButton.zoomWhenHighlighted = YES;
-    answerButton.positionType = CCPositionTypeNormalized;
     return answerButton;
 }
 
