@@ -49,24 +49,18 @@ static SceneStyle _style = FailureStyle;
     [self addChild:headSprite];
     
    
-    
+    NSString *btnName = _style == SuccessSytle ? @"start new" : @"play again";
+    XCGameButton *backButton = [XCGameButton gameButtonWithTitle:[NSString adaptedString:btnName]];
     if (_style == FailureStyle) {
         CCActionRotateBy *rotateBy = [CCActionRotateBy actionWithDuration:0.15 angleX:5 angleY:0];
         CCActionRotateBy *rotateY = [CCActionRotateBy actionWithDuration:0.15 angleX:-5 angleY:0];
         CCActionSequence *as = [CCActionSequence actions:rotateY,[rotateY reverse],rotateBy,[rotateBy reverse], nil];
         CCActionRepeat *ar = [CCActionRepeat actionWithAction:as times:2];
         [headSprite runAction:ar];
-        XCGameButton *backButton = [XCGameButton gameButtonWithTitle:[NSString adaptedString:@"play again"]];
-        [backButton setTarget:self selector:@selector(playAgain)];
-        backButton.position = ccp(0.5, 0.5);
-        [self addChild:backButton];
-       
-    }else{
-         XCGameButton *newButton = [XCGameButton gameButtonWithTitle:[NSString adaptedString:@"start new"]];
-        [newButton setTarget:self selector:@selector(startNew)];
-        newButton.position = ccp(0.5, 0.5);
-         [self addChild:newButton];
     }
+    [backButton setTarget:self selector:@selector(clickButton)];
+    backButton.position = ccp(0.5, 0.5);
+    [self addChild:backButton];
    
 
     
@@ -75,19 +69,10 @@ static SceneStyle _style = FailureStyle;
 }
 
 #pragma  mark - UI Event
-- (void)playAgain{
-    self.valueStyle = SceneForRefresh;
-    [self popMainScene];
-}
-- (void)startNew{
-    self.valueStyle = SceneForReloadDataAndRefresh;
-    [self popMainScene];
-}
-
-
-- (void)popMainScene{
-    
+- (void)clickButton{
+    self.valueStyle = _style == SuccessSytle ? SceneForReloadDataAndRefresh : SceneForRefresh;
     [[CCDirector sharedDirector] popScene];
 }
+
 
 @end

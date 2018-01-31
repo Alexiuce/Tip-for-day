@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Cocoa2Demo
+
+  Created by caijinzhu on 2018/1/31.
+  Copyright © 2018年 Apportable. All rights reserved.
+*/
+CFBundleDisplayName = "找飞机";
+
