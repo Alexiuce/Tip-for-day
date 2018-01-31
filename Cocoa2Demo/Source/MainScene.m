@@ -49,15 +49,12 @@ static SceneStyle _style = FailureStyle;
     headSprite.position = ccp(winSize.width * 0.5, winSize.height - 64);
     [self addChild:headSprite];
     
-    
+
     // add scroe sprite
     ScoreSprite *ss = [ScoreSprite scoreWith:20 head:12 body:12];
-   
-    ss.position = ccp(self.contentSize.width * 0.5, self.contentSize.height * 0.5 );
+    ss.position = ccp(self.contentSize.width * 0.5, self.contentSize.height * 0.5 + 20);
     [self addChild:ss];
    
-    
-    
     NSString *btnName = _style == SuccessSytle ? @"start new" : @"play again";
     XCGameButton *backButton = [XCGameButton gameButtonWithTitle:[NSString adaptedString:btnName]];
     if (_style == FailureStyle) {
@@ -69,10 +66,8 @@ static SceneStyle _style = FailureStyle;
     }
     [backButton setTarget:self selector:@selector(clickButton)];
     backButton.anchorPoint = ccp(0.5, 1);
-    backButton.position = ccp(ss.position.x, ss.position.y - ss.contentSize.height * 0.5 - backButton.contentSize.height);
+    backButton.position = ccp(ss.position.x, ss.position.y - ss.contentSize.height * 0.5 - 15 );
     [self addChild:backButton];
-   
-
     
     // done
     return self;

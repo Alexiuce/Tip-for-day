@@ -41,6 +41,7 @@
 		56122D3C2021A131000F2A2D /* matrix-568.png in Resources */ = {isa = PBXBuildFile; fileRef = 56122D3B2021A131000F2A2D /* matrix-568.png */; };
 		56122D3F2021B709000F2A2D /* ScoreSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56122D3E2021B709000F2A2D /* ScoreSprite.m */; };
 		56122D412021B8D8000F2A2D /* scoreSprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 56122D402021B8D8000F2A2D /* scoreSprite.png */; };
+		56122D432021CAA4000F2A2D /* helpscene.sketch in Resources */ = {isa = PBXBuildFile; fileRef = 56122D422021CAA4000F2A2D /* helpscene.sketch */; };
 		5617E33A200854A3002D909B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617E336200854A3002D909B /* CoreMotion.framework */; };
 		562C30CE2020055D00335281 /* youwin.png in Resources */ = {isa = PBXBuildFile; fileRef = 562C30CA2020055D00335281 /* youwin.png */; };
 		562C30D220201AFD00335281 /* BaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 562C30D120201AFD00335281 /* BaseScene.m */; };
@@ -206,6 +207,7 @@
 		56122D3D2021B709000F2A2D /* ScoreSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreSprite.h; sourceTree = "<group>"; };
 		56122D3E2021B709000F2A2D /* ScoreSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreSprite.m; sourceTree = "<group>"; };
 		56122D402021B8D8000F2A2D /* scoreSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scoreSprite.png; sourceTree = "<group>"; };
+		56122D422021CAA4000F2A2D /* helpscene.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = helpscene.sketch; sourceTree = "<group>"; };
 		5617E336200854A3002D909B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		562C30CA2020055D00335281 /* youwin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youwin.png; sourceTree = "<group>"; };
 		562C30CF2020193300335281 /* SceneValueDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneValueDelegate.h; sourceTree = "<group>"; };
@@ -671,6 +673,7 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				56122D422021CAA4000F2A2D /* helpscene.sketch */,
 				D875A5E620134AA000C38832 /* planeMap.dat */,
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				B7378992180767190076A88C /* MainScene.h */,
@@ -1046,6 +1049,7 @@
 				D875A5EB201372C700C38832 /* life.png in Resources */,
 				D875A5E5201341B900C38832 /* body.mp3 in Resources */,
 				D875A5E320133F6700C38832 /* head.mp3 in Resources */,
+				56122D432021CAA4000F2A2D /* helpscene.sketch in Resources */,
 				56C2AC94201AE865004F0BE1 /* leftAircraft.png in Resources */,
 				D80F8631201C708400D9CA92 /* bullet.png in Resources */,
 				5652EE922015BE6800DAE181 /* gridMap.tmx in Resources */,
