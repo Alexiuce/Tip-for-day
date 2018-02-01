@@ -9,6 +9,9 @@
 #import "MatrixSprite.h"
 #import "OALSimpleAudio.h"
 
+
+static NSString * CurrentMapKey = @"cmk";
+
 @interface MatrixSprite()
 
 // 单元格子尺寸
@@ -19,6 +22,9 @@
 @property (nonatomic, strong) NSMutableDictionary *allreadyDict;
 
 @property (nonatomic, weak) id <MatrixtDelegate>delegate;
+
+@property (nonatomic, assign) int currentMapIndex;
+
 
 @end
 
@@ -45,6 +51,8 @@
     m.allreadyDict = [NSMutableDictionary dictionary];
     m.userInteractionEnabled = YES;
     m.delegate = delegate;
+    NSInteger index = [[NSUserDefaults standardUserDefaults] integerForKey:CurrentMapKey];
+    m.currentMapIndex = (int)index;
     
    
     return m;
@@ -96,7 +104,10 @@
     [self removeAllChildren];
 }
 - (void)reloadMapDataAndRefresh{
-    
+    self.currentMapIndex++;
+    if (self.currentMapIndex >= _mapArray.count) {
+        self.currentMapIndex = 0;
+    }
     [self refresh];
 }
 
@@ -107,7 +118,7 @@
         NSString *mapData = [[NSBundle mainBundle] pathForResource:@"matrix.dat" ofType:nil];
         _mapArray = [NSArray arrayWithContentsOfFile:mapData];
     }
-    return _mapArray[8];
+    return _mapArray[self.currentMapIndex];
 }
 
 @end

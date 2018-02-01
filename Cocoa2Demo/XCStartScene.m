@@ -64,6 +64,7 @@ static const CGFloat AirCraftMidPadding = 192;
         // 初始化纹理数据
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"findAircraft.plist"];
 
+       
         
         [self setupUI];
     }
