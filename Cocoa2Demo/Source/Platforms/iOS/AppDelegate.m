@@ -39,7 +39,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     XCFunLog;
 
-    [GADMobileAds configureWithApplicationID:@"ca-app-pub-3940256099942544/4411468910"];
+    [GADMobileAds configureWithApplicationID:@"ca-app-pub-9587981574525788~4886607205"];
     [ADManager readyAD];
     NSMutableDictionary* cocos2dSetup;
 #if CC_CCBREADER

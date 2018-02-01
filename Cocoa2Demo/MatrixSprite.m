@@ -108,6 +108,8 @@ static NSString * CurrentMapKey = @"cmk";
     if (self.currentMapIndex >= _mapArray.count) {
         self.currentMapIndex = 0;
     }
+    [[NSUserDefaults standardUserDefaults] setInteger:self.currentMapIndex forKey:CurrentMapKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     [self refresh];
 }
 

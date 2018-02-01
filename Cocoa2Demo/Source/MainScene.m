@@ -25,10 +25,12 @@
 @implementation MainScene
 
 + (instancetype)sceneWithStyle:(SceneStyle)style{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        [ADManager showAD];
-    });
+    int random = arc4random_uniform(100) % 3;
+    XCLog(@"random %zd ",random);
+    if (random == 0) {
+         [ADManager showAD];
+    }
+ 
     MainScene *m = [self node];
     m.style = style;
     return m;
