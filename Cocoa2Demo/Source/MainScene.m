@@ -5,8 +5,8 @@
 #import "XCGameButton.h"
 #import "NSString+Game.h"
 #import "ScoreSprite.h"
-
 #import "ADManager.h"
+
 
 
 @interface MainScene()
@@ -25,7 +25,10 @@
 @implementation MainScene
 
 + (instancetype)sceneWithStyle:(SceneStyle)style{
-    [ADManager showAD];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [ADManager showAD];
+    });
     MainScene *m = [self node];
     m.style = style;
     return m;

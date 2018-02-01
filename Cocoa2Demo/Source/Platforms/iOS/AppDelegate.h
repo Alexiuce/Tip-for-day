@@ -30,6 +30,7 @@
 
 @interface AppController : CCAppDelegate
 {
+
 }
 
 @end

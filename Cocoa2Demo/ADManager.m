@@ -16,6 +16,7 @@
 @property (nonatomic, strong) GADInterstitial *interstitial;
 
 
+
 @end
 
 
@@ -27,13 +28,14 @@
     static ADManager *_instance = nil;
     dispatch_once(&onceToken, ^{
         _instance = [[self alloc]init];
+    
     });
     return _instance;
 }
 
 
 + (void)readyAD{
-    [[self shareManager] loadRequest];;
+    [[self shareManager] loadRequest];
 }
 
 + (void)showAD{
@@ -41,11 +43,13 @@
 }
 
 
+
 - (void)showAd{
     if (self.interstitial.isReady) {
         [self.interstitial presentFromRootViewController:[CCDirector sharedDirector]];
+    }else{
+        XCLog(@"not ready for ad");
     }
-    
 }
 
 #pragma mark - GADInterstitialDelegate
@@ -56,10 +60,8 @@
  @param error 错误信息
  */
 - (void)interstitial:(GADInterstitial *)ad didFailToReceiveAdWithError:(GADRequestError *)error{
-    // 清楚本次数据
-    self.interstitial = nil;
-    // 预先加载下次数据
-    [self loadRequest];
+   
+ 
 }
 
 
@@ -68,37 +70,21 @@
  @param ad 请求结果
  */
 - (void)interstitialDidReceiveAd:(GADInterstitial *)ad{
+    
 }
 
-
-/**
- # 显示失败
- */
-- (void)interstitialDidFailToPresentScreen:(GADInterstitial *)ad{
-    // 清楚本次数据
-    self.interstitial = nil;
-    // 预先加载下次数据
+- (void)interstitialWillLeaveApplication:(GADInterstitial *)ad{
     [self loadRequest];
 }
-
-
-
 
 /**
  # 已经从屏幕消失
  */
 - (void)interstitialDidDismissScreen:(GADInterstitial *)ad{
-    // 清楚本次数据
-    self.interstitial = nil;
+
     // 预先加载下次数据
     [self loadRequest];
-}
 
-/**
- # 将要离开应用
- */
-- (void)interstitialWillLeaveApplication:(GADInterstitial *)ad{
-    XCLog(@"WillLeaveApplication");
 }
 
 
@@ -112,7 +98,9 @@
 }
 
 - (void)loadRequest{
+    _interstitial = nil;
     [self.interstitial loadRequest:[GADRequest request]];
+   
 }
 
 @end

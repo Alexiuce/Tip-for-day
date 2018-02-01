@@ -11,7 +11,7 @@
 
 #define XCLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 
-#define TAFunLog  XCLog(@"%s",__func__);
+#define XCFunLog  XCLog(@"%s",__func__);
 
 #else
 

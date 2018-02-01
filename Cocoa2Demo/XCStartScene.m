@@ -22,7 +22,7 @@
 #import "MainScene.h"
 #import "XCGameButton.h"
 #import <CCPhysics.h>
-
+#import "ADManager.h"
 
 static const int BackTag = 100;
 static const int MatrixTag = 101;
@@ -162,10 +162,6 @@ static const CGFloat AirCraftMidPadding = 192;
     
     CCActionSequence *as = [CCActionSequence actions:delay,fadeOut,callBlock, nil];
     [maskLaunchSprite runAction:as];
-    
-    
-   
-    
 }
 
 
@@ -360,6 +356,7 @@ static const CGFloat AirCraftMidPadding = 192;
     bottomNode.physicsBody = ground;
     [space addChild:bottomNode];
 }
+
 
 
 @end

@@ -37,6 +37,8 @@
 @implementation AppController
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    XCFunLog;
+
     [GADMobileAds configureWithApplicationID:@"ca-app-pub-3940256099942544/4411468910"];
     [ADManager readyAD];
     NSMutableDictionary* cocos2dSetup;
@@ -74,6 +76,10 @@
     
     // Show FPS
     // We really want this when developing an app
+
+
+//
+//    XCLog(@"");
     [cocos2dSetup setObject:@(YES) forKey:CCSetupShowDebugStats];
     
     // A acouple of other examples
@@ -97,7 +103,12 @@
     // Lets get this thing on the road!
     
     cocos2dSetup[CCSetupScreenOrientation] = CCScreenOrientationPortrait;
-    cocos2dSetup[CCSetupShowDebugStats] = @(YES);
+#ifdef DEBUG
+    BOOL showFPS = YES;
+#else
+    BOOL showFPS = NO;
+#endif
+    cocos2dSetup[CCSetupShowDebugStats] = @(showFPS);
     [self setupCocos2dWithOptions:cocos2dSetup];
     
     CCDirectorIOS* director = (CCDirectorIOS*)[CCDirector sharedDirector];
@@ -121,6 +132,22 @@
     [director runWithScene:scene];
     // Stay positive. Always return a YES :)
     return YES;
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application{
+    XCFunLog;
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application{
+  
+    XCFunLog;
+ 
+
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application{
+  
+    [ADManager readyAD];
 }
 
 @end
