@@ -12,11 +12,11 @@
 
 + (instancetype)gameButtonWithTitle:(NSString *)text{
     CCSpriteFrame *backgroundFrame = [CCSpriteFrame frameWithImageNamed:@"buttonbackground.png"];
-    XCGameButton *answerButton = [CCButton buttonWithTitle:text spriteFrame:backgroundFrame];
-    answerButton.label.fontName = @"AmericanTypewriter-Bold";
-    answerButton.label.fontSize = 24;
-    answerButton.zoomWhenHighlighted = YES;
-    return answerButton;
+    XCGameButton *btn = [CCButton buttonWithTitle:text spriteFrame:backgroundFrame];
+    btn.label.fontName = @"AmericanTypewriter-Bold";
+    btn.label.fontSize = 24;
+    btn.zoomWhenHighlighted = YES;
+    return btn;
 }
 
 @end

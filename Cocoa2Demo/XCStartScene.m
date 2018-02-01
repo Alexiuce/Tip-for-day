@@ -20,7 +20,7 @@
 #import "SceneValueDelegate.h"
 #import "NSString+Game.h"
 #import "MainScene.h"
-
+#import "XCGameButton.h"
 #import <CCPhysics.h>
 
 
@@ -61,6 +61,10 @@ static const CGFloat AirCraftMidPadding = 192;
     if (self = [super init]) {
         self.bulletCount = 10;
         self.bulletArray = [NSMutableArray arrayWithCapacity:self.bulletCount];
+        // 初始化纹理数据
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"findAircraft.plist"];
+
+        
         [self setupUI];
     }
     return self;
@@ -100,12 +104,10 @@ static const CGFloat AirCraftMidPadding = 192;
 
     
     // 3. add  start button
-    CCSpriteFrame *frame = [CCSpriteFrame frameWithImageNamed:@"startGame.png"];
-    CCButton *startButton = [CCButton buttonWithTitle:@"" spriteFrame:frame];
+   
+    XCGameButton *startButton = [XCGameButton gameButtonWithTitle:[NSString adaptedString:@"Start Game"]];
     [startButton setTarget:self selector:@selector(startGame)];
     self.startButton = startButton;
-    startButton.scaleX = 0.6;
-    startButton.scaleY = 0.8;
     startButton.positionType = CCPositionTypeNormalized;
     startButton.position = ccp(0.5, 0.44);
     
