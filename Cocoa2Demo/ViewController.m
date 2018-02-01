@@ -77,7 +77,7 @@
  */
 - (void)interstitialDidDismissScreen:(GADInterstitial *)ad{
     XCLog(@"DidDismissScreen");
-    [self.interstitial removeObserver:self forKeyPath:@"isReady"];
+
 }
 
 /**
@@ -93,14 +93,12 @@
     self.interstitial = [[GADInterstitial alloc]initWithAdUnitID:@"ca-app-pub-3940256099942544/4411468910"];
     self.interstitial.delegate = self;
     GADRequest *request = [GADRequest request];
-    [self.interstitial addObserver:self forKeyPath:@"isReady" options:NSKeyValueObservingOptionNew context:nil];
+   
     [self.interstitial loadRequest:request];
 }
 
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
-    XCLog(@"%@",change);
-}
+
 
 
 

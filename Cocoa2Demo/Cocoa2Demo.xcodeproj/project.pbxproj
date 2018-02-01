@@ -47,6 +47,7 @@
 		568AF554200C9058002BCA95 /* IADScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 568AF553200C9058002BCA95 /* IADScene.m */; };
 		568AFC6E2022A86500230A9C /* findAircraft.png in Resources */ = {isa = PBXBuildFile; fileRef = 568AFC6C2022A86500230A9C /* findAircraft.png */; };
 		568AFC6F2022A86500230A9C /* findAircraft.plist in Resources */ = {isa = PBXBuildFile; fileRef = 568AFC6D2022A86500230A9C /* findAircraft.plist */; };
+		568AFC722022F03100230A9C /* ADManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 568AFC712022F03100230A9C /* ADManager.m */; };
 		569083BF200C549000F47F28 /* OALAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5690837E200C549000F47F28 /* OALAction.m */; };
 		569083C0200C549000F47F28 /* OALActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56908380200C549000F47F28 /* OALActionManager.m */; };
 		569083C1200C549000F47F28 /* OALAudioActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 56908382200C549000F47F28 /* OALAudioActions.m */; };
@@ -191,6 +192,8 @@
 		568AF553200C9058002BCA95 /* IADScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IADScene.m; sourceTree = "<group>"; };
 		568AFC6C2022A86500230A9C /* findAircraft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findAircraft.png; sourceTree = "<group>"; };
 		568AFC6D2022A86500230A9C /* findAircraft.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = findAircraft.plist; sourceTree = "<group>"; };
+		568AFC702022F03100230A9C /* ADManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADManager.h; sourceTree = "<group>"; };
+		568AFC712022F03100230A9C /* ADManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADManager.m; sourceTree = "<group>"; };
 		5690837C200C549000F47F28 /* OALAction+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OALAction+Private.h"; sourceTree = "<group>"; };
 		5690837D200C549000F47F28 /* OALAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAction.h; sourceTree = "<group>"; };
 		5690837E200C549000F47F28 /* OALAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAction.m; sourceTree = "<group>"; };
@@ -615,6 +618,8 @@
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				568AFC702022F03100230A9C /* ADManager.h */,
+				568AFC712022F03100230A9C /* ADManager.m */,
 				562C30CF2020193300335281 /* SceneValueDelegate.h */,
 				562C30D020201AFD00335281 /* BaseScene.h */,
 				562C30D120201AFD00335281 /* BaseScene.m */,
@@ -1108,6 +1113,7 @@
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 				569083CC200C549000F47F28 /* ALDevice.m in Sources */,
 				569083C8200C549000F47F28 /* ALBuffer.m in Sources */,
+				568AFC722022F03100230A9C /* ADManager.m in Sources */,
 				5698D84C2018874000A82578 /* NSString+Game.m in Sources */,
 				569083C0200C549000F47F28 /* OALActionManager.m in Sources */,
 				56489A1720182E2600DAC392 /* XCGameButton.m in Sources */,

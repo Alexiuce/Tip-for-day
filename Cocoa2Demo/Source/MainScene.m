@@ -6,6 +6,9 @@
 #import "NSString+Game.h"
 #import "ScoreSprite.h"
 
+#import "ADManager.h"
+
+
 @interface MainScene()
 
 @property (nonatomic, weak) CCLabelTTF *label;
@@ -14,13 +17,15 @@
 
 @property (nonatomic, assign) SceneStyle style;
 
+
+
 @end
 
 
 @implementation MainScene
 
 + (instancetype)sceneWithStyle:(SceneStyle)style{
-    
+    [ADManager showAD];
     MainScene *m = [self node];
     m.style = style;
     return m;
@@ -72,6 +77,12 @@
     self.valueStyle = _style == SuccessSytle ? SceneForReloadDataAndRefresh : SceneForRefresh;
     [[CCDirector sharedDirector] popScene];
 }
+
+
+
+
+
+
 
 
 @end
