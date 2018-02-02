@@ -37,7 +37,7 @@
 @implementation AppController
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
-    XCFunLog;
+ 
 
     [GADMobileAds configureWithApplicationID:@"ca-app-pub-9587981574525788~4886607205"];
     [ADManager readyAD];
@@ -136,18 +136,11 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application{
     XCFunLog;
+    [ADManager showAD];
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application{
-  
-    XCFunLog;
- 
 
-}
 
-- (void)applicationDidEnterBackground:(UIApplication *)application{
-  
-    [ADManager readyAD];
-}
+
 
 @end

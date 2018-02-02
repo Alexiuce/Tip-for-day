@@ -42,11 +42,15 @@
 		56489A1A201830F600DAC392 /* XCStartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 56489A19201830F600DAC392 /* XCStartScene.m */; };
 		5652EE922015BE6800DAE181 /* gridMap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 5652EE8E2015BE6800DAE181 /* gridMap.tmx */; };
 		5652EE952015C5C700DAE181 /* XCTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 5652EE942015C5C700DAE181 /* XCTileMap.m */; };
+		5653D39F2023EBF200663BBD /* leftAircraft.png in Resources */ = {isa = PBXBuildFile; fileRef = 5653D39E2023EBF200663BBD /* leftAircraft.png */; };
+		5653D3A12023EC1000663BBD /* launchBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5653D3A02023EC1000663BBD /* launchBg.png */; };
+		5653D3A32023EC1D00663BBD /* downCraft.png in Resources */ = {isa = PBXBuildFile; fileRef = 5653D3A22023EC1D00663BBD /* downCraft.png */; };
+		5653D3A62023ED8E00663BBD /* findCraft.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5653D3A42023ED8D00663BBD /* findCraft.plist */; };
+		5653D3A72023ED8E00663BBD /* findCraft.png in Resources */ = {isa = PBXBuildFile; fileRef = 5653D3A52023ED8E00663BBD /* findCraft.png */; };
+		5653D3AE2023F81D00663BBD /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5653D3AA2023F81D00663BBD /* GoogleMobileAds.framework */; };
 		568AF54D200C8FC8002BCA95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568AF54B200C8FC8002BCA95 /* ViewController.m */; };
 		568AF54E200C8FC8002BCA95 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568AF54C200C8FC8002BCA95 /* ViewController.xib */; };
 		568AF554200C9058002BCA95 /* IADScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 568AF553200C9058002BCA95 /* IADScene.m */; };
-		568AFC6E2022A86500230A9C /* findAircraft.png in Resources */ = {isa = PBXBuildFile; fileRef = 568AFC6C2022A86500230A9C /* findAircraft.png */; };
-		568AFC6F2022A86500230A9C /* findAircraft.plist in Resources */ = {isa = PBXBuildFile; fileRef = 568AFC6D2022A86500230A9C /* findAircraft.plist */; };
 		568AFC722022F03100230A9C /* ADManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 568AFC712022F03100230A9C /* ADManager.m */; };
 		569083BF200C549000F47F28 /* OALAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5690837E200C549000F47F28 /* OALAction.m */; };
 		569083C0200C549000F47F28 /* OALActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56908380200C549000F47F28 /* OALActionManager.m */; };
@@ -80,7 +84,6 @@
 		5698D84C2018874000A82578 /* NSString+Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 5698D84B2018874000A82578 /* NSString+Game.m */; };
 		56BE15042003116C009D8FEC /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 56BE15032003116C009D8FEC /* qq.png */; };
 		56BE150920031A89009D8FEC /* QQSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BE150820031A89009D8FEC /* QQSprite.m */; };
-		56C2AC9A201AECBA004F0BE1 /* launchimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 56C2AC99201AECBA004F0BE1 /* launchimage.png */; };
 		56CACA652010361200FF1775 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA642010361200FF1775 /* point.png */; };
 		56CACA6B20106ADE00FF1775 /* gridPlane.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA6A20106ADE00FF1775 /* gridPlane.tmx */; };
 		56CACA6D20106C1500FF1775 /* tiles-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CACA6C20106C1400FF1775 /* tiles-hd.png */; };
@@ -119,7 +122,6 @@
 		B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3D17B978D7009739AE /* Foundation.framework */; };
 		B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
-		D80F8627201C4B5D00D9CA92 /* startBg.png in Resources */ = {isa = PBXBuildFile; fileRef = D80F8623201C4B5D00D9CA92 /* startBg.png */; };
 		D80F863A201C89B100D9CA92 /* markerFelt.fnt in Resources */ = {isa = PBXBuildFile; fileRef = D80F8638201C89B100D9CA92 /* markerFelt.fnt */; };
 		D80F863B201C89B100D9CA92 /* markerFelt.png in Resources */ = {isa = PBXBuildFile; fileRef = D80F8639201C89B100D9CA92 /* markerFelt.png */; };
 		D80F863E201C8BAA00D9CA92 /* MatrixSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F863D201C8BAA00D9CA92 /* MatrixSprite.m */; };
@@ -185,13 +187,17 @@
 		5652EE8E2015BE6800DAE181 /* gridMap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gridMap.tmx; sourceTree = "<group>"; };
 		5652EE932015C5C700DAE181 /* XCTileMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCTileMap.h; sourceTree = "<group>"; };
 		5652EE942015C5C700DAE181 /* XCTileMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCTileMap.m; sourceTree = "<group>"; };
+		5653D39E2023EBF200663BBD /* leftAircraft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftAircraft.png; sourceTree = "<group>"; };
+		5653D3A02023EC1000663BBD /* launchBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchBg.png; sourceTree = "<group>"; };
+		5653D3A22023EC1D00663BBD /* downCraft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downCraft.png; sourceTree = "<group>"; };
+		5653D3A42023ED8D00663BBD /* findCraft.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = findCraft.plist; sourceTree = "<group>"; };
+		5653D3A52023ED8E00663BBD /* findCraft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findCraft.png; sourceTree = "<group>"; };
+		5653D3AA2023F81D00663BBD /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		568AF54A200C8FC8002BCA95 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		568AF54B200C8FC8002BCA95 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		568AF54C200C8FC8002BCA95 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		568AF552200C9058002BCA95 /* IADScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IADScene.h; sourceTree = "<group>"; };
 		568AF553200C9058002BCA95 /* IADScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IADScene.m; sourceTree = "<group>"; };
-		568AFC6C2022A86500230A9C /* findAircraft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findAircraft.png; sourceTree = "<group>"; };
-		568AFC6D2022A86500230A9C /* findAircraft.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = findAircraft.plist; sourceTree = "<group>"; };
 		568AFC702022F03100230A9C /* ADManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADManager.h; sourceTree = "<group>"; };
 		568AFC712022F03100230A9C /* ADManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADManager.m; sourceTree = "<group>"; };
 		5690837C200C549000F47F28 /* OALAction+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OALAction+Private.h"; sourceTree = "<group>"; };
@@ -263,7 +269,6 @@
 		56BE15032003116C009D8FEC /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
 		56BE150720031A89009D8FEC /* QQSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQSprite.h; sourceTree = "<group>"; };
 		56BE150820031A89009D8FEC /* QQSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQSprite.m; sourceTree = "<group>"; };
-		56C2AC99201AECBA004F0BE1 /* launchimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchimage.png; sourceTree = "<group>"; };
 		56CACA642010361200FF1775 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
 		56CACA6A20106ADE00FF1775 /* gridPlane.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gridPlane.tmx; sourceTree = "<group>"; };
 		56CACA6C20106C1400FF1775 /* tiles-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiles-hd.png"; sourceTree = "<group>"; };
@@ -307,7 +312,6 @@
 		B77F1B4117B978D7009739AE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
 		D352B48019EC608A00829775 /* MetalShaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MetalShaders; path = Source/MetalShaders; sourceTree = "<group>"; };
-		D80F8623201C4B5D00D9CA92 /* startBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startBg.png; sourceTree = "<group>"; };
 		D80F8638201C89B100D9CA92 /* markerFelt.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = markerFelt.fnt; sourceTree = "<group>"; };
 		D80F8639201C89B100D9CA92 /* markerFelt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = markerFelt.png; sourceTree = "<group>"; };
 		D80F863C201C8BAA00D9CA92 /* MatrixSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrixSprite.h; sourceTree = "<group>"; };
@@ -379,6 +383,7 @@
 				B77F1B3C17B978D7009739AE /* UIKit.framework in Frameworks */,
 				B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */,
 				B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */,
+				5653D3AE2023F81D00663BBD /* GoogleMobileAds.framework in Frameworks */,
 				B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */,
 				8E77C8C4926C39DFA5D6D289 /* libPods-Cocoa2Demo iOS.a in Frameworks */,
 			);
@@ -663,6 +668,7 @@
 		B77F1B2517B978D7009739AE = {
 			isa = PBXGroup;
 			children = (
+				5653D3AA2023F81D00663BBD /* GoogleMobileAds.framework */,
 				B737893C1807616C0076A88C /* Source */,
 				B77F1B4617B978D7009739AE /* Resources */,
 				9222E2B918734FF800A246C7 /* libs */,
@@ -713,11 +719,10 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				568AFC6D2022A86500230A9C /* findAircraft.plist */,
-				568AFC6C2022A86500230A9C /* findAircraft.png */,
+				5653D3A42023ED8D00663BBD /* findCraft.plist */,
+				5653D3A52023ED8E00663BBD /* findCraft.png */,
 				D80F8638201C89B100D9CA92 /* markerFelt.fnt */,
 				D80F8639201C89B100D9CA92 /* markerFelt.png */,
-				D80F8623201C4B5D00D9CA92 /* startBg.png */,
 				56000D5E201EB95D006F6BF0 /* starIcon.png */,
 				D875A5E4201341B800C38832 /* body.mp3 */,
 				D875A5E220133F6600C38832 /* head.mp3 */,
@@ -730,8 +735,10 @@
 				56CACA642010361200FF1775 /* point.png */,
 				569210392005D79C00A16227 /* gameArts.plist */,
 				5692103A2005D79C00A16227 /* gameArts.png */,
+				5653D39E2023EBF200663BBD /* leftAircraft.png */,
 				56BE15032003116C009D8FEC /* qq.png */,
-				56C2AC99201AECBA004F0BE1 /* launchimage.png */,
+				5653D3A22023EC1D00663BBD /* downCraft.png */,
+				5653D3A02023EC1000663BBD /* launchBg.png */,
 				08BA20921C7865E600263AF8 /* Images.xcassets */,
 				08BA201D1C785CA100263AF8 /* Launch Screen.storyboard */,
 				7A40366119DDF8C2007B6E8F /* Platforms */,
@@ -914,29 +921,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56C2AC9A201AECBA004F0BE1 /* launchimage.png in Resources */,
 				D875A5E120133CEA00C38832 /* empty.mp3 in Resources */,
+				5653D3A32023EC1D00663BBD /* downCraft.png in Resources */,
 				56122D2B20216DD6000F2A2D /* InfoPlist.strings in Resources */,
 				568AF54E200C8FC8002BCA95 /* ViewController.xib in Resources */,
 				56CACA6B20106ADE00FF1775 /* gridPlane.tmx in Resources */,
-				568AFC6F2022A86500230A9C /* findAircraft.plist in Resources */,
 				56CACA652010361200FF1775 /* point.png in Resources */,
 				56000D62201EB95D006F6BF0 /* starIcon.png in Resources */,
-				568AFC6E2022A86500230A9C /* findAircraft.png in Resources */,
 				D8CE06CF2021F40B0081DA71 /* matrix.dat in Resources */,
+				5653D39F2023EBF200663BBD /* leftAircraft.png in Resources */,
+				5653D3A12023EC1000663BBD /* launchBg.png in Resources */,
 				5692103B2005D79D00A16227 /* gameArts.plist in Resources */,
 				56CACA9020118C6900FF1775 /* bitmapFontTest.png in Resources */,
 				D80F863A201C89B100D9CA92 /* markerFelt.fnt in Resources */,
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
+				5653D3A62023ED8E00663BBD /* findCraft.plist in Resources */,
 				569083C6200C549000F47F28 /* Info.plist in Resources */,
 				56BE15042003116C009D8FEC /* qq.png in Resources */,
 				5692103C2005D79D00A16227 /* gameArts.png in Resources */,
 				08BA20931C7865E600263AF8 /* Images.xcassets in Resources */,
 				56CACA9120118C6900FF1775 /* bitmapFontTest.fnt in Resources */,
 				D875A5E5201341B900C38832 /* body.mp3 in Resources */,
+				5653D3A72023ED8E00663BBD /* findCraft.png in Resources */,
 				D875A5E320133F6700C38832 /* head.mp3 in Resources */,
 				5652EE922015BE6800DAE181 /* gridMap.tmx in Resources */,
-				D80F8627201C4B5D00D9CA92 /* startBg.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				56CACA75201097E000FF1775 /* Localizable.strings in Resources */,
 				08BA20211C785F1C00263AF8 /* ic_launcher.png in Resources */,
@@ -1409,6 +1417,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = Z6P4JKNFHR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
@@ -1450,6 +1462,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = Z6P4JKNFHR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
 				GCC_VERSION = "";

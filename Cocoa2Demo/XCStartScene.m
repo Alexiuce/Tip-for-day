@@ -62,7 +62,7 @@ static const CGFloat AirCraftMidPadding = 192;
         self.bulletCount = 10;
         self.bulletArray = [NSMutableArray arrayWithCapacity:self.bulletCount];
         // 初始化纹理数据
-        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"findAircraft.plist"];
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"findCraft.plist"];
         
         [self setupUI];
     }

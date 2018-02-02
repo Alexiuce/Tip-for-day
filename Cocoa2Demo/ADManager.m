@@ -61,7 +61,7 @@
  */
 - (void)interstitial:(GADInterstitial *)ad didFailToReceiveAdWithError:(GADRequestError *)error{
    
- 
+    XCLog(@"GAD error %@",error.localizedDescription);
 }
 
 
@@ -70,12 +70,9 @@
  @param ad 请求结果
  */
 - (void)interstitialDidReceiveAd:(GADInterstitial *)ad{
-    
+    XCLog(@"GAD success");
 }
 
-- (void)interstitialWillLeaveApplication:(GADInterstitial *)ad{
-    [self loadRequest];
-}
 
 /**
  # 已经从屏幕消失
@@ -87,18 +84,21 @@
 
 }
 
-- (GADInterstitial *)interstitial{
-    if (_interstitial == nil) {
-        _interstitial = [[GADInterstitial alloc]initWithAdUnitID:@"ca-app-pub-9587981574525788~4886607205"];
-        _interstitial.delegate = self;
-    }
-    return _interstitial;
+
+- (GADInterstitial *)createAndLoadInterstitial {
+    NSString *adID = @"ca-app-pub-9587981574525788/5541413989";
+    GADInterstitial *interstitial =[[GADInterstitial alloc] initWithAdUnitID:adID];
+    interstitial.delegate = self;
+    GADRequest *request = [GADRequest request];
+    request.testDevices = @[kGADSimulatorID];
+    [interstitial loadRequest:request];
+    return interstitial;
 }
 
+
+
 - (void)loadRequest{
-    _interstitial = nil;
-    [self.interstitial loadRequest:[GADRequest request]];
-   
+    self.interstitial = [self createAndLoadInterstitial];
 }
 
 @end
