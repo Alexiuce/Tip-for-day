@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56807F742028305500958DE2 /* MYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56807F732028305500958DE2 /* MYView.m */; };
+		56807F772028405400958DE2 /* MYWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 56807F762028405400958DE2 /* MYWindow.m */; };
 		8EE1680679B0C19B89990D86 /* libPods-MacPopDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F335AA1D23DFBE97C6F7EE3A /* libPods-MacPopDemo.a */; };
 		F2FBAFFD1F68D8A000F18014 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FBAFFC1F68D8A000F18014 /* AppDelegate.m */; };
 		F2FBB0001F68D8A000F18014 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FBAFFF1F68D8A000F18014 /* main.m */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56807F722028305500958DE2 /* MYView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYView.h; sourceTree = "<group>"; };
+		56807F732028305500958DE2 /* MYView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYView.m; sourceTree = "<group>"; };
+		56807F752028405400958DE2 /* MYWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYWindow.h; sourceTree = "<group>"; };
+		56807F762028405400958DE2 /* MYWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYWindow.m; sourceTree = "<group>"; };
 		B17FD4C2CA9EC099434AC4F2 /* Pods-MacPopDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacPopDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MacPopDemo/Pods-MacPopDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C933BB4657F178F19EE57E5E /* Pods-MacPopDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacPopDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MacPopDemo/Pods-MacPopDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F2FBAFF81F68D8A000F18014 /* MacPopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacPopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +79,12 @@
 			children = (
 				F2FBAFFB1F68D8A000F18014 /* AppDelegate.h */,
 				F2FBAFFC1F68D8A000F18014 /* AppDelegate.m */,
+				56807F752028405400958DE2 /* MYWindow.h */,
+				56807F762028405400958DE2 /* MYWindow.m */,
 				F2FBB0011F68D8A000F18014 /* ViewController.h */,
 				F2FBB0021F68D8A000F18014 /* ViewController.m */,
+				56807F722028305500958DE2 /* MYView.h */,
+				56807F732028305500958DE2 /* MYView.m */,
 				F2FBB0041F68D8A000F18014 /* Assets.xcassets */,
 				F2FBB0061F68D8A000F18014 /* Main.storyboard */,
 				F2FBB0091F68D8A000F18014 /* Info.plist */,
@@ -221,7 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56807F742028305500958DE2 /* MYView.m in Sources */,
 				F2FBB0031F68D8A000F18014 /* ViewController.m in Sources */,
+				56807F772028405400958DE2 /* MYWindow.m in Sources */,
 				F2FBB0001F68D8A000F18014 /* main.m in Sources */,
 				F2FBAFFD1F68D8A000F18014 /* AppDelegate.m in Sources */,
 			);
@@ -375,6 +387,7 @@
 				F2FBB00E1F68D8A000F18014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -21,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+   
+    
     // Do any additional setup after loading the view.
 }
 
@@ -39,6 +41,8 @@
     [_boxView.layer pop_addAnimation:baseAnimation forKey:@"demox"];
     
 }
+
+
 
 
 @end
