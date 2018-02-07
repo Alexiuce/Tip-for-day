@@ -13,6 +13,7 @@
 		56E635F4202A8D0E00744E62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56E635F3202A8D0E00744E62 /* Assets.xcassets */; };
 		56E635F7202A8D0E00744E62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E635F5202A8D0E00744E62 /* LaunchScreen.storyboard */; };
 		56E635FA202A8D0E00744E62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E635F9202A8D0E00744E62 /* main.m */; };
+		56E63602202A950E00744E62 /* MYNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E63601202A950E00744E62 /* MYNodeController.m */; };
 		95ECCAE1B7EDF9B1C867076C /* Pods_TextureDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCED19A22F45E8C4937883B /* Pods_TextureDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,8 @@
 		56E635F6202A8D0E00744E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56E635F8202A8D0E00744E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56E635F9202A8D0E00744E62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56E63600202A950E00744E62 /* MYNodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYNodeController.h; sourceTree = "<group>"; };
+		56E63601202A950E00744E62 /* MYNodeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNodeController.m; sourceTree = "<group>"; };
 		AB978BE91A47D8B41A5B0FE9 /* Pods-TextureDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CBCED19A22F45E8C4937883B /* Pods_TextureDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAFCE1E45F36BA86963576C /* Pods-TextureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 				56E635EB202A8D0E00744E62 /* AppDelegate.m */,
 				56E635ED202A8D0E00744E62 /* ViewController.h */,
 				56E635EE202A8D0E00744E62 /* ViewController.m */,
+				56E63600202A950E00744E62 /* MYNodeController.h */,
+				56E63601202A950E00744E62 /* MYNodeController.m */,
 				56E635F0202A8D0E00744E62 /* Main.storyboard */,
 				56E635F3202A8D0E00744E62 /* Assets.xcassets */,
 				56E635F5202A8D0E00744E62 /* LaunchScreen.storyboard */,
@@ -230,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56E635EF202A8D0E00744E62 /* ViewController.m in Sources */,
+				56E63602202A950E00744E62 /* MYNodeController.m in Sources */,
 				56E635FA202A8D0E00744E62 /* main.m in Sources */,
 				56E635EC202A8D0E00744E62 /* AppDelegate.m in Sources */,
 			);
