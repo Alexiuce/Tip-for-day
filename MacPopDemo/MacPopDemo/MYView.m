@@ -50,8 +50,7 @@
     red = [pixelColor redComponent];
     green = [pixelColor greenComponent];
     blue = [pixelColor blueComponent];
-   
-    
+
     CGPoint pointInWindow = [event locationInWindow];
     CGPoint p = [self convertPoint:pointInWindow toView:self];
     [self lockFocus];
