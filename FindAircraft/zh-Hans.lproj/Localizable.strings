@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Cocoa2Demo
+
+  Created by caijinzhu on 2018/1/18.
+  Copyright © 2018年 Apportable. All rights reserved.
+*/
+
+"Hello World" = "你好，世界";
+"life" = "生命";
+"Help for the Game" = "游戏帮助";
+"Go back" = "返回";
+"helpScene.png" = "helpScene-cn.png";
+"start new" = "开始新局";
+"play again" = "重玩本局";
+"ready Start" = "请寻找隐藏在地图中三架飞行器,如果你准备好了,现在就开始吧~";
+"Start Game" = "开始游戏";

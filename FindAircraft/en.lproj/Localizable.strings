@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Cocoa2Demo
+
+  Created by caijinzhu on 2018/1/18.
+  Copyright © 2018年 Apportable. All rights reserved.
+*/
+
+"Hello World" = "Hello World";
+"life" = "Life";
+"Help for the Game" = "Help for the Game";
+"Go back" = "Go back";
+"helpScene.png" = "helpScene.png";
+"start new" = "start new";
+"play again" = "play again";
+"ready Start" = "There are three aircrafes in the matrix, you need find it,Are you ready?";
+"Start Game" = "Start Game";
