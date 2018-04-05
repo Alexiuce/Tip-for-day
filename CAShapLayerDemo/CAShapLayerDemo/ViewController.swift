@@ -14,6 +14,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let redView = UIView(frame: CGRect(x: 70, y: 80, width: 110, height: 110))
+        redView.backgroundColor = .red
+        redView.layer.cornerRadius = 20
+        if #available(iOS 11.0, *) {
+            redView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMaxYCorner]
+        } else {
+            // Fallback on earlier versions
+        }
+        view.addSubview(redView)
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
