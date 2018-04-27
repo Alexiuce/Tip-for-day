@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
+    
     @IBOutlet weak var textView: UITextView!
     
     
@@ -52,20 +55,23 @@ class ViewController: UIViewController {
         textView3.backgroundColor = UIColor.gray
         view.addSubview(textView3)
        
-        var test = "http:www.joinf.com:3333"
-        
-        titleLabel.text = test
-        
-        test = "www.jionf.com"
-        
-        
-        
-        
         
     }
 
-   
-
-
 }
+
+extension ViewController{
+    fileprivate func labelTest(){
+        var test = "http:www.joinf.com:3333"
+        titleLabel.text = test
+        test = "www.jionf.com"
+        
+    }
+}
+
+
+
+
+
+
 
