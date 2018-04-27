@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var textView: UITextView!
+    
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -32,7 +36,7 @@ class ViewController: UIViewController {
         textContainer.exclusionPaths = [exclucePath]
         
         
-        let textRect = CGRect(x: 100, y: 400, width: 100, height: 150)
+        let textRect = CGRect(x: 100, y: 400, width: 100, height: 100)
         let textView2 = UITextView(frame:textRect , textContainer: textContainer)
         textView2.isEditable = false
         textView2.isScrollEnabled = false
@@ -48,6 +52,15 @@ class ViewController: UIViewController {
         textView3.backgroundColor = UIColor.gray
         view.addSubview(textView3)
        
+        var test = "http:www.joinf.com:3333"
+        
+        titleLabel.text = test
+        
+        test = "www.jionf.com"
+        
+        
+        
+        
         
     }
 
